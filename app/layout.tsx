@@ -95,6 +95,13 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable}`}
     >
+      <head>
+        <script
+          defer
+          data-domain="humanoidintel.ai"
+          src="https://plausible.io/js/script.js"
+        />
+      </head>
       <body className="antialiased">
         <div className="max-w-[1600px] mx-auto">{children}</div>
       </body>
