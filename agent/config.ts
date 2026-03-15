@@ -17,7 +17,7 @@ export const config = {
     publishMode: (process.env.PUBLISH_MODE as 'draft' | 'auto' | 'full') || 'draft',
     confidenceThreshold: parseFloat(process.env.CONFIDENCE_THRESHOLD || '0.8'),
     runIntervalMinutes: 60,
-    maxArticlesPerRun: 10,
+    maxArticlesPerRun: 20,
   },
 
   rssFeeds: [
@@ -30,21 +30,36 @@ export const config = {
     'https://techcrunch.com/tag/figure/feed/',
     'https://www.theverge.com/rss/robotics/index.xml',
     'https://venturebeat.com/category/ai/feed/',
+    'https://newatlas.com/robotics/feed/',                        // New Atlas robotics
+    'https://roboticsandautomationnews.com/feed/',                // Robotics & Automation News
+    'https://www.automate.org/blogs/rss',                        // Automate Show
+    'https://thedebrief.org/category/tech/feed/',                // The Debrief (defense/emerging tech)
 
-    // ── Tier 2: Industry news (company-specific via Google News — see sources/google-news.ts)
-    // Most company blogs don't publish RSS. Coverage via Google News queries instead.
-    // Working exceptions:
-    'https://neura-robotics.com/news/rss',                      // NEURA Robotics
+    // ── Tier 2: General tech & business (high signal for robotics funding) ─
+    'https://www.wired.com/feed/category/science/latest/rss',
+    'https://www.technologyreview.com/feed/',                     // MIT Tech Review
+    'https://feeds.feedburner.com/TechCrunch',                   // TC general
+    'https://fortune.com/feed/',                                  // Fortune
+    'https://www.businessinsider.com/rss',                       // Business Insider
 
-    // ── Tier 3: Academic & research ───────────────────────────────────────
+    // ── Tier 3: Company blogs (working ones only) ─────────────────────────
+    'https://neura-robotics.com/news/rss',                       // NEURA Robotics
+
+    // ── Tier 4: Academic & research ───────────────────────────────────────
     'https://arxiv.org/rss/cs.RO',
     'https://arxiv.org/rss/cs.AI',
-    'https://rss.sciencedirect.com/publication/science/09218890', // Robotics & Autonomous Systems journal
+    'https://rss.sciencedirect.com/publication/science/09218890', // Robotics & Autonomous Systems
 
-    // ── Tier 4: Financial & funding signals ───────────────────────────────
+    // ── Tier 5: Financial & funding signals ───────────────────────────────
     'https://news.crunchbase.com/tag/robotics/feed/',
-    // PR wire services — broad but scoring filters to robotics
     'https://www.globenewswire.com/RssFeed/subjectCode/16-Robotics', // GlobeNewswire robotics
+
+    // ── Tier 6: Asia / China / Europe ─────────────────────────────────────
+    'https://asia.nikkei.com/rss/feed/section/Business',         // Nikkei Asia business
+    'https://www.scmp.com/rss/5/feed',                           // South China Morning Post tech
+    'https://koreajoongangdaily.joins.com/rss/feeds/news.xml',   // Korea JoongAng Daily
+    'https://technode.com/feed/',                                 // TechNode (China tech English)
+    'https://www.theroboticspost.com/feed',                      // The Robotics Post (EU)
   ],
 
   // High-signal X/Twitter accounts for mention monitoring
@@ -106,11 +121,12 @@ export const config = {
     timeDecay24h: 10, // bonus for last 24h
     timeDecay48h: 5,
     timeDecayWeek: 0,
-    minThreshold: 50, // minimum score to generate article
+    minThreshold: 40, // minimum score to generate article
   },
 
   // Companies to specifically track (slug → display name)
   trackedCompanies: {
+    // USA
     'figure-ai': 'Figure AI',
     tesla: 'Tesla',
     'boston-dynamics': 'Boston Dynamics',
@@ -118,12 +134,30 @@ export const config = {
     '1x-technologies': '1X Technologies',
     'sanctuary-ai': 'Sanctuary AI',
     apptronik: 'Apptronik',
+    'physical-intelligence': 'Physical Intelligence',
+    'skild-ai': 'Skild AI',
+    'clone-robotics': 'Clone Robotics',
+    'mentee-robotics': 'Mentee Robotics',
+    // China
     unitree: 'Unitree Robotics',
+    agibot: 'Agibot',
+    kepler: 'Kepler Robotics',
+    galbot: 'Galbot',
+    'leju-robotics': 'Leju Robotics',
+    ubtech: 'UBTECH',
+    astribot: 'Astribot',
+    sunday: 'Sunday',
+    // Europe
     'neura-robotics': 'NEURA Robotics',
     'fourier-intelligence': 'Fourier Intelligence',
-    agibot: 'Agibot',
-    kepler: 'Kepler',
-    'physical-intelligence': 'Physical Intelligence',
+    wandercraft: 'Wandercraft',
+    'enchanted-tools': 'Enchanted Tools',
+    anybotics: 'ANYbotics',
+    // Asia (non-China)
+    honda: 'Honda',
+    toyota: 'Toyota',
+    hyundai: 'Hyundai',
+    samsung: 'Samsung',
   },
 
   // API keys (loaded from environment)

@@ -40,7 +40,7 @@ export interface ScoredStory extends RawStory {
   detectedCompanies: string[]
 }
 
-const ROBOTICS_REQUIRED = /humanoid|bipedal|robot|robotics|figure ai|optimus|digit|atlas|phoenix|apollo|neo beta|unitree|boston dynamics|agility|apptronik|sanctuary|1x technologies|neura|fourier|agibot|kepler|physical intelligence|clone robotics|actuator|locomotion|manipulation|exoskeleton|legged|quadruped|end.effector|sim.to.real|whole.body/i
+const ROBOTICS_REQUIRED = /humanoid|bipedal|robot|robotics|figure ai|optimus|digit|atlas|phoenix|apollo|neo beta|unitree|boston dynamics|agility|apptronik|sanctuary|1x technologies|neura|fourier|agibot|kepler|physical intelligence|clone robotics|skild|galbot|leju|ubtech|astribot|sunday robot|wandercraft|anybotics|enchanted tools|mentee|actuator|locomotion|manipulation|exoskeleton|legged|quadruped|end.effector|sim.to.real|whole.body|combat robot|robot soldier|phantom mk|robot marathon|android robot|dexterous robot/i
 
 function isRoboticsRelevant(story: RawStory): boolean {
   const text = `${story.title} ${story.summary}`

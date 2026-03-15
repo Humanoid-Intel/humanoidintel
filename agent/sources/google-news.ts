@@ -1,7 +1,9 @@
 /**
  * Google News RSS Source
- * Queries Google News for each tracked company + key humanoid terms.
+ * Queries Google News for every tracked company, topic, region, and key person.
  * No API key required — uses the public RSS endpoint.
+ *
+ * Coverage: USA, China, Asia, Europe, combat/military, consumer, research
  */
 
 import type { RawStory } from './rss'
@@ -19,42 +21,117 @@ function simpleHash(str: string): string {
 }
 
 const QUERIES = [
-  // Company-specific
+  // ── US Companies ──────────────────────────────────────────────────────────
   '"Figure AI" robot',
-  '"Tesla Optimus" humanoid',
-  '"Boston Dynamics" Atlas robot',
-  '"Agility Robotics" Digit',
-  '"1X Technologies" NEO robot',
-  '"Sanctuary AI" Phoenix robot',
-  '"Apptronik" Apollo robot',
-  '"Unitree Robotics" humanoid',
-  '"NEURA Robotics" humanoid',
+  '"Tesla Optimus" robot',
+  '"Boston Dynamics" robot',
+  '"Agility Robotics"',
+  '"1X Technologies"',
+  '"Sanctuary AI"',
+  '"Apptronik" robot',
+  '"Unitree Robotics"',
   '"Physical Intelligence" robot',
-  '"Fourier Intelligence" robot',
-  '"Agibot" humanoid robot',
-  '"Kepler Robotics" humanoid',
-  '"Clone Robotics" humanoid',
   '"Skild AI" robot',
-  // Topic-level
-  'humanoid robot deployment 2026',
-  'humanoid robot funding round',
-  'humanoid robot factory deployment',
-  'bipedal robot breakthrough',
-  'humanoid robot CEO interview',
-  // Key people — catches news articles covering their X posts and announcements
-  '"Brett Adcock" robot',
-  '"Jim Fan" humanoid robot',
-  '"Jensen Huang" robot GR00T',
-  '"Elon Musk" Optimus robot',
-  '"Chelsea Finn" robot manipulation',
-  '"Robert Playter" robot',
-  // Emerging companies & topics
-  '"Moonshot AI" humanoid',
-  '"HEBI Robotics" humanoid',
-  '"Wandercraft" humanoid',
-  '"Halodi Robotics" humanoid',
+  '"Clone Robotics"',
+  '"Mentee Robotics"',
+  '"Kinema Systems"',
+  '"Persona AI" robot',
+  '"Machina Labs" robot',
+  '"Mytra" robot',
+
+  // ── European Companies ────────────────────────────────────────────────────
+  '"NEURA Robotics"',
+  '"Fourier Intelligence"',
+  '"Wandercraft" robot',
+  '"Halodi Robotics"',
+  '"Enchanted Tools" robot',
+  '"Automata" robot',
+  '"Franka Robotics"',
+  '"Anybotics" robot',
+
+  // ── Chinese Companies ─────────────────────────────────────────────────────
+  '"Agibot" robot',
+  '"Unitree" humanoid',
+  '"Kepler Robotics"',
+  '"Galbot" robot',
+  '"Leju Robotics"',
+  '"Zhiyuan Robotics"',
+  '"UBTECH" humanoid',
+  '"Dorabot" robot',
+  '"DeepRobotics"',
+  '"Robotics X" Tencent',
+  '"Sunday" humanoid robot',
+  '"Astribot" robot',
+  '"AgiBot" humanoid',
+  'humanoid robot China factory',
   'humanoid robot China 2026',
-  'robot foundation model 2026',
+  '"星动纪元" robot',
+
+  // ── Asian Companies (non-China) ───────────────────────────────────────────
+  '"Honda Asimo" humanoid',
+  '"Toyota" humanoid robot',
+  '"Kawasaki" humanoid robot',
+  '"Hyundai" humanoid robot',
+  '"Samsung" humanoid robot',
+  '"LG" humanoid robot',
+  '"KAIST" humanoid',
+  'humanoid robot Japan 2026',
+  'humanoid robot Korea 2026',
+
+  // ── Topic-level: Deployments & Business ───────────────────────────────────
+  'humanoid robot factory deployment',
+  'humanoid robot warehouse deployment',
+  'humanoid robot funding round 2026',
+  'humanoid robot commercial deployment',
+  'humanoid robot manufacturing scale',
+  'humanoid robot startup valuation',
+  'humanoid robot investment 2026',
+  'humanoid robot contract',
+  'humanoid robot partnership',
+
+  // ── Topic-level: Military & Combat ────────────────────────────────────────
+  'humanoid robot military',
+  'humanoid robot combat',
+  '"Phantom MK" robot',
+  'robot soldier humanoid',
+  'humanoid robot defense',
+  'humanoid robot Ukraine',
+
+  // ── Topic-level: Consumer & Household ─────────────────────────────────────
+  'humanoid robot home consumer',
+  'household humanoid robot 2026',
+  'personal humanoid robot',
+  'humanoid robot assistant',
+
+  // ── Topic-level: Research & Tech ──────────────────────────────────────────
+  'humanoid robot breakthrough',
+  'humanoid robot dexterity',
+  'humanoid robot walking running',
+  'whole-body control humanoid',
+  'vision language action robot',
+  'sim-to-real humanoid',
+  'robot foundation model',
+  'humanoid robot AI model',
+
+  // ── Topic-level: Market & Policy ──────────────────────────────────────────
+  'humanoid robot market forecast',
+  'humanoid robot regulation',
+  'humanoid robot safety standards',
+  'humanoid robot labor workforce',
+  'humanoid robot half marathon race',
+
+  // ── Key People ────────────────────────────────────────────────────────────
+  '"Brett Adcock" robot',
+  '"Jensen Huang" robot',
+  '"Elon Musk" Optimus',
+  '"Jim Fan" humanoid',
+  '"Chelsea Finn" robot',
+  '"Robert Playter" robot',
+  '"Gill Pratt" robot',
+
+  // ── General media coverage ────────────────────────────────────────────────
+  'humanoid robot news',
+  'bipedal robot 2026',
 ]
 
 async function fetchGoogleNewsQuery(query: string): Promise<RawStory[]> {
