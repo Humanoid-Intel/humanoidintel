@@ -1,0 +1,415 @@
+[
+  {
+    "slug": "figure-02",
+    "name": "Figure 02",
+    "manufacturer": "Figure AI",
+    "country": "USA",
+    "status": "commercial",
+    "height": "1.68m",
+    "weight": "60kg",
+    "dof": 44,
+    "payload": "20kg",
+    "battery": "5 hrs",
+    "actuatorType": "Electric",
+    "description": "Figure 02 is Figure AI's first commercially deployed humanoid, designed for unstructured industrial environments. It features 16 degrees of freedom in its hands alone, enabling fine manipulation tasks previously intractable for robots. Deployed at BMW's Spartanburg, South Carolina plant in 2024, performing assembly tasks including body-in-white operations.",
+    "deploymentNotes": "BMW Group partnership — multi-unit pilot at Spartanburg plant covering seat assembly, panel transfer, and parts inspection. Expanded to 3 additional BMW facilities in early 2026.",
+    "fundingTotal": "$754M",
+    "milestones": [
+      { "date": "2024-01", "event": "Figure 02 unveiled at CES 2024" },
+      { "date": "2024-03", "event": "BMW partnership announced" },
+      { "date": "2024-07", "event": "First units deployed at BMW Spartanburg" },
+      { "date": "2025-02", "event": "50-unit fleet operational at BMW" }
+    ]
+  },
+  {
+    "slug": "figure-03",
+    "name": "Figure 03",
+    "manufacturer": "Figure AI",
+    "country": "USA",
+    "status": "production",
+    "height": "1.70m",
+    "weight": "57kg",
+    "dof": 50,
+    "payload": "25kg",
+    "battery": "6 hrs",
+    "actuatorType": "Electric",
+    "description": "Figure 03 is Figure AI's mass-production successor to Figure 02, featuring a redesigned hand with 22 degrees of freedom and improved whole-body dexterity. The platform integrates Figure's proprietary Helix vision-language-action model, enabling end-to-end task execution from natural language commands. Production ramp commenced Q1 2026 targeting 1,000 units annually.",
+    "deploymentNotes": "Initial production units allocated to BMW Group expansion and new automotive OEM contracts. Figure 03's improved payload and manipulation envelope broadens addressable use cases beyond seated assembly.",
+    "fundingTotal": "$2.25B",
+    "milestones": [
+      { "date": "2025-06", "event": "Figure 03 prototype revealed internally" },
+      { "date": "2025-11", "event": "Figure 03 public reveal with live demo" },
+      { "date": "2026-01", "event": "Production tooling completed at Sunnyvale facility" },
+      { "date": "2026-02", "event": "First production units shipped to BMW" }
+    ]
+  },
+  {
+    "slug": "optimus-gen-2",
+    "name": "Optimus Gen 2",
+    "manufacturer": "Tesla",
+    "country": "USA",
+    "status": "pilot",
+    "height": "1.73m",
+    "weight": "57kg",
+    "dof": 40,
+    "payload": "20kg",
+    "battery": "8 hrs",
+    "actuatorType": "Electric",
+    "description": "Optimus Gen 2 is Tesla's second-generation humanoid, incorporating 11 degrees of freedom in each hand with tactile sensing. The platform leverages Tesla's existing Dojo training infrastructure and FSD vision stack, giving it a distinct advantage in data-driven learning at scale. As of early 2026, Tesla reports approximately 8,000 units operating across Giga Texas and Giga Shanghai performing internal manufacturing tasks.",
+    "deploymentNotes": "Exclusively deployed in Tesla's own factories; not yet available for external purchase. Elon Musk has indicated external sales could commence 2026-2027 at a price point around $20,000-$30,000.",
+    "milestones": [
+      { "date": "2023-12", "event": "Optimus Gen 2 unveiled at Tesla AI Day" },
+      { "date": "2024-06", "event": "Internal pilot begins at Giga Texas" },
+      { "date": "2024-12", "event": "1,000 units operational internally" },
+      { "date": "2025-09", "event": "Giga Shanghai deployment commences" },
+      { "date": "2026-01", "event": "8,000 cumulative units reported by Tesla" }
+    ]
+  },
+  {
+    "slug": "atlas-electric",
+    "name": "Atlas Electric",
+    "manufacturer": "Boston Dynamics",
+    "country": "USA",
+    "status": "r&d",
+    "height": "1.50m",
+    "weight": "89kg",
+    "dof": 28,
+    "payload": "25kg",
+    "battery": "1.5 hrs",
+    "actuatorType": "Electric",
+    "description": "Atlas Electric is Boston Dynamics' fully electric successor to the hydraulic Atlas platform, designed to test the limits of whole-body dynamic manipulation. The platform's rotational joints allow 360-degree range of motion far exceeding human anatomy, enabling novel manipulation strategies. Boston Dynamics is using Atlas Electric primarily for research into mobile manipulation, with Hyundai as the primary application partner.",
+    "deploymentNotes": "Hyundai is testing Atlas Electric in automotive manufacturing settings at Hyundai Motor Group's facilities in South Korea. Not commercially available; Boston Dynamics has indicated a measured commercialization timeline.",
+    "milestones": [
+      { "date": "2024-04", "event": "Hydraulic Atlas retired; Electric Atlas unveiled" },
+      { "date": "2024-07", "event": "First public manipulation demos released" },
+      { "date": "2025-01", "event": "Hyundai factory pilot announced" }
+    ]
+  },
+  {
+    "slug": "digit-v4",
+    "name": "Digit v4",
+    "manufacturer": "Agility Robotics",
+    "country": "USA",
+    "status": "commercial",
+    "height": "1.75m",
+    "weight": "65kg",
+    "dof": 30,
+    "payload": "16kg",
+    "battery": "4 hrs",
+    "actuatorType": "Electric",
+    "description": "Digit v4 is Agility Robotics' fourth-generation bipedal humanoid, optimized for warehouse and logistics environments. Its novel bipedal locomotion architecture, inherited from the Cassie research platform, provides superior energy efficiency on flat floors compared to fully humanoid designs. Amazon has deployed Digit v4 in its fulfillment centers for tote handling and goods-to-person workflows, making it one of the few humanoids with large-scale commercial deployment.",
+    "deploymentNotes": "Amazon Industrial Innovation Fund led Agility's Series B; Amazon is the primary deployment partner. Digit v4 works alongside Sequoia and Proteus AMRs in Amazon fulfillment centers, handling totes between conveyor levels.",
+    "fundingTotal": "$150M+",
+    "milestones": [
+      { "date": "2023-09", "event": "Agility raises $150M Series B led by Amazon" },
+      { "date": "2023-11", "event": "Digit v4 announced" },
+      { "date": "2024-03", "event": "Amazon pilot begins at Sumner, WA facility" },
+      { "date": "2024-10", "event": "Multi-site Amazon deployment expands to 3 facilities" }
+    ]
+  },
+  {
+    "slug": "phoenix",
+    "name": "Phoenix",
+    "manufacturer": "Sanctuary AI",
+    "country": "Canada",
+    "status": "pilot",
+    "height": "1.67m",
+    "weight": "70kg",
+    "dof": 20,
+    "payload": "25kg",
+    "battery": "4 hrs",
+    "actuatorType": "Hydraulic/Electric",
+    "description": "Phoenix is Sanctuary AI's seventh-generation humanoid, designed around their Carbon AI system which uses a proprietary cognitive architecture to reason about and execute physical tasks. The hydraulic/electric hybrid actuation provides high payload capacity and force output suited to demanding industrial tasks. Sanctuary is pursuing a robotics-as-a-service model, deploying Phoenix in retail and light manufacturing settings in Canada.",
+    "deploymentNotes": "Pilot deployments with Canadian Tire for retail stocking tasks and undisclosed light manufacturing partners. Sanctuary's RaaS pricing model operates on a per-robot monthly fee structure.",
+    "fundingTotal": "$140M+",
+    "milestones": [
+      { "date": "2024-02", "event": "Gen 7 Phoenix unveiled" },
+      { "date": "2024-06", "event": "Canadian Tire pilot announced" },
+      { "date": "2025-01", "event": "Series C funding closed" }
+    ]
+  },
+  {
+    "slug": "neo-beta",
+    "name": "NEO Beta",
+    "manufacturer": "1X Technologies",
+    "country": "Norway",
+    "status": "prototype",
+    "height": "1.65m",
+    "weight": "30kg",
+    "dof": 32,
+    "payload": "5kg",
+    "battery": "3 hrs",
+    "actuatorType": "Electric",
+    "description": "NEO Beta is 1X Technologies' home-assistant humanoid, designed to be lightweight and safe for operation in proximity to humans. Unlike 1X's heavier EVE wheeled platform, NEO is fully bipedal and optimized for household tasks including object retrieval, light cleaning, and ambient assistance. NEO Beta is in limited home trials with early-access program participants in Scandinavia and the United States.",
+    "deploymentNotes": "1X is pursuing a slow, safety-first rollout with extensive home trial data collection before broader release. NEO Beta operates for extended periods with human supervisors present.",
+    "fundingTotal": "$125M",
+    "milestones": [
+      { "date": "2023-09", "event": "NEO unveiled at 1X Technologies HQ" },
+      { "date": "2024-01", "event": "$100M Series B closed" },
+      { "date": "2024-06", "event": "NEO Beta home trials begin" },
+      { "date": "2025-03", "event": "50-unit home trial fleet reached" }
+    ]
+  },
+  {
+    "slug": "apollo",
+    "name": "Apollo",
+    "manufacturer": "Apptronik",
+    "country": "USA",
+    "status": "pilot",
+    "height": "1.73m",
+    "weight": "73kg",
+    "dof": 32,
+    "payload": "25kg",
+    "battery": "4 hrs",
+    "actuatorType": "Electric",
+    "description": "Apollo is Apptronik's flagship commercial humanoid, built on actuator technology developed through a decade of NASA collaboration on Space Exploration Suits and the Valkyrie robot. The platform's modular design allows end-effector swaps for different task categories, from pallet handling to precision assembly. Following a $350M Series A led by Google in late 2024, Apptronik secured a 500-unit contract with a global automotive supplier in early 2026.",
+    "deploymentNotes": "Automotive pilot with Mercedes-Benz reported in 2024; undisclosed 500-unit contract announced January 2026. Apollo's NASA-heritage actuators provide exceptional force control fidelity.",
+    "fundingTotal": "$350M+",
+    "milestones": [
+      { "date": "2023-08", "event": "Apollo unveiled at ICRA 2023" },
+      { "date": "2024-01", "event": "Mercedes-Benz pilot announced" },
+      { "date": "2024-11", "event": "$350M Series A led by Google closed" },
+      { "date": "2026-01", "event": "500-unit automotive contract announced" }
+    ]
+  },
+  {
+    "slug": "h1",
+    "name": "H1",
+    "manufacturer": "Unitree Robotics",
+    "country": "China",
+    "status": "production",
+    "height": "1.80m",
+    "weight": "47kg",
+    "dof": 19,
+    "payload": "10kg",
+    "battery": "2 hrs",
+    "actuatorType": "Electric",
+    "description": "The Unitree H1 is the lowest-cost commercially available full-size humanoid robot at a base price of $16,000, an order of magnitude below Western competitors. The platform uses Unitree's proprietary M107 motors and achieves locomotion speeds up to 3.3 m/s, setting a bipedal speed record at launch. H1 is widely adopted in research institutions globally due to its price point and open SDK.",
+    "deploymentNotes": "Available for direct purchase globally; strong adoption in university research labs across the US, Europe, and China. Unitree reports hundreds of units shipped as of 2025.",
+    "milestones": [
+      { "date": "2023-12", "event": "H1 commercially launched at $16,000" },
+      { "date": "2024-02", "event": "3.3 m/s bipedal speed record set" },
+      { "date": "2024-06", "event": "100+ units shipped to research institutions" }
+    ]
+  },
+  {
+    "slug": "h1-pro",
+    "name": "H1 Pro",
+    "manufacturer": "Unitree Robotics",
+    "country": "China",
+    "status": "production",
+    "height": "1.80m",
+    "weight": "50kg",
+    "dof": 27,
+    "payload": "15kg",
+    "battery": "3 hrs",
+    "actuatorType": "Electric",
+    "description": "The H1 Pro is Unitree's enhanced variant of the H1, adding three-fingered dexterous hands and additional arm degrees of freedom to enable manipulation tasks beyond locomotion-only applications. At approximately $35,000, the H1 Pro competes directly with mid-tier research platforms from Boston Dynamics' Spot ecosystem while offering full bipedal mobility. The Pro variant ships with Unitree's upgraded Unitree SDK 2.0 featuring improved whole-body controller APIs.",
+    "deploymentNotes": "Targeted at research and light industrial proof-of-concept use cases. Several Chinese manufacturing companies have run internal pilots using H1 Pro for pick-and-place validation.",
+    "milestones": [
+      { "date": "2024-06", "event": "H1 Pro announced with dexterous hand upgrade" },
+      { "date": "2024-09", "event": "H1 Pro begins shipping" }
+    ]
+  },
+  {
+    "slug": "gr-1",
+    "name": "GR-1",
+    "manufacturer": "Fourier Intelligence",
+    "country": "China",
+    "status": "pilot",
+    "height": "1.64m",
+    "weight": "55kg",
+    "dof": 40,
+    "payload": "10kg",
+    "battery": "1 hr",
+    "actuatorType": "Electric",
+    "description": "The Fourier GR-1 draws on Fourier Intelligence's decade of experience building rehabilitation exoskeletons, leveraging mature actuator and motion control technology for its humanoid platform. With 40 degrees of freedom and a focus on natural gait, GR-1 is designed to operate alongside humans in healthcare, eldercare, and light industrial settings. Fourier has positioned GR-1 as an open research platform alongside its commercial ambitions.",
+    "deploymentNotes": "Research editions deployed with academic partners in China, Europe, and Singapore. Commercial pilot programs in eldercare facilities in China as of 2025.",
+    "milestones": [
+      { "date": "2023-08", "event": "GR-1 unveiled at World Artificial Intelligence Conference" },
+      { "date": "2024-01", "event": "Research edition begins shipping" },
+      { "date": "2024-09", "event": "GR2 announced as successor" }
+    ]
+  },
+  {
+    "slug": "4ne-1",
+    "name": "4NE-1",
+    "manufacturer": "NEURA Robotics",
+    "country": "Germany",
+    "status": "prototype",
+    "height": "1.75m",
+    "weight": "60kg",
+    "dof": 62,
+    "payload": "15kg",
+    "battery": "4 hrs",
+    "actuatorType": "Electric",
+    "description": "NEURA Robotics' 4NE-1 is Europe's most advanced humanoid prototype, engineered around a 'cognitive humanoid' philosophy that prioritizes multi-modal sensing and high-level reasoning over brute-force teleoperation. The platform integrates vision, touch, and proprioception across 62 degrees of freedom, with NEURA's proprietary cognitive AI layer handling task decomposition. German engineering rigor and compliance-first design position 4NE-1 for European industrial and collaborative settings.",
+    "deploymentNotes": "Advanced prototypes are operational at NEURA's Metzingen headquarters and with select automotive partners in Germany including undisclosed Tier-1 suppliers.",
+    "fundingTotal": "~$130M",
+    "milestones": [
+      { "date": "2023-04", "event": "4NE-1 first public demonstration" },
+      { "date": "2024-05", "event": "$80M Series B closed" },
+      { "date": "2025-01", "event": "Automotive pilot partner announced" }
+    ]
+  },
+  {
+    "slug": "astribot-s1",
+    "name": "Astribot S1",
+    "manufacturer": "Astribot",
+    "country": "China",
+    "status": "pilot",
+    "height": "1.70m",
+    "weight": "45kg",
+    "dof": 36,
+    "payload": "20kg",
+    "battery": "4 hrs",
+    "actuatorType": "Electric",
+    "description": "The Astribot S1 from Stardust Intelligence is notable for its exceptional arm speed — reaching 10 m/s end-effector velocity — and its demonstrated ability to perform high-speed household manipulation tasks including cooking, folding laundry, and calligraphy. The platform targets consumer and service applications rather than heavy industry, with a design aesthetic and capability set aimed at near-term home assistant commercialization. Astribot has backing from Tencent and is headquartered in Shenzhen.",
+    "deploymentNotes": "Pilot programs with hospitality and food service operators in China. Astribot is reportedly targeting a sub-$50,000 commercial price point for first production runs.",
+    "milestones": [
+      { "date": "2024-04", "event": "S1 unveiled with viral cooking demonstrations" },
+      { "date": "2024-08", "event": "Hospitality pilot programs initiated" }
+    ]
+  },
+  {
+    "slug": "cyberone",
+    "name": "CyberOne",
+    "manufacturer": "Xiaomi",
+    "country": "China",
+    "status": "prototype",
+    "height": "1.77m",
+    "weight": "52kg",
+    "dof": 21,
+    "payload": "3kg",
+    "battery": "1 hr",
+    "actuatorType": "Electric",
+    "description": "Xiaomi's CyberOne is a consumer-facing humanoid prototype designed primarily as a brand showcase rather than a near-term commercial product. With 21 degrees of freedom and emotion recognition capabilities, CyberOne demonstrates Xiaomi's ambitions to enter the humanoid space leveraging its consumer electronics manufacturing infrastructure. The platform's limited payload and battery life reflect its current prototype status, with Xiaomi citing 2025-2026 as the horizon for meaningful capability updates.",
+    "deploymentNotes": "CyberOne has appeared at Xiaomi product events and trade shows; no commercial deployment announced as of early 2026.",
+    "milestones": [
+      { "date": "2022-08", "event": "CyberOne unveiled at Xiaomi launch event" },
+      { "date": "2023-12", "event": "Improved prototype with enhanced locomotion shown" }
+    ]
+  },
+  {
+    "slug": "gr2",
+    "name": "GR2",
+    "manufacturer": "Fourier Intelligence",
+    "country": "China",
+    "status": "pilot",
+    "height": "1.64m",
+    "weight": "55kg",
+    "dof": 53,
+    "payload": "15kg",
+    "battery": "2 hrs",
+    "actuatorType": "Electric",
+    "description": "The GR2 is Fourier Intelligence's second-generation humanoid, substantially upgrading the GR-1's hand dexterity with a proprietary 12-DOF hand design and adding improved force sensing across all limbs. Fourier positioned GR2 as both a research platform and a pilot commercial product for eldercare and rehabilitation support, drawing on the company's clinical exoskeleton heritage. The platform ships with Fourier's open-source GRx robot operating framework.",
+    "deploymentNotes": "GR2 is in pilot deployment at eldercare facilities in Shanghai and Guangzhou. Research editions are available globally, with academic customers in the UK, US, and Australia.",
+    "milestones": [
+      { "date": "2024-09", "event": "GR2 announced at GITEX 2024" },
+      { "date": "2025-01", "event": "Research edition shipping begins" },
+      { "date": "2025-06", "event": "Eldercare pilot deployments initiated" }
+    ]
+  },
+  {
+    "slug": "tiangong",
+    "name": "Tiangong",
+    "manufacturer": "Beijing Humanoid Robot Innovation Center",
+    "country": "China",
+    "status": "pilot",
+    "height": "1.63m",
+    "weight": "43kg",
+    "dof": 27,
+    "payload": "10kg",
+    "battery": "3 hrs",
+    "actuatorType": "Electric",
+    "description": "Tiangong is the flagship humanoid from the Beijing Humanoid Robot Innovation Center (BHRIC), a state-backed entity established to accelerate China's humanoid robotics ecosystem. The platform is notable for being the first humanoid to complete a half-marathon in 2024, demonstrating its locomotion robustness over 21.1km. Tiangong represents China's national humanoid strategy, with BHRIC coordinating supply chain development across over 60 domestic component suppliers.",
+    "deploymentNotes": "Pilot deployments in state-owned manufacturing facilities in Beijing. BHRIC has announced plans to reach 1,000 units operational by end of 2025.",
+    "milestones": [
+      { "date": "2024-04", "event": "Tiangong unveiled by Beijing city government" },
+      { "date": "2024-05", "event": "Completes world's first humanoid half-marathon" },
+      { "date": "2024-11", "event": "Factory pilot deployment with state-owned enterprise" }
+    ]
+  },
+  {
+    "slug": "kepler-forerunner",
+    "name": "Kepler Forerunner",
+    "manufacturer": "Kepler",
+    "country": "China",
+    "status": "commercial",
+    "height": "1.80m",
+    "weight": "85kg",
+    "dof": 34,
+    "payload": "35kg",
+    "battery": "8 hrs",
+    "actuatorType": "Electric",
+    "description": "The Kepler Forerunner is a heavy-duty humanoid designed from the ground up for factory floor deployment, with an 35kg payload capacity and 8-hour battery life that substantially exceeds lighter-weight competitors. Kepler targets automotive stamping, welding assist, and materials handling tasks where payload and endurance matter more than dexterity. The company raised $100M in its 2024 Series A and is targeting mass production at its Jiangsu manufacturing facility.",
+    "deploymentNotes": "Commercial deployment with automotive and electronics manufacturing partners in Jiangsu and Guangdong provinces. Kepler reports 200+ units ordered as of early 2026.",
+    "fundingTotal": "$100M+",
+    "milestones": [
+      { "date": "2024-01", "event": "Forerunner unveiled at CES Asia" },
+      { "date": "2024-07", "event": "$100M Series A closed" },
+      { "date": "2025-03", "event": "Mass production begins at Jiangsu facility" }
+    ]
+  },
+  {
+    "slug": "agibot-a2",
+    "name": "AgiBot A2",
+    "manufacturer": "Agibot",
+    "country": "China",
+    "status": "pilot",
+    "height": "1.70m",
+    "weight": "55kg",
+    "dof": 39,
+    "payload": "20kg",
+    "battery": "4 hrs",
+    "actuatorType": "Electric",
+    "description": "Agibot's A2 is a full-size humanoid with particular strength in teleoperation-driven data collection, an area where Agibot has invested heavily to build proprietary manipulation datasets. The platform includes Agibot's novel FingerTip Force Sensor array providing sub-Newton tactile feedback across all finger surfaces. Backed by Chinese state funds and private investors, Agibot is scaling production at its Shanghai facility targeting light manufacturing and logistics applications.",
+    "deploymentNotes": "Pilot deployments with logistics operators and electronics assembly partners in the Yangtze River Delta region. Agibot is running one of China's largest teleoperation data collection programs using A2 as the primary collection platform.",
+    "milestones": [
+      { "date": "2024-03", "event": "A2 unveiled in Shanghai" },
+      { "date": "2024-08", "event": "Series A closes with state and private backing" },
+      { "date": "2025-01", "event": "Pilot deployments with logistics partners begin" }
+    ]
+  },
+  {
+    "slug": "clone-p1",
+    "name": "Clone P1",
+    "manufacturer": "Clone Robotics",
+    "country": "Poland",
+    "status": "r&d",
+    "height": "1.75m",
+    "weight": "65kg",
+    "dof": 206,
+    "payload": "10kg",
+    "battery": "2 hrs",
+    "actuatorType": "Tendon-driven",
+    "description": "Clone Robotics' P1 takes a radical approach to humanoid design: replicating human musculoskeletal architecture with 206 degrees of freedom driven by fluid-powered artificial muscles called Myofibers. The result is the most anatomically accurate robot hand ever built, capable of gestures and fine manipulation completely intractable for motor-and-gearbox designs. Clone is a bootstrapped Polish startup pursuing a vision of robots that are manufacturable at scale using biologically-inspired components rather than expensive precision hardware.",
+    "deploymentNotes": "No commercial deployment; R&D stage with an active crowdfunding and early-access community. Clone Robotics has published extensive open documentation and accepts reservations for developer units.",
+    "milestones": [
+      { "date": "2023-06", "event": "Myohand prototype demonstrated publicly" },
+      { "date": "2024-02", "event": "Full upper-body prototype shown" },
+      { "date": "2024-11", "event": "P1 full-body prototype revealed" }
+    ]
+  },
+  {
+    "slug": "walker-x",
+    "name": "Walker X",
+    "manufacturer": "UBTECH",
+    "country": "China",
+    "status": "pilot",
+    "height": "1.70m",
+    "weight": "63kg",
+    "dof": 41,
+    "payload": "10kg",
+    "battery": "2 hrs",
+    "actuatorType": "Electric",
+    "description": "UBTECH's Walker X is one of China's longest-developed humanoids, with the Walker program dating back to 2018. Walker X features 41 degrees of freedom including dexterous hands with force-torque sensing, and has been deployed in hotel lobby, retail, and exhibition contexts. UBTECH is one of the few humanoid companies that has sustained multi-year commercial deployment experience, with Walker X units operating in Bank of China branches and Hyundai showrooms.",
+    "deploymentNotes": "Deployed in hotel lobbies, bank branches, and automotive showrooms across China. Walker X has appeared at the Beijing Winter Olympics and World Expo. UBTECH is developing the Tiangong platform through the Beijing Humanoid Robot Innovation Center as a separate initiative.",
+    "milestones": [
+      { "date": "2021-09", "event": "Walker X unveiled at UBTECH World AI Conference" },
+      { "date": "2022-02", "event": "Walker X performs at Beijing Winter Olympics" },
+      { "date": "2023-01", "event": "Commercial deployments in bank branches begin" },
+      { "date": "2024-06", "event": "Hyundai showroom deployment announced" }
+    ]
+  }
+]

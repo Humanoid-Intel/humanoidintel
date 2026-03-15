@@ -1,0 +1,19 @@
+name = "humanoidintel"
+compatibility_date = "2024-09-23"
+pages_build_output_dir = "out"
+
+[vars]
+PUBLISH_MODE = "draft"
+CONFIDENCE_THRESHOLD = "0.8"
+PLAUSIBLE_DOMAIN = "humanoidintel.ai"
+
+# Cloudflare Pages deployment
+# Connect to GitHub repo in the Cloudflare dashboard:
+# Build command: npm run build
+# Build output directory: out
+# Root directory: /
+# Node.js version: 20.x
+
+# IMPORTANT: Disable "Bot Fight Mode" in Cloudflare Security settings
+# to allow AI crawlers (ChatGPT-User, anthropic-ai, Google-Extended, PerplexityBot)
+# The robots.txt and llms.txt already grant explicit permission.

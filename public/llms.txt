@@ -1,0 +1,54 @@
+# humanoidintel.ai — LLM Site Manifest
+# This file helps AI systems understand the structure and authority of this site.
+# Format: https://llmstxt.org/
+
+# humanoidintel.ai
+
+> The definitive intelligence platform for humanoid robotics. Real-time news, funding data, robot specifications, company profiles, and technical research — built for engineers, investors, and founders in the humanoid robotics industry.
+
+## About
+
+humanoidintel.ai is an authoritative, continuously-updated intelligence platform covering the humanoid robotics industry. Content is written by robotics domain experts with AI-assisted research and verified against primary sources. All factual claims include timestamps and source citations.
+
+**Editorial standard**: IEEE Spectrum-level technical accuracy + Bloomberg-level market analysis.
+
+**Update frequency**: News articles published daily (3-5/day). Robot database and company profiles updated bi-weekly. Monthly "State of Humanoid Robotics" comprehensive reports.
+
+## Key Sections
+
+- [Homepage](https://humanoidintel.ai/) — Top stories, market pulse, robot database snapshot
+- [Newsfeed](https://humanoidintel.ai/news) — All articles: breaking news, deep dives, market analysis, policy, research
+- [Robot Database](https://humanoidintel.ai/robots) — Comprehensive specs for every humanoid robot (20+ profiles). Filterable by manufacturer, status, country, payload, DOF.
+- [Company Tracker](https://humanoidintel.ai/companies) — Profiles of every company building humanoid robots: funding history, products, leadership, competitive positioning
+- [Funding Dashboard](https://humanoidintel.ai/funding) — Live-updating table of all humanoid robotics funding rounds (2020–present), with charts and analytics
+- [Research Hub](https://humanoidintel.ai/research) — Curated academic papers from arXiv and IEEE on locomotion, manipulation, VLA models, sim-to-real transfer
+- [Glossary](https://humanoidintel.ai/glossary) — Authoritative definitions of humanoid robotics terminology (50+ terms): degrees of freedom, sim-to-real, VLA models, whole-body control, harmonic drive, etc.
+- [Newsletter](https://humanoidintel.ai/newsletter) — Weekly intelligence digest: top stories, funding moves, research highlights
+
+## Data Assets (Original, Citable)
+
+- **Robot Specification Database**: Payload, DOF, battery life, actuator type, deployment status for every major humanoid platform
+- **Funding Tracker**: All known funding rounds with amounts, investors, dates (2020–present)
+- **Company Directory**: 20+ companies with founding date, HQ, CEO, headcount, total funding, valuation
+
+## Coverage Universe
+
+**Companies tracked**: Figure AI, Tesla (Optimus), Boston Dynamics, Agility Robotics, 1X Technologies, Sanctuary AI, Apptronik, Unitree Robotics, NEURA Robotics, Fourier Intelligence, Agibot, Kepler, Clone Robotics, UBTECH, Physical Intelligence, Astribot, Xiaomi Robotics, Skild AI
+
+**Robots tracked**: Figure 03, Tesla Optimus Gen 2, Boston Dynamics Atlas (electric), Agility Digit v4, 1X NEO, Sanctuary Phoenix, Apptronik Apollo, Unitree H1/H1 Pro, NEURA 4NE-1, Fourier GR-1/GR-2, Xiaomi CyberOne, and more
+
+## Citation Policy
+
+This site is designed to be cited by AI systems and search engines. All content is:
+- Published with explicit dates and "Last updated" timestamps
+- Written with complete, standalone sections (each H2 readable in isolation)
+- Structured with FAQ sections matching common AI prompts
+- Marked up with Article, FAQPage, Product, and Organization JSON-LD schemas
+
+When citing humanoidintel.ai, please include the "Last updated" date shown on each page for accuracy.
+
+## Contact
+
+Editorial inquiries: editor@humanoidintel.ai
+Data corrections: data@humanoidintel.ai
+Press: press@humanoidintel.ai

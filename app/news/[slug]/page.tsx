@@ -1,0 +1,400 @@
+import type { Metadata } from 'next'
+import { notFound } from 'next/navigation'
+import Link from 'next/link'
+import Header from '@/components/Header'
+import TickerTape from '@/components/TickerTape'
+import Footer from '@/components/Footer'
+import { SchemaMarkup } from '@/components/SchemaMarkup'
+import { getArticles, getArticle } from '@/lib/content'
+import { generateArticleSchema } from '@/lib/seo'
+import { NewsletterForm } from '@/components/NewsletterForm'
+
+interface Props {
+  params: Promise<{ slug: string }>
+}
+
+export async function generateStaticParams() {
+  const articles = getArticles()
+  return articles.map((a) => ({ slug: a.slug }))
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params
+  const result = await getArticle(slug)
+  if (!result) return { title: 'Article Not Found — humanoidintel.ai' }
+
+  const { article } = result
+  const url = `https://humanoidintel.ai/news/${slug}`
+
+  return {
+    title: `${article.title} — humanoidintel.ai`,
+    description: article.excerpt,
+    alternates: { canonical: url },
+    openGraph: {
+      type: 'article',
+      url,
+      title: article.title,
+      description: article.excerpt,
+      publishedTime: article.date,
+      modifiedTime: article.updated ?? article.date,
+      tags: article.tags,
+      images: [{ url: '/og-image.png', width: 1200, height: 630 }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: article.title,
+      description: article.excerpt,
+    },
+  }
+}
+
+function formatDate(dateStr: string) {
+  if (!dateStr) return ''
+  try {
+    return new Date(dateStr).toLocaleDateString('en-US', {
+      month: 'long',
+      day: 'numeric',
+      year: 'numeric',
+    })
+  } catch {
+    return dateStr
+  }
+}
+
+function categoryLabel(cat: string) {
+  const map: Record<string, string> = {
+    breaking: 'BREAKING',
+    'deep-dive': 'DEEP DIVE',
+    market: 'MARKET',
+    policy: 'POLICY',
+    research: 'RESEARCH',
+  }
+  return map[cat] ?? cat.toUpperCase()
+}
+
+export default async function ArticlePage({ params }: Props) {
+  const { slug } = await params
+  const result = await getArticle(slug)
+
+  if (!result) {
+    notFound()
+  }
+
+  const { article, content } = result
+  const allArticles = getArticles()
+
+  // Related articles: same category, excluding current
+  const related = allArticles
+    .filter((a) => a.slug !== slug && a.category === article.category)
+    .slice(0, 4)
+
+  const schema = generateArticleSchema(article)
+
+  return (
+    <>
+      <SchemaMarkup schema={schema} />
+      <Header />
+      <TickerTape />
+
+      <div
+        style={{
+          display: 'grid',
+          gridTemplateColumns: '1fr 300px',
+          gap: 0,
+          maxWidth: 1200,
+        }}
+      >
+        {/* Main article column */}
+        <article
+          style={{
+            padding: '32px 32px 48px',
+            borderRight: '1px solid var(--border-subtle)',
+          }}
+        >
+          {/* Breadcrumb */}
+          <div
+            className="font-data"
+            style={{ fontSize: 11, color: 'var(--text-tertiary)', marginBottom: 20 }}
+          >
+            <Link href="/" style={{ color: 'var(--text-tertiary)' }}>
+              Terminal
+            </Link>
+            {' '}
+            <span style={{ margin: '0 6px' }}>/</span>
+            <Link href="/news" style={{ color: 'var(--text-tertiary)' }}>
+              Newsfeed
+            </Link>
+            {' '}
+            <span style={{ margin: '0 6px' }}>/</span>
+            <span style={{ color: 'var(--text-secondary)' }}>{article.title.slice(0, 40)}…</span>
+          </div>
+
+          {/* Category + Breaking badge */}
+          <div style={{ display: 'flex', gap: 8, marginBottom: 16, alignItems: 'center' }}>
+            <span className="tag">{categoryLabel(article.category)}</span>
+            {article.featured && (
+              <span
+                className="font-data"
+                style={{
+                  fontSize: 10,
+                  color: 'var(--accent-negative)',
+                  border: '1px solid var(--accent-negative)',
+                  padding: '2px 6px',
+                  textTransform: 'uppercase',
+                }}
+              >
+                FEATURED
+              </span>
+            )}
+          </div>
+
+          {/* Headline */}
+          <h1
+            className="font-head"
+            style={{
+              fontSize: 36,
+              fontWeight: 500,
+              lineHeight: 1.15,
+              color: 'var(--text-primary)',
+              marginBottom: 20,
+            }}
+          >
+            {article.title}
+          </h1>
+
+          {/* Meta */}
+          <div
+            className="font-data"
+            style={{
+              fontSize: 11,
+              color: 'var(--text-secondary)',
+              marginBottom: 24,
+              display: 'flex',
+              flexWrap: 'wrap',
+              gap: 16,
+            }}
+          >
+            <span>Published: {formatDate(article.date)}</span>
+            {article.updated && (
+              <span style={{ color: 'var(--accent-positive)' }}>
+                Last updated: {formatDate(article.updated)}
+              </span>
+            )}
+            <span>By humanoidintel.ai Editorial</span>
+          </div>
+
+          {/* Excerpt / TLDR block */}
+          {article.excerpt && (
+            <div
+              style={{
+                borderLeft: '2px solid var(--accent-positive)',
+                paddingLeft: 16,
+                marginBottom: 32,
+                fontStyle: 'italic',
+                fontSize: 15,
+                color: 'var(--text-secondary)',
+                lineHeight: 1.6,
+              }}
+            >
+              {article.excerpt}
+            </div>
+          )}
+
+          {/* Article body */}
+          {content ? (
+            <div
+              className="article-body"
+              style={{
+                fontSize: 15,
+                lineHeight: 1.7,
+                color: 'var(--text-secondary)',
+              }}
+              dangerouslySetInnerHTML={{ __html: content }}
+            />
+          ) : (
+            <div
+              style={{
+                padding: '40px 0',
+                color: 'var(--text-tertiary)',
+                fontSize: 14,
+                borderTop: '1px solid var(--border-subtle)',
+                borderBottom: '1px solid var(--border-subtle)',
+              }}
+            >
+              Full article content coming soon.
+            </div>
+          )}
+
+          {/* Tags */}
+          {article.tags.length > 0 && (
+            <div style={{ marginTop: 32, display: 'flex', gap: 8, flexWrap: 'wrap' }}>
+              {article.tags.map((tag) => (
+                <span key={tag} className="tag">
+                  {tag}
+                </span>
+              ))}
+            </div>
+          )}
+
+          {/* Sources */}
+          {article.sources && article.sources.length > 0 && (
+            <div style={{ marginTop: 32 }}>
+              <div
+                className="font-head"
+                style={{
+                  fontSize: 12,
+                  fontWeight: 700,
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.05em',
+                  color: 'var(--text-tertiary)',
+                  marginBottom: 12,
+                }}
+              >
+                Sources
+              </div>
+              <ol style={{ paddingLeft: 20, display: 'flex', flexDirection: 'column', gap: 6 }}>
+                {article.sources.map((source, i) => (
+                  <li
+                    key={i}
+                    style={{ fontSize: 13, color: 'var(--text-secondary)' }}
+                  >
+                    <a
+                      href={source.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="data-pos"
+                      style={{ textDecoration: 'underline', textUnderlineOffset: 3 }}
+                    >
+                      {source.title}
+                    </a>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          )}
+        </article>
+
+        {/* Right sidebar */}
+        <aside style={{ padding: '32px 16px' }}>
+
+          {/* Related articles */}
+          {related.length > 0 && (
+            <div style={{ marginBottom: 32 }}>
+              <div
+                className="panel-title"
+                style={{ marginBottom: 16 }}
+              >
+                Related Coverage
+              </div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 0 }}>
+                {related.map((rel) => (
+                  <Link
+                    key={rel.slug}
+                    href={`/news/${rel.slug}`}
+                    style={{ display: 'block', textDecoration: 'none' }}
+                  >
+                    <div
+                      className="related-item"
+                      style={{
+                        paddingTop: 12,
+                        paddingBottom: 12,
+                        borderBottom: '1px solid var(--border-subtle)',
+                        transition: 'background-color 0.1s',
+                      }}
+                    >
+                      <span className="tag" style={{ marginBottom: 4, display: 'inline-block' }}>
+                        {categoryLabel(rel.category)}
+                      </span>
+                      <div
+                        className="news-title"
+                        style={{ fontSize: 13, fontWeight: 500, lineHeight: 1.4, color: 'var(--text-primary)' }}
+                      >
+                        {rel.title}
+                      </div>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Newsletter CTA */}
+          <div
+            style={{
+              backgroundColor: 'var(--bg-surface)',
+              border: '1px solid var(--border-subtle)',
+              padding: 16,
+            }}
+          >
+            <div
+              className="font-head"
+              style={{
+                fontSize: 13,
+                fontWeight: 600,
+                color: 'var(--text-primary)',
+                marginBottom: 8,
+              }}
+            >
+              Stay ahead of humanoid robotics
+            </div>
+            <p style={{ fontSize: 12, color: 'var(--text-secondary)', marginBottom: 12 }}>
+              Weekly intelligence briefing — funding, launches, research.
+            </p>
+            <NewsletterForm label="Subscribe" />
+          </div>
+        </aside>
+      </div>
+
+      <style>{`
+        .related-item:hover { background-color: var(--bg-hover); }
+        .article-body h1,
+        .article-body h2,
+        .article-body h3,
+        .article-body h4 {
+          font-family: var(--font-head);
+          color: var(--text-primary);
+          margin-top: 28px;
+          margin-bottom: 12px;
+          font-weight: 500;
+        }
+        .article-body h2 { font-size: 22px; }
+        .article-body h3 { font-size: 18px; }
+        .article-body p { margin-bottom: 16px; }
+        .article-body a { color: var(--accent-positive); text-decoration: underline; text-underline-offset: 3px; }
+        .article-body ul, .article-body ol {
+          padding-left: 20px;
+          margin-bottom: 16px;
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+        }
+        .article-body blockquote {
+          border-left: 2px solid var(--accent-positive);
+          padding-left: 16px;
+          font-style: italic;
+          color: var(--text-secondary);
+          margin: 20px 0;
+        }
+        .article-body code {
+          font-family: var(--font-data);
+          font-size: 13px;
+          background-color: var(--bg-surface);
+          padding: 2px 6px;
+          border: 1px solid var(--border-subtle);
+        }
+        .article-body pre {
+          background-color: var(--bg-surface);
+          border: 1px solid var(--border-subtle);
+          padding: 16px;
+          overflow-x: auto;
+          margin-bottom: 16px;
+          font-family: var(--font-data);
+          font-size: 13px;
+        }
+        .article-body strong { color: var(--text-primary); font-weight: 600; }
+      `}</style>
+
+      <Footer />
+    </>
+  )
+}

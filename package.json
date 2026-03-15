@@ -3,15 +3,25 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --port ${PORT:-3000}",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "agent": "npx tsx agent/index.ts",
+    "agent:watch": "node -e \"const r=()=>require('child_process').execSync('npx tsx agent/index.ts',{stdio:'inherit'});r();setInterval(r,3600000)\""
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.78.0",
+    "date-fns": "^4.1.0",
+    "feed": "^4.2.2",
+    "fuse.js": "^7.1.0",
+    "gray-matter": "^4.0.3",
     "next": "16.1.6",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-dom": "19.2.3",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1",
+    "tsx": "^4.21.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
