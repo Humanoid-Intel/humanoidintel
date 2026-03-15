@@ -18,6 +18,9 @@ dotenv({ path: resolve(__dirname, '../.env.local'), override: true })
 
 import { aggregateRSSFeeds } from './sources/rss'
 import { fetchArxivPapers } from './sources/arxiv'
+import { fetchGoogleNewsStories } from './sources/google-news'
+import { fetchYouTubeVideos } from './sources/youtube'
+import { fetchTwitterSignals } from './sources/twitter'
 import { deduplicateAndScore } from './pipeline/dedup'
 import { generateArticles } from './pipeline/writer'
 import { publishArticles } from './pipeline/publisher'
@@ -30,12 +33,15 @@ async function run() {
 
   // Phase 1: Collect stories from all sources
   console.log('\n--- Phase 1: Aggregation ---')
-  const [rssStories, arxivPapers] = await Promise.all([
+  const [rssStories, arxivPapers, googleNewsStories, youtubeVideos, twitterSignals] = await Promise.all([
     aggregateRSSFeeds(),
     fetchArxivPapers(10),
+    fetchGoogleNewsStories(),
+    fetchYouTubeVideos(),
+    fetchTwitterSignals(),
   ])
-  const allStories = [...rssStories, ...arxivPapers]
-  console.log(`[Agent] Total raw stories: ${allStories.length}`)
+  const allStories = [...rssStories, ...arxivPapers, ...googleNewsStories, ...youtubeVideos, ...twitterSignals]
+  console.log(`[Agent] Total raw stories: ${allStories.length} (RSS: ${rssStories.length} | arXiv: ${arxivPapers.length} | GoogleNews: ${googleNewsStories.length} | YouTube: ${youtubeVideos.length} | X: ${twitterSignals.length})`)
 
   // Phase 2: Deduplicate and score
   console.log('\n--- Phase 2: Deduplication & Scoring ---')

@@ -21,15 +21,37 @@ export const config = {
   },
 
   rssFeeds: [
-    'https://spectrum.ieee.org/feeds/topic/robotics.rss',       // IEEE Spectrum Robotics
-    'https://techcrunch.com/tag/robotics/feed/',                 // TechCrunch Robotics
-    'https://www.therobotreport.com/feed/',                      // The Robot Report
-    'https://www.theverge.com/rss/robotics/index.xml',           // The Verge Robotics
-    'https://arxiv.org/rss/cs.RO',                               // arXiv Robotics
-    'https://techcrunch.com/tag/boston-dynamics/feed/',          // Boston Dynamics news
-    'https://techcrunch.com/tag/figure/feed/',                   // Figure AI news
-    'https://techcrunch.com/tag/humanoid-robots/feed/',          // Humanoid robots tag
-    'https://www.newscientist.com/subject/robots/feed/',         // New Scientist Robots
+    // ── Tier 1: Dedicated robotics press ──────────────────────────────────
+    'https://spectrum.ieee.org/feeds/topic/robotics.rss',
+    'https://www.therobotreport.com/feed/',
+    'https://techcrunch.com/tag/robotics/feed/',
+    'https://techcrunch.com/tag/humanoid-robots/feed/',
+    'https://techcrunch.com/tag/boston-dynamics/feed/',
+    'https://techcrunch.com/tag/figure/feed/',
+    'https://www.theverge.com/rss/robotics/index.xml',
+    'https://venturebeat.com/category/ai/feed/',
+
+    // ── Tier 2: Company official blogs & newsrooms ────────────────────────
+    'https://bostondynamics.com/blog/feed/',                    // Boston Dynamics
+    'https://agilityrobotics.com/feed',                         // Agility Robotics
+    'https://www.figure.ai/news/rss',                           // Figure AI
+    'https://apptronik.com/news-collection?format=rss',         // Apptronik
+    'https://www.1x.tech/discover/rss',                         // 1X Technologies
+    'https://sanctuary.ai/news/feed',                           // Sanctuary AI
+    'https://neura-robotics.com/news/rss',                      // NEURA Robotics
+    'https://www.unitree.com/newsdetail/rss',                   // Unitree Robotics
+    'https://www.physicalintelligence.company/blog/rss',        // Physical Intelligence
+    'https://www.fourier.com/news/rss',                         // Fourier Intelligence
+    'https://agibot-world.com/news/rss',                        // Agibot
+
+    // ── Tier 3: Academic & research ───────────────────────────────────────
+    'https://arxiv.org/rss/cs.RO',
+    'https://arxiv.org/rss/cs.AI',
+    'https://rss.sciencedirect.com/publication/science/09218890', // Robotics & Autonomous Systems journal
+
+    // ── Tier 4: Financial & funding signals ───────────────────────────────
+    'https://news.crunchbase.com/tag/robotics/feed/',
+    'https://pitchbook.com/rss/news',
   ],
 
   // High-signal X/Twitter accounts for mention monitoring
