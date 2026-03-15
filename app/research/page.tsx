@@ -12,6 +12,17 @@ import type { ResearchPaper } from '@/lib/types'
 
 const RESEARCH_PAPERS: ResearchPaper[] = [
   {
+    id: 'psi0-2026',
+    title: 'Ψ₀: An Open Foundation Model Towards Universal Humanoid Loco-Manipulation',
+    authors: ['Songlin Wei', 'Hongyi Jing', 'Boqian Li', 'Zhenyu Zhao', 'Jiageng Mao', 'Zhenhao Ni', 'Marco Pavone', 'Di Huang', 'Yue Wang'],
+    institution: 'USC / Stanford / Tsinghua University',
+    date: '2026-03-12',
+    summary: 'A staged training approach that sidesteps the pitfalls of directly mixing human and robot data. Ψ₀ first pre-trains a VLM backbone on 800 hours of egocentric human manipulation video, then post-trains a flow-based action expert on just 30 hours of high-quality humanoid robot data. The complete ecosystem — training pipelines, model weights, and inference engines — is fully open-sourced.',
+    url: 'https://arxiv.org/abs/2603.12263',
+    keyFinding: 'Outperforms baselines trained on 10× more data by >40% task success rate. Staged human-to-robot transfer is dramatically more data-efficient than joint training.',
+    category: 'VLA Models',
+  },
+  {
     id: 'xhugwbc-2026',
     title: 'Scalable and General Whole-Body Control for Cross-Humanoid Locomotion (XHugWBC)',
     authors: ['Yufei Xue', 'Yunfeng Lin', 'Wentao Dong', 'Yang Tang', 'Jingbo Wang', 'Jiangmiao Pang', 'Ming Zhou', 'Minghuan Liu', 'Weinan Zhang'],
