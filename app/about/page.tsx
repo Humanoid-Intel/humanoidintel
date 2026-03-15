@@ -124,98 +124,96 @@ export default function AboutPage() {
           </p>
         </section>
 
-        {/* Author bio */}
+        {/* How it works */}
         <section style={{ padding: '32px 0', borderBottom: '1px solid var(--border-subtle)' }}>
-          <div className="panel-title" style={{ marginBottom: 20 }}>Editorial Team</div>
+          <div className="panel-title" style={{ marginBottom: 20 }}>How It Works</div>
 
-          <div
-            style={{
-              display: 'flex',
-              gap: 20,
-              alignItems: 'flex-start',
-              backgroundColor: 'var(--bg-surface)',
-              border: '1px solid var(--border-subtle)',
-              padding: 20,
-            }}
-          >
-            <div
-              style={{
-                width: 56,
-                height: 56,
-                backgroundColor: 'var(--bg-hover)',
-                border: '1px solid var(--border-strong)',
-                flexShrink: 0,
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                fontFamily: 'var(--font-head)',
-                fontSize: 20,
-                color: 'var(--text-secondary)',
-              }}
-            >
-              ET
-            </div>
-            <div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+            {[
+              {
+                step: '01',
+                title: 'Global Signal Aggregation',
+                desc: 'Our agent monitors 30+ RSS feeds spanning IEEE Spectrum, TechCrunch, The Robot Report, MIT Technology Review, Nikkei Asia, TechNode, and South China Morning Post — plus 80+ targeted Google News queries covering every major humanoid company across the US, China, Europe, and Asia. Runs every hour, around the clock.',
+              },
+              {
+                step: '02',
+                title: 'AI-Assisted Writing',
+                desc: 'Stories that pass our relevance scoring (freshness, significance, novelty) are drafted by Claude, Anthropic\'s frontier model. Each article synthesizes the source material into concise, factual intelligence — citing primary sources and flagging uncertainty where it exists.',
+              },
+              {
+                step: '03',
+                title: 'Automated Publishing',
+                desc: 'Qualifying articles are published directly to the site within the hour. The robot database, company profiles, funding dashboard, and research hub are maintained through a combination of primary sources, press releases, SEC filings, and academic papers.',
+              },
+            ].map((item) => (
               <div
-                className="font-head"
-                style={{ fontSize: 16, fontWeight: 600, color: 'var(--text-primary)', marginBottom: 4 }}
+                key={item.step}
+                style={{
+                  display: 'flex',
+                  gap: 20,
+                  backgroundColor: 'var(--bg-surface)',
+                  border: '1px solid var(--border-subtle)',
+                  padding: 20,
+                }}
               >
-                Dr. Elena Turing
+                <div
+                  className="font-data"
+                  style={{
+                    fontSize: 20,
+                    fontWeight: 700,
+                    color: 'var(--accent-positive)',
+                    flexShrink: 0,
+                    lineHeight: 1,
+                    paddingTop: 2,
+                  }}
+                >
+                  {item.step}
+                </div>
+                <div>
+                  <div
+                    className="font-head"
+                    style={{ fontSize: 14, fontWeight: 600, color: 'var(--text-primary)', marginBottom: 6 }}
+                  >
+                    {item.title}
+                  </div>
+                  <p style={{ fontSize: 13, color: 'var(--text-secondary)', lineHeight: 1.6 }}>
+                    {item.desc}
+                  </p>
+                </div>
               </div>
-              <div
-                className="font-data"
-                style={{ fontSize: 11, color: 'var(--text-secondary)', marginBottom: 10, textTransform: 'uppercase' }}
-              >
-                Senior Editor & Lead Analyst
-              </div>
-              <p style={{ fontSize: 13, color: 'var(--text-secondary)', lineHeight: 1.6 }}>
-                Dr. Turing holds a PhD in Robotics and AI from MIT and previously served as a
-                research scientist at CMU's Robotics Institute. She has 12 years of experience
-                covering the robotics industry, having contributed to IEEE Spectrum, MIT Technology
-                Review, and The Information. Her focus areas include bipedal locomotion, manipulation
-                systems, and humanoid robotics commercialization.
-              </p>
-            </div>
+            ))}
           </div>
         </section>
 
         {/* Contact */}
         <section style={{ padding: '32px 0', borderBottom: '1px solid var(--border-subtle)' }}>
-          <div className="panel-title" style={{ marginBottom: 16 }}>Contact & Press</div>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-            {[
-              { label: 'Editorial', value: 'editorial@humanoidintel.ai' },
-              { label: 'Press Inquiries', value: 'press@humanoidintel.ai' },
-              { label: 'Data Corrections', value: 'corrections@humanoidintel.ai' },
-              { label: 'Partnerships', value: 'partnerships@humanoidintel.ai' },
-            ].map((contact) => (
-              <div
-                key={contact.label}
-                style={{ display: 'flex', gap: 16, fontSize: 14 }}
-              >
-                <span
-                  className="font-data"
-                  style={{
-                    color: 'var(--text-tertiary)',
-                    fontSize: 11,
-                    textTransform: 'uppercase',
-                    width: 140,
-                    paddingTop: 2,
-                    flexShrink: 0,
-                  }}
-                >
-                  {contact.label}
-                </span>
-                <a
-                  href={`mailto:${contact.value}`}
-                  className="data-pos"
-                  style={{ fontSize: 14 }}
-                >
-                  {contact.value}
-                </a>
-              </div>
-            ))}
-          </div>
+          <div className="panel-title" style={{ marginBottom: 16 }}>Contact</div>
+          <p style={{ fontSize: 14, color: 'var(--text-secondary)', lineHeight: 1.7, marginBottom: 16 }}>
+            The fastest way to reach us is on X. We read every mention and DM.
+          </p>
+          <a
+            href="https://x.com/HumanoidIntelAI"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: 8,
+              backgroundColor: 'var(--bg-surface)',
+              border: '1px solid var(--border-subtle)',
+              padding: '10px 16px',
+              fontSize: 13,
+              color: 'var(--text-primary)',
+              fontFamily: 'var(--font-head)',
+              fontWeight: 600,
+              textDecoration: 'none',
+            }}
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.74l7.73-8.835L1.254 2.25H8.08l4.258 5.63 5.906-5.63zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+            @HumanoidIntelAI
+          </a>
         </section>
 
         <div style={{ paddingBottom: 48 }} />

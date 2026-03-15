@@ -1,0 +1,407 @@
+[
+  {
+    "slug": "agility-boston-dynamics-astm-humanoid-panel-2026",
+    "title": "Agility, Boston Dynamics Join ASTM Panel on Real Humanoid ROI",
+    "excerpt": "Industry leaders tackle deployment reality vs hype at March standards panel",
+    "category": "breaking",
+    "date": "2026-03-10T21:25:42Z",
+    "tags": [
+      "agility-robotics",
+      "boston-dynamics",
+      "astm",
+      "industrial-deployment"
+    ],
+    "companies": [
+      "Agility Robotics",
+      "Boston Dynamics",
+      "ASTM International"
+    ]
+  },
+  {
+    "slug": "agility-robotics-astm-humanoid-safety-standards-2026",
+    "title": "Agility and Boston Dynamics Push ASTM to Set Humanoid Safety Standards",
+    "excerpt": "Agility Robotics and Boston Dynamics have joined an ASTM International technical committee to develop the first formal safety standards for humanoid robots in commercial environments — a move that could shape the entire industry's regulatory trajectory.",
+    "category": "policy",
+    "date": "2026-03-12T16:00:00Z",
+    "tags": [
+      "safety",
+      "regulation",
+      "ASTM",
+      "standards",
+      "agility-robotics",
+      "boston-dynamics"
+    ],
+    "companies": [
+      "Agility Robotics",
+      "Boston Dynamics"
+    ]
+  },
+  {
+    "slug": "amc-robotics-hive-gpu-partnership-quadruped-security",
+    "title": "AMC Robotics Partners Hive GPU Cloud for Security Bot AI",
+    "excerpt": "AMC Robotics leverages Hive's sustainable GPU infrastructure to accelerate AI training for quadruped security applications",
+    "category": "breaking",
+    "date": "2026-03-15T18:00:00Z",
+    "tags": [
+      "amc-robotics",
+      "hive-digital",
+      "gpu-cloud",
+      "quadruped",
+      "security-robots"
+    ],
+    "companies": [
+      "AMC Robotics",
+      "Hive Digital Technologies"
+    ]
+  },
+  {
+    "slug": "apptronik-520m-series-a-extension-apollo-production",
+    "title": "Apptronik Raises $520M Extension for Apollo Humanoid Production",
+    "excerpt": "Austin-based Apptronik extends Series A to $935M total, marking largest humanoid robotics round as company scales Apollo production",
+    "category": "breaking",
+    "date": "2026-02-11T14:00:28Z",
+    "tags": [
+      "apptronik",
+      "funding",
+      "series-a",
+      "apollo",
+      "humanoid-production"
+    ],
+    "companies": [
+      "Apptronik"
+    ]
+  },
+  {
+    "slug": "bipedal-robot-dynamic-fall-recovery-breakthrough",
+    "title": "Bipedal Robot Achieves Dynamic Fall Recovery Breakthrough",
+    "excerpt": "New bipedal robot demonstrates unprecedented dynamic fall recovery capabilities in latest research breakthrough",
+    "category": "research",
+    "date": "2026-01-17T14:00:00Z",
+    "tags": [
+      "bipedal-locomotion",
+      "dynamic-balance",
+      "fall-recovery",
+      "kinetic-intelligent-machine-lab"
+    ],
+    "companies": [
+      "Kinetic Intelligent Machine LAB"
+    ]
+  },
+  {
+    "slug": "bmw-humanoid-robot-leipzig-plant-deployment",
+    "title": "BMW Deploys First Humanoid Robot at Leipzig Plant",
+    "excerpt": "BMW becomes first major automaker to deploy humanoid robots in production, marking industrial automation milestone",
+    "category": "breaking",
+    "date": "2026-03-09T18:30:00Z",
+    "tags": [
+      "bmw",
+      "manufacturing",
+      "deployment",
+      "automotive"
+    ],
+    "companies": [
+      "BMW Group"
+    ]
+  },
+  {
+    "slug": "boston-dynamics-ceo-robert-playter-steps-down-30-years",
+    "title": "Boston Dynamics CEO Robert Playter Steps Down After 30 Years",
+    "excerpt": "Playter's departure marks end of era for robotics pioneer after leading commercialization push",
+    "category": "breaking",
+    "date": "2026-02-10T22:00:00Z",
+    "tags": [
+      "boston-dynamics",
+      "leadership",
+      "ceo-transition",
+      "atlas",
+      "spot"
+    ],
+    "companies": [
+      "Boston Dynamics"
+    ]
+  },
+  {
+    "slug": "figure-ai-ceo-bloomberg-interview-general-purpose-robots",
+    "title": "Figure AI CEO Details Robot Strategy in Bloomberg Interview",
+    "excerpt": "Brett Adcock outlines Figure's path to commercializing humanoid robots for industrial applications",
+    "category": "breaking",
+    "date": "2025-01-15T10:30:00Z",
+    "tags": [
+      "figure-ai",
+      "brett-adcock",
+      "general-purpose-robots",
+      "funding"
+    ],
+    "companies": [
+      "Figure AI"
+    ]
+  },
+  {
+    "slug": "figure-ai-ceo-dodges-police-robot-sales-question",
+    "title": "Figure AI CEO Dodges Police Robot Sales Question",
+    "excerpt": "Brett Adcock sidesteps Marc Benioff's direct question about selling humanoid robots to law enforcement agencies",
+    "category": "breaking",
+    "date": "2025-10-15T07:00:00Z",
+    "tags": [
+      "figure-ai",
+      "public-safety",
+      "brett-adcock"
+    ],
+    "companies": [
+      "Figure AI",
+      "Salesforce"
+    ]
+  },
+  {
+    "slug": "figure-ai-hiring-rate-talent-shortage-170000-applications",
+    "title": "Figure AI's 0.3% Hire Rate Signals Intense Talent War",
+    "excerpt": "Figure AI's CEO reveals 170,000 job applications yielded fewer than 500 hires, highlighting humanoid robotics talent scarcity",
+    "category": "breaking",
+    "date": "2025-12-13T16:00:00Z",
+    "tags": [
+      "figure-ai",
+      "talent",
+      "hiring",
+      "workforce"
+    ],
+    "companies": [
+      "Figure AI"
+    ]
+  },
+  {
+    "slug": "galbot-rmb-2-5-billion-alibaba-meituan-series-b",
+    "title": "Galbot Raises RMB 2.5B in Alibaba-Led Round, Eyes Logistics Deployment",
+    "excerpt": "Galbot has closed one of China's largest humanoid funding rounds — RMB 2.5 billion (~$345M) — with Alibaba and Meituan co-leading, targeting deployment across China's vast e-commerce fulfillment infrastructure.",
+    "category": "market",
+    "date": "2026-02-28T08:00:00Z",
+    "tags": [
+      "funding",
+      "china",
+      "logistics",
+      "dexterous-manipulation",
+      "Series B"
+    ],
+    "companies": [
+      "Galbot"
+    ]
+  },
+  {
+    "slug": "honor-mwc-2026-humanoid-robot-consumer-announcement",
+    "title": "Honor Unveils Humanoid Robot Concept at MWC 2026, Targets Smart Home",
+    "excerpt": "Smartphone maker Honor used MWC Barcelona 2026 to unveil a humanoid robot concept designed for smart home integration, becoming the latest consumer electronics company to enter the humanoid space.",
+    "category": "breaking",
+    "date": "2026-03-03T10:00:00Z",
+    "tags": [
+      "honor",
+      "mwc",
+      "consumer",
+      "smart-home",
+      "china",
+      "announcement"
+    ],
+    "companies": []
+  },
+  {
+    "slug": "mind-robotics-rivian-ceo-rj-scaringe-humanoid-startup",
+    "title": "Rivian CEO RJ Scaringe Quietly Backs New Humanoid Startup Mind Robotics",
+    "excerpt": "Rivian CEO RJ Scaringe has made a personal seed investment in Mind Robotics, a stealth humanoid startup founded by former Tesla and Boston Dynamics engineers, according to sources familiar with the deal.",
+    "category": "breaking",
+    "date": "2026-03-11T14:00:00Z",
+    "tags": [
+      "startup",
+      "funding",
+      "automotive",
+      "leadership",
+      "new-entrant"
+    ],
+    "companies": []
+  },
+  {
+    "slug": "neura-robotics-1-billion-funding-tether",
+    "title": "Neura Robotics Raises €1B Led by Tether in Massive Round",
+    "excerpt": "German cognitive robotics startup secures massive €1B round from crypto giant Tether, signaling institutional crypto capital entering humanoids",
+    "category": "market",
+    "date": "2026-03-15T10:30:00Z",
+    "tags": [
+      "neura-robotics",
+      "funding",
+      "series-funding",
+      "tether",
+      "cognitive-robotics"
+    ],
+    "companies": [
+      "Neura Robotics",
+      "Tether"
+    ]
+  },
+  {
+    "slug": "osu-hurst-agility-robotics-2-5-billion-valuation",
+    "title": "OSU's Hurst Co-Founded $2.5B Humanoid Robot Company",
+    "excerpt": "OSU professor Jonathan Hurst co-founded Agility Robotics, now valued at $2.5 billion",
+    "category": "breaking",
+    "date": "2026-03-11T15:01:00Z",
+    "tags": [
+      "agility-robotics",
+      "jonathan-hurst",
+      "oregon-state",
+      "valuation",
+      "digit"
+    ],
+    "companies": [
+      "Agility Robotics"
+    ]
+  },
+  {
+    "slug": "phantom-mk1-combat-humanoid-robot-military-deployment",
+    "title": "Phantom MK1: The First Combat-Ready Humanoid Robot Enters Field Trials",
+    "excerpt": "The Phantom MK1, a bipedal combat humanoid developed for military applications, has entered field trials — marking the first documented deployment of a humanoid robot in a military operational environment.",
+    "category": "breaking",
+    "date": "2026-03-08T12:00:00Z",
+    "tags": [
+      "military",
+      "defense",
+      "combat-robot",
+      "field-trials",
+      "autonomous-systems"
+    ],
+    "companies": []
+  },
+  {
+    "slug": "qualcomm-iq10-neura-robotics-partnership-humanoid-processors",
+    "title": "Qualcomm IQ10 Powers Neura Robotics' Next-Gen Humanoids",
+    "excerpt": "Qualcomm's IQ10 chip will power Neura Robotics' next humanoid platform, marking chipmaker's serious robotics push",
+    "category": "breaking",
+    "date": "2026-03-09T16:30:00Z",
+    "tags": [
+      "qualcomm",
+      "neura-robotics",
+      "iq10-processor",
+      "partnerships"
+    ],
+    "companies": [
+      "Qualcomm",
+      "NEURA Robotics"
+    ]
+  },
+  {
+    "slug": "qualcomm-iq10-neura-robotics-partnership",
+    "title": "Qualcomm IQ10 Powers Neura's Next-Gen Humanoids",
+    "excerpt": "Qualcomm's new IQ10 processors will power Neura Robotics' next generation of humanoid robots",
+    "category": "breaking",
+    "date": "2026-03-09T16:30:00Z",
+    "tags": [
+      "qualcomm",
+      "neura-robotics",
+      "iq10",
+      "processors",
+      "partnership"
+    ],
+    "companies": [
+      "Qualcomm",
+      "Neura Robotics"
+    ]
+  },
+  {
+    "slug": "sunday-robotics-1-billion-unicorn-household-humanoid",
+    "title": "Sunday Robotics Hits $1.15B Valuation with Household Humanoid Push",
+    "excerpt": "Chinese humanoid startup Sunday Robotics has reached unicorn status with a $200M Series B valuing the company at $1.15B, pivoting from industrial to consumer and elderly care markets.",
+    "category": "market",
+    "date": "2026-03-10T09:00:00Z",
+    "tags": [
+      "funding",
+      "unicorn",
+      "household-robot",
+      "china",
+      "Series B"
+    ],
+    "companies": [
+      "Sunday Robotics"
+    ]
+  },
+  {
+    "slug": "tesla-optimus-times-square-public-demo-march-2026",
+    "title": "Tesla Optimus Walks Times Square in Surprise Public Appearance",
+    "excerpt": "Tesla staged a surprise public demonstration of Optimus Gen 3 in Times Square on Friday evening, drawing massive crowds and media attention — the first fully autonomous public-space humanoid demo from any major company.",
+    "category": "breaking",
+    "date": "2026-03-14T18:00:00Z",
+    "tags": [
+      "tesla",
+      "optimus",
+      "public-demo",
+      "new-york",
+      "elon-musk"
+    ],
+    "companies": [
+      "Tesla"
+    ]
+  },
+  {
+    "slug": "tether-generative-bionics-70m-series-a-funding",
+    "title": "Tether Backs Generative Bionics €70M Series A Round",
+    "excerpt": "Tether joins €70M Series A for Italian humanoid robotics startup Generative Bionics",
+    "category": "market",
+    "date": "2025-12-10T14:30:00Z",
+    "tags": [
+      "generative-bionics",
+      "tether",
+      "series-a",
+      "italy",
+      "funding"
+    ],
+    "companies": [
+      "Generative Bionics",
+      "Tether"
+    ]
+  },
+  {
+    "slug": "toyota-agility-robots-canadian-factory-deployment",
+    "title": "Toyota Deploys 7 Agility Robots in Canadian Auto Plant",
+    "excerpt": "Toyota becomes first major automaker to deploy humanoid robots in production, signaling automotive industry shift",
+    "category": "breaking",
+    "date": "2026-02-19T20:29:02Z",
+    "tags": [
+      "agility-robotics",
+      "toyota",
+      "automotive",
+      "deployment",
+      "digit"
+    ],
+    "companies": [
+      "Toyota",
+      "Agility Robotics"
+    ]
+  },
+  {
+    "slug": "westwood-themis-gen25-commercial-humanoid-mobile-manipulation",
+    "title": "Westwood THEMIS Gen2.5: First Commercial Humanoid for Mobile Manipulation",
+    "excerpt": "Westwood Robotics unveils THEMIS Gen2.5, claiming world's first commercial full-size humanoid for manipulation on the move",
+    "category": "breaking",
+    "date": "2026-01-30T19:00:00Z",
+    "tags": [
+      "westwood-robotics",
+      "themis",
+      "commercial-humanoid",
+      "mobile-manipulation"
+    ],
+    "companies": [
+      "Westwood Robotics"
+    ]
+  },
+  {
+    "slug": "xiaomi-humanoid-robot-factory-trial-cyberone-successor",
+    "title": "Xiaomi Runs Factory Trials for Next-Gen Humanoid, Eyes 2027 Production",
+    "excerpt": "Xiaomi has begun supervised factory trials of a next-generation humanoid robot at its Beijing smart factory, with sources indicating a target for limited production-line deployment by 2027.",
+    "category": "breaking",
+    "date": "2026-03-12T07:30:00Z",
+    "tags": [
+      "xiaomi",
+      "china",
+      "factory",
+      "manufacturing",
+      "cyberone"
+    ],
+    "companies": [
+      "Xiaomi"
+    ]
+  }
+]

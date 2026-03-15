@@ -2,7 +2,8 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import SearchModal from './SearchModal'
 
 const navLinks = [
   { label: 'Terminal', href: '/' },
@@ -17,6 +18,19 @@ const navLinks = [
 export default function Header() {
   const pathname = usePathname()
   const [mobileOpen, setMobileOpen] = useState(false)
+  const [searchOpen, setSearchOpen] = useState(false)
+
+  // ⌘K / Ctrl+K to open search
+  useEffect(() => {
+    const handler = (e: KeyboardEvent) => {
+      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+        e.preventDefault()
+        setSearchOpen((prev) => !prev)
+      }
+    }
+    window.addEventListener('keydown', handler)
+    return () => window.removeEventListener('keydown', handler)
+  }, [])
 
   const isActive = (href: string) => {
     if (href === '/') return pathname === '/'
@@ -24,6 +38,8 @@ export default function Header() {
   }
 
   return (
+    <>
+    <SearchModal isOpen={searchOpen} onClose={() => setSearchOpen(false)} />
     <header
       style={{
         backgroundColor: 'var(--bg-panel)',
@@ -112,6 +128,7 @@ export default function Header() {
           {/* Search button */}
           <button
             type="button"
+            onClick={() => setSearchOpen(true)}
             style={{
               fontFamily: 'var(--font-data)',
               fontSize: 11,
@@ -202,5 +219,6 @@ export default function Header() {
         </nav>
       )}
     </header>
+    </>
   )
 }

@@ -334,5 +334,101 @@
     "date": "2025-11-03",
     "geography": "Germany",
     "notes": "Landmark round featuring all three major German automotive OEMs as investors, validating NEURA's industrial humanoid thesis and providing manufacturing deployment pathways. NEURA becomes Europe's first humanoid unicorn."
+  },
+  {
+    "id": "fr-029",
+    "company": "Apptronik",
+    "companySlug": "apptronik",
+    "round": "Series A Extension",
+    "amount": "$520M",
+    "valuation": "~$2.5B",
+    "leadInvestors": ["General Atlantic", "Google"],
+    "date": "2026-02-11",
+    "geography": "USA",
+    "notes": "Massive extension to Apptronik's Series A brings total raised to over $870M. The round is earmarked for Apollo production scale-up at their Austin, Texas facility and expansion of commercial deployment programs with GXO Logistics, Mercedes-Benz, and other enterprise partners."
+  },
+  {
+    "id": "fr-030",
+    "company": "NEURA Robotics",
+    "companySlug": "neura-robotics",
+    "round": "Series D",
+    "amount": "€1B (~$1.08B)",
+    "valuation": "~$4B",
+    "leadInvestors": ["Tether", "SoftBank Vision Fund 2"],
+    "date": "2026-03-15",
+    "geography": "Germany",
+    "notes": "Europe's largest-ever humanoid robotics funding round, led by crypto infrastructure giant Tether making its first major robotics bet. The round propels NEURA to a ~$4B valuation and funds mass production of the MAiRA and 4NE-1 cognitive humanoids at a new Reutlingen mega-factory. CEO David Reger cites 'the convergence of cognitive AI and physical embodiment' as the defining investment thesis."
+  },
+  {
+    "id": "fr-031",
+    "company": "Galbot",
+    "companySlug": "galbot",
+    "round": "Series B",
+    "amount": "RMB 2.5B (~$345M)",
+    "valuation": "~$1.5B",
+    "leadInvestors": ["Alibaba", "Meituan", "Sequoia China"],
+    "date": "2026-02-28",
+    "geography": "China",
+    "notes": "One of the largest humanoid raises in China's history, anchored by two of the country's most powerful tech platforms. Alibaba's participation opens doors to deployment across its vast logistics network, while Meituan integration could enable last-mile delivery applications. Galbot's full-body dexterous manipulation technology is the primary investor draw."
+  },
+  {
+    "id": "fr-032",
+    "company": "Sunday Robotics",
+    "companySlug": "sunday-robot",
+    "round": "Series B",
+    "amount": "$200M",
+    "valuation": "$1.15B",
+    "leadInvestors": ["Hillhouse Capital", "GGV Capital"],
+    "date": "2026-03-10",
+    "geography": "China",
+    "notes": "Sunday achieves unicorn status with its Series B, reaching a $1.15B valuation on the strength of its household humanoid assistant product. The company has pivoted from pure-industrial to consumer-plus-commercial, targeting the home care and elderly assistance markets in Japan, South Korea, and China. Hillhouse's lead reflects conviction that the consumer humanoid market will outpace industrial deployment by 2028."
+  },
+  {
+    "id": "fr-033",
+    "company": "Physical Intelligence (π)",
+    "companySlug": "physical-intelligence",
+    "round": "Series B",
+    "amount": "$500M",
+    "valuation": "~$5B",
+    "leadInvestors": ["Sequoia Capital", "Google", "Amazon"],
+    "date": "2025-11-18",
+    "geography": "USA",
+    "notes": "PI's Series B cements its status as the leading foundation model company for robotics. The round values the company at $5B despite still being pre-revenue, reflecting investor conviction in the π0 and π0.5 models as the operating system for the coming wave of commercial humanoids. Google and Amazon's co-investment signals a platform competition for who supplies the AI 'brain' to hardware makers."
+  },
+  {
+    "id": "fr-034",
+    "company": "1X Technologies",
+    "companySlug": "1x-technologies",
+    "round": "Series C",
+    "amount": "$125M",
+    "valuation": "~$800M",
+    "leadInvestors": ["Samsung Venture Investment", "Otovo"],
+    "date": "2025-08-14",
+    "geography": "Norway",
+    "notes": "Samsung's lead investment reflects South Korean strategic interest in humanoid platforms as a potential future product category. The round funds scale-up of the NEO Beta home humanoid trial program to 500 households across Norway, the US, and Japan — the largest real-world home humanoid deployment to date."
+  },
+  {
+    "id": "fr-035",
+    "company": "Unitree Robotics",
+    "companySlug": "unitree-robotics",
+    "round": "Series C",
+    "amount": "$200M",
+    "valuation": "~$2B",
+    "leadInvestors": ["Tencent", "Baidu", "Shenzhen Government Fund"],
+    "date": "2025-10-22",
+    "geography": "China",
+    "notes": "Unitree's Series C double its valuation, driven by exceptional revenue from the G1 and H1 humanoid platforms. The company shipped over 3,000 robots in 2025 — more than any other humanoid manufacturer globally — making it the first humanoid robotics company to reach meaningful commercial scale."
+  },
+  {
+    "id": "fr-036",
+    "company": "Figure AI",
+    "companySlug": "figure-ai",
+    "round": "Series D",
+    "amount": "$675M",
+    "valuation": "~$10B",
+    "leadInvestors": ["Microsoft", "Nvidia"],
+    "date": "2025-09-30",
+    "geography": "USA",
+    "notes": "Figure's Series D comes on the heels of confirming 100+ Figure 02 units deployed at BMW Spartanburg. Microsoft deepens its investment to secure Figure as a preferred Azure and Azure AI customer, while Nvidia's participation reflects the company's continued push to become the dominant compute platform for humanoid inference."
   }
 ]
