@@ -41,6 +41,20 @@ const QUERIES = [
   'humanoid robot factory deployment',
   'bipedal robot breakthrough',
   'humanoid robot CEO interview',
+  // Key people — catches news articles covering their X posts and announcements
+  '"Brett Adcock" robot',
+  '"Jim Fan" humanoid robot',
+  '"Jensen Huang" robot GR00T',
+  '"Elon Musk" Optimus robot',
+  '"Chelsea Finn" robot manipulation',
+  '"Robert Playter" robot',
+  // Emerging companies & topics
+  '"Moonshot AI" humanoid',
+  '"HEBI Robotics" humanoid',
+  '"Wandercraft" humanoid',
+  '"Halodi Robotics" humanoid',
+  'humanoid robot China 2026',
+  'robot foundation model 2026',
 ]
 
 async function fetchGoogleNewsQuery(query: string): Promise<RawStory[]> {

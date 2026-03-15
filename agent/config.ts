@@ -31,18 +31,10 @@ export const config = {
     'https://www.theverge.com/rss/robotics/index.xml',
     'https://venturebeat.com/category/ai/feed/',
 
-    // ── Tier 2: Company official blogs & newsrooms ────────────────────────
-    'https://bostondynamics.com/blog/feed/',                    // Boston Dynamics
-    'https://agilityrobotics.com/feed',                         // Agility Robotics
-    'https://www.figure.ai/news/rss',                           // Figure AI
-    'https://apptronik.com/news-collection?format=rss',         // Apptronik
-    'https://www.1x.tech/discover/rss',                         // 1X Technologies
-    'https://sanctuary.ai/news/feed',                           // Sanctuary AI
+    // ── Tier 2: Industry news (company-specific via Google News — see sources/google-news.ts)
+    // Most company blogs don't publish RSS. Coverage via Google News queries instead.
+    // Working exceptions:
     'https://neura-robotics.com/news/rss',                      // NEURA Robotics
-    'https://www.unitree.com/newsdetail/rss',                   // Unitree Robotics
-    'https://www.physicalintelligence.company/blog/rss',        // Physical Intelligence
-    'https://www.fourier.com/news/rss',                         // Fourier Intelligence
-    'https://agibot-world.com/news/rss',                        // Agibot
 
     // ── Tier 3: Academic & research ───────────────────────────────────────
     'https://arxiv.org/rss/cs.RO',
@@ -51,7 +43,8 @@ export const config = {
 
     // ── Tier 4: Financial & funding signals ───────────────────────────────
     'https://news.crunchbase.com/tag/robotics/feed/',
-    'https://pitchbook.com/rss/news',
+    // PR wire services — broad but scoring filters to robotics
+    'https://www.globenewswire.com/RssFeed/subjectCode/16-Robotics', // GlobeNewswire robotics
   ],
 
   // High-signal X/Twitter accounts for mention monitoring
