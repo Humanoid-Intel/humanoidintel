@@ -17,7 +17,7 @@ export const config = {
     publishMode: (process.env.PUBLISH_MODE as 'draft' | 'auto' | 'full') || 'draft',
     confidenceThreshold: parseFloat(process.env.CONFIDENCE_THRESHOLD || '0.8'),
     runIntervalMinutes: 60,
-    maxArticlesPerRun: 5,
+    maxArticlesPerRun: 10,
   },
 
   rssFeeds: [
