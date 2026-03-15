@@ -98,7 +98,15 @@ export async function getArticle(
 
 export function getFeaturedArticle(): Article | null {
   const articles = getArticles()
-  return articles.find((a) => a.featured === true) ?? null
+  if (articles.length === 0) return null
+  // Prefer an explicitly featured article published within the last 7 days
+  const recentFeatured = articles.find((a) => {
+    if (!a.featured) return false
+    const ageMs = Date.now() - new Date(a.date).getTime()
+    return ageMs < 7 * 24 * 60 * 60 * 1000
+  })
+  // Fall back to the most recently published article
+  return recentFeatured ?? articles[0]
 }
 
 // ---------------------------------------------------------------------------

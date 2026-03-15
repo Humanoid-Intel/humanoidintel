@@ -54,6 +54,11 @@ function scoreStory(story: RawStory): number {
   // Hard gate — must be robotics-related
   if (!isRoboticsRelevant(story)) return 0
 
+  // Hard age gate — only process stories from the last 14 days
+  const ageMs = Date.now() - story.publishedAt.getTime()
+  const ageDays = ageMs / (1000 * 60 * 60 * 24)
+  if (ageDays > 14) return 0
+
   // Content type scoring
   if (/raises?|funding|series [abcde]|investment|million|billion|\$\d/.test(text)) {
     score += config.scoring.fundingRound
@@ -82,11 +87,12 @@ function scoreStory(story: RawStory): number {
     score += 15
   }
 
-  // Time decay bonus
-  const ageMs = Date.now() - story.publishedAt.getTime()
+  // Freshness bonus — heavily reward today's and this week's stories
   const ageHours = ageMs / (1000 * 60 * 60)
-  if (ageHours < 24) score += config.scoring.timeDecay24h
-  else if (ageHours < 48) score += config.scoring.timeDecay48h
+  if (ageHours < 6) score += 30       // last 6 hours: big boost
+  else if (ageHours < 24) score += 20  // today: strong boost
+  else if (ageHours < 48) score += 10  // yesterday: moderate boost
+  else if (ageDays < 7) score += 5     // this week: small boost
 
   return Math.min(100, score)
 }
