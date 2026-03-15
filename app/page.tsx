@@ -236,12 +236,6 @@ export default function HomePage() {
           .slice(0, 5)
       : placeholderRobots
 
-  const today = new Date().toLocaleDateString('en-US', {
-    month: 'long',
-    day: 'numeric',
-    year: 'numeric',
-  })
-
   return (
     <>
       <style>{`
@@ -285,7 +279,7 @@ export default function HomePage() {
               >
                 <span>TOP STORY</span>
                 <span style={{ color: 'var(--border-strong)' }}>//</span>
-                <span>{today}</span>
+                <span>{formatDate(featured.date)}</span>
                 <span style={{ color: 'var(--border-strong)' }}>//</span>
                 <span>By humanoidintel.ai</span>
                 <span className="tag" style={{ marginLeft: 4 }}>
