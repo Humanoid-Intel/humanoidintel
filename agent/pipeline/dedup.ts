@@ -40,9 +40,19 @@ export interface ScoredStory extends RawStory {
   detectedCompanies: string[]
 }
 
+const ROBOTICS_REQUIRED = /humanoid|bipedal|robot|robotics|figure ai|optimus|digit|atlas|phoenix|apollo|neo beta|unitree|boston dynamics|agility|apptronik|sanctuary|1x technologies|neura|fourier|agibot|kepler|physical intelligence|clone robotics|actuator|locomotion|manipulation|exoskeleton|legged|quadruped|end.effector|sim.to.real|whole.body/i
+
+function isRoboticsRelevant(story: RawStory): boolean {
+  const text = `${story.title} ${story.summary}`
+  return ROBOTICS_REQUIRED.test(text)
+}
+
 function scoreStory(story: RawStory): number {
   const text = `${story.title} ${story.summary}`.toLowerCase()
   let score = 0
+
+  // Hard gate — must be robotics-related
+  if (!isRoboticsRelevant(story)) return 0
 
   // Content type scoring
   if (/raises?|funding|series [abcde]|investment|million|billion|\$\d/.test(text)) {
@@ -57,11 +67,13 @@ function scoreStory(story: RawStory): number {
     score += config.scoring.researchPaper
   } else if (/opinion|analysis|commentary|perspective|why|how/.test(text)) {
     score += config.scoring.opinionCommentary
+  } else {
+    score += 40 // base score for any robotics news
   }
 
-  // Humanoid relevance boost
+  // Humanoid-specific boost
   if (/humanoid|bipedal|figure ai|optimus|digit|atlas|phoenix|apollo|neo beta/.test(text)) {
-    score += 20
+    score += 25
   }
 
   // Tracked company boost

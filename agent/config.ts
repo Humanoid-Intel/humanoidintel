@@ -2,6 +2,9 @@
  * humanoidintel.ai Agent Configuration
  * Central config for all source URLs, API keys, thresholds, and agent behavior
  */
+import { config as loadEnv } from 'dotenv'
+import { resolve } from 'path'
+loadEnv({ path: resolve(__dirname, '../.env.local'), override: true })
 
 export const config = {
   site: {
@@ -18,13 +21,15 @@ export const config = {
   },
 
   rssFeeds: [
-    'https://spectrum.ieee.org/feeds/topic/robotics.rss',
-    'https://techcrunch.com/tag/robotics/feed/',
-    'https://www.therobotreport.com/feed/',
-    'https://www.theverge.com/rss/robotics/index.xml',
-    'https://arxiv.org/rss/cs.RO',
-    'https://blog.google/technology/ai/rss/',
-    'https://feeds.feedburner.com/venturebeat/SZYF', // VentureBeat AI
+    'https://spectrum.ieee.org/feeds/topic/robotics.rss',       // IEEE Spectrum Robotics
+    'https://techcrunch.com/tag/robotics/feed/',                 // TechCrunch Robotics
+    'https://www.therobotreport.com/feed/',                      // The Robot Report
+    'https://www.theverge.com/rss/robotics/index.xml',           // The Verge Robotics
+    'https://arxiv.org/rss/cs.RO',                               // arXiv Robotics
+    'https://techcrunch.com/tag/boston-dynamics/feed/',          // Boston Dynamics news
+    'https://techcrunch.com/tag/figure/feed/',                   // Figure AI news
+    'https://techcrunch.com/tag/humanoid-robots/feed/',          // Humanoid robots tag
+    'https://www.newscientist.com/subject/robots/feed/',         // New Scientist Robots
   ],
 
   // High-signal X/Twitter accounts for mention monitoring

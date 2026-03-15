@@ -1,4 +1,8 @@
 #!/usr/bin/env tsx
+import { config as dotenv } from 'dotenv'
+import { resolve } from 'path'
+dotenv({ path: resolve(__dirname, '../.env.local'), override: true })
+
 /**
  * humanoidintel.ai — Autonomous Content Agent
  *
