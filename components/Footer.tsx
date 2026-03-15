@@ -201,13 +201,20 @@ export default function Footer() {
           <span>© 2026 humanoidintel.ai</span>
           <span>Built for the intelligence age</span>
         </div>
-        <div style={{ display: 'flex', gap: 16 }}>
-          <Link href="/about" style={{ color: 'var(--text-tertiary)' }}>
-            About
-          </Link>
-          <Link href="/privacy" style={{ color: 'var(--text-tertiary)' }}>
-            Privacy
-          </Link>
+        <div style={{ display: 'flex', gap: 16, alignItems: 'center' }}>
+          <Link href="/about" style={{ color: 'var(--text-tertiary)' }}>About</Link>
+          <Link href="/privacy" style={{ color: 'var(--text-tertiary)' }}>Privacy</Link>
+          <a
+            href="https://x.com/HumanoidIntelAI"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Follow @HumanoidIntelAI on X"
+            style={{ color: 'var(--text-tertiary)', display: 'flex', alignItems: 'center' }}
+          >
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.74l7.73-8.835L1.254 2.25H8.08l4.258 5.63 5.906-5.63zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
         </div>
       </div>
     </footer>
