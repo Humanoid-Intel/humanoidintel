@@ -24,10 +24,17 @@ export const config = {
     // ── Tier 1: Dedicated robotics press ──────────────────────────────────
     'https://spectrum.ieee.org/feeds/topic/robotics.rss',
     'https://www.therobotreport.com/feed/',
+    // TechCrunch — topic & company tags (high signal, fast publishing, strong humanoid coverage)
     'https://techcrunch.com/tag/robotics/feed/',
     'https://techcrunch.com/tag/humanoid-robots/feed/',
     'https://techcrunch.com/tag/boston-dynamics/feed/',
     'https://techcrunch.com/tag/figure/feed/',
+    'https://techcrunch.com/tag/nvidia/feed/',              // TC/Nvidia — critical during GTC + ongoing
+    'https://techcrunch.com/tag/physical-intelligence/feed/', // PI π0 model news
+    'https://techcrunch.com/tag/agility-robotics/feed/',    // Digit / Amazon deployments
+    'https://techcrunch.com/tag/apptronik/feed/',           // Apollo / Google DeepMind news
+    'https://techcrunch.com/tag/1x-technologies/feed/',     // NEO home robot
+    'https://techcrunch.com/tag/skild/feed/',               // Skild Brain funding/partnerships
     'https://www.theverge.com/rss/robotics/index.xml',
     'https://venturebeat.com/category/ai/feed/',
     'https://newatlas.com/robotics/feed/',                        // New Atlas robotics
