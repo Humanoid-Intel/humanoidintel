@@ -36,6 +36,7 @@ const COMPANY_TICKERS: Array<{
   { symbol: 'SANC.AI',   label: 'Phoenix',     companyNames: ['sanctuary ai', 'sanctuary'],      defaultStatus: '+$90M.SeriesD', defaultPositive: true },
   { symbol: '1X.TECH',   label: 'NEO',         companyNames: ['1x technologies', '1x'],          defaultStatus: '+$125M.SerC',   defaultPositive: true },
   { symbol: 'MIND.ROB',  label: 'Stealth',     companyNames: ['mind robotics', 'rivian'],        defaultStatus: '+Founded.2026', defaultPositive: true },
+  { symbol: 'CLN.ROB',   label: 'Alpha',       companyNames: ['clone robotics'],                 defaultStatus: '+279.Alpha.26', defaultPositive: true },
 ]
 
 function compressTitle(title: string, company: string): { status: string; positive: boolean } {

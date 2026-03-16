@@ -72,6 +72,12 @@
     "positive": true
   },
   {
+    "symbol": "CLN.ROB",
+    "label": "Alpha",
+    "status": "+Public.Demo",
+    "positive": true
+  },
+  {
     "symbol": "FUND.YTD",
     "label": "2026",
     "status": "$3.6B.2026",

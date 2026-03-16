@@ -375,7 +375,7 @@
   },
   {
     "slug": "clone-p1",
-    "name": "Clone P1",
+    "name": "Protoclone V1",
     "manufacturer": "Clone Robotics",
     "country": "Poland",
     "status": "r&d",
@@ -384,13 +384,35 @@
     "dof": 206,
     "payload": "10kg",
     "battery": "2 hrs",
-    "actuatorType": "Tendon-driven",
-    "description": "Clone Robotics' P1 takes a radical approach to humanoid design: replicating human musculoskeletal architecture with 206 degrees of freedom driven by fluid-powered artificial muscles called Myofibers. The result is the most anatomically accurate robot hand ever built, capable of gestures and fine manipulation completely intractable for motor-and-gearbox designs. Clone is a bootstrapped Polish startup pursuing a vision of robots that are manufacturable at scale using biologically-inspired components rather than expensive precision hardware.",
-    "deploymentNotes": "No commercial deployment; R&D stage with an active crowdfunding and early-access community. Clone Robotics has published extensive open documentation and accepts reservations for developer units.",
+    "actuatorType": "Pneumatic/Hydraulic (Myofiber)",
+    "description": "Clone Robotics' Protoclone V1 is the most anatomically faithful humanoid ever built: 206 degrees of freedom, 1,000 fluid-powered Myofiber artificial muscles, 500 sensors, and 3D-printed polymer bones replicating human musculoskeletal structure. A 40-second video released in February 2025 showing the suspended robot making dynamic, eerily human-like movements went viral instantly, propelling Clone into mainstream consciousness. Currently pneumatic (with a planned shift to hydraulics), the platform is not yet capable of independent locomotion — it operates suspended — but its bimanual dexterity and fine manipulation represent a capability curve fundamentally different from motor-gearbox designs.",
+    "deploymentNotes": "R&D stage. Protoclone V1 operates suspended, not yet self-balancing or walking. Clone publishes open documentation and accepts developer-unit reservations. Successor Clone Alpha (consumer product) is in pre-order phase.",
     "milestones": [
-      { "date": "2023-06", "event": "Myohand prototype demonstrated publicly" },
+      { "date": "2023-06", "event": "Myohand prototype demonstrated publicly — viral anthropomorphic hand teleoperated via sensor glove" },
       { "date": "2024-02", "event": "Full upper-body prototype shown" },
-      { "date": "2024-11", "event": "P1 full-body prototype revealed" }
+      { "date": "2024-11", "event": "Full-body prototype revealed with complete musculoskeletal assembly" },
+      { "date": "2025-02", "event": "Protoclone V1 viral video — 1,000 Myofibers, 500 sensors, sweating cooling system; millions of views" },
+      { "date": "2025-04", "event": "Named 'most anatomically accurate android yet' across major robotics publications" }
+    ]
+  },
+  {
+    "slug": "clone-alpha",
+    "name": "Clone Alpha",
+    "manufacturer": "Clone Robotics",
+    "country": "Poland",
+    "status": "pre-order",
+    "height": "1.75m",
+    "weight": "65kg",
+    "dof": 206,
+    "payload": "5kg",
+    "battery": "TBD",
+    "actuatorType": "Pneumatic/Hydraulic (Myofiber)",
+    "description": "Clone Alpha is Clone Robotics' consumer product — a limited luxury run of exactly 279 units (believed to be a Westworld reference) targeting home use at a ~$20,000 price point. The platform features 206 bones, 164 articulation points, 26 DOF per hand/wrist/elbow, four depth cameras, 70 inertial sensors, and 320 pressure sensors. It runs 'Cybernet,' Clone's proprietary visuomotor model, and ships with pre-installed skills including vacuuming, laundry, and food preparation. A 'Telekinesis' platform enables owners to teach new skills via demonstration. Clone Alpha represents the first attempt to bring musculoskeletal humanoid technology into consumer hands.",
+    "deploymentNotes": "Pre-orders open 2025. Limited run of 279 units at a consumer-luxury price (comparable to limited-edition supercar per co-founder). Bay Area AI training office planned to support Cybernet model development. Target delivery 2026.",
+    "milestones": [
+      { "date": "2025-03", "event": "Clone Alpha announced — 279-unit limited consumer run, ~$20k target price" },
+      { "date": "2025-09", "event": "Pre-orders open with Cybernet visuomotor model details revealed" },
+      { "date": "2026-01", "event": "Production begins; delivery target 2026" }
     ]
   },
   {

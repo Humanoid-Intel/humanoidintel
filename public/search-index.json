@@ -478,6 +478,26 @@
     "url": "/news/figure-ai-ceo-dodges-police-robot-sales-question"
   },
   {
+    "slug": "clone-robotics-alpha-279-units-consumer-humanoid",
+    "title": "Clone Robotics Announces 279-Unit Alpha: A Consumer Humanoid With 1,000 Artificial Muscles",
+    "excerpt": "Polish startup Clone Robotics has announced Clone Alpha — a limited run of 279 consumer-grade humanoids running its Cybernet visuomotor model, targeting home use at approximately $20,000. The move follows the viral February 2025 moment when Protoclone V1 captivated the internet.",
+    "category": "Product Launch",
+    "date": "2025-09-15",
+    "tags": [
+      "clone robotics",
+      "clone alpha",
+      "consumer humanoid",
+      "myofiber",
+      "artificial muscles",
+      "poland"
+    ],
+    "companies": [
+      "clone-robotics"
+    ],
+    "type": "news",
+    "url": "/news/clone-robotics-alpha-279-units-consumer-humanoid"
+  },
+  {
     "slug": "figure-ai-ceo-bloomberg-interview-general-purpose-robots",
     "title": "Figure AI CEO Details Robot Strategy in Bloomberg Interview",
     "excerpt": "Brett Adcock outlines Figure's path to commercializing humanoid robots for industrial applications",
@@ -886,26 +906,26 @@
     "url": "/funding"
   },
   {
-    "slug": "clone-p1",
-    "title": "Clone P1 — Clone Robotics",
-    "excerpt": "Clone Robotics' P1 takes a radical approach to humanoid design: replicating human musculoskeletal architecture with 206 degrees of freedom driven by fluid-powered artificial muscle…",
+    "slug": "clone-alpha",
+    "title": "Clone Alpha — Clone Robotics",
+    "excerpt": "Clone Alpha is Clone Robotics' consumer product — a limited luxury run of exactly 279 units (believed to be a Westworld reference) targeting home use at a ~$20,000 price point. The…",
     "category": "robot",
     "date": "",
     "tags": [
-      "r&d",
-      "Tendon-driven",
+      "pre-order",
+      "Pneumatic/Hydraulic (Myofiber)",
       "Poland"
     ],
     "companies": [
       "Clone Robotics"
     ],
     "type": "robot",
-    "url": "/robots/clone-p1"
+    "url": "/robots/clone-alpha"
   },
   {
     "slug": "clone-robotics",
     "title": "Clone Robotics",
-    "excerpt": "Clone Robotics is a bootstrapped Polish company pursuing the most radical architectural departure in humanoid robotics: a musculoskeletal design with fluid-powered artificial muscl…",
+    "excerpt": "Clone Robotics is a Warsaw-based startup pursuing the most radical architectural departure in humanoid robotics: a musculoskeletal design with 1,000 fluid-powered artificial muscle…",
     "category": "company",
     "date": "",
     "tags": [
@@ -1724,6 +1744,23 @@
     "companies": [],
     "type": "glossary",
     "url": "/glossary/proprioception"
+  },
+  {
+    "slug": "clone-p1",
+    "title": "Protoclone V1 — Clone Robotics",
+    "excerpt": "Clone Robotics' Protoclone V1 is the most anatomically faithful humanoid ever built: 206 degrees of freedom, 1,000 fluid-powered Myofiber artificial muscles, 500 sensors, and 3D-pr…",
+    "category": "robot",
+    "date": "",
+    "tags": [
+      "r&d",
+      "Pneumatic/Hydraulic (Myofiber)",
+      "Poland"
+    ],
+    "companies": [
+      "Clone Robotics"
+    ],
+    "type": "robot",
+    "url": "/robots/clone-p1"
   },
   {
     "slug": "sanctuary-ai",
