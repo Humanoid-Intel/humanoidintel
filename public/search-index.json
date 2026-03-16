@@ -1,5 +1,143 @@
 [
   {
+    "slug": "nvidia-physical-ai-robotics-partnerships-2026",
+    "title": "NVIDIA Partners with Robotics Leaders on Physical AI",
+    "excerpt": "NVIDIA expands Physical AI initiatives with global robotics partnerships for real-world deployment",
+    "category": "breaking",
+    "date": "2026-03-16T21:05:50.311Z",
+    "tags": [
+      "nvidia",
+      "physical-ai",
+      "partnerships",
+      "gr00t"
+    ],
+    "companies": [
+      "NVIDIA"
+    ],
+    "type": "news",
+    "url": "/news/nvidia-physical-ai-robotics-partnerships-2026"
+  },
+  {
+    "slug": "nvidia-groot-platform-expansion-robotics-partners",
+    "title": "NVIDIA Expands GR00T Platform with New Robotics Partners",
+    "excerpt": "NVIDIA announces major expansion of GR00T platform with global robotics companies pushing humanoid deployment forward",
+    "category": "breaking",
+    "date": "2026-03-16T21:05:10.647Z",
+    "tags": [
+      "nvidia",
+      "groot",
+      "physical-ai",
+      "partnerships"
+    ],
+    "companies": [
+      "NVIDIA"
+    ],
+    "type": "news",
+    "url": "/news/nvidia-groot-platform-expansion-robotics-partners"
+  },
+  {
+    "slug": "nvidia-gr00t-platform-expands-global-reach",
+    "title": "NVIDIA GR00T Platform Expands Global Reach",
+    "excerpt": "NVIDIA announces expanded GR00T partnerships with major humanoid robotics companies",
+    "category": "breaking",
+    "date": "2026-03-16T21:04:34.464Z",
+    "tags": [
+      "nvidia",
+      "gr00t",
+      "physical-ai",
+      "partnerships"
+    ],
+    "companies": [
+      "NVIDIA",
+      "Boston Dynamics",
+      "Agility Robotics",
+      "1X Technologies"
+    ],
+    "type": "news",
+    "url": "/news/nvidia-gr00t-platform-expands-global-reach"
+  },
+  {
+    "slug": "skild-ai-foxconn-nvidia-server-partnership",
+    "title": "Skild AI Partners Foxconn for Nvidia Server Deployment",
+    "excerpt": "Skild AI's foundation model will run on Foxconn's Nvidia server infrastructure in major deployment deal",
+    "category": "breaking",
+    "date": "2026-03-16T21:03:27.884Z",
+    "tags": [
+      "skild-ai",
+      "foxconn",
+      "nvidia",
+      "partnership",
+      "deployment"
+    ],
+    "companies": [
+      "Skild AI",
+      "Foxconn",
+      "Nvidia"
+    ],
+    "type": "news",
+    "url": "/news/skild-ai-foxconn-nvidia-server-partnership"
+  },
+  {
+    "slug": "intel-realsense-autonomous-humanoid-navigation-gtc-2026",
+    "title": "Intel RealSense Demos Autonomous Humanoid Navigation at GTC",
+    "excerpt": "Intel's RealSense division showcased breakthrough autonomous navigation tech for humanoids at GTC 2026",
+    "category": "breaking",
+    "date": "2026-03-16T21:02:14.213Z",
+    "tags": [
+      "intel",
+      "realsense",
+      "navigation",
+      "gtc",
+      "computer-vision"
+    ],
+    "companies": [
+      "Intel",
+      "RealSense"
+    ],
+    "type": "news",
+    "url": "/news/intel-realsense-autonomous-humanoid-navigation-gtc-2026"
+  },
+  {
+    "slug": "nvidia-european-chipmakers-humanoid-partnerships",
+    "title": "Nvidia Partners with European Chipmakers on Humanoid AI",
+    "excerpt": "Nvidia expands humanoid robotics reach through strategic European semiconductor partnerships",
+    "category": "breaking",
+    "date": "2026-03-16T21:01:39.719Z",
+    "tags": [
+      "nvidia",
+      "partnerships",
+      "european-chipmakers",
+      "gr00t",
+      "jetson"
+    ],
+    "companies": [
+      "Nvidia"
+    ],
+    "type": "news",
+    "url": "/news/nvidia-european-chipmakers-humanoid-partnerships"
+  },
+  {
+    "slug": "realsense-autonomous-humanoid-navigation-gtc-2026",
+    "title": "RealSense Debuts Autonomous Humanoid Navigation at GTC",
+    "excerpt": "RealSense demonstrates breakthrough perception software enabling safe humanoid robot navigation in complex environments",
+    "category": "breaking",
+    "date": "2026-03-16T21:01:00.620Z",
+    "tags": [
+      "realsense",
+      "navigation",
+      "gtc",
+      "autonomous",
+      "perception"
+    ],
+    "companies": [
+      "RealSense",
+      "Intel",
+      "NVIDIA"
+    ],
+    "type": "news",
+    "url": "/news/realsense-autonomous-humanoid-navigation-gtc-2026"
+  },
+  {
     "slug": "memories-ai-visual-memory-humanoid-robotics",
     "title": "Memories.ai Builds Visual Memory for Humanoid Robotics",
     "excerpt": "Memories.ai develops visual memory models for humanoid robots to index and retrieve video-recorded experiences",
