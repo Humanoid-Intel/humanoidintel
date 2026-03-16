@@ -120,11 +120,27 @@ export async function generateArticle(story: ScoredStory): Promise<GeneratedArti
     }
 
     const slug = extractSlug(fmMatch[1])
+
+    // Inject authoritative timestamps — never trust Claude's date guess
+    // date = source article publication time; updated = now (when we wrote it)
+    const publishedIso = story.publishedAt.toISOString()
+    const updatedIso = new Date().toISOString()
+    let frontmatter = fmMatch[1]
+    frontmatter = frontmatter.replace(
+      /^date:\s*["']?[^"'\n]+["']?/m,
+      `date: "${publishedIso}"`,
+    )
+    frontmatter = frontmatter.replace(
+      /^updated:\s*["']?[^"'\n]+["']?/m,
+      `updated: "${updatedIso}"`,
+    )
+    const fixedRaw = `---\n${frontmatter}\n---\n${fmMatch[2].trim()}`
+
     return {
-      frontmatter: fmMatch[1],
+      frontmatter,
       content: fmMatch[2].trim(),
       slug,
-      raw,
+      raw: fixedRaw,
       sourceUrl: story.url,
     }
   } catch (err) {

@@ -48,14 +48,22 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 }
 
-function formatDate(dateStr: string) {
+function formatDate(dateStr: string, includeTime = false) {
   if (!dateStr) return ''
   try {
-    return new Date(dateStr).toLocaleDateString('en-US', {
+    const opts: Intl.DateTimeFormatOptions = {
       month: 'long',
       day: 'numeric',
       year: 'numeric',
-    })
+      timeZone: 'America/New_York',
+    }
+    if (includeTime) {
+      opts.hour = '2-digit'
+      opts.minute = '2-digit'
+      opts.hour12 = false
+      opts.timeZoneName = 'short'
+    }
+    return new Date(dateStr).toLocaleDateString('en-US', opts)
   } catch {
     return dateStr
   }
@@ -174,10 +182,10 @@ export default async function ArticlePage({ params }: Props) {
               gap: 16,
             }}
           >
-            <span>Published: {formatDate(article.date)}</span>
+            <span>Published: {formatDate(article.date, true)}</span>
             {article.updated && (
               <span style={{ color: 'var(--accent-positive)' }}>
-                Last updated: {formatDate(article.updated)}
+                Last updated: {formatDate(article.updated, true)}
               </span>
             )}
             <span>By humanoidintel.ai Editorial</span>

@@ -19,6 +19,7 @@ function formatDate(dateStr: string) {
       month: 'short',
       day: 'numeric',
       year: 'numeric',
+      timeZone: 'America/New_York',
     })
   } catch {
     return dateStr
@@ -30,11 +31,13 @@ function formatTime(dateStr: string) {
   try {
     const d = new Date(dateStr)
     if (isNaN(d.getTime())) return ''
-    return d.toLocaleTimeString('en-US', {
+    const time = d.toLocaleTimeString('en-US', {
       hour: '2-digit',
       minute: '2-digit',
       hour12: false,
+      timeZone: 'America/New_York',
     })
+    return `${time} ET`
   } catch {
     return ''
   }

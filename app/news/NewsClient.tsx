@@ -100,6 +100,7 @@ function formatDate(dateStr: string) {
       month: 'short',
       day: 'numeric',
       year: 'numeric',
+      timeZone: 'America/New_York',
     })
   } catch {
     return dateStr
