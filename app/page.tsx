@@ -7,6 +7,8 @@ import Footer from '@/components/Footer'
 import { NewsletterForm } from '@/components/NewsletterForm'
 import { getArticles, getFeaturedArticle, getRobots } from '@/lib/content'
 import type { Article, Robot } from '@/lib/types'
+import CapitalFlowChart from '@/components/CapitalFlowChart'
+import type { FlowBar } from '@/components/CapitalFlowChart'
 
 // ── helpers ────────────────────────────────────────────────────────────────
 
@@ -82,11 +84,11 @@ const RACE_TIMELINE = [
 ]
 
 // ── Capital flows — real data from funding-rounds.json ────────────────────────
-function buildCapitalFlowBars(): Array<{ h: number; pos: boolean; amountM: number; label: string }> {
+function buildCapitalFlowBars(): FlowBar[] {
   const NUM_WEEKS = 12
   const today = new Date('2026-03-16')
 
-  let rounds: Array<{ date: string; amount: string }> = []
+  let rounds: Array<{ date: string; amount: string; company?: string; round?: string }> = []
   try {
     const raw = fs.readFileSync(
       path.join(process.cwd(), 'content/data/funding-rounds.json'),
@@ -110,9 +112,20 @@ function buildCapitalFlowBars(): Array<{ h: number; pos: boolean; amountM: numbe
     return n
   }
 
+  function fmtWeekLabel(weekIdx: number): string {
+    // weekIdx 0 = oldest week, NUM_WEEKS-1 = most recent
+    const weeksAgo = NUM_WEEKS - 1 - weekIdx
+    const startMs = today.getTime() - (weeksAgo + 1) * 7 * 24 * 60 * 60 * 1000
+    const endMs   = today.getTime() - weeksAgo * 7 * 24 * 60 * 60 * 1000
+    const fmt = (d: Date) =>
+      d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
+    return `${fmt(new Date(startMs))} – ${fmt(new Date(endMs))}`
+  }
+
   // Bucket rounds into weekly bins (week 0 = oldest, week 11 = most recent)
   const weeklyAmounts = Array<number>(NUM_WEEKS).fill(0)
-  const msPerWeek = 7 * 24 * 60 * 60 * 1000
+  const weeklyRounds: Array<Array<{ company: string; amount: string; round: string }>> =
+    Array.from({ length: NUM_WEEKS }, () => [])
 
   for (const r of rounds) {
     if (!r.date) continue
@@ -122,6 +135,11 @@ function buildCapitalFlowBars(): Array<{ h: number; pos: boolean; amountM: numbe
     const weekIdx = NUM_WEEKS - 1 - Math.floor(ageDays / 7)
     if (weekIdx >= 0 && weekIdx < NUM_WEEKS) {
       weeklyAmounts[weekIdx] += parseM(r.amount)
+      weeklyRounds[weekIdx].push({
+        company: r.company ?? 'Unknown',
+        amount: r.amount ?? '—',
+        round: r.round ?? '',
+      })
     }
   }
 
@@ -131,10 +149,10 @@ function buildCapitalFlowBars(): Array<{ h: number; pos: boolean; amountM: numbe
     if (amountM > 0) {
       const h = Math.max(12, Math.round((amountM / maxAmount) * 85))
       const label = amountM >= 1000 ? `$${(amountM/1000).toFixed(1)}B` : `$${Math.round(amountM)}M`
-      return { h, pos: true, amountM, label }
+      return { h, pos: true, amountM, label, weekLabel: fmtWeekLabel(i), rounds: weeklyRounds[i] }
     }
     // Quiet week — small negative bar
-    return { h: 8, pos: false, amountM: 0, label: '—' }
+    return { h: 8, pos: false, amountM: 0, label: '—', weekLabel: fmtWeekLabel(i), rounds: [] }
   })
 }
 
@@ -620,108 +638,7 @@ export default function HomePage() {
             >
               Capital Flows — Trailing 12 Weeks
             </div>
-            <div
-              style={{
-                position: 'relative',
-                height: 140,
-                display: 'flex',
-                alignItems: 'center',
-              }}
-            >
-              {/* Grid lines */}
-              {[0, 1, 2, 3].map((i) => (
-                <div
-                  key={i}
-                  style={{
-                    position: 'absolute',
-                    left: 0,
-                    right: 0,
-                    top: `${(i / 3) * 100}%`,
-                    height: 1,
-                    backgroundColor: 'var(--border-subtle)',
-                    opacity: 0.5,
-                  }}
-                />
-              ))}
-              {/* Zero line */}
-              <div
-                style={{
-                  position: 'absolute',
-                  left: 0,
-                  right: 0,
-                  top: '50%',
-                  height: 1,
-                  backgroundColor: 'var(--text-tertiary)',
-                }}
-              />
-              {/* Bars */}
-              <div
-                style={{
-                  position: 'absolute',
-                  inset: 0,
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: 2,
-                  padding: '0 2px',
-                }}
-              >
-                {capitalFlowBars.map((bar, i) => (
-                  <div
-                    key={i}
-                    style={{
-                      flex: 1,
-                      height: '100%',
-                      display: 'flex',
-                      flexDirection: 'column',
-                      justifyContent: 'center',
-                    }}
-                  >
-                    {bar.pos ? (
-                      <>
-                        <div style={{ flex: 1, display: 'flex', alignItems: 'flex-end' }}>
-                          <div
-                            style={{
-                              width: '100%',
-                              height: `${bar.h}%`,
-                              backgroundColor: 'var(--accent-positive)',
-                              opacity: 0.8,
-                            }}
-                          />
-                        </div>
-                        <div style={{ height: '50%' }} />
-                      </>
-                    ) : (
-                      <>
-                        <div style={{ height: '50%' }} />
-                        <div style={{ flex: 1, display: 'flex', alignItems: 'flex-start' }}>
-                          <div
-                            style={{
-                              width: '100%',
-                              height: `${bar.h}%`,
-                              backgroundColor: 'var(--accent-negative)',
-                              opacity: 0.8,
-                            }}
-                          />
-                        </div>
-                      </>
-                    )}
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div
-              className="font-data"
-              style={{
-                fontSize: 10,
-                color: 'var(--text-tertiary)',
-                display: 'flex',
-                justifyContent: 'space-between',
-                marginTop: 4,
-              }}
-            >
-              <span>12w ago</span>
-              <span>Today</span>
-            </div>
+            <CapitalFlowChart bars={capitalFlowBars} />
           </div>
 
           {/* Deployed Robots Tracker */}
@@ -855,7 +772,7 @@ export default function HomePage() {
                 lineHeight: 1.4,
               }}
             >
-              Join 12,400+ robotics engineers, VCs, and founders
+              Join thousands of robotics engineers, VCs, and founders
             </div>
 
             <NewsletterForm label="Subscribe" />
