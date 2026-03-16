@@ -963,6 +963,24 @@
     "url": "/news/unitree-hku-embodied-ai-lab-shanghai"
   },
   {
+    "slug": "samsung-solid-state-battery-humanoid-robots-prototype",
+    "title": "Samsung Unveils Solid-State Battery for Humanoid Robots",
+    "excerpt": "Samsung's new pouch solid-state battery prototype targets humanoid robots with higher energy density and safety features",
+    "category": "breaking",
+    "date": "2026-03-09T23:30:00.000Z",
+    "tags": [
+      "samsung",
+      "solid-state-battery",
+      "power-systems",
+      "energy-density"
+    ],
+    "companies": [
+      "Samsung"
+    ],
+    "type": "news",
+    "url": "/news/samsung-solid-state-battery-humanoid-robots-prototype"
+  },
+  {
     "slug": "qualcomm-neura-robotics-partnership-physical-ai",
     "title": "Qualcomm Partners with Neura Robotics for Physical AI",
     "excerpt": "Qualcomm and Neura Robotics form strategic partnership to accelerate physical AI deployment in humanoid robotics",
