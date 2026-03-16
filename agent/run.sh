@@ -1,4 +1,5 @@
 #!/bin/bash
+export PATH="/Users/dannysanders/.nvm/versions/node/v20.20.1/bin:$PATH"
 NODE=/Users/dannysanders/.nvm/versions/node/v20.20.1/bin/node
 NPX=/Users/dannysanders/.nvm/versions/node/v20.20.1/bin/npx
 REPO=/Users/dannysanders/Documents/Cowork/humanoidintel
