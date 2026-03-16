@@ -1,5 +1,121 @@
 [
   {
+    "slug": "pc-partner-nvidia-gtc-2026-physical-ai",
+    "title": "PC Partner Showcases Physical AI at NVIDIA GTC 2026",
+    "excerpt": "PC Partner unveils Physical AI solutions at GTC 2026, targeting industrial digitalization with NVIDIA compute infrastructure.",
+    "category": "breaking",
+    "date": "2026-03-16T22:03:59.198Z",
+    "tags": [
+      "nvidia",
+      "gtc",
+      "physical-ai",
+      "industrial"
+    ],
+    "companies": [
+      "PC Partner Technology",
+      "NVIDIA"
+    ],
+    "type": "news",
+    "url": "/news/pc-partner-nvidia-gtc-2026-physical-ai"
+  },
+  {
+    "slug": "phantom-mk1-ukraine-battlefield-testing",
+    "title": "Phantom MK-1 Humanoids Enter Ukraine Combat Tests",
+    "excerpt": "First humanoid robots deployed for active battlefield evaluation in Ukraine conflict zone",
+    "category": "breaking",
+    "date": "2026-03-16T22:03:46.346Z",
+    "tags": [
+      "phantom-mk1",
+      "battlefield-testing",
+      "ukraine",
+      "military-robotics"
+    ],
+    "companies": [
+      "Great Robotics"
+    ],
+    "type": "news",
+    "url": "/news/phantom-mk1-ukraine-battlefield-testing"
+  },
+  {
+    "slug": "nxp-nvidia-humanoid-robotics-partnership-edge-computing",
+    "title": "NXP-Nvidia Partnership Targets Humanoid Robot Edge Computing",
+    "excerpt": "NXP and Nvidia announce joint robotics solutions targeting humanoid robot edge processing and real-time control systems.",
+    "category": "market",
+    "date": "2026-03-16T22:03:02.950Z",
+    "tags": [
+      "nxp",
+      "nvidia",
+      "edge-computing",
+      "partnerships"
+    ],
+    "companies": [
+      "NXP Semiconductors",
+      "Nvidia"
+    ],
+    "type": "news",
+    "url": "/news/nxp-nvidia-humanoid-robotics-partnership-edge-computing"
+  },
+  {
+    "slug": "nvidia-european-chipmakers-humanoid-robot-hardware-partnership",
+    "title": "Nvidia Partners with European Chipmakers for Humanoid Hardware",
+    "excerpt": "Nvidia expands humanoid robotics reach through strategic European semiconductor partnerships",
+    "category": "breaking",
+    "date": "2026-03-16T22:02:21.506Z",
+    "tags": [
+      "nvidia",
+      "europe",
+      "chipmakers",
+      "hardware",
+      "partnerships"
+    ],
+    "companies": [
+      "Nvidia"
+    ],
+    "type": "news",
+    "url": "/news/nvidia-european-chipmakers-humanoid-robot-hardware-partnership"
+  },
+  {
+    "slug": "neura-robotics-qualcomm-partnership-physical-ai",
+    "title": "NEURA Robotics Partners with Qualcomm for AI Chips",
+    "excerpt": "German humanoid maker NEURA Robotics teams with Qualcomm to integrate Snapdragon compute into cognitive robots",
+    "category": "breaking",
+    "date": "2026-03-16T22:01:42.439Z",
+    "tags": [
+      "neura-robotics",
+      "qualcomm",
+      "partnership",
+      "physical-ai"
+    ],
+    "companies": [
+      "NEURA Robotics",
+      "Qualcomm"
+    ],
+    "type": "news",
+    "url": "/news/neura-robotics-qualcomm-partnership-physical-ai"
+  },
+  {
+    "slug": "skild-ai-foxconn-abb-universal-robots-partnership-2026",
+    "title": "Skild AI Partners with Foxconn, ABB for Industrial Robot AI",
+    "excerpt": "Skild AI expands beyond humanoids with major industrial partnerships targeting 2026 deployment",
+    "category": "market",
+    "date": "2026-03-16T22:00:59.143Z",
+    "tags": [
+      "skild-ai",
+      "partnerships",
+      "industrial-robotics",
+      "foxconn",
+      "abb"
+    ],
+    "companies": [
+      "Skild AI",
+      "Foxconn",
+      "ABB",
+      "Universal Robots"
+    ],
+    "type": "news",
+    "url": "/news/skild-ai-foxconn-abb-universal-robots-partnership-2026"
+  },
+  {
     "slug": "nvidia-physical-ai-robotics-partnerships-2026",
     "title": "NVIDIA Partners with Robotics Leaders on Physical AI",
     "excerpt": "NVIDIA expands Physical AI initiatives with global robotics partnerships for real-world deployment",
