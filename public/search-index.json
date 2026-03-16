@@ -1,5 +1,84 @@
 [
   {
+    "slug": "docomo-5g-robot-teleoperation-breakthrough",
+    "title": "DoCoMo Achieves 5G Robot Teleoperation Breakthrough",
+    "excerpt": "NTT DoCoMo and Keio University achieve world's first stable haptic robot teleoperation over commercial 5G networks",
+    "category": "breaking",
+    "date": "2026-03-16T15:30:00Z",
+    "tags": [
+      "5g",
+      "teleoperation",
+      "haptics",
+      "docomo",
+      "keio-university"
+    ],
+    "companies": [
+      "NTT DoCoMo",
+      "Keio University"
+    ],
+    "type": "news",
+    "url": "/news/docomo-5g-robot-teleoperation-breakthrough"
+  },
+  {
+    "slug": "kistler-ats-medical-device-assembly-symphoni",
+    "title": "Kistler ATS Launch Medical Device Assembly System",
+    "excerpt": "Kistler and ATS unveil Symphoni platform combining sensor tech with digital motion for real-time medical device QA",
+    "category": "breaking",
+    "date": "2026-03-16T15:30:00Z",
+    "tags": [
+      "kistler",
+      "ats",
+      "medical-devices",
+      "quality-monitoring",
+      "assembly-automation"
+    ],
+    "companies": [
+      "Kistler Group",
+      "ATS Life Sciences Systems"
+    ],
+    "type": "news",
+    "url": "/news/kistler-ats-medical-device-assembly-symphoni"
+  },
+  {
+    "slug": "baba-w-robbyant-leju-robotics-partnership",
+    "title": "BABA-W's Robbyant Partners with Leju Robotics",
+    "excerpt": "Alibaba's robotics subsidiary Robbyant forms strategic alliance with Leju Robotics for humanoid development",
+    "category": "breaking",
+    "date": "2026-03-16T12:00:00Z",
+    "tags": [
+      "robbyant",
+      "leju-robotics",
+      "partnership",
+      "alibaba"
+    ],
+    "companies": [
+      "Robbyant",
+      "Leju Robotics",
+      "Alibaba"
+    ],
+    "type": "news",
+    "url": "/news/baba-w-robbyant-leju-robotics-partnership"
+  },
+  {
+    "slug": "sharpa-nvidia-collaboration-dexterous-robotics-training",
+    "title": "Sharpa AI Teams with Nvidia for Dexterous Manipulation",
+    "excerpt": "Unicorn robotics startup Sharpa AI partners with Nvidia on advanced dexterous manipulation training for humanoid applications.",
+    "category": "breaking",
+    "date": "2026-03-16T12:00:00Z",
+    "tags": [
+      "sharpa-ai",
+      "nvidia",
+      "dexterous-manipulation",
+      "collaboration"
+    ],
+    "companies": [
+      "Sharpa AI",
+      "Nvidia"
+    ],
+    "type": "news",
+    "url": "/news/sharpa-nvidia-collaboration-dexterous-robotics-training"
+  },
+  {
     "slug": "sparse-world-models-robotic-planning-drift-reduction",
     "title": "Sparse World Models Cut Robotic Planning Drift by 40%",
     "excerpt": "New sparse world model architecture reduces long-horizon planning errors by eliminating visual redundancy in robotic manipulation tasks",
@@ -15,6 +94,26 @@
     "companies": [],
     "type": "news",
     "url": "/news/sparse-world-models-robotic-planning-drift-reduction"
+  },
+  {
+    "slug": "robot-dogs-data-center-security-market-boston-dynamics",
+    "title": "Robot Dogs Guard Data Centers: $50M Market Emerges",
+    "excerpt": "Quadruped robots now patrol critical infrastructure, creating new $50M commercial market for mobile security platforms",
+    "category": "breaking",
+    "date": "2026-03-16T09:00:00Z",
+    "tags": [
+      "boston-dynamics",
+      "ghost-robotics",
+      "data-centers",
+      "security",
+      "quadruped"
+    ],
+    "companies": [
+      "Boston Dynamics",
+      "Ghost Robotics"
+    ],
+    "type": "news",
+    "url": "/news/robot-dogs-data-center-security-market-boston-dynamics"
   },
   {
     "slug": "tacvla-tactile-fusion-vision-language-action-manipulation",
@@ -49,6 +148,24 @@
     "companies": [],
     "type": "news",
     "url": "/news/push-press-slide-control-framework-reduces-computation"
+  },
+  {
+    "slug": "china-wheeled-humanoid-robot-lunar-base-construction",
+    "title": "China's Wheeled Humanoid Robot Targets Lunar Base Construction",
+    "excerpt": "China reveals wheeled humanoid robot designed specifically for lunar base construction operations",
+    "category": "breaking",
+    "date": "2026-03-16T08:22:07Z",
+    "tags": [
+      "china-space",
+      "lunar-robotics",
+      "wheeled-humanoids",
+      "space-construction"
+    ],
+    "companies": [
+      "China National Space Administration"
+    ],
+    "type": "news",
+    "url": "/news/china-wheeled-humanoid-robot-lunar-base-construction"
   },
   {
     "slug": "skill-graphs-autonomous-robotic-assembly-arxiv-2026",
@@ -120,6 +237,24 @@
     ],
     "type": "news",
     "url": "/news/tesla-optimus-times-square-public-demo-march-2026"
+  },
+  {
+    "slug": "korean-xyz-robotics-873m-series-b-funding",
+    "title": "Korean AI Startup XYZ Raises $8.73M for Office Humanoids",
+    "excerpt": "Korean physical AI startup XYZ secures $8.73M Series B to deploy humanoid robots in commercial and residential settings",
+    "category": "market",
+    "date": "2026-03-14T15:10:00Z",
+    "tags": [
+      "xyz-robotics",
+      "series-b",
+      "korean-robotics",
+      "office-automation"
+    ],
+    "companies": [
+      "XYZ Robotics"
+    ],
+    "type": "news",
+    "url": "/news/korean-xyz-robotics-873m-series-b-funding"
   },
   {
     "slug": "agility-robotics-astm-humanoid-safety-standards-2026",
@@ -289,6 +424,26 @@
     "companies": [],
     "type": "news",
     "url": "/news/phantom-mk1-combat-humanoid-robot-military-deployment"
+  },
+  {
+    "slug": "ti-nvidia-physical-ai-humanoid-robots-partnership",
+    "title": "TI Partners with Nvidia on Physical AI for Humanoid Robots",
+    "excerpt": "TI and Nvidia team up to bring physical AI capabilities to humanoid robots through integrated chip solutions.",
+    "category": "breaking",
+    "date": "2026-03-06T08:00:00Z",
+    "tags": [
+      "texas-instruments",
+      "nvidia",
+      "physical-ai",
+      "partnerships",
+      "embedded-systems"
+    ],
+    "companies": [
+      "Texas Instruments",
+      "Nvidia"
+    ],
+    "type": "news",
+    "url": "/news/ti-nvidia-physical-ai-humanoid-robots-partnership"
   },
   {
     "slug": "honor-mwc-2026-humanoid-robot-consumer-announcement",
@@ -498,6 +653,26 @@
     "url": "/news/clone-robotics-alpha-279-units-consumer-humanoid"
   },
   {
+    "slug": "noetix-robotics-bumi-spring-festival-gala-jd-partnership",
+    "title": "Noetix Robotics' Bumi Performs at Spring Festival Gala",
+    "excerpt": "Noetix's Bumi robot performs at China's Spring Festival Gala, marking major entertainment breakthrough for humanoids",
+    "category": "market",
+    "date": "2025-01-15T14:30:00Z",
+    "tags": [
+      "noetix-robotics",
+      "bumi",
+      "spring-festival-gala",
+      "jd-logistics",
+      "china"
+    ],
+    "companies": [
+      "Noetix Robotics",
+      "JD.com"
+    ],
+    "type": "news",
+    "url": "/news/noetix-robotics-bumi-spring-festival-gala-jd-partnership"
+  },
+  {
     "slug": "figure-ai-ceo-bloomberg-interview-general-purpose-robots",
     "title": "Figure AI CEO Details Robot Strategy in Bloomberg Interview",
     "excerpt": "Brett Adcock outlines Figure's path to commercializing humanoid robots for industrial applications",
@@ -514,6 +689,169 @@
     ],
     "type": "news",
     "url": "/news/figure-ai-ceo-bloomberg-interview-general-purpose-robots"
+  },
+  {
+    "slug": "asensing-galbot-partnership-ai-robots",
+    "title": "ASENSING Partners with Galbot on AI Robot Development",
+    "excerpt": "LiDAR specialist ASENSING partners with humanoid robotics startup Galbot to integrate advanced perception systems",
+    "category": "breaking",
+    "date": "2024-12-28T14:30:00Z",
+    "tags": [
+      "asensing",
+      "galbot",
+      "partnership",
+      "lidar",
+      "perception"
+    ],
+    "companies": [
+      "ASENSING",
+      "Galbot"
+    ],
+    "type": "news",
+    "url": "/news/asensing-galbot-partnership-ai-robots"
+  },
+  {
+    "slug": "china-lunar-construction-robot-space-humanoids",
+    "title": "China's Lunar Construction Robot: Space Humanoids Race Heats Up",
+    "excerpt": "China unveils specialized space robot for lunar base construction, escalating global competition in extraterrestrial robotics",
+    "category": "breaking",
+    "date": "2024-12-19T15:30:00Z",
+    "tags": [
+      "china",
+      "lunar-robotics",
+      "space-construction",
+      "cnsa",
+      "humanoid-robots"
+    ],
+    "companies": [
+      "China National Space Administration",
+      "Beijing Institute of Technology"
+    ],
+    "type": "news",
+    "url": "/news/china-lunar-construction-robot-space-humanoids"
+  },
+  {
+    "slug": "humanoid-robot-arrested-macau-incident",
+    "title": "Humanoid Robot 'Arrested' After Startling Woman in Macau",
+    "excerpt": "Police detained humanoid robot in Macau after incident with elderly woman highlights deployment challenges",
+    "category": "breaking",
+    "date": "2024-12-19T15:30:00Z",
+    "tags": [
+      "public-safety",
+      "humanoid-deployment",
+      "human-robot-interaction",
+      "macau"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/humanoid-robot-arrested-macau-incident"
+  },
+  {
+    "slug": "samsung-hand-lab-humanoid-robot-dexterity",
+    "title": "Samsung Launches Hand Lab for Humanoid Robot Dexterity",
+    "excerpt": "Samsung unveils specialized Hand Lab focused on advancing dexterous manipulation for humanoid robotics applications",
+    "category": "breaking",
+    "date": "2024-12-19T14:45:00Z",
+    "tags": [
+      "samsung",
+      "dexterous-manipulation",
+      "hand-lab",
+      "research"
+    ],
+    "companies": [
+      "Samsung"
+    ],
+    "type": "news",
+    "url": "/news/samsung-hand-lab-humanoid-robot-dexterity"
+  },
+  {
+    "slug": "ford-cologne-humanoid-robot-production-test",
+    "title": "Ford Cologne Tests Humanoid Robot in Production Line",
+    "excerpt": "Ford's Cologne facility demonstrates humanoid robot capabilities in automotive production environment",
+    "category": "breaking",
+    "date": "2024-12-19T14:30:00Z",
+    "tags": [
+      "ford",
+      "automotive",
+      "production",
+      "industrial-humanoids"
+    ],
+    "companies": [
+      "Ford Motor Company"
+    ],
+    "type": "news",
+    "url": "/news/ford-cologne-humanoid-robot-production-test"
+  },
+  {
+    "slug": "ox-digital-warehouse-3d-mapping-standard-launched",
+    "title": "Ox Digital Warehouse: 3D Mapping Standard Launched",
+    "excerpt": "Ox launches Digital Warehouse platform creating living 3D maps with operational data overlay for warehouse optimization",
+    "category": "breaking",
+    "date": "2024-12-19T14:30:00Z",
+    "tags": [
+      "ox",
+      "digital-warehouse",
+      "3d-mapping",
+      "warehouse-automation"
+    ],
+    "companies": [
+      "Ox"
+    ],
+    "type": "news",
+    "url": "/news/ox-digital-warehouse-3d-mapping-standard-launched"
+  },
+  {
+    "slug": "tesla-optimus-3-production-li-auto-exec-robotics-funding",
+    "title": "Tesla Optimus 3 Production, Former Li Auto Exec Raises $300M",
+    "excerpt": "Tesla's Optimus 3 enters production while former Li Auto executive secures massive robotics funding in China",
+    "category": "market",
+    "date": "2024-03-16T15:30:00Z",
+    "tags": [
+      "tesla",
+      "optimus",
+      "funding",
+      "china",
+      "production"
+    ],
+    "companies": [
+      "Tesla",
+      "Li Auto"
+    ],
+    "type": "news",
+    "url": "/news/tesla-optimus-3-production-li-auto-exec-robotics-funding"
+  },
+  {
+    "slug": "zhengzhou-humanoid-robot-training-facility-china",
+    "title": "China's Zhengzhou Opens Specialized Humanoid Training Center",
+    "excerpt": "New specialized facility in central China aims to accelerate humanoid development through dedicated training infrastructure",
+    "category": "breaking",
+    "date": "2024-03-16T01:36:00Z",
+    "tags": [
+      "china",
+      "training-facility",
+      "zhengzhou",
+      "henan-province"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/zhengzhou-humanoid-robot-training-facility-china"
+  },
+  {
+    "slug": "physmodpo-physics-humanoid-motion-preference-optimization",
+    "title": "PhysMoDPO Tackles Physics Gap in Humanoid Motion",
+    "excerpt": "New research addresses the physics gap between diffusion-generated humanoid motions and real robot execution",
+    "category": "research",
+    "date": "2024-03-15T09:00:00Z",
+    "tags": [
+      "physmodpo",
+      "motion-generation",
+      "whole-body-control",
+      "diffusion-models",
+      "preference-optimization"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/physmodpo-physics-humanoid-motion-preference-optimization"
   },
   {
     "slug": "1x-technologies",
