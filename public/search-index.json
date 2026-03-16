@@ -40,6 +40,56 @@
     "url": "/news/kistler-ats-medical-device-assembly-symphoni"
   },
   {
+    "slug": "macau-police-detain-humanoid-robot-elderly-incident",
+    "title": "Macau Police Detain Robot After Elderly Incident",
+    "excerpt": "First police detention of humanoid robot highlights deployment safety concerns in public spaces",
+    "category": "breaking",
+    "date": "2026-03-16T15:30:00Z",
+    "tags": [
+      "public-safety",
+      "deployment",
+      "regulation",
+      "macau"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/macau-police-detain-humanoid-robot-elderly-incident"
+  },
+  {
+    "slug": "robot-arrest-first-humanoid-police-detention-legal-implications",
+    "title": "Robot Arrest: First Humanoid Police Detention Sparks Legal Crisis",
+    "excerpt": "Police detain humanoid robot after alleged harassment incident, raising critical questions about AI accountability",
+    "category": "breaking",
+    "date": "2026-03-16T15:30:00Z",
+    "tags": [
+      "robot-arrest",
+      "legal-framework",
+      "humanoid-liability",
+      "public-safety"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/robot-arrest-first-humanoid-police-detention-legal-implications"
+  },
+  {
+    "slug": "china-wheeled-humanoid-robot-lunar-base",
+    "title": "China's Wheeled Humanoid Robot for Lunar Base Construction",
+    "excerpt": "China reveals wheeled humanoid designed for lunar base assembly, marking major shift in space robotics strategy",
+    "category": "breaking",
+    "date": "2026-03-16T14:30:00Z",
+    "tags": [
+      "china",
+      "lunar-robotics",
+      "space-construction",
+      "cnsa"
+    ],
+    "companies": [
+      "China National Space Administration"
+    ],
+    "type": "news",
+    "url": "/news/china-wheeled-humanoid-robot-lunar-base"
+  },
+  {
     "slug": "ukraine-military-humanoid-robots-deployment-2026",
     "title": "Ukraine Deploys First Military Humanoid Robots",
     "excerpt": "Ukraine becomes first nation to deploy humanoid robots in active combat, marking historic shift in military robotics",
@@ -72,6 +122,24 @@
     ],
     "type": "news",
     "url": "/news/ukraine-phantom-mk1-humanoid-robots-battlefield-trial"
+  },
+  {
+    "slug": "stmicro-humanoid-robots-european-fabs-deployment",
+    "title": "STMicro Deploys 100+ Humanoids to European Fabs",
+    "excerpt": "European semiconductor giant plans largest industrial humanoid deployment to date across legacy fabrication facilities",
+    "category": "breaking",
+    "date": "2026-03-16T12:30:00Z",
+    "tags": [
+      "stmicroelectronics",
+      "manufacturing",
+      "deployment",
+      "semiconductors"
+    ],
+    "companies": [
+      "STMicroelectronics"
+    ],
+    "type": "news",
+    "url": "/news/stmicro-humanoid-robots-european-fabs-deployment"
   },
   {
     "slug": "baba-w-robbyant-leju-robotics-partnership",
@@ -111,6 +179,27 @@
     ],
     "type": "news",
     "url": "/news/sharpa-nvidia-collaboration-dexterous-robotics-training"
+  },
+  {
+    "slug": "quantum-threats-humanoid-robot-security-accelerate",
+    "title": "Quantum Threats to Humanoid Robot Security Accelerate",
+    "excerpt": "Quantum computers threaten current robot encryption within 10-15 years as humanoid deployments scale",
+    "category": "breaking",
+    "date": "2026-03-16T11:00:00Z",
+    "tags": [
+      "cybersecurity",
+      "quantum-computing",
+      "encryption",
+      "robot-security"
+    ],
+    "companies": [
+      "Boston Dynamics",
+      "Figure AI",
+      "Agility Robotics",
+      "Tesla"
+    ],
+    "type": "news",
+    "url": "/news/quantum-threats-humanoid-robot-security-accelerate"
   },
   {
     "slug": "sparse-world-models-robotic-planning-drift-reduction",
@@ -387,6 +476,26 @@
     "url": "/news/agility-boston-dynamics-astm-humanoid-panel-2026"
   },
   {
+    "slug": "agibot-singtel-strategic-partnership-asia-pacific",
+    "title": "AGIBOT Partners with Singtel for Asia-Pacific Expansion",
+    "excerpt": "Chinese humanoid developer AGIBOT signs strategic cooperation with Singtel Enterprise for regional deployment",
+    "category": "breaking",
+    "date": "2026-03-10T14:30:00Z",
+    "tags": [
+      "agibot",
+      "singtel",
+      "partnerships",
+      "asia-pacific",
+      "enterprise"
+    ],
+    "companies": [
+      "AGIBOT",
+      "Singtel Enterprise"
+    ],
+    "type": "news",
+    "url": "/news/agibot-singtel-strategic-partnership-asia-pacific"
+  },
+  {
     "slug": "sunday-robotics-1-billion-unicorn-household-humanoid",
     "title": "Sunday Robotics Hits $1.15B Valuation with Household Humanoid Push",
     "excerpt": "Chinese humanoid startup Sunday Robotics has reached unicorn status with a $200M Series B valuing the company at $1.15B, pivoting from industrial to consumer and elderly care markets.",
@@ -478,6 +587,64 @@
     ],
     "type": "news",
     "url": "/news/ti-nvidia-physical-ai-humanoid-robots-partnership"
+  },
+  {
+    "slug": "agibot-full-humanoid-portfolio-mwc-2026",
+    "title": "AGIBOT Unveils Full Humanoid Portfolio at MWC 2026",
+    "excerpt": "AGIBOT demonstrates complete humanoid robot lineup and ecosystem integration at Mobile World Congress 2026",
+    "category": "breaking",
+    "date": "2026-03-04T08:00:00Z",
+    "tags": [
+      "agibot",
+      "mwc-2026",
+      "humanoid-portfolio",
+      "full-scenario-solutions"
+    ],
+    "companies": [
+      "AGIBOT"
+    ],
+    "type": "news",
+    "url": "/news/agibot-full-humanoid-portfolio-mwc-2026"
+  },
+  {
+    "slug": "agibot-humanoid-robot-portfolio-mwc-2026",
+    "title": "AGIBOT Debuts Full Humanoid Portfolio at MWC 2026",
+    "excerpt": "Chinese robotics firm AGIBOT unveils complete humanoid robot lineup at Mobile World Congress 2026",
+    "category": "breaking",
+    "date": "2026-03-03T21:15:00Z",
+    "tags": [
+      "agibot",
+      "mwc",
+      "humanoid-robots",
+      "trade-show"
+    ],
+    "companies": [
+      "AGIBOT"
+    ],
+    "type": "news",
+    "url": "/news/agibot-humanoid-robot-portfolio-mwc-2026"
+  },
+  {
+    "slug": "china-robot-market-dominance-analysis-2026",
+    "title": "China's Robot Surge: 50% Global Market Share by Numbers",
+    "excerpt": "China now controls 50% of global robot production, driven by manufacturing automation and $2.8B humanoid investments",
+    "category": "deep-dive",
+    "date": "2026-03-03T15:30:00Z",
+    "tags": [
+      "china-robotics",
+      "market-analysis",
+      "manufacturing",
+      "humanoids"
+    ],
+    "companies": [
+      "UBtech Robotics",
+      "Fourier Intelligence",
+      "CloudMinds",
+      "UBTECH",
+      "Ex-Robots"
+    ],
+    "type": "news",
+    "url": "/news/china-robot-market-dominance-analysis-2026"
   },
   {
     "slug": "honor-mwc-2026-humanoid-robot-consumer-announcement",
@@ -803,6 +970,22 @@
     "url": "/news/humanoid-robot-arrested-macau-incident"
   },
   {
+    "slug": "robot-arrest-macau-elderly-woman-public-safety",
+    "title": "Robot 'Arrest' in Macau Highlights Public Safety Gap",
+    "excerpt": "Macau incident exposes critical gaps in humanoid robot public deployment protocols and elderly user acceptance",
+    "category": "market",
+    "date": "2024-12-19T15:30:00Z",
+    "tags": [
+      "public-safety",
+      "humanoid-robots",
+      "deployment",
+      "elderly-interaction"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/robot-arrest-macau-elderly-woman-public-safety"
+  },
+  {
     "slug": "sunday-robotics-165m-series-b-humanoid-funding",
     "title": "Sunday Robotics Raises $165M Series B for Humanoid Push",
     "excerpt": "Sunday Robotics secures $165M Series B to accelerate humanoid development and manufacturing scale",
@@ -837,6 +1020,26 @@
     ],
     "type": "news",
     "url": "/news/samsung-hand-lab-humanoid-robot-dexterity"
+  },
+  {
+    "slug": "beijing-humanoids-half-marathon-practice-run",
+    "title": "Beijing Humanoids Run Half-Marathon Practice: Tech Demo or Reality?",
+    "excerpt": "Multiple humanoid robots completed practice runs for Beijing half-marathon, showcasing advances in bipedal endurance capabilities",
+    "category": "breaking",
+    "date": "2024-12-19T14:30:00Z",
+    "tags": [
+      "locomotion",
+      "endurance",
+      "bipedal",
+      "china",
+      "marathon"
+    ],
+    "companies": [
+      "Unitree Robotics",
+      "UBTECH Robotics"
+    ],
+    "type": "news",
+    "url": "/news/beijing-humanoids-half-marathon-practice-run"
   },
   {
     "slug": "china-robot-boot-camp-ai-training-data-collection",
@@ -892,6 +1095,57 @@
     ],
     "type": "news",
     "url": "/news/ox-digital-warehouse-3d-mapping-standard-launched"
+  },
+  {
+    "slug": "humanoid-robot-cherry-blossom-dance-china-guizhou",
+    "title": "Humanoid Robot Dances Under Cherry Blossoms in China",
+    "excerpt": "Chinese humanoid robot demonstrates fluid motion control in viral cherry blossom dance video from Guizhou province",
+    "category": "breaking",
+    "date": "2024-03-16T18:30:00Z",
+    "tags": [
+      "china-robotics",
+      "humanoid-demo",
+      "entertainment-robotics",
+      "cultural-integration"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/humanoid-robot-cherry-blossom-dance-china-guizhou"
+  },
+  {
+    "slug": "d-robotics-120m-series-b1-funding-ai-chips",
+    "title": "D-Robotics Raises $120M Series B1 for AI Chip Push",
+    "excerpt": "Chinese AI chip maker D-Robotics secures $120M in Series B1 funding to accelerate edge computing development for robotics",
+    "category": "breaking",
+    "date": "2024-03-16T15:30:00Z",
+    "tags": [
+      "d-robotics",
+      "funding",
+      "series-b1",
+      "ai-chips",
+      "edge-computing"
+    ],
+    "companies": [
+      "D-Robotics"
+    ],
+    "type": "news",
+    "url": "/news/d-robotics-120m-series-b1-funding-ai-chips"
+  },
+  {
+    "slug": "macau-humanoid-robot-incident-hospitalizes-elderly-woman",
+    "title": "Macau Humanoid Robot Incident Hospitalizes Elderly Woman",
+    "excerpt": "Elderly woman hospitalized after street encounter with humanoid robot in Macau raises critical questions about public deployment safety",
+    "category": "breaking",
+    "date": "2024-03-16T15:30:00Z",
+    "tags": [
+      "safety",
+      "deployment",
+      "public-interaction",
+      "macau"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/macau-humanoid-robot-incident-hospitalizes-elderly-woman"
   },
   {
     "slug": "tesla-optimus-3-production-li-auto-exec-robotics-funding",

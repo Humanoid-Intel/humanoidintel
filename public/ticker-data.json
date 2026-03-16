@@ -8,13 +8,13 @@
   {
     "symbol": "TSLA.BOT",
     "label": "Optimus",
-    "status": "+Public.Demo",
+    "status": "+News",
     "positive": true
   },
   {
     "symbol": "BOS.DYN",
     "label": "Atlas",
-    "status": "+Fund.$50M",
+    "status": "+News",
     "positive": true
   },
   {
@@ -38,7 +38,7 @@
   {
     "symbol": "UNIT.REE",
     "label": "G1",
-    "status": "+3k.Ships.25",
+    "status": "+Public.Demo",
     "positive": true
   },
   {
