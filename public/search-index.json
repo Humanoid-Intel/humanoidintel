@@ -18,6 +18,59 @@
     "url": "/news/rmit-dolphin-robot-oil-spill-cleanup-sea-urchin-filter"
   },
   {
+    "slug": "neuralink-noland-arbaugh-keynote-robotics-summit-2026",
+    "title": "Neuralink Pioneer Arbaugh to Keynote Robotics Summit",
+    "excerpt": "First Neuralink patient Noland Arbaugh headlines 2026 Robotics Summit, bridging brain-computer interfaces with robotics",
+    "category": "breaking",
+    "date": "2026-03-16T18:00:00Z",
+    "tags": [
+      "neuralink",
+      "bci",
+      "robotics-summit",
+      "neural-interfaces"
+    ],
+    "companies": [
+      "Neuralink",
+      "The Robot Report"
+    ],
+    "type": "news",
+    "url": "/news/neuralink-noland-arbaugh-keynote-robotics-summit-2026"
+  },
+  {
+    "slug": "anybotics-explosion-proof-inspection-robot-anymal-x",
+    "title": "ANYbotics Launches World's First Explosion-Proof Robot",
+    "excerpt": "Swiss robotics firm debuts ATEX-certified quadruped for petrochemical facility inspections in explosive atmospheres",
+    "category": "breaking",
+    "date": "2026-03-16T15:30:00Z",
+    "tags": [
+      "anybotics",
+      "inspection-robots",
+      "hazardous-environments",
+      "atex-certification"
+    ],
+    "companies": [
+      "ANYbotics"
+    ],
+    "type": "news",
+    "url": "/news/anybotics-explosion-proof-inspection-robot-anymal-x"
+  },
+  {
+    "slug": "china-robot-arrest-public-safety-concerns",
+    "title": "China Robot 'Arrest' Highlights Public Safety Concerns",
+    "excerpt": "Chinese authorities detained a service robot after it allegedly frightened a woman, marking first known robot 'arrest'",
+    "category": "breaking",
+    "date": "2026-03-16T15:30:00Z",
+    "tags": [
+      "china",
+      "public-safety",
+      "robot-incidents",
+      "social-robotics"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/china-robot-arrest-public-safety-concerns"
+  },
+  {
     "slug": "docomo-5g-robot-teleoperation-breakthrough",
     "title": "DoCoMo Achieves 5G Robot Teleoperation Breakthrough",
     "excerpt": "NTT DoCoMo and Keio University achieve world's first stable haptic robot teleoperation over commercial 5G networks",
@@ -454,6 +507,27 @@
     "url": "/news/agility-robotics-astm-humanoid-safety-standards-2026"
   },
   {
+    "slug": "china-humanoid-robotics-acceleration-2026",
+    "title": "China's Humanoid Robot Push Gains Steam Amid US Competition",
+    "excerpt": "China accelerates humanoid robotics development through state funding and manufacturing scale advantages",
+    "category": "breaking",
+    "date": "2026-03-12T16:00:00Z",
+    "tags": [
+      "china",
+      "competition",
+      "manufacturing",
+      "policy"
+    ],
+    "companies": [
+      "Unitree Robotics",
+      "UBTECH",
+      "Agility Robotics",
+      "Tesla"
+    ],
+    "type": "news",
+    "url": "/news/china-humanoid-robotics-acceleration-2026"
+  },
+  {
     "slug": "xiaomi-humanoid-robot-factory-trial-cyberone-successor",
     "title": "Xiaomi Runs Factory Trials for Next-Gen Humanoid, Eyes 2027 Production",
     "excerpt": "Xiaomi has begun supervised factory trials of a next-generation humanoid robot at its Beijing smart factory, with sources indicating a target for limited production-line deployment by 2027.",
@@ -623,6 +697,27 @@
     "url": "/news/bmw-humanoid-robot-leipzig-plant-deployment"
   },
   {
+    "slug": "chinese-automakers-humanoid-robots-smart-car-tech",
+    "title": "Chinese Automakers Enter Humanoid Robot Market",
+    "excerpt": "Chinese automotive giants leverage autonomous driving tech for humanoid robotics expansion",
+    "category": "market",
+    "date": "2026-03-09T16:45:00Z",
+    "tags": [
+      "china",
+      "automotive",
+      "technology-transfer",
+      "manufacturing"
+    ],
+    "companies": [
+      "BYD",
+      "Xpeng",
+      "NIO",
+      "Geely"
+    ],
+    "type": "news",
+    "url": "/news/chinese-automakers-humanoid-robots-smart-car-tech"
+  },
+  {
     "slug": "qualcomm-iq10-neura-robotics-partnership-humanoid-processors",
     "title": "Qualcomm IQ10 Powers Neura Robotics' Next-Gen Humanoids",
     "excerpt": "Qualcomm's IQ10 chip will power Neura Robotics' next humanoid platform, marking chipmaker's serious robotics push",
@@ -640,6 +735,25 @@
     ],
     "type": "news",
     "url": "/news/qualcomm-iq10-neura-robotics-partnership-humanoid-processors"
+  },
+  {
+    "slug": "xiaomi-humanoid-robots-ev-factory-interns",
+    "title": "Xiaomi Deploys Humanoids as Factory Interns for EV Production",
+    "excerpt": "Chinese tech giant integrates humanoid workers into automotive assembly line operations",
+    "category": "market",
+    "date": "2026-03-09T16:30:00Z",
+    "tags": [
+      "xiaomi",
+      "humanoid-robots",
+      "manufacturing",
+      "ev-production",
+      "industrial-automation"
+    ],
+    "companies": [
+      "Xiaomi"
+    ],
+    "type": "news",
+    "url": "/news/xiaomi-humanoid-robots-ev-factory-interns"
   },
   {
     "slug": "phantom-mk1-combat-humanoid-robot-military-deployment",
@@ -1093,6 +1207,25 @@
     "url": "/news/opentrons-ai-simulation-lab-robot-workflows"
   },
   {
+    "slug": "rhoda-ai-450-million-series-a-real-world-robotics",
+    "title": "Rhoda AI Secures $450M Series A for Real-World Robot Deploy",
+    "excerpt": "Rhoda AI emerges from stealth with massive $450M Series A to commercialize lab robotics for real-world applications",
+    "category": "breaking",
+    "date": "2024-12-19T18:30:00Z",
+    "tags": [
+      "rhoda-ai",
+      "funding",
+      "series-a",
+      "stealth-mode",
+      "real-world-deployment"
+    ],
+    "companies": [
+      "Rhoda AI"
+    ],
+    "type": "news",
+    "url": "/news/rhoda-ai-450-million-series-a-real-world-robotics"
+  },
+  {
     "slug": "tesla-robotics-pivot-optimus-investment-strategy",
     "title": "Tesla's Robotics Pivot: $2B Optimus Investment Strategy",
     "excerpt": "Tesla's $2B robotics pivot faces manufacturing reality as Optimus targets 2025 limited production timeline",
@@ -1151,6 +1284,24 @@
     ],
     "type": "news",
     "url": "/news/china-lunar-construction-robot-space-humanoids"
+  },
+  {
+    "slug": "humanoid-robot-arrested-china-public-safety-incident",
+    "title": "Humanoid Robot 'Arrested' in China Public Safety Incident",
+    "excerpt": "First documented case of humanoid robot 'arrest' highlights public safety challenges as robots enter everyday spaces",
+    "category": "breaking",
+    "date": "2024-12-19T15:30:00Z",
+    "tags": [
+      "china",
+      "public-safety",
+      "humanoid-robots",
+      "regulation"
+    ],
+    "companies": [
+      "Unknown Chinese manufacturer"
+    ],
+    "type": "news",
+    "url": "/news/humanoid-robot-arrested-china-public-safety-incident"
   },
   {
     "slug": "humanoid-robot-arrested-macau-incident",
@@ -1496,6 +1647,26 @@
     ],
     "type": "news",
     "url": "/news/musk-questions-figure-robot-autonomy-demo"
+  },
+  {
+    "slug": "china-humanoid-robot-market-160-companies-mass-production",
+    "title": "China Humanoid Robot Market Reaches 160 Companies",
+    "excerpt": "China's humanoid robotics ecosystem expands to 160 companies as industry pivots toward commercial viability and mass market deployment.",
+    "category": "market",
+    "date": "2024-03-04T15:30:00Z",
+    "tags": [
+      "china",
+      "market-analysis",
+      "mass-production",
+      "manufacturing"
+    ],
+    "companies": [
+      "Ubtech Robotics",
+      "Fourier Intelligence",
+      "WAIC"
+    ],
+    "type": "news",
+    "url": "/news/china-humanoid-robot-market-160-companies-mass-production"
   },
   {
     "slug": "1x-technologies",
