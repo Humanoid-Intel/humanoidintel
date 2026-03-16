@@ -37,6 +37,81 @@
     "url": "/news/neuralink-noland-arbaugh-keynote-robotics-summit-2026"
   },
   {
+    "slug": "interpretable-responsibility-sharing-tamp-framework",
+    "title": "New TAMP Framework Tackles Human-Robot Collaboration",
+    "excerpt": "Turkish researchers develop interpretable framework for dividing tasks between humans and robots in collaborative environments.",
+    "category": "research",
+    "date": "2026-03-16T17:00:05.880Z",
+    "tags": [
+      "task-motion-planning",
+      "human-robot-collaboration",
+      "interpretable-ai",
+      "research"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/interpretable-responsibility-sharing-tamp-framework"
+  },
+  {
+    "slug": "time-delay-estimation-variable-admittance-control-robot-needle-punching",
+    "title": "New Control Algorithm Cuts Robot Fabric Processing Time 40%",
+    "excerpt": "Researchers develop variable admittance sliding mode control system that improves robot needle-punching precision by 35%",
+    "category": "research",
+    "date": "2026-03-16T17:00:05.880Z",
+    "tags": [
+      "control-algorithms",
+      "manufacturing",
+      "force-control",
+      "sliding-mode"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/time-delay-estimation-variable-admittance-control-robot-needle-punching"
+  },
+  {
+    "slug": "tennis-playing-humanoid-robot-video-industry-analysis",
+    "title": "Tennis-Playing Humanoid Robot Video Sparks Industry Buzz",
+    "excerpt": "Viral tennis robot video demonstrates advanced whole-body control capabilities that could accelerate humanoid adoption",
+    "category": "breaking",
+    "date": "2026-03-16T16:01:50.000Z",
+    "tags": [
+      "humanoid-robotics",
+      "dexterous-manipulation",
+      "whole-body-control",
+      "athletic-performance"
+    ],
+    "companies": [
+      "Tesla",
+      "Boston Dynamics",
+      "Agility Robotics",
+      "Honda"
+    ],
+    "type": "news",
+    "url": "/news/tennis-playing-humanoid-robot-video-industry-analysis"
+  },
+  {
+    "slug": "companies-replacing-employees-ai-workforce-reductions",
+    "title": "9 Companies Cut Jobs as AI Takes Over Human Roles",
+    "excerpt": "Block, Atlassian lead wave of companies explicitly cutting human roles for AI automation across customer service, coding",
+    "category": "breaking",
+    "date": "2026-03-16T16:00:01.000Z",
+    "tags": [
+      "ai-automation",
+      "workforce",
+      "layoffs",
+      "enterprise-ai"
+    ],
+    "companies": [
+      "Block",
+      "Atlassian",
+      "Klarna",
+      "Dropbox",
+      "IBM"
+    ],
+    "type": "news",
+    "url": "/news/companies-replacing-employees-ai-workforce-reductions"
+  },
+  {
     "slug": "anybotics-explosion-proof-inspection-robot-anymal-x",
     "title": "ANYbotics Launches World's First Explosion-Proof Robot",
     "excerpt": "Swiss robotics firm debuts ATEX-certified quadruped for petrochemical facility inspections in explosive atmospheres",
@@ -327,6 +402,22 @@
     "url": "/news/sharpa-nvidia-collaboration-dexterous-robotics-training"
   },
   {
+    "slug": "robot-detained-police-first-humanoid-arrest-harassment",
+    "title": "Robot Detained by Police: First Humanoid 'Arrest' Case?",
+    "excerpt": "Police detain humanoid robot after alleged harassment incident, raising questions about robot accountability and public safety protocols.",
+    "category": "breaking",
+    "date": "2026-03-16T11:11:30.000Z",
+    "tags": [
+      "robot-arrest",
+      "public-safety",
+      "humanoid-behavior",
+      "law-enforcement"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/robot-detained-police-first-humanoid-arrest-harassment"
+  },
+  {
     "slug": "quantum-threats-humanoid-robot-security-accelerate",
     "title": "Quantum Threats to Humanoid Robot Security Accelerate",
     "excerpt": "Quantum computers threaten current robot encryption within 10-15 years as humanoid deployments scale",
@@ -346,6 +437,28 @@
     ],
     "type": "news",
     "url": "/news/quantum-threats-humanoid-robot-security-accelerate"
+  },
+  {
+    "slug": "china-robot-schools-humanoid-training-centers",
+    "title": "China Opens Robot Training Centers for Humanoid Workforce",
+    "excerpt": "China launches specialized training facilities to prepare humanoid robots for industrial deployment across factories and warehouses.",
+    "category": "breaking",
+    "date": "2026-03-16T10:44:00.000Z",
+    "tags": [
+      "china",
+      "training",
+      "manufacturing",
+      "logistics",
+      "workforce"
+    ],
+    "companies": [
+      "UBTECH Robotics",
+      "Fourier Intelligence",
+      "UBR",
+      "Agility Robotics"
+    ],
+    "type": "news",
+    "url": "/news/china-robot-schools-humanoid-training-centers"
   },
   {
     "slug": "sparse-world-models-robotic-planning-drift-reduction",
@@ -545,6 +658,49 @@
     "url": "/news/musk-integer-universe-tesla-optimus-ai-implications"
   },
   {
+    "slug": "bofa-humanoid-robots-outnumber-cars-2060-prediction",
+    "title": "BofA: Humanoid Robots to Outnumber Car Ownership by 2060",
+    "excerpt": "Bank of America forecasts humanoid robot ownership will exceed car ownership by 2060 in major prediction.",
+    "category": "breaking",
+    "date": "2026-03-13T14:03:46.000Z",
+    "tags": [
+      "market-forecast",
+      "adoption",
+      "bank-of-america",
+      "consumer-robotics"
+    ],
+    "companies": [
+      "Bank of America",
+      "Tesla",
+      "Boston Dynamics",
+      "Agility Robotics",
+      "Figure AI"
+    ],
+    "type": "news",
+    "url": "/news/bofa-humanoid-robots-outnumber-cars-2060-prediction"
+  },
+  {
+    "slug": "hyundai-physical-ai-roadmap-atlas-robotics",
+    "title": "Hyundai Reveals Physical AI Roadmap With Atlas Robotics",
+    "excerpt": "Hyundai unveils integrated Physical AI strategy combining Boston Dynamics Atlas and autonomous driving tech",
+    "category": "breaking",
+    "date": "2026-03-13T12:26:53.000Z",
+    "tags": [
+      "hyundai",
+      "physical-ai",
+      "atlas-robotics",
+      "autonomous-driving",
+      "boston-dynamics"
+    ],
+    "companies": [
+      "Hyundai Motor Group",
+      "Boston Dynamics",
+      "Kia"
+    ],
+    "type": "news",
+    "url": "/news/hyundai-physical-ai-roadmap-atlas-robotics"
+  },
+  {
     "slug": "agility-robotics-astm-humanoid-safety-standards-2026",
     "title": "Agility and Boston Dynamics Push ASTM to Set Humanoid Safety Standards",
     "excerpt": "Agility Robotics and Boston Dynamics have joined an ASTM International technical committee to develop the first formal safety standards for humanoid robots in commercial environments — a move that could shape the entire industry's regulatory trajectory.",
@@ -719,6 +875,26 @@
     "url": "/news/agibot-singtel-strategic-partnership-asia-pacific"
   },
   {
+    "slug": "neura-robotics-qualcomm-partnership-cognitive-ai",
+    "title": "NEURA Robotics Partners with Qualcomm for Cognitive AI",
+    "excerpt": "German robotics startup NEURA partners with Qualcomm to integrate advanced AI processing into cognitive humanoid platforms",
+    "category": "breaking",
+    "date": "2026-03-10T10:20:43.000Z",
+    "tags": [
+      "neura-robotics",
+      "qualcomm",
+      "partnership",
+      "cognitive-robotics",
+      "physical-ai"
+    ],
+    "companies": [
+      "NEURA Robotics",
+      "Qualcomm"
+    ],
+    "type": "news",
+    "url": "/news/neura-robotics-qualcomm-partnership-cognitive-ai"
+  },
+  {
     "slug": "sunday-robotics-1-billion-unicorn-household-humanoid",
     "title": "Sunday Robotics Hits $1.15B Valuation with Household Humanoid Push",
     "excerpt": "Chinese humanoid startup Sunday Robotics has reached unicorn status with a $200M Series B valuing the company at $1.15B, pivoting from industrial to consumer and elderly care markets.",
@@ -736,6 +912,25 @@
     ],
     "type": "news",
     "url": "/news/sunday-robotics-1-billion-unicorn-household-humanoid"
+  },
+  {
+    "slug": "unitree-hku-embodied-ai-lab-shanghai",
+    "title": "Unitree, HKU Launch Embodied AI Lab in Shanghai",
+    "excerpt": "Chinese robotics firm partners with Hong Kong University to establish new research facility focused on embodied AI development",
+    "category": "breaking",
+    "date": "2026-03-10T02:03:30.000Z",
+    "tags": [
+      "unitree",
+      "hku",
+      "embodied-ai",
+      "shanghai",
+      "partnership"
+    ],
+    "companies": [
+      "Unitree Robotics"
+    ],
+    "type": "news",
+    "url": "/news/unitree-hku-embodied-ai-lab-shanghai"
   },
   {
     "slug": "qualcomm-neura-robotics-partnership-physical-ai",
@@ -794,6 +989,26 @@
     ],
     "type": "news",
     "url": "/news/chinese-automakers-humanoid-robots-smart-car-tech"
+  },
+  {
+    "slug": "figure-ai-demo-musk-autonomy-debate",
+    "title": "Figure AI Demo Sparks Musk Autonomy Debate",
+    "excerpt": "Figure AI's latest humanoid demo draws skepticism from Elon Musk over true autonomous capabilities",
+    "category": "breaking",
+    "date": "2026-03-09T16:33:44.000Z",
+    "tags": [
+      "figure-ai",
+      "autonomy",
+      "elon-musk",
+      "nvidia"
+    ],
+    "companies": [
+      "Figure AI",
+      "Nvidia",
+      "Tesla"
+    ],
+    "type": "news",
+    "url": "/news/figure-ai-demo-musk-autonomy-debate"
   },
   {
     "slug": "qualcomm-iq10-neura-robotics-partnership-humanoid-processors",
@@ -1991,6 +2206,38 @@
     "url": "/jobs"
   },
   {
+    "slug": "greenhouse-nimblerobotics-4100984009",
+    "title": "AI Robotics Research Scientist — Nimble Robotics",
+    "excerpt": "General · San Francisco, CA",
+    "category": "job",
+    "date": "2026-03-14T15:55:31-04:00",
+    "tags": [
+      "ml/ai",
+      "research"
+    ],
+    "companies": [
+      "Nimble Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-nimblerobotics-4156170009",
+    "title": "AI Tooling & Analytics Intern — Nimble Robotics",
+    "excerpt": "General · San Francisco, CA",
+    "category": "job",
+    "date": "2026-03-14T16:18:59-04:00",
+    "tags": [
+      "ml/ai",
+      "internship"
+    ],
+    "companies": [
+      "Nimble Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
     "slug": "greenhouse-figureai-4660876006",
     "title": "AI Tooling Engineer, Helix — Figure AI",
     "excerpt": "General · San Jose, CA",
@@ -2249,6 +2496,49 @@
     "url": "/funding"
   },
   {
+    "slug": "ashby-physicalintelligence-f70f9481-ea7e-48e4-9212-f9c10952a028",
+    "title": "Build & Release Engineer — Physical Intelligence",
+    "excerpt": "Engineering · San Francisco",
+    "category": "job",
+    "date": "2026-03-16T16:22:01.944Z",
+    "tags": [],
+    "companies": [
+      "Physical Intelligence"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "ashby-physicalintelligence-c2c1faae-acb6-4c8b-bd0d-e7e180ac8d94",
+    "title": "Business Operations — Physical Intelligence",
+    "excerpt": "Business · San Francisco",
+    "category": "job",
+    "date": "2026-03-16T16:22:01.944Z",
+    "tags": [
+      "operations"
+    ],
+    "companies": [
+      "Physical Intelligence"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-nimblerobotics-4132252009",
+    "title": "Client Success Manager — Nimble Robotics",
+    "excerpt": "General · Haslet, TX",
+    "category": "job",
+    "date": "2026-03-14T15:56:07-04:00",
+    "tags": [
+      "product"
+    ],
+    "companies": [
+      "Nimble Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
     "slug": "clone-alpha",
     "title": "Clone Alpha — Clone Robotics",
     "excerpt": "Clone Alpha is Clone Robotics' consumer product — a limited luxury run of exactly 279 units (believed to be a Westworld reference) targeting home use at a ~$20,000 price point. The…",
@@ -2355,6 +2645,21 @@
     "url": "/jobs"
   },
   {
+    "slug": "ashby-physicalintelligence-c8f9e9aa-8801-4916-9b1f-2c0bd5f072f9",
+    "title": "Controls Engineer — Physical Intelligence",
+    "excerpt": "Engineering · San Francisco",
+    "category": "job",
+    "date": "2026-03-16T16:22:01.944Z",
+    "tags": [
+      "controls"
+    ],
+    "companies": [
+      "Physical Intelligence"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
     "slug": "greenhouse-apptronik-5809769004",
     "title": "Customer Deployment Operations Manager — Apptronik",
     "excerpt": "General · Austin, TX",
@@ -2366,6 +2671,19 @@
     ],
     "companies": [
       "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-diligentrobotics-6601362003",
+    "title": "Customer Support Specialist - Robotics — Diligent Robotics",
+    "excerpt": "General · Austin, Texas, United States",
+    "category": "job",
+    "date": "2026-03-03T12:48:32-05:00",
+    "tags": [],
+    "companies": [
+      "Diligent Robotics"
     ],
     "type": "job",
     "url": "/jobs"
@@ -2418,6 +2736,21 @@
     "companies": [],
     "type": "glossary",
     "url": "/glossary/degrees-of-freedom"
+  },
+  {
+    "slug": "lever-sanctuary-4c534a72-bcbb-4138-aed6-bd3b86d7b3ba",
+    "title": "DevOps Engineer — Sanctuary AI",
+    "excerpt": "Software Engineering · Vancouver, BC",
+    "category": "job",
+    "date": "2026-02-02T23:51:52.391Z",
+    "tags": [
+      "software"
+    ],
+    "companies": [
+      "Sanctuary AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
   },
   {
     "slug": "dexterous-manipulation",
@@ -2624,6 +2957,21 @@
     "url": "/jobs"
   },
   {
+    "slug": "greenhouse-nimblerobotics-4101329009",
+    "title": "Electro-Mechanical Assembler — Nimble Robotics",
+    "excerpt": "General · Haslet, TX",
+    "category": "job",
+    "date": "2026-03-14T15:26:45-04:00",
+    "tags": [
+      "hardware"
+    ],
+    "companies": [
+      "Nimble Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
     "slug": "end-effector",
     "title": "End-Effector",
     "excerpt": "The terminal device attached to a robot arm that directly interacts with the environment — in humanoids, typically a multi-fingered hand, but may be a specialized gripper, tool,…",
@@ -2652,6 +3000,21 @@
     ],
     "companies": [
       "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "ashby-fourier-0d776c88-6d5a-46fb-92aa-ba0fee293ee9",
+    "title": "Engineering Program Manager (EPM) — Fourier Intelligence",
+    "excerpt": "Engineering · HQ",
+    "category": "job",
+    "date": "2026-03-16T16:22:01.943Z",
+    "tags": [
+      "product"
+    ],
+    "companies": [
+      "Fourier Intelligence"
     ],
     "type": "job",
     "url": "/jobs"
@@ -2887,6 +3250,21 @@
     "url": "/jobs"
   },
   {
+    "slug": "ashby-physicalintelligence-567d620f-7600-4e35-9edd-f41ed4db45ce",
+    "title": "Forward Deployed Robotics Engineer — Physical Intelligence",
+    "excerpt": "Hardware · San Francisco",
+    "category": "job",
+    "date": "2026-03-16T16:22:01.944Z",
+    "tags": [
+      "hardware"
+    ],
+    "companies": [
+      "Physical Intelligence"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
     "slug": "fourier-intelligence",
     "title": "Fourier Intelligence",
     "excerpt": "Fourier Intelligence is distinguished among humanoid companies by its decade-long commercial track record in medical exoskeletons, having shipped thousands of rehabilitation device…",
@@ -2996,6 +3374,21 @@
     ],
     "type": "robot",
     "url": "/robots/galbot-g1"
+  },
+  {
+    "slug": "greenhouse-nimblerobotics-4120577009",
+    "title": "Global Supply Manager — Nimble Robotics",
+    "excerpt": "General · San Francisco, CA",
+    "category": "job",
+    "date": "2026-03-14T15:56:39-04:00",
+    "tags": [
+      "product"
+    ],
+    "companies": [
+      "Nimble Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
   },
   {
     "slug": "greenhouse-figureai-4648671006",
@@ -3137,6 +3530,21 @@
     "tags": [],
     "companies": [
       "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-nimblerobotics-4140906009",
+    "title": "Head of Growth (Social Growth) — Nimble Robotics",
+    "excerpt": "General · San Francisco, CA",
+    "category": "job",
+    "date": "2026-03-14T15:57:18-04:00",
+    "tags": [
+      "leadership"
+    ],
+    "companies": [
+      "Nimble Robotics"
     ],
     "type": "job",
     "url": "/jobs"
@@ -3345,6 +3753,35 @@
     "url": "/robots/kepler-forerunner"
   },
   {
+    "slug": "ashby-physicalintelligence-ddbe51e9-9350-41a6-b932-7e64d25bb4b2",
+    "title": "Lab Manager — Physical Intelligence",
+    "excerpt": "Hardware · San Francisco",
+    "category": "job",
+    "date": "2026-03-16T16:22:01.944Z",
+    "tags": [
+      "hardware",
+      "product"
+    ],
+    "companies": [
+      "Physical Intelligence"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "ashby-fourier-f5f68e6f-c69e-46d4-94b7-adb45def9cfe",
+    "title": "Lab Technician - India — Fourier Intelligence",
+    "excerpt": "Engineering · Fourier India Office",
+    "category": "job",
+    "date": "2026-03-16T16:22:01.943Z",
+    "tags": [],
+    "companies": [
+      "Fourier Intelligence"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
     "slug": "greenhouse-figureai-4647901006",
     "title": "Lab Technician — Figure AI",
     "excerpt": "General · San Jose, CA",
@@ -3353,6 +3790,51 @@
     "tags": [],
     "companies": [
       "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-diligentrobotics-7635961003",
+    "title": "Lead Clinical Robot Associate - Columbus, OH — Diligent Robotics",
+    "excerpt": "General · Columbus, Ohio, United States",
+    "category": "job",
+    "date": "2026-03-04T13:03:06-05:00",
+    "tags": [
+      "junior"
+    ],
+    "companies": [
+      "Diligent Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-diligentrobotics-7661834003",
+    "title": "Lead Clinical Robot Associate - Neenah, WI — Diligent Robotics",
+    "excerpt": "General · Neenah, Wisconsin, United States",
+    "category": "job",
+    "date": "2026-03-13T11:33:01-04:00",
+    "tags": [
+      "junior"
+    ],
+    "companies": [
+      "Diligent Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-nimblerobotics-4140412009",
+    "title": "Lead Marketer (Social Growth) — Nimble Robotics",
+    "excerpt": "General · San Francisco, CA",
+    "category": "job",
+    "date": "2026-03-14T15:57:47-04:00",
+    "tags": [
+      "senior"
+    ],
+    "companies": [
+      "Nimble Robotics"
     ],
     "type": "job",
     "url": "/jobs"
@@ -3406,6 +3888,38 @@
     "url": "/glossary/loco-manipulation"
   },
   {
+    "slug": "lever-sanctuary-0e60fef6-a3e1-4a81-8345-75cd120e5b40",
+    "title": "Machine Learning Research Intern (Reinforcement/Imitation Learning) — Sanctuary AI",
+    "excerpt": "Co-ops/Internships · Vancouver, BC",
+    "category": "job",
+    "date": "2026-02-11T19:12:37.561Z",
+    "tags": [
+      "ml/ai",
+      "research",
+      "internship"
+    ],
+    "companies": [
+      "Sanctuary AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-nimblerobotics-4101345009",
+    "title": "Maintenance Technician (Haslet, TX) — Nimble Robotics",
+    "excerpt": "General · Haslet, TX",
+    "category": "job",
+    "date": "2026-03-14T15:32:02-04:00",
+    "tags": [
+      "ml/ai"
+    ],
+    "companies": [
+      "Nimble Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
     "slug": "greenhouse-apptronik-5808635004",
     "title": "Manager, Manufacturing Test Software — Apptronik",
     "excerpt": "General · Austin, TX",
@@ -3418,6 +3932,21 @@
     ],
     "companies": [
       "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "ashby-fourier-740f24a8-1cf4-411f-89e9-be13adb94f00",
+    "title": "Managing Director, Fourier India — Fourier Intelligence",
+    "excerpt": "Executive · Fourier India Office",
+    "category": "job",
+    "date": "2026-03-16T16:22:01.943Z",
+    "tags": [
+      "leadership"
+    ],
+    "companies": [
+      "Fourier Intelligence"
     ],
     "type": "job",
     "url": "/jobs"
@@ -3450,6 +3979,21 @@
     ],
     "companies": [
       "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "ashby-fourier-aca5b5ce-f564-4fdf-9e94-97ec218175d7",
+    "title": "Manufacturing Engineer — Fourier Intelligence",
+    "excerpt": "Manufacturing · HQ",
+    "category": "job",
+    "date": "2026-03-16T16:22:01.943Z",
+    "tags": [
+      "operations"
+    ],
+    "companies": [
+      "Fourier Intelligence"
     ],
     "type": "job",
     "url": "/jobs"
@@ -3612,6 +4156,82 @@
     "url": "/companies/mind-robotics"
   },
   {
+    "slug": "greenhouse-diligentrobotics-7651464003",
+    "title": "ML Engineer I, Robotics — Diligent Robotics",
+    "excerpt": "General · Austin, Texas, United States",
+    "category": "job",
+    "date": "2026-03-03T15:01:04-05:00",
+    "tags": [
+      "ml/ai"
+    ],
+    "companies": [
+      "Diligent Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-diligentrobotics-7651459003",
+    "title": "ML Engineer II, Manipulation — Diligent Robotics",
+    "excerpt": "General · Anywhere in the US (Remote)",
+    "category": "job",
+    "date": "2026-03-03T14:55:30-05:00",
+    "tags": [
+      "ml/ai"
+    ],
+    "companies": [
+      "Diligent Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-diligentrobotics-7651448003",
+    "title": "ML Engineer II, Navigation — Diligent Robotics",
+    "excerpt": "General · Anywhere in the US (Remote)",
+    "category": "job",
+    "date": "2026-03-03T15:01:29-05:00",
+    "tags": [
+      "ml/ai"
+    ],
+    "companies": [
+      "Diligent Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-diligentrobotics-7651438003",
+    "title": "ML Engineer II, World Models — Diligent Robotics",
+    "excerpt": "General · Anywhere in the US (Remote)",
+    "category": "job",
+    "date": "2026-03-03T15:02:53-05:00",
+    "tags": [
+      "ml/ai"
+    ],
+    "companies": [
+      "Diligent Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "ashby-physicalintelligence-4e547c5a-e4ee-40a7-b14b-c4daf9c072eb",
+    "title": "ML Infra Engineer (TPU/Jax/Optimization) — Physical Intelligence",
+    "excerpt": "Engineering · San Francisco",
+    "category": "job",
+    "date": "2026-03-16T16:22:01.944Z",
+    "tags": [
+      "ml/ai",
+      "software"
+    ],
+    "companies": [
+      "Physical Intelligence"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
     "slug": "neo-beta",
     "title": "NEO Beta — 1X Technologies",
     "excerpt": "NEO Beta is 1X Technologies' home-assistant humanoid, designed to be lightweight and safe for operation in proximity to humans. Unlike 1X's heavier EVE wheeled platform, NEO is ful…",
@@ -3724,6 +4344,51 @@
     "url": "/funding"
   },
   {
+    "slug": "greenhouse-nimblerobotics-4162764009",
+    "title": "NPI Technical Program Manager — Nimble Robotics",
+    "excerpt": "General · Haslet, TX",
+    "category": "job",
+    "date": "2026-03-14T15:59:27-04:00",
+    "tags": [
+      "product"
+    ],
+    "companies": [
+      "Nimble Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "ashby-physicalintelligence-6d2adda0-fcc2-4580-a05a-bba427093640",
+    "title": "Operations — Physical Intelligence",
+    "excerpt": "Business · San Francisco",
+    "category": "job",
+    "date": "2026-03-16T16:22:01.944Z",
+    "tags": [
+      "operations"
+    ],
+    "companies": [
+      "Physical Intelligence"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-nimblerobotics-4173085009",
+    "title": "Operations Supervisor (Haslet, TX) — Nimble Robotics",
+    "excerpt": "General · Haslet, TX",
+    "category": "job",
+    "date": "2026-03-14T16:00:37-04:00",
+    "tags": [
+      "operations"
+    ],
+    "companies": [
+      "Nimble Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
     "slug": "optimus-gen-2",
     "title": "Optimus Gen 2 — Tesla",
     "excerpt": "Optimus Gen 2 is Tesla's second-generation humanoid, incorporating 11 degrees of freedom in each hand with tactile sensing. The platform leverages Tesla's existing Dojo training in…",
@@ -3739,6 +4404,66 @@
     ],
     "type": "robot",
     "url": "/robots/optimus-gen-2"
+  },
+  {
+    "slug": "greenhouse-diligentrobotics-7628838003",
+    "title": "Part Time - Clinical Robot Associate - Columbus, OH (On-Site) — Diligent Robotics",
+    "excerpt": "General · Columbus, Ohio, United States",
+    "category": "job",
+    "date": "2026-03-03T12:48:32-05:00",
+    "tags": [
+      "junior"
+    ],
+    "companies": [
+      "Diligent Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-diligentrobotics-7645725003",
+    "title": "Part Time - Clinical Robot Associate - Dallas, TX (On-Site) — Diligent Robotics",
+    "excerpt": "General · Dallas, Texas, United States",
+    "category": "job",
+    "date": "2026-03-03T12:48:32-05:00",
+    "tags": [
+      "junior"
+    ],
+    "companies": [
+      "Diligent Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-diligentrobotics-7628829003",
+    "title": "Part Time - Clinical Robot Associate - Elmhurst, IL (On-Site) — Diligent Robotics",
+    "excerpt": "General · Elmhurst, Illinois, United States",
+    "category": "job",
+    "date": "2026-03-03T12:48:32-05:00",
+    "tags": [
+      "junior"
+    ],
+    "companies": [
+      "Diligent Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-diligentrobotics-7647101003",
+    "title": "Part Time - Clinical Robot Associate - Rochester, NY (on-site) — Diligent Robotics",
+    "excerpt": "General · Rochester, New York, United States",
+    "category": "job",
+    "date": "2026-03-03T12:48:32-05:00",
+    "tags": [
+      "junior"
+    ],
+    "companies": [
+      "Diligent Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
   },
   {
     "slug": "greenhouse-apptronik-5789359004",
@@ -3904,6 +4629,19 @@
     "url": "/jobs"
   },
   {
+    "slug": "ashby-fourier-bce8e753-2d95-4d85-b2d1-2875bd409510",
+    "title": "Process Engineer — Fourier Intelligence",
+    "excerpt": "Engineering · HQ",
+    "category": "job",
+    "date": "2026-03-16T16:22:01.943Z",
+    "tags": [],
+    "companies": [
+      "Fourier Intelligence"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
     "slug": "greenhouse-figureai-4653803006",
     "title": "Product Architect, Data Collection Devices — Figure AI",
     "excerpt": "General · San Jose, CA",
@@ -4031,6 +4769,21 @@
     "url": "/jobs"
   },
   {
+    "slug": "ashby-physicalintelligence-800077d2-cfdd-4ee6-b1e4-7a0e051d62f3",
+    "title": "Prop Organizer — Physical Intelligence",
+    "excerpt": "Operations · San Francisco",
+    "category": "job",
+    "date": "2026-03-16T16:22:01.944Z",
+    "tags": [
+      "operations"
+    ],
+    "companies": [
+      "Physical Intelligence"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
     "slug": "proprioception",
     "title": "Proprioception",
     "excerpt": "A robot's internal sensory awareness of its own body state — joint angles, velocities, accelerations, and applied torques — derived from encoders, IMUs, and force-torque sensors…",
@@ -4076,6 +4829,21 @@
     ],
     "companies": [
       "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-nimblerobotics-4158371009",
+    "title": "Quality Inspector  — Nimble Robotics",
+    "excerpt": "General · Haslet, TX",
+    "category": "job",
+    "date": "2026-03-14T15:33:46-04:00",
+    "tags": [
+      "safety"
+    ],
+    "companies": [
+      "Nimble Robotics"
     ],
     "type": "job",
     "url": "/jobs"
@@ -4181,6 +4949,37 @@
     "url": "/jobs"
   },
   {
+    "slug": "ashby-physicalintelligence-c382800e-79d3-417a-a83b-ee3f3c2579f2",
+    "title": "Research Ops — Physical Intelligence",
+    "excerpt": "Operations · San Francisco",
+    "category": "job",
+    "date": "2026-03-16T16:22:01.944Z",
+    "tags": [
+      "research",
+      "operations"
+    ],
+    "companies": [
+      "Physical Intelligence"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "ashby-physicalintelligence-52fb2d63-f18e-446e-8a15-cbcdc8740147",
+    "title": "Robot Build Technician — Physical Intelligence",
+    "excerpt": "Hardware · Fremont",
+    "category": "job",
+    "date": "2026-03-16T16:22:01.944Z",
+    "tags": [
+      "hardware"
+    ],
+    "companies": [
+      "Physical Intelligence"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
     "slug": "greenhouse-apptronik-5822158004",
     "title": "Robot Deployment / DevOps Engineer — Apptronik",
     "excerpt": "General · Austin, TX",
@@ -4204,6 +5003,21 @@
     ],
     "companies": [
       "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "ashby-physicalintelligence-eb3ed968-630f-429a-9e44-5508b77d554b",
+    "title": "Robot Operator — Physical Intelligence",
+    "excerpt": "Robot Operations · San Francisco",
+    "category": "job",
+    "date": "2026-03-16T16:22:01.944Z",
+    "tags": [
+      "operations"
+    ],
+    "companies": [
+      "Physical Intelligence"
     ],
     "type": "job",
     "url": "/jobs"
@@ -4258,6 +5072,77 @@
     "tags": [],
     "companies": [
       "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "ashby-physicalintelligence-bb72d6bc-631e-423b-bc06-be225105d73d",
+    "title": "Robot Test Engineer — Physical Intelligence",
+    "excerpt": "Hardware · San Francisco",
+    "category": "job",
+    "date": "2026-03-16T16:22:01.944Z",
+    "tags": [
+      "hardware"
+    ],
+    "companies": [
+      "Physical Intelligence"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "lever-sanctuary-ada99797-491f-4058-a257-4d28d62fca27",
+    "title": "Robot Test Pilot (6 Month Contract - Multiple Shifts) — Sanctuary AI",
+    "excerpt": "Corporate · Vancouver, BC",
+    "category": "job",
+    "date": "2026-03-03T21:10:05.475Z",
+    "tags": [],
+    "companies": [
+      "Sanctuary AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "ashby-physicalintelligence-11208bdc-a679-4cf7-b7a9-67848f7660ab",
+    "title": "Robotics Service Technician — Physical Intelligence",
+    "excerpt": "Hardware · San Francisco",
+    "category": "job",
+    "date": "2026-03-16T16:22:01.944Z",
+    "tags": [
+      "hardware"
+    ],
+    "companies": [
+      "Physical Intelligence"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "lever-sanctuary-904fd4a4-c4b6-4efc-aa86-3e719a5de73e",
+    "title": "Robotics Technician — Sanctuary AI",
+    "excerpt": "Hardware Engineering · Vancouver, BC",
+    "category": "job",
+    "date": "2026-02-25T02:20:37.367Z",
+    "tags": [
+      "hardware"
+    ],
+    "companies": [
+      "Sanctuary AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "ashby-physicalintelligence-f6bee7a7-57ae-4ec1-9276-ae3bcbdc7327",
+    "title": "Runtime Generalist Engineer — Physical Intelligence",
+    "excerpt": "Engineering · San Francisco",
+    "category": "job",
+    "date": "2026-03-16T16:22:01.944Z",
+    "tags": [],
+    "companies": [
+      "Physical Intelligence"
     ],
     "type": "job",
     "url": "/jobs"
@@ -4854,6 +5739,22 @@
     "url": "/jobs"
   },
   {
+    "slug": "greenhouse-nimblerobotics-4101446009",
+    "title": "Senior Robotics Software Engineer — Nimble Robotics",
+    "excerpt": "General · San Francisco, CA",
+    "category": "job",
+    "date": "2026-03-14T16:01:11-04:00",
+    "tags": [
+      "software",
+      "senior"
+    ],
+    "companies": [
+      "Nimble Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
     "slug": "greenhouse-agilityrobotics-5384557004",
     "title": "Senior Robotics Software Engineer, Autonomy — Agility Robotics",
     "excerpt": "General · Remote (Remote)",
@@ -4880,6 +5781,22 @@
     ],
     "companies": [
       "Agility Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-nimblerobotics-4101105009",
+    "title": "Senior Simulation Validation Engineer — Nimble Robotics",
+    "excerpt": "General · San Francisco, CA",
+    "category": "job",
+    "date": "2026-03-14T16:01:44-04:00",
+    "tags": [
+      "simulation",
+      "senior"
+    ],
+    "companies": [
+      "Nimble Robotics"
     ],
     "type": "job",
     "url": "/jobs"
@@ -4912,6 +5829,38 @@
     ],
     "companies": [
       "Agility Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-nimblerobotics-4101121009",
+    "title": "Senior Software Engineer - Cloud Logistics — Nimble Robotics",
+    "excerpt": "General · San Francisco, CA",
+    "category": "job",
+    "date": "2026-03-14T16:02:18-04:00",
+    "tags": [
+      "software",
+      "senior"
+    ],
+    "companies": [
+      "Nimble Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "lever-sanctuary-d591aba1-f790-4c4c-a519-1420f637e3e2",
+    "title": "Senior Software Engineer - Embodied Intelligence Platform — Sanctuary AI",
+    "excerpt": "Software Engineering · Vancouver, BC",
+    "category": "job",
+    "date": "2026-03-09T22:39:43.440Z",
+    "tags": [
+      "software",
+      "senior"
+    ],
+    "companies": [
+      "Sanctuary AI"
     ],
     "type": "job",
     "url": "/jobs"
@@ -5049,6 +5998,22 @@
     "url": "/jobs"
   },
   {
+    "slug": "ashby-physicalintelligence-e501e135-9407-4b14-a8e8-c131f89be61d",
+    "title": "Shift Lead — Physical Intelligence",
+    "excerpt": "Robot Operations · San Francisco",
+    "category": "job",
+    "date": "2026-03-16T16:22:01.944Z",
+    "tags": [
+      "operations",
+      "senior"
+    ],
+    "companies": [
+      "Physical Intelligence"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
     "slug": "sim-to-real-transfer",
     "title": "Sim-to-Real Transfer",
     "excerpt": "The process of training a robot control policy in simulation and successfully deploying it on physical hardware, bridging the gap between simulated and real-world physics.",
@@ -5157,6 +6122,110 @@
     "url": "/jobs"
   },
   {
+    "slug": "ashby-fourier-cd7e0cab-f6ca-4228-9a15-a03bc0c56ce0",
+    "title": "Spring 2026 R&D Engineering Intern – Hydrogen Systems — Fourier Intelligence",
+    "excerpt": "Engineering · HQ",
+    "category": "job",
+    "date": "2026-03-16T16:22:01.943Z",
+    "tags": [
+      "internship"
+    ],
+    "companies": [
+      "Fourier Intelligence"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-diligentrobotics-7658242003",
+    "title": "Sr. Healthcare Account Manager — Diligent Robotics",
+    "excerpt": "General · Anywhere in the US (Remote)",
+    "category": "job",
+    "date": "2026-03-09T14:00:04-04:00",
+    "tags": [
+      "product"
+    ],
+    "companies": [
+      "Diligent Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-diligentrobotics-7651518003",
+    "title": "Sr. Manager, Fleet Management & Performance — Diligent Robotics",
+    "excerpt": "General · Anywhere in the US; Remote (Remote)",
+    "category": "job",
+    "date": "2026-03-04T13:50:00-05:00",
+    "tags": [
+      "product"
+    ],
+    "companies": [
+      "Diligent Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "ashby-fourier-268a7079-4d74-45b8-8044-c0f26424c885",
+    "title": "Sr. Mechanical Engineer, Thermal and Fluid Systems — Fourier Intelligence",
+    "excerpt": "Engineering · Fourier India Office",
+    "category": "job",
+    "date": "2026-03-16T16:22:01.943Z",
+    "tags": [
+      "hardware"
+    ],
+    "companies": [
+      "Fourier Intelligence"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "ashby-fourier-052ed07d-bce5-47c7-b02b-aefb7093afd1",
+    "title": "Sr. Mechanical Engineer, Thermal and Fluid Systems — Fourier Intelligence",
+    "excerpt": "Engineering · HQ",
+    "category": "job",
+    "date": "2026-03-16T16:22:01.942Z",
+    "tags": [
+      "hardware"
+    ],
+    "companies": [
+      "Fourier Intelligence"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-diligentrobotics-7641035003",
+    "title": "Sr. Network Engineer — Diligent Robotics",
+    "excerpt": "General · Austin, Texas, United States",
+    "category": "job",
+    "date": "2026-03-03T12:48:32-05:00",
+    "tags": [],
+    "companies": [
+      "Diligent Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-diligentrobotics-7651224003",
+    "title": "Sr. Test Engineer - Production — Diligent Robotics",
+    "excerpt": "General · Milwaukee, Wisconsin, United States",
+    "category": "job",
+    "date": "2026-03-03T20:09:31-05:00",
+    "tags": [
+      "product",
+      "operations"
+    ],
+    "companies": [
+      "Diligent Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
     "slug": "greenhouse-apptronik-5780475004",
     "title": "Staff Electrical Engineer — Apptronik",
     "excerpt": "General · Austin, Texas",
@@ -5205,6 +6274,23 @@
     "url": "/jobs"
   },
   {
+    "slug": "greenhouse-nimblerobotics-4121449009",
+    "title": "Staff Manufacturing Quality Engineer — Nimble Robotics",
+    "excerpt": "General · Haslet, TX",
+    "category": "job",
+    "date": "2026-03-14T16:03:46-04:00",
+    "tags": [
+      "safety",
+      "operations",
+      "senior"
+    ],
+    "companies": [
+      "Nimble Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
     "slug": "greenhouse-apptronik-5766166004",
     "title": "Staff Mechanical Engineer — Apptronik",
     "excerpt": "General · Austin, Texas",
@@ -5248,6 +6334,22 @@
     ],
     "companies": [
       "Agility Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-nimblerobotics-4111332009",
+    "title": "Staff Software Engineer - Cloud Logistics — Nimble Robotics",
+    "excerpt": "General · San Francisco, CA",
+    "category": "job",
+    "date": "2026-03-14T16:04:21-04:00",
+    "tags": [
+      "software",
+      "senior"
+    ],
+    "companies": [
+      "Nimble Robotics"
     ],
     "type": "job",
     "url": "/jobs"
@@ -5380,6 +6482,21 @@
     "url": "/jobs"
   },
   {
+    "slug": "greenhouse-diligentrobotics-7651529003",
+    "title": "Staff TLM, Security Engineering — Diligent Robotics",
+    "excerpt": "General · Austin, Texas, United States",
+    "category": "job",
+    "date": "2026-03-03T15:44:53-05:00",
+    "tags": [
+      "senior"
+    ],
+    "companies": [
+      "Diligent Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
     "slug": "greenhouse-apptronik-5801942004",
     "title": "Staff Wire Harness Engineer — Apptronik",
     "excerpt": "General · Austin, TX",
@@ -5491,6 +6608,21 @@
     "url": "/jobs"
   },
   {
+    "slug": "greenhouse-nimblerobotics-4163251009",
+    "title": "Technical Program Manager — Nimble Robotics",
+    "excerpt": "General · San Francisco, CA",
+    "category": "job",
+    "date": "2026-03-14T15:50:12-04:00",
+    "tags": [
+      "product"
+    ],
+    "companies": [
+      "Nimble Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
     "slug": "greenhouse-figureai-4409868006",
     "title": "Technical Recruiter — Figure AI",
     "excerpt": "General · San Jose, CA",
@@ -5499,6 +6631,19 @@
     "tags": [],
     "companies": [
       "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-diligentrobotics-6544811003",
+    "title": "Technical Support Specialist - Robotics — Diligent Robotics",
+    "excerpt": "General · Austin, Texas, United States",
+    "category": "job",
+    "date": "2026-03-03T12:48:32-05:00",
+    "tags": [],
+    "companies": [
+      "Diligent Robotics"
     ],
     "type": "job",
     "url": "/jobs"
@@ -5716,6 +6861,21 @@
     "companies": [],
     "type": "glossary",
     "url": "/glossary/whole-body-control"
+  },
+  {
+    "slug": "ashby-physicalintelligence-9b016ead-8639-435f-a4d6-e992d44378f4",
+    "title": "Workplace Manager — Physical Intelligence",
+    "excerpt": "Business · San Francisco",
+    "category": "job",
+    "date": "2026-03-16T16:22:01.944Z",
+    "tags": [
+      "product"
+    ],
+    "companies": [
+      "Physical Intelligence"
+    ],
+    "type": "job",
+    "url": "/jobs"
   },
   {
     "slug": "xiaomi-robotics",
