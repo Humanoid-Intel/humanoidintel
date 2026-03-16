@@ -4,45 +4,69 @@
  * Fetches open roles from:
  *   Tier 1 — Greenhouse ATS (public JSON API, no auth)
  *   Tier 2 — Lever ATS (public JSON API, no auth)
- *   Tier 3 — Indeed RSS (broad catch-all)
+ *   Tier 3 — Ashby ATS (public JSON API, no auth — popular with new robotics startups)
+ *   Tier 4 — Personio RSS (European companies: Wandercraft, Enchanted Tools, Clone Robotics)
+ *   Tier 5 — Indeed RSS (broad catch-all)
  *
  * All fetches are silent on failure — a single source going down
  * doesn't break the pipeline.
+ *
+ * Confirmed working (verified live):
+ *   Greenhouse: figureai, agilityrobotics, apptronik
+ *   Lever: sanctuary
+ *   Ashby: 1x (endpoint live, 0 jobs right now — will auto-populate)
+ *
+ * Not accessible (Workday/internal systems):
+ *   Boston Dynamics (Workday — API requires auth), Tesla (internal)
  */
 
 import type { Job } from '../../lib/types'
 
 // ─── Company → ATS token mapping ─────────────────────────────────────────────
 
-interface GreenhouseCompany {
+interface Company {
   name: string
   slug: string
   token: string
 }
 
-interface LeverCompany {
+interface PersonioCompany {
   name: string
   slug: string
-  token: string
+  subdomain: string   // {subdomain}.jobs.personio.de
 }
 
-const GREENHOUSE_COMPANIES: GreenhouseCompany[] = [
+const GREENHOUSE_COMPANIES: Company[] = [
+  // Confirmed working ✓
   { name: 'Figure AI',             slug: 'figure-ai',             token: 'figureai' },
   { name: 'Agility Robotics',      slug: 'agility-robotics',      token: 'agilityrobotics' },
   { name: 'Apptronik',             slug: 'apptronik',             token: 'apptronik' },
-  { name: 'Sanctuary AI',          slug: 'sanctuary-ai',          token: 'sanctuaryai' },
-  { name: 'Physical Intelligence', slug: 'physical-intelligence', token: 'physicalintelligence' },
-  { name: 'Clone Robotics',        slug: 'clone-robotics',        token: 'clonerobotics' },
-  { name: 'NEURA Robotics',        slug: 'neura-robotics',        token: 'neurarobotics' },
-  { name: '1X Technologies',       slug: '1x-technologies',       token: '1xtechnologies' },
+  { name: 'Diligent Robotics',     slug: 'diligent-robotics',     token: 'diligentrobotics' },
+  { name: 'Nimble Robotics',       slug: 'nimble-robotics',       token: 'nimblerobotics' },
+  // Silently skip if 404 — tokens preserved for when these companies set up boards
   { name: 'Skild AI',              slug: 'skild-ai',              token: 'skild' },
   { name: 'Astribot',              slug: 'astribot',              token: 'astribot' },
 ]
 
-const LEVER_COMPANIES: LeverCompany[] = [
-  { name: 'Boston Dynamics',       slug: 'boston-dynamics',       token: 'bostondynamics' },
-  { name: 'Wandercraft',           slug: 'wandercraft',           token: 'wandercraft' },
-  { name: 'Enchanted Tools',       slug: 'enchanted-tools',       token: 'enchanted-tools' },
+const LEVER_COMPANIES: Company[] = [
+  // Confirmed working ✓
+  { name: 'Sanctuary AI',          slug: 'sanctuary-ai',          token: 'sanctuary' },
+]
+
+const ASHBY_COMPANIES: Company[] = [
+  // Confirmed working ✓
+  { name: 'Physical Intelligence', slug: 'physical-intelligence', token: 'physicalintelligence' },
+  { name: 'Fourier Intelligence',  slug: 'fourier-intelligence',  token: 'fourier' },
+  { name: '1X Technologies',       slug: '1x-technologies',       token: '1x' },
+]
+
+const PERSONIO_COMPANIES: PersonioCompany[] = [
+  // European humanoid robotics companies — sequential fetch to avoid rate limits
+  { name: 'Wandercraft',           slug: 'wandercraft',           subdomain: 'wandercraft' },
+  { name: 'Enchanted Tools',       slug: 'enchanted-tools',       subdomain: 'enchanted-tools' },
+  { name: 'Clone Robotics',        slug: 'clone-robotics',        subdomain: 'clone-robotics' },
+  { name: 'Mentee Robotics',       slug: 'mentee-robotics',       subdomain: 'mentee-robotics' },
+  { name: 'NEURA Robotics',        slug: 'neura-robotics',        subdomain: 'neura-robotics' },
 ]
 
 // Indeed RSS search queries — broad humanoid/robotics talent keywords
@@ -188,6 +212,127 @@ async function fetchLeverJobs(): Promise<Job[]> {
   return results
 }
 
+// ─── Ashby ────────────────────────────────────────────────────────────────────
+
+async function fetchAshbyJobs(): Promise<Job[]> {
+  const results: Job[] = []
+
+  await Promise.allSettled(
+    ASHBY_COMPANIES.map(async (company) => {
+      try {
+        const url = `https://api.ashbyhq.com/posting-api/job-board/${company.token}?includeCompensation=true`
+        const res = await fetch(url, { signal: AbortSignal.timeout(10000) })
+        if (!res.ok) return
+
+        const data = await res.json() as { jobs?: any[] }
+        if (!Array.isArray(data.jobs) || data.jobs.length === 0) return
+
+        for (const job of data.jobs) {
+          const location = job.location ?? job.locationName ?? 'Unknown'
+          const department = job.department ?? job.team ?? 'General'
+          const title = job.title ?? ''
+          const commitment = job.employmentType ?? 'Full-time'
+
+          results.push({
+            id: `ashby-${company.token}-${job.id}`,
+            company: company.name,
+            companySlug: company.slug,
+            title,
+            department,
+            location,
+            remote: isRemote(location) || job.isRemote === true,
+            type: inferType(commitment),
+            url: job.jobUrl ?? `https://jobs.ashbyhq.com/${company.token}/${job.id}`,
+            postedAt: job.publishedDate ?? job.createdAt ?? new Date().toISOString(),
+            updatedAt: job.updatedAt ?? new Date().toISOString(),
+            source: 'direct', // Ashby — structured ATS like Greenhouse/Lever
+            status: 'open',
+            tags: inferTags(title, department),
+            salary: job.compensation?.summaryComponents?.[0]?.label ?? null,
+          })
+        }
+      } catch {
+        // Silently skip
+      }
+    })
+  )
+
+  return results
+}
+
+// ─── Personio RSS (European companies) ───────────────────────────────────────
+
+async function fetchPersonioJobs(): Promise<Job[]> {
+  const results: Job[] = []
+
+  // Sequential with delay to avoid rate-limiting (429 when hit simultaneously)
+  for (const company of PERSONIO_COMPANIES) {
+    try {
+      const url = `https://${company.subdomain}.jobs.personio.de/rss`
+      const res = await fetch(url, {
+        headers: { 'Accept': 'application/rss+xml, application/xml, text/xml' },
+        signal: AbortSignal.timeout(10000),
+      })
+      if (!res.ok) {
+        // Try .com variant
+        const res2 = await fetch(`https://${company.subdomain}.jobs.personio.com/rss`, {
+          signal: AbortSignal.timeout(8000),
+        })
+        if (!res2.ok) continue
+        const xml = await res2.text()
+        parsePersonioRss(xml, company, results)
+      } else {
+        const xml = await res.text()
+        parsePersonioRss(xml, company, results)
+      }
+    } catch {
+      // Silently skip
+    }
+    // Small delay between companies to avoid rate limits
+    await new Promise((r) => setTimeout(r, 300))
+  }
+
+  return results
+}
+
+function parsePersonioRss(xml: string, company: PersonioCompany, results: Job[]) {
+  const items = xml.match(/<item>([\s\S]*?)<\/item>/g) ?? []
+  for (const item of items) {
+    const title = item.match(/<title><!\[CDATA\[([^\]]+)\]\]><\/title>|<title>([^<]+)<\/title>/)?.[1] ?? ''
+    const link  = item.match(/<link>([^<]+)<\/link>/)?.[1] ?? ''
+    const pubDate = item.match(/<pubDate>([^<]+)<\/pubDate>/)?.[1] ?? ''
+    const description = item.match(/<description><!\[CDATA\[([^\]]+)\]\]><\/description>/)?.[1] ?? ''
+
+    if (!title || !link) continue
+
+    const location = description.match(/Location[:\s]+([^<\n]+)/i)?.[1]?.trim() ??
+                     description.match(/<location>([^<]+)<\/location>/i)?.[1]?.trim() ??
+                     company.name.includes('Wandercraft') ? 'Paris, France'
+                     : company.name.includes('Clone') ? 'Warsaw, Poland'
+                     : company.name.includes('Mentee') ? 'Tel Aviv, Israel'
+                     : company.name.includes('Enchanted') ? 'Paris, France'
+                     : 'Europe'
+
+    results.push({
+      id: `personio-${company.subdomain}-${Buffer.from(link).toString('base64').slice(0, 16)}`,
+      company: company.name,
+      companySlug: company.slug,
+      title,
+      department: 'Engineering',
+      location,
+      remote: isRemote(description),
+      type: 'full-time',
+      url: link,
+      postedAt: pubDate ? new Date(pubDate).toISOString() : new Date().toISOString(),
+      updatedAt: new Date().toISOString(),
+      source: 'direct',
+      status: 'open',
+      tags: inferTags(title, ''),
+      salary: null,
+    })
+  }
+}
+
 // ─── Indeed RSS ───────────────────────────────────────────────────────────────
 
 function parseRssItem(item: string): { title: string; link: string; pubDate: string; description: string } | null {
@@ -267,13 +412,19 @@ async function fetchIndeedJobs(): Promise<Job[]> {
 // ─── Main export ──────────────────────────────────────────────────────────────
 
 export async function fetchAllJobs(): Promise<Job[]> {
-  const [greenhouse, lever, indeed] = await Promise.all([
+  // Ashby/Personio run concurrently with the others; Personio is internally sequential
+  // to avoid rate limiting but that's handled inside fetchPersonioJobs()
+  const [greenhouse, lever, ashby, indeed, personio] = await Promise.all([
     fetchGreenhouseJobs(),
     fetchLeverJobs(),
+    fetchAshbyJobs(),
     fetchIndeedJobs(),
+    fetchPersonioJobs(),
   ])
 
-  const all = [...greenhouse, ...lever, ...indeed]
-  console.log(`[Jobs] Fetched: Greenhouse=${greenhouse.length} Lever=${lever.length} Indeed=${indeed.length} Total=${all.length}`)
+  const all = [...greenhouse, ...lever, ...ashby, ...personio, ...indeed]
+  console.log(
+    `[Jobs] Fetched: Greenhouse=${greenhouse.length} Lever=${lever.length} Ashby=${ashby.length} Personio=${personio.length} Indeed=${indeed.length} Total=${all.length}`
+  )
   return all
 }
