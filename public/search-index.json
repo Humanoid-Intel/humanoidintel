@@ -40,6 +40,40 @@
     "url": "/news/kistler-ats-medical-device-assembly-symphoni"
   },
   {
+    "slug": "ukraine-military-humanoid-robots-deployment-2026",
+    "title": "Ukraine Deploys First Military Humanoid Robots",
+    "excerpt": "Ukraine becomes first nation to deploy humanoid robots in active combat, marking historic shift in military robotics",
+    "category": "breaking",
+    "date": "2026-03-16T14:30:00Z",
+    "tags": [
+      "military-robotics",
+      "ukraine",
+      "combat-robots",
+      "humanoid-military"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/ukraine-military-humanoid-robots-deployment-2026"
+  },
+  {
+    "slug": "ukraine-phantom-mk1-humanoid-robots-battlefield-trial",
+    "title": "Ukraine Deploys Phantom MK-1 Combat Humanoids in First Battlefield Trial",
+    "excerpt": "Ukraine begins first combat deployment of humanoid robots with Phantom MK-1 units entering active battlefield operations",
+    "category": "breaking",
+    "date": "2026-03-16T14:30:00Z",
+    "tags": [
+      "phantom-mk1",
+      "ukraine",
+      "military-robotics",
+      "battlefield-deployment"
+    ],
+    "companies": [
+      "Phantom Robotics"
+    ],
+    "type": "news",
+    "url": "/news/ukraine-phantom-mk1-humanoid-robots-battlefield-trial"
+  },
+  {
     "slug": "baba-w-robbyant-leju-robotics-partnership",
     "title": "BABA-W's Robbyant Partners with Leju Robotics",
     "excerpt": "Alibaba's robotics subsidiary Robbyant forms strategic alliance with Leju Robotics for humanoid development",
@@ -711,6 +745,28 @@
     "url": "/news/asensing-galbot-partnership-ai-robots"
   },
   {
+    "slug": "qualcomm-snapdragon-ai-robotics-chips-analysis",
+    "title": "Qualcomm's AI Robotics Push: Snapdragon Targets Tesla Bot",
+    "excerpt": "Qualcomm targets humanoid robotics with mobile-optimized AI chips, challenging NVIDIA's datacenter dominance in edge inference.",
+    "category": "breaking",
+    "date": "2024-12-19T16:45:00Z",
+    "tags": [
+      "qualcomm",
+      "snapdragon",
+      "ai-chips",
+      "compute",
+      "hardware"
+    ],
+    "companies": [
+      "Qualcomm",
+      "Tesla",
+      "NVIDIA",
+      "Boston Dynamics"
+    ],
+    "type": "news",
+    "url": "/news/qualcomm-snapdragon-ai-robotics-chips-analysis"
+  },
+  {
     "slug": "china-lunar-construction-robot-space-humanoids",
     "title": "China's Lunar Construction Robot: Space Humanoids Race Heats Up",
     "excerpt": "China unveils specialized space robot for lunar base construction, escalating global competition in extraterrestrial robotics",
@@ -747,6 +803,24 @@
     "url": "/news/humanoid-robot-arrested-macau-incident"
   },
   {
+    "slug": "sunday-robotics-165m-series-b-humanoid-funding",
+    "title": "Sunday Robotics Raises $165M Series B for Humanoid Push",
+    "excerpt": "Sunday Robotics secures $165M Series B to accelerate humanoid development and manufacturing scale",
+    "category": "market",
+    "date": "2024-12-19T15:30:00Z",
+    "tags": [
+      "sunday-robotics",
+      "funding",
+      "series-b",
+      "humanoid-robots"
+    ],
+    "companies": [
+      "Sunday Robotics"
+    ],
+    "type": "news",
+    "url": "/news/sunday-robotics-165m-series-b-humanoid-funding"
+  },
+  {
     "slug": "samsung-hand-lab-humanoid-robot-dexterity",
     "title": "Samsung Launches Hand Lab for Humanoid Robot Dexterity",
     "excerpt": "Samsung unveils specialized Hand Lab focused on advancing dexterous manipulation for humanoid robotics applications",
@@ -763,6 +837,25 @@
     ],
     "type": "news",
     "url": "/news/samsung-hand-lab-humanoid-robot-dexterity"
+  },
+  {
+    "slug": "china-robot-boot-camp-ai-training-data-collection",
+    "title": "China's Robot Training Centers Scale Data Collection for AI",
+    "excerpt": "Chinese robotics facilities are establishing specialized training centers to generate the massive datasets required for AI development",
+    "category": "breaking",
+    "date": "2024-12-19T14:30:00Z",
+    "tags": [
+      "china",
+      "training-data",
+      "ai",
+      "robotics",
+      "data-collection"
+    ],
+    "companies": [
+      "Chinese robotics companies"
+    ],
+    "type": "news",
+    "url": "/news/china-robot-boot-camp-ai-training-data-collection"
   },
   {
     "slug": "ford-cologne-humanoid-robot-production-test",
