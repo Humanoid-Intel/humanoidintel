@@ -29,18 +29,22 @@ $NPX tsx scripts/generate-ticker.ts >> "$LOG" 2>&1
 NEW_ARTICLES=$(git -C "$REPO" status --short content/news/ | grep "^??" | wc -l | tr -d ' ')
 # Check if static assets changed (search-index, ticker-data)
 STATIC_CHANGED=$(git -C "$REPO" diff --name-only public/search-index.json public/ticker-data.json 2>/dev/null | wc -l | tr -d ' ')
+# Check if funding-rounds.json changed
+FUNDING_CHANGED=$(git -C "$REPO" diff --name-only content/data/funding-rounds.json 2>/dev/null | wc -l | tr -d ' ')
 
-if [ "$NEW_ARTICLES" -gt "0" ] || [ "$STATIC_CHANGED" -gt "0" ]; then
+if [ "$NEW_ARTICLES" -gt "0" ] || [ "$STATIC_CHANGED" -gt "0" ] || [ "$FUNDING_CHANGED" -gt "0" ]; then
   # Stage everything relevant
   [ "$NEW_ARTICLES" -gt "0" ] && git -C "$REPO" add content/news/*.md
   git -C "$REPO" add public/search-index.json public/ticker-data.json 2>/dev/null || true
+  [ "$FUNDING_CHANGED" -gt "0" ] && git -C "$REPO" add content/data/funding-rounds.json
 
   COMMIT_MSG="feat(content): auto-publish ${NEW_ARTICLES} article(s) + refresh data $(date '+%Y-%m-%d %H:%M') [bot]"
   [ "$NEW_ARTICLES" -eq "0" ] && COMMIT_MSG="chore(data): refresh search-index + ticker $(date '+%Y-%m-%d %H:%M') [bot]"
+  [ "$FUNDING_CHANGED" -gt "0" ] && [ "$NEW_ARTICLES" -eq "0" ] && COMMIT_MSG="feat(funding): auto-update funding rounds $(date '+%Y-%m-%d %H:%M') [bot]"
 
   git -C "$REPO" commit -m "$COMMIT_MSG"
   git -C "$REPO" push origin main
-  echo "[$(date)] Pushed: $NEW_ARTICLES new articles, static assets updated" >> "$LOG"
+  echo "[$(date)] Pushed: $NEW_ARTICLES new articles, funding changed: $FUNDING_CHANGED, static assets updated" >> "$LOG"
 else
   echo "[$(date)] No new articles or data changes; skipping push." >> "$LOG"
 fi

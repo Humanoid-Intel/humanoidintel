@@ -22,6 +22,7 @@ import { fetchGoogleNewsStories } from './sources/google-news'
 import { fetchYouTubeVideos } from './sources/youtube'
 import { fetchTwitterSignals } from './sources/twitter'
 import { deduplicateAndScore } from './pipeline/dedup'
+import { extractAndSaveFundingRounds } from './pipeline/funding-extractor'
 import { generateArticles } from './pipeline/writer'
 import { publishArticles } from './pipeline/publisher'
 import { config } from './config'
@@ -56,6 +57,10 @@ async function run() {
   scoredStories.forEach((s, i) => {
     console.log(`  ${i + 1}. [${s.score}] ${s.title.slice(0, 70)}`)
   })
+
+  // Phase 2.5: Extract funding rounds from funding-related stories
+  console.log('\n--- Phase 2.5: Funding Extraction ---')
+  await extractAndSaveFundingRounds(scoredStories)
 
   // Phase 3: Generate articles with Claude
   console.log('\n--- Phase 3: Content Generation ---')
