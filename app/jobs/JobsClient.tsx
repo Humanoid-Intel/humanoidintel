@@ -209,9 +209,13 @@ export default function JobsClient({ jobs }: Props) {
     sidebar: {
       position: 'sticky' as const,
       top: 80,
+      maxHeight: 'calc(100vh - 100px)',
+      overflowY: 'auto',
       display: 'flex',
       flexDirection: 'column' as const,
       gap: 20,
+      // Hide scrollbar visually but keep it functional
+      scrollbarWidth: 'thin' as const,
     } as React.CSSProperties,
 
     filterGroup: {
