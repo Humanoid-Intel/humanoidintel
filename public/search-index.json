@@ -143,6 +143,65 @@
     "url": "/news/robot-arrest-first-humanoid-police-detention-legal-implications"
   },
   {
+    "slug": "waymo-ceo-robotaxis-human-technicians-operations",
+    "title": "Waymo CEO: Robotaxis Need Human Technicians for Operations",
+    "excerpt": "Waymo co-CEO claims robotaxis will create new jobs in maintenance and sensor calibration roles",
+    "category": "breaking",
+    "date": "2026-03-16T15:13:58.000Z",
+    "tags": [
+      "waymo",
+      "autonomous-vehicles",
+      "robotaxis",
+      "employment",
+      "operations"
+    ],
+    "companies": [
+      "Waymo",
+      "Alphabet"
+    ],
+    "type": "news",
+    "url": "/news/waymo-ceo-robotaxis-human-technicians-operations"
+  },
+  {
+    "slug": "tesla-optimus-reliability-goldman-sachs-meeting",
+    "title": "Tesla Pitches Optimus Reliability in Goldman Sachs Meeting",
+    "excerpt": "Tesla emphasizes capability and reliability improvements for Optimus humanoid robot in institutional investor presentation",
+    "category": "market",
+    "date": "2026-03-16T15:06:27.000Z",
+    "tags": [
+      "tesla",
+      "optimus",
+      "goldman-sachs",
+      "reliability",
+      "humanoid-robotics"
+    ],
+    "companies": [
+      "Tesla",
+      "Goldman Sachs"
+    ],
+    "type": "news",
+    "url": "/news/tesla-optimus-reliability-goldman-sachs-meeting"
+  },
+  {
+    "slug": "qualcomm-neura-robotics-standardization-partnership",
+    "title": "Qualcomm-Neura Partnership Targets Robotics Standards",
+    "excerpt": "Qualcomm and Neura Robotics announce collaboration to accelerate robotics standardization and co-development initiatives",
+    "category": "policy",
+    "date": "2026-03-16T15:05:00.000Z",
+    "tags": [
+      "qualcomm",
+      "neura-robotics",
+      "standardization",
+      "collaboration"
+    ],
+    "companies": [
+      "Qualcomm",
+      "Neura Robotics"
+    ],
+    "type": "news",
+    "url": "/news/qualcomm-neura-robotics-standardization-partnership"
+  },
+  {
     "slug": "china-wheeled-humanoid-robot-lunar-base",
     "title": "China's Wheeled Humanoid Robot for Lunar Base Construction",
     "excerpt": "China reveals wheeled humanoid designed for lunar base assembly, marking major shift in space robotics strategy",
@@ -679,6 +738,25 @@
     "url": "/news/sunday-robotics-1-billion-unicorn-household-humanoid"
   },
   {
+    "slug": "qualcomm-neura-robotics-partnership-physical-ai",
+    "title": "Qualcomm Partners with Neura Robotics for Physical AI",
+    "excerpt": "Qualcomm and Neura Robotics form strategic partnership to accelerate physical AI deployment in humanoid robotics",
+    "category": "breaking",
+    "date": "2026-03-09T18:32:32.000Z",
+    "tags": [
+      "qualcomm",
+      "neura-robotics",
+      "physical-ai",
+      "partnership"
+    ],
+    "companies": [
+      "Qualcomm",
+      "NEURA Robotics"
+    ],
+    "type": "news",
+    "url": "/news/qualcomm-neura-robotics-partnership-physical-ai"
+  },
+  {
     "slug": "bmw-humanoid-robot-leipzig-plant-deployment",
     "title": "BMW Deploys First Humanoid Robot at Leipzig Plant",
     "excerpt": "BMW becomes first major automaker to deploy humanoid robots in production, marking industrial automation milestone",
@@ -885,6 +963,43 @@
     "companies": [],
     "type": "news",
     "url": "/news/honor-mwc-2026-humanoid-robot-consumer-announcement"
+  },
+  {
+    "slug": "noetix-robotics-series-b-funding-47m-valuation",
+    "title": "Noetix Robotics Closes Series B at $47M Valuation",
+    "excerpt": "Chinese humanoid startup secures $47M Series B, reaching unicorn trajectory in competitive manufacturing automation market",
+    "category": "breaking",
+    "date": "2026-03-03T08:00:00.000Z",
+    "tags": [
+      "noetix-robotics",
+      "series-b",
+      "funding",
+      "china",
+      "manufacturing"
+    ],
+    "companies": [
+      "Noetix Robotics"
+    ],
+    "type": "news",
+    "url": "/news/noetix-robotics-series-b-funding-47m-valuation"
+  },
+  {
+    "slug": "tesla-stock-falls-optimus-3-robot-reveal",
+    "title": "Tesla Stock Dips Ahead of Optimus 3.0 Robot Reveal",
+    "excerpt": "Tesla shares decline as investors await details on third-generation humanoid robot capabilities and production timeline.",
+    "category": "breaking",
+    "date": "2026-03-03T08:00:00.000Z",
+    "tags": [
+      "tesla",
+      "optimus",
+      "humanoid-robot",
+      "stock-market"
+    ],
+    "companies": [
+      "Tesla"
+    ],
+    "type": "news",
+    "url": "/news/tesla-stock-falls-optimus-3-robot-reveal"
   },
   {
     "slug": "galbot-rmb-2-5-billion-alibaba-meituan-series-b",
@@ -1750,6 +1865,19 @@
     "url": "/robots/4ne-1"
   },
   {
+    "slug": "greenhouse-agilityrobotics-5809905004",
+    "title": "Accountant III, Payroll — Agility Robotics",
+    "excerpt": "General · Hybrid- Pittsburgh, PA",
+    "category": "job",
+    "date": "2026-03-02T17:20:42-05:00",
+    "tags": [],
+    "companies": [
+      "Agility Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
     "slug": "agibot",
     "title": "Agibot",
     "excerpt": "Agibot is one of China's fastest-growing humanoid startups, founded in 2023 with backing from prominent Chinese venture funds and state capital. The company's core differentiation …",
@@ -1847,6 +1975,37 @@
     "url": "/funding"
   },
   {
+    "slug": "greenhouse-agilityrobotics-5818327004",
+    "title": "AI Intern — Agility Robotics",
+    "excerpt": "General · Onsite- Any Office (Fremont, CA, Salem, OR, or Pittsburgh, PA)",
+    "category": "job",
+    "date": "2026-03-11T14:01:01-04:00",
+    "tags": [
+      "ml/ai",
+      "internship"
+    ],
+    "companies": [
+      "Agility Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4660876006",
+    "title": "AI Tooling Engineer, Helix — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-03-10T20:51:51-04:00",
+    "tags": [
+      "ml/ai"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
     "slug": "apollo",
     "title": "Apollo — Apptronik",
     "excerpt": "Apollo is Apptronik's flagship commercial humanoid, built on actuator technology developed through a decade of NASA collaboration on Space Exploration Suits and the Valkyrie robot.…",
@@ -1926,6 +2085,21 @@
     ],
     "type": "funding",
     "url": "/funding"
+  },
+  {
+    "slug": "greenhouse-figureai-4661633006",
+    "title": "Associate General Counsel, Commercial — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-03-10T00:11:32-04:00",
+    "tags": [
+      "junior"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
   },
   {
     "slug": "fr-023",
@@ -2008,6 +2182,22 @@
     ],
     "type": "robot",
     "url": "/robots/atlas-electric"
+  },
+  {
+    "slug": "greenhouse-apptronik-5813869004",
+    "title": "Autonomy Software Intern — Humanoid Robotics — Apptronik",
+    "excerpt": "General · Austin, TX",
+    "category": "job",
+    "date": "2026-02-26T13:22:13-05:00",
+    "tags": [
+      "software",
+      "internship"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
   },
   {
     "slug": "backdrivability",
@@ -2124,6 +2314,63 @@
     "url": "/funding"
   },
   {
+    "slug": "greenhouse-figureai-4440430006",
+    "title": "CNC Machinist — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-02-02T19:56:04-05:00",
+    "tags": [],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4651747006",
+    "title": "Commercial Launch Technician — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-02-05T19:17:36-05:00",
+    "tags": [],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-apptronik-5809409004",
+    "title": "Commercial Program Manager — Apptronik",
+    "excerpt": "General · Austin, TX",
+    "category": "job",
+    "date": "2026-02-20T18:34:01-05:00",
+    "tags": [
+      "product"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-apptronik-5809769004",
+    "title": "Customer Deployment Operations Manager — Apptronik",
+    "excerpt": "General · Austin, TX",
+    "category": "job",
+    "date": "2026-02-20T18:34:26-05:00",
+    "tags": [
+      "product",
+      "operations"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
     "slug": "cyberone",
     "title": "CyberOne — Xiaomi",
     "excerpt": "Xiaomi's CyberOne is a consumer-facing humanoid prototype designed primarily as a brand showcase rather than a near-term commercial product. With 21 degrees of freedom and emotion …",
@@ -2139,6 +2386,21 @@
     ],
     "type": "robot",
     "url": "/robots/cyberone"
+  },
+  {
+    "slug": "greenhouse-figureai-4590702006",
+    "title": "Data Quality Analyst — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-02-26T14:44:47-05:00",
+    "tags": [
+      "safety"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
   },
   {
     "slug": "degrees-of-freedom",
@@ -2193,6 +2455,175 @@
     "url": "/robots/digit-v4"
   },
   {
+    "slug": "greenhouse-agilityrobotics-5786075004",
+    "title": "Director of AI — Agility Robotics",
+    "excerpt": "General · Remote (Remote)",
+    "category": "job",
+    "date": "2026-02-27T19:18:40-05:00",
+    "tags": [
+      "ml/ai",
+      "leadership"
+    ],
+    "companies": [
+      "Agility Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-agilityrobotics-5744011004",
+    "title": "Director, Talent Acquisition — Agility Robotics",
+    "excerpt": "General · Remote (Remote)",
+    "category": "job",
+    "date": "2026-02-25T16:54:36-05:00",
+    "tags": [
+      "leadership"
+    ],
+    "companies": [
+      "Agility Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-agilityrobotics-5709027004",
+    "title": "Director, Technical Operations — Agility Robotics",
+    "excerpt": "General · Remote (Remote)",
+    "category": "job",
+    "date": "2026-02-27T19:28:35-05:00",
+    "tags": [
+      "operations",
+      "leadership"
+    ],
+    "companies": [
+      "Agility Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-apptronik-5780398004",
+    "title": "Electrical Engineer — Apptronik",
+    "excerpt": "General · Austin, TX",
+    "category": "job",
+    "date": "2026-02-20T18:34:44-05:00",
+    "tags": [
+      "electrical"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4313470006",
+    "title": "Electrical Engineer (All Levels) — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-01-23T14:47:38-05:00",
+    "tags": [
+      "electrical"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-agilityrobotics-5820329004",
+    "title": "Electrical Engineering Intern — Agility Robotics",
+    "excerpt": "General · Onsite- Salem, OR",
+    "category": "job",
+    "date": "2026-03-05T17:34:04-05:00",
+    "tags": [
+      "electrical",
+      "internship"
+    ],
+    "companies": [
+      "Agility Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4648235006",
+    "title": "Electrical Rework Technician (PCBA & Micro-Soldering) — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-02-09T15:14:49-05:00",
+    "tags": [
+      "electrical"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4615918006",
+    "title": "Electrical Systems Integration Engineer – Head Subsystem — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-02-09T15:18:55-05:00",
+    "tags": [
+      "electrical"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4612710006",
+    "title": "Electrical Systems Integration Engineer – Power Systems — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-02-09T15:20:00-05:00",
+    "tags": [
+      "electrical"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4613429006",
+    "title": "Electrical Test Engineer – Test Infrastructure — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-02-04T17:45:08-05:00",
+    "tags": [
+      "software",
+      "electrical"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4615252006",
+    "title": "Electrical Validation Engineer – Hand Subsystem — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-02-17T12:56:14-05:00",
+    "tags": [
+      "electrical"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
     "slug": "end-effector",
     "title": "End-Effector",
     "excerpt": "The terminal device attached to a robot arm that directly interacts with the environment — in humanoids, typically a multi-fingered hand, but may be a specialized gripper, tool,…",
@@ -2208,6 +2639,91 @@
     "companies": [],
     "type": "glossary",
     "url": "/glossary/end-effector"
+  },
+  {
+    "slug": "greenhouse-apptronik-5679526004",
+    "title": "Engineering Manager, Hardware Integration and Test — Apptronik",
+    "excerpt": "General · Austin, TX",
+    "category": "job",
+    "date": "2026-02-20T18:28:34-05:00",
+    "tags": [
+      "hardware",
+      "product"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4657497006",
+    "title": "Engineering Test Technician — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-02-24T14:40:18-05:00",
+    "tags": [],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4647722006",
+    "title": "Environmental Health and Safety Engineer — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-01-23T14:40:59-05:00",
+    "tags": [
+      "safety"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4439202006",
+    "title": "Fabricator — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-02-24T20:26:53-05:00",
+    "tags": [],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4563653006",
+    "title": "Failure Analysis Engineer (All Levels) — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-02-17T16:02:34-05:00",
+    "tags": [
+      "ml/ai"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-apptronik-5740667004",
+    "title": "Field Service Engineer — Apptronik",
+    "excerpt": "General · Austin, TX",
+    "category": "job",
+    "date": "2026-02-20T18:36:13-05:00",
+    "tags": [],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
   },
   {
     "slug": "figure-02",
@@ -2340,6 +2856,37 @@
     "url": "/funding"
   },
   {
+    "slug": "greenhouse-apptronik-5812723004",
+    "title": "Firmware Engineer — Apptronik",
+    "excerpt": "General · Austin, TX",
+    "category": "job",
+    "date": "2026-02-25T10:29:16-05:00",
+    "tags": [
+      "embedded"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-agilityrobotics-5818356004",
+    "title": "Firmware Engineer Intern — Agility Robotics",
+    "excerpt": "General · Onsite- Salem, OR",
+    "category": "job",
+    "date": "2026-03-05T17:37:58-05:00",
+    "tags": [
+      "embedded",
+      "internship"
+    ],
+    "companies": [
+      "Agility Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
     "slug": "fourier-intelligence",
     "title": "Fourier Intelligence",
     "excerpt": "Fourier Intelligence is distinguished among humanoid companies by its decade-long commercial track record in medical exoskeletons, having shipped thousands of rehabilitation device…",
@@ -2370,6 +2917,19 @@
     ],
     "type": "funding",
     "url": "/funding"
+  },
+  {
+    "slug": "greenhouse-figureai-4612732006",
+    "title": "Full-Stack Engineer - Systems Integration — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-03-12T20:28:21-04:00",
+    "tags": [],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
   },
   {
     "slug": "gait-cycle",
@@ -2436,6 +2996,52 @@
     ],
     "type": "robot",
     "url": "/robots/galbot-g1"
+  },
+  {
+    "slug": "greenhouse-figureai-4648671006",
+    "title": "Global Supply Manager, EE and Semiconductors — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-01-27T16:48:39-05:00",
+    "tags": [
+      "product"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4648134006",
+    "title": "Global Supply Manager, Mechanical — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-01-27T15:19:10-05:00",
+    "tags": [
+      "hardware",
+      "product"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4648656006",
+    "title": "Global Supply Manager, Softgoods — Figure AI",
+    "excerpt": "General · San Jose",
+    "category": "job",
+    "date": "2026-03-12T13:22:05-04:00",
+    "tags": [
+      "product"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
   },
   {
     "slug": "gr-1",
@@ -2523,6 +3129,114 @@
     "url": "/glossary/harmonic-drive"
   },
   {
+    "slug": "greenhouse-figureai-4653375006",
+    "title": "Harness Integration Technician — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-02-10T19:52:34-05:00",
+    "tags": [],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4659175006",
+    "title": "Helix AI Engineer, Agentic Systems — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-03-02T15:28:07-05:00",
+    "tags": [
+      "ml/ai"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4649851006",
+    "title": "Helix AI Engineer, Robot Learning — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-01-30T16:12:50-05:00",
+    "tags": [
+      "ml/ai"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4627110006",
+    "title": "Helix Data Creator — Figure AI",
+    "excerpt": "General · Spartanburg, SC",
+    "category": "job",
+    "date": "2026-02-24T14:38:44-05:00",
+    "tags": [],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4644956006",
+    "title": "Humanoid Robot Operator (Afternoon Shift) — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-02-18T19:27:45-05:00",
+    "tags": [],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4406268006",
+    "title": "Humanoid Robot Operator (Morning Shift) — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-02-18T19:27:15-05:00",
+    "tags": [],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4644962006",
+    "title": "Humanoid Robot Operator (Night Shift) — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-02-18T19:32:41-05:00",
+    "tags": [],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4369739006",
+    "title": "Humanoid Robot Pilot - Helix Team — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-02-02T12:08:15-05:00",
+    "tags": [],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
     "slug": "imitation-learning",
     "title": "Imitation Learning",
     "excerpt": "A machine learning approach where a robot learns to perform tasks by observing and replicating demonstrations provided by a human expert, rather than through explicit programmin…",
@@ -2537,6 +3251,19 @@
     "companies": [],
     "type": "glossary",
     "url": "/glossary/imitation-learning"
+  },
+  {
+    "slug": "greenhouse-apptronik-5802422004",
+    "title": "Integration Engineer - Connect — Apptronik",
+    "excerpt": "General · Austin, TX",
+    "category": "job",
+    "date": "2026-02-27T10:25:17-05:00",
+    "tags": [],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
   },
   {
     "slug": "inverse-kinematics",
@@ -2554,6 +3281,19 @@
     "companies": [],
     "type": "glossary",
     "url": "/glossary/inverse-kinematics"
+  },
+  {
+    "slug": "greenhouse-apptronik-5825123004",
+    "title": "IT Support Specialist — Apptronik",
+    "excerpt": "General · Austin, TX",
+    "category": "job",
+    "date": "2026-03-11T16:49:03-04:00",
+    "tags": [],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
   },
   {
     "slug": "kepler",
@@ -2605,6 +3345,34 @@
     "url": "/robots/kepler-forerunner"
   },
   {
+    "slug": "greenhouse-figureai-4647901006",
+    "title": "Lab Technician — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-01-24T17:27:57-05:00",
+    "tags": [],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4661638006",
+    "title": "Legal Operations Analyst — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-03-10T00:12:10-04:00",
+    "tags": [
+      "operations"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
     "slug": "leju-robotics",
     "title": "Leju Robotics",
     "excerpt": "Leju Robotics is a Shenzhen-based humanoid startup known for the Kuavo bipedal robot platform, designed as an accessible open-development system for research institutions and devel…",
@@ -2638,6 +3406,150 @@
     "url": "/glossary/loco-manipulation"
   },
   {
+    "slug": "greenhouse-apptronik-5808635004",
+    "title": "Manager, Manufacturing Test Software — Apptronik",
+    "excerpt": "General · Austin, TX",
+    "category": "job",
+    "date": "2026-02-20T18:35:34-05:00",
+    "tags": [
+      "software",
+      "product",
+      "operations"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4662463006",
+    "title": "Manufacturing Data Engineering Intern [Summer 2026] — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-03-11T14:57:19-04:00",
+    "tags": [
+      "operations",
+      "internship"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4573670006",
+    "title": "Manufacturing Electrical Test Engineer — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-02-04T17:44:14-05:00",
+    "tags": [
+      "electrical",
+      "operations"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4414646006",
+    "title": "Manufacturing Software Test Engineer — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-02-04T17:44:28-05:00",
+    "tags": [
+      "software",
+      "operations"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4574399006",
+    "title": "Manufacturing Test Engineer, PCBA — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-02-04T17:45:03-05:00",
+    "tags": [
+      "electrical",
+      "operations"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4651504006",
+    "title": "Materials Planning Manager, Mechanicals — Figure AI",
+    "excerpt": "General · San Jose",
+    "category": "job",
+    "date": "2026-02-05T20:40:40-05:00",
+    "tags": [
+      "hardware",
+      "product"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4651989006",
+    "title": "Materials Planning Manager, Power Electronics — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-02-18T19:00:58-05:00",
+    "tags": [
+      "product",
+      "electrical"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4656559006",
+    "title": "Mechanical Engineer, Battery — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-02-20T16:16:17-05:00",
+    "tags": [
+      "hardware"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-agilityrobotics-5820318004",
+    "title": "Mechanical Engineering Intern — Agility Robotics",
+    "excerpt": "General · Onsite- Salem, OR or Fremont, CA",
+    "category": "job",
+    "date": "2026-03-05T17:31:46-05:00",
+    "tags": [
+      "hardware",
+      "internship"
+    ],
+    "companies": [
+      "Agility Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
     "slug": "mentee-robotics",
     "title": "Mentee Robotics",
     "excerpt": "Mentee Robotics was co-founded by Amnon Shashua, CEO of Mobileye, applying autonomous vehicle-grade perception and safety architecture to humanoid robotics. The company's MenteeBo …",
@@ -2652,6 +3564,36 @@
     ],
     "type": "company",
     "url": "/companies/mentee-robotics"
+  },
+  {
+    "slug": "greenhouse-figureai-4574734006",
+    "title": "MES Engineer - Ignition/SCADA — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-03-10T17:08:13-04:00",
+    "tags": [
+      "hardware"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4605724006",
+    "title": "Middleware Engineering Intern [Summer 2026] — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-02-24T21:23:46-05:00",
+    "tags": [
+      "internship"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
   },
   {
     "slug": "mind-robotics",
@@ -2685,6 +3627,21 @@
     ],
     "type": "robot",
     "url": "/robots/neo-beta"
+  },
+  {
+    "slug": "greenhouse-apptronik-5823160004",
+    "title": "Network Infrastructure Engineer — Apptronik",
+    "excerpt": "General · Austin, TX",
+    "category": "job",
+    "date": "2026-03-10T16:37:59-04:00",
+    "tags": [
+      "software"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
   },
   {
     "slug": "neura-robotics",
@@ -2782,6 +3739,23 @@
     ],
     "type": "robot",
     "url": "/robots/optimus-gen-2"
+  },
+  {
+    "slug": "greenhouse-apptronik-5789359004",
+    "title": "Perception Software Intern — Humanoid Robotics — Apptronik",
+    "excerpt": "General · Austin, TX",
+    "category": "job",
+    "date": "2026-02-23T11:33:16-05:00",
+    "tags": [
+      "perception",
+      "software",
+      "internship"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
   },
   {
     "slug": "phoenix",
@@ -2882,6 +3856,181 @@
     "url": "/funding"
   },
   {
+    "slug": "greenhouse-figureai-4593982006",
+    "title": "Pilot Manager - Helix Team — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-02-03T14:29:39-05:00",
+    "tags": [
+      "product"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-apptronik-5802029004",
+    "title": "Principal Mechanical Engineer – Structural Simulation & Analysis — Apptronik",
+    "excerpt": "General · Austin, TX",
+    "category": "job",
+    "date": "2026-02-20T18:29:55-05:00",
+    "tags": [
+      "hardware",
+      "simulation",
+      "senior"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-agilityrobotics-5537543004",
+    "title": "Principal Robotics Hardware Architect — Agility Robotics",
+    "excerpt": "General · Hybrid- Fremont, CA",
+    "category": "job",
+    "date": "2026-03-02T11:36:13-05:00",
+    "tags": [
+      "hardware",
+      "senior"
+    ],
+    "companies": [
+      "Agility Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4653803006",
+    "title": "Product Architect, Data Collection Devices — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-02-19T19:00:20-05:00",
+    "tags": [
+      "product"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4315521006",
+    "title": "Product Compliance Engineer — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-01-27T14:23:15-05:00",
+    "tags": [
+      "safety",
+      "product"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-apptronik-5823488004",
+    "title": "Product Manager — Apptronik",
+    "excerpt": "General · Austin, TX",
+    "category": "job",
+    "date": "2026-03-11T10:25:20-04:00",
+    "tags": [
+      "product"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-apptronik-5791008004",
+    "title": "Product Quality Manager — Apptronik",
+    "excerpt": "General · Austin, TX",
+    "category": "job",
+    "date": "2026-02-20T18:30:15-05:00",
+    "tags": [
+      "safety",
+      "product"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4453797006",
+    "title": "Production Associate (All Levels) — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-03-11T12:29:29-04:00",
+    "tags": [
+      "product",
+      "operations",
+      "junior"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4595829006",
+    "title": "Production Lead — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-03-02T13:13:13-05:00",
+    "tags": [
+      "product",
+      "operations",
+      "senior"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4650447006",
+    "title": "Production Supervisor — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-02-26T17:52:24-05:00",
+    "tags": [
+      "product",
+      "operations"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-agilityrobotics-5821353004",
+    "title": "Program Manager, Strategic Initiatives — Agility Robotics",
+    "excerpt": "General · Remote (Remote)",
+    "category": "job",
+    "date": "2026-03-09T15:17:56-04:00",
+    "tags": [
+      "product"
+    ],
+    "companies": [
+      "Agility Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
     "slug": "proprioception",
     "title": "Proprioception",
     "excerpt": "A robot's internal sensory awareness of its own body state — joint angles, velocities, accelerations, and applied torques — derived from encoders, IMUs, and force-torque sensors…",
@@ -2914,6 +4063,219 @@
     ],
     "type": "robot",
     "url": "/robots/clone-p1"
+  },
+  {
+    "slug": "greenhouse-figureai-4662470006",
+    "title": "Quality Engineering Intern [Summer 2026] — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-03-11T15:02:35-04:00",
+    "tags": [
+      "safety",
+      "internship"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-apptronik-5826686004",
+    "title": "Recruiter (Contract) — Apptronik",
+    "excerpt": "General · Austin, TX",
+    "category": "job",
+    "date": "2026-03-13T12:45:23-04:00",
+    "tags": [],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4658691006",
+    "title": "Recruiting Coordinator — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-03-09T17:17:35-04:00",
+    "tags": [],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-apptronik-5813695004",
+    "title": "Reinforcement Learning Engineer — Apptronik",
+    "excerpt": "General · Austin, TX",
+    "category": "job",
+    "date": "2026-02-26T11:10:52-05:00",
+    "tags": [],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4655262006",
+    "title": "Reliability Engineer (All Levels) — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-02-17T15:56:32-05:00",
+    "tags": [
+      "safety"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4655264006",
+    "title": "Reliability Technician (All Levels) — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-02-17T16:00:07-05:00",
+    "tags": [
+      "safety"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4655255006",
+    "title": "Reliability Test Engineer, Hardware (All Levels) — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-02-17T15:49:28-05:00",
+    "tags": [
+      "hardware",
+      "safety"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4655258006",
+    "title": "Reliability Test Engineer, Mechatronics (All Levels) — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-03-02T13:30:18-05:00",
+    "tags": [
+      "safety"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-apptronik-5822158004",
+    "title": "Robot Deployment / DevOps Engineer — Apptronik",
+    "excerpt": "General · Austin, TX",
+    "category": "job",
+    "date": "2026-03-09T13:30:52-04:00",
+    "tags": [],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-apptronik-5825744004",
+    "title": "Robot Operations Technician — Apptronik",
+    "excerpt": "General · Austin, TX",
+    "category": "job",
+    "date": "2026-03-12T12:05:47-04:00",
+    "tags": [
+      "operations"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-apptronik-5813642004",
+    "title": "Robot Platform Software Engineer — Apptronik",
+    "excerpt": "General · Austin, TX",
+    "category": "job",
+    "date": "2026-02-26T10:39:52-05:00",
+    "tags": [
+      "software"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4655833006",
+    "title": "Robot Service Technician (Afternoon Shift) — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-02-18T19:38:33-05:00",
+    "tags": [],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4392728006",
+    "title": "Robot Service Technician (Morning Shift) — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-02-18T19:38:51-05:00",
+    "tags": [],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4655837006",
+    "title": "Robot Service Technician (Night Shift) — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-02-18T19:39:07-05:00",
+    "tags": [],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4618906006",
+    "title": "Safety Systems Architect — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-01-15T16:41:47-05:00",
+    "tags": [
+      "safety"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
   },
   {
     "slug": "sanctuary-ai",
@@ -2980,6 +4342,713 @@
     "url": "/funding"
   },
   {
+    "slug": "greenhouse-apptronik-5800406004",
+    "title": "Security Engineer - Data Platform — Apptronik",
+    "excerpt": "General · Austin, TX",
+    "category": "job",
+    "date": "2026-03-05T10:40:21-05:00",
+    "tags": [
+      "software"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-apptronik-5778404004",
+    "title": "Senior Autonomy Software Engineer — Apptronik",
+    "excerpt": "General · Austin, TX ",
+    "category": "job",
+    "date": "2026-02-20T18:10:56-05:00",
+    "tags": [
+      "software",
+      "senior"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-agilityrobotics-5710401004",
+    "title": "Senior Data Engineer — Agility Robotics",
+    "excerpt": "General · Hybrid- Any Office (Fremont, CA, Salem, OR, or Pittsburgh, PA)",
+    "category": "job",
+    "date": "2026-03-02T11:58:15-05:00",
+    "tags": [
+      "senior"
+    ],
+    "companies": [
+      "Agility Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-agilityrobotics-5658753004",
+    "title": "Senior Deployment Specialist  — Agility Robotics",
+    "excerpt": "General · Onsite- Pittsburgh, PA",
+    "category": "job",
+    "date": "2026-02-27T19:24:21-05:00",
+    "tags": [
+      "senior"
+    ],
+    "companies": [
+      "Agility Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-agilityrobotics-5781462004",
+    "title": "Senior Director, Operations — Agility Robotics",
+    "excerpt": "General · Onsite- Salem, OR",
+    "category": "job",
+    "date": "2026-02-27T19:35:26-05:00",
+    "tags": [
+      "operations",
+      "senior"
+    ],
+    "companies": [
+      "Agility Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-apptronik-5572749004",
+    "title": "Senior Electrical Engineer - Continuous Improvement — Apptronik",
+    "excerpt": "General · Austin, TX",
+    "category": "job",
+    "date": "2026-02-20T18:36:55-05:00",
+    "tags": [
+      "electrical",
+      "senior"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-apptronik-5780473004",
+    "title": "Senior Electrical Engineer — Apptronik",
+    "excerpt": "General · Austin, Texas",
+    "category": "job",
+    "date": "2026-02-20T18:34:44-05:00",
+    "tags": [
+      "electrical",
+      "senior"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-apptronik-5807268004",
+    "title": "Senior Embedded Linux Engineer — Apptronik",
+    "excerpt": "General · Austin, TX",
+    "category": "job",
+    "date": "2026-02-20T18:25:00-05:00",
+    "tags": [
+      "embedded",
+      "senior"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-apptronik-5813722004",
+    "title": "Senior Engineer - Product Validation — Apptronik",
+    "excerpt": "General · Austin, Texas",
+    "category": "job",
+    "date": "2026-02-26T11:24:31-05:00",
+    "tags": [
+      "product",
+      "senior"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-agilityrobotics-5741928004",
+    "title": "Senior Facilities Manager — Agility Robotics",
+    "excerpt": "General · Onsite- Fremont, CA",
+    "category": "job",
+    "date": "2026-02-27T19:33:01-05:00",
+    "tags": [
+      "product",
+      "senior"
+    ],
+    "companies": [
+      "Agility Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-apptronik-5822893004",
+    "title": "Senior Facilities Technician — Apptronik",
+    "excerpt": "General · Austin, TX",
+    "category": "job",
+    "date": "2026-03-10T12:51:04-04:00",
+    "tags": [
+      "senior"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4654891006",
+    "title": "Senior Firmware Engineer — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-02-17T14:09:45-05:00",
+    "tags": [
+      "embedded",
+      "senior"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-agilityrobotics-5819201004",
+    "title": "Senior Industrial Engineer — Agility Robotics",
+    "excerpt": "General · Onsite- Salem, OR",
+    "category": "job",
+    "date": "2026-03-09T13:59:40-04:00",
+    "tags": [
+      "senior"
+    ],
+    "companies": [
+      "Agility Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-apptronik-5800433004",
+    "title": "Senior Manager of Electrical Engineering, Compute & Sensing — Apptronik",
+    "excerpt": "General · Austin, TX",
+    "category": "job",
+    "date": "2026-02-20T18:30:29-05:00",
+    "tags": [
+      "product",
+      "electrical",
+      "senior"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-agilityrobotics-5815589004",
+    "title": "Senior Manager, AI Innovation — Agility Robotics",
+    "excerpt": "General · Remote (Remote)",
+    "category": "job",
+    "date": "2026-03-06T15:42:08-05:00",
+    "tags": [
+      "ml/ai",
+      "product",
+      "senior"
+    ],
+    "companies": [
+      "Agility Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-agilityrobotics-5789690004",
+    "title": "Senior Manager, Electrical Engineering — Agility Robotics",
+    "excerpt": "General · Hybrid- Fremont, CA",
+    "category": "job",
+    "date": "2026-03-02T11:42:15-05:00",
+    "tags": [
+      "product",
+      "electrical",
+      "senior"
+    ],
+    "companies": [
+      "Agility Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-agilityrobotics-5826165004",
+    "title": "Senior Manager, Hardware Abstraction — Agility Robotics",
+    "excerpt": "General · Hybrid- Any Office (Fremont, CA, Salem, OR, or Pittsburgh, PA)",
+    "category": "job",
+    "date": "2026-03-13T13:12:14-04:00",
+    "tags": [
+      "hardware",
+      "product",
+      "senior"
+    ],
+    "companies": [
+      "Agility Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-agilityrobotics-5809563004",
+    "title": "Senior Manager, Security & Networking — Agility Robotics",
+    "excerpt": "General · Remote (Remote)",
+    "category": "job",
+    "date": "2026-03-06T13:57:24-05:00",
+    "tags": [
+      "product",
+      "senior"
+    ],
+    "companies": [
+      "Agility Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-apptronik-5828347004",
+    "title": "Senior Manufacturing Engineer - Assembly — Apptronik",
+    "excerpt": "General · Austin, TX",
+    "category": "job",
+    "date": "2026-03-13T15:37:06-04:00",
+    "tags": [
+      "operations",
+      "senior"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4596376006",
+    "title": "Senior Manufacturing Software Engineer — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-02-04T17:44:43-05:00",
+    "tags": [
+      "software",
+      "operations",
+      "senior"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-agilityrobotics-5777993004",
+    "title": "Senior Manufacturing Test Engineer — Agility Robotics",
+    "excerpt": "General · Onsite- Salem, OR",
+    "category": "job",
+    "date": "2026-02-27T19:38:09-05:00",
+    "tags": [
+      "operations",
+      "senior"
+    ],
+    "companies": [
+      "Agility Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-apptronik-5766164004",
+    "title": "Senior Mechanical Engineer — Apptronik",
+    "excerpt": "General · Austin, Texas",
+    "category": "job",
+    "date": "2026-02-25T14:38:03-05:00",
+    "tags": [
+      "hardware",
+      "senior"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-apptronik-5739881004",
+    "title": "Senior Mechanical Engineer, Actuation — Apptronik",
+    "excerpt": "General · Austin, TX",
+    "category": "job",
+    "date": "2026-02-20T18:31:50-05:00",
+    "tags": [
+      "hardware",
+      "senior"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4603840006",
+    "title": "Senior Network Engineer — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-02-04T15:56:07-05:00",
+    "tags": [
+      "senior"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4609783006",
+    "title": "Senior People Operations Specialist — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-02-13T19:19:06-05:00",
+    "tags": [
+      "operations",
+      "senior"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-apptronik-5678268004",
+    "title": "Senior Perception Learning Engineer  — Apptronik",
+    "excerpt": "General · Austin, TX",
+    "category": "job",
+    "date": "2026-02-20T17:48:19-05:00",
+    "tags": [
+      "perception",
+      "senior"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-agilityrobotics-5742783004",
+    "title": "Senior Product Manager - AI Models & Tools — Agility Robotics",
+    "excerpt": "General · Hybrid - Fremont, CA",
+    "category": "job",
+    "date": "2026-03-04T14:22:52-05:00",
+    "tags": [
+      "ml/ai",
+      "product",
+      "senior"
+    ],
+    "companies": [
+      "Agility Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4652384006",
+    "title": "Senior Quality Engineer, BotQ — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-02-23T00:49:06-05:00",
+    "tags": [
+      "safety",
+      "senior"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-apptronik-5813673004",
+    "title": "Senior Reinforcement Learning Engineer — Apptronik",
+    "excerpt": "General · Austin, TX",
+    "category": "job",
+    "date": "2026-02-26T11:01:49-05:00",
+    "tags": [
+      "senior"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-apptronik-5735869004",
+    "title": "Senior Robotics Software & Integration Engineer — Apptronik",
+    "excerpt": "General · Austin, TX",
+    "category": "job",
+    "date": "2026-02-20T18:25:29-05:00",
+    "tags": [
+      "software",
+      "senior"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-agilityrobotics-5577693004",
+    "title": "Senior Robotics Software Engineer – Object Perception — Agility Robotics",
+    "excerpt": "General · Hybrid- Any Office (Fremont, CA, Salem, OR, or Pittsburgh, PA)",
+    "category": "job",
+    "date": "2026-03-02T12:02:09-05:00",
+    "tags": [
+      "perception",
+      "software",
+      "senior"
+    ],
+    "companies": [
+      "Agility Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-agilityrobotics-5778495004",
+    "title": "Senior Robotics Software Engineer — Agility Robotics",
+    "excerpt": "General · Hybrid- Any Office (Fremont, CA, Salem, OR, or Pittsburgh, PA)",
+    "category": "job",
+    "date": "2026-03-04T13:54:29-05:00",
+    "tags": [
+      "software",
+      "senior"
+    ],
+    "companies": [
+      "Agility Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-agilityrobotics-5384557004",
+    "title": "Senior Robotics Software Engineer, Autonomy — Agility Robotics",
+    "excerpt": "General · Remote (Remote)",
+    "category": "job",
+    "date": "2026-03-02T11:51:57-05:00",
+    "tags": [
+      "software",
+      "senior"
+    ],
+    "companies": [
+      "Agility Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-agilityrobotics-5813064004",
+    "title": "Senior Service Engineer  — Agility Robotics",
+    "excerpt": "General · Onsite- Salem, OR",
+    "category": "job",
+    "date": "2026-02-27T19:40:28-05:00",
+    "tags": [
+      "senior"
+    ],
+    "companies": [
+      "Agility Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-apptronik-5679429004",
+    "title": "Senior Site Reliability Engineer — Apptronik",
+    "excerpt": "General · Austin, TX",
+    "category": "job",
+    "date": "2026-02-20T18:25:46-05:00",
+    "tags": [
+      "safety",
+      "senior"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-agilityrobotics-5781366004",
+    "title": "Senior Social Media and Digital Strategy Manager — Agility Robotics",
+    "excerpt": "General · Remote (Remote)",
+    "category": "job",
+    "date": "2026-02-27T19:23:13-05:00",
+    "tags": [
+      "product",
+      "senior"
+    ],
+    "companies": [
+      "Agility Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-agilityrobotics-5810773004",
+    "title": "Senior Software Engineer - Mobile & Web Apps Developer — Agility Robotics",
+    "excerpt": "General · Hybrid- Any Office (Fremont, CA, Salem, OR, or Pittsburgh, PA)",
+    "category": "job",
+    "date": "2026-03-10T18:18:10-04:00",
+    "tags": [
+      "software",
+      "senior"
+    ],
+    "companies": [
+      "Agility Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-apptronik-5687018004",
+    "title": "Senior Software Engineer - Navigation — Apptronik",
+    "excerpt": "General · Austin, TX",
+    "category": "job",
+    "date": "2026-02-20T17:48:19-05:00",
+    "tags": [
+      "software",
+      "senior"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-apptronik-5799428004",
+    "title": "Senior Software Engineer - Platform — Apptronik",
+    "excerpt": "General · Austin, TX",
+    "category": "job",
+    "date": "2026-02-20T18:26:00-05:00",
+    "tags": [
+      "software",
+      "senior"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-apptronik-5685426004",
+    "title": "Senior Software Engineer - Real-Time Controls  — Apptronik",
+    "excerpt": "General · Austin, TX",
+    "category": "job",
+    "date": "2026-02-20T17:48:19-05:00",
+    "tags": [
+      "controls",
+      "embedded",
+      "software",
+      "senior"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-agilityrobotics-5810762004",
+    "title": "Senior Staff Hardware Reliability Engineer — Agility Robotics",
+    "excerpt": "General · Hybrid- Fremont, CA",
+    "category": "job",
+    "date": "2026-03-02T11:47:53-05:00",
+    "tags": [
+      "hardware",
+      "safety",
+      "senior"
+    ],
+    "companies": [
+      "Agility Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-apptronik-5807129004",
+    "title": "Senior Technical Program Manager — Apptronik",
+    "excerpt": "General · Austin, TX",
+    "category": "job",
+    "date": "2026-02-20T18:26:19-05:00",
+    "tags": [
+      "product",
+      "senior"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-agilityrobotics-5725081004",
+    "title": "Senior Technical Recruiter, Software — Agility Robotics",
+    "excerpt": "General · Remote  (Remote)",
+    "category": "job",
+    "date": "2026-02-25T16:53:49-05:00",
+    "tags": [
+      "software",
+      "senior"
+    ],
+    "companies": [
+      "Agility Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4662042006",
+    "title": "Senior/Staff Software Engineer, Developer Tools and Productivity — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-03-10T19:44:24-04:00",
+    "tags": [
+      "software",
+      "product",
+      "senior"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
     "slug": "sim-to-real-transfer",
     "title": "Sim-to-Real Transfer",
     "excerpt": "The process of training a robot control policy in simulation and successfully deploying it on physical hardware, bridging the gap between simulated and real-world physics.",
@@ -2995,6 +5064,34 @@
     "companies": [],
     "type": "glossary",
     "url": "/glossary/sim-to-real-transfer"
+  },
+  {
+    "slug": "greenhouse-apptronik-5802428004",
+    "title": "SimOps Engineer — Apptronik",
+    "excerpt": "General · Austin, TX",
+    "category": "job",
+    "date": "2026-02-20T18:27:09-05:00",
+    "tags": [],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-apptronik-5806487004",
+    "title": "Simulation Engineer - Design and Behavior - Dexterity — Apptronik",
+    "excerpt": "General · Austin, TX",
+    "category": "job",
+    "date": "2026-02-20T18:15:20-05:00",
+    "tags": [
+      "simulation"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
   },
   {
     "slug": "skild-ai",
@@ -3027,6 +5124,290 @@
     ],
     "type": "funding",
     "url": "/funding"
+  },
+  {
+    "slug": "greenhouse-apptronik-5806320004",
+    "title": "Software Engineer - Dexterity — Apptronik",
+    "excerpt": "General · Austin, TX",
+    "category": "job",
+    "date": "2026-02-20T18:27:31-05:00",
+    "tags": [
+      "software"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-apptronik-5828414004",
+    "title": "Software Engineering Intern: Developer Experience — Apptronik",
+    "excerpt": "General · Austin, TX",
+    "category": "job",
+    "date": "2026-03-16T10:02:30-04:00",
+    "tags": [
+      "software",
+      "internship"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-apptronik-5780475004",
+    "title": "Staff Electrical Engineer — Apptronik",
+    "excerpt": "General · Austin, Texas",
+    "category": "job",
+    "date": "2026-02-20T18:34:44-05:00",
+    "tags": [
+      "electrical",
+      "senior"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-agilityrobotics-5789714004",
+    "title": "Staff Firmware Engineer — Agility Robotics",
+    "excerpt": "General · Hybrid- Fremont, CA",
+    "category": "job",
+    "date": "2026-03-02T11:44:56-05:00",
+    "tags": [
+      "embedded",
+      "senior"
+    ],
+    "companies": [
+      "Agility Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-agilityrobotics-5789707004",
+    "title": "Staff Hardware Test Engineer — Agility Robotics",
+    "excerpt": "General · Hybrid- Fremont, CA",
+    "category": "job",
+    "date": "2026-03-02T11:43:14-05:00",
+    "tags": [
+      "hardware",
+      "senior"
+    ],
+    "companies": [
+      "Agility Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-apptronik-5766166004",
+    "title": "Staff Mechanical Engineer — Apptronik",
+    "excerpt": "General · Austin, Texas",
+    "category": "job",
+    "date": "2026-02-25T14:37:59-05:00",
+    "tags": [
+      "hardware",
+      "senior"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4620491006",
+    "title": "Staff Polymers Engineer — Figure AI",
+    "excerpt": "General · San Jose",
+    "category": "job",
+    "date": "2026-02-06T14:58:47-05:00",
+    "tags": [
+      "senior"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-agilityrobotics-5701424004",
+    "title": "Staff Software Development Engineer, Test  — Agility Robotics",
+    "excerpt": "General · Hybrid- Fremont, CA",
+    "category": "job",
+    "date": "2026-03-02T11:39:00-05:00",
+    "tags": [
+      "software",
+      "product",
+      "senior"
+    ],
+    "companies": [
+      "Agility Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-apptronik-5807083004",
+    "title": "Staff Software Engineer - Robotic Simulation  — Apptronik",
+    "excerpt": "General · Austin, TX",
+    "category": "job",
+    "date": "2026-02-20T18:15:51-05:00",
+    "tags": [
+      "simulation",
+      "software",
+      "senior"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-agilityrobotics-5710397004",
+    "title": "Staff Software Engineer, Internal Services — Agility Robotics",
+    "excerpt": "General · Remote (Remote)",
+    "category": "job",
+    "date": "2026-03-02T11:53:40-05:00",
+    "tags": [
+      "software",
+      "senior"
+    ],
+    "companies": [
+      "Agility Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-agilityrobotics-5789675004",
+    "title": "Staff System Validation Engineer — Agility Robotics",
+    "excerpt": "General · Hybrid- Fremont, CA",
+    "category": "job",
+    "date": "2026-03-02T11:41:21-05:00",
+    "tags": [
+      "senior"
+    ],
+    "companies": [
+      "Agility Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-apptronik-5812094004",
+    "title": "Staff Systems Engineer - Dexterity — Apptronik",
+    "excerpt": "General · Austin, TX",
+    "category": "job",
+    "date": "2026-03-03T14:17:38-05:00",
+    "tags": [
+      "senior"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-apptronik-5797941004",
+    "title": "Staff Systems Engineer - Software — Apptronik",
+    "excerpt": "General · Austin, TX",
+    "category": "job",
+    "date": "2026-02-20T18:38:06-05:00",
+    "tags": [
+      "software",
+      "senior"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-agilityrobotics-5777987004",
+    "title": "Staff Systems Engineer — Agility Robotics",
+    "excerpt": "General · Hybrid- Fremont, CA",
+    "category": "job",
+    "date": "2026-03-02T11:40:03-05:00",
+    "tags": [
+      "senior"
+    ],
+    "companies": [
+      "Agility Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-apptronik-5778387004",
+    "title": "Staff Systems Safety Engineer — Apptronik",
+    "excerpt": "General · Austin, Texas",
+    "category": "job",
+    "date": "2026-02-20T18:38:21-05:00",
+    "tags": [
+      "safety",
+      "senior"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-agilityrobotics-5802330004",
+    "title": "Staff Technical Program Manager, Functional Safety — Agility Robotics",
+    "excerpt": "General · Hybrid- Fremont, CA",
+    "category": "job",
+    "date": "2026-03-02T11:46:03-05:00",
+    "tags": [
+      "safety",
+      "product",
+      "senior"
+    ],
+    "companies": [
+      "Agility Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-apptronik-5801942004",
+    "title": "Staff Wire Harness Engineer — Apptronik",
+    "excerpt": "General · Austin, TX",
+    "category": "job",
+    "date": "2026-02-20T18:33:02-05:00",
+    "tags": [
+      "senior"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4662478006",
+    "title": "Strategic Finance & Capital Markets Intern [Summer 2026] — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-03-11T15:08:06-04:00",
+    "tags": [
+      "internship"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
   },
   {
     "slug": "sunday-home",
@@ -3078,6 +5459,51 @@
     "url": "/funding"
   },
   {
+    "slug": "greenhouse-figureai-4660300006",
+    "title": "Supplier Quality Engineer, BotQ — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-03-05T11:52:10-05:00",
+    "tags": [
+      "safety"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-apptronik-5809796004",
+    "title": "Supply Chain Engineer - Electromechanical — Apptronik",
+    "excerpt": "General · Austin, TX",
+    "category": "job",
+    "date": "2026-02-23T12:24:55-05:00",
+    "tags": [
+      "ml/ai",
+      "hardware",
+      "operations"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4409868006",
+    "title": "Technical Recruiter — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-02-04T17:45:28-05:00",
+    "tags": [],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
     "slug": "tendon-driven",
     "title": "Tendon-Driven",
     "excerpt": "A robotic actuation architecture in which joints are driven by cables or tendons routed from remote actuators, enabling high DOF distal joints (like fingers) to be controlled by…",
@@ -3109,6 +5535,21 @@
     ],
     "type": "company",
     "url": "/companies/tesla-optimus"
+  },
+  {
+    "slug": "greenhouse-figureai-4365284006",
+    "title": "Test Automation Intern [Summer 2026] — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-03-15T23:21:32-04:00",
+    "tags": [
+      "internship"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
   },
   {
     "slug": "tiangong",
