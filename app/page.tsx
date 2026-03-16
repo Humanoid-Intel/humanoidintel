@@ -5,7 +5,7 @@ import Header from '@/components/Header'
 import TickerTape from '@/components/TickerTape'
 import Footer from '@/components/Footer'
 import { NewsletterForm } from '@/components/NewsletterForm'
-import { getArticles, getFeaturedArticle, getRobots } from '@/lib/content'
+import { getArticles, getFeaturedArticle, getRobots, getFundingRounds } from '@/lib/content'
 import type { Article, Robot } from '@/lib/types'
 import CapitalFlowChart from '@/components/CapitalFlowChart'
 import type { FlowBar } from '@/components/CapitalFlowChart'
@@ -339,6 +339,11 @@ export default function HomePage() {
   const ytdFunding = get2026YTDFunding()
   const totalDeployed = DEPLOYED_ROBOTS.reduce((s, r) => s + r.units, 0)
 
+  const allRounds = getFundingRounds()
+  const recentRounds = [...allRounds]
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+    .slice(0, 5)
+
   return (
     <>
       <style>{`
@@ -607,6 +612,142 @@ export default function HomePage() {
                   ))}
                 </tbody>
               </table>
+            </div>
+          </div>
+
+          {/* Capital Flows // Recent Rounds panel */}
+          <div className="panel">
+            <div className="panel-header">
+              <span className="panel-title">Capital Flows // Recent Rounds</span>
+              <Link
+                href="/funding"
+                className="font-data"
+                style={{ fontSize: 11, color: 'var(--text-secondary)' }}
+              >
+                Full Dashboard →
+              </Link>
+            </div>
+
+            <div style={{ overflowX: 'auto' }}>
+              <table
+                className="font-data"
+                style={{ width: '100%', fontSize: 12, borderCollapse: 'collapse' }}
+              >
+                <thead>
+                  <tr>
+                    {['Company', 'Round', 'Amount', 'Lead Investor', 'Date'].map((col) => (
+                      <th
+                        key={col}
+                        style={{
+                          textAlign: 'left',
+                          color: 'var(--text-secondary)',
+                          fontWeight: 'normal',
+                          borderBottom: '1px solid var(--border-strong)',
+                          paddingBottom: 8,
+                          paddingRight: 16,
+                          whiteSpace: 'nowrap',
+                        }}
+                      >
+                        {col}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {recentRounds.map((r) => (
+                    <tr
+                      key={r.id}
+                      className="robot-row"
+                      style={{ cursor: 'pointer', transition: 'background-color 0.1s' }}
+                    >
+                      <td
+                        style={{
+                          borderBottom: '1px solid var(--border-subtle)',
+                          paddingTop: 11,
+                          paddingBottom: 11,
+                          paddingRight: 16,
+                          color: 'var(--text-primary)',
+                          fontWeight: 500,
+                          whiteSpace: 'nowrap',
+                        }}
+                      >
+                        <Link href={`/companies/${r.companySlug}`} style={{ color: 'inherit', textDecoration: 'none' }}>
+                          {r.company}
+                        </Link>
+                      </td>
+                      <td
+                        style={{
+                          borderBottom: '1px solid var(--border-subtle)',
+                          paddingTop: 11,
+                          paddingBottom: 11,
+                          paddingRight: 16,
+                          color: 'var(--text-secondary)',
+                          whiteSpace: 'nowrap',
+                        }}
+                      >
+                        {r.round}
+                      </td>
+                      <td
+                        style={{
+                          borderBottom: '1px solid var(--border-subtle)',
+                          paddingTop: 11,
+                          paddingBottom: 11,
+                          paddingRight: 16,
+                          whiteSpace: 'nowrap',
+                        }}
+                        className="data-pos"
+                      >
+                        {r.amount}
+                      </td>
+                      <td
+                        style={{
+                          borderBottom: '1px solid var(--border-subtle)',
+                          paddingTop: 11,
+                          paddingBottom: 11,
+                          paddingRight: 16,
+                          color: 'var(--text-tertiary)',
+                          maxWidth: 180,
+                          overflow: 'hidden',
+                          textOverflow: 'ellipsis',
+                          whiteSpace: 'nowrap',
+                        }}
+                      >
+                        {r.leadInvestors?.[0] ?? '—'}
+                      </td>
+                      <td
+                        style={{
+                          borderBottom: '1px solid var(--border-subtle)',
+                          paddingTop: 11,
+                          paddingBottom: 11,
+                          color: 'var(--text-tertiary)',
+                          whiteSpace: 'nowrap',
+                        }}
+                      >
+                        {formatDate(r.date)}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+
+            {/* YTD summary bar */}
+            <div
+              style={{
+                marginTop: 14,
+                paddingTop: 12,
+                borderTop: '1px solid var(--border-subtle)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+              }}
+            >
+              <span className="font-data" style={{ fontSize: 11, color: 'var(--text-tertiary)' }}>
+                2026 YTD sector total
+              </span>
+              <span className="data-pos font-data" style={{ fontSize: 13, fontWeight: 600 }}>
+                {ytdFunding}
+              </span>
             </div>
           </div>
         </div>
