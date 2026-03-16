@@ -1,5 +1,108 @@
 [
   {
+    "slug": "china-humanoid-robot-arrested-elderly-woman-incident",
+    "title": "Chinese Humanoid Robot 'Arrested' After Scaring Elderly Woman",
+    "excerpt": "First reported 'arrest' of humanoid robot highlights deployment challenges in public spaces",
+    "category": "breaking",
+    "date": "2026-03-16T23:08:42.396Z",
+    "tags": [
+      "china",
+      "public-safety",
+      "humanoid-deployment",
+      "social-acceptance"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/china-humanoid-robot-arrested-elderly-woman-incident"
+  },
+  {
+    "slug": "humanoid-robot-tennis-demo-dexterous-manipulation",
+    "title": "Humanoid Robot Tennis Demo Shows Dexterous Progress",
+    "excerpt": "New tennis-playing humanoid demonstrates advanced hand-eye coordination and whole-body control capabilities",
+    "category": "breaking",
+    "date": "2026-03-16T23:06:07.954Z",
+    "tags": [
+      "dexterous-manipulation",
+      "whole-body-control",
+      "tennis",
+      "demo"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/humanoid-robot-tennis-demo-dexterous-manipulation"
+  },
+  {
+    "slug": "physical-intelligence-market-growth-2035",
+    "title": "Physical Intelligence Market to Hit $2.7T by 2035",
+    "excerpt": "Physical Intelligence sector projected for explosive growth as embodied AI moves beyond digital applications",
+    "category": "market",
+    "date": "2026-03-16T23:05:32.218Z",
+    "tags": [
+      "physical-intelligence",
+      "market-analysis",
+      "economic-impact",
+      "embodied-ai"
+    ],
+    "companies": [
+      "Physical Intelligence"
+    ],
+    "type": "news",
+    "url": "/news/physical-intelligence-market-growth-2035"
+  },
+  {
+    "slug": "china-humanoid-robot-training-schools",
+    "title": "China Launches Humanoid Robot Training Schools",
+    "excerpt": "China establishes dedicated training facilities for humanoid robot operation as industry workforce demands surge",
+    "category": "market",
+    "date": "2026-03-16T23:04:16.951Z",
+    "tags": [
+      "china",
+      "education",
+      "workforce",
+      "training"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/china-humanoid-robot-training-schools"
+  },
+  {
+    "slug": "nvidia-isaac-cosmos-physical-ai-frameworks-humanoid-robots",
+    "title": "Nvidia Isaac, Cosmos: New AI Frameworks for Humanoids",
+    "excerpt": "Nvidia launches Isaac and Cosmos frameworks to accelerate physical AI development for humanoid robotics applications",
+    "category": "breaking",
+    "date": "2026-03-16T23:03:04.152Z",
+    "tags": [
+      "nvidia",
+      "isaac",
+      "cosmos",
+      "physical-ai",
+      "frameworks"
+    ],
+    "companies": [
+      "Nvidia"
+    ],
+    "type": "news",
+    "url": "/news/nvidia-isaac-cosmos-physical-ai-frameworks-humanoid-robots"
+  },
+  {
+    "slug": "chinese-humanoid-robot-tennis-rally-breakthrough",
+    "title": "Chinese Humanoid Robot Masters Tennis Rally Skills",
+    "excerpt": "Chinese researchers demonstrate humanoid robot capable of sustained tennis rallies with humans using advanced motor control.",
+    "category": "research",
+    "date": "2026-03-16T23:02:18.077Z",
+    "tags": [
+      "china",
+      "sports-robotics",
+      "dexterous-manipulation",
+      "whole-body-control"
+    ],
+    "companies": [
+      "Chinese research institution"
+    ],
+    "type": "news",
+    "url": "/news/chinese-humanoid-robot-tennis-rally-breakthrough"
+  },
+  {
     "slug": "pc-partner-nvidia-gtc-2026-physical-ai",
     "title": "PC Partner Showcases Physical AI at NVIDIA GTC 2026",
     "excerpt": "PC Partner unveils Physical AI solutions at GTC 2026, targeting industrial digitalization with NVIDIA compute infrastructure.",
