@@ -42,9 +42,29 @@ export interface ScoredStory extends RawStory {
 
 const ROBOTICS_REQUIRED = /humanoid|bipedal|robot|robotics|figure ai|optimus|digit|atlas|phoenix|apollo|neo beta|unitree|boston dynamics|agility|apptronik|sanctuary|1x technologies|neura|fourier|agibot|kepler|physical intelligence|clone robotics|skild|galbot|leju|ubtech|astribot|sunday robot|wandercraft|anybotics|enchanted tools|mentee|actuator|locomotion|manipulation|exoskeleton|legged|quadruped|end.effector|sim.to.real|whole.body|combat robot|robot soldier|phantom mk|robot marathon|android robot|dexterous robot/i
 
+// If ANY of these appear WITHOUT humanoid context → hard reject
+const NON_HUMANOID_ONLY = /\bquadruped\b|\buav\b|\bdrone[s]?\b|aerial robot|underwater robot|snake robot|fish robot|continuum robot|soft robot|cable.driven|guide dog robot|swarm robot|multi.uav|robot dog|dog robot|floor cleaning robot|pool cleaning|lawn mowing robot|delivery drone|path planning.*uav|uav.*navigation|multi.agent path finding|mapf|autonomous vehicle|self.driving|lidar slam|occupancy grid/i
+
+// Research papers MUST contain at least one of these humanoid-specific signals
+const HUMANOID_SPECIFIC = /humanoid|bipedal|figure ai|optimus|digit\b|atlas\b|phoenix|apollo\b|neo beta|unitree|boston dynamics|agility robotics|apptronik|sanctuary ai|1x technologies|neura robotics|fourier intelligence|agibot|kepler robot|physical intelligence|clone robotics|skild|galbot|leju|ubtech|astribot|sunday robot|wandercraft|enchanted tools|mentee|android robot|loco.manipul|whole.body loco|dexterous hand|bimanual|teleoperat|humanoid locomotion|humanoid manipulation|bipedal locomotion|humanoid control|walking robot|standing robot|balance control.*robot|robot.*balance/i
+
 function isRoboticsRelevant(story: RawStory): boolean {
   const text = `${story.title} ${story.summary}`
-  return ROBOTICS_REQUIRED.test(text)
+
+  // Hard reject: clearly non-humanoid robotics topics
+  if (NON_HUMANOID_ONLY.test(text)) {
+    // Allow through ONLY if a humanoid-specific term also appears
+    if (!HUMANOID_SPECIFIC.test(text)) return false
+  }
+
+  // Must pass the primary robotics gate
+  if (!ROBOTICS_REQUIRED.test(text)) return false
+
+  // For research papers (arxiv/ieee), require a humanoid-specific signal
+  const isResearch = /arxiv|ieee|conference|journal|paper|proceedings|preprint/.test(text.toLowerCase())
+  if (isResearch && !HUMANOID_SPECIFIC.test(text)) return false
+
+  return true
 }
 
 function scoreStory(story: RawStory): number {
