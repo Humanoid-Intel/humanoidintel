@@ -1,4 +1,6 @@
-import React from 'react'
+'use client'
+
+import React, { useEffect, useState } from 'react'
 
 export interface TickerItem {
   symbol: string
@@ -7,24 +9,39 @@ export interface TickerItem {
   positive: boolean
 }
 
-const defaultItems: TickerItem[] = [
-  { symbol: 'FIG.AI', label: 'Figure 03', status: '+BMW.Deploy', positive: true },
-  { symbol: 'TSLA.BOT', label: 'Optimus', status: '8k.Units.Q1', positive: true },
-  { symbol: 'BOS.DYN', label: 'Atlas', status: '+Hyundai.Scale', positive: true },
-  { symbol: 'AGIL.ROB', label: 'Digit', status: '+AMZN.Contract', positive: true },
-  { symbol: 'SANC.AI', label: 'Phoenix', status: '+SeriesC.250M', positive: true },
-  { symbol: '1X.TECH', label: 'NEO Beta', status: '-Prod.Delay.Q2', positive: false },
-  { symbol: 'APP.TRON', label: 'Apollo', status: '+NASA.Collab', positive: true },
-  { symbol: 'UNIT.REE', label: 'H1', status: '+China.Deploy', positive: true },
-  { symbol: 'NEURA', label: '4NE-1', status: '+Series.B.80M', positive: true },
-  { symbol: 'FUND.YTD', label: '2026', status: '$4.2B.Raised', positive: true },
+const STATIC_ITEMS: TickerItem[] = [
+  { symbol: 'FIG.AI',    label: 'Figure 03',  status: '+1.5B.SeriesC',  positive: true },
+  { symbol: 'TSLA.BOT',  label: 'Optimus',    status: '+8k.Units.Q1',   positive: true },
+  { symbol: 'BOS.DYN',   label: 'Atlas',      status: '+New.CEO.2026',  positive: true },
+  { symbol: 'AGIL.ROB',  label: 'Digit',      status: '+AMZN.Scale',    positive: true },
+  { symbol: 'NEURA',     label: '4NE-1',      status: '+$1B.SeriesD',   positive: true },
+  { symbol: 'APP.TRON',  label: 'Apollo',     status: '+$520M.ExtA',    positive: true },
+  { symbol: 'UNIT.REE',  label: 'G1',         status: '+3k.Ships.25',   positive: true },
+  { symbol: 'SUNDAY',    label: 'HomeBot',    status: '+$1.15B.Val',    positive: true },
+  { symbol: 'GALBOT',    label: 'G1',         status: '+RMB2.5B.SerB',  positive: true },
+  { symbol: 'SANC.AI',   label: 'Phoenix',    status: '+$90M.SeriesD',  positive: true },
+  { symbol: '1X.TECH',   label: 'NEO',        status: '+$125M.SerC',    positive: true },
+  { symbol: 'MIND.ROB',  label: 'Stealth',    status: '+Founded.2026',  positive: true },
+  { symbol: 'FUND.YTD',  label: '2026',       status: '$5.8B.Raised',   positive: true },
 ]
 
 interface TickerTapeProps {
   items?: TickerItem[]
 }
 
-export default function TickerTape({ items = defaultItems }: TickerTapeProps) {
+export default function TickerTape({ items: propItems }: TickerTapeProps) {
+  const [items, setItems] = useState<TickerItem[]>(propItems ?? STATIC_ITEMS)
+
+  useEffect(() => {
+    if (propItems) return  // caller overrides; skip fetch
+    fetch('/ticker-data.json')
+      .then((r) => r.json())
+      .then((data: TickerItem[]) => {
+        if (Array.isArray(data) && data.length > 0) setItems(data)
+      })
+      .catch(() => {/* keep static fallback */})
+  }, [propItems])
+
   return (
     <div
       style={{

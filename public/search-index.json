@@ -1,21 +1,125 @@
 [
   {
-    "slug": "agility-boston-dynamics-astm-humanoid-panel-2026",
-    "title": "Agility, Boston Dynamics Join ASTM Panel on Real Humanoid ROI",
-    "excerpt": "Industry leaders tackle deployment reality vs hype at March standards panel",
-    "category": "breaking",
-    "date": "2026-03-10T21:25:42Z",
+    "slug": "sparse-world-models-robotic-planning-drift-reduction",
+    "title": "Sparse World Models Cut Robotic Planning Drift by 40%",
+    "excerpt": "New sparse world model architecture reduces long-horizon planning errors by eliminating visual redundancy in robotic manipulation tasks",
+    "category": "research",
+    "date": "2026-03-16T09:15:00Z",
     "tags": [
-      "agility-robotics",
-      "boston-dynamics",
-      "astm",
-      "industrial-deployment"
+      "world-models",
+      "vla",
+      "manipulation",
+      "planning",
+      "sparse-representation"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/sparse-world-models-robotic-planning-drift-reduction"
+  },
+  {
+    "slug": "tacvla-tactile-fusion-vision-language-action-manipulation",
+    "title": "TacVLA Adds Tactile Sensing to Vision-Language Robot Control",
+    "excerpt": "New TacVLA model integrates tactile feedback with vision-language-action policies for improved fine manipulation tasks",
+    "category": "research",
+    "date": "2026-03-16T09:00:00Z",
+    "tags": [
+      "tacvla",
+      "tactile-sensing",
+      "vla",
+      "manipulation",
+      "transformer",
+      "multimodal"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/tacvla-tactile-fusion-vision-language-action-manipulation"
+  },
+  {
+    "slug": "push-press-slide-control-framework-reduces-computation",
+    "title": "Push-Press-Slide: New Control Framework Cuts Compute 10x",
+    "excerpt": "MIT researchers develop mode-aware framework that reduces planar manipulation computation by order of magnitude",
+    "category": "research",
+    "date": "2026-03-16T08:30:00Z",
+    "tags": [
+      "manipulation",
+      "control-theory",
+      "non-prehensile",
+      "contact-dynamics"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/push-press-slide-control-framework-reduces-computation"
+  },
+  {
+    "slug": "skill-graphs-autonomous-robotic-assembly-arxiv-2026",
+    "title": "Skill Graphs Promise Autonomous Assembly Line Evolution",
+    "excerpt": "New framework eliminates manual engineering for assembly tasks through verb-based skill representations",
+    "category": "research",
+    "date": "2026-03-16T04:00:00Z",
+    "tags": [
+      "skill-graphs",
+      "robotic-assembly",
+      "autonomous-integration",
+      "arxiv"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/skill-graphs-autonomous-robotic-assembly-arxiv-2026"
+  },
+  {
+    "slug": "fault-tolerant-slam-multi-robot-collaboration-2026",
+    "title": "New Fault-Tolerant SLAM Breakthrough for Multi-Robot Systems",
+    "excerpt": "French researchers achieve 99.2% reliability in multi-robot SLAM with new decentralized fault-tolerance method",
+    "category": "research",
+    "date": "2026-03-15T21:40:13.891Z",
+    "tags": [
+      "slam",
+      "multi-robot",
+      "fault-tolerance",
+      "localization"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/fault-tolerant-slam-multi-robot-collaboration-2026"
+  },
+  {
+    "slug": "neura-robotics-1-billion-funding-tether",
+    "title": "Neura Robotics Raises €1B Led by Tether in Massive Round",
+    "excerpt": "German cognitive robotics startup secures massive €1B round from crypto giant Tether, signaling institutional crypto capital entering humanoids",
+    "category": "market",
+    "date": "2026-03-15T10:30:00Z",
+    "tags": [
+      "neura-robotics",
+      "funding",
+      "series-funding",
+      "tether",
+      "cognitive-robotics"
     ],
     "companies": [
-      "Agility Robotics",
-      "Boston Dynamics",
-      "ASTM International"
-    ]
+      "Neura Robotics",
+      "Tether"
+    ],
+    "type": "news",
+    "url": "/news/neura-robotics-1-billion-funding-tether"
+  },
+  {
+    "slug": "tesla-optimus-times-square-public-demo-march-2026",
+    "title": "Tesla Optimus Walks Times Square in Surprise Public Appearance",
+    "excerpt": "Tesla staged a surprise public demonstration of Optimus Gen 3 in Times Square on Friday evening, drawing massive crowds and media attention — the first fully autonomous public-space humanoid demo from any major company.",
+    "category": "breaking",
+    "date": "2026-03-14T18:00:00Z",
+    "tags": [
+      "tesla",
+      "optimus",
+      "public-demo",
+      "new-york",
+      "elon-musk"
+    ],
+    "companies": [
+      "Tesla"
+    ],
+    "type": "news",
+    "url": "/news/tesla-optimus-times-square-public-demo-march-2026"
   },
   {
     "slug": "agility-robotics-astm-humanoid-safety-standards-2026",
@@ -34,205 +138,28 @@
     "companies": [
       "Agility Robotics",
       "Boston Dynamics"
-    ]
-  },
-  {
-    "slug": "amc-robotics-hive-gpu-partnership-quadruped-security",
-    "title": "AMC Robotics Partners Hive GPU Cloud for Security Bot AI",
-    "excerpt": "AMC Robotics leverages Hive's sustainable GPU infrastructure to accelerate AI training for quadruped security applications",
-    "category": "breaking",
-    "date": "2026-03-15T18:00:00Z",
-    "tags": [
-      "amc-robotics",
-      "hive-digital",
-      "gpu-cloud",
-      "quadruped",
-      "security-robots"
     ],
-    "companies": [
-      "AMC Robotics",
-      "Hive Digital Technologies"
-    ]
+    "type": "news",
+    "url": "/news/agility-robotics-astm-humanoid-safety-standards-2026"
   },
   {
-    "slug": "apptronik-520m-series-a-extension-apollo-production",
-    "title": "Apptronik Raises $520M Extension for Apollo Humanoid Production",
-    "excerpt": "Austin-based Apptronik extends Series A to $935M total, marking largest humanoid robotics round as company scales Apollo production",
+    "slug": "xiaomi-humanoid-robot-factory-trial-cyberone-successor",
+    "title": "Xiaomi Runs Factory Trials for Next-Gen Humanoid, Eyes 2027 Production",
+    "excerpt": "Xiaomi has begun supervised factory trials of a next-generation humanoid robot at its Beijing smart factory, with sources indicating a target for limited production-line deployment by 2027.",
     "category": "breaking",
-    "date": "2026-02-11T14:00:28Z",
+    "date": "2026-03-12T07:30:00Z",
     "tags": [
-      "apptronik",
-      "funding",
-      "series-a",
-      "apollo",
-      "humanoid-production"
-    ],
-    "companies": [
-      "Apptronik"
-    ]
-  },
-  {
-    "slug": "bipedal-robot-dynamic-fall-recovery-breakthrough",
-    "title": "Bipedal Robot Achieves Dynamic Fall Recovery Breakthrough",
-    "excerpt": "New bipedal robot demonstrates unprecedented dynamic fall recovery capabilities in latest research breakthrough",
-    "category": "research",
-    "date": "2026-01-17T14:00:00Z",
-    "tags": [
-      "bipedal-locomotion",
-      "dynamic-balance",
-      "fall-recovery",
-      "kinetic-intelligent-machine-lab"
-    ],
-    "companies": [
-      "Kinetic Intelligent Machine LAB"
-    ]
-  },
-  {
-    "slug": "bmw-humanoid-robot-leipzig-plant-deployment",
-    "title": "BMW Deploys First Humanoid Robot at Leipzig Plant",
-    "excerpt": "BMW becomes first major automaker to deploy humanoid robots in production, marking industrial automation milestone",
-    "category": "breaking",
-    "date": "2026-03-09T18:30:00Z",
-    "tags": [
-      "bmw",
+      "xiaomi",
+      "china",
+      "factory",
       "manufacturing",
-      "deployment",
-      "automotive"
+      "cyberone"
     ],
     "companies": [
-      "BMW Group"
-    ]
-  },
-  {
-    "slug": "boston-dynamics-ceo-robert-playter-steps-down-30-years",
-    "title": "Boston Dynamics CEO Robert Playter Steps Down After 30 Years",
-    "excerpt": "Playter's departure marks end of era for robotics pioneer after leading commercialization push",
-    "category": "breaking",
-    "date": "2026-02-10T22:00:00Z",
-    "tags": [
-      "boston-dynamics",
-      "leadership",
-      "ceo-transition",
-      "atlas",
-      "spot"
+      "Xiaomi"
     ],
-    "companies": [
-      "Boston Dynamics"
-    ]
-  },
-  {
-    "slug": "figure-ai-ceo-bloomberg-interview-general-purpose-robots",
-    "title": "Figure AI CEO Details Robot Strategy in Bloomberg Interview",
-    "excerpt": "Brett Adcock outlines Figure's path to commercializing humanoid robots for industrial applications",
-    "category": "breaking",
-    "date": "2025-01-15T10:30:00Z",
-    "tags": [
-      "figure-ai",
-      "brett-adcock",
-      "general-purpose-robots",
-      "funding"
-    ],
-    "companies": [
-      "Figure AI"
-    ]
-  },
-  {
-    "slug": "figure-ai-ceo-dodges-police-robot-sales-question",
-    "title": "Figure AI CEO Dodges Police Robot Sales Question",
-    "excerpt": "Brett Adcock sidesteps Marc Benioff's direct question about selling humanoid robots to law enforcement agencies",
-    "category": "breaking",
-    "date": "2025-10-15T07:00:00Z",
-    "tags": [
-      "figure-ai",
-      "public-safety",
-      "brett-adcock"
-    ],
-    "companies": [
-      "Figure AI",
-      "Salesforce"
-    ]
-  },
-  {
-    "slug": "figure-ai-hiring-rate-talent-shortage-170000-applications",
-    "title": "Figure AI's 0.3% Hire Rate Signals Intense Talent War",
-    "excerpt": "Figure AI's CEO reveals 170,000 job applications yielded fewer than 500 hires, highlighting humanoid robotics talent scarcity",
-    "category": "breaking",
-    "date": "2025-12-13T16:00:00Z",
-    "tags": [
-      "figure-ai",
-      "talent",
-      "hiring",
-      "workforce"
-    ],
-    "companies": [
-      "Figure AI"
-    ]
-  },
-  {
-    "slug": "galbot-rmb-2-5-billion-alibaba-meituan-series-b",
-    "title": "Galbot Raises RMB 2.5B in Alibaba-Led Round, Eyes Logistics Deployment",
-    "excerpt": "Galbot has closed one of China's largest humanoid funding rounds — RMB 2.5 billion (~$345M) — with Alibaba and Meituan co-leading, targeting deployment across China's vast e-commerce fulfillment infrastructure.",
-    "category": "market",
-    "date": "2026-02-28T08:00:00Z",
-    "tags": [
-      "funding",
-      "china",
-      "logistics",
-      "dexterous-manipulation",
-      "Series B"
-    ],
-    "companies": [
-      "Galbot"
-    ]
-  },
-  {
-    "slug": "honor-mwc-2026-humanoid-robot-consumer-announcement",
-    "title": "Honor Unveils Humanoid Robot Concept at MWC 2026, Targets Smart Home",
-    "excerpt": "Smartphone maker Honor used MWC Barcelona 2026 to unveil a humanoid robot concept designed for smart home integration, becoming the latest consumer electronics company to enter the humanoid space.",
-    "category": "breaking",
-    "date": "2026-03-03T10:00:00Z",
-    "tags": [
-      "honor",
-      "mwc",
-      "consumer",
-      "smart-home",
-      "china",
-      "announcement"
-    ],
-    "companies": []
-  },
-  {
-    "slug": "mind-robotics-rivian-ceo-rj-scaringe-humanoid-startup",
-    "title": "Rivian CEO RJ Scaringe Quietly Backs New Humanoid Startup Mind Robotics",
-    "excerpt": "Rivian CEO RJ Scaringe has made a personal seed investment in Mind Robotics, a stealth humanoid startup founded by former Tesla and Boston Dynamics engineers, according to sources familiar with the deal.",
-    "category": "breaking",
-    "date": "2026-03-11T14:00:00Z",
-    "tags": [
-      "startup",
-      "funding",
-      "automotive",
-      "leadership",
-      "new-entrant"
-    ],
-    "companies": []
-  },
-  {
-    "slug": "neura-robotics-1-billion-funding-tether",
-    "title": "Neura Robotics Raises €1B Led by Tether in Massive Round",
-    "excerpt": "German cognitive robotics startup secures massive €1B round from crypto giant Tether, signaling institutional crypto capital entering humanoids",
-    "category": "market",
-    "date": "2026-03-15T10:30:00Z",
-    "tags": [
-      "neura-robotics",
-      "funding",
-      "series-funding",
-      "tether",
-      "cognitive-robotics"
-    ],
-    "companies": [
-      "Neura Robotics",
-      "Tether"
-    ]
+    "type": "news",
+    "url": "/news/xiaomi-humanoid-robot-factory-trial-cyberone-successor"
   },
   {
     "slug": "osu-hurst-agility-robotics-2-5-billion-valuation",
@@ -249,57 +176,46 @@
     ],
     "companies": [
       "Agility Robotics"
-    ]
-  },
-  {
-    "slug": "phantom-mk1-combat-humanoid-robot-military-deployment",
-    "title": "Phantom MK1: The First Combat-Ready Humanoid Robot Enters Field Trials",
-    "excerpt": "The Phantom MK1, a bipedal combat humanoid developed for military applications, has entered field trials — marking the first documented deployment of a humanoid robot in a military operational environment.",
-    "category": "breaking",
-    "date": "2026-03-08T12:00:00Z",
-    "tags": [
-      "military",
-      "defense",
-      "combat-robot",
-      "field-trials",
-      "autonomous-systems"
     ],
-    "companies": []
+    "type": "news",
+    "url": "/news/osu-hurst-agility-robotics-2-5-billion-valuation"
   },
   {
-    "slug": "qualcomm-iq10-neura-robotics-partnership-humanoid-processors",
-    "title": "Qualcomm IQ10 Powers Neura Robotics' Next-Gen Humanoids",
-    "excerpt": "Qualcomm's IQ10 chip will power Neura Robotics' next humanoid platform, marking chipmaker's serious robotics push",
+    "slug": "mind-robotics-rivian-ceo-rj-scaringe-humanoid-startup",
+    "title": "Rivian CEO RJ Scaringe Quietly Backs New Humanoid Startup Mind Robotics",
+    "excerpt": "Rivian CEO RJ Scaringe has made a personal seed investment in Mind Robotics, a stealth humanoid startup founded by former Tesla and Boston Dynamics engineers, according to sources familiar with the deal.",
     "category": "breaking",
-    "date": "2026-03-09T16:30:00Z",
+    "date": "2026-03-11T14:00:00Z",
     "tags": [
-      "qualcomm",
-      "neura-robotics",
-      "iq10-processor",
-      "partnerships"
+      "startup",
+      "funding",
+      "automotive",
+      "leadership",
+      "new-entrant"
     ],
-    "companies": [
-      "Qualcomm",
-      "NEURA Robotics"
-    ]
+    "companies": [],
+    "type": "news",
+    "url": "/news/mind-robotics-rivian-ceo-rj-scaringe-humanoid-startup"
   },
   {
-    "slug": "qualcomm-iq10-neura-robotics-partnership",
-    "title": "Qualcomm IQ10 Powers Neura's Next-Gen Humanoids",
-    "excerpt": "Qualcomm's new IQ10 processors will power Neura Robotics' next generation of humanoid robots",
+    "slug": "agility-boston-dynamics-astm-humanoid-panel-2026",
+    "title": "Agility, Boston Dynamics Join ASTM Panel on Real Humanoid ROI",
+    "excerpt": "Industry leaders tackle deployment reality vs hype at March standards panel",
     "category": "breaking",
-    "date": "2026-03-09T16:30:00Z",
+    "date": "2026-03-10T21:25:42Z",
     "tags": [
-      "qualcomm",
-      "neura-robotics",
-      "iq10",
-      "processors",
-      "partnership"
+      "agility-robotics",
+      "boston-dynamics",
+      "astm",
+      "industrial-deployment"
     ],
     "companies": [
-      "Qualcomm",
-      "Neura Robotics"
-    ]
+      "Agility Robotics",
+      "Boston Dynamics",
+      "ASTM International"
+    ],
+    "type": "news",
+    "url": "/news/agility-boston-dynamics-astm-humanoid-panel-2026"
   },
   {
     "slug": "sunday-robotics-1-billion-unicorn-household-humanoid",
@@ -316,42 +232,100 @@
     ],
     "companies": [
       "Sunday Robotics"
-    ]
+    ],
+    "type": "news",
+    "url": "/news/sunday-robotics-1-billion-unicorn-household-humanoid"
   },
   {
-    "slug": "tesla-optimus-times-square-public-demo-march-2026",
-    "title": "Tesla Optimus Walks Times Square in Surprise Public Appearance",
-    "excerpt": "Tesla staged a surprise public demonstration of Optimus Gen 3 in Times Square on Friday evening, drawing massive crowds and media attention — the first fully autonomous public-space humanoid demo from any major company.",
+    "slug": "bmw-humanoid-robot-leipzig-plant-deployment",
+    "title": "BMW Deploys First Humanoid Robot at Leipzig Plant",
+    "excerpt": "BMW becomes first major automaker to deploy humanoid robots in production, marking industrial automation milestone",
     "category": "breaking",
-    "date": "2026-03-14T18:00:00Z",
+    "date": "2026-03-09T18:30:00Z",
     "tags": [
-      "tesla",
-      "optimus",
-      "public-demo",
-      "new-york",
-      "elon-musk"
+      "bmw",
+      "manufacturing",
+      "deployment",
+      "automotive"
     ],
     "companies": [
-      "Tesla"
-    ]
+      "BMW Group"
+    ],
+    "type": "news",
+    "url": "/news/bmw-humanoid-robot-leipzig-plant-deployment"
   },
   {
-    "slug": "tether-generative-bionics-70m-series-a-funding",
-    "title": "Tether Backs Generative Bionics €70M Series A Round",
-    "excerpt": "Tether joins €70M Series A for Italian humanoid robotics startup Generative Bionics",
-    "category": "market",
-    "date": "2025-12-10T14:30:00Z",
+    "slug": "qualcomm-iq10-neura-robotics-partnership-humanoid-processors",
+    "title": "Qualcomm IQ10 Powers Neura Robotics' Next-Gen Humanoids",
+    "excerpt": "Qualcomm's IQ10 chip will power Neura Robotics' next humanoid platform, marking chipmaker's serious robotics push",
+    "category": "breaking",
+    "date": "2026-03-09T16:30:00Z",
     "tags": [
-      "generative-bionics",
-      "tether",
-      "series-a",
-      "italy",
-      "funding"
+      "qualcomm",
+      "neura-robotics",
+      "iq10-processor",
+      "partnerships"
     ],
     "companies": [
-      "Generative Bionics",
-      "Tether"
-    ]
+      "Qualcomm",
+      "NEURA Robotics"
+    ],
+    "type": "news",
+    "url": "/news/qualcomm-iq10-neura-robotics-partnership-humanoid-processors"
+  },
+  {
+    "slug": "phantom-mk1-combat-humanoid-robot-military-deployment",
+    "title": "Phantom MK1: The First Combat-Ready Humanoid Robot Enters Field Trials",
+    "excerpt": "The Phantom MK1, a bipedal combat humanoid developed for military applications, has entered field trials — marking the first documented deployment of a humanoid robot in a military operational environment.",
+    "category": "breaking",
+    "date": "2026-03-08T12:00:00Z",
+    "tags": [
+      "military",
+      "defense",
+      "combat-robot",
+      "field-trials",
+      "autonomous-systems"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/phantom-mk1-combat-humanoid-robot-military-deployment"
+  },
+  {
+    "slug": "honor-mwc-2026-humanoid-robot-consumer-announcement",
+    "title": "Honor Unveils Humanoid Robot Concept at MWC 2026, Targets Smart Home",
+    "excerpt": "Smartphone maker Honor used MWC Barcelona 2026 to unveil a humanoid robot concept designed for smart home integration, becoming the latest consumer electronics company to enter the humanoid space.",
+    "category": "breaking",
+    "date": "2026-03-03T10:00:00Z",
+    "tags": [
+      "honor",
+      "mwc",
+      "consumer",
+      "smart-home",
+      "china",
+      "announcement"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/honor-mwc-2026-humanoid-robot-consumer-announcement"
+  },
+  {
+    "slug": "galbot-rmb-2-5-billion-alibaba-meituan-series-b",
+    "title": "Galbot Raises RMB 2.5B in Alibaba-Led Round, Eyes Logistics Deployment",
+    "excerpt": "Galbot has closed one of China's largest humanoid funding rounds — RMB 2.5 billion (~$345M) — with Alibaba and Meituan co-leading, targeting deployment across China's vast e-commerce fulfillment infrastructure.",
+    "category": "market",
+    "date": "2026-02-28T08:00:00Z",
+    "tags": [
+      "funding",
+      "china",
+      "logistics",
+      "dexterous-manipulation",
+      "Series B"
+    ],
+    "companies": [
+      "Galbot"
+    ],
+    "type": "news",
+    "url": "/news/galbot-rmb-2-5-billion-alibaba-meituan-series-b"
   },
   {
     "slug": "toyota-agility-robots-canadian-factory-deployment",
@@ -369,7 +343,47 @@
     "companies": [
       "Toyota",
       "Agility Robotics"
-    ]
+    ],
+    "type": "news",
+    "url": "/news/toyota-agility-robots-canadian-factory-deployment"
+  },
+  {
+    "slug": "apptronik-520m-series-a-extension-apollo-production",
+    "title": "Apptronik Raises $520M Extension for Apollo Humanoid Production",
+    "excerpt": "Austin-based Apptronik extends Series A to $935M total, marking largest humanoid robotics round as company scales Apollo production",
+    "category": "breaking",
+    "date": "2026-02-11T14:00:28Z",
+    "tags": [
+      "apptronik",
+      "funding",
+      "series-a",
+      "apollo",
+      "humanoid-production"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "news",
+    "url": "/news/apptronik-520m-series-a-extension-apollo-production"
+  },
+  {
+    "slug": "boston-dynamics-ceo-robert-playter-steps-down-30-years",
+    "title": "Boston Dynamics CEO Robert Playter Steps Down After 30 Years",
+    "excerpt": "Playter's departure marks end of era for robotics pioneer after leading commercialization push",
+    "category": "breaking",
+    "date": "2026-02-10T22:00:00Z",
+    "tags": [
+      "boston-dynamics",
+      "leadership",
+      "ceo-transition",
+      "atlas",
+      "spot"
+    ],
+    "companies": [
+      "Boston Dynamics"
+    ],
+    "type": "news",
+    "url": "/news/boston-dynamics-ceo-robert-playter-steps-down-30-years"
   },
   {
     "slug": "westwood-themis-gen25-commercial-humanoid-mobile-manipulation",
@@ -385,23 +399,1723 @@
     ],
     "companies": [
       "Westwood Robotics"
-    ]
+    ],
+    "type": "news",
+    "url": "/news/westwood-themis-gen25-commercial-humanoid-mobile-manipulation"
   },
   {
-    "slug": "xiaomi-humanoid-robot-factory-trial-cyberone-successor",
-    "title": "Xiaomi Runs Factory Trials for Next-Gen Humanoid, Eyes 2027 Production",
-    "excerpt": "Xiaomi has begun supervised factory trials of a next-generation humanoid robot at its Beijing smart factory, with sources indicating a target for limited production-line deployment by 2027.",
-    "category": "breaking",
-    "date": "2026-03-12T07:30:00Z",
+    "slug": "bipedal-robot-dynamic-fall-recovery-breakthrough",
+    "title": "Bipedal Robot Achieves Dynamic Fall Recovery Breakthrough",
+    "excerpt": "New bipedal robot demonstrates unprecedented dynamic fall recovery capabilities in latest research breakthrough",
+    "category": "research",
+    "date": "2026-01-17T14:00:00Z",
     "tags": [
-      "xiaomi",
-      "china",
-      "factory",
-      "manufacturing",
-      "cyberone"
+      "bipedal-locomotion",
+      "dynamic-balance",
+      "fall-recovery",
+      "kinetic-intelligent-machine-lab"
+    ],
+    "companies": [
+      "Kinetic Intelligent Machine LAB"
+    ],
+    "type": "news",
+    "url": "/news/bipedal-robot-dynamic-fall-recovery-breakthrough"
+  },
+  {
+    "slug": "figure-ai-hiring-rate-talent-shortage-170000-applications",
+    "title": "Figure AI's 0.3% Hire Rate Signals Intense Talent War",
+    "excerpt": "Figure AI's CEO reveals 170,000 job applications yielded fewer than 500 hires, highlighting humanoid robotics talent scarcity",
+    "category": "breaking",
+    "date": "2025-12-13T16:00:00Z",
+    "tags": [
+      "figure-ai",
+      "talent",
+      "hiring",
+      "workforce"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "news",
+    "url": "/news/figure-ai-hiring-rate-talent-shortage-170000-applications"
+  },
+  {
+    "slug": "tether-generative-bionics-70m-series-a-funding",
+    "title": "Tether Backs Generative Bionics €70M Series A Round",
+    "excerpt": "Tether joins €70M Series A for Italian humanoid robotics startup Generative Bionics",
+    "category": "market",
+    "date": "2025-12-10T14:30:00Z",
+    "tags": [
+      "generative-bionics",
+      "tether",
+      "series-a",
+      "italy",
+      "funding"
+    ],
+    "companies": [
+      "Generative Bionics",
+      "Tether"
+    ],
+    "type": "news",
+    "url": "/news/tether-generative-bionics-70m-series-a-funding"
+  },
+  {
+    "slug": "figure-ai-ceo-dodges-police-robot-sales-question",
+    "title": "Figure AI CEO Dodges Police Robot Sales Question",
+    "excerpt": "Brett Adcock sidesteps Marc Benioff's direct question about selling humanoid robots to law enforcement agencies",
+    "category": "breaking",
+    "date": "2025-10-15T07:00:00Z",
+    "tags": [
+      "figure-ai",
+      "public-safety",
+      "brett-adcock"
+    ],
+    "companies": [
+      "Figure AI",
+      "Salesforce"
+    ],
+    "type": "news",
+    "url": "/news/figure-ai-ceo-dodges-police-robot-sales-question"
+  },
+  {
+    "slug": "figure-ai-ceo-bloomberg-interview-general-purpose-robots",
+    "title": "Figure AI CEO Details Robot Strategy in Bloomberg Interview",
+    "excerpt": "Brett Adcock outlines Figure's path to commercializing humanoid robots for industrial applications",
+    "category": "breaking",
+    "date": "2025-01-15T10:30:00Z",
+    "tags": [
+      "figure-ai",
+      "brett-adcock",
+      "general-purpose-robots",
+      "funding"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "news",
+    "url": "/news/figure-ai-ceo-bloomberg-interview-general-purpose-robots"
+  },
+  {
+    "slug": "1x-technologies",
+    "title": "1X Technologies",
+    "excerpt": "1X Technologies (formerly Halodi Robotics) is Norway's leading humanoid robotics company, distinguished by its safety-first design philosophy and long-term focus on home assistant …",
+    "category": "company",
+    "date": "",
+    "tags": [
+      "Moss, Norway",
+      "active"
+    ],
+    "companies": [
+      "1X Technologies"
+    ],
+    "type": "company",
+    "url": "/companies/1x-technologies"
+  },
+  {
+    "slug": "fr-004",
+    "title": "1X Technologies — Series A $23.5M",
+    "excerpt": "OpenAI's first direct investment in a robotics hardware company, signaling the AI lab's intent to influence physical AI development.",
+    "category": "funding",
+    "date": "2023-03-24",
+    "tags": [
+      "Norway",
+      "Series A"
+    ],
+    "companies": [
+      "1X Technologies"
+    ],
+    "type": "funding",
+    "url": "/funding"
+  },
+  {
+    "slug": "fr-005",
+    "title": "1X Technologies — Series B $100M",
+    "excerpt": "Funds NEO bipedal humanoid development and home trial program expansion. EQT Ventures' lead represents growing European institutional interest in humanoid robotics.",
+    "category": "funding",
+    "date": "2024-01-18",
+    "tags": [
+      "Norway",
+      "Series B"
+    ],
+    "companies": [
+      "1X Technologies"
+    ],
+    "type": "funding",
+    "url": "/funding"
+  },
+  {
+    "slug": "fr-034",
+    "title": "1X Technologies — Series C $125M",
+    "excerpt": "Samsung's lead investment reflects South Korean strategic interest in humanoid platforms as a potential future product category. The round funds scale-up of the NEO Beta home humanoid trial program to 500 households across Norway, the US, and Japan — the largest real-world home humanoid deployment to date.",
+    "category": "funding",
+    "date": "2025-08-14",
+    "tags": [
+      "Norway",
+      "Series C"
+    ],
+    "companies": [
+      "1X Technologies"
+    ],
+    "type": "funding",
+    "url": "/funding"
+  },
+  {
+    "slug": "4ne-1",
+    "title": "4NE-1 — NEURA Robotics",
+    "excerpt": "NEURA Robotics' 4NE-1 is Europe's most advanced humanoid prototype, engineered around a 'cognitive humanoid' philosophy that prioritizes multi-modal sensing and high-level reasonin…",
+    "category": "robot",
+    "date": "",
+    "tags": [
+      "prototype",
+      "Electric",
+      "Germany"
+    ],
+    "companies": [
+      "NEURA Robotics"
+    ],
+    "type": "robot",
+    "url": "/robots/4ne-1"
+  },
+  {
+    "slug": "agibot",
+    "title": "Agibot",
+    "excerpt": "Agibot is one of China's fastest-growing humanoid startups, founded in 2023 with backing from prominent Chinese venture funds and state capital. The company's core differentiation …",
+    "category": "company",
+    "date": "",
+    "tags": [
+      "Shanghai, China",
+      "active"
+    ],
+    "companies": [
+      "Agibot"
+    ],
+    "type": "company",
+    "url": "/companies/agibot"
+  },
+  {
+    "slug": "fr-016",
+    "title": "Agibot — Series A $100M",
+    "excerpt": "Zhangjiang Hi-Tech's participation reflects the Shanghai city government's strategic interest in building a local humanoid champion. Agibot is headquartered in Zhangjiang Hi-Tech Park.",
+    "category": "funding",
+    "date": "2024-04-10",
+    "tags": [
+      "China",
+      "Series A"
+    ],
+    "companies": [
+      "Agibot"
+    ],
+    "type": "funding",
+    "url": "/funding"
+  },
+  {
+    "slug": "fr-017",
+    "title": "Agibot — Series B $200M",
+    "excerpt": "Agibot achieves unicorn status with its Series B, driven by scale-up of teleoperation data infrastructure and expanded logistics pilot deployments.",
+    "category": "funding",
+    "date": "2025-03-12",
+    "tags": [
+      "China",
+      "Series B"
+    ],
+    "companies": [
+      "Agibot"
+    ],
+    "type": "funding",
+    "url": "/funding"
+  },
+  {
+    "slug": "agibot-a2",
+    "title": "AgiBot A2 — Agibot",
+    "excerpt": "Agibot's A2 is a full-size humanoid with particular strength in teleoperation-driven data collection, an area where Agibot has invested heavily to build proprietary manipulation da…",
+    "category": "robot",
+    "date": "",
+    "tags": [
+      "pilot",
+      "Electric",
+      "China"
+    ],
+    "companies": [
+      "Agibot"
+    ],
+    "type": "robot",
+    "url": "/robots/agibot-a2"
+  },
+  {
+    "slug": "agility-robotics",
+    "title": "Agility Robotics",
+    "excerpt": "Agility Robotics spun out of Oregon State University's Dynamic Robotics Laboratory, where founder Jonathan Hurst developed the Cassie bipedal research platform. The company's Digit…",
+    "category": "company",
+    "date": "",
+    "tags": [
+      "Salem, OR, USA",
+      "active"
+    ],
+    "companies": [
+      "Agility Robotics"
+    ],
+    "type": "company",
+    "url": "/companies/agility-robotics"
+  },
+  {
+    "slug": "fr-006",
+    "title": "Agility Robotics — Series B $150M",
+    "excerpt": "Amazon's $150M investment is both strategic capital and a commercial deployment commitment. Agility opened a RoboFab manufacturing facility in Salem, OR with this funding to produce Digit units at scale.",
+    "category": "funding",
+    "date": "2023-09-14",
+    "tags": [
+      "USA",
+      "Series B"
+    ],
+    "companies": [
+      "Agility Robotics"
+    ],
+    "type": "funding",
+    "url": "/funding"
+  },
+  {
+    "slug": "apollo",
+    "title": "Apollo — Apptronik",
+    "excerpt": "Apollo is Apptronik's flagship commercial humanoid, built on actuator technology developed through a decade of NASA collaboration on Space Exploration Suits and the Valkyrie robot.…",
+    "category": "robot",
+    "date": "",
+    "tags": [
+      "pilot",
+      "Electric",
+      "USA"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "robot",
+    "url": "/robots/apollo"
+  },
+  {
+    "slug": "apptronik",
+    "title": "Apptronik",
+    "excerpt": "Apptronik emerged from the Human Centered Robotics Lab at UT Austin and has deep NASA ties through development of the Valkyrie robot and Space Exploration Suit actuators. This heri…",
+    "category": "company",
+    "date": "",
+    "tags": [
+      "Austin, TX, USA",
+      "active"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "company",
+    "url": "/companies/apptronik"
+  },
+  {
+    "slug": "fr-027",
+    "title": "Apptronik — SBIR Grant $5.5M",
+    "excerpt": "NASA SBIR Phase II grant funding Apollo development through the NASA Johnson Space Center partnership. Critical early non-dilutive capital that funded actuator technology development.",
+    "category": "funding",
+    "date": "2022-04-01",
+    "tags": [
+      "USA",
+      "SBIR Grant"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "funding",
+    "url": "/funding"
+  },
+  {
+    "slug": "fr-009",
+    "title": "Apptronik — Series A $350M",
+    "excerpt": "Google's lead investment reflects Alphabet's broad physical AI strategy. Apptronik will integrate with Google DeepMind's robotics research for Apollo AI model development.",
+    "category": "funding",
+    "date": "2024-11-05",
+    "tags": [
+      "USA",
+      "Series A"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "funding",
+    "url": "/funding"
+  },
+  {
+    "slug": "fr-029",
+    "title": "Apptronik — Series A Extension $520M",
+    "excerpt": "Massive extension to Apptronik's Series A brings total raised to over $870M. The round is earmarked for Apollo production scale-up at their Austin, Texas facility and expansion of commercial deployment programs with GXO Logistics, Mercedes-Benz, and other enterprise partners.",
+    "category": "funding",
+    "date": "2026-02-11",
+    "tags": [
+      "USA",
+      "Series A Extension"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "funding",
+    "url": "/funding"
+  },
+  {
+    "slug": "fr-023",
+    "title": "Astribot — Series A $60M",
+    "excerpt": "Tencent's lead investment connects Astribot to one of China's largest technology ecosystems and potential consumer deployment channels.",
+    "category": "funding",
+    "date": "2024-06-03",
+    "tags": [
+      "China",
+      "Series A"
+    ],
+    "companies": [
+      "Astribot"
+    ],
+    "type": "funding",
+    "url": "/funding"
+  },
+  {
+    "slug": "fr-024",
+    "title": "Astribot — Series B $100M",
+    "excerpt": "Funds S1 pilot program expansion and hospitality market development. Yunfeng Capital (Jack Ma's fund) participation signals broad Chinese tech establishment support.",
+    "category": "funding",
+    "date": "2025-04-22",
+    "tags": [
+      "China",
+      "Series B"
+    ],
+    "companies": [
+      "Astribot"
+    ],
+    "type": "funding",
+    "url": "/funding"
+  },
+  {
+    "slug": "astribot",
+    "title": "Astribot (Stardust Intelligence)",
+    "excerpt": "Astribot, the commercial entity of Stardust Intelligence, has distinguished itself with viral demonstrations of high-speed household manipulation — its S1 robot's calligraphy, cook…",
+    "category": "company",
+    "date": "",
+    "tags": [
+      "Shenzhen, Guangdong, China",
+      "active"
+    ],
+    "companies": [
+      "Astribot (Stardust Intelligence)"
+    ],
+    "type": "company",
+    "url": "/companies/astribot"
+  },
+  {
+    "slug": "astribot-s1",
+    "title": "Astribot S1 — Astribot",
+    "excerpt": "The Astribot S1 from Stardust Intelligence is notable for its exceptional arm speed — reaching 10 m/s end-effector velocity — and its demonstrated ability to perform high-speed hou…",
+    "category": "robot",
+    "date": "",
+    "tags": [
+      "pilot",
+      "Electric",
+      "China"
+    ],
+    "companies": [
+      "Astribot"
+    ],
+    "type": "robot",
+    "url": "/robots/astribot-s1"
+  },
+  {
+    "slug": "atlas-electric",
+    "title": "Atlas Electric — Boston Dynamics",
+    "excerpt": "Atlas Electric is Boston Dynamics' fully electric successor to the hydraulic Atlas platform, designed to test the limits of whole-body dynamic manipulation. The platform's rotation…",
+    "category": "robot",
+    "date": "",
+    "tags": [
+      "r&d",
+      "Electric",
+      "USA"
+    ],
+    "companies": [
+      "Boston Dynamics"
+    ],
+    "type": "robot",
+    "url": "/robots/atlas-electric"
+  },
+  {
+    "slug": "backdrivability",
+    "title": "Backdrivability",
+    "excerpt": "The ability of a robot joint to be moved by external forces acting on the output side — that is, whether an external force can 'backtrack' through the transmission to displace t…",
+    "category": "glossary",
+    "date": "",
+    "tags": [
+      "hardware",
+      "harmonic-drive",
+      "tendon-driven",
+      "dexterous-manipulation",
+      "whole-body-control"
+    ],
+    "companies": [],
+    "type": "glossary",
+    "url": "/glossary/backdrivability"
+  },
+  {
+    "slug": "boston-dynamics",
+    "title": "Boston Dynamics",
+    "excerpt": "Boston Dynamics is the world's most technically credentialed robotics company, with over three decades of DARPA-funded research producing iconic platforms including BigDog, Spot, a…",
+    "category": "company",
+    "date": "",
+    "tags": [
+      "Waltham, MA, USA",
+      "active"
+    ],
+    "companies": [
+      "Boston Dynamics"
+    ],
+    "type": "company",
+    "url": "/companies/boston-dynamics"
+  },
+  {
+    "slug": "fr-021",
+    "title": "Boston Dynamics — Strategic Acquisition $1.1B",
+    "excerpt": "Hyundai acquired an 80% controlling stake from SoftBank, which had acquired the company from Google in 2017. The deal gave Boston Dynamics independence to pursue commercial products while accessing Hyundai's manufacturing expertise and factory deployment sites.",
+    "category": "funding",
+    "date": "2021-06-21",
+    "tags": [
+      "USA",
+      "Strategic Acquisition"
+    ],
+    "companies": [
+      "Boston Dynamics"
+    ],
+    "type": "funding",
+    "url": "/funding"
+  },
+  {
+    "slug": "clone-p1",
+    "title": "Clone P1 — Clone Robotics",
+    "excerpt": "Clone Robotics' P1 takes a radical approach to humanoid design: replicating human musculoskeletal architecture with 206 degrees of freedom driven by fluid-powered artificial muscle…",
+    "category": "robot",
+    "date": "",
+    "tags": [
+      "r&d",
+      "Tendon-driven",
+      "Poland"
+    ],
+    "companies": [
+      "Clone Robotics"
+    ],
+    "type": "robot",
+    "url": "/robots/clone-p1"
+  },
+  {
+    "slug": "clone-robotics",
+    "title": "Clone Robotics",
+    "excerpt": "Clone Robotics is a bootstrapped Polish company pursuing the most radical architectural departure in humanoid robotics: a musculoskeletal design with fluid-powered artificial muscl…",
+    "category": "company",
+    "date": "",
+    "tags": [
+      "Warsaw, Poland",
+      "active"
+    ],
+    "companies": [
+      "Clone Robotics"
+    ],
+    "type": "company",
+    "url": "/companies/clone-robotics"
+  },
+  {
+    "slug": "fr-019",
+    "title": "Clone Robotics — Seed $1.7M",
+    "excerpt": "Clone has operated largely bootstrapped with angel backing, relying on community support and pre-orders to fund R&D. Unconventional funding approach reflects founder philosophy of building in public.",
+    "category": "funding",
+    "date": "2021-06-01",
+    "tags": [
+      "Poland",
+      "Seed"
+    ],
+    "companies": [
+      "Clone Robotics"
+    ],
+    "type": "funding",
+    "url": "/funding"
+  },
+  {
+    "slug": "fr-020",
+    "title": "Clone Robotics — Seed Extension $3.5M",
+    "excerpt": "Lux Capital's participation represents the first institutional investment in Clone, attracted by the Myofiber breakthrough and viral P1 demonstration.",
+    "category": "funding",
+    "date": "2024-03-08",
+    "tags": [
+      "Poland",
+      "Seed Extension"
+    ],
+    "companies": [
+      "Clone Robotics"
+    ],
+    "type": "funding",
+    "url": "/funding"
+  },
+  {
+    "slug": "cyberone",
+    "title": "CyberOne — Xiaomi",
+    "excerpt": "Xiaomi's CyberOne is a consumer-facing humanoid prototype designed primarily as a brand showcase rather than a near-term commercial product. With 21 degrees of freedom and emotion …",
+    "category": "robot",
+    "date": "",
+    "tags": [
+      "prototype",
+      "Electric",
+      "China"
     ],
     "companies": [
       "Xiaomi"
-    ]
+    ],
+    "type": "robot",
+    "url": "/robots/cyberone"
+  },
+  {
+    "slug": "degrees-of-freedom",
+    "title": "Degrees of Freedom",
+    "excerpt": "The number of independent axes of movement a robot joint system can execute, determining the range and complexity of motions the robot can perform.",
+    "category": "glossary",
+    "date": "",
+    "tags": [
+      "hardware",
+      "actuator",
+      "end-effector",
+      "whole-body-control",
+      "inverse-kinematics"
+    ],
+    "companies": [],
+    "type": "glossary",
+    "url": "/glossary/degrees-of-freedom"
+  },
+  {
+    "slug": "dexterous-manipulation",
+    "title": "Dexterous Manipulation",
+    "excerpt": "The ability of a robotic hand or end-effector to perform complex, multi-fingered object manipulation tasks requiring fine motor control, in-hand object reorientation, and precis…",
+    "category": "glossary",
+    "date": "",
+    "tags": [
+      "hardware",
+      "end-effector",
+      "degrees-of-freedom",
+      "proprioception",
+      "tendon-driven",
+      "harmonic-drive"
+    ],
+    "companies": [],
+    "type": "glossary",
+    "url": "/glossary/dexterous-manipulation"
+  },
+  {
+    "slug": "digit-v4",
+    "title": "Digit v4 — Agility Robotics",
+    "excerpt": "Digit v4 is Agility Robotics' fourth-generation bipedal humanoid, optimized for warehouse and logistics environments. Its novel bipedal locomotion architecture, inherited from the …",
+    "category": "robot",
+    "date": "",
+    "tags": [
+      "commercial",
+      "Electric",
+      "USA"
+    ],
+    "companies": [
+      "Agility Robotics"
+    ],
+    "type": "robot",
+    "url": "/robots/digit-v4"
+  },
+  {
+    "slug": "end-effector",
+    "title": "End-Effector",
+    "excerpt": "The terminal device attached to a robot arm that directly interacts with the environment — in humanoids, typically a multi-fingered hand, but may be a specialized gripper, tool,…",
+    "category": "glossary",
+    "date": "",
+    "tags": [
+      "hardware",
+      "dexterous-manipulation",
+      "degrees-of-freedom",
+      "inverse-kinematics",
+      "proprioception"
+    ],
+    "companies": [],
+    "type": "glossary",
+    "url": "/glossary/end-effector"
+  },
+  {
+    "slug": "figure-02",
+    "title": "Figure 02 — Figure AI",
+    "excerpt": "Figure 02 is Figure AI's first commercially deployed humanoid, designed for unstructured industrial environments. It features 16 degrees of freedom in its hands alone, enabling fin…",
+    "category": "robot",
+    "date": "",
+    "tags": [
+      "commercial",
+      "Electric",
+      "USA"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "robot",
+    "url": "/robots/figure-02"
+  },
+  {
+    "slug": "figure-03",
+    "title": "Figure 03 — Figure AI",
+    "excerpt": "Figure 03 is Figure AI's mass-production successor to Figure 02, featuring a redesigned hand with 22 degrees of freedom and improved whole-body dexterity. The platform integrates F…",
+    "category": "robot",
+    "date": "",
+    "tags": [
+      "production",
+      "Electric",
+      "USA"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "robot",
+    "url": "/robots/figure-03"
+  },
+  {
+    "slug": "figure-ai",
+    "title": "Figure AI",
+    "excerpt": "Figure AI is the best-funded pure-play humanoid robotics company in the world, having raised over $2.25B through its Series C in early 2026. Founded by serial entrepreneur Brett Ad…",
+    "category": "company",
+    "date": "",
+    "tags": [
+      "Sunnyvale, CA, USA",
+      "active"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "company",
+    "url": "/companies/figure-ai"
+  },
+  {
+    "slug": "fr-001",
+    "title": "Figure AI — Series A $70M",
+    "excerpt": "Figure AI's initial institutional raise to fund Figure 01 development and initial team build-out.",
+    "category": "funding",
+    "date": "2023-05-15",
+    "tags": [
+      "USA",
+      "Series A"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "funding",
+    "url": "/funding"
+  },
+  {
+    "slug": "fr-002",
+    "title": "Figure AI — Series B $675M",
+    "excerpt": "Landmark round featuring the most prominent AI and tech investors in the world. Concurrent with OpenAI partnership for humanoid AI model development. Microsoft and Nvidia participation reflects compute infrastructure interest.",
+    "category": "funding",
+    "date": "2024-02-29",
+    "tags": [
+      "USA",
+      "Series B"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "funding",
+    "url": "/funding"
+  },
+  {
+    "slug": "fr-003",
+    "title": "Figure AI — Series C $1.5B",
+    "excerpt": "Largest single funding round in humanoid robotics history. Concurrent with Figure 03 mass production announcement. BMW participation as strategic investor validates commercial deployment thesis.",
+    "category": "funding",
+    "date": "2026-01-28",
+    "tags": [
+      "USA",
+      "Series C"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "funding",
+    "url": "/funding"
+  },
+  {
+    "slug": "fr-036",
+    "title": "Figure AI — Series D $675M",
+    "excerpt": "Figure's Series D comes on the heels of confirming 100+ Figure 02 units deployed at BMW Spartanburg. Microsoft deepens its investment to secure Figure as a preferred Azure and Azure AI customer, while Nvidia's participation reflects the company's continued push to become the dominant compute platform for humanoid inference.",
+    "category": "funding",
+    "date": "2025-09-30",
+    "tags": [
+      "USA",
+      "Series D"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "funding",
+    "url": "/funding"
+  },
+  {
+    "slug": "fr-025",
+    "title": "Figure AI — Strategic Investment $100M",
+    "excerpt": "BMW's strategic investment bridges the Series B and C rounds, deepening the operational partnership at Spartanburg and providing European automotive channel validation.",
+    "category": "funding",
+    "date": "2024-05-01",
+    "tags": [
+      "USA",
+      "Strategic Investment"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "funding",
+    "url": "/funding"
+  },
+  {
+    "slug": "fourier-intelligence",
+    "title": "Fourier Intelligence",
+    "excerpt": "Fourier Intelligence is distinguished among humanoid companies by its decade-long commercial track record in medical exoskeletons, having shipped thousands of rehabilitation device…",
+    "category": "company",
+    "date": "",
+    "tags": [
+      "Shanghai, China",
+      "active"
+    ],
+    "companies": [
+      "Fourier Intelligence"
+    ],
+    "type": "company",
+    "url": "/companies/fourier-intelligence"
+  },
+  {
+    "slug": "fr-022",
+    "title": "Fourier Intelligence — Series C $60M",
+    "excerpt": "Funds GR-1 commercial launch and GR2 development. Fourier's exoskeleton revenue provides financial stability that pure-play humanoid companies lack.",
+    "category": "funding",
+    "date": "2023-11-14",
+    "tags": [
+      "China",
+      "Series C"
+    ],
+    "companies": [
+      "Fourier Intelligence"
+    ],
+    "type": "funding",
+    "url": "/funding"
+  },
+  {
+    "slug": "gait-cycle",
+    "title": "Gait Cycle",
+    "excerpt": "The complete sequence of leg movements from one foot contact to the next contact of the same foot, comprising stance phase (foot on ground) and swing phase (foot in air), which …",
+    "category": "glossary",
+    "date": "",
+    "tags": [
+      "hardware",
+      "whole-body-control",
+      "proprioception",
+      "inverse-kinematics",
+      "degrees-of-freedom"
+    ],
+    "companies": [],
+    "type": "glossary",
+    "url": "/glossary/gait-cycle"
+  },
+  {
+    "slug": "galbot",
+    "title": "Galbot",
+    "excerpt": "Galbot is Beijing's fastest-growing humanoid startup, having raised RMB 2.5B (~$345M) in a 2026 Series B led by Alibaba, Meituan, and Sequoia China — one of the largest humanoid ra…",
+    "category": "company",
+    "date": "",
+    "tags": [
+      "Beijing, China",
+      "active"
+    ],
+    "companies": [
+      "Galbot"
+    ],
+    "type": "company",
+    "url": "/companies/galbot"
+  },
+  {
+    "slug": "fr-031",
+    "title": "Galbot — Series B RMB 2.5B (~$345M)",
+    "excerpt": "One of the largest humanoid raises in China's history, anchored by two of the country's most powerful tech platforms. Alibaba's participation opens doors to deployment across its vast logistics network, while Meituan integration could enable last-mile delivery applications. Galbot's full-body dexterous manipulation technology is the primary investor draw.",
+    "category": "funding",
+    "date": "2026-02-28",
+    "tags": [
+      "China",
+      "Series B"
+    ],
+    "companies": [
+      "Galbot"
+    ],
+    "type": "funding",
+    "url": "/funding"
+  },
+  {
+    "slug": "galbot-g1",
+    "title": "Galbot G1 — Galbot",
+    "excerpt": "The Galbot G1 is the flagship product of Beijing-based Galbot, engineered for full-body dexterous manipulation in logistics and precision assembly environments. With 47 degrees of …",
+    "category": "robot",
+    "date": "",
+    "tags": [
+      "pilot",
+      "Electric",
+      "China"
+    ],
+    "companies": [
+      "Galbot"
+    ],
+    "type": "robot",
+    "url": "/robots/galbot-g1"
+  },
+  {
+    "slug": "gr-1",
+    "title": "GR-1 — Fourier Intelligence",
+    "excerpt": "The Fourier GR-1 draws on Fourier Intelligence's decade of experience building rehabilitation exoskeletons, leveraging mature actuator and motion control technology for its humanoi…",
+    "category": "robot",
+    "date": "",
+    "tags": [
+      "pilot",
+      "Electric",
+      "China"
+    ],
+    "companies": [
+      "Fourier Intelligence"
+    ],
+    "type": "robot",
+    "url": "/robots/gr-1"
+  },
+  {
+    "slug": "gr2",
+    "title": "GR2 — Fourier Intelligence",
+    "excerpt": "The GR2 is Fourier Intelligence's second-generation humanoid, substantially upgrading the GR-1's hand dexterity with a proprietary 12-DOF hand design and adding improved force sens…",
+    "category": "robot",
+    "date": "",
+    "tags": [
+      "pilot",
+      "Electric",
+      "China"
+    ],
+    "companies": [
+      "Fourier Intelligence"
+    ],
+    "type": "robot",
+    "url": "/robots/gr2"
+  },
+  {
+    "slug": "h1",
+    "title": "H1 — Unitree Robotics",
+    "excerpt": "The Unitree H1 is the lowest-cost commercially available full-size humanoid robot at a base price of $16,000, an order of magnitude below Western competitors. The platform uses Uni…",
+    "category": "robot",
+    "date": "",
+    "tags": [
+      "production",
+      "Electric",
+      "China"
+    ],
+    "companies": [
+      "Unitree Robotics"
+    ],
+    "type": "robot",
+    "url": "/robots/h1"
+  },
+  {
+    "slug": "h1-pro",
+    "title": "H1 Pro — Unitree Robotics",
+    "excerpt": "The H1 Pro is Unitree's enhanced variant of the H1, adding three-fingered dexterous hands and additional arm degrees of freedom to enable manipulation tasks beyond locomotion-only …",
+    "category": "robot",
+    "date": "",
+    "tags": [
+      "production",
+      "Electric",
+      "China"
+    ],
+    "companies": [
+      "Unitree Robotics"
+    ],
+    "type": "robot",
+    "url": "/robots/h1-pro"
+  },
+  {
+    "slug": "harmonic-drive",
+    "title": "Harmonic Drive",
+    "excerpt": "A compact, zero-backlash gear transmission using a flexible spline deformed by an elliptical wave generator, achieving high gear ratios (50:1 to 320:1) in a lightweight form fac…",
+    "category": "glossary",
+    "date": "",
+    "tags": [
+      "hardware",
+      "tendon-driven",
+      "backdrivability",
+      "actuator",
+      "degrees-of-freedom"
+    ],
+    "companies": [],
+    "type": "glossary",
+    "url": "/glossary/harmonic-drive"
+  },
+  {
+    "slug": "imitation-learning",
+    "title": "Imitation Learning",
+    "excerpt": "A machine learning approach where a robot learns to perform tasks by observing and replicating demonstrations provided by a human expert, rather than through explicit programmin…",
+    "category": "glossary",
+    "date": "",
+    "tags": [
+      "ai",
+      "vision-language-action-model",
+      "zero-shot-generalization",
+      "sim-to-real-transfer"
+    ],
+    "companies": [],
+    "type": "glossary",
+    "url": "/glossary/imitation-learning"
+  },
+  {
+    "slug": "inverse-kinematics",
+    "title": "Inverse Kinematics",
+    "excerpt": "The mathematical process of computing the joint angles required to achieve a desired end-effector position and orientation, working backwards from the task-space goal to the joi…",
+    "category": "glossary",
+    "date": "",
+    "tags": [
+      "software",
+      "degrees-of-freedom",
+      "whole-body-control",
+      "end-effector",
+      "urdf"
+    ],
+    "companies": [],
+    "type": "glossary",
+    "url": "/glossary/inverse-kinematics"
+  },
+  {
+    "slug": "kepler",
+    "title": "Kepler",
+    "excerpt": "Kepler differentiates in a crowded Chinese humanoid market by targeting the highest-payload segment of factory automation, with the Forerunner offering 35kg capacity and 8-hour run…",
+    "category": "company",
+    "date": "",
+    "tags": [
+      "Suzhou, Jiangsu, China",
+      "active"
+    ],
+    "companies": [
+      "Kepler"
+    ],
+    "type": "company",
+    "url": "/companies/kepler"
+  },
+  {
+    "slug": "fr-018",
+    "title": "Kepler — Series A $100M",
+    "excerpt": "Kepler's heavy-payload differentiation attracted manufacturing-focused investors. Suzhou municipal government co-invested through Oriza to secure local manufacturing commitment.",
+    "category": "funding",
+    "date": "2024-07-15",
+    "tags": [
+      "China",
+      "Series A"
+    ],
+    "companies": [
+      "Kepler"
+    ],
+    "type": "funding",
+    "url": "/funding"
+  },
+  {
+    "slug": "kepler-forerunner",
+    "title": "Kepler Forerunner — Kepler",
+    "excerpt": "The Kepler Forerunner is a heavy-duty humanoid designed from the ground up for factory floor deployment, with an 35kg payload capacity and 8-hour battery life that substantially ex…",
+    "category": "robot",
+    "date": "",
+    "tags": [
+      "commercial",
+      "Electric",
+      "China"
+    ],
+    "companies": [
+      "Kepler"
+    ],
+    "type": "robot",
+    "url": "/robots/kepler-forerunner"
+  },
+  {
+    "slug": "leju-robotics",
+    "title": "Leju Robotics",
+    "excerpt": "Leju Robotics is a Shenzhen-based humanoid startup known for the Kuavo bipedal robot platform, designed as an accessible open-development system for research institutions and devel…",
+    "category": "company",
+    "date": "",
+    "tags": [
+      "Shenzhen, Guangdong, China",
+      "active"
+    ],
+    "companies": [
+      "Leju Robotics"
+    ],
+    "type": "company",
+    "url": "/companies/leju-robotics"
+  },
+  {
+    "slug": "loco-manipulation",
+    "title": "Loco-Manipulation",
+    "excerpt": "The simultaneous or tightly coordinated execution of locomotion (moving through space) and manipulation (interacting with objects), considered one of the defining challenges of …",
+    "category": "glossary",
+    "date": "",
+    "tags": [
+      "Software",
+      "whole-body-control",
+      "sim-to-real-transfer",
+      "inverse-kinematics",
+      "gait-cycle"
+    ],
+    "companies": [],
+    "type": "glossary",
+    "url": "/glossary/loco-manipulation"
+  },
+  {
+    "slug": "mentee-robotics",
+    "title": "Mentee Robotics",
+    "excerpt": "Mentee Robotics was co-founded by Amnon Shashua, CEO of Mobileye, applying autonomous vehicle-grade perception and safety architecture to humanoid robotics. The company's MenteeBo …",
+    "category": "company",
+    "date": "",
+    "tags": [
+      "Rehovot, Israel",
+      "active"
+    ],
+    "companies": [
+      "Mentee Robotics"
+    ],
+    "type": "company",
+    "url": "/companies/mentee-robotics"
+  },
+  {
+    "slug": "mind-robotics",
+    "title": "Mind Robotics",
+    "excerpt": "Mind Robotics was founded in early 2026 by RJ Scaringe, CEO of electric vehicle maker Rivian, who is running both companies concurrently. Mind Robotics is pursuing a contrarian phi…",
+    "category": "company",
+    "date": "",
+    "tags": [
+      "Austin, TX, USA",
+      "active"
+    ],
+    "companies": [
+      "Mind Robotics"
+    ],
+    "type": "company",
+    "url": "/companies/mind-robotics"
+  },
+  {
+    "slug": "neo-beta",
+    "title": "NEO Beta — 1X Technologies",
+    "excerpt": "NEO Beta is 1X Technologies' home-assistant humanoid, designed to be lightweight and safe for operation in proximity to humans. Unlike 1X's heavier EVE wheeled platform, NEO is ful…",
+    "category": "robot",
+    "date": "",
+    "tags": [
+      "prototype",
+      "Electric",
+      "Norway"
+    ],
+    "companies": [
+      "1X Technologies"
+    ],
+    "type": "robot",
+    "url": "/robots/neo-beta"
+  },
+  {
+    "slug": "neura-robotics",
+    "title": "NEURA Robotics",
+    "excerpt": "NEURA Robotics is Europe's most-funded pure-play humanoid startup, pursuing a 'cognitive humanoid' philosophy that integrates multi-modal sensing with high-level reasoning to produ…",
+    "category": "company",
+    "date": "",
+    "tags": [
+      "Metzingen, Baden-Württemberg, Germany",
+      "active"
+    ],
+    "companies": [
+      "NEURA Robotics"
+    ],
+    "type": "company",
+    "url": "/companies/neura-robotics"
+  },
+  {
+    "slug": "fr-010",
+    "title": "NEURA Robotics — Series A $55M",
+    "excerpt": "Europe's largest humanoid Series A at the time, anchored by German tech investors. Positions NEURA as Europe's champion in the race to build cognitive humanoids.",
+    "category": "funding",
+    "date": "2023-06-14",
+    "tags": [
+      "Germany",
+      "Series A"
+    ],
+    "companies": [
+      "NEURA Robotics"
+    ],
+    "type": "funding",
+    "url": "/funding"
+  },
+  {
+    "slug": "fr-011",
+    "title": "NEURA Robotics — Series B $80M",
+    "excerpt": "NEA's US participation signals transatlantic investor interest in NEURA's cognitive humanoid approach. Funds 4NE-1 pilot programs and manufacturing scale-up.",
+    "category": "funding",
+    "date": "2024-07-09",
+    "tags": [
+      "Germany",
+      "Series B"
+    ],
+    "companies": [
+      "NEURA Robotics"
+    ],
+    "type": "funding",
+    "url": "/funding"
+  },
+  {
+    "slug": "fr-028",
+    "title": "NEURA Robotics — Series C $120M",
+    "excerpt": "Landmark round featuring all three major German automotive OEMs as investors, validating NEURA's industrial humanoid thesis and providing manufacturing deployment pathways. NEURA becomes Europe's first humanoid unicorn.",
+    "category": "funding",
+    "date": "2025-11-03",
+    "tags": [
+      "Germany",
+      "Series C"
+    ],
+    "companies": [
+      "NEURA Robotics"
+    ],
+    "type": "funding",
+    "url": "/funding"
+  },
+  {
+    "slug": "fr-030",
+    "title": "NEURA Robotics — Series D €1B (~$1.08B)",
+    "excerpt": "Europe's largest-ever humanoid robotics funding round, led by crypto infrastructure giant Tether making its first major robotics bet. The round propels NEURA to a ~$4B valuation and funds mass production of the MAiRA and 4NE-1 cognitive humanoids at a new Reutlingen mega-factory. CEO David Reger cites 'the convergence of cognitive AI and physical embodiment' as the defining investment thesis.",
+    "category": "funding",
+    "date": "2026-03-15",
+    "tags": [
+      "Germany",
+      "Series D"
+    ],
+    "companies": [
+      "NEURA Robotics"
+    ],
+    "type": "funding",
+    "url": "/funding"
+  },
+  {
+    "slug": "optimus-gen-2",
+    "title": "Optimus Gen 2 — Tesla",
+    "excerpt": "Optimus Gen 2 is Tesla's second-generation humanoid, incorporating 11 degrees of freedom in each hand with tactile sensing. The platform leverages Tesla's existing Dojo training in…",
+    "category": "robot",
+    "date": "",
+    "tags": [
+      "pilot",
+      "Electric",
+      "USA"
+    ],
+    "companies": [
+      "Tesla"
+    ],
+    "type": "robot",
+    "url": "/robots/optimus-gen-2"
+  },
+  {
+    "slug": "phoenix",
+    "title": "Phoenix — Sanctuary AI",
+    "excerpt": "Phoenix is Sanctuary AI's seventh-generation humanoid, designed around their Carbon AI system which uses a proprietary cognitive architecture to reason about and execute physical t…",
+    "category": "robot",
+    "date": "",
+    "tags": [
+      "pilot",
+      "Hydraulic/Electric",
+      "Canada"
+    ],
+    "companies": [
+      "Sanctuary AI"
+    ],
+    "type": "robot",
+    "url": "/robots/phoenix"
+  },
+  {
+    "slug": "physical-ai",
+    "title": "Physical AI",
+    "excerpt": "AI systems designed to perceive, reason about, and act in the physical world — robots, autonomous vehicles, and embodied agents that must interact with physical reality rather t…",
+    "category": "glossary",
+    "date": "",
+    "tags": [
+      "AI",
+      "vision-language-action-model",
+      "sim-to-real-transfer",
+      "foundation-model-robotics",
+      "whole-body-control"
+    ],
+    "companies": [],
+    "type": "glossary",
+    "url": "/glossary/physical-ai"
+  },
+  {
+    "slug": "physical-intelligence",
+    "title": "Physical Intelligence (π)",
+    "excerpt": "Physical Intelligence (π) is not a robot hardware company but the leading foundation model lab for physical AI, developing general-purpose robot learning systems that can be deploy…",
+    "category": "company",
+    "date": "",
+    "tags": [
+      "San Francisco, CA, USA",
+      "active"
+    ],
+    "companies": [
+      "Physical Intelligence (π)"
+    ],
+    "type": "company",
+    "url": "/companies/physical-intelligence"
+  },
+  {
+    "slug": "fr-012",
+    "title": "Physical Intelligence (π) — Seed $400M",
+    "excerpt": "One of the largest seed rounds in history, reflecting the caliber of the founding team (Levine, Finn, Hausman) and the transformative potential of foundation models for robotics. This round price is equivalent to the Series B of most companies.",
+    "category": "funding",
+    "date": "2023-11-02",
+    "tags": [
+      "USA",
+      "Seed"
+    ],
+    "companies": [
+      "Physical Intelligence (π)"
+    ],
+    "type": "funding",
+    "url": "/funding"
+  },
+  {
+    "slug": "fr-013",
+    "title": "Physical Intelligence (π) — Series A $70M",
+    "excerpt": "Relatively modest Series A reflects Pi's capital-light model — the company licenses AI models rather than manufacturing hardware. Funds π0.2 model development and platform integrations.",
+    "category": "funding",
+    "date": "2024-11-19",
+    "tags": [
+      "USA",
+      "Series A"
+    ],
+    "companies": [
+      "Physical Intelligence (π)"
+    ],
+    "type": "funding",
+    "url": "/funding"
+  },
+  {
+    "slug": "fr-033",
+    "title": "Physical Intelligence (π) — Series B $500M",
+    "excerpt": "PI's Series B cements its status as the leading foundation model company for robotics. The round values the company at $5B despite still being pre-revenue, reflecting investor conviction in the π0 and π0.5 models as the operating system for the coming wave of commercial humanoids. Google and Amazon's co-investment signals a platform competition for who supplies the AI 'brain' to hardware makers.",
+    "category": "funding",
+    "date": "2025-11-18",
+    "tags": [
+      "USA",
+      "Series B"
+    ],
+    "companies": [
+      "Physical Intelligence (π)"
+    ],
+    "type": "funding",
+    "url": "/funding"
+  },
+  {
+    "slug": "proprioception",
+    "title": "Proprioception",
+    "excerpt": "A robot's internal sensory awareness of its own body state — joint angles, velocities, accelerations, and applied torques — derived from encoders, IMUs, and force-torque sensors…",
+    "category": "glossary",
+    "date": "",
+    "tags": [
+      "hardware",
+      "whole-body-control",
+      "gait-cycle",
+      "inverse-kinematics",
+      "end-effector"
+    ],
+    "companies": [],
+    "type": "glossary",
+    "url": "/glossary/proprioception"
+  },
+  {
+    "slug": "sanctuary-ai",
+    "title": "Sanctuary AI",
+    "excerpt": "Sanctuary AI is founded by Geordie Rose, co-founder of quantum computing company D-Wave, and pursues one of the most ambitious cognitive architectures in humanoid robotics through …",
+    "category": "company",
+    "date": "",
+    "tags": [
+      "Vancouver, BC, Canada",
+      "active"
+    ],
+    "companies": [
+      "Sanctuary AI"
+    ],
+    "type": "company",
+    "url": "/companies/sanctuary-ai"
+  },
+  {
+    "slug": "fr-007",
+    "title": "Sanctuary AI — Series B $30M",
+    "excerpt": "Funds development of Phoenix Gen 5-6 and Carbon AI cognitive system. Accenture's participation reflects enterprise services interest in humanoid deployment integration.",
+    "category": "funding",
+    "date": "2022-11-08",
+    "tags": [
+      "Canada",
+      "Series B"
+    ],
+    "companies": [
+      "Sanctuary AI"
+    ],
+    "type": "funding",
+    "url": "/funding"
+  },
+  {
+    "slug": "fr-008",
+    "title": "Sanctuary AI — Series C $140M",
+    "excerpt": "Magna International's lead investment is strategically significant — as one of the world's largest Tier-1 automotive suppliers, Magna provides both capital and a deployment pathway into automotive manufacturing.",
+    "category": "funding",
+    "date": "2024-05-22",
+    "tags": [
+      "Canada",
+      "Series C"
+    ],
+    "companies": [
+      "Sanctuary AI"
+    ],
+    "type": "funding",
+    "url": "/funding"
+  },
+  {
+    "slug": "fr-026",
+    "title": "Sanctuary AI — Series D $90M",
+    "excerpt": "Bell Canada's participation reflects growing Canadian corporate interest in enterprise robotics. Funds Phoenix Gen 8 development and expanded RaaS deployment program.",
+    "category": "funding",
+    "date": "2025-09-15",
+    "tags": [
+      "Canada",
+      "Series D"
+    ],
+    "companies": [
+      "Sanctuary AI"
+    ],
+    "type": "funding",
+    "url": "/funding"
+  },
+  {
+    "slug": "sim-to-real-transfer",
+    "title": "Sim-to-Real Transfer",
+    "excerpt": "The process of training a robot control policy in simulation and successfully deploying it on physical hardware, bridging the gap between simulated and real-world physics.",
+    "category": "glossary",
+    "date": "",
+    "tags": [
+      "software",
+      "imitation-learning",
+      "whole-body-control",
+      "urdf",
+      "zero-shot-generalization"
+    ],
+    "companies": [],
+    "type": "glossary",
+    "url": "/glossary/sim-to-real-transfer"
+  },
+  {
+    "slug": "skild-ai",
+    "title": "Skild AI",
+    "excerpt": "Skild AI, founded by CMU robotics professors Deepak Pathak and Abhinav Gupta, is developing a universal robot brain — a single foundation model capable of controlling diverse robot…",
+    "category": "company",
+    "date": "",
+    "tags": [
+      "Pittsburgh, PA, USA",
+      "active"
+    ],
+    "companies": [
+      "Skild AI"
+    ],
+    "type": "company",
+    "url": "/companies/skild-ai"
+  },
+  {
+    "slug": "fr-014",
+    "title": "Skild AI — Series A $300M",
+    "excerpt": "Largest pre-revenue Series A in robotics AI history. Deepak Pathak and Abhinav Gupta's CMU pedigree and early research results on general robot learning attracted exceptional investor interest.",
+    "category": "funding",
+    "date": "2024-06-18",
+    "tags": [
+      "USA",
+      "Series A"
+    ],
+    "companies": [
+      "Skild AI"
+    ],
+    "type": "funding",
+    "url": "/funding"
+  },
+  {
+    "slug": "sunday-home",
+    "title": "Sunday Home — Sunday Robotics",
+    "excerpt": "Sunday's Home humanoid is designed from the ground up for consumer and care environments — lighter, quieter, and with a more approachable form factor than industrial peers. With 36…",
+    "category": "robot",
+    "date": "",
+    "tags": [
+      "pilot",
+      "Electric",
+      "China"
+    ],
+    "companies": [
+      "Sunday Robotics"
+    ],
+    "type": "robot",
+    "url": "/robots/sunday-home"
+  },
+  {
+    "slug": "sunday-robot",
+    "title": "Sunday Robotics",
+    "excerpt": "Sunday Robotics achieved unicorn status in early 2026 with a $200M Series B at a $1.15B valuation, backed by Hillhouse Capital and GGV Capital. The company has made a deliberate pi…",
+    "category": "company",
+    "date": "",
+    "tags": [
+      "Shenzhen, Guangdong, China",
+      "active"
+    ],
+    "companies": [
+      "Sunday Robotics"
+    ],
+    "type": "company",
+    "url": "/companies/sunday-robot"
+  },
+  {
+    "slug": "fr-032",
+    "title": "Sunday Robotics — Series B $200M",
+    "excerpt": "Sunday achieves unicorn status with its Series B, reaching a $1.15B valuation on the strength of its household humanoid assistant product. The company has pivoted from pure-industrial to consumer-plus-commercial, targeting the home care and elderly assistance markets in Japan, South Korea, and China. Hillhouse's lead reflects conviction that the consumer humanoid market will outpace industrial deployment by 2028.",
+    "category": "funding",
+    "date": "2026-03-10",
+    "tags": [
+      "China",
+      "Series B"
+    ],
+    "companies": [
+      "Sunday Robotics"
+    ],
+    "type": "funding",
+    "url": "/funding"
+  },
+  {
+    "slug": "tendon-driven",
+    "title": "Tendon-Driven",
+    "excerpt": "A robotic actuation architecture in which joints are driven by cables or tendons routed from remote actuators, enabling high DOF distal joints (like fingers) to be controlled by…",
+    "category": "glossary",
+    "date": "",
+    "tags": [
+      "hardware",
+      "harmonic-drive",
+      "backdrivability",
+      "dexterous-manipulation",
+      "degrees-of-freedom"
+    ],
+    "companies": [],
+    "type": "glossary",
+    "url": "/glossary/tendon-driven"
+  },
+  {
+    "slug": "tesla-optimus",
+    "title": "Tesla (Optimus Division)",
+    "excerpt": "Tesla's Optimus division operates as an internal business unit within Tesla, Inc., drawing on the company's Dojo supercomputer, FSD neural net stack, and Gigafactory manufacturing …",
+    "category": "company",
+    "date": "",
+    "tags": [
+      "Austin, TX, USA",
+      "active"
+    ],
+    "companies": [
+      "Tesla (Optimus Division)"
+    ],
+    "type": "company",
+    "url": "/companies/tesla-optimus"
+  },
+  {
+    "slug": "tiangong",
+    "title": "Tiangong — Beijing Humanoid Robot Innovation Center",
+    "excerpt": "Tiangong is the flagship humanoid from the Beijing Humanoid Robot Innovation Center (BHRIC), a state-backed entity established to accelerate China's humanoid robotics ecosystem. Th…",
+    "category": "robot",
+    "date": "",
+    "tags": [
+      "pilot",
+      "Electric",
+      "China"
+    ],
+    "companies": [
+      "Beijing Humanoid Robot Innovation Center"
+    ],
+    "type": "robot",
+    "url": "/robots/tiangong"
+  },
+  {
+    "slug": "ubtech",
+    "title": "UBTECH Robotics",
+    "excerpt": "UBTECH is China's largest humanoid robotics company by headcount and one of the longest-standing, having commercialized educational and entertainment humanoids since 2012. The Walk…",
+    "category": "company",
+    "date": "",
+    "tags": [
+      "Shenzhen, Guangdong, China",
+      "active"
+    ],
+    "companies": [
+      "UBTECH Robotics"
+    ],
+    "type": "company",
+    "url": "/companies/ubtech"
+  },
+  {
+    "slug": "unitree-g1",
+    "title": "Unitree G1 — Unitree Robotics",
+    "excerpt": "The Unitree G1 is a compact, lightweight humanoid released in 2024 as a research-focused complement to the taller H1. At $16,000 base, it is tied as the world's most affordable com…",
+    "category": "robot",
+    "date": "",
+    "tags": [
+      "production",
+      "Electric",
+      "China"
+    ],
+    "companies": [
+      "Unitree Robotics"
+    ],
+    "type": "robot",
+    "url": "/robots/unitree-g1"
+  },
+  {
+    "slug": "unitree-robotics",
+    "title": "Unitree Robotics",
+    "excerpt": "Unitree Robotics has disrupted the global robotics market with aggressive price-performance positioning across quadruped and humanoid platforms. The Go1 and Go2 quadrupeds establis…",
+    "category": "company",
+    "date": "",
+    "tags": [
+      "Hangzhou, Zhejiang, China",
+      "active"
+    ],
+    "companies": [
+      "Unitree Robotics"
+    ],
+    "type": "company",
+    "url": "/companies/unitree-robotics"
+  },
+  {
+    "slug": "fr-015",
+    "title": "Unitree Robotics — Series B $150M",
+    "excerpt": "Unitree's B round reflects strong domestic Chinese investor conviction in the company's price-disruptive strategy. Meituan's involvement hints at potential deployment in food delivery and logistics automation.",
+    "category": "funding",
+    "date": "2024-08-21",
+    "tags": [
+      "China",
+      "Series B"
+    ],
+    "companies": [
+      "Unitree Robotics"
+    ],
+    "type": "funding",
+    "url": "/funding"
+  },
+  {
+    "slug": "fr-035",
+    "title": "Unitree Robotics — Series C $200M",
+    "excerpt": "Unitree's Series C double its valuation, driven by exceptional revenue from the G1 and H1 humanoid platforms. The company shipped over 3,000 robots in 2025 — more than any other humanoid manufacturer globally — making it the first humanoid robotics company to reach meaningful commercial scale.",
+    "category": "funding",
+    "date": "2025-10-22",
+    "tags": [
+      "China",
+      "Series C"
+    ],
+    "companies": [
+      "Unitree Robotics"
+    ],
+    "type": "funding",
+    "url": "/funding"
+  },
+  {
+    "slug": "urdf",
+    "title": "URDF",
+    "excerpt": "Unified Robot Description Format — an XML file format that describes a robot's physical structure including links, joints, mass properties, collision geometry, and visual appear…",
+    "category": "glossary",
+    "date": "",
+    "tags": [
+      "software",
+      "inverse-kinematics",
+      "sim-to-real-transfer",
+      "whole-body-control",
+      "degrees-of-freedom"
+    ],
+    "companies": [],
+    "type": "glossary",
+    "url": "/glossary/urdf"
+  },
+  {
+    "slug": "vision-language-action-model",
+    "title": "Vision-Language-Action Model",
+    "excerpt": "A neural network architecture that jointly processes visual observations and natural language instructions to produce robot joint actions, enabling instruction-following manipul…",
+    "category": "glossary",
+    "date": "",
+    "tags": [
+      "ai",
+      "zero-shot-generalization",
+      "imitation-learning",
+      "sim-to-real-transfer",
+      "whole-body-control"
+    ],
+    "companies": [],
+    "type": "glossary",
+    "url": "/glossary/vision-language-action-model"
+  },
+  {
+    "slug": "walker-x",
+    "title": "Walker X — UBTECH",
+    "excerpt": "UBTECH's Walker X is one of China's longest-developed humanoids, with the Walker program dating back to 2018. Walker X features 41 degrees of freedom including dexterous hands with…",
+    "category": "robot",
+    "date": "",
+    "tags": [
+      "pilot",
+      "Electric",
+      "China"
+    ],
+    "companies": [
+      "UBTECH"
+    ],
+    "type": "robot",
+    "url": "/robots/walker-x"
+  },
+  {
+    "slug": "whole-body-control",
+    "title": "Whole-Body Control",
+    "excerpt": "A robot control framework that simultaneously optimizes joint torques across all degrees of freedom to achieve multiple objectives — balance, end-effector positioning, joint lim…",
+    "category": "glossary",
+    "date": "",
+    "tags": [
+      "software",
+      "inverse-kinematics",
+      "degrees-of-freedom",
+      "gait-cycle",
+      "proprioception"
+    ],
+    "companies": [],
+    "type": "glossary",
+    "url": "/glossary/whole-body-control"
+  },
+  {
+    "slug": "xiaomi-robotics",
+    "title": "Xiaomi Robotics",
+    "excerpt": "Xiaomi's robotics division operates within the consumer electronics giant's broader innovation portfolio, with CyberOne as its flagship humanoid prototype. Xiaomi's strategic ratio…",
+    "category": "company",
+    "date": "",
+    "tags": [
+      "Beijing, China",
+      "active"
+    ],
+    "companies": [
+      "Xiaomi Robotics"
+    ],
+    "type": "company",
+    "url": "/companies/xiaomi-robotics"
+  },
+  {
+    "slug": "zero-shot-generalization",
+    "title": "Zero-Shot Generalization",
+    "excerpt": "The ability of a robot AI model to successfully perform tasks it has never been specifically trained on, by applying knowledge learned from related tasks during training.",
+    "category": "glossary",
+    "date": "",
+    "tags": [
+      "ai",
+      "vision-language-action-model",
+      "imitation-learning",
+      "sim-to-real-transfer"
+    ],
+    "companies": [],
+    "type": "glossary",
+    "url": "/glossary/zero-shot-generalization"
   }
 ]

@@ -1,4 +1,6 @@
 import Link from 'next/link'
+import fs from 'fs'
+import path from 'path'
 import Header from '@/components/Header'
 import TickerTape from '@/components/TickerTape'
 import Footer from '@/components/Footer'
@@ -51,32 +53,111 @@ function statusClass(status: string) {
   return ['commercial', 'pilot', 'production'].includes(status) ? 'data-pos' : 'data-neg'
 }
 
-// ── capital-flows bar data (22 bars, trailing 12 weeks) ────────────────────
-
-const capitalFlowBars = [
-  { h: 38, pos: true },
-  { h: 52, pos: true },
-  { h: 29, pos: false },
-  { h: 45, pos: true },
-  { h: 61, pos: true },
-  { h: 18, pos: false },
-  { h: 55, pos: true },
-  { h: 40, pos: true },
-  { h: 33, pos: false },
-  { h: 70, pos: true },
-  { h: 25, pos: false },
-  { h: 48, pos: true },
-  { h: 58, pos: true },
-  { h: 22, pos: false },
-  { h: 65, pos: true },
-  { h: 42, pos: true },
-  { h: 30, pos: false },
-  { h: 74, pos: true },
-  { h: 50, pos: true },
-  { h: 28, pos: false },
-  { h: 80, pos: true },
-  { h: 68, pos: true },
+// ── Deployed robots tracker data ─────────────────────────────────────────────
+const DEPLOYED_ROBOTS = [
+  { company: 'Tesla',          robot: 'Optimus Gen 2', units: 8000, type: 'Internal Mfg',    trend: true,  note: 'Giga TX + Shanghai' },
+  { company: 'Unitree',        robot: 'H1 / G1',       units: 3200, type: 'Research / Comm', trend: true,  note: '120+ institutions' },
+  { company: 'Agility',        robot: 'Digit v4',      units: 400,  type: 'Warehouse',        trend: true,  note: 'Amazon fulfillment' },
+  { company: 'UBTECH',         robot: 'Walker X',      units: 600,  type: 'Service',          trend: true,  note: 'Hotels, banks, retail' },
+  { company: 'Kepler',         robot: 'Forerunner',    units: 280,  type: 'Factory',          trend: true,  note: 'Auto / electronics' },
+  { company: 'Tiangong / BHRIC', robot: 'Tiangong',   units: 250,  type: 'State Mfg',        trend: true,  note: 'Beijing SOEs' },
+  { company: 'Figure AI',      robot: 'Figure 02/03', units: 150,  type: 'Factory',          trend: true,  note: 'BMW Spartanburg' },
+  { company: 'Fourier',        robot: 'GR-1 / GR2',   units: 120,  type: 'Research / Care',  trend: true,  note: 'Labs + eldercare' },
+  { company: '1X Technologies',robot: 'NEO Beta',      units: 60,   type: 'Home Trial',       trend: true,  note: 'Early-access households' },
+  { company: 'Sanctuary AI',   robot: 'Phoenix',       units: 25,   type: 'Retail RaaS',      trend: true,  note: 'Canadian Tire' },
 ]
+
+// ── Race timeline data ────────────────────────────────────────────────────────
+const RACE_TIMELINE = [
+  { company: 'Tesla',       robot: 'Optimus',     target: '50k units',     date: 'EOY 2026',  color: 'var(--accent-positive)', prog: 95 },
+  { company: 'Unitree',     robot: 'H1/G1',       target: '5k+ units',     date: 'Q2 2026',   color: '#60a5fa', prog: 88 },
+  { company: 'Figure AI',   robot: 'Figure 03',   target: '1,000 units',   date: 'Q3 2026',   color: 'var(--accent-positive)', prog: 72 },
+  { company: 'Apptronik',   robot: 'Apollo',      target: '500 units',     date: 'Q2 2026',   color: '#a78bfa', prog: 70 },
+  { company: 'Kepler',      robot: 'Forerunner',  target: '1,000 units',   date: 'H2 2026',   color: '#f59e0b', prog: 62 },
+  { company: 'NEURA',       robot: '4NE-1 / MAiRA', target: '1,000 units', date: 'H2 2026',   color: '#f59e0b', prog: 58 },
+  { company: 'Galbot',      robot: 'G1',          target: '500 units',     date: 'H2 2026',   color: '#60a5fa', prog: 48 },
+  { company: 'Agility',     robot: 'Digit v5',    target: 'Scale Amazon',  date: '2026',      color: 'var(--accent-positive)', prog: 65 },
+  { company: 'Sunday',      robot: 'Home',        target: 'Consumer launch','date': 'Q1 2027', color: '#f472b6', prog: 35 },
+  { company: 'Boston Dyn.', robot: 'Atlas',       target: 'Commercial beta','date': '2027',   color: '#94a3b8', prog: 25 },
+]
+
+// ── Capital flows — real data from funding-rounds.json ────────────────────────
+function buildCapitalFlowBars(): Array<{ h: number; pos: boolean; amountM: number; label: string }> {
+  const NUM_WEEKS = 12
+  const today = new Date('2026-03-16')
+
+  let rounds: Array<{ date: string; amount: string }> = []
+  try {
+    const raw = fs.readFileSync(
+      path.join(process.cwd(), 'content/data/funding-rounds.json'),
+      'utf-8'
+    )
+    rounds = JSON.parse(raw)
+  } catch { /* fallback below */ }
+
+  function parseM(amt: string): number {
+    if (!amt || amt === 'N/A') return 0
+    const paren = amt.match(/\(~?\$([0-9.]+[BMbm]?)\)/)
+    if (paren) {
+      const n = parseFloat(paren[1]); if (isNaN(n)) return 0
+      return paren[1].toUpperCase().includes('B') ? n * 1000 : n
+    }
+    const stripped = amt.replace(/[^0-9.BMKbmk]/g, '')
+    const n = parseFloat(stripped); if (isNaN(n)) return 0
+    const u = amt.toUpperCase()
+    if (u.includes('B')) return n * 1000
+    if (u.includes('K')) return n / 1000
+    return n
+  }
+
+  // Bucket rounds into weekly bins (week 0 = oldest, week 11 = most recent)
+  const weeklyAmounts = Array<number>(NUM_WEEKS).fill(0)
+  const msPerWeek = 7 * 24 * 60 * 60 * 1000
+
+  for (const r of rounds) {
+    if (!r.date) continue
+    const d = new Date(r.date)
+    const ageDays = (today.getTime() - d.getTime()) / (1000 * 60 * 60 * 24)
+    if (ageDays < 0 || ageDays > NUM_WEEKS * 7) continue
+    const weekIdx = NUM_WEEKS - 1 - Math.floor(ageDays / 7)
+    if (weekIdx >= 0 && weekIdx < NUM_WEEKS) {
+      weeklyAmounts[weekIdx] += parseM(r.amount)
+    }
+  }
+
+  const maxAmount = Math.max(...weeklyAmounts, 1)
+
+  return weeklyAmounts.map((amountM, i) => {
+    if (amountM > 0) {
+      const h = Math.max(12, Math.round((amountM / maxAmount) * 85))
+      const label = amountM >= 1000 ? `$${(amountM/1000).toFixed(1)}B` : `$${Math.round(amountM)}M`
+      return { h, pos: true, amountM, label }
+    }
+    // Quiet week — small negative bar
+    return { h: 8, pos: false, amountM: 0, label: '—' }
+  })
+}
+
+// Total 2026 YTD funding
+function get2026YTDFunding(): string {
+  try {
+    const raw = fs.readFileSync(
+      path.join(process.cwd(), 'content/data/funding-rounds.json'), 'utf-8'
+    )
+    const rounds: any[] = JSON.parse(raw)
+    function parseM(amt: string): number {
+      if (!amt || amt === 'N/A') return 0
+      const paren = amt.match(/\(~?\$([0-9.]+[BMbm]?)\)/)
+      if (paren) { const n = parseFloat(paren[1]); return paren[1].toUpperCase().includes('B') ? n * 1000 : n }
+      const stripped = amt.replace(/[^0-9.BMKbmk]/g, '')
+      const n = parseFloat(stripped); if (isNaN(n)) return 0
+      const u = amt.toUpperCase()
+      if (u.includes('B')) return n * 1000; if (u.includes('K')) return n / 1000; return n
+    }
+    const totalM = rounds.filter(r => r.date?.startsWith('2026')).reduce((s, r) => s + parseM(r.amount), 0)
+    return totalM >= 1000 ? `$${(totalM/1000).toFixed(1)}B` : `$${Math.round(totalM)}M`
+  } catch { return '$3.6B' }
+}
 
 // ── placeholder data ────────────────────────────────────────────────────────
 
@@ -235,6 +316,10 @@ export default function HomePage() {
           .filter((r) => ['commercial', 'pilot', 'production'].includes(r.status))
           .slice(0, 5)
       : placeholderRobots
+
+  const capitalFlowBars = buildCapitalFlowBars()
+  const ytdFunding = get2026YTDFunding()
+  const totalDeployed = DEPLOYED_ROBOTS.reduce((s, r) => s + r.units, 0)
 
   return (
     <>
@@ -520,9 +605,11 @@ export default function HomePage() {
             {/* Metric block */}
             <div className="metric-block">
               <div className="metric-label">Total Sector Funding (2026 YTD)</div>
-              <div className="metric-value">$4.2B</div>
+              <div className="metric-value">{ytdFunding}</div>
               <div className="data-pos font-data" style={{ fontSize: 12, marginTop: 4 }}>
-                +12.3% QoQ
+                <Link href="/funding" style={{ color: 'inherit', textDecoration: 'none' }}>
+                  View all rounds →
+                </Link>
               </div>
             </div>
 
@@ -637,92 +724,123 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Adjacent Tech Indexes panel */}
+          {/* Deployed Robots Tracker */}
           <div className="panel" style={{ borderBottom: '1px solid var(--border-subtle)' }}>
             <div className="panel-header">
-              <span className="panel-title">Adjacent Tech Indexes</span>
+              <span className="panel-title">Deployed Robots // Real Work</span>
+              <span className="font-data" style={{ fontSize: 11, color: 'var(--text-secondary)' }}>
+                ~{totalDeployed.toLocaleString()} total
+              </span>
             </div>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: 0 }}>
-              {[
-                { label: 'Global Robotics ETF (ROBO)', value: '+1.24%', pos: true },
-                { label: 'AI Compute Index', value: '+3.45%', pos: true },
-                { label: 'Lithium Futures', value: '-0.82%', pos: false },
-                { label: 'Actuator Mfg Index', value: '+0.15%', pos: true },
-                { label: 'NVIDIA (NVDA)', value: '+2.87%', pos: true },
-              ].map((item, i, arr) => (
-                <div
-                  key={item.label}
-                  className="font-data"
-                  style={{
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    alignItems: 'center',
-                    fontSize: 12,
-                    paddingTop: 10,
-                    paddingBottom: 10,
-                    borderBottom:
-                      i < arr.length - 1 ? '1px dashed var(--border-subtle)' : 'none',
-                  }}
-                >
-                  <span style={{ color: 'var(--text-secondary)' }}>{item.label}</span>
-                  <span className={item.pos ? 'data-pos' : 'data-neg'}>{item.value}</span>
-                </div>
-              ))}
+              {DEPLOYED_ROBOTS.map((r, i) => {
+                const barPct = Math.round((r.units / DEPLOYED_ROBOTS[0].units) * 100)
+                return (
+                  <div
+                    key={r.company + r.robot}
+                    className="font-data"
+                    style={{
+                      paddingTop: 9,
+                      paddingBottom: 9,
+                      borderBottom: i < DEPLOYED_ROBOTS.length - 1 ? '1px solid var(--border-subtle)' : 'none',
+                    }}
+                  >
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: 4 }}>
+                      <div>
+                        <span style={{ fontSize: 12, color: 'var(--text-primary)', fontWeight: 500 }}>{r.company}</span>
+                        <span style={{ fontSize: 11, color: 'var(--text-tertiary)', marginLeft: 5 }}>{r.robot}</span>
+                      </div>
+                      <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
+                        <span style={{ fontSize: 10, color: 'var(--text-tertiary)' }}>{r.type}</span>
+                        <span className="data-pos" style={{ fontSize: 12, minWidth: 44, textAlign: 'right' }}>
+                          {r.units >= 1000 ? `${(r.units/1000).toFixed(1)}k` : r.units}
+                        </span>
+                      </div>
+                    </div>
+                    {/* Progress bar */}
+                    <div style={{ height: 2, backgroundColor: 'var(--border-subtle)', borderRadius: 1 }}>
+                      <div style={{
+                        height: '100%',
+                        width: `${barPct}%`,
+                        backgroundColor: 'var(--accent-positive)',
+                        opacity: 0.7,
+                        borderRadius: 1,
+                        transition: 'width 0.3s',
+                      }} />
+                    </div>
+                    <div style={{ fontSize: 10, color: 'var(--text-tertiary)', marginTop: 3 }}>{r.note}</div>
+                  </div>
+                )
+              })}
             </div>
           </div>
 
-          {/* Upcoming Catalysts panel */}
+          {/* Deployment Race Timeline */}
           <div className="panel" style={{ borderBottom: '1px solid var(--border-subtle)' }}>
             <div className="panel-header">
-              <span className="panel-title">Upcoming Catalysts</span>
+              <span className="panel-title">Deployment Race // 2026</span>
+              <span className="font-data" style={{ fontSize: 11, color: 'var(--text-tertiary)' }}>
+                communicated targets
+              </span>
             </div>
 
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-              {[
-                {
-                  name: 'ICRA 2026 Conference',
-                  date: 'May 19, 2026',
-                  desc: 'Key locomotion + manipulation paper releases expected',
-                },
-                {
-                  name: 'Figure 03 Commercial Launch',
-                  date: 'Q2 2026',
-                  desc: 'BMW contract expansion to 5 plants',
-                },
-                {
-                  name: 'Tesla Q1 2026 Earnings',
-                  date: 'Apr 22, 2026',
-                  desc: 'Optimus production update expected',
-                },
-                {
-                  name: 'humanoidintel.ai Summit',
-                  date: 'Jun 10, 2026',
-                  desc: 'First annual humanoid robotics intelligence summit',
-                },
-              ].map((event) => (
-                <div key={event.name}>
-                  <div
-                    style={{
-                      fontWeight: 500,
-                      fontSize: 13,
-                      color: 'var(--text-primary)',
-                      marginBottom: 2,
-                    }}
-                  >
-                    {event.name}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 0 }}>
+              {RACE_TIMELINE.map((item, i) => (
+                <div
+                  key={item.company}
+                  style={{
+                    paddingTop: 10,
+                    paddingBottom: 10,
+                    borderBottom: i < RACE_TIMELINE.length - 1 ? '1px solid var(--border-subtle)' : 'none',
+                  }}
+                >
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: 5 }}>
+                    <div>
+                      <span style={{ fontSize: 12, fontWeight: 600, color: 'var(--text-primary)' }}>
+                        {item.company}
+                      </span>
+                      <span className="font-data" style={{ fontSize: 10, color: 'var(--text-tertiary)', marginLeft: 6 }}>
+                        {item.robot}
+                      </span>
+                    </div>
+                    <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
+                      <span className="font-data" style={{ fontSize: 10, color: item.color }}>
+                        {item.date}
+                      </span>
+                      <span
+                        className="font-data"
+                        style={{
+                          fontSize: 10,
+                          color: 'var(--text-secondary)',
+                          backgroundColor: 'var(--bg-surface)',
+                          border: '1px solid var(--border-subtle)',
+                          padding: '1px 5px',
+                          whiteSpace: 'nowrap',
+                        }}
+                      >
+                        {item.target}
+                      </span>
+                    </div>
                   </div>
-                  <div
-                    className="font-data"
-                    style={{ fontSize: 11, color: 'var(--text-secondary)', marginBottom: 2 }}
-                  >
-                    {event.date}
-                  </div>
-                  <div style={{ fontSize: 12, color: 'var(--text-tertiary)', lineHeight: 1.4 }}>
-                    {event.desc}
+                  {/* Race bar */}
+                  <div style={{ height: 3, backgroundColor: 'var(--border-subtle)', borderRadius: 2 }}>
+                    <div style={{
+                      height: '100%',
+                      width: `${item.prog}%`,
+                      backgroundColor: item.color,
+                      borderRadius: 2,
+                      opacity: 0.85,
+                    }} />
                   </div>
                 </div>
               ))}
+            </div>
+            <div
+              className="font-data"
+              style={{ fontSize: 10, color: 'var(--text-tertiary)', marginTop: 8 }}
+            >
+              Bar = readiness progress based on public announcements. Not financial advice.
             </div>
           </div>
 

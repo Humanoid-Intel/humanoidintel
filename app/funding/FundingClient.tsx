@@ -147,9 +147,24 @@ function formatDate(dateStr: string) {
 }
 
 function parseAmount(amt: string): number {
-  const num = parseFloat(amt.replace(/[$BMK,]/gi, ''))
-  if (amt.includes('B')) return num * 1000
-  if (amt.includes('K')) return num / 1000
+  if (!amt || amt === 'N/A') return 0
+  // Handle "€1B (~$1.08B)" or "RMB 2.5B (~$345M)" — extract parenthetical USD amount
+  const parenMatch = amt.match(/\(~?\$([0-9.]+[BMbm]?)\)/)
+  if (parenMatch) {
+    const inner = parenMatch[1]
+    const n = parseFloat(inner)
+    if (!isNaN(n)) {
+      if (inner.toUpperCase().includes('B')) return n * 1000
+      return n
+    }
+  }
+  // Strip all non-numeric/non-unit chars (handles ~, €, RMB, spaces, etc.)
+  const stripped = amt.replace(/[^0-9.BMKbmk]/g, '')
+  const num = parseFloat(stripped)
+  if (isNaN(num)) return 0
+  const upper = amt.toUpperCase()
+  if (upper.includes('B')) return num * 1000
+  if (upper.includes('K')) return num / 1000
   return num
 }
 

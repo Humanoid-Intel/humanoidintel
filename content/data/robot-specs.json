@@ -245,11 +245,13 @@
     "actuatorType": "Electric",
     "description": "NEURA Robotics' 4NE-1 is Europe's most advanced humanoid prototype, engineered around a 'cognitive humanoid' philosophy that prioritizes multi-modal sensing and high-level reasoning over brute-force teleoperation. The platform integrates vision, touch, and proprioception across 62 degrees of freedom, with NEURA's proprietary cognitive AI layer handling task decomposition. German engineering rigor and compliance-first design position 4NE-1 for European industrial and collaborative settings.",
     "deploymentNotes": "Advanced prototypes are operational at NEURA's Metzingen headquarters and with select automotive partners in Germany including undisclosed Tier-1 suppliers.",
-    "fundingTotal": "~$130M",
+    "fundingTotal": "$1.3B+",
     "milestones": [
       { "date": "2023-04", "event": "4NE-1 first public demonstration" },
       { "date": "2024-05", "event": "$80M Series B closed" },
-      { "date": "2025-01", "event": "Automotive pilot partner announced" }
+      { "date": "2025-01", "event": "Automotive pilot partner announced" },
+      { "date": "2025-11", "event": "Series C: $120M from Bosch, Mercedes, Porsche Ventures" },
+      { "date": "2026-03", "event": "€1B Series D led by Tether; $4B valuation. Reutlingen mega-factory announced." }
     ]
   },
   {
@@ -389,6 +391,66 @@
       { "date": "2023-06", "event": "Myohand prototype demonstrated publicly" },
       { "date": "2024-02", "event": "Full upper-body prototype shown" },
       { "date": "2024-11", "event": "P1 full-body prototype revealed" }
+    ]
+  },
+  {
+    "slug": "unitree-g1",
+    "name": "Unitree G1",
+    "manufacturer": "Unitree Robotics",
+    "country": "China",
+    "status": "production",
+    "height": "1.27m",
+    "weight": "35kg",
+    "dof": 43,
+    "payload": "3kg",
+    "battery": "2 hrs",
+    "actuatorType": "Electric",
+    "description": "The Unitree G1 is a compact, lightweight humanoid released in 2024 as a research-focused complement to the taller H1. At $16,000 base, it is tied as the world's most affordable commercial humanoid. The G1's design prioritizes dexterous hands and upper-body manipulation over payload or speed, with 43 degrees of freedom including a 7-DOF hand per arm. Its smaller form factor makes it suited for laboratory and indoor tasks, while its open SDK attracts the global research community.",
+    "deploymentNotes": "Available for direct purchase globally; strong adoption in university robotics labs. Frequently deployed alongside H1 and H1 Pro in academic AI and manipulation research.",
+    "milestones": [
+      { "date": "2024-05", "event": "G1 unveiled with $16,000 base price" },
+      { "date": "2024-08", "event": "First research units ship" },
+      { "date": "2025-02", "event": "Dexterous hand upgrade variant released" }
+    ]
+  },
+  {
+    "slug": "galbot-g1",
+    "name": "Galbot G1",
+    "manufacturer": "Galbot",
+    "country": "China",
+    "status": "pilot",
+    "height": "1.68m",
+    "weight": "55kg",
+    "dof": 47,
+    "payload": "20kg",
+    "battery": "4 hrs",
+    "actuatorType": "Electric",
+    "description": "The Galbot G1 is the flagship product of Beijing-based Galbot, engineered for full-body dexterous manipulation in logistics and precision assembly environments. With 47 degrees of freedom including a 12-DOF dexterous hand, the G1 is designed for complex bi-manual manipulation tasks that require coordinated whole-body motion. Galbot's data flywheel — built from large-scale teleoperation operations — gives the G1's AI system an edge in manipulation diversity. The company's RMB 2.5B Series B, led by Alibaba and Meituan, funds a major production scale-up targeting 500 units in 2026.",
+    "deploymentNotes": "Pilot deployments with Alibaba logistics and electronics assembly partners in Beijing and Shenzhen. Full production ramp targeted for H2 2026.",
+    "milestones": [
+      { "date": "2024-06", "event": "G1 prototype unveiled in Beijing" },
+      { "date": "2025-04", "event": "Logistics pilot deployments begin" },
+      { "date": "2026-02", "event": "RMB 2.5B Series B closed; production ramp announced" }
+    ]
+  },
+  {
+    "slug": "sunday-home",
+    "name": "Sunday Home",
+    "manufacturer": "Sunday Robotics",
+    "country": "China",
+    "status": "pilot",
+    "height": "1.60m",
+    "weight": "40kg",
+    "dof": 36,
+    "payload": "5kg",
+    "battery": "6 hrs",
+    "actuatorType": "Electric",
+    "description": "Sunday's Home humanoid is designed from the ground up for consumer and care environments — lighter, quieter, and with a more approachable form factor than industrial peers. With 36 degrees of freedom and 6-hour battery life, it targets household assistance tasks including elder care, light housework, and companionship applications. Sunday Robotics has raised $200M at a $1.15B valuation (Series B, 2026) on the strength of pre-orders from Japan, South Korea, and China — three markets with both acute demographic aging and high consumer spending on home services.",
+    "deploymentNotes": "Pilot programs active in Japan with elderly care facilities; South Korea consumer pre-order program open as of Q1 2026. Chinese home trial program launching mid-2026.",
+    "milestones": [
+      { "date": "2024-09", "event": "Sunday Home prototype unveiled" },
+      { "date": "2025-06", "event": "Japan elderly care pilot begins" },
+      { "date": "2026-03", "event": "$200M Series B at $1.15B valuation announced" }
     ]
   },
   {

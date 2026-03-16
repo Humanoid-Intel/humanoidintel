@@ -1,0 +1,80 @@
+[
+  {
+    "symbol": "FIG.AI",
+    "label": "Figure 03",
+    "status": "+News",
+    "positive": true
+  },
+  {
+    "symbol": "TSLA.BOT",
+    "label": "Optimus",
+    "status": "+Public.Demo",
+    "positive": true
+  },
+  {
+    "symbol": "BOS.DYN",
+    "label": "Atlas",
+    "status": "+News",
+    "positive": true
+  },
+  {
+    "symbol": "AGIL.ROB",
+    "label": "Digit",
+    "status": "+News",
+    "positive": true
+  },
+  {
+    "symbol": "NEURA",
+    "label": "4NE-1",
+    "status": "+Fund.€1B",
+    "positive": true
+  },
+  {
+    "symbol": "APP.TRON",
+    "label": "Apollo",
+    "status": "+Fund.$520M",
+    "positive": true
+  },
+  {
+    "symbol": "UNIT.REE",
+    "label": "G1",
+    "status": "+3k.Ships.25",
+    "positive": true
+  },
+  {
+    "symbol": "SUNDAY",
+    "label": "HomeBot",
+    "status": "+Fund.$1.15B",
+    "positive": true
+  },
+  {
+    "symbol": "GALBOT",
+    "label": "G1",
+    "status": "+Fund.RMB2.5B",
+    "positive": true
+  },
+  {
+    "symbol": "SANC.AI",
+    "label": "Phoenix",
+    "status": "+$90M.SeriesD",
+    "positive": true
+  },
+  {
+    "symbol": "1X.TECH",
+    "label": "NEO",
+    "status": "+$125M.SerC",
+    "positive": true
+  },
+  {
+    "symbol": "MIND.ROB",
+    "label": "Stealth",
+    "status": "+News",
+    "positive": true
+  },
+  {
+    "symbol": "FUND.YTD",
+    "label": "2026",
+    "status": "$3.6B.2026",
+    "positive": true
+  }
+]
