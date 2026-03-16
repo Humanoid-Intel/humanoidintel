@@ -37,6 +37,21 @@
     "url": "/news/neuralink-noland-arbaugh-keynote-robotics-summit-2026"
   },
   {
+    "slug": "macau-robot-incident-highlights-public-safety-concerns",
+    "title": "Macau Robot Incident Highlights Public Safety Concerns",
+    "excerpt": "Woman hospitalized after humanoid robot encounter in Macau sparks debate over deployment protocols and public interaction safety.",
+    "category": "market",
+    "date": "2026-03-16T17:39:23.000Z",
+    "tags": [
+      "public-safety",
+      "deployment",
+      "regulation"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/macau-robot-incident-highlights-public-safety-concerns"
+  },
+  {
     "slug": "interpretable-responsibility-sharing-tamp-framework",
     "title": "New TAMP Framework Tackles Human-Robot Collaboration",
     "excerpt": "Turkish researchers develop interpretable framework for dividing tasks between humans and robots in collaborative environments.",
@@ -67,6 +82,21 @@
     "companies": [],
     "type": "news",
     "url": "/news/time-delay-estimation-variable-admittance-control-robot-needle-punching"
+  },
+  {
+    "slug": "humanoid-robot-arrested-elderly-woman-hospitalized",
+    "title": "Humanoid Robot 'Arrested' After Elderly Woman Hospitalized",
+    "excerpt": "Police detained humanoid robot after encounter sent elderly woman to hospital, highlighting deployment safety concerns",
+    "category": "breaking",
+    "date": "2026-03-16T17:00:00.000Z",
+    "tags": [
+      "public-safety",
+      "human-robot-interaction",
+      "deployment-risks"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/humanoid-robot-arrested-elderly-woman-hospitalized"
   },
   {
     "slug": "tennis-playing-humanoid-robot-video-industry-analysis",
@@ -4058,6 +4088,21 @@
     ],
     "companies": [
       "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "ashby-physicalintelligence-58e5a454-47db-41b2-9c5d-c8e34c55159e",
+    "title": "Mechanical Design Engineer — Physical Intelligence",
+    "excerpt": "Hardware · San Francisco",
+    "category": "job",
+    "date": "2026-03-16T18:00:16.200Z",
+    "tags": [
+      "hardware"
+    ],
+    "companies": [
+      "Physical Intelligence"
     ],
     "type": "job",
     "url": "/jobs"
