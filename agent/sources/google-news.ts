@@ -30,12 +30,14 @@ const QUERIES = [
   '"Sanctuary AI"',
   '"Apptronik" robot',
   '"Unitree Robotics"',
-  '"Physical Intelligence" robot',
-  '"Skild AI" robot',
+  '"Physical Intelligence"',      // no "robot" qualifier — funding news often omits it
+  '"Skild AI"',                   // no "robot" qualifier — "Skild AI raises $X" won't contain "robot"
   '"Clone Robotics"',
   '"Mentee Robotics"',
   '"Kinema Systems"',
-  '"Persona AI" robot',
+  '"Persona AI" humanoid',
+  '"Flexion" humanoid robot',
+  '"Dyna Robotics"',
   '"Machina Labs" robot',
   '"Mytra" robot',
 

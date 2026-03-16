@@ -137,6 +137,9 @@ export const config = {
     'skild-ai': 'Skild AI',
     'clone-robotics': 'Clone Robotics',
     'mentee-robotics': 'Mentee Robotics',
+    flexion: 'Flexion',
+    'dyna-robotics': 'Dyna Robotics',
+    'persona-ai': 'Persona AI',
     // China
     unitree: 'Unitree Robotics',
     agibot: 'Agibot',

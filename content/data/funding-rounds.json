@@ -162,10 +162,34 @@
     "round": "Series A",
     "amount": "$300M",
     "valuation": "~$1.5B",
-    "leadInvestors": ["Lightspeed Venture Partners", "Softbank Vision Fund 2"],
+    "leadInvestors": ["Lightspeed Venture Partners", "SoftBank Vision Fund 2", "Coatue", "Bezos Expeditions"],
     "date": "2024-06-18",
     "geography": "USA",
-    "notes": "Largest pre-revenue Series A in robotics AI history. Deepak Pathak and Abhinav Gupta's CMU pedigree and early research results on general robot learning attracted exceptional investor interest."
+    "notes": "Largest pre-revenue Series A in robotics AI history at the time. Deepak Pathak and Abhinav Gupta's CMU pedigree and early results on the Skild Brain — an omni-bodied foundation model that controls any robot form factor without body-specific fine-tuning — attracted Lightspeed, SoftBank, Coatue, and Amazon among 10+ investors."
+  },
+  {
+    "id": "fr-037",
+    "company": "Skild AI",
+    "companySlug": "skild-ai",
+    "round": "Series B",
+    "amount": "$500M",
+    "valuation": "~$4.7B",
+    "leadInvestors": ["SoftBank Vision Fund 2", "Nvidia", "LG Technology Ventures", "Samsung"],
+    "date": "2025-06-10",
+    "geography": "USA",
+    "notes": "Skild triples its valuation in under a year. SoftBank doubles down as lead, joined by Nvidia (NVentures) whose GR00T platform now offers Skild Brain as an integration option. Samsung and LG's participation reflects Korean OEM interest in licensing a universal robot AI for consumer humanoid products."
+  },
+  {
+    "id": "fr-038",
+    "company": "Skild AI",
+    "companySlug": "skild-ai",
+    "round": "Series C",
+    "amount": "$1.4B",
+    "valuation": "~$14B",
+    "leadInvestors": ["SoftBank", "Nvidia", "Macquarie Group", "Lightspeed Venture Partners"],
+    "date": "2026-01-14",
+    "geography": "USA",
+    "notes": "The largest single funding round in robot AI history, vaulting Skild to a $14B valuation — nearly matching Physical Intelligence's $5.6B combined. Macquarie Group's infrastructure-focused participation signals investor conviction that robot foundation models will become utility-scale infrastructure. All major Series A/B investors including Sequoia, Coatue, Felicis, Samsung, LG, Salesforce Ventures, and CommonSpirit Health doubled down."
   },
   {
     "id": "fr-015",
@@ -388,12 +412,12 @@
     "company": "Physical Intelligence (π)",
     "companySlug": "physical-intelligence",
     "round": "Series B",
-    "amount": "$500M",
-    "valuation": "~$5B",
-    "leadInvestors": ["Sequoia Capital", "Google", "Amazon"],
-    "date": "2025-11-18",
+    "amount": "$600M",
+    "valuation": "~$5.6B",
+    "leadInvestors": ["CapitalG (Alphabet)", "Lux Capital"],
+    "date": "2025-11-20",
     "geography": "USA",
-    "notes": "PI's Series B cements its status as the leading foundation model company for robotics. The round values the company at $5B despite still being pre-revenue, reflecting investor conviction in the π0 and π0.5 models as the operating system for the coming wave of commercial humanoids. Google and Amazon's co-investment signals a platform competition for who supplies the AI 'brain' to hardware makers."
+    "notes": "PI's Series B is led by CapitalG — Alphabet's growth fund — making it Google's largest robotics foundation model bet. The $5.6B valuation comes despite PI being pre-revenue, reflecting investor conviction in the π0 and π0.5 VLA models as the operating system for the coming wave of commercial humanoids. Bond, Redpoint, and Sequoia joined. PI open-sourced π0 in February 2025, growing the developer ecosystem and validating the platform strategy."
   },
   {
     "id": "fr-034",
@@ -430,5 +454,41 @@
     "date": "2025-09-30",
     "geography": "USA",
     "notes": "Figure's Series D comes on the heels of confirming 100+ Figure 02 units deployed at BMW Spartanburg. Microsoft deepens its investment to secure Figure as a preferred Azure and Azure AI customer, while Nvidia's participation reflects the company's continued push to become the dominant compute platform for humanoid inference."
+  },
+  {
+    "id": "fr-039",
+    "company": "Flexion",
+    "companySlug": "flexion",
+    "round": "Series A",
+    "amount": "$50M",
+    "valuation": "N/A",
+    "leadInvestors": ["DST Global Partners", "NVentures (Nvidia)", "Redalpine", "Prosus Ventures"],
+    "date": "2025-11-01",
+    "geography": "Switzerland",
+    "notes": "Founded by ex-Nvidia researchers who built Isaac Gym (David Hoeller) and ETH Zurich specialists, Flexion is building an intelligence layer for humanoid robots using reinforcement learning and transformer-based whole-body control trained primarily on synthetic simulation data. NVentures' lead participation reflects Nvidia's strategy of backing pure-play robot AI software companies as complements to its GR00T and Isaac platforms. Flexion's hardware-agnostic licensing model — software charged per robot per year — is the clearest attempt yet to create an 'Android of humanoid robotics.'"
+  },
+  {
+    "id": "fr-040",
+    "company": "Persona AI",
+    "companySlug": "persona-ai",
+    "round": "Pre-Seed",
+    "amount": "$27M",
+    "valuation": "N/A",
+    "leadInvestors": ["Unity Growth", "Tides Ventures", "Mirae Asset Group"],
+    "date": "2025-05-15",
+    "geography": "USA",
+    "notes": "Founded by Nic Radford (ex-NASA Johnson Space Center, Toyota Research Institute) and Jerry Pratt (ex-Florida Human & Machine Cognition Institute), Persona AI targets the most demanding physical environments — shipbuilding, energy infrastructure, and construction — where current humanoids are underpowered. A strategic investment from POSCO Group (South Korea's largest steelmaker) provides both capital and a direct deployment pathway into heavy industrial facilities. The $27M oversubscribed pre-seed, anchored by Mirae Asset Group's Korean institutional backing, signals crossover investor interest in purpose-built industrial humanoids."
+  },
+  {
+    "id": "fr-041",
+    "company": "Dyna Robotics",
+    "companySlug": "dyna-robotics",
+    "round": "Series A",
+    "amount": "$120M",
+    "valuation": "~$600M",
+    "leadInvestors": ["RoboStrategy", "CRV", "First Round Capital"],
+    "date": "2025-09-18",
+    "geography": "USA",
+    "notes": "Dyna Robotics builds DYNA-1, a robotic foundation model targeting commercial service environments — hotels, restaurants, laundromats, gyms. NVentures (Nvidia), Amazon Industrial Innovation Fund, Samsung Next, LG Technology Ventures, and Salesforce Ventures all participated, reflecting the breadth of industries betting on service robotics AI. The company claims 99%+ task success over 24-hour continuous operation. While not exclusively humanoid hardware, Dyna's foundation model approach positions it as infrastructure for the next wave of commercial humanoid deployments."
   }
 ]
