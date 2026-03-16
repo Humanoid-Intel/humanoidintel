@@ -1,5 +1,23 @@
 [
   {
+    "slug": "renault-2027-humanoid-robot-factory-deployment",
+    "title": "Renault Plans 2027 Humanoid Robot Factory Deployment",
+    "excerpt": "French automaker becomes first major OEM to announce concrete timeline for humanoid robot manufacturing integration",
+    "category": "breaking",
+    "date": "2026-03-16T19:50:00.000Z",
+    "tags": [
+      "renault",
+      "manufacturing",
+      "automotive",
+      "deployment"
+    ],
+    "companies": [
+      "Renault"
+    ],
+    "type": "news",
+    "url": "/news/renault-2027-humanoid-robot-factory-deployment"
+  },
+  {
     "slug": "uncanny-valley-humanoid-robot-adoption-psychology",
     "title": "How Uncanny Valley Affects Humanoid Robot Adoption",
     "excerpt": "New research reveals how the uncanny valley phenomenon shapes consumer acceptance of humanoid robots in commercial settings.",
@@ -5931,6 +5949,22 @@
     ],
     "companies": [
       "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "lever-sanctuary-9b3d5bc3-0d14-42b6-93ee-cfa83fb471ec",
+    "title": "Senior Mechanical Engineer — Sanctuary AI",
+    "excerpt": "Hardware Engineering · Vancouver, BC",
+    "category": "job",
+    "date": "2026-03-11T16:34:33.448Z",
+    "tags": [
+      "hardware",
+      "senior"
+    ],
+    "companies": [
+      "Sanctuary AI"
     ],
     "type": "job",
     "url": "/jobs"
