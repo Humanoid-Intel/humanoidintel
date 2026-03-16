@@ -1,5 +1,140 @@
 [
   {
+    "slug": "memories-ai-visual-memory-humanoid-robotics",
+    "title": "Memories.ai Builds Visual Memory for Humanoid Robotics",
+    "excerpt": "Memories.ai develops visual memory models for humanoid robots to index and retrieve video-recorded experiences",
+    "category": "research",
+    "date": "2026-03-16T20:48:38.219Z",
+    "tags": [
+      "memories-ai",
+      "visual-memory",
+      "physical-ai",
+      "multimodal"
+    ],
+    "companies": [
+      "Memories.ai"
+    ],
+    "type": "news",
+    "url": "/news/memories-ai-visual-memory-humanoid-robotics"
+  },
+  {
+    "slug": "nxp-nvidia-humanoid-robot-partnership",
+    "title": "NXP Partners with Nvidia on Humanoid Robot Chips",
+    "excerpt": "NXP launches dedicated robotics solutions partnering with Nvidia to target the growing humanoid robot market",
+    "category": "market",
+    "date": "2026-03-16T20:47:43.642Z",
+    "tags": [
+      "nxp",
+      "nvidia",
+      "partnerships",
+      "semiconductors",
+      "processors"
+    ],
+    "companies": [
+      "NXP Semiconductors",
+      "Nvidia"
+    ],
+    "type": "news",
+    "url": "/news/nxp-nvidia-humanoid-robot-partnership"
+  },
+  {
+    "slug": "nvidia-european-chipmaker-humanoid-partnerships",
+    "title": "Nvidia Partners European Chipmakers for Humanoid Robots",
+    "excerpt": "Nvidia expands humanoid robotics ecosystem through strategic European semiconductor partnerships",
+    "category": "breaking",
+    "date": "2026-03-16T20:47:07.459Z",
+    "tags": [
+      "nvidia",
+      "partnerships",
+      "european-chipmakers",
+      "gr00t"
+    ],
+    "companies": [
+      "Nvidia"
+    ],
+    "type": "news",
+    "url": "/news/nvidia-european-chipmaker-humanoid-partnerships"
+  },
+  {
+    "slug": "realsense-humanoid-navigation-nvidia-gtc-2026",
+    "title": "RealSense Demos Humanoid Navigation at GTC 2026",
+    "excerpt": "RealSense showcases autonomous navigation system for humanoid robots at NVIDIA GTC, targeting human-robot safety applications.",
+    "category": "breaking",
+    "date": "2026-03-16T20:45:47.572Z",
+    "tags": [
+      "realsense",
+      "nvidia-gtc",
+      "navigation",
+      "vision-ai"
+    ],
+    "companies": [
+      "RealSense",
+      "NVIDIA"
+    ],
+    "type": "news",
+    "url": "/news/realsense-humanoid-navigation-nvidia-gtc-2026"
+  },
+  {
+    "slug": "nvidia-european-chipmakers-humanoid-robot-partnership",
+    "title": "Nvidia Partners with European Chipmakers for Humanoid Robots",
+    "excerpt": "Nvidia expands humanoid robotics reach through strategic European semiconductor partnerships",
+    "category": "market",
+    "date": "2026-03-16T20:45:07.630Z",
+    "tags": [
+      "nvidia",
+      "partnership",
+      "european-chipmakers",
+      "jetson",
+      "gr00t"
+    ],
+    "companies": [
+      "Nvidia"
+    ],
+    "type": "news",
+    "url": "/news/nvidia-european-chipmakers-humanoid-robot-partnership"
+  },
+  {
+    "slug": "hyundai-atlas-humanoid-vs-tesla-optimus-robot-competition",
+    "title": "Hyundai's Atlas Humanoid Faces Off Against Tesla Optimus",
+    "excerpt": "Hyundai's Atlas humanoid robot emerges as Tesla Optimus's primary competitor in the commercial robotics race",
+    "category": "breaking",
+    "date": "2026-03-16T20:44:34.162Z",
+    "tags": [
+      "hyundai",
+      "tesla",
+      "optimus",
+      "atlas",
+      "competition"
+    ],
+    "companies": [
+      "Hyundai Motor Company",
+      "Boston Dynamics",
+      "Tesla"
+    ],
+    "type": "news",
+    "url": "/news/hyundai-atlas-humanoid-vs-tesla-optimus-robot-competition"
+  },
+  {
+    "slug": "skild-ai-nvidia-blackwell-assembly-deployment",
+    "title": "Skild AI Deploys Robot Brain on Nvidia Blackwell Lines",
+    "excerpt": "Skild AI's foundation model now controls robots on Nvidia's Blackwell GPU assembly lines in first major industrial deployment",
+    "category": "breaking",
+    "date": "2026-03-16T20:43:09.422Z",
+    "tags": [
+      "skild-ai",
+      "nvidia",
+      "blackwell",
+      "deployment",
+      "manufacturing"
+    ],
+    "companies": [
+      "Skild AI",
+      "Nvidia"
+    ],
+    "type": "news",
+    "url": "/news/skild-ai-nvidia-blackwell-assembly-deployment"
+  },
+  {
     "slug": "nvidia-gtc-2026-humanoid-robotics-expectations",
     "title": "NVIDIA GTC 2026: What to Expect for Humanoid Robotics",
     "excerpt": "NVIDIA GTC 2026 promises major humanoid robotics announcements including GR00T updates and new sim-to-real capabilities",
@@ -6565,21 +6700,6 @@
     "excerpt": "General · Anywhere in the US (Remote)",
     "category": "job",
     "date": "2026-03-09T14:00:04-04:00",
-    "tags": [
-      "product"
-    ],
-    "companies": [
-      "Diligent Robotics"
-    ],
-    "type": "job",
-    "url": "/jobs"
-  },
-  {
-    "slug": "greenhouse-diligentrobotics-7651518003",
-    "title": "Sr. Manager, Fleet Management & Performance — Diligent Robotics",
-    "excerpt": "General · Anywhere in the US; Remote (Remote)",
-    "category": "job",
-    "date": "2026-03-04T13:50:00-05:00",
     "tags": [
       "product"
     ],

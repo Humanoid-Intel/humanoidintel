@@ -8,13 +8,13 @@
   {
     "symbol": "TSLA.BOT",
     "label": "Optimus",
-    "status": "+News",
+    "status": "+Public.Demo",
     "positive": true
   },
   {
     "symbol": "BOS.DYN",
     "label": "Atlas",
-    "status": "+News",
+    "status": "+Public.Demo",
     "positive": true
   },
   {
