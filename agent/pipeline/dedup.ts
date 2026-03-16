@@ -9,21 +9,34 @@ import { config } from '../config'
 import type { RawStory } from '../sources/rss'
 
 const SEEN_HASHES_FILE = path.join(__dirname, '../.seen-hashes.json')
+const HASH_TTL_MS = 7 * 24 * 60 * 60 * 1000 // 7 days
 
-function loadSeenHashes(): Set<string> {
+function loadSeenHashes(): Map<string, number> {
   try {
     if (fs.existsSync(SEEN_HASHES_FILE)) {
       const data = JSON.parse(fs.readFileSync(SEEN_HASHES_FILE, 'utf-8'))
-      return new Set(data)
+      const now = Date.now()
+      // Support both old format (array of strings) and new format (array of [hash, ts] pairs)
+      if (Array.isArray(data) && data.length > 0 && typeof data[0] === 'string') {
+        // Migrate from old plain-array format — assign current timestamp so they expire in 7 days
+        return new Map(data.map((h: string) => [h, now]))
+      }
+      // New format: [[hash, timestamp], ...]
+      const map = new Map<string, number>(data)
+      // Prune expired entries on load
+      for (const [hash, ts] of map) {
+        if (now - ts > HASH_TTL_MS) map.delete(hash)
+      }
+      return map
     }
   } catch {}
-  return new Set()
+  return new Map()
 }
 
-function saveSeenHashes(hashes: Set<string>): void {
+function saveSeenHashes(hashes: Map<string, number>): void {
   // Keep only last 5000 hashes to prevent unbounded growth
-  const arr = Array.from(hashes).slice(-5000)
-  fs.writeFileSync(SEEN_HASHES_FILE, JSON.stringify(arr), 'utf-8')
+  const entries = Array.from(hashes.entries()).slice(-5000)
+  fs.writeFileSync(SEEN_HASHES_FILE, JSON.stringify(entries), 'utf-8')
 }
 
 function titleSimilarity(a: string, b: string): number {
@@ -139,9 +152,10 @@ export function deduplicateAndScore(stories: RawStory[]): ScoredStory[] {
   const seenHashes = loadSeenHashes()
   const processedTitles: string[] = []
   const results: ScoredStory[] = []
+  const now = Date.now()
 
   for (const story of stories) {
-    // Hash-based dedup
+    // Hash-based dedup (with TTL — only block if seen within last 7 days)
     if (seenHashes.has(story.hash)) continue
 
     // Title similarity dedup (85% threshold)
@@ -154,7 +168,7 @@ export function deduplicateAndScore(stories: RawStory[]): ScoredStory[] {
     if (score < config.scoring.minThreshold) continue
 
     processedTitles.push(story.title)
-    seenHashes.add(story.hash)
+    seenHashes.set(story.hash, now)
 
     results.push({
       ...story,
