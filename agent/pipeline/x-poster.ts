@@ -135,6 +135,21 @@ function storyToSlug(title: string): string {
     .slice(0, 80)
 }
 
+// ── URL verification — never post a dead link ─────────────────────────────────
+
+async function articleIsLive(slug: string): Promise<boolean> {
+  const url = `${config.site.domain}/news/${slug}`
+  try {
+    const res = await fetch(url, { method: 'HEAD' })
+    if (res.ok) return true
+    console.log(`[XPoster] ↷ Article not live yet (${res.status}): ${url}`)
+    return false
+  } catch {
+    console.log(`[XPoster] ↷ Could not reach article URL: ${url}`)
+    return false
+  }
+}
+
 // ── Tweet generation ──────────────────────────────────────────────────────────
 
 async function generateTweet(story: ScoredStory, client: Anthropic, articleSlug: string): Promise<string | null> {
@@ -214,8 +229,17 @@ export async function postTopStoriesToX(stories: ScoredStory[], slugMap: Map<str
       continue
     }
 
-    // Generate tweet — use real published slug if available, fall back to title-derived slug
+    // Resolve slug — use real published slug if available, fall back to title-derived slug
     const articleSlug = slugMap.get(story.url) || storyToSlug(story.title)
+
+    // Hard gate: verify the article URL is actually live before posting
+    const live = await articleIsLive(articleSlug)
+    if (!live) {
+      console.log('[XPoster] ↷ Article not live — skipping to prevent dead link tweet')
+      continue
+    }
+
+    // Generate tweet
     const tweet = await generateTweet(story, anthropic, articleSlug)
     if (!tweet) {
       console.log('[XPoster] ↷ Tweet generation failed — skipping')
