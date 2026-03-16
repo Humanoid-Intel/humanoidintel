@@ -164,9 +164,20 @@ export const config = {
   api: {
     anthropic: process.env.ANTHROPIC_API_KEY || '',
     twitterBearer: process.env.TWITTER_BEARER_TOKEN || '',
+    twitterApiKey: process.env.TWITTER_API_KEY || '',
+    twitterApiSecret: process.env.TWITTER_API_SECRET || '',
+    twitterAccessToken: process.env.TWITTER_ACCESS_TOKEN || '',
+    twitterAccessSecret: process.env.TWITTER_ACCESS_SECRET || '',
     googleNews: process.env.GOOGLE_NEWS_API_KEY || '',
     github: process.env.GITHUB_TOKEN || '',
     buttondown: process.env.BUTTONDOWN_API_KEY || '',
+  },
+
+  xPosting: {
+    enabled: process.env.X_POSTING_ENABLED === 'true',
+    maxPostsPerDay: 1,          // hard cap — free API tier safety (~30/month)
+    scoreThreshold: 95,         // only absolute top stories
+    maxAgeHours: 20,            // don't post stale news
   },
 
   notifications: {
