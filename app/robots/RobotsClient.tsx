@@ -135,7 +135,11 @@ const FILTER_TABS = [
   { label: 'Europe', value: 'europe' },
 ]
 
-const EUROPE_COUNTRIES = ['norway', 'germany', 'france', 'uk', 'sweden', 'netherlands', 'spain', 'italy']
+const EUROPE_COUNTRIES = [
+  'norway', 'germany', 'france', 'uk', 'sweden', 'netherlands', 'spain', 'italy',
+  'poland', 'denmark', 'finland', 'austria', 'switzerland', 'belgium', 'portugal',
+  'czech republic', 'romania', 'hungary', 'israel',
+]
 
 function statusClass(status: string) {
   return ['commercial', 'pilot', 'production'].includes(status) ? 'data-pos' : 'data-neg'
