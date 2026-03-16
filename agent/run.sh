@@ -31,20 +31,24 @@ NEW_ARTICLES=$(git -C "$REPO" status --short content/news/ | grep "^??" | wc -l 
 STATIC_CHANGED=$(git -C "$REPO" diff --name-only public/search-index.json public/ticker-data.json 2>/dev/null | wc -l | tr -d ' ')
 # Check if funding-rounds.json changed
 FUNDING_CHANGED=$(git -C "$REPO" diff --name-only content/data/funding-rounds.json 2>/dev/null | wc -l | tr -d ' ')
+# Check if jobs.json changed
+JOBS_CHANGED=$(git -C "$REPO" diff --name-only content/data/jobs.json 2>/dev/null | wc -l | tr -d ' ')
 
-if [ "$NEW_ARTICLES" -gt "0" ] || [ "$STATIC_CHANGED" -gt "0" ] || [ "$FUNDING_CHANGED" -gt "0" ]; then
+if [ "$NEW_ARTICLES" -gt "0" ] || [ "$STATIC_CHANGED" -gt "0" ] || [ "$FUNDING_CHANGED" -gt "0" ] || [ "$JOBS_CHANGED" -gt "0" ]; then
   # Stage everything relevant
   [ "$NEW_ARTICLES" -gt "0" ] && git -C "$REPO" add content/news/*.md
   git -C "$REPO" add public/search-index.json public/ticker-data.json 2>/dev/null || true
   [ "$FUNDING_CHANGED" -gt "0" ] && git -C "$REPO" add content/data/funding-rounds.json
+  [ "$JOBS_CHANGED" -gt "0" ] && git -C "$REPO" add content/data/jobs.json
 
   COMMIT_MSG="feat(content): auto-publish ${NEW_ARTICLES} article(s) + refresh data $(date '+%Y-%m-%d %H:%M') [bot]"
   [ "$NEW_ARTICLES" -eq "0" ] && COMMIT_MSG="chore(data): refresh search-index + ticker $(date '+%Y-%m-%d %H:%M') [bot]"
   [ "$FUNDING_CHANGED" -gt "0" ] && [ "$NEW_ARTICLES" -eq "0" ] && COMMIT_MSG="feat(funding): auto-update funding rounds $(date '+%Y-%m-%d %H:%M') [bot]"
+  [ "$JOBS_CHANGED" -gt "0" ] && [ "$NEW_ARTICLES" -eq "0" ] && [ "$FUNDING_CHANGED" -eq "0" ] && COMMIT_MSG="feat(jobs): sync job board listings $(date '+%Y-%m-%d %H:%M') [bot]"
 
   git -C "$REPO" commit -m "$COMMIT_MSG"
   git -C "$REPO" push origin main
-  echo "[$(date)] Pushed: $NEW_ARTICLES new articles, funding changed: $FUNDING_CHANGED, static assets updated" >> "$LOG"
+  echo "[$(date)] Pushed: $NEW_ARTICLES new articles, funding changed: $FUNDING_CHANGED, jobs changed: $JOBS_CHANGED, static assets updated" >> "$LOG"
 else
   echo "[$(date)] No new articles or data changes; skipping push." >> "$LOG"
 fi

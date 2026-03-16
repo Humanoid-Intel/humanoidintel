@@ -23,6 +23,7 @@ import { fetchYouTubeVideos } from './sources/youtube'
 import { fetchTwitterSignals } from './sources/twitter'
 import { deduplicateAndScore } from './pipeline/dedup'
 import { extractAndSaveFundingRounds } from './pipeline/funding-extractor'
+import { extractAndSaveJobs } from './pipeline/jobs-extractor'
 import { generateArticles } from './pipeline/writer'
 import { publishArticles } from './pipeline/publisher'
 import { postTopStoriesToX } from './pipeline/x-poster'
@@ -63,6 +64,10 @@ async function run() {
   // Phase 2.5: Extract funding rounds from funding-related stories
   console.log('\n--- Phase 2.5: Funding Extraction ---')
   await extractAndSaveFundingRounds(scoredStories)
+
+  // Phase 2.6: Fetch and update job board listings
+  console.log('\n--- Phase 2.6: Job Board Sync ---')
+  await extractAndSaveJobs()
 
   // Phase 3: Generate articles with Claude
   console.log('\n--- Phase 3: Content Generation ---')

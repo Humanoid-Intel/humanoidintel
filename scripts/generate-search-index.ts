@@ -10,7 +10,7 @@ import matter from 'gray-matter'
 const root = path.join(__dirname, '..')
 const outputPath = path.join(root, 'public/search-index.json')
 
-type ContentType = 'news' | 'company' | 'robot' | 'funding' | 'glossary'
+type ContentType = 'news' | 'company' | 'robot' | 'funding' | 'glossary' | 'job'
 
 interface SearchEntry {
   slug: string
@@ -125,6 +125,26 @@ function indexGlossary(): SearchEntry[] {
     })
 }
 
+// ── 6. Jobs ───────────────────────────────────────────────────────────────────
+function indexJobs(): SearchEntry[] {
+  const file = path.join(root, 'content/data/jobs.json')
+  if (!fs.existsSync(file)) return []
+  const jobs: any[] = JSON.parse(fs.readFileSync(file, 'utf-8'))
+  return jobs
+    .filter((j) => j.status === 'open')
+    .map((j) => ({
+      slug: j.id,
+      title: `${j.title} — ${j.company}`,
+      excerpt: `${j.department} · ${j.location}${j.remote ? ' (Remote)' : ''}`,
+      category: 'job',
+      date: j.postedAt ?? '',
+      tags: j.tags ?? [],
+      companies: [j.company],
+      type: 'job' as ContentType,
+      url: `/jobs`,
+    }))
+}
+
 // ── Build & write ─────────────────────────────────────────────────────────────
 const index: SearchEntry[] = [
   ...indexNews(),
@@ -132,6 +152,7 @@ const index: SearchEntry[] = [
   ...indexRobots(),
   ...indexFunding(),
   ...indexGlossary(),
+  ...indexJobs(),
 ]
 
 // Sort news first (by date desc), then others alphabetically
@@ -154,5 +175,6 @@ const counts = {
   robots: index.filter((e) => e.type === 'robot').length,
   funding: index.filter((e) => e.type === 'funding').length,
   glossary: index.filter((e) => e.type === 'glossary').length,
+  jobs: index.filter((e) => e.type === 'job').length,
 }
-console.log(`[search-index] ${index.length} entries → news:${counts.news} companies:${counts.companies} robots:${counts.robots} funding:${counts.funding} glossary:${counts.glossary}`)
+console.log(`[search-index] ${index.length} entries → news:${counts.news} companies:${counts.companies} robots:${counts.robots} funding:${counts.funding} glossary:${counts.glossary} jobs:${counts.jobs}`)

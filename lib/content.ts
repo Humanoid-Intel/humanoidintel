@@ -10,6 +10,7 @@ import type {
   FundingRound,
   GlossaryTerm,
   NewsletterEdition,
+  Job,
 } from './types'
 
 const contentRoot = path.join(process.cwd(), 'content')
@@ -262,6 +263,23 @@ export function getNewsletterEditions(): NewsletterEdition[] {
     })
 
     return editions.sort((a, b) => b.edition - a.edition)
+  } catch {
+    return []
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Jobs
+// ---------------------------------------------------------------------------
+
+export function getJobs(): Job[] {
+  const filePath = path.join(contentRoot, 'data/jobs.json')
+  if (!fs.existsSync(filePath)) return []
+  try {
+    const all = JSON.parse(fs.readFileSync(filePath, 'utf-8')) as Job[]
+    return all
+      .filter((j) => j.status === 'open')
+      .sort((a, b) => new Date(b.postedAt).getTime() - new Date(a.postedAt).getTime())
   } catch {
     return []
   }

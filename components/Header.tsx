@@ -11,6 +11,7 @@ const navLinks = [
   { label: 'Robot DB', href: '/robots' },
   { label: 'Companies', href: '/companies' },
   { label: 'Funding', href: '/funding' },
+  { label: 'Jobs', href: '/jobs' },
   { label: 'Research', href: '/research' },
   { label: 'Glossary', href: '/glossary' },
 ]

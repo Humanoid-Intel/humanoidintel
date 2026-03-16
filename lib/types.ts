@@ -78,6 +78,24 @@ export interface NewsletterEdition {
   edition: number
 }
 
+export interface Job {
+  id: string
+  company: string
+  companySlug: string
+  title: string
+  department: string
+  location: string
+  remote: boolean
+  type: 'full-time' | 'part-time' | 'contract' | 'internship'
+  url: string
+  postedAt: string   // ISO date
+  updatedAt: string  // ISO date
+  source: 'greenhouse' | 'lever' | 'indeed' | 'direct'
+  status: 'open' | 'closed'
+  tags: string[]
+  salary?: string | null
+}
+
 export interface ResearchPaper {
   id: string
   title: string
