@@ -134,6 +134,18 @@ const QUERIES = [
   // ── General media coverage ────────────────────────────────────────────────
   'humanoid robot news',
   'bipedal robot 2026',
+
+  // ── GTC 2026 event coverage (March 16–19 San Jose — remove after event) ──
+  '"GTC 2026" humanoid robot',
+  '"GTC 2026" "physical AI"',
+  '"Jensen Huang" humanoid 2026',
+  '"Isaac GR00T" N1',
+  '"GR00T N1.6"',
+  '"Newton" physics engine robot',
+  '"Mobileye" "Mentee Robotics"',
+  '"Jetson Thor" humanoid',
+  'NVIDIA GTC humanoid robot announcement',
+  '"Cosmos Reason" robot',
 ]
 
 async function fetchGoogleNewsQuery(query: string): Promise<RawStory[]> {

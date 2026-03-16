@@ -140,6 +140,7 @@ export const config = {
     flexion: 'Flexion',
     'dyna-robotics': 'Dyna Robotics',
     'persona-ai': 'Persona AI',
+    mobileye: 'Mobileye',
     // China
     unitree: 'Unitree Robotics',
     agibot: 'Agibot',

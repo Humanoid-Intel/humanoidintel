@@ -456,6 +456,18 @@
     "notes": "Figure's Series D comes on the heels of confirming 100+ Figure 02 units deployed at BMW Spartanburg. Microsoft deepens its investment to secure Figure as a preferred Azure and Azure AI customer, while Nvidia's participation reflects the company's continued push to become the dominant compute platform for humanoid inference."
   },
   {
+    "id": "fr-042",
+    "company": "Mentee Robotics",
+    "companySlug": "mentee-robotics",
+    "round": "Acquisition",
+    "amount": "$900M",
+    "valuation": "$900M",
+    "leadInvestors": ["Mobileye (Intel subsidiary)"],
+    "date": "2026-03-16",
+    "geography": "Israel",
+    "notes": "Mobileye — Intel's autonomous driving subsidiary and the world's leading ADAS chip maker — acquires Mentee Robotics for $900M ($612M cash + ~26.2M Mobileye shares) in one of the largest humanoid robotics acquisitions to date. Announced at Nvidia GTC 2026. Mentee was founded by Professor Amnon Shashua (Mobileye's own founder and Intel's CTO) and brings a proprietary full-body humanoid AI platform built on simulation and reinforcement learning. The deal is a vertical integration play: Mobileye now controls both the perception silicon (EyeQ) and the humanoid AI stack, positioning it as a full-platform competitor to Nvidia's Isaac/GR00T ecosystem. Mobileye cites 'physical AI leadership' and the combination of its global automotive production expertise with Mentee's breakthrough humanoid control platform as the core thesis."
+  },
+  {
     "id": "fr-039",
     "company": "Flexion",
     "companySlug": "flexion",
