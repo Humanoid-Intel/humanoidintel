@@ -1,7 +1,7 @@
 ---
 title: "TI-NVIDIA Partnership Targets Crowd Safety for Humanoids"
 slug: "ti-nvidia-humanoid-crowd-safety-partnership"
-date: "2026-03-05T08:00:00.000Z"
+date: "2026-03-16T20:06:04.000Z"
 updated: "2026-03-16T19:49:00.718Z"
 category: "breaking"
 tags: ["nvidia", "texas-instruments", "crowd-safety", "perception"]

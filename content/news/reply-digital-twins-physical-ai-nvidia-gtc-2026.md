@@ -1,7 +1,7 @@
 ---
 title: "Reply's Digital Twins Power Humanoid Training at GTC"
 slug: "reply-digital-twins-physical-ai-nvidia-gtc-2026"
-date: "2026-03-13T15:52:05.000Z"
+date: "2026-03-16T20:06:04.000Z"
 updated: "2026-03-16T19:49:37.814Z"
 category: "breaking"
 tags: ["reply", "nvidia-gtc", "digital-twins", "physical-ai", "sim-to-real"]

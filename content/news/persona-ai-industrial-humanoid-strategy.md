@@ -1,7 +1,7 @@
 ---
 title: "Persona AI Targets Industrial Markets for Humanoid Robots"
 slug: "persona-ai-industrial-humanoid-strategy"
-date: "2026-03-10T18:24:55.000Z"
+date: "2026-03-16T20:06:04.000Z"
 updated: "2026-03-16T19:47:00.194Z"
 category: "breaking"
 tags: ["persona-ai", "industrial", "commercial-strategy"]

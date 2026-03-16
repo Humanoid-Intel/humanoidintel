@@ -1,7 +1,7 @@
 ---
 title: "TI and NVIDIA Partner on Humanoid Robot Safety Standards"
 slug: "ti-nvidia-humanoid-robot-safety-partnership"
-date: "2026-03-11T10:09:26.000Z"
+date: "2026-03-16T20:06:04.000Z"
 updated: "2026-03-16T19:48:22.376Z"
 category: "breaking"
 tags: ["nvidia", "texas-instruments", "safety", "standards", "partnership"]

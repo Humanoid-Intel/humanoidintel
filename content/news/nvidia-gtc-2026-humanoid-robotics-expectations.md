@@ -1,7 +1,7 @@
 ---
 title: "NVIDIA GTC 2026: What to Expect for Humanoid Robotics"
 slug: "nvidia-gtc-2026-humanoid-robotics-expectations"
-date: "2026-03-16T07:30:00.000Z"
+date: "2026-03-16T20:06:04.000Z"
 updated: "2026-03-16T19:45:46.389Z"
 category: "breaking"
 tags: ["nvidia", "gtc-2026", "gr00t", "isaac-sim", "conference"]

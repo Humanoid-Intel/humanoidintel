@@ -1,7 +1,7 @@
 ---
 title: "Persona AI Hires Commercial Chief for Humanoid Scale"
 slug: "persona-ai-commercial-strategy-chief-industrial-humanoid"
-date: "2026-03-11T18:49:31.000Z"
+date: "2026-03-16T20:06:04.000Z"
 updated: "2026-03-16T19:43:05.796Z"
 category: "breaking"
 tags: ["persona-ai", "hiring", "commercial-strategy", "industrial"]

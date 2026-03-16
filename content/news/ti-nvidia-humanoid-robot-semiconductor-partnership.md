@@ -1,7 +1,7 @@
 ---
 title: "TI, Nvidia Partner on Humanoid Robot Chips"
 slug: "ti-nvidia-humanoid-robot-semiconductor-partnership"
-date: "2026-03-11T17:50:33.000Z"
+date: "2026-03-16T20:06:04.000Z"
 updated: "2026-03-16T19:44:57.919Z"
 category: "breaking"
 tags: ["nvidia", "texas-instruments", "semiconductors", "partnership"]

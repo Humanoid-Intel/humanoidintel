@@ -1,7 +1,7 @@
 ---
 title: "Physical Intelligence Market Poised for $47B Growth by 2030"
 slug: "physical-intelligence-market-growth-2030"
-date: "2026-03-14T16:42:00.000Z"
+date: "2026-03-16T20:06:04.000Z"
 updated: "2026-03-16T19:46:22.863Z"
 category: "market"
 tags: ["physical-intelligence", "market-analysis", "economic-impact", "robotics-ai"]
