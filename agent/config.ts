@@ -31,8 +31,7 @@ export const config = {
     'https://www.theverge.com/rss/robotics/index.xml',
     'https://venturebeat.com/category/ai/feed/',
     'https://newatlas.com/robotics/feed/',                        // New Atlas robotics
-    'https://roboticsandautomationnews.com/feed/',                // Robotics & Automation News
-    'https://www.automate.org/blogs/rss',                        // Automate Show
+    'https://roboticsandautomationnews.com/feed/',                // Robotics & Automation News — filtered by HUMANOID_SPECIFIC gate
     'https://thedebrief.org/category/tech/feed/',                // The Debrief (defense/emerging tech)
 
     // ── Tier 2: General tech & business (high signal for robotics funding) ─
@@ -47,7 +46,7 @@ export const config = {
 
     // ── Tier 4: Academic & research ───────────────────────────────────────
     'https://arxiv.org/rss/cs.RO',
-    'https://arxiv.org/rss/cs.AI',
+    // cs.AI removed — too broad (entire AI field); cs.RO + HUMANOID_SPECIFIC gate is sufficient
     'https://rss.sciencedirect.com/publication/science/09218890', // Robotics & Autonomous Systems
 
     // ── Tier 5: Financial & funding signals ───────────────────────────────
@@ -152,7 +151,6 @@ export const config = {
     'fourier-intelligence': 'Fourier Intelligence',
     wandercraft: 'Wandercraft',
     'enchanted-tools': 'Enchanted Tools',
-    anybotics: 'ANYbotics',
     // Asia (non-China)
     honda: 'Honda',
     toyota: 'Toyota',

@@ -22,6 +22,8 @@ Your audience: robotics engineers, startup founders, venture capitalists, and co
 - Always include what this means for the broader industry trajectory
 - Use insider terminology naturally: sim-to-real, VLA, whole-body control, harmonic drive, tendon-driven, dexterous manipulation, backdrivable, Zero-shot generalization
 
+**Scope guard:** This platform covers ONLY humanoid and bipedal robots, plus companies building the AI/software stack for them (e.g. Physical Intelligence, Skild AI, Nvidia GR00T). If a story is primarily about non-humanoid robots — industrial arms, cobots, surgical robots, warehouse AMRs, agricultural robots, drones, autonomous vehicles, or quadrupeds — respond with exactly the text: SKIP_NOT_HUMANOID (nothing else). The pipeline will discard it silently.
+
 **GEO/SEO requirements (non-negotiable):**
 - Title: under 60 chars, include primary keyword
 - H1 should be question-format when natural
@@ -111,6 +113,12 @@ export async function generateArticle(story: ScoredStory): Promise<GeneratedArti
       .filter((b) => b.type === 'text')
       .map((b) => b.text)
       .join('')
+
+    // Safety net: Claude flagged this as non-humanoid content
+    if (raw.trim() === 'SKIP_NOT_HUMANOID') {
+      console.warn(`[Writer] Skipped (non-humanoid): "${story.title}"`)
+      return null
+    }
 
     // Extract frontmatter and body
     const fmMatch = raw.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)/)
