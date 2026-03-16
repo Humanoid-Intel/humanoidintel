@@ -4,6 +4,7 @@ import Header from '@/components/Header'
 import TickerTape from '@/components/TickerTape'
 import Footer from '@/components/Footer'
 import { NewsletterForm } from '@/components/NewsletterForm'
+import { getNewsletterEditions } from '@/lib/content'
 
 export const metadata: Metadata = {
   title: 'Newsletter Archive — humanoidintel.ai',
@@ -12,57 +13,10 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://humanoidintel.ai/newsletter' },
   openGraph: {
     title: 'Newsletter Archive — humanoidintel.ai',
-    description:
-      'Weekly humanoid robotics intelligence briefing.',
+    description: 'Weekly humanoid robotics intelligence briefing.',
     url: 'https://humanoidintel.ai/newsletter',
   },
 }
-
-// Placeholder newsletter editions — would be populated from content/newsletter/ in production
-const NEWSLETTER_EDITIONS = [
-  {
-    id: 'issue-012',
-    date: '2026-03-10',
-    title: 'Issue #012 — Figure AI BMW Expansion, Sanctuary $250M, and the New VLA Benchmarks',
-    excerpt:
-      'This week: Figure AI extends its BMW manufacturing partnership to five plants, Sanctuary AI closes a monster Series C, and new benchmarks show VLA models are improving 3× year-over-year.',
-  },
-  {
-    id: 'issue-011',
-    date: '2026-03-03',
-    title: 'Issue #011 — Tesla Optimus Q1 Update, EU Regulatory Preview, and Boston Dynamics\' Atlas HD',
-    excerpt:
-      'Tesla confirms 8,000 Optimus units in Q1. The EU drafts its first humanoid robot regulatory framework. And we review Boston Dynamics\' new all-electric Atlas platform.',
-  },
-  {
-    id: 'issue-010',
-    date: '2026-02-24',
-    title: 'Issue #010 — China Deployment Wave, 1X NEO Beta Delay, and the Manipulation Research Surge',
-    excerpt:
-      'Unitree crosses 10,000 units. 1X pushes NEO Beta to Q3. And a wave of new manipulation research papers emerges from CMU, Berkeley, and Stanford.',
-  },
-  {
-    id: 'issue-009',
-    date: '2026-02-17',
-    title: "Issue #009 — NVIDIA Isaac Lab 2.0, Apptronik's Mercedes Deal, and the WBC Frontier",
-    excerpt:
-      'NVIDIA releases Isaac Lab 2.0 with 10× faster sim throughput. Apptronik deepens its Mercedes-Benz collaboration. And we break down whole-body control advances.',
-  },
-  {
-    id: 'issue-008',
-    date: '2026-02-10',
-    title: 'Issue #008 — humanoidintel.ai State of Humanoids 2026 Special Report',
-    excerpt:
-      'Our annual deep-dive: 47 humanoid platforms tracked, $4.2B raised YTD, and the key technical milestones that will define the next 12 months.',
-  },
-  {
-    id: 'issue-007',
-    date: '2026-02-03',
-    title: 'Issue #007 — Agility Digit V5 Deployment, Research Roundup, and Policy Watch',
-    excerpt:
-      'Digit V5 goes live in more Amazon facilities. Our monthly research roundup covers 12 papers from ICRA. And we analyze the latest US and EU policy signals.',
-  },
-]
 
 function formatDate(dateStr: string) {
   try {
@@ -77,6 +31,8 @@ function formatDate(dateStr: string) {
 }
 
 export default function NewsletterPage() {
+  const editions = getNewsletterEditions()
+
   return (
     <>
       <Header />
@@ -135,83 +91,74 @@ export default function NewsletterPage() {
           </h2>
         </div>
 
-        <div>
-          {NEWSLETTER_EDITIONS.map((edition) => (
-            <div
-              key={edition.id}
-              style={{
-                padding: '22px 0',
-                borderBottom: '1px solid var(--border-subtle)',
-              }}
-            >
+        {editions.length > 0 ? (
+          <div>
+            {editions.map((edition) => (
               <div
-                className="font-data"
-                style={{ fontSize: 11, color: 'var(--text-tertiary)', marginBottom: 8 }}
+                key={edition.slug}
+                style={{
+                  padding: '22px 0',
+                  borderBottom: '1px solid var(--border-subtle)',
+                }}
               >
-                {formatDate(edition.date)}
+                <div
+                  className="font-data"
+                  style={{ fontSize: 11, color: 'var(--text-tertiary)', marginBottom: 8 }}
+                >
+                  {edition.edition > 0 && `Issue #${String(edition.edition).padStart(3, '0')} · `}
+                  {formatDate(edition.date)}
+                </div>
+
+                <h3
+                  className="font-head"
+                  style={{
+                    fontSize: 17,
+                    fontWeight: 500,
+                    color: 'var(--text-primary)',
+                    lineHeight: 1.3,
+                    marginBottom: 8,
+                  }}
+                >
+                  {edition.title}
+                </h3>
+
+                <p
+                  style={{
+                    fontSize: 14,
+                    color: 'var(--text-secondary)',
+                    lineHeight: 1.6,
+                    marginBottom: 12,
+                  }}
+                >
+                  {edition.excerpt}
+                </p>
+
+                <Link
+                  href={`/newsletter/${edition.slug}`}
+                  className="font-data"
+                  style={{
+                    fontSize: 11,
+                    color: 'var(--accent-positive)',
+                    textDecoration: 'none',
+                  }}
+                >
+                  Read Issue →
+                </Link>
               </div>
-
-              <h3
-                className="font-head"
-                style={{
-                  fontSize: 17,
-                  fontWeight: 500,
-                  color: 'var(--text-primary)',
-                  lineHeight: 1.3,
-                  marginBottom: 8,
-                }}
-              >
-                {edition.title}
-              </h3>
-
-              <p
-                style={{
-                  fontSize: 14,
-                  color: 'var(--text-secondary)',
-                  lineHeight: 1.6,
-                  marginBottom: 12,
-                }}
-              >
-                {edition.excerpt}
-              </p>
-
-              {/* "Read" link — would go to newsletter detail in production */}
-              <span
-                className="font-data"
-                style={{
-                  fontSize: 11,
-                  color: 'var(--accent-positive)',
-                  cursor: 'pointer',
-                }}
-              >
-                Read Issue →
-              </span>
-            </div>
-          ))}
-        </div>
-
-        {/* Empty state note */}
-        <div
-          style={{
-            padding: '24px 0',
-            fontSize: 13,
-            color: 'var(--text-tertiary)',
-          }}
-        >
-          Newsletter editions from{' '}
-          <code
-            className="font-data"
+            ))}
+          </div>
+        ) : (
+          <div
             style={{
-              fontSize: 12,
-              backgroundColor: 'var(--bg-surface)',
-              padding: '2px 6px',
-              border: '1px solid var(--border-subtle)',
+              padding: '40px 0',
+              fontSize: 14,
+              color: 'var(--text-tertiary)',
+              textAlign: 'center',
             }}
           >
-            content/newsletter/
-          </code>{' '}
-          will appear here automatically when added.
-        </div>
+            Issue #001 is on its way. Subscribe above to be the first to receive it.
+          </div>
+        )}
 
         <div style={{ paddingBottom: 48 }} />
       </div>

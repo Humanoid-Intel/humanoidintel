@@ -70,6 +70,14 @@ export interface GlossaryTerm {
   seeAlso?: string[]
 }
 
+export interface NewsletterEdition {
+  slug: string
+  title: string
+  date: string
+  excerpt: string
+  edition: number
+}
+
 export interface ResearchPaper {
   id: string
   title: string

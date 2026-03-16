@@ -9,6 +9,7 @@ import type {
   Company,
   FundingRound,
   GlossaryTerm,
+  NewsletterEdition,
 } from './types'
 
 const contentRoot = path.join(process.cwd(), 'content')
@@ -228,6 +229,65 @@ export async function getGlossaryTerm(
     }
 
     return { term, content }
+  } catch {
+    return null
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Newsletter Editions
+// ---------------------------------------------------------------------------
+
+export function getNewsletterEditions(): NewsletterEdition[] {
+  const newsletterDir = path.join(contentRoot, 'newsletter')
+
+  if (!fs.existsSync(newsletterDir)) return []
+
+  try {
+    const files = fs.readdirSync(newsletterDir).filter((f) => f.endsWith('.md'))
+
+    const editions: NewsletterEdition[] = files.map((filename) => {
+      const slug = filename.replace(/\.md$/, '')
+      const filePath = path.join(newsletterDir, filename)
+      const raw = fs.readFileSync(filePath, 'utf-8')
+      const { data } = matter(raw)
+
+      return {
+        slug,
+        title: data.title ?? slug,
+        date: data.date ?? '',
+        excerpt: data.excerpt ?? '',
+        edition: data.edition ?? 0,
+      } as NewsletterEdition
+    })
+
+    return editions.sort((a, b) => b.edition - a.edition)
+  } catch {
+    return []
+  }
+}
+
+export async function getNewsletterEdition(
+  slug: string,
+): Promise<{ edition: NewsletterEdition; content: string } | null> {
+  const filePath = path.join(contentRoot, 'newsletter', `${slug}.md`)
+
+  if (!fs.existsSync(filePath)) return null
+
+  try {
+    const raw = fs.readFileSync(filePath, 'utf-8')
+    const { data, content: markdown } = matter(raw)
+    const content = await markdownToHtml(markdown)
+
+    const edition: NewsletterEdition = {
+      slug,
+      title: data.title ?? '',
+      date: data.date ?? '',
+      excerpt: data.excerpt ?? '',
+      edition: data.edition ?? 0,
+    }
+
+    return { edition, content }
   } catch {
     return null
   }

@@ -18,7 +18,8 @@ import Anthropic from '@anthropic-ai/sdk'
 import { config } from '../config'
 import type { ScoredStory } from './dedup'
 
-const FUNDING_ROUNDS_FILE = path.join(__dirname, '../../content/data/funding-rounds.json')
+const FUNDING_ROUNDS_FILE   = path.join(__dirname, '../../content/data/funding-rounds.json')
+const COMPANY_DIR_FILE      = path.join(__dirname, '../../content/data/company-directory.json')
 
 // Keywords that strongly signal a funding announcement
 const FUNDING_SIGNALS = [
@@ -135,6 +136,35 @@ Extract the funding round data from this story.`
   }
 }
 
+// After new rounds are saved, sync company-directory.json with latest valuation
+function syncCompanyData(newRounds: FundingRound[]): void {
+  if (newRounds.length === 0) return
+  if (!fs.existsSync(COMPANY_DIR_FILE)) return
+
+  try {
+    const companies = JSON.parse(fs.readFileSync(COMPANY_DIR_FILE, 'utf-8')) as Array<Record<string, unknown>>
+    let changed = false
+
+    for (const round of newRounds) {
+      const company = companies.find((c) => c.slug === round.companySlug)
+      if (!company) continue
+
+      if (round.valuation) {
+        company.latestValuation = round.valuation
+        changed = true
+        console.log(`[FundingExtractor] Updated ${company.name} latestValuation → ${round.valuation}`)
+      }
+    }
+
+    if (changed) {
+      fs.writeFileSync(COMPANY_DIR_FILE, JSON.stringify(companies, null, 2), 'utf-8')
+      console.log('[FundingExtractor] ✓ Synced company-directory.json with new valuations')
+    }
+  } catch (err) {
+    console.error('[FundingExtractor] Failed to sync company-directory.json:', err)
+  }
+}
+
 export async function extractAndSaveFundingRounds(stories: ScoredStory[]): Promise<number> {
   if (!config.api.anthropic) return 0
 
@@ -190,6 +220,9 @@ export async function extractAndSaveFundingRounds(stories: ScoredStory[]): Promi
   const updated = [...existing, ...newRounds]
   fs.writeFileSync(FUNDING_ROUNDS_FILE, JSON.stringify(updated, null, 2), 'utf-8')
   console.log(`[FundingExtractor] ✓ Added ${newRounds.length} new funding round(s) to funding-rounds.json`)
+
+  // Sync company valuations
+  syncCompanyData(newRounds)
 
   return newRounds.length
 }
