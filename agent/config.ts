@@ -171,6 +171,8 @@ export const config = {
     googleNews: process.env.GOOGLE_NEWS_API_KEY || '',
     github: process.env.GITHUB_TOKEN || '',
     buttondown: process.env.BUTTONDOWN_API_KEY || '',
+    linkedInToken: process.env.LINKEDIN_ACCESS_TOKEN || '',
+    linkedInAuthorUrn: process.env.LINKEDIN_AUTHOR_URN || '',
   },
 
   xPosting: {
@@ -178,6 +180,14 @@ export const config = {
     maxPostsPerDay: 1,          // hard cap — free API tier safety (~30/month)
     scoreThreshold: 95,         // only absolute top stories
     maxAgeHours: 20,            // don't post stale news
+  },
+
+  linkedInPosting: {
+    enabled: process.env.LINKEDIN_ENABLED === 'true',
+    maxPostsPerDay: 1,
+    scoreThreshold: 90,         // slightly lower than X — LinkedIn rewards more volume
+    maxAgeHours: 24,
+    categories: ['breaking', 'market'] as string[], // broader than X
   },
 
   notifications: {

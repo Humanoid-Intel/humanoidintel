@@ -26,6 +26,7 @@ import { extractAndSaveFundingRounds } from './pipeline/funding-extractor'
 import { generateArticles } from './pipeline/writer'
 import { publishArticles } from './pipeline/publisher'
 import { postTopStoriesToX } from './pipeline/x-poster'
+import { postTopStoriesToLinkedIn } from './pipeline/linkedin-poster'
 import { config } from './config'
 
 async function run() {
@@ -86,6 +87,10 @@ async function run() {
   // Phase 4.5: Post best breaking story to X (1/day max, score 95+)
   console.log('\n--- Phase 4.5: X Posting ---')
   await postTopStoriesToX(scoredStories, slugMap)
+
+  // Phase 4.6: Post best story to LinkedIn (1/day max, score 90+)
+  console.log('\n--- Phase 4.6: LinkedIn Posting ---')
+  await postTopStoriesToLinkedIn(scoredStories, slugMap)
 
   const elapsed = ((Date.now() - startTime) / 1000).toFixed(1)
   console.log(`\n[Agent] Run complete in ${elapsed}s`)
