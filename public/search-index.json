@@ -1,5 +1,48 @@
 [
   {
+    "slug": "uncanny-valley-humanoid-robot-adoption-psychology",
+    "title": "How Uncanny Valley Affects Humanoid Robot Adoption",
+    "excerpt": "New research reveals how the uncanny valley phenomenon shapes consumer acceptance of humanoid robots in commercial settings.",
+    "category": "research",
+    "date": "2026-03-16T19:36:50.000Z",
+    "tags": [
+      "uncanny-valley",
+      "human-robot-interaction",
+      "psychology",
+      "adoption"
+    ],
+    "companies": [
+      "Boston Dynamics",
+      "Honda",
+      "Toyota",
+      "Figure AI",
+      "1X Technologies"
+    ],
+    "type": "news",
+    "url": "/news/uncanny-valley-humanoid-robot-adoption-psychology"
+  },
+  {
+    "slug": "uncanny-valley-research-humanoid-robot-design-2026",
+    "title": "Uncanny Valley Research Shapes Humanoid Robot Design",
+    "excerpt": "New research reveals how the uncanny valley phenomenon is driving design decisions at major humanoid robotics companies",
+    "category": "research",
+    "date": "2026-03-16T19:36:50.000Z",
+    "tags": [
+      "uncanny-valley",
+      "human-robot-interaction",
+      "design",
+      "psychology"
+    ],
+    "companies": [
+      "Tesla",
+      "Figure AI",
+      "Agility Robotics",
+      "Boston Dynamics"
+    ],
+    "type": "news",
+    "url": "/news/uncanny-valley-research-humanoid-robot-design-2026"
+  },
+  {
     "slug": "rmit-dolphin-robot-oil-spill-cleanup-sea-urchin-filter",
     "title": "Bio-Inspired Robot Removes Oil Using Urchin Tech",
     "excerpt": "RMIT researchers develop dolphin-shaped robot with sea urchin-inspired filtration for autonomous oil spill cleanup operations",
@@ -580,6 +623,25 @@
     "url": "/news/china-wheeled-humanoid-robot-lunar-base-construction"
   },
   {
+    "slug": "nvidia-gtc-2026-humanoid-robotics-expectations",
+    "title": "NVIDIA GTC 2026: What to Expect for Humanoid Robotics",
+    "excerpt": "NVIDIA GTC 2026 promises major humanoid robotics announcements including GR00T updates and new sim-to-real capabilities",
+    "category": "breaking",
+    "date": "2026-03-16T07:30:00.000Z",
+    "tags": [
+      "nvidia",
+      "gtc-2026",
+      "gr00t",
+      "isaac-sim",
+      "conference"
+    ],
+    "companies": [
+      "NVIDIA"
+    ],
+    "type": "news",
+    "url": "/news/nvidia-gtc-2026-humanoid-robotics-expectations"
+  },
+  {
     "slug": "skill-graphs-autonomous-robotic-assembly-arxiv-2026",
     "title": "Skill Graphs Promise Autonomous Assembly Line Evolution",
     "excerpt": "New framework eliminates manual engineering for assembly tasks through verb-based skill representations",
@@ -651,6 +713,24 @@
     "url": "/news/tesla-optimus-times-square-public-demo-march-2026"
   },
   {
+    "slug": "physical-intelligence-market-growth-2030",
+    "title": "Physical Intelligence Market Poised for $47B Growth by 2030",
+    "excerpt": "Market intelligence reveals Physical Intelligence sector targeting $47B valuation as embodied AI drives economic transformation",
+    "category": "market",
+    "date": "2026-03-14T16:42:00.000Z",
+    "tags": [
+      "physical-intelligence",
+      "market-analysis",
+      "economic-impact",
+      "robotics-ai"
+    ],
+    "companies": [
+      "Physical Intelligence"
+    ],
+    "type": "news",
+    "url": "/news/physical-intelligence-market-growth-2030"
+  },
+  {
     "slug": "korean-xyz-robotics-873m-series-b-funding",
     "title": "Korean AI Startup XYZ Raises $8.73M for Office Humanoids",
     "excerpt": "Korean physical AI startup XYZ secures $8.73M Series B to deploy humanoid robots in commercial and residential settings",
@@ -686,6 +766,26 @@
     ],
     "type": "news",
     "url": "/news/musk-integer-universe-tesla-optimus-ai-implications"
+  },
+  {
+    "slug": "reply-digital-twins-physical-ai-nvidia-gtc-2026",
+    "title": "Reply's Digital Twins Power Humanoid Training at GTC",
+    "excerpt": "Reply demonstrates advanced digital twin technology for humanoid robot training at NVIDIA GTC 2026",
+    "category": "breaking",
+    "date": "2026-03-13T15:52:05.000Z",
+    "tags": [
+      "reply",
+      "nvidia-gtc",
+      "digital-twins",
+      "physical-ai",
+      "sim-to-real"
+    ],
+    "companies": [
+      "Reply",
+      "NVIDIA"
+    ],
+    "type": "news",
+    "url": "/news/reply-digital-twins-physical-ai-nvidia-gtc-2026"
   },
   {
     "slug": "bofa-humanoid-robots-outnumber-cars-2060-prediction",
@@ -792,6 +892,43 @@
     "url": "/news/xiaomi-humanoid-robot-factory-trial-cyberone-successor"
   },
   {
+    "slug": "persona-ai-commercial-strategy-chief-industrial-humanoid",
+    "title": "Persona AI Hires Commercial Chief for Humanoid Scale",
+    "excerpt": "Persona AI adds commercial leadership as company pushes industrial humanoid deployment beyond pilot programs",
+    "category": "breaking",
+    "date": "2026-03-11T18:49:31.000Z",
+    "tags": [
+      "persona-ai",
+      "hiring",
+      "commercial-strategy",
+      "industrial"
+    ],
+    "companies": [
+      "Persona AI"
+    ],
+    "type": "news",
+    "url": "/news/persona-ai-commercial-strategy-chief-industrial-humanoid"
+  },
+  {
+    "slug": "ti-nvidia-humanoid-robot-semiconductor-partnership",
+    "title": "TI, Nvidia Partner on Humanoid Robot Chips",
+    "excerpt": "Texas Instruments and Nvidia announce semiconductor collaboration targeting humanoid robotics market requirements.",
+    "category": "breaking",
+    "date": "2026-03-11T17:50:33.000Z",
+    "tags": [
+      "nvidia",
+      "texas-instruments",
+      "semiconductors",
+      "partnership"
+    ],
+    "companies": [
+      "Nvidia",
+      "Texas Instruments"
+    ],
+    "type": "news",
+    "url": "/news/ti-nvidia-humanoid-robot-semiconductor-partnership"
+  },
+  {
     "slug": "osu-hurst-agility-robotics-2-5-billion-valuation",
     "title": "OSU's Hurst Co-Founded $2.5B Humanoid Robot Company",
     "excerpt": "OSU professor Jonathan Hurst co-founded Agility Robotics, now valued at $2.5 billion",
@@ -844,6 +981,26 @@
     "url": "/news/mind-robotics-rivian-ceo-rj-scaringe-humanoid-startup"
   },
   {
+    "slug": "ti-nvidia-humanoid-robot-safety-partnership",
+    "title": "TI and NVIDIA Partner on Humanoid Robot Safety Standards",
+    "excerpt": "TI and NVIDIA announce joint initiative to develop safety standards for humanoid robots entering commercial deployment",
+    "category": "breaking",
+    "date": "2026-03-11T10:09:26.000Z",
+    "tags": [
+      "nvidia",
+      "texas-instruments",
+      "safety",
+      "standards",
+      "partnership"
+    ],
+    "companies": [
+      "NVIDIA",
+      "Texas Instruments"
+    ],
+    "type": "news",
+    "url": "/news/ti-nvidia-humanoid-robot-safety-partnership"
+  },
+  {
     "slug": "agility-boston-dynamics-astm-humanoid-panel-2026",
     "title": "Agility, Boston Dynamics Join ASTM Panel on Real Humanoid ROI",
     "excerpt": "Industry leaders tackle deployment reality vs hype at March standards panel",
@@ -862,6 +1019,23 @@
     ],
     "type": "news",
     "url": "/news/agility-boston-dynamics-astm-humanoid-panel-2026"
+  },
+  {
+    "slug": "persona-ai-industrial-humanoid-strategy",
+    "title": "Persona AI Targets Industrial Markets for Humanoid Robots",
+    "excerpt": "AI company shifts focus to industrial applications as humanoid market matures beyond consumer use cases",
+    "category": "breaking",
+    "date": "2026-03-10T18:24:55.000Z",
+    "tags": [
+      "persona-ai",
+      "industrial",
+      "commercial-strategy"
+    ],
+    "companies": [
+      "Persona AI"
+    ],
+    "type": "news",
+    "url": "/news/persona-ai-industrial-humanoid-strategy"
   },
   {
     "slug": "figure-ai-robot-demo-elon-musk-response",
@@ -1152,6 +1326,25 @@
     "url": "/news/ti-nvidia-physical-ai-humanoid-robots-partnership"
   },
   {
+    "slug": "ti-nvidia-humanoid-crowd-safety-partnership",
+    "title": "TI-NVIDIA Partnership Targets Crowd Safety for Humanoids",
+    "excerpt": "TI and NVIDIA collaborate on enhanced perception systems for humanoid robots operating in crowded environments",
+    "category": "breaking",
+    "date": "2026-03-05T08:00:00.000Z",
+    "tags": [
+      "nvidia",
+      "texas-instruments",
+      "crowd-safety",
+      "perception"
+    ],
+    "companies": [
+      "NVIDIA",
+      "Texas Instruments"
+    ],
+    "type": "news",
+    "url": "/news/ti-nvidia-humanoid-crowd-safety-partnership"
+  },
+  {
     "slug": "agibot-full-humanoid-portfolio-mwc-2026",
     "title": "AGIBOT Unveils Full Humanoid Portfolio at MWC 2026",
     "excerpt": "AGIBOT demonstrates complete humanoid robot lineup and ecosystem integration at Mobile World Congress 2026",
@@ -1376,6 +1569,28 @@
     ],
     "type": "news",
     "url": "/news/bipedal-robot-dynamic-fall-recovery-breakthrough"
+  },
+  {
+    "slug": "mobileye-acquires-mentee-robotics-900m-physical-ai",
+    "title": "Mobileye Acquires Mentee Robotics for $900M",
+    "excerpt": "Mobileye pays $900M for Israeli humanoid startup Mentee Robotics, combining EyeQ perception silicon with a simulation-first humanoid AI stack.",
+    "category": "market",
+    "date": "2026-01-06T21:00:00Z",
+    "tags": [
+      "mobileye",
+      "mentee-robotics",
+      "acquisition",
+      "physical-ai",
+      "funding",
+      "ces-2026"
+    ],
+    "companies": [
+      "Mobileye",
+      "Mentee Robotics",
+      "Intel"
+    ],
+    "type": "news",
+    "url": "/news/mobileye-acquires-mentee-robotics-900m-physical-ai"
   },
   {
     "slug": "figure-ai-hiring-rate-talent-shortage-170000-applications",
@@ -4207,9 +4422,9 @@
   {
     "slug": "fr-042",
     "title": "Mentee Robotics — Acquisition $900M",
-    "excerpt": "Mobileye — Intel's autonomous driving subsidiary and the world's leading ADAS chip maker — acquires Mentee Robotics for $900M ($612M cash + ~26.2M Mobileye shares) in one of the largest humanoid robotics acquisitions to date. Announced at Nvidia GTC 2026. Mentee was founded by Professor Amnon Shashua (Mobileye's own founder and Intel's CTO) and brings a proprietary full-body humanoid AI platform built on simulation and reinforcement learning. The deal is a vertical integration play: Mobileye now controls both the perception silicon (EyeQ) and the humanoid AI stack, positioning it as a full-platform competitor to Nvidia's Isaac/GR00T ecosystem. Mobileye cites 'physical AI leadership' and the combination of its global automotive production expertise with Mentee's breakthrough humanoid control platform as the core thesis.",
+    "excerpt": "Announced at CES 2026 on January 6. Mobileye — Intel's autonomous driving subsidiary and the world's leading ADAS chip maker — acquires Mentee Robotics for $900M ($612M cash + ~26.2M Mobileye shares). Mentee was co-founded by Prof. Amnon Shashua (Mobileye's own founder and Intel EVP) and trains humanoids via human-to-robot mentoring: a single human demo is converted into millions of synthetic training trajectories, bypassing the need for large-scale real-world data collection. Roadmap: PoC deployments in fulfillment and assembly in 2026, first production batch in 2027, commercial scale in 2028, home use ~2030. The deal is a vertical integration play: Mobileye now controls both the perception silicon (EyeQ chips) and the humanoid AI stack, positioning it as a full-platform competitor to Nvidia's Isaac/GR00T ecosystem.",
     "category": "funding",
-    "date": "2026-03-16",
+    "date": "2026-01-06",
     "tags": [
       "Israel",
       "Acquisition"
