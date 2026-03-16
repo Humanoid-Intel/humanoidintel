@@ -64,12 +64,14 @@ function gitCommitAndPush(filePaths: string[]) {
   }
 }
 
-export async function publishArticles(articles: GeneratedArticle[]): Promise<void> {
+// Returns map of sourceUrl → published slug (only for newly saved articles)
+export async function publishArticles(articles: GeneratedArticle[]): Promise<Map<string, string>> {
   ensureDirs()
 
   const mode = config.agent.publishMode
   const targetDir = mode === 'draft' ? DRAFTS_DIR : NEWS_DIR
   const publishedPaths: string[] = []
+  const slugMap = new Map<string, string>() // sourceUrl → slug
 
   for (const article of articles) {
     const filename = `${sanitizeFilename(article.slug)}.md`
@@ -83,10 +85,11 @@ export async function publishArticles(articles: GeneratedArticle[]): Promise<voi
 
     fs.writeFileSync(filePath, article.raw, 'utf-8')
     publishedPaths.push(filePath)
+    slugMap.set(article.sourceUrl, sanitizeFilename(article.slug))
     console.log(`[Publisher] Saved to ${mode === 'draft' ? 'drafts' : 'news'}: ${filename}`)
   }
 
-  if (publishedPaths.length === 0) return
+  if (publishedPaths.length === 0) return slugMap
 
   // Send notification
   await sendNotification(
@@ -102,4 +105,6 @@ export async function publishArticles(articles: GeneratedArticle[]): Promise<voi
       `[Publisher] ${publishedPaths.length} draft(s) saved. Review at content/drafts/ and move to content/news/ to publish.`,
     )
   }
+
+  return slugMap
 }

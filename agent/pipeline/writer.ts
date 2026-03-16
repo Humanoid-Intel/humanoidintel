@@ -76,6 +76,7 @@ export interface GeneratedArticle {
   content: string
   slug: string
   raw: string
+  sourceUrl: string
 }
 
 function extractSlug(raw: string): string {
@@ -124,6 +125,7 @@ export async function generateArticle(story: ScoredStory): Promise<GeneratedArti
       content: fmMatch[2].trim(),
       slug,
       raw,
+      sourceUrl: story.url,
     }
   } catch (err) {
     console.error('[Writer] API error:', err)

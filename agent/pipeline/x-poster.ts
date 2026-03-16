@@ -137,8 +137,8 @@ function storyToSlug(title: string): string {
 
 // ── Tweet generation ──────────────────────────────────────────────────────────
 
-async function generateTweet(story: ScoredStory, client: Anthropic): Promise<string | null> {
-  const articleUrl = `${config.site.domain}/news/${storyToSlug(story.title)}`
+async function generateTweet(story: ScoredStory, client: Anthropic, articleSlug: string): Promise<string | null> {
+  const articleUrl = `${config.site.domain}/news/${articleSlug}`
 
   const prompt = `Write a tweet for @HumanoidIntelAI about this humanoid robotics story.
 
@@ -150,7 +150,7 @@ Tweet rules (ALL must be followed):
 1. Open with the single most striking specific fact or number — NO "Breaking:" prefix, NO em dashes at start
 2. One tight sentence of context (who, what it means)
 3. The article URL on its own line
-4. End with 1-2 hashtags: always #HumanoidRobotics, plus one specific tag (e.g. #FigureAI, #TeslaOptimus, #Funding)
+4. NO hashtags — this is a professional intelligence feed, not a consumer social account
 5. Total length MUST be 280 characters or fewer — count carefully
 6. No hype words: "revolutionary", "game-changing", "groundbreaking", "exciting"
 7. Write for a senior robotics engineer and VC audience
@@ -174,7 +174,7 @@ Return ONLY the tweet text. No explanation, no quotes around it.`
 
 // ── Main export ───────────────────────────────────────────────────────────────
 
-export async function postTopStoriesToX(stories: ScoredStory[]): Promise<void> {
+export async function postTopStoriesToX(stories: ScoredStory[], slugMap: Map<string, string> = new Map()): Promise<void> {
   if (!config.xPosting.enabled) {
     console.log('[XPoster] Disabled (set X_POSTING_ENABLED=true to enable)')
     return
@@ -214,8 +214,9 @@ export async function postTopStoriesToX(stories: ScoredStory[]): Promise<void> {
       continue
     }
 
-    // Generate tweet
-    const tweet = await generateTweet(story, anthropic)
+    // Generate tweet — use real published slug if available, fall back to title-derived slug
+    const articleSlug = slugMap.get(story.url) || storyToSlug(story.title)
+    const tweet = await generateTweet(story, anthropic, articleSlug)
     if (!tweet) {
       console.log('[XPoster] ↷ Tweet generation failed — skipping')
       continue

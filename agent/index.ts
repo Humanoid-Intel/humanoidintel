@@ -81,11 +81,11 @@ async function run() {
 
   // Phase 4: Publish
   console.log('\n--- Phase 4: Publishing ---')
-  await publishArticles(articles)
+  const slugMap = await publishArticles(articles)
 
   // Phase 4.5: Post best breaking story to X (1/day max, score 95+)
   console.log('\n--- Phase 4.5: X Posting ---')
-  await postTopStoriesToX(scoredStories)
+  await postTopStoriesToX(scoredStories, slugMap)
 
   const elapsed = ((Date.now() - startTime) / 1000).toFixed(1)
   console.log(`\n[Agent] Run complete in ${elapsed}s`)
