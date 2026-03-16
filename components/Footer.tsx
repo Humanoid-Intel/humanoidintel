@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { NewsletterForm } from '@/components/NewsletterForm'
 
 const siteLinks = [
   { label: 'Home', href: '/' },
@@ -141,44 +142,7 @@ export default function Footer() {
           <p style={{ color: 'var(--text-secondary)', lineHeight: 1.5 }}>
             Weekly dispatch on humanoid robotics funding, launches, and research.
           </p>
-          <form
-            action="https://buttondown.email/api/emails/embed-subscribe/humanoidintel"
-            method="post"
-            style={{ display: 'flex', flexDirection: 'column', gap: 8 }}
-          >
-            <input
-              type="email"
-              placeholder="your@email.com"
-              aria-label="Email address for newsletter"
-              style={{
-                backgroundColor: 'var(--bg-surface)',
-                border: '1px solid var(--border-subtle)',
-                color: 'var(--text-primary)',
-                padding: '8px 12px',
-                fontSize: 12,
-                fontFamily: 'var(--font-ui)',
-                outline: 'none',
-                width: '100%',
-              }}
-            />
-            <button
-              type="submit"
-              style={{
-                backgroundColor: 'var(--accent-positive)',
-                color: '#050608',
-                padding: '8px 12px',
-                fontSize: 12,
-                fontFamily: 'var(--font-head)',
-                fontWeight: 700,
-                letterSpacing: '0.03em',
-                border: 'none',
-                cursor: 'pointer',
-                textTransform: 'uppercase',
-              }}
-            >
-              Subscribe
-            </button>
-          </form>
+          <NewsletterForm label="Subscribe" />
         </div>
       </div>
 

@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Header from '@/components/Header'
 import TickerTape from '@/components/TickerTape'
 import Footer from '@/components/Footer'
+import { NewsletterForm } from '@/components/NewsletterForm'
 
 export const metadata: Metadata = {
   title: 'Newsletter Archive — humanoidintel.ai',
@@ -121,45 +122,7 @@ export default function NewsletterPage() {
             </p>
           </div>
 
-          <form
-            style={{ display: 'flex', flexDirection: 'column', gap: 10 }}
-            action="https://buttondown.email/api/emails/embed-subscribe/humanoidintel"
-            method="post"
-          >
-            <input
-              type="email"
-              placeholder="your@email.com"
-              aria-label="Email address for newsletter"
-              style={{
-                backgroundColor: 'var(--bg-panel)',
-                border: '1px solid var(--border-subtle)',
-                color: 'var(--text-primary)',
-                padding: '10px 14px',
-                fontSize: 14,
-                fontFamily: 'var(--font-ui)',
-                outline: 'none',
-                width: '100%',
-              }}
-            />
-            <button
-              type="submit"
-              style={{
-                backgroundColor: 'var(--accent-positive)',
-                color: '#050608',
-                padding: '10px 14px',
-                fontSize: 13,
-                fontFamily: 'var(--font-head)',
-                fontWeight: 700,
-                letterSpacing: '0.04em',
-                border: 'none',
-                cursor: 'pointer',
-                textTransform: 'uppercase',
-                width: '100%',
-              }}
-            >
-              Subscribe Free
-            </button>
-          </form>
+          <NewsletterForm label="Subscribe Free" />
         </div>
 
         {/* Archive list */}
