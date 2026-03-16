@@ -1,5 +1,23 @@
 [
   {
+    "slug": "rmit-dolphin-robot-oil-spill-cleanup-sea-urchin-filter",
+    "title": "Bio-Inspired Robot Removes Oil Using Urchin Tech",
+    "excerpt": "RMIT researchers develop dolphin-shaped robot with sea urchin-inspired filtration for autonomous oil spill cleanup operations",
+    "category": "research",
+    "date": "2026-03-16T18:15:00Z",
+    "tags": [
+      "biomimetics",
+      "environmental-robotics",
+      "oil-spill-cleanup",
+      "rmit-university"
+    ],
+    "companies": [
+      "RMIT University"
+    ],
+    "type": "news",
+    "url": "/news/rmit-dolphin-robot-oil-spill-cleanup-sea-urchin-filter"
+  },
+  {
     "slug": "docomo-5g-robot-teleoperation-breakthrough",
     "title": "DoCoMo Achieves 5G Robot Teleoperation Breakthrough",
     "excerpt": "NTT DoCoMo and Keio University achieve world's first stable haptic robot teleoperation over commercial 5G networks",
@@ -380,6 +398,25 @@
     "url": "/news/korean-xyz-robotics-873m-series-b-funding"
   },
   {
+    "slug": "musk-integer-universe-tesla-optimus-ai-implications",
+    "title": "Musk's Integer Universe: What It Means for Tesla Optimus AI",
+    "excerpt": "Musk's 'integer universe' theory could reshape Tesla's approach to physics simulation and robot training algorithms",
+    "category": "breaking",
+    "date": "2026-03-14T13:30:00Z",
+    "tags": [
+      "tesla",
+      "optimus",
+      "elon-musk",
+      "physics",
+      "ai-training"
+    ],
+    "companies": [
+      "Tesla"
+    ],
+    "type": "news",
+    "url": "/news/musk-integer-universe-tesla-optimus-ai-implications"
+  },
+  {
     "slug": "agility-robotics-astm-humanoid-safety-standards-2026",
     "title": "Agility and Boston Dynamics Push ASTM to Set Humanoid Safety Standards",
     "excerpt": "Agility Robotics and Boston Dynamics have joined an ASTM International technical committee to develop the first formal safety standards for humanoid robots in commercial environments — a move that could shape the entire industry's regulatory trajectory.",
@@ -437,6 +474,22 @@
     ],
     "type": "news",
     "url": "/news/osu-hurst-agility-robotics-2-5-billion-valuation"
+  },
+  {
+    "slug": "aw-2026-physical-ai-humanoids-center-stage",
+    "title": "AW 2026 Physical AI Dominance: Humanoids Take Center Stage",
+    "excerpt": "AW 2026 trade show concludes with physical AI and humanoid robotics emerging as dominant technology themes",
+    "category": "breaking",
+    "date": "2026-03-11T14:30:00Z",
+    "tags": [
+      "aw-2026",
+      "physical-ai",
+      "humanoids",
+      "trade-show"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/aw-2026-physical-ai-humanoids-center-stage"
   },
   {
     "slug": "mind-robotics-rivian-ceo-rj-scaringe-humanoid-startup",
@@ -912,6 +965,42 @@
     "url": "/news/asensing-galbot-partnership-ai-robots"
   },
   {
+    "slug": "opentrons-ai-simulation-lab-robot-workflows",
+    "title": "Opentrons Adds AI Simulation for Lab Robot Workflows",
+    "excerpt": "Opentrons launches dynamic simulation platform for AI-generated lab protocols, targeting $6B lab automation market",
+    "category": "breaking",
+    "date": "2024-12-19T18:30:00Z",
+    "tags": [
+      "opentrons",
+      "ai-simulation",
+      "lab-automation",
+      "pipetting-robots"
+    ],
+    "companies": [
+      "Opentrons"
+    ],
+    "type": "news",
+    "url": "/news/opentrons-ai-simulation-lab-robot-workflows"
+  },
+  {
+    "slug": "tesla-robotics-pivot-optimus-investment-strategy",
+    "title": "Tesla's Robotics Pivot: $2B Optimus Investment Strategy",
+    "excerpt": "Tesla's $2B robotics pivot faces manufacturing reality as Optimus targets 2025 limited production timeline",
+    "category": "breaking",
+    "date": "2024-12-19T18:30:00Z",
+    "tags": [
+      "tesla",
+      "optimus",
+      "robotics-pivot",
+      "ai-strategy"
+    ],
+    "companies": [
+      "Tesla"
+    ],
+    "type": "news",
+    "url": "/news/tesla-robotics-pivot-optimus-investment-strategy"
+  },
+  {
     "slug": "qualcomm-snapdragon-ai-robotics-chips-analysis",
     "title": "Qualcomm's AI Robotics Push: Snapdragon Targets Tesla Bot",
     "excerpt": "Qualcomm targets humanoid robotics with mobile-optimized AI chips, challenging NVIDIA's datacenter dominance in edge inference.",
@@ -970,6 +1059,44 @@
     "url": "/news/humanoid-robot-arrested-macau-incident"
   },
   {
+    "slug": "neuralink-patient-noland-arbaugh-2026-robotics-summit-keynote",
+    "title": "Neuralink Patient Arbaugh Headlines 2026 Robotics Summit",
+    "excerpt": "First Neuralink patient to demonstrate BCI capabilities at major robotics conference, highlighting neural control applications",
+    "category": "breaking",
+    "date": "2024-12-19T15:30:00Z",
+    "tags": [
+      "neuralink",
+      "brain-computer-interface",
+      "robotics-summit",
+      "bci"
+    ],
+    "companies": [
+      "Neuralink",
+      "The Robot Report"
+    ],
+    "type": "news",
+    "url": "/news/neuralink-patient-noland-arbaugh-2026-robotics-summit-keynote"
+  },
+  {
+    "slug": "rivian-mind-robotics-pivots-humanoids-custom-factory-robots",
+    "title": "Rivian's Mind Robotics Pivots From Humanoids to Custom Bots",
+    "excerpt": "Mind Robotics abandons humanoid approach for task-specific factory robots after identifying key weaknesses in bipedal designs",
+    "category": "breaking",
+    "date": "2024-12-19T15:30:00Z",
+    "tags": [
+      "rivian",
+      "mind-robotics",
+      "factory-automation",
+      "humanoid-limitations"
+    ],
+    "companies": [
+      "Rivian",
+      "Mind Robotics"
+    ],
+    "type": "news",
+    "url": "/news/rivian-mind-robotics-pivots-humanoids-custom-factory-robots"
+  },
+  {
     "slug": "robot-arrest-macau-elderly-woman-public-safety",
     "title": "Robot 'Arrest' in Macau Highlights Public Safety Gap",
     "excerpt": "Macau incident exposes critical gaps in humanoid robot public deployment protocols and elderly user acceptance",
@@ -1002,6 +1129,24 @@
     ],
     "type": "news",
     "url": "/news/sunday-robotics-165m-series-b-humanoid-funding"
+  },
+  {
+    "slug": "ukraine-phantom-mk1-humanoid-combat-robot-deployment",
+    "title": "Ukraine Deploys Phantom MK-1 Combat Robot: Military Humanoids",
+    "excerpt": "Ukraine reportedly deploys US-made Phantom MK-1 humanoid robots in combat operations, marking potential watershed moment",
+    "category": "breaking",
+    "date": "2024-12-19T15:30:00Z",
+    "tags": [
+      "phantom-mk1",
+      "military-robotics",
+      "ukraine",
+      "combat-applications"
+    ],
+    "companies": [
+      "Phantom Robotics"
+    ],
+    "type": "news",
+    "url": "/news/ukraine-phantom-mk1-humanoid-combat-robot-deployment"
   },
   {
     "slug": "samsung-hand-lab-humanoid-robot-dexterity",
