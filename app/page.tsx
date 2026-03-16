@@ -83,6 +83,50 @@ const RACE_TIMELINE = [
   { company: 'Boston Dyn.', robot: 'Atlas',       target: 'Commercial beta','date': '2027',   color: '#94a3b8', prog: 25 },
 ]
 
+// ── Research papers preview — most recent 5 ───────────────────────────────────
+const RECENT_PAPERS = [
+  {
+    id: 'psi0-2026',
+    title: 'Ψ₀: An Open Foundation Model Towards Universal Humanoid Loco-Manipulation',
+    institution: 'USC / Shanghai AI Lab',
+    date: '2026-03-12',
+    category: 'VLA Models',
+    url: 'https://arxiv.org/abs/2603.12263',
+  },
+  {
+    id: 'spark-2026',
+    title: 'SPARK: Skeleton-Parameter Aligned Retargeting on Humanoid Robots',
+    institution: 'UC Berkeley',
+    date: '2026-03-11',
+    category: 'Sim-to-Real',
+    url: 'https://arxiv.org/abs/2603.11480',
+  },
+  {
+    id: 'zerowbc-2026',
+    title: 'ZeroWBC: Learning Natural Visuomotor Humanoid Control from Human Egocentric Video',
+    institution: 'Shanghai AI Lab',
+    date: '2026-03-10',
+    category: 'VLA Models',
+    url: 'https://arxiv.org/abs/2603.09170',
+  },
+  {
+    id: 'ultra-2026',
+    title: 'ULTRA: Unified Multimodal Control for Autonomous Humanoid Loco-Manipulation',
+    institution: 'UIUC',
+    date: '2026-03-03',
+    category: 'Locomotion',
+    url: 'https://arxiv.org/abs/2603.03279',
+  },
+  {
+    id: 'humi-2026',
+    title: 'HuMI: Humanoid Whole-Body Manipulation from Robot-Free Demonstrations',
+    institution: 'Peking University / BIGAI',
+    date: '2026-02-06',
+    category: 'Manipulation',
+    url: 'https://arxiv.org/abs/2602.06643',
+  },
+]
+
 // ── Capital flows — real data from funding-rounds.json ────────────────────────
 function buildCapitalFlowBars(): FlowBar[] {
   const NUM_WEEKS = 12
@@ -748,6 +792,78 @@ export default function HomePage() {
               <span className="data-pos font-data" style={{ fontSize: 13, fontWeight: 600 }}>
                 {ytdFunding}
               </span>
+            </div>
+          </div>
+
+          {/* Research Hub panel */}
+          <div className="panel">
+            <div className="panel-header">
+              <span className="panel-title">Research Hub // Latest Papers</span>
+              <Link
+                href="/research"
+                className="font-data"
+                style={{ fontSize: 11, color: 'var(--text-secondary)' }}
+              >
+                Full Hub →
+              </Link>
+            </div>
+
+            <div>
+              {RECENT_PAPERS.map((paper) => (
+                <a
+                  key={paper.id}
+                  href={paper.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ display: 'block', textDecoration: 'none' }}
+                >
+                  <div
+                    className="news-row"
+                    style={{
+                      display: 'grid',
+                      gridTemplateColumns: '80px 1fr',
+                      gap: 16,
+                      paddingTop: 12,
+                      paddingBottom: 12,
+                      borderBottom: '1px solid var(--border-subtle)',
+                      transition: 'background-color 0.1s',
+                    }}
+                  >
+                    <div
+                      className="font-data"
+                      style={{
+                        fontSize: 11,
+                        color: 'var(--text-tertiary)',
+                        paddingTop: 2,
+                        lineHeight: 1.4,
+                      }}
+                    >
+                      {formatDate(paper.date)}
+                    </div>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+                      <span className="tag" style={{ alignSelf: 'flex-start' }}>
+                        {paper.category.toUpperCase()}
+                      </span>
+                      <span
+                        style={{
+                          fontSize: 14,
+                          fontWeight: 500,
+                          color: 'var(--text-primary)',
+                          lineHeight: 1.4,
+                        }}
+                      >
+                        {paper.title}
+                      </span>
+                      <span
+                        className="font-data"
+                        style={{ fontSize: 11, color: 'var(--text-tertiary)' }}
+                      >
+                        {paper.institution}
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              ))}
             </div>
           </div>
         </div>
