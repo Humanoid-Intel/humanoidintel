@@ -108,6 +108,22 @@
     "url": "/news/china-wheeled-humanoid-robot-lunar-base"
   },
   {
+    "slug": "macau-police-detain-humanoid-robot-harassment-incident",
+    "title": "Police Detain Robot After Elderly Woman Hospitalized",
+    "excerpt": "First reported case of police detaining a humanoid robot after street encounter sends 70-year-old woman to hospital",
+    "category": "breaking",
+    "date": "2026-03-16T14:30:00Z",
+    "tags": [
+      "public-safety",
+      "humanoid-robots",
+      "regulation",
+      "incident"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/macau-police-detain-humanoid-robot-harassment-incident"
+  },
+  {
     "slug": "ukraine-military-humanoid-robots-deployment-2026",
     "title": "Ukraine Deploys First Military Humanoid Robots",
     "excerpt": "Ukraine becomes first nation to deploy humanoid robots in active combat, marking historic shift in military robotics",
@@ -529,6 +545,27 @@
     "url": "/news/agility-boston-dynamics-astm-humanoid-panel-2026"
   },
   {
+    "slug": "figure-ai-robot-demo-elon-musk-response",
+    "title": "Figure AI Robot Demo Draws Elon Musk's Attention",
+    "excerpt": "Tesla investor's Figure AI robot cleaning demo prompts direct response from Elon Musk on social media",
+    "category": "breaking",
+    "date": "2026-03-10T15:30:00Z",
+    "tags": [
+      "figure-ai",
+      "tesla",
+      "nvidia",
+      "humanoid-robots",
+      "elon-musk"
+    ],
+    "companies": [
+      "Figure AI",
+      "Tesla",
+      "Nvidia"
+    ],
+    "type": "news",
+    "url": "/news/figure-ai-robot-demo-elon-musk-response"
+  },
+  {
     "slug": "agibot-singtel-strategic-partnership-asia-pacific",
     "title": "AGIBOT Partners with Singtel for Asia-Pacific Expansion",
     "excerpt": "Chinese humanoid developer AGIBOT signs strategic cooperation with Singtel Enterprise for regional deployment",
@@ -620,6 +657,24 @@
     "companies": [],
     "type": "news",
     "url": "/news/phantom-mk1-combat-humanoid-robot-military-deployment"
+  },
+  {
+    "slug": "unitree-humanoid-robot-app-store-launch",
+    "title": "Unitree Launches First Humanoid Robot App Store",
+    "excerpt": "Chinese robotics firm creates downloadable app marketplace for humanoid robots, targeting 10,000 developers by year-end",
+    "category": "market",
+    "date": "2026-03-06T08:21:21Z",
+    "tags": [
+      "unitree",
+      "app-store",
+      "software-ecosystem",
+      "h1-robot"
+    ],
+    "companies": [
+      "Unitree Robotics"
+    ],
+    "type": "news",
+    "url": "/news/unitree-humanoid-robot-app-store-launch"
   },
   {
     "slug": "ti-nvidia-physical-ai-humanoid-robots-partnership",
@@ -965,6 +1020,61 @@
     "url": "/news/asensing-galbot-partnership-ai-robots"
   },
   {
+    "slug": "robot-human-collaboration-2026-manufacturing-trends",
+    "title": "Robot-Human Teams Drive 2026 Manufacturing Transformation",
+    "excerpt": "AI integration and enhanced cybersecurity protocols transform manufacturing robot-human workflows in 2026",
+    "category": "market",
+    "date": "2024-12-28T14:30:00Z",
+    "tags": [
+      "human-robot-collaboration",
+      "manufacturing",
+      "ai-integration",
+      "cybersecurity"
+    ],
+    "companies": [
+      "ABB",
+      "KUKA",
+      "Universal Robots"
+    ],
+    "type": "news",
+    "url": "/news/robot-human-collaboration-2026-manufacturing-trends"
+  },
+  {
+    "slug": "china-police-arrest-humanoid-robot-public-incident",
+    "title": "China Police 'Arrest' Humanoid Robot After Public Incident",
+    "excerpt": "Chinese authorities detain humanoid robot following public disturbance incident highlighting deployment challenges",
+    "category": "breaking",
+    "date": "2024-12-28T10:30:00Z",
+    "tags": [
+      "china",
+      "public-safety",
+      "humanoid-deployment",
+      "regulation"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/china-police-arrest-humanoid-robot-public-incident"
+  },
+  {
+    "slug": "nvidia-ceo-tesla-robotics-multitrillion-opportunity",
+    "title": "Nvidia CEO: Tesla Robotics Worth Trillions, Not Just Cars",
+    "excerpt": "Jensen Huang sees Tesla's humanoid robotics unit as a multitrillion-dollar opportunity beyond autonomous vehicles",
+    "category": "market",
+    "date": "2024-12-19T19:30:00Z",
+    "tags": [
+      "tesla",
+      "nvidia",
+      "robotics-valuation",
+      "optimus"
+    ],
+    "companies": [
+      "Tesla",
+      "Nvidia"
+    ],
+    "type": "news",
+    "url": "/news/nvidia-ceo-tesla-robotics-multitrillion-opportunity"
+  },
+  {
     "slug": "opentrons-ai-simulation-lab-robot-workflows",
     "title": "Opentrons Adds AI Simulation for Lab Robot Workflows",
     "excerpt": "Opentrons launches dynamic simulation platform for AI-generated lab protocols, targeting $6B lab automation market",
@@ -1242,6 +1352,27 @@
     "url": "/news/ox-digital-warehouse-3d-mapping-standard-launched"
   },
   {
+    "slug": "ant-group-robbyant-leju-embodied-ai-partnership",
+    "title": "Ant Group's Robbyant Partners with Leju for Embodied AI",
+    "excerpt": "Ant Group's robotics unit Robbyant partners with real estate platform Leju to develop embodied AI systems for practical applications",
+    "category": "breaking",
+    "date": "2024-12-19T10:30:00Z",
+    "tags": [
+      "ant-group",
+      "robbyant",
+      "leju",
+      "embodied-ai",
+      "partnerships"
+    ],
+    "companies": [
+      "Ant Group",
+      "Leju",
+      "Robbyant"
+    ],
+    "type": "news",
+    "url": "/news/ant-group-robbyant-leju-embodied-ai-partnership"
+  },
+  {
     "slug": "humanoid-robot-cherry-blossom-dance-china-guizhou",
     "title": "Humanoid Robot Dances Under Cherry Blossoms in China",
     "excerpt": "Chinese humanoid robot demonstrates fluid motion control in viral cherry blossom dance video from Guizhou province",
@@ -1344,6 +1475,27 @@
     "companies": [],
     "type": "news",
     "url": "/news/physmodpo-physics-humanoid-motion-preference-optimization"
+  },
+  {
+    "slug": "musk-questions-figure-robot-autonomy-demo",
+    "title": "Musk Questions Figure's Latest Demo Autonomy Claims",
+    "excerpt": "Elon Musk challenges Figure AI's latest humanoid robot demonstration, questioning true autonomy levels in latest industry debate.",
+    "category": "breaking",
+    "date": "2024-03-12T14:30:00Z",
+    "tags": [
+      "figure-ai",
+      "nvidia",
+      "elon-musk",
+      "autonomy",
+      "demo"
+    ],
+    "companies": [
+      "Figure AI",
+      "Nvidia",
+      "Tesla"
+    ],
+    "type": "news",
+    "url": "/news/musk-questions-figure-robot-autonomy-demo"
   },
   {
     "slug": "1x-technologies",
