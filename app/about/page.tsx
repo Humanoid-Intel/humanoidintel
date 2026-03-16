@@ -189,8 +189,33 @@ export default function AboutPage() {
         <section style={{ padding: '32px 0', borderBottom: '1px solid var(--border-subtle)' }}>
           <div className="panel-title" style={{ marginBottom: 16 }}>Contact</div>
           <p style={{ fontSize: 14, color: 'var(--text-secondary)', lineHeight: 1.7, marginBottom: 16 }}>
-            The fastest way to reach us is on X. We read every mention and DM.
+            The fastest way to reach us is on X. We read every mention and DM. For partnerships, data
+            submissions, and press enquiries, email us directly.
           </p>
+          <a
+            href="mailto:info@humanoidintel.ai"
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: 8,
+              backgroundColor: 'var(--bg-surface)',
+              border: '1px solid var(--border-subtle)',
+              padding: '10px 16px',
+              fontSize: 13,
+              color: 'var(--text-primary)',
+              fontFamily: 'var(--font-head)',
+              fontWeight: 600,
+              textDecoration: 'none',
+              marginBottom: 10,
+              marginRight: 10,
+            }}
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+            </svg>
+            info@humanoidintel.ai
+          </a>
           <a
             href="https://x.com/HumanoidIntelAI"
             target="_blank"

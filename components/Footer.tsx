@@ -204,6 +204,7 @@ export default function Footer() {
         <div style={{ display: 'flex', gap: 16, alignItems: 'center' }}>
           <Link href="/about" style={{ color: 'var(--text-tertiary)' }}>About</Link>
           <Link href="/privacy" style={{ color: 'var(--text-tertiary)' }}>Privacy</Link>
+          <a href="mailto:info@humanoidintel.ai" style={{ color: 'var(--text-tertiary)' }}>Contact</a>
           <a
             href="https://x.com/HumanoidIntelAI"
             target="_blank"
