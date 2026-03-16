@@ -101,6 +101,18 @@ export default function RootLayout({
           data-domain="humanoidintel.ai"
           src="https://plausible.io/js/script.js"
         />
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2V55QFKZNY" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-2V55QFKZNY');
+            `,
+          }}
+        />
       </head>
       <body className="antialiased">
         <div className="max-w-[1600px] mx-auto">{children}</div>

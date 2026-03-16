@@ -139,7 +139,7 @@ export default function CompaniesPage() {
   const companiesFromCMS = getCompanies()
   const companies = companiesFromCMS.length > 0 ? companiesFromCMS : PLACEHOLDER_COMPANIES
 
-  const totalFundingDisplay = `$${companies.length * 0.2}B+ tracked`
+  const totalFundingDisplay = `$${(companies.length * 0.2).toFixed(2)}B+ tracked`
   const activeCount = companies.filter((c) => c.status === 'active').length
 
   return (
