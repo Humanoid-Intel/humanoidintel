@@ -51,35 +51,40 @@ export default function WatchlistButton({ companySlug, companyName }: Props) {
       title={watching ? `Remove ${companyName} from watchlist` : `Add ${companyName} to watchlist`}
       aria-label={watching ? `Remove ${companyName} from watchlist` : `Add ${companyName} to watchlist`}
       style={{
-        background: 'none',
+        background: watching ? 'rgba(205, 224, 213, 0.12)' : 'var(--bg-surface)',
         border: '1px solid',
-        borderColor: watching ? 'var(--accent-positive)' : 'var(--border-subtle)',
-        color: watching ? 'var(--accent-positive)' : 'var(--text-tertiary)',
+        borderColor: watching ? 'var(--accent-positive)' : 'var(--border-strong)',
+        color: watching ? 'var(--accent-positive)' : 'var(--text-secondary)',
         cursor: 'pointer',
-        padding: '3px 8px',
+        padding: '5px 12px',
         fontSize: 14,
         lineHeight: 1,
         display: 'inline-flex',
         alignItems: 'center',
-        gap: 4,
-        transition: 'color 0.15s, border-color 0.15s',
+        gap: 6,
+        transition: 'color 0.15s, border-color 0.15s, background-color 0.15s',
         fontFamily: 'var(--font-data)',
+        borderRadius: 2,
       }}
       onMouseEnter={(e) => {
+        const btn = e.currentTarget as HTMLButtonElement
         if (!watching) {
-          ;(e.currentTarget as HTMLButtonElement).style.color = 'var(--text-secondary)'
-          ;(e.currentTarget as HTMLButtonElement).style.borderColor = 'var(--border-strong)'
+          btn.style.color = 'var(--accent-positive)'
+          btn.style.borderColor = 'var(--accent-positive)'
+          btn.style.backgroundColor = 'rgba(205, 224, 213, 0.06)'
         }
       }}
       onMouseLeave={(e) => {
+        const btn = e.currentTarget as HTMLButtonElement
         if (!watching) {
-          ;(e.currentTarget as HTMLButtonElement).style.color = 'var(--text-tertiary)'
-          ;(e.currentTarget as HTMLButtonElement).style.borderColor = 'var(--border-subtle)'
+          btn.style.color = 'var(--text-secondary)'
+          btn.style.borderColor = 'var(--border-strong)'
+          btn.style.backgroundColor = 'var(--bg-surface)'
         }
       }}
     >
-      <span style={{ fontSize: 13 }}>{watching ? '\u2605' : '\u2606'}</span>
-      <span style={{ fontSize: 10, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+      <span style={{ fontSize: 16 }}>{watching ? '\u2605' : '\u2606'}</span>
+      <span style={{ fontSize: 11, textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: 500 }}>
         {watching ? 'Watching' : 'Watch'}
       </span>
     </button>

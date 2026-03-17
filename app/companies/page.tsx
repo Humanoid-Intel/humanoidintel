@@ -225,37 +225,47 @@ export default function CompaniesPage() {
                   <td
                     style={{
                       borderBottom: '1px solid var(--border-subtle)',
-                      padding: '14px 16px 14px 0',
+                      padding: 0,
                       color: 'var(--text-primary)',
                       fontWeight: 500,
                     }}
                   >
-                    <Link href={`/companies/${company.slug}`} style={{ color: 'inherit' }}>
+                    <Link href={`/companies/${company.slug}`} style={{ color: 'inherit', display: 'block', padding: '14px 16px 14px 0' }}>
                       {company.name}
                     </Link>
                   </td>
-                  <td style={{ borderBottom: '1px solid var(--border-subtle)', padding: '14px 16px 14px 0', color: 'var(--text-secondary)' }}>
-                    {company.hq}
+                  <td style={{ borderBottom: '1px solid var(--border-subtle)', padding: 0, color: 'var(--text-secondary)' }}>
+                    <Link href={`/companies/${company.slug}`} style={{ color: 'inherit', display: 'block', padding: '14px 16px 14px 0' }}>
+                      {company.hq}
+                    </Link>
                   </td>
-                  <td style={{ borderBottom: '1px solid var(--border-subtle)', padding: '14px 16px 14px 0', color: 'var(--text-secondary)' }}>
-                    {company.ceo}
+                  <td style={{ borderBottom: '1px solid var(--border-subtle)', padding: 0, color: 'var(--text-secondary)' }}>
+                    <Link href={`/companies/${company.slug}`} style={{ color: 'inherit', display: 'block', padding: '14px 16px 14px 0' }}>
+                      {company.ceo}
+                    </Link>
                   </td>
-                  <td style={{ borderBottom: '1px solid var(--border-subtle)', padding: '14px 16px 14px 0', color: 'var(--text-secondary)' }}>
-                    {company.totalFunding ?? '—'}
+                  <td style={{ borderBottom: '1px solid var(--border-subtle)', padding: 0, color: 'var(--text-secondary)' }}>
+                    <Link href={`/companies/${company.slug}`} style={{ color: 'inherit', display: 'block', padding: '14px 16px 14px 0' }}>
+                      {company.totalFunding ?? '—'}
+                    </Link>
                   </td>
-                  <td style={{ borderBottom: '1px solid var(--border-subtle)', padding: '14px 16px 14px 0', color: 'var(--text-secondary)', maxWidth: 200 }}>
-                    {company.products.slice(0, 3).join(', ')}
-                    {company.products.length > 3 && ` +${company.products.length - 3}`}
+                  <td style={{ borderBottom: '1px solid var(--border-subtle)', padding: 0, color: 'var(--text-secondary)', maxWidth: 200 }}>
+                    <Link href={`/companies/${company.slug}`} style={{ color: 'inherit', display: 'block', padding: '14px 16px 14px 0' }}>
+                      {company.products.slice(0, 3).join(', ')}
+                      {company.products.length > 3 && ` +${company.products.length - 3}`}
+                    </Link>
                   </td>
                   <td
                     style={{
                       borderBottom: '1px solid var(--border-subtle)',
-                      padding: '14px 0',
+                      padding: 0,
                       color: statusBadge(company.status),
                       textTransform: 'uppercase',
                     }}
                   >
-                    {company.status}
+                    <Link href={`/companies/${company.slug}`} style={{ color: 'inherit', display: 'block', padding: '14px 0' }}>
+                      {company.status}
+                    </Link>
                   </td>
                 </tr>
               ))}
