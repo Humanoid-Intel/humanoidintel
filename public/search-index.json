@@ -1,5 +1,42 @@
 [
   {
+    "slug": "skild-ai-nvidia-gpu-production-partnership",
+    "title": "Skild AI Lands Nvidia GPU Production Partnership",
+    "excerpt": "Foundation model startup secures major deployment deal with chip giant for automated manufacturing applications",
+    "category": "breaking",
+    "date": "2026-03-17T18:02:32.292Z",
+    "tags": [
+      "skild-ai",
+      "nvidia",
+      "partnership",
+      "gpu-manufacturing"
+    ],
+    "companies": [
+      "Skild AI",
+      "Nvidia"
+    ],
+    "type": "news",
+    "url": "/news/skild-ai-nvidia-gpu-production-partnership"
+  },
+  {
+    "slug": "atlas-evolution-research-robot-industrial-humanoid",
+    "title": "Atlas Pivots From Research to Industrial Applications",
+    "excerpt": "Boston Dynamics repositions Atlas from pure research platform to industrial-ready humanoid robot",
+    "category": "breaking",
+    "date": "2026-03-17T18:01:49.409Z",
+    "tags": [
+      "boston-dynamics",
+      "atlas",
+      "industrial-humanoids",
+      "commercialization"
+    ],
+    "companies": [
+      "Boston Dynamics"
+    ],
+    "type": "news",
+    "url": "/news/atlas-evolution-research-robot-industrial-humanoid"
+  },
+  {
     "slug": "infineon-nvidia-humanoid-digital-twins-collaboration",
     "title": "Infineon-Nvidia Partnership Targets Humanoid Digital Twins",
     "excerpt": "Infineon and Nvidia expand August 2025 partnership to integrate motor control with GR00T simulation platform for humanoid development",
@@ -4530,6 +4567,21 @@
     "url": "/jobs"
   },
   {
+    "slug": "greenhouse-nimblerobotics-4185288009",
+    "title": "Client Support Manager — Nimble Robotics",
+    "excerpt": "General · Haslet, TX",
+    "category": "job",
+    "date": "2026-03-17T13:11:34-04:00",
+    "tags": [
+      "product"
+    ],
+    "companies": [
+      "Nimble Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
     "slug": "clone-alpha",
     "title": "Clone Alpha — Clone Robotics",
     "excerpt": "Clone Alpha is Clone Robotics' consumer product — a limited luxury run of exactly 279 units (believed to be a Westworld reference) targeting home use at a ~$20,000 price point. The…",
@@ -6794,6 +6846,23 @@
     "excerpt": "General · San Jose, CA",
     "category": "job",
     "date": "2026-03-11T12:29:29-04:00",
+    "tags": [
+      "product",
+      "operations",
+      "junior"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4664176006",
+    "title": "Production Associate (Swing Shift - All Levels) — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-03-17T12:47:12-04:00",
     "tags": [
       "product",
       "operations",
