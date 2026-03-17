@@ -121,17 +121,91 @@ export async function getArticle(
   }
 }
 
+/**
+ * Smart headline ranker — picks the most engaging article for the hero slot.
+ * Scoring factors (highest score wins):
+ *   +40  funding/acquisition (big money stories)
+ *   +35  major company involved (Tesla, NVIDIA, Boston Dynamics, Figure, etc.)
+ *   +25  breaking category
+ *   +20  market category
+ *   +15  deep-dive category
+ *   +15  title contains dollar amounts or large numbers
+ *   +10  explicitly marked featured
+ *   -3   per hour of age (newer wins, but a great story beats a fresh mediocre one)
+ *   -100 older than 48 hours (hard cutoff — never headline stale content)
+ */
 export function getFeaturedArticle(): Article | null {
   const articles = getArticles()
   if (articles.length === 0) return null
-  // Prefer an explicitly featured article published within the last 7 days
-  const recentFeatured = articles.find((a) => {
-    if (!a.featured) return false
-    const ageMs = Date.now() - new Date(a.date).getTime()
-    return ageMs < 7 * 24 * 60 * 60 * 1000
-  })
-  // Fall back to the most recently published article
-  return recentFeatured ?? articles[0]
+
+  const MAJOR_COMPANIES = [
+    'tesla', 'nvidia', 'boston dynamics', 'figure', 'apptronik', '1x',
+    'sanctuary', 'agility', 'unitree', 'ubtech', 'xiaomi', 'amazon',
+    'google', 'deepmind', 'openai', 'physical intelligence', 'skild',
+    'neura', 'fourier', 'samsung', 'hyundai', 'toyota', 'bmw', 'mercedes',
+    'apple', 'meta', 'microsoft', 'renault',
+  ]
+
+  const FUNDING_KEYWORDS = [
+    'raises', 'funding', 'series a', 'series b', 'series c', 'series d',
+    'ipo', 'acquisition', 'acquires', 'valuation', 'investment',
+    'billion', 'million', 'unicorn', 'spac', 'merger',
+  ]
+
+  const now = Date.now()
+  const MAX_AGE_MS = 48 * 60 * 60 * 1000 // 48 hours
+
+  let bestArticle: Article | null = null
+  let bestScore = -Infinity
+
+  for (const article of articles) {
+    const ageMs = now - new Date(article.date).getTime()
+    if (ageMs > MAX_AGE_MS) continue // hard cutoff
+
+    let score = 0
+    const titleLower = article.title.toLowerCase()
+    const excerptLower = (article.excerpt || '').toLowerCase()
+    const combined = `${titleLower} ${excerptLower}`
+    const tagsLower = (article.tags || []).map(t => t.toLowerCase())
+    const companiesLower = (article.companies || []).map(c => c.toLowerCase())
+
+    // Funding/acquisition signals
+    const hasFundingKeyword = FUNDING_KEYWORDS.some(kw => combined.includes(kw))
+    const hasDollarAmount = /\$\d/.test(combined)
+    if (hasFundingKeyword || hasDollarAmount) score += 40
+
+    // Major company involvement
+    const hasMajor = MAJOR_COMPANIES.some(c =>
+      companiesLower.some(ac => ac.includes(c)) || combined.includes(c)
+    )
+    if (hasMajor) score += 35
+
+    // Category bonuses
+    if (article.category === 'breaking') score += 25
+    if (article.category === 'market') score += 20
+    if (article.category === 'deep-dive') score += 15
+
+    // Dollar amounts or big numbers in title (eye-catching)
+    if (/\$[\d.]+[bmk]|\d{3,}m|\d+\s*billion|\d+\s*million/i.test(article.title)) score += 15
+
+    // Explicitly marked featured by the writer
+    if (article.featured) score += 10
+
+    // Partnership/deployment signals
+    if (/deploy|partner|launch|first|record|breakthrough/i.test(titleLower)) score += 10
+
+    // Recency decay: -3 points per hour old
+    const ageHours = ageMs / (60 * 60 * 1000)
+    score -= ageHours * 3
+
+    if (score > bestScore) {
+      bestScore = score
+      bestArticle = article
+    }
+  }
+
+  // If nothing scored within 48h, fall back to most recent article
+  return bestArticle ?? articles[0]
 }
 
 // ---------------------------------------------------------------------------

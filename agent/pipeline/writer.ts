@@ -48,7 +48,7 @@ tags: ["figure-ai", "funding", "series-b"]
 companies: ["Figure AI"]
 robots: ["figure-02"]
 excerpt: "Under 120 char meta description"
-featured: false
+featured: false  # ALWAYS set to false — homepage ranking is automatic
 sources:
   - title: "Source title"
     url: "https://..."
