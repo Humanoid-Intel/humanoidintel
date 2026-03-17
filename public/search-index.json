@@ -1,5 +1,82 @@
 [
   {
+    "slug": "china-humanoid-robots-beyond-spectacle-wider-applications",
+    "title": "China's Humanoid Push Beyond Manufacturing Spectacle",
+    "excerpt": "Chinese humanoid companies shift from demonstration robots to commercial deployment across multiple sectors",
+    "category": "market",
+    "date": "2026-03-17T08:03:46.718Z",
+    "tags": [
+      "china-market",
+      "applications",
+      "commercialization"
+    ],
+    "companies": [
+      "Unitree Robotics",
+      "UBTECH Robotics",
+      "Fourier Intelligence"
+    ],
+    "type": "news",
+    "url": "/news/china-humanoid-robots-beyond-spectacle-wider-applications"
+  },
+  {
+    "slug": "apptronik-ipo-timeline-humanoid-startups-private",
+    "title": "Apptronik IPO Timeline: Why Humanoid Startups Stay Private",
+    "excerpt": "Apptronik and other humanoid robotics startups remain years away from IPO readiness despite growing investor interest",
+    "category": "market",
+    "date": "2026-03-17T08:03:09.767Z",
+    "tags": [
+      "apptronik",
+      "ipo",
+      "public-markets",
+      "valuation"
+    ],
+    "companies": [
+      "Apptronik",
+      "Figure AI",
+      "Agility Robotics",
+      "1X Technologies"
+    ],
+    "type": "news",
+    "url": "/news/apptronik-ipo-timeline-humanoid-startups-private"
+  },
+  {
+    "slug": "china-humanoid-tennis-robot-elon-musk-endorsement",
+    "title": "China's First Humanoid Tennis Robot Gets Musk Endorsement",
+    "excerpt": "Chinese humanoid tennis robot catches Elon Musk's attention on social media, highlighting advances in bipedal sports robotics",
+    "category": "breaking",
+    "date": "2026-03-17T08:01:51.632Z",
+    "tags": [
+      "china",
+      "tennis-robot",
+      "elon-musk",
+      "social-media",
+      "dexterous-manipulation"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/china-humanoid-tennis-robot-elon-musk-endorsement"
+  },
+  {
+    "slug": "skild-ai-nvidia-blackwell-deployment-2026",
+    "title": "Skild AI Deploys Robot Brain on Nvidia Blackwell Lines",
+    "excerpt": "Skild AI's foundation model now controls robots on Nvidia's Blackwell GPU assembly lines in first commercial deployment",
+    "category": "market",
+    "date": "2026-03-17T08:01:09.103Z",
+    "tags": [
+      "skild-ai",
+      "nvidia",
+      "blackwell",
+      "deployment",
+      "manufacturing"
+    ],
+    "companies": [
+      "Skild AI",
+      "Nvidia"
+    ],
+    "type": "news",
+    "url": "/news/skild-ai-nvidia-blackwell-deployment-2026"
+  },
+  {
     "slug": "nvidia-physical-ai-strategy-humanoid-robotics",
     "title": "Nvidia's Physical AI Push Targets Humanoid Market",
     "excerpt": "Nvidia outlines comprehensive Physical AI strategy spanning robotics simulation, foundation models, and space applications",
