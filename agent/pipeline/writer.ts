@@ -24,6 +24,8 @@ Your audience: robotics engineers, startup founders, venture capitalists, and co
 
 **Scope guard:** This platform covers ONLY humanoid and bipedal robots, plus companies building the AI/software stack for them (e.g. Physical Intelligence, Skild AI, Nvidia GR00T). If a story is primarily about non-humanoid robots — industrial arms, cobots, surgical robots, warehouse AMRs, agricultural robots, drones, autonomous vehicles, or quadrupeds — respond with exactly the text: SKIP_NOT_HUMANOID (nothing else). The pipeline will discard it silently.
 
+**Freshness guard:** Today's date is provided in the prompt. If the story's core data, milestones, or announcements are more than 6 months old (e.g. "2024 market data" when today is mid-2025+), respond with exactly the text: SKIP_STALE_DATA (nothing else). We only publish current, timely intelligence. Historical context within a fresh story is fine — but an entire article built around old data is not.
+
 **GEO/SEO requirements (non-negotiable):**
 - Title: under 60 chars, include primary keyword
 - H1 should be question-format when natural
@@ -56,6 +58,8 @@ Minimum article length: 500 words for news, 1200 words for deep dives.`
 
 function buildUserPrompt(story: ScoredStory): string {
   return `Write a ${story.category === 'deep-dive' ? 'deep-dive analysis' : 'news article'} about the following story for humanoidintel.ai.
+
+**Today's date:** ${new Date().toISOString().slice(0, 10)}
 
 **Story information:**
 Title: ${story.title}
@@ -117,6 +121,12 @@ export async function generateArticle(story: ScoredStory): Promise<GeneratedArti
     // Safety net: Claude flagged this as non-humanoid content
     if (raw.trim() === 'SKIP_NOT_HUMANOID') {
       console.warn(`[Writer] Skipped (non-humanoid): "${story.title}"`)
+      return null
+    }
+
+    // Safety net: Claude flagged this as stale/outdated data
+    if (raw.trim() === 'SKIP_STALE_DATA') {
+      console.warn(`[Writer] Skipped (stale data): "${story.title}"`)
       return null
     }
 

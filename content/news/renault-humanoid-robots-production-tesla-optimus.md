@@ -8,7 +8,7 @@ tags: ["renault", "tesla", "optimus", "manufacturing", "deployment"]
 companies: ["Renault", "Tesla"]
 robots: ["optimus"]
 excerpt: "French automaker beats Tesla to factory floor with working humanoid robots handling heavy lifting tasks"
-featured: false
+featured: true
 sources:
   - title: "Forget Tesla's Optimus: Renault's Robot Is Already Doing Backbreaking Work"
     url: "https://news.google.com/rss/articles/CBMihwFBVV95cUxNRm5MVEl0di1KUWlGTW5MWTdoS0tTVWY0VUVVNVJuVXNmdWgwalMxZGNmY3pndGJ4dk00NURGRlZETmlpTnBIWndFdG9URWt2QUt5SEU3dFhFX1Y1ejAyNVNlMHl3bGNmdWgwaW84V3lMakpzcXFjaHpoRjlkUFp2cFpzSEsyc1k?oc=5"

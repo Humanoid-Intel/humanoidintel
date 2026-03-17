@@ -253,29 +253,6 @@
     "url": "/news/north-korea-humanoid-robots-development-report"
   },
   {
-    "slug": "china-humanoid-robot-market-analysis-2024",
-    "title": "China's Humanoid Market Hits $1.4B by 2024",
-    "excerpt": "China's humanoid robotics market reaches $1.4 billion valuation with government backing and 200+ active companies",
-    "category": "market",
-    "date": "2026-03-17T10:03:28.780Z",
-    "tags": [
-      "china",
-      "market-analysis",
-      "ubtech",
-      "xiaomi",
-      "ex-robots"
-    ],
-    "companies": [
-      "UBTECH Robotics",
-      "Xiaomi",
-      "EX Robots",
-      "Unitree Robotics",
-      "Fourier Intelligence"
-    ],
-    "type": "news",
-    "url": "/news/china-humanoid-robot-market-analysis-2024"
-  },
-  {
     "slug": "nvidia-physical-ai-humanoid-robot-deployment-2026",
     "title": "NVIDIA Accelerates Physical AI for Humanoid Robot Deployment",
     "excerpt": "NVIDIA's Physical AI platform reaches production readiness as humanoid manufacturers prepare for commercial deployments",
