@@ -1,5 +1,24 @@
 [
   {
+    "slug": "nvidia-physical-ai-data-factory-blueprint-humanoid-robotics",
+    "title": "NVIDIA Launches Open Physical AI Data Factory for Humanoids",
+    "excerpt": "NVIDIA releases open blueprint for Physical AI data factories to accelerate humanoid robot training and deployment",
+    "category": "breaking",
+    "date": "2026-03-17T01:02:20.959Z",
+    "tags": [
+      "nvidia",
+      "gr00t",
+      "physical-ai",
+      "sim-to-real",
+      "data-factory"
+    ],
+    "companies": [
+      "NVIDIA"
+    ],
+    "type": "news",
+    "url": "/news/nvidia-physical-ai-data-factory-blueprint-humanoid-robotics"
+  },
+  {
     "slug": "ukraine-humanoid-robots-battlefield-test-2026",
     "title": "Ukraine Tests Combat Humanoid Robots in Active Battlefield",
     "excerpt": "First confirmed deployment of humanoid soldiers in active combat zone marks pivotal moment for military robotics",
