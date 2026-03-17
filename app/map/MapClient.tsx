@@ -323,19 +323,6 @@ export default function MapClient({ locations }: Props) {
                   onMouseEnter={(e) => handleDotHover(loc, e)}
                   onMouseLeave={() => setHoveredId(null)}
                 />
-                {/* Unit label for large deployments */}
-                {loc.units >= 1000 && (
-                  <text
-                    x={cx}
-                    y={cy + r + 12}
-                    textAnchor="middle"
-                    fill="var(--text-secondary)"
-                    fontSize={8}
-                    fontFamily="var(--font-data)"
-                  >
-                    {loc.units.toLocaleString()}
-                  </text>
-                )}
               </g>
             )
           })}
