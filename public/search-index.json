@@ -1,5 +1,44 @@
 [
   {
+    "slug": "zhongding-first-production-humanoid-robot-2026",
+    "title": "Zhongding Rolls Out First Production Humanoid Robot",
+    "excerpt": "Chinese automotive supplier Zhongding Group begins commercial humanoid robot production, marking entry into bipedal robotics market",
+    "category": "breaking",
+    "date": "2026-03-17T14:02:15.185Z",
+    "tags": [
+      "zhongding",
+      "production",
+      "manufacturing",
+      "china"
+    ],
+    "companies": [
+      "Zhongding Group"
+    ],
+    "type": "news",
+    "url": "/news/zhongding-first-production-humanoid-robot-2026"
+  },
+  {
+    "slug": "stmicro-leopard-jetson-vision-module-humanoids",
+    "title": "STMicro, Leopard Launch Jetson Vision Module for Humanoids",
+    "excerpt": "New multimodal vision module integrates ST sensors with Nvidia Jetson for simplified humanoid robot perception",
+    "category": "breaking",
+    "date": "2026-03-17T14:01:17.860Z",
+    "tags": [
+      "stmicroelectronics",
+      "leopard-imaging",
+      "nvidia",
+      "vision-systems",
+      "sensors"
+    ],
+    "companies": [
+      "STMicroelectronics",
+      "Leopard Imaging",
+      "Nvidia"
+    ],
+    "type": "news",
+    "url": "/news/stmicro-leopard-jetson-vision-module-humanoids"
+  },
+  {
     "slug": "anolevla-lightweight-vision-language-action-model",
     "title": "AnoleVLA: New Lightweight Model Cuts VLA Parameters by 50%",
     "excerpt": "Researchers introduce AnoleVLA, achieving comparable manipulation performance with 50% fewer parameters than existing models.",
