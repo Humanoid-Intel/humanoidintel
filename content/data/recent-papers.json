@@ -1,0 +1,42 @@
+[
+  {
+    "id": "psi0-2026",
+    "title": "Ψ₀: An Open Foundation Model Towards Universal Humanoid Loco-Manipulation",
+    "institution": "USC / Shanghai AI Lab",
+    "date": "2026-03-12",
+    "category": "VLA Models",
+    "url": "https://arxiv.org/abs/2603.12263"
+  },
+  {
+    "id": "spark-2026",
+    "title": "SPARK: Skeleton-Parameter Aligned Retargeting on Humanoid Robots",
+    "institution": "UC Berkeley",
+    "date": "2026-03-11",
+    "category": "Sim-to-Real",
+    "url": "https://arxiv.org/abs/2603.11480"
+  },
+  {
+    "id": "zerowbc-2026",
+    "title": "ZeroWBC: Learning Natural Visuomotor Humanoid Control from Human Egocentric Video",
+    "institution": "Shanghai AI Lab",
+    "date": "2026-03-10",
+    "category": "VLA Models",
+    "url": "https://arxiv.org/abs/2603.09170"
+  },
+  {
+    "id": "ultra-2026",
+    "title": "ULTRA: Unified Multimodal Control for Autonomous Humanoid Loco-Manipulation",
+    "institution": "UIUC",
+    "date": "2026-03-03",
+    "category": "Locomotion",
+    "url": "https://arxiv.org/abs/2603.03279"
+  },
+  {
+    "id": "humi-2026",
+    "title": "HuMI: Humanoid Whole-Body Manipulation from Robot-Free Demonstrations",
+    "institution": "Peking University / BIGAI",
+    "date": "2026-02-06",
+    "category": "Manipulation",
+    "url": "https://arxiv.org/abs/2602.06643"
+  }
+]

@@ -8,6 +8,7 @@ import { SchemaMarkup } from '@/components/SchemaMarkup'
 import { getArticles, getArticle, getCompanies, getRobots } from '@/lib/content'
 import { generateArticleSchema, generateFAQSchema, generateBreadcrumbSchema } from '@/lib/seo'
 import { NewsletterForm } from '@/components/NewsletterForm'
+import ShareButtons from '@/components/ShareButtons'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -89,6 +90,11 @@ export default async function ArticlePage({ params }: Props) {
   }
 
   const { article, content, faqs } = result
+
+  // Calculate reading time from content (strip HTML tags first)
+  const plainText = content.replace(/<[^>]*>/g, '')
+  const readingTime = Math.ceil(plainText.split(/\s+/).length / 200)
+
   const allArticles = getArticles()
   const allCompanies = getCompanies()
   const allRobots = getRobots()
@@ -208,6 +214,15 @@ export default async function ArticlePage({ params }: Props) {
               </span>
             )}
             <span>By humanoidintel.ai Editorial</span>
+            <span style={{ color: 'var(--text-tertiary)' }}>{readingTime} min read</span>
+          </div>
+
+          {/* Share buttons */}
+          <div style={{ marginBottom: 24 }}>
+            <ShareButtons
+              title={article.title}
+              url={`https://humanoidintel.ai/news/${article.slug}`}
+            />
           </div>
 
           {/* Excerpt / TLDR block */}

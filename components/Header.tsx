@@ -13,7 +13,9 @@ const navLinks = [
   { label: 'Funding', href: '/funding' },
   { label: 'Jobs', href: '/jobs' },
   { label: 'Research', href: '/research' },
+  { label: 'Events', href: '/events' },
   { label: 'Glossary', href: '/glossary' },
+  { label: 'Compare', href: '/compare' },
 ]
 
 export default function Header() {

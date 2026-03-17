@@ -97,77 +97,19 @@ function statusClass(status: string) {
   return ['commercial', 'pilot', 'production'].includes(status) ? 'data-pos' : 'data-neg'
 }
 
-// ── Deployed robots tracker data ─────────────────────────────────────────────
-const DEPLOYED_ROBOTS = [
-  { company: 'Tesla',          robot: 'Optimus Gen 2', units: 8000, type: 'Internal Mfg',    trend: true,  note: 'Giga TX + Shanghai' },
-  { company: 'Unitree',        robot: 'H1 / G1',       units: 3200, type: 'Research / Comm', trend: true,  note: '120+ institutions' },
-  { company: 'Agility',        robot: 'Digit v4',      units: 400,  type: 'Warehouse',        trend: true,  note: 'Amazon fulfillment' },
-  { company: 'UBTECH',         robot: 'Walker X',      units: 600,  type: 'Service',          trend: true,  note: 'Hotels, banks, retail' },
-  { company: 'Kepler',         robot: 'Forerunner',    units: 280,  type: 'Factory',          trend: true,  note: 'Auto / electronics' },
-  { company: 'Tiangong / BHRIC', robot: 'Tiangong',   units: 250,  type: 'State Mfg',        trend: true,  note: 'Beijing SOEs' },
-  { company: 'Figure AI',      robot: 'Figure 02/03', units: 150,  type: 'Factory',          trend: true,  note: 'BMW Spartanburg' },
-  { company: 'Fourier',        robot: 'GR-1 / GR2',   units: 120,  type: 'Research / Care',  trend: true,  note: 'Labs + eldercare' },
-  { company: '1X Technologies',robot: 'NEO Beta',      units: 60,   type: 'Home Trial',       trend: true,  note: 'Early-access households' },
-  { company: 'Sanctuary AI',   robot: 'Phoenix',       units: 25,   type: 'Retail RaaS',      trend: true,  note: 'Canadian Tire' },
-]
+// ── Data loaded from JSON files (agent-updatable) ────────────────────────────
+function loadJSON<T>(filename: string): T {
+  try {
+    const raw = fs.readFileSync(path.join(process.cwd(), 'content/data', filename), 'utf-8')
+    return JSON.parse(raw)
+  } catch {
+    return [] as unknown as T
+  }
+}
 
-// ── Race timeline data ────────────────────────────────────────────────────────
-const RACE_TIMELINE = [
-  { company: 'Tesla',       robot: 'Optimus',     target: '50k units',     date: 'EOY 2026',  color: 'var(--accent-positive)', prog: 95 },
-  { company: 'Unitree',     robot: 'H1/G1',       target: '5k+ units',     date: 'Q2 2026',   color: '#60a5fa', prog: 88 },
-  { company: 'Figure AI',   robot: 'Figure 03',   target: '1,000 units',   date: 'Q3 2026',   color: 'var(--accent-positive)', prog: 72 },
-  { company: 'Apptronik',   robot: 'Apollo',      target: '500 units',     date: 'Q2 2026',   color: '#a78bfa', prog: 70 },
-  { company: 'Kepler',      robot: 'Forerunner',  target: '1,000 units',   date: 'H2 2026',   color: '#f59e0b', prog: 62 },
-  { company: 'NEURA',       robot: '4NE-1 / MAiRA', target: '1,000 units', date: 'H2 2026',   color: '#f59e0b', prog: 58 },
-  { company: 'Galbot',      robot: 'G1',          target: '500 units',     date: 'H2 2026',   color: '#60a5fa', prog: 48 },
-  { company: 'Agility',     robot: 'Digit v5',    target: 'Scale Amazon',  date: '2026',      color: 'var(--accent-positive)', prog: 65 },
-  { company: 'Sunday',      robot: 'Home',        target: 'Consumer launch','date': 'Q1 2027', color: '#f472b6', prog: 35 },
-  { company: 'Boston Dyn.', robot: 'Atlas',       target: 'Commercial beta','date': '2027',   color: '#94a3b8', prog: 25 },
-]
-
-// ── Research papers preview — most recent 5 ───────────────────────────────────
-const RECENT_PAPERS = [
-  {
-    id: 'psi0-2026',
-    title: 'Ψ₀: An Open Foundation Model Towards Universal Humanoid Loco-Manipulation',
-    institution: 'USC / Shanghai AI Lab',
-    date: '2026-03-12',
-    category: 'VLA Models',
-    url: 'https://arxiv.org/abs/2603.12263',
-  },
-  {
-    id: 'spark-2026',
-    title: 'SPARK: Skeleton-Parameter Aligned Retargeting on Humanoid Robots',
-    institution: 'UC Berkeley',
-    date: '2026-03-11',
-    category: 'Sim-to-Real',
-    url: 'https://arxiv.org/abs/2603.11480',
-  },
-  {
-    id: 'zerowbc-2026',
-    title: 'ZeroWBC: Learning Natural Visuomotor Humanoid Control from Human Egocentric Video',
-    institution: 'Shanghai AI Lab',
-    date: '2026-03-10',
-    category: 'VLA Models',
-    url: 'https://arxiv.org/abs/2603.09170',
-  },
-  {
-    id: 'ultra-2026',
-    title: 'ULTRA: Unified Multimodal Control for Autonomous Humanoid Loco-Manipulation',
-    institution: 'UIUC',
-    date: '2026-03-03',
-    category: 'Locomotion',
-    url: 'https://arxiv.org/abs/2603.03279',
-  },
-  {
-    id: 'humi-2026',
-    title: 'HuMI: Humanoid Whole-Body Manipulation from Robot-Free Demonstrations',
-    institution: 'Peking University / BIGAI',
-    date: '2026-02-06',
-    category: 'Manipulation',
-    url: 'https://arxiv.org/abs/2602.06643',
-  },
-]
+type DeployedRobot = { company: string; robot: string; units: number; type: string; trend: boolean; note: string }
+type RaceEntry = { company: string; robot: string; target: string; date: string; color: string; prog: number }
+type PaperEntry = { id: string; title: string; institution: string; date: string; category: string; url: string }
 
 // ── Capital flows — real data from funding-rounds.json ────────────────────────
 function buildCapitalFlowBars(): FlowBar[] {
@@ -423,6 +365,10 @@ export default function HomePage() {
 
   const capitalFlowBars = buildCapitalFlowBars()
   const ytdFunding = get2026YTDFunding()
+
+  const DEPLOYED_ROBOTS = loadJSON<DeployedRobot[]>('deployed-robots.json')
+  const RACE_TIMELINE = loadJSON<RaceEntry[]>('deployment-race.json')
+  const RECENT_PAPERS = loadJSON<PaperEntry[]>('recent-papers.json')
   const totalDeployed = DEPLOYED_ROBOTS.reduce((s, r) => s + r.units, 0)
 
   const allRounds = getFundingRounds()

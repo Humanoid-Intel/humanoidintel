@@ -1,0 +1,12 @@
+[
+  { "company": "Tesla", "robot": "Optimus", "target": "50k units", "date": "EOY 2026", "color": "var(--accent-positive)", "prog": 95 },
+  { "company": "Unitree", "robot": "H1/G1", "target": "5k+ units", "date": "Q2 2026", "color": "#60a5fa", "prog": 88 },
+  { "company": "Figure AI", "robot": "Figure 03", "target": "1,000 units", "date": "Q3 2026", "color": "var(--accent-positive)", "prog": 72 },
+  { "company": "Apptronik", "robot": "Apollo", "target": "500 units", "date": "Q2 2026", "color": "#a78bfa", "prog": 70 },
+  { "company": "Agility", "robot": "Digit v5", "target": "Scale Amazon", "date": "2026", "color": "var(--accent-positive)", "prog": 65 },
+  { "company": "Kepler", "robot": "Forerunner", "target": "1,000 units", "date": "H2 2026", "color": "#f59e0b", "prog": 62 },
+  { "company": "NEURA", "robot": "4NE-1 / MAiRA", "target": "1,000 units", "date": "H2 2026", "color": "#f59e0b", "prog": 58 },
+  { "company": "Galbot", "robot": "G1", "target": "500 units", "date": "H2 2026", "color": "#60a5fa", "prog": 48 },
+  { "company": "Sunday", "robot": "Home", "target": "Consumer launch", "date": "Q1 2027", "color": "#f472b6", "prog": 35 },
+  { "company": "Boston Dyn.", "robot": "Atlas", "target": "Commercial beta", "date": "2027", "color": "#94a3b8", "prog": 25 }
+]

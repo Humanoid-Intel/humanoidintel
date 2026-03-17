@@ -60,6 +60,12 @@ export const metadata: Metadata = {
       'Real-time intelligence, funding data, robot profiles, and market analysis for the humanoid robotics industry.',
     creator: '@humanoidintel',
   },
+  manifest: '/site.webmanifest',
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'black-translucent',
+    title: 'HumanoidIntel',
+  },
   robots: {
     index: true,
     follow: true,

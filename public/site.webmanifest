@@ -1,0 +1,13 @@
+{
+  "name": "humanoidintel.ai",
+  "short_name": "HumanoidIntel",
+  "description": "The Bloomberg Terminal of Humanoid Robotics",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050608",
+  "theme_color": "#050608",
+  "icons": [
+    { "src": "/favicon.ico", "sizes": "48x48", "type": "image/x-icon" }
+  ],
+  "categories": ["news", "business", "technology"]
+}

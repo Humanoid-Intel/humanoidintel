@@ -1,0 +1,90 @@
+[
+  {
+    "id": "ces-2026",
+    "name": "CES 2026",
+    "location": "Las Vegas, NV",
+    "startDate": "2026-01-06",
+    "endDate": "2026-01-09",
+    "category": "trade-show",
+    "relevance": "Major humanoid robot demos from Unitree, UBTECH, Kepler",
+    "url": "https://www.ces.tech",
+    "robotCompanies": ["Unitree", "UBTECH", "Kepler", "Mentee Robotics"]
+  },
+  {
+    "id": "nvidia-gtc-2026",
+    "name": "NVIDIA GTC 2026",
+    "location": "San Jose, CA",
+    "startDate": "2026-03-16",
+    "endDate": "2026-03-19",
+    "category": "ai-conference",
+    "relevance": "GR00T N1 launch, Isaac platform updates, physical AI partnerships",
+    "url": "https://www.nvidia.com/gtc/",
+    "robotCompanies": ["Nvidia", "Figure AI", "Agility Robotics", "Apptronik"]
+  },
+  {
+    "id": "automate-2026",
+    "name": "Automate 2026",
+    "location": "Detroit, MI",
+    "startDate": "2026-05-12",
+    "endDate": "2026-05-15",
+    "category": "trade-show",
+    "relevance": "Largest robotics trade show in North America",
+    "url": "https://www.automateshow.com",
+    "robotCompanies": ["Agility Robotics", "Apptronik", "Boston Dynamics"]
+  },
+  {
+    "id": "icra-2026",
+    "name": "IEEE ICRA 2026",
+    "location": "Atlanta, GA",
+    "startDate": "2026-05-19",
+    "endDate": "2026-05-23",
+    "category": "academic",
+    "relevance": "Top robotics academic conference — VLA, locomotion, manipulation papers",
+    "url": "https://2026.ieee-icra.org",
+    "robotCompanies": []
+  },
+  {
+    "id": "rss-2026",
+    "name": "RSS 2026",
+    "location": "Los Angeles, CA",
+    "startDate": "2026-07-13",
+    "endDate": "2026-07-17",
+    "category": "academic",
+    "relevance": "Robotics: Science and Systems — cutting-edge humanoid research",
+    "url": "https://roboticsconference.org",
+    "robotCompanies": []
+  },
+  {
+    "id": "iros-2026",
+    "name": "IEEE IROS 2026",
+    "location": "Seoul, South Korea",
+    "startDate": "2026-10-18",
+    "endDate": "2026-10-22",
+    "category": "academic",
+    "relevance": "International Conference on Intelligent Robots and Systems",
+    "url": "https://iros2026.org",
+    "robotCompanies": []
+  },
+  {
+    "id": "humanoids-2026",
+    "name": "IEEE Humanoids 2026",
+    "location": "Munich, Germany",
+    "startDate": "2026-11-30",
+    "endDate": "2026-12-02",
+    "category": "academic",
+    "relevance": "The premier conference dedicated to humanoid robotics",
+    "url": "https://humanoids2026.org",
+    "robotCompanies": []
+  },
+  {
+    "id": "corl-2026",
+    "name": "CoRL 2026",
+    "location": "Princeton, NJ",
+    "startDate": "2026-11-09",
+    "endDate": "2026-11-12",
+    "category": "academic",
+    "relevance": "Conference on Robot Learning — foundation models, VLA, sim-to-real",
+    "url": "https://corl2026.org",
+    "robotCompanies": []
+  }
+]
