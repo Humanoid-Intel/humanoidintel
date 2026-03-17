@@ -134,6 +134,20 @@ const PLACEHOLDER_ROBOTS: Robot[] = [
     actuatorType: 'Electric',
     description: 'UBTECH\'s Walker S2 features autonomous battery swapping for 24/7 continuous operation in factory environments.',
   },
+  {
+    slug: 'phantom-mk1',
+    name: 'Phantom MK-1',
+    manufacturer: 'Foundation Robotics',
+    country: 'USA',
+    status: 'commercial',
+    height: '1.78m',
+    weight: '80kg',
+    dof: 30,
+    payload: '20kg',
+    battery: '4hrs',
+    actuatorType: 'Electric',
+    description: 'Defense-focused humanoid capable of operating firearms and tactical equipment. Reportedly deployed on the Ukrainian front lines.',
+  },
 ]
 
 type SortKey = 'name' | 'manufacturer' | 'country' | 'status' | 'payload' | 'dof'

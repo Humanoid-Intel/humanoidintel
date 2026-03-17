@@ -320,5 +320,19 @@
     "description": "Skild AI, founded by CMU robotics professors Deepak Pathak and Abhinav Gupta, is developing a universal robot brain — a single foundation model capable of controlling diverse robot embodiments across manipulation, locomotion, and navigation tasks simultaneously. The company raised $300M in a landmark 2024 round at a $1.5B valuation before shipping a product, reflecting investor conviction in the general-purpose robot intelligence thesis. Skild's approach emphasizes world model pre-training on internet-scale data combined with robot-specific fine-tuning, positioning it as an infrastructure layer for the entire humanoid industry.",
     "website": "https://skild.ai",
     "status": "active"
+  },
+  {
+    "slug": "foundation-robotics",
+    "name": "Foundation Robotics",
+    "founded": 2024,
+    "hq": "San Francisco, CA, USA",
+    "ceo": "",
+    "headcount": "10-30",
+    "totalFunding": "Undisclosed",
+    "latestValuation": "Undisclosed",
+    "products": ["phantom-mk1"],
+    "description": "Foundation Robotics is a San Francisco-based defense robotics company developing the Phantom MK-1, a humanoid robot designed for military and tactical operations. The Phantom MK-1 is capable of operating firearms including pistols, shotguns, and M16 rifles. As of March 2026, two units are reportedly deployed on the Ukrainian front lines, marking one of the first known active-duty deployments of humanoid robots in a combat zone. Featured in TIME's 'Rise of the AI Soldiers' coverage.",
+    "website": "",
+    "status": "active"
   }
 ]

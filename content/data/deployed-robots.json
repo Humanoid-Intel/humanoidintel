@@ -8,5 +8,6 @@
   { "company": "Figure AI", "robot": "Figure 02/03", "units": 150, "type": "Factory", "trend": true, "note": "BMW Spartanburg" },
   { "company": "Fourier", "robot": "GR-1 / GR2", "units": 120, "type": "Research / Care", "trend": true, "note": "Labs + eldercare" },
   { "company": "1X Technologies", "robot": "NEO Beta", "units": 60, "type": "Home Trial", "trend": true, "note": "Early-access households" },
-  { "company": "Sanctuary AI", "robot": "Phoenix", "units": 25, "type": "Retail RaaS", "trend": true, "note": "Canadian Tire" }
+  { "company": "Sanctuary AI", "robot": "Phoenix", "units": 25, "type": "Retail RaaS", "trend": true, "note": "Canadian Tire" },
+  { "company": "Foundation Robotics", "robot": "Phantom MK-1", "units": 2, "type": "Defense", "trend": true, "note": "Ukrainian front lines" }
 ]

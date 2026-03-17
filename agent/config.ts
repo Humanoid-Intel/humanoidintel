@@ -148,6 +148,7 @@ export const config = {
     'dyna-robotics': 'Dyna Robotics',
     'persona-ai': 'Persona AI',
     mobileye: 'Mobileye',
+    'foundation-robotics': 'Foundation Robotics',
     // China
     unitree: 'Unitree Robotics',
     agibot: 'Agibot',
