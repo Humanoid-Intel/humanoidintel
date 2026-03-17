@@ -1,5 +1,25 @@
 [
   {
+    "slug": "infineon-nvidia-humanoid-digital-twins-collaboration",
+    "title": "Infineon-Nvidia Partnership Targets Humanoid Digital Twins",
+    "excerpt": "Chip giants expand August 2025 partnership to combine motor control hardware with AI simulation platforms for humanoids",
+    "category": "breaking",
+    "date": "2026-03-17T16:46:22.473Z",
+    "tags": [
+      "infineon",
+      "nvidia",
+      "digital-twins",
+      "partnerships",
+      "sim-to-real"
+    ],
+    "companies": [
+      "Infineon Technologies",
+      "Nvidia"
+    ],
+    "type": "news",
+    "url": "/news/infineon-nvidia-humanoid-digital-twins-collaboration"
+  },
+  {
     "slug": "zhongding-first-production-humanoid-robot-2026",
     "title": "Zhongding Rolls Out First Production Humanoid Robot",
     "excerpt": "Chinese automotive supplier Zhongding Group begins commercial humanoid robot production, marking entry into bipedal robotics market",
@@ -4505,21 +4525,6 @@
     ],
     "companies": [
       "Physical Intelligence"
-    ],
-    "type": "job",
-    "url": "/jobs"
-  },
-  {
-    "slug": "greenhouse-nimblerobotics-4132252009",
-    "title": "Client Success Manager — Nimble Robotics",
-    "excerpt": "General · Haslet, TX",
-    "category": "job",
-    "date": "2026-03-14T15:56:07-04:00",
-    "tags": [
-      "product"
-    ],
-    "companies": [
-      "Nimble Robotics"
     ],
     "type": "job",
     "url": "/jobs"
