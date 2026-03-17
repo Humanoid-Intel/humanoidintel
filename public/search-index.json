@@ -1,5 +1,233 @@
 [
   {
+    "slug": "halo-framework-heavy-payload-humanoid-sim-to-real",
+    "title": "HALO Framework Tackles Heavy Payload Challenge",
+    "excerpt": "New differentiable simulation framework addresses 40kg payload challenges in humanoid robot training",
+    "category": "research",
+    "date": "2026-03-17T04:12:29.269Z",
+    "tags": [
+      "sim-to-real",
+      "payload-adaptation",
+      "mujoco",
+      "reinforcement-learning"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/halo-framework-heavy-payload-humanoid-sim-to-real"
+  },
+  {
+    "slug": "remap-dp-3d-vision-diffusion-policy-humanoid-robots",
+    "title": "ReMAP-DP: New 3D Vision Method for Humanoid Manipulation",
+    "excerpt": "Researchers propose ReMAP-DP to solve 3D spatial reasoning in robot manipulation using reprojected multi-view point maps",
+    "category": "research",
+    "date": "2026-03-17T04:11:17.332Z",
+    "tags": [
+      "3d-vision",
+      "diffusion-policy",
+      "manipulation",
+      "sim-to-real"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/remap-dp-3d-vision-diffusion-policy-humanoid-robots"
+  },
+  {
+    "slug": "13-dof-pneumatic-humanoid-torso-data-driven-control",
+    "title": "13-DOF Pneumatic Humanoid Torso Tests Data-Driven Control",
+    "excerpt": "Researchers develop 13-DOF pneumatic upper-body humanoid to test motion reproducibility for human-robot interaction applications.",
+    "category": "research",
+    "date": "2026-03-17T04:10:45.301Z",
+    "tags": [
+      "pneumatic-actuators",
+      "dof",
+      "data-driven-control",
+      "upper-body-humanoid"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/13-dof-pneumatic-humanoid-torso-data-driven-control"
+  },
+  {
+    "slug": "cyboracket-humanoid-tennis-framework",
+    "title": "Humanoids Learn Tennis: CyboRacket Framework Hits 85% Success",
+    "excerpt": "New framework enables humanoid robots to play racket sports with 85% ball interception rate using onboard perception",
+    "category": "research",
+    "date": "2026-03-17T04:10:01.903Z",
+    "tags": [
+      "perception-action",
+      "whole-body-control",
+      "dynamic-interaction",
+      "tennis",
+      "ball-tracking"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/cyboracket-humanoid-tennis-framework"
+  },
+  {
+    "slug": "tacfilm-tactile-fusion-vision-language-action-models",
+    "title": "TacFiLM Adds Touch to Vision-Language-Action Models",
+    "excerpt": "New lightweight fusion approach integrates tactile feedback into VLA models for better contact-rich manipulation tasks.",
+    "category": "research",
+    "date": "2026-03-17T04:09:24.936Z",
+    "tags": [
+      "tactile-sensing",
+      "vla-models",
+      "multimodal-fusion",
+      "dexterous-manipulation"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/tacfilm-tactile-fusion-vision-language-action-models"
+  },
+  {
+    "slug": "oxygen-kv-cache-vla-inference-optimization",
+    "title": "OxyGen KV Cache Cuts VLA Inference Costs 3x",
+    "excerpt": "New unified cache system reduces Vision-Language-Action model inference overhead by up to 3x for multi-task robotics",
+    "category": "research",
+    "date": "2026-03-17T04:08:47.012Z",
+    "tags": [
+      "vla",
+      "inference-optimization",
+      "embodied-ai",
+      "kv-cache"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/oxygen-kv-cache-vla-inference-optimization"
+  },
+  {
+    "slug": "load-aware-locomotion-control-humanoid-robots-industrial",
+    "title": "Load-Aware Locomotion Breakthrough for Industrial Humanoids",
+    "excerpt": "New arXiv research tackles dynamic coupling challenges in humanoid load-carrying with decoupled loco-manipulation framework",
+    "category": "research",
+    "date": "2026-03-17T04:07:27.689Z",
+    "tags": [
+      "locomotion",
+      "industrial-robotics",
+      "whole-body-control",
+      "research"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/load-aware-locomotion-control-humanoid-robots-industrial"
+  },
+  {
+    "slug": "stiffness-copilot-impedance-policy-teleoperation",
+    "title": "New AI Copilot Adjusts Robot Stiffness in Real-Time",
+    "excerpt": "Vision-based policy automatically adjusts robot impedance during contact-rich teleoperation tasks",
+    "category": "research",
+    "date": "2026-03-17T04:06:44.679Z",
+    "tags": [
+      "teleoperation",
+      "impedance-control",
+      "shared-autonomy",
+      "dexterous-manipulation"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/stiffness-copilot-impedance-policy-teleoperation"
+  },
+  {
+    "slug": "smoothvla-vision-language-action-physical-constraints",
+    "title": "SmoothVLA: New Method Tackles Jittery Robot Actions",
+    "excerpt": "Researchers propose SmoothVLA to solve the stability-exploration tradeoff in vision-language-action models for robotics.",
+    "category": "research",
+    "date": "2026-03-17T04:06:06.178Z",
+    "tags": [
+      "vla",
+      "vision-language-action",
+      "smoothness",
+      "physical-constraints",
+      "reinforcement-learning"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/smoothvla-vision-language-action-physical-constraints"
+  },
+  {
+    "slug": "transdex-transparent-object-manipulation-research",
+    "title": "TransDex Tackles Transparent Object Manipulation Challenge",
+    "excerpt": "New pre-training approach combines vision and touch to solve transparent object manipulation in humanoid hands",
+    "category": "research",
+    "date": "2026-03-17T04:05:30.349Z",
+    "tags": [
+      "dexterous-manipulation",
+      "visuo-tactile",
+      "transparent-objects",
+      "point-cloud",
+      "transformer"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/transdex-transparent-object-manipulation-research"
+  },
+  {
+    "slug": "ldhp-library-driven-hierarchical-planning-dexterous-manipulation",
+    "title": "New Planning Method Tackles Thin Object Manipulation",
+    "excerpt": "LDHP framework combines library-driven planning with hierarchical control for handling thin, ungraspable objects",
+    "category": "research",
+    "date": "2026-03-17T04:04:53.409Z",
+    "tags": [
+      "dexterous-manipulation",
+      "non-prehensile",
+      "planning",
+      "research"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/ldhp-library-driven-hierarchical-planning-dexterous-manipulation"
+  },
+  {
+    "slug": "st-vla-4d-vision-language-action-framework-robot-manipulation",
+    "title": "ST-VLA: New 4D Vision Framework Tackles Robot Depth Blindness",
+    "excerpt": "ST-VLA framework addresses critical depth perception gaps in current robot manipulation systems with unified 3D-4D representation",
+    "category": "research",
+    "date": "2026-03-17T04:03:37.512Z",
+    "tags": [
+      "vision-language-action",
+      "vla",
+      "manipulation",
+      "3d-perception",
+      "arxiv"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/st-vla-4d-vision-language-action-framework-robot-manipulation"
+  },
+  {
+    "slug": "refine-dp-diffusion-policy-fine-tuning-humanoid-loco-manipulation",
+    "title": "REFINE-DP: New Method Bridges Diffusion Policies and RL",
+    "excerpt": "Researchers solve the sim-to-real gap for humanoid diffusion policies using RL fine-tuning approach.",
+    "category": "research",
+    "date": "2026-03-17T04:03:00.154Z",
+    "tags": [
+      "diffusion-policy",
+      "reinforcement-learning",
+      "loco-manipulation",
+      "whole-body-control"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/refine-dp-diffusion-policy-fine-tuning-humanoid-loco-manipulation"
+  },
+  {
+    "slug": "sample-efficient-robot-policy-evaluation-framework",
+    "title": "New Framework Cuts Robot Policy Testing by 60%",
+    "excerpt": "Researchers propose framework reducing hardware rollouts needed for reliable robot policy comparison from hundreds to dozens",
+    "category": "research",
+    "date": "2026-03-17T04:02:23.967Z",
+    "tags": [
+      "evaluation",
+      "policy-comparison",
+      "sample-efficiency",
+      "statistical-methods"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/sample-efficient-robot-policy-evaluation-framework"
+  },
+  {
     "slug": "chinese-humanoid-robot-tennis-breakthrough",
     "title": "Chinese Humanoid Robot Masters Tennis Serves and Volleys",
     "excerpt": "Chinese researchers demonstrate humanoid robot capable of tennis gameplay, marking major advance in whole-body control",
