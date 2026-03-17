@@ -2,6 +2,9 @@ import type { Metadata } from 'next'
 import fs from 'fs'
 import path from 'path'
 import Link from 'next/link'
+import Header from '@/components/Header'
+import TickerTape from '@/components/TickerTape'
+import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
   title: 'Events & Conferences — humanoidintel.ai',
@@ -91,6 +94,9 @@ export default function EventsPage() {
   const pastEvents = events.filter((e) => getEventStatus(e.startDate, e.endDate) === 'past')
 
   return (
+    <>
+    <Header />
+    <TickerTape />
     <main style={{ maxWidth: 900, margin: '0 auto', padding: '0 16px' }}>
       {/* Page header */}
       <div
@@ -170,6 +176,8 @@ export default function EventsPage() {
         </section>
       )}
     </main>
+    <Footer />
+    </>
   )
 }
 
