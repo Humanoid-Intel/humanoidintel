@@ -139,19 +139,18 @@ export async function generateArticle(story: ScoredStory): Promise<GeneratedArti
 
     const slug = extractSlug(fmMatch[1])
 
-    // Inject authoritative timestamps — never trust Claude's date guess
-    // date = NOW (agent publication time) so articles always sort to top of feed
-    // updated = also now; source article's original date is referenced in the article body
-    const nowIso = new Date().toISOString()
-    const updatedIso = nowIso
+    // Use source article's publication date for accuracy
+    // updated = agent write time (when we processed it)
+    const sourceDate = story.publishedAt.toISOString()
+    const updatedIso = new Date().toISOString()
     let frontmatter = fmMatch[1]
     frontmatter = frontmatter.replace(
       /^date:\s*["']?[^"'\n]+["']?/m,
-      `date: "${nowIso}"`,
+      `date: "${sourceDate}"`,
     )
     frontmatter = frontmatter.replace(
       /^updated:\s*["']?[^"'\n]+["']?/m,
-      `updated: "${nowIso}"`,
+      `updated: "${updatedIso}"`,
     )
     const fixedRaw = `---\n${frontmatter}\n---\n${fmMatch[2].trim()}`
 
