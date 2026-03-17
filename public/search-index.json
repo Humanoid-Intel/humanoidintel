@@ -1,5 +1,163 @@
 [
   {
+    "slug": "nvidia-physical-ai-strategy-humanoid-robotics",
+    "title": "Nvidia's Physical AI Push Targets Humanoid Market",
+    "excerpt": "Nvidia outlines comprehensive Physical AI strategy spanning robotics simulation, foundation models, and space applications",
+    "category": "market",
+    "date": "2026-03-17T07:25:25.431Z",
+    "tags": [
+      "nvidia",
+      "physical-ai",
+      "gr00t",
+      "isaac-sim"
+    ],
+    "companies": [
+      "Nvidia"
+    ],
+    "type": "news",
+    "url": "/news/nvidia-physical-ai-strategy-humanoid-robotics"
+  },
+  {
+    "slug": "humanoid-military-robots-ukraine-combat-testing",
+    "title": "Humanoid Military Robots Tested in Ukraine Combat Zones",
+    "excerpt": "First confirmed battlefield testing of humanoid robots marks major shift in military AI deployment strategies.",
+    "category": "breaking",
+    "date": "2026-03-17T07:24:51.763Z",
+    "tags": [
+      "military-robotics",
+      "ukraine",
+      "combat-testing",
+      "defense"
+    ],
+    "companies": [
+      "Unknown Defense Contractor"
+    ],
+    "type": "news",
+    "url": "/news/humanoid-military-robots-ukraine-combat-testing"
+  },
+  {
+    "slug": "north-korea-humanoid-robot-russian-embassy-photo",
+    "title": "North Korea Shows Humanoid Robot in Russian Embassy Photo",
+    "excerpt": "Unidentified humanoid robot spotted in diplomatic photo raises questions about DPRK robotics capabilities",
+    "category": "breaking",
+    "date": "2026-03-17T07:23:34.175Z",
+    "tags": [
+      "north-korea",
+      "geopolitics",
+      "humanoid-robots",
+      "russia"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/north-korea-humanoid-robot-russian-embassy-photo"
+  },
+  {
+    "slug": "ukraine-first-humanoid-robot-soldiers-combat",
+    "title": "Ukraine Deploys First Combat Humanoid Robots",
+    "excerpt": "Ukrainian forces deploy world's first humanoid robot soldiers in active combat operations along front lines.",
+    "category": "breaking",
+    "date": "2026-03-17T07:23:02.747Z",
+    "tags": [
+      "military-robotics",
+      "ukraine-conflict",
+      "combat-applications"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/ukraine-first-humanoid-robot-soldiers-combat"
+  },
+  {
+    "slug": "skild-ai-expands-generalized-robot-intelligence-platform",
+    "title": "Skild AI Expands Robot Intelligence Platform",
+    "excerpt": "Skild AI broadens its generalized robot intelligence platform across multiple industries beyond humanoids",
+    "category": "breaking",
+    "date": "2026-03-17T07:22:25.465Z",
+    "tags": [
+      "skild-ai",
+      "foundation-models",
+      "robotics-ai",
+      "expansion"
+    ],
+    "companies": [
+      "Skild AI"
+    ],
+    "type": "news",
+    "url": "/news/skild-ai-expands-generalized-robot-intelligence-platform"
+  },
+  {
+    "slug": "tesla-optimus-learning-by-watching-human-demonstrations",
+    "title": "Tesla Optimus Learns Tasks by Watching Human Demos",
+    "excerpt": "Tesla's humanoid robot now learns complex tasks through human demonstration videos, marking a shift toward behavioral cloning.",
+    "category": "breaking",
+    "date": "2026-03-17T07:21:49.571Z",
+    "tags": [
+      "tesla",
+      "optimus",
+      "imitation-learning",
+      "neural-networks"
+    ],
+    "companies": [
+      "Tesla"
+    ],
+    "type": "news",
+    "url": "/news/tesla-optimus-learning-by-watching-human-demonstrations"
+  },
+  {
+    "slug": "stmicroelectronics-nvidia-humanoid-robotics-partnership",
+    "title": "STMicro Partners with Nvidia on Humanoid Robot Chips",
+    "excerpt": "STMicro targets humanoid robotics market with Nvidia collaboration on specialized semiconductor solutions",
+    "category": "market",
+    "date": "2026-03-17T07:21:12.045Z",
+    "tags": [
+      "stmicroelectronics",
+      "nvidia",
+      "semiconductors",
+      "edge-computing"
+    ],
+    "companies": [
+      "STMicroelectronics",
+      "Nvidia"
+    ],
+    "type": "news",
+    "url": "/news/stmicroelectronics-nvidia-humanoid-robotics-partnership"
+  },
+  {
+    "slug": "china-tennis-humanoid-robot-elon-musk",
+    "title": "China's Tennis Humanoid Robot Gains Elon Musk's Attention",
+    "excerpt": "Chinese researchers unveil autonomous humanoid tennis robot that caught Tesla CEO's social media attention",
+    "category": "breaking",
+    "date": "2026-03-17T07:20:22.144Z",
+    "tags": [
+      "china",
+      "tennis",
+      "autonomous",
+      "elon-musk"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/china-tennis-humanoid-robot-elon-musk"
+  },
+  {
+    "slug": "skild-ai-nvidia-blackwell-assembly-deployment",
+    "title": "Skild AI Deploys Robot Brain on Nvidia Blackwell Lines",
+    "excerpt": "Skild AI's foundation model now controls assembly robots on Nvidia's Blackwell GPU production lines",
+    "category": "breaking",
+    "date": "2026-03-17T07:03:22.507Z",
+    "tags": [
+      "skild-ai",
+      "nvidia",
+      "blackwell",
+      "deployment",
+      "manufacturing"
+    ],
+    "companies": [
+      "Skild AI",
+      "Nvidia"
+    ],
+    "type": "news",
+    "url": "/news/skild-ai-nvidia-blackwell-assembly-deployment"
+  },
+  {
     "slug": "unitree-g1-snow-cold-weather-testing",
     "title": "Unitree G1 Conquers Snow in -20°C Field Test",
     "excerpt": "Unitree's G1 humanoid demonstrates outdoor mobility in deep snow and -20°C temperatures",
@@ -38,24 +196,6 @@
     ],
     "type": "news",
     "url": "/news/skild-ai-partners-abb-universal-robots-nvidia-generalized-intelligence"
-  },
-  {
-    "slug": "nvidia-european-chipmaker-partnerships-humanoid-robots",
-    "title": "Nvidia Partners European Chipmakers for Humanoid Push",
-    "excerpt": "Nvidia expands humanoid robotics reach through strategic European semiconductor partnerships targeting compute infrastructure",
-    "category": "breaking",
-    "date": "2026-03-17T06:00:53.439Z",
-    "tags": [
-      "nvidia",
-      "partnerships",
-      "european-chipmakers",
-      "gr00t"
-    ],
-    "companies": [
-      "Nvidia"
-    ],
-    "type": "news",
-    "url": "/news/nvidia-european-chipmaker-partnerships-humanoid-robots"
   },
   {
     "slug": "skild-ai-nvidia-oem-partnerships-humanoid-robotics",
@@ -127,24 +267,6 @@
     "companies": [],
     "type": "news",
     "url": "/news/china-robot-training-schools-humanoids-factory-logistics"
-  },
-  {
-    "slug": "ubtech-strategic-alliance-humanoid-production",
-    "title": "Ubtech Forms Strategic Alliance to Scale Humanoid Production",
-    "excerpt": "Chinese humanoid leader Ubtech announces manufacturing partnership to accelerate production capabilities",
-    "category": "market",
-    "date": "2026-03-17T05:00:52.946Z",
-    "tags": [
-      "ubtech",
-      "strategic-alliance",
-      "manufacturing",
-      "scaling"
-    ],
-    "companies": [
-      "Ubtech Robotics"
-    ],
-    "type": "news",
-    "url": "/news/ubtech-strategic-alliance-humanoid-production"
   },
   {
     "slug": "halo-framework-heavy-payload-humanoid-sim-to-real",
@@ -391,24 +513,6 @@
     "url": "/news/chinese-humanoid-robot-tennis-breakthrough"
   },
   {
-    "slug": "nvidia-eu-chipmaker-partnerships-humanoids",
-    "title": "Nvidia Partners with EU Chipmakers for Humanoid Push",
-    "excerpt": "Nvidia expands humanoid robotics ecosystem through strategic partnerships with European semiconductor manufacturers",
-    "category": "breaking",
-    "date": "2026-03-17T03:02:09.081Z",
-    "tags": [
-      "nvidia",
-      "partnerships",
-      "europe",
-      "semiconductors"
-    ],
-    "companies": [
-      "Nvidia"
-    ],
-    "type": "news",
-    "url": "/news/nvidia-eu-chipmaker-partnerships-humanoids"
-  },
-  {
     "slug": "vla-models-dynamic-dataset-domino-research",
     "title": "VLA Models Get Dynamic Dataset to Bridge Sim-to-Real Gap",
     "excerpt": "New DOMINO dataset addresses critical VLA limitation in dynamic environments with moving targets",
@@ -561,28 +665,6 @@
     ],
     "type": "news",
     "url": "/news/agility-robotics-rebrands-factory-labor-shortage"
-  },
-  {
-    "slug": "skild-ai-abb-universal-robots-partnership-industrial-expansion",
-    "title": "Skild AI Partners with ABB, Universal Robots for Industrial Rollout",
-    "excerpt": "Skild AI expands its generalized robot intelligence platform to industrial automation through partnerships with ABB and UR",
-    "category": "market",
-    "date": "2026-03-17T02:04:41.695Z",
-    "tags": [
-      "skild-ai",
-      "abb-robotics",
-      "universal-robots",
-      "nvidia",
-      "industrial-automation"
-    ],
-    "companies": [
-      "Skild AI",
-      "ABB Robotics",
-      "Universal Robots",
-      "NVIDIA"
-    ],
-    "type": "news",
-    "url": "/news/skild-ai-abb-universal-robots-partnership-industrial-expansion"
   },
   {
     "slug": "humanoid-robots-touch-sensing-safety-standards-deployment-limits",
@@ -833,22 +915,6 @@
     "url": "/news/daifuku-humanoid-robots-logistics-2029"
   },
   {
-    "slug": "first-humanoid-robot-arrest-china-public-safety",
-    "title": "First Humanoid Robot Arrest Sparks Public Safety Debate",
-    "excerpt": "Chinese police detain humanoid robot after incident with elderly woman raises questions about deployment protocols",
-    "category": "breaking",
-    "date": "2026-03-17T00:00:49.056Z",
-    "tags": [
-      "china",
-      "public-safety",
-      "humanoid-robots",
-      "regulation"
-    ],
-    "companies": [],
-    "type": "news",
-    "url": "/news/first-humanoid-robot-arrest-china-public-safety"
-  },
-  {
     "slug": "china-humanoid-robot-arrested-elderly-woman-incident",
     "title": "Chinese Humanoid Robot 'Arrested' After Scaring Elderly Woman",
     "excerpt": "First reported 'arrest' of humanoid robot highlights deployment challenges in public spaces",
@@ -863,22 +929,6 @@
     "companies": [],
     "type": "news",
     "url": "/news/china-humanoid-robot-arrested-elderly-woman-incident"
-  },
-  {
-    "slug": "humanoid-robot-tennis-demo-dexterous-manipulation",
-    "title": "Humanoid Robot Tennis Demo Shows Dexterous Progress",
-    "excerpt": "New tennis-playing humanoid demonstrates advanced hand-eye coordination and whole-body control capabilities",
-    "category": "breaking",
-    "date": "2026-03-16T23:06:07.954Z",
-    "tags": [
-      "dexterous-manipulation",
-      "whole-body-control",
-      "tennis",
-      "demo"
-    ],
-    "companies": [],
-    "type": "news",
-    "url": "/news/humanoid-robot-tennis-demo-dexterous-manipulation"
   },
   {
     "slug": "physical-intelligence-market-growth-2035",
@@ -899,22 +949,6 @@
     "url": "/news/physical-intelligence-market-growth-2035"
   },
   {
-    "slug": "china-humanoid-robot-training-schools",
-    "title": "China Launches Humanoid Robot Training Schools",
-    "excerpt": "China establishes dedicated training facilities for humanoid robot operation as industry workforce demands surge",
-    "category": "market",
-    "date": "2026-03-16T23:04:16.951Z",
-    "tags": [
-      "china",
-      "education",
-      "workforce",
-      "training"
-    ],
-    "companies": [],
-    "type": "news",
-    "url": "/news/china-humanoid-robot-training-schools"
-  },
-  {
     "slug": "nvidia-isaac-cosmos-physical-ai-frameworks-humanoid-robots",
     "title": "Nvidia Isaac, Cosmos: New AI Frameworks for Humanoids",
     "excerpt": "Nvidia launches Isaac and Cosmos frameworks to accelerate physical AI development for humanoid robotics applications",
@@ -932,24 +966,6 @@
     ],
     "type": "news",
     "url": "/news/nvidia-isaac-cosmos-physical-ai-frameworks-humanoid-robots"
-  },
-  {
-    "slug": "chinese-humanoid-robot-tennis-rally-breakthrough",
-    "title": "Chinese Humanoid Robot Masters Tennis Rally Skills",
-    "excerpt": "Chinese researchers demonstrate humanoid robot capable of sustained tennis rallies with humans using advanced motor control.",
-    "category": "research",
-    "date": "2026-03-16T23:02:18.077Z",
-    "tags": [
-      "china",
-      "sports-robotics",
-      "dexterous-manipulation",
-      "whole-body-control"
-    ],
-    "companies": [
-      "Chinese research institution"
-    ],
-    "type": "news",
-    "url": "/news/chinese-humanoid-robot-tennis-rally-breakthrough"
   },
   {
     "slug": "pc-partner-nvidia-gtc-2026-physical-ai",
@@ -1006,25 +1022,6 @@
     ],
     "type": "news",
     "url": "/news/nxp-nvidia-humanoid-robotics-partnership-edge-computing"
-  },
-  {
-    "slug": "nvidia-european-chipmakers-humanoid-robot-hardware-partnership",
-    "title": "Nvidia Partners with European Chipmakers for Humanoid Hardware",
-    "excerpt": "Nvidia expands humanoid robotics reach through strategic European semiconductor partnerships",
-    "category": "breaking",
-    "date": "2026-03-16T22:02:21.506Z",
-    "tags": [
-      "nvidia",
-      "europe",
-      "chipmakers",
-      "hardware",
-      "partnerships"
-    ],
-    "companies": [
-      "Nvidia"
-    ],
-    "type": "news",
-    "url": "/news/nvidia-european-chipmakers-humanoid-robot-hardware-partnership"
   },
   {
     "slug": "neura-robotics-qualcomm-partnership-physical-ai",
@@ -1125,27 +1122,6 @@
     "url": "/news/nvidia-gr00t-platform-expands-global-reach"
   },
   {
-    "slug": "skild-ai-foxconn-nvidia-server-partnership",
-    "title": "Skild AI Partners Foxconn for Nvidia Server Deployment",
-    "excerpt": "Skild AI's foundation model will run on Foxconn's Nvidia server infrastructure in major deployment deal",
-    "category": "breaking",
-    "date": "2026-03-16T21:03:27.884Z",
-    "tags": [
-      "skild-ai",
-      "foxconn",
-      "nvidia",
-      "partnership",
-      "deployment"
-    ],
-    "companies": [
-      "Skild AI",
-      "Foxconn",
-      "Nvidia"
-    ],
-    "type": "news",
-    "url": "/news/skild-ai-foxconn-nvidia-server-partnership"
-  },
-  {
     "slug": "intel-realsense-autonomous-humanoid-navigation-gtc-2026",
     "title": "Intel RealSense Demos Autonomous Humanoid Navigation at GTC",
     "excerpt": "Intel's RealSense division showcased breakthrough autonomous navigation tech for humanoids at GTC 2026",
@@ -1164,46 +1140,6 @@
     ],
     "type": "news",
     "url": "/news/intel-realsense-autonomous-humanoid-navigation-gtc-2026"
-  },
-  {
-    "slug": "nvidia-european-chipmakers-humanoid-partnerships",
-    "title": "Nvidia Partners with European Chipmakers on Humanoid AI",
-    "excerpt": "Nvidia expands humanoid robotics reach through strategic European semiconductor partnerships",
-    "category": "breaking",
-    "date": "2026-03-16T21:01:39.719Z",
-    "tags": [
-      "nvidia",
-      "partnerships",
-      "european-chipmakers",
-      "gr00t",
-      "jetson"
-    ],
-    "companies": [
-      "Nvidia"
-    ],
-    "type": "news",
-    "url": "/news/nvidia-european-chipmakers-humanoid-partnerships"
-  },
-  {
-    "slug": "realsense-autonomous-humanoid-navigation-gtc-2026",
-    "title": "RealSense Debuts Autonomous Humanoid Navigation at GTC",
-    "excerpt": "RealSense demonstrates breakthrough perception software enabling safe humanoid robot navigation in complex environments",
-    "category": "breaking",
-    "date": "2026-03-16T21:01:00.620Z",
-    "tags": [
-      "realsense",
-      "navigation",
-      "gtc",
-      "autonomous",
-      "perception"
-    ],
-    "companies": [
-      "RealSense",
-      "Intel",
-      "NVIDIA"
-    ],
-    "type": "news",
-    "url": "/news/realsense-autonomous-humanoid-navigation-gtc-2026"
   },
   {
     "slug": "memories-ai-visual-memory-humanoid-robotics",
@@ -1262,44 +1198,6 @@
     "url": "/news/nvidia-european-chipmaker-humanoid-partnerships"
   },
   {
-    "slug": "realsense-humanoid-navigation-nvidia-gtc-2026",
-    "title": "RealSense Demos Humanoid Navigation at GTC 2026",
-    "excerpt": "RealSense showcases autonomous navigation system for humanoid robots at NVIDIA GTC, targeting human-robot safety applications.",
-    "category": "breaking",
-    "date": "2026-03-16T20:45:47.572Z",
-    "tags": [
-      "realsense",
-      "nvidia-gtc",
-      "navigation",
-      "vision-ai"
-    ],
-    "companies": [
-      "RealSense",
-      "NVIDIA"
-    ],
-    "type": "news",
-    "url": "/news/realsense-humanoid-navigation-nvidia-gtc-2026"
-  },
-  {
-    "slug": "nvidia-european-chipmakers-humanoid-robot-partnership",
-    "title": "Nvidia Partners with European Chipmakers for Humanoid Robots",
-    "excerpt": "Nvidia expands humanoid robotics reach through strategic European semiconductor partnerships",
-    "category": "market",
-    "date": "2026-03-16T20:45:07.630Z",
-    "tags": [
-      "nvidia",
-      "partnership",
-      "european-chipmakers",
-      "jetson",
-      "gr00t"
-    ],
-    "companies": [
-      "Nvidia"
-    ],
-    "type": "news",
-    "url": "/news/nvidia-european-chipmakers-humanoid-robot-partnership"
-  },
-  {
     "slug": "hyundai-atlas-humanoid-vs-tesla-optimus-robot-competition",
     "title": "Hyundai's Atlas Humanoid Faces Off Against Tesla Optimus",
     "excerpt": "Hyundai's Atlas humanoid robot emerges as Tesla Optimus's primary competitor in the commercial robotics race",
@@ -1319,26 +1217,6 @@
     ],
     "type": "news",
     "url": "/news/hyundai-atlas-humanoid-vs-tesla-optimus-robot-competition"
-  },
-  {
-    "slug": "skild-ai-nvidia-blackwell-assembly-deployment",
-    "title": "Skild AI Deploys Robot Brain on Nvidia Blackwell Lines",
-    "excerpt": "Skild AI's foundation model now controls robots on Nvidia's Blackwell GPU assembly lines in first major industrial deployment",
-    "category": "breaking",
-    "date": "2026-03-16T20:43:09.422Z",
-    "tags": [
-      "skild-ai",
-      "nvidia",
-      "blackwell",
-      "deployment",
-      "manufacturing"
-    ],
-    "companies": [
-      "Skild AI",
-      "Nvidia"
-    ],
-    "type": "news",
-    "url": "/news/skild-ai-nvidia-blackwell-assembly-deployment"
   },
   {
     "slug": "nvidia-gtc-2026-humanoid-robotics-expectations",
@@ -1376,23 +1254,6 @@
     ],
     "type": "news",
     "url": "/news/persona-ai-commercial-strategy-chief-industrial-humanoid"
-  },
-  {
-    "slug": "persona-ai-industrial-humanoid-strategy",
-    "title": "Persona AI Targets Industrial Markets for Humanoid Robots",
-    "excerpt": "AI company shifts focus to industrial applications as humanoid market matures beyond consumer use cases",
-    "category": "breaking",
-    "date": "2026-03-16T20:06:04.000Z",
-    "tags": [
-      "persona-ai",
-      "industrial",
-      "commercial-strategy"
-    ],
-    "companies": [
-      "Persona AI"
-    ],
-    "type": "news",
-    "url": "/news/persona-ai-industrial-humanoid-strategy"
   },
   {
     "slug": "physical-intelligence-market-growth-2030",
@@ -1433,25 +1294,6 @@
     "url": "/news/reply-digital-twins-physical-ai-nvidia-gtc-2026"
   },
   {
-    "slug": "ti-nvidia-humanoid-crowd-safety-partnership",
-    "title": "TI-NVIDIA Partnership Targets Crowd Safety for Humanoids",
-    "excerpt": "TI and NVIDIA collaborate on enhanced perception systems for humanoid robots operating in crowded environments",
-    "category": "breaking",
-    "date": "2026-03-16T20:06:04.000Z",
-    "tags": [
-      "nvidia",
-      "texas-instruments",
-      "crowd-safety",
-      "perception"
-    ],
-    "companies": [
-      "NVIDIA",
-      "Texas Instruments"
-    ],
-    "type": "news",
-    "url": "/news/ti-nvidia-humanoid-crowd-safety-partnership"
-  },
-  {
     "slug": "ti-nvidia-humanoid-robot-safety-partnership",
     "title": "TI and NVIDIA Partner on Humanoid Robot Safety Standards",
     "excerpt": "TI and NVIDIA announce joint initiative to develop safety standards for humanoid robots entering commercial deployment",
@@ -1470,25 +1312,6 @@
     ],
     "type": "news",
     "url": "/news/ti-nvidia-humanoid-robot-safety-partnership"
-  },
-  {
-    "slug": "ti-nvidia-humanoid-robot-semiconductor-partnership",
-    "title": "TI, Nvidia Partner on Humanoid Robot Chips",
-    "excerpt": "Texas Instruments and Nvidia announce semiconductor collaboration targeting humanoid robotics market requirements.",
-    "category": "breaking",
-    "date": "2026-03-16T20:06:04.000Z",
-    "tags": [
-      "nvidia",
-      "texas-instruments",
-      "semiconductors",
-      "partnership"
-    ],
-    "companies": [
-      "Nvidia",
-      "Texas Instruments"
-    ],
-    "type": "news",
-    "url": "/news/ti-nvidia-humanoid-robot-semiconductor-partnership"
   },
   {
     "slug": "renault-2027-humanoid-robot-factory-deployment",
