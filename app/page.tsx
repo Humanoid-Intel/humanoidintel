@@ -5,10 +5,48 @@ import Header from '@/components/Header'
 import TickerTape from '@/components/TickerTape'
 import Footer from '@/components/Footer'
 import { NewsletterForm } from '@/components/NewsletterForm'
+import { SchemaMarkup } from '@/components/SchemaMarkup'
 import { getArticles, getFeaturedArticle, getRobots, getFundingRounds } from '@/lib/content'
+import { generateFAQSchema } from '@/lib/seo'
 import type { Article, Robot } from '@/lib/types'
 import CapitalFlowChart from '@/components/CapitalFlowChart'
 import type { FlowBar } from '@/components/CapitalFlowChart'
+
+// ── Homepage FAQ — SEO/GEO signals for AI answer engines ────────────────────
+const HOME_FAQS = [
+  {
+    q: 'What is humanoidintel.ai?',
+    a: 'humanoidintel.ai is the leading intelligence platform for the humanoid robotics industry — a Bloomberg Terminal-style dashboard covering funding rounds, robot specifications, market data, research papers, and breaking news across every major humanoid and bipedal robot company globally. It is updated hourly by an autonomous AI agent.',
+  },
+  {
+    q: 'Which humanoid robot companies does humanoidintel.ai track?',
+    a: 'humanoidintel.ai tracks all major humanoid robot manufacturers and AI brain companies including Figure AI, Tesla Optimus, Agility Robotics, Boston Dynamics Atlas, Unitree, Apptronik, Sanctuary AI, 1X Technologies, NEURA Robotics, Fourier Intelligence, Agibot, Kepler, UBTech, Galbot, Physical Intelligence, Skild AI, and dozens more across the US, China, Europe, and South Korea.',
+  },
+  {
+    q: 'Which humanoid robots are commercially available in 2026?',
+    a: 'As of 2026, commercially available or pilot-deployed humanoid robots include Tesla Optimus Gen 2 (8,000+ units in internal manufacturing), Unitree H1/G1 (3,200+ units in research and commercial use), Agility Robotics Digit v4 (400+ units in Amazon warehouses), Figure AI Figure 02/03 (deployed at BMW), and UBTECH Walker X (600+ units in service roles). Most others are in late-stage development or limited pilot programs.',
+  },
+  {
+    q: 'How much has been invested in humanoid robotics?',
+    a: 'The humanoid robotics sector has attracted over $10 billion in venture and strategic investment through early 2026. Major rounds include Physical Intelligence ($600M Series B), Skild AI ($1.4B Series C), Figure AI ($675M Series B), and Agility Robotics ($150M from Amazon). 2026 year-to-date sector funding already exceeds $3.6 billion.',
+  },
+  {
+    q: 'What is physical AI?',
+    a: 'Physical AI refers to artificial intelligence systems that operate in and interact with the physical world — as opposed to purely digital AI. In the context of humanoid robotics, physical AI encompasses vision-language-action (VLA) models, foundation models for robot control, sim-to-real transfer techniques, and whole-body locomotion and manipulation systems. Companies like Physical Intelligence, Skild AI, and Nvidia GR00T are building foundational physical AI platforms.',
+  },
+  {
+    q: 'What is a VLA model in robotics?',
+    a: 'A Vision-Language-Action (VLA) model is a type of AI foundation model that processes visual input (camera feeds), understands natural language instructions, and outputs robot control actions. VLA models allow robots to be instructed in plain language and generalize to new tasks without reprogramming. Leading VLA models include Nvidia GR00T N1, Physical Intelligence π0, Skild AI\'s generalist robot brain, and Google DeepMind\'s RT-2.',
+  },
+  {
+    q: 'How often is data on humanoidintel.ai updated?',
+    a: 'humanoidintel.ai\'s news feed is updated hourly by an autonomous AI agent that scans hundreds of RSS feeds and news sources. The robot database, funding tracker, and company directory are updated regularly as new data becomes available. The site deploys automatically to Cloudflare\'s global edge network on every update.',
+  },
+  {
+    q: 'What is the difference between a humanoid robot and other types of robots?',
+    a: 'Humanoid robots have a bipedal, human-like form — two legs, two arms, and typically a head — designed to operate in human environments and use tools made for humans. This distinguishes them from industrial robotic arms (fixed, single-limb), quadruped robots (four-legged like Boston Dynamics Spot), autonomous mobile robots (AMRs, which move on wheels), and surgical robots. humanoidintel.ai covers only humanoid and bipedal robots, plus the AI software stack powering them.',
+  },
+]
 
 // ── helpers ────────────────────────────────────────────────────────────────
 
@@ -391,12 +429,16 @@ export default function HomePage() {
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
     .slice(0, 5)
 
+  const homeFaqSchema = generateFAQSchema(HOME_FAQS)
+
   return (
     <>
+      <SchemaMarkup schema={homeFaqSchema} />
       <style>{`
         .hero-panel:hover { background-color: var(--bg-hover) !important; }
         .news-row:hover { background-color: var(--bg-hover); }
         .robot-row:hover { background-color: var(--bg-hover); }
+        .faq-item:hover { background-color: var(--bg-hover); }
       `}</style>
 
       <Header />
@@ -1044,6 +1086,68 @@ export default function HomePage() {
               Weekly intelligence. No spam.
             </p>
           </div>
+        </div>
+      </div>
+
+      {/* ── FAQ section — full width, SEO/GEO signal ──────────────────────── */}
+      <div
+        style={{
+          borderTop: '1px solid var(--border-subtle)',
+          padding: '40px 24px 48px',
+          maxWidth: 1200,
+          margin: '0 auto',
+        }}
+      >
+        <div style={{ display: 'flex', alignItems: 'baseline', gap: 12, marginBottom: 28 }}>
+          <span className="panel-title">Frequently Asked Questions</span>
+          <span className="font-data" style={{ fontSize: 11, color: 'var(--text-tertiary)' }}>
+            // humanoid robotics intelligence
+          </span>
+        </div>
+
+        <div
+          style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(520px, 1fr))',
+            gap: 0,
+          }}
+        >
+          {HOME_FAQS.map((faq, i) => (
+            <div
+              key={i}
+              className="faq-item"
+              style={{
+                padding: '18px 20px',
+                borderBottom: '1px solid var(--border-subtle)',
+                borderRight: i % 2 === 0 ? '1px solid var(--border-subtle)' : 'none',
+                transition: 'background-color 0.1s',
+              }}
+            >
+              <div
+                className="font-head"
+                style={{
+                  fontSize: 13,
+                  fontWeight: 600,
+                  color: 'var(--text-primary)',
+                  marginBottom: 8,
+                  lineHeight: 1.4,
+                }}
+              >
+                <span style={{ color: 'var(--accent-positive)', marginRight: 8, fontSize: 10 }}>▶</span>
+                {faq.q}
+              </div>
+              <div
+                style={{
+                  fontSize: 13,
+                  color: 'var(--text-secondary)',
+                  lineHeight: 1.65,
+                  paddingLeft: 18,
+                }}
+              >
+                {faq.a}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
 
