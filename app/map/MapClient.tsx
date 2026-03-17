@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useMemo } from 'react'
+import { WORLD_PATH } from './world-path'
 
 interface DeploymentLocation {
   id: string
@@ -40,66 +41,34 @@ function getCompanyColor(company: string): string {
   return COMPANY_COLORS[company] || '#94a3b8'
 }
 
-/* ── Coordinate conversion (simplified Mercator) ──────────────────── */
+/* ── Coordinate conversion (Natural Earth projection) ─────────────── */
 const SVG_W = 960
 const SVG_H = 500
 
-function lngToX(lng: number): number {
-  return (lng + 180) / 360 * SVG_W
-}
+// Natural Earth 1 projection parameters (matches world-path.ts generation)
+const PROJ_SCALE = 177.61251101371795
+const PROJ_TX = 480
+const PROJ_TY = 246.12341387337463
 
-function latToY(lat: number): number {
-  // Mercator projection
-  const latRad = (lat * Math.PI) / 180
-  const mercN = Math.log(Math.tan(Math.PI / 4 + latRad / 2))
-  const maxMerc = Math.log(Math.tan(Math.PI / 4 + (85 * Math.PI / 180) / 2))
-  return SVG_H / 2 - (mercN / maxMerc) * (SVG_H / 2)
+// Natural Earth 1 polynomial coefficients
+const A0 = 0.8707, A1 = 0, A2 = -0.151386, A3 = 0, A4 = -0.0218474, A5 = 0.0025734, A6 = -0.0013508
+const B0 = 1.007226, B1 = 0.015085, B2 = -0.044475, B3 = 0.028874, B4 = -0.005916, B5 = 0, B6 = 0
+
+function projectNE(lng: number, lat: number): [number, number] {
+  const lam = (lng * Math.PI) / 180
+  const phi = (lat * Math.PI) / 180
+  const phi2 = phi * phi
+  const phi4 = phi2 * phi2
+  const phi6 = phi2 * phi4
+  const x = lam * (A0 + phi2 * (A2 + phi2 * (A4 + phi6 * A6)))
+  const y = phi * (B0 + phi2 * (B1 + phi2 * (B2 + phi2 * (B3 + phi2 * B4))))
+  return [x * PROJ_SCALE + PROJ_TX, -y * PROJ_SCALE + PROJ_TY]
 }
 
 function circleRadius(units: number): number {
   // Log scale, min 4, max 18
   return Math.max(4, Math.min(18, 3 + Math.log(units + 1) * 1.8))
 }
-
-/* ── Realistic world continent SVG paths (Natural Earth inspired) ── */
-const CONTINENT_PATHS = [
-  // North America (mainland)
-  'M 40,68 L 42,58 50,48 65,38 80,30 100,25 115,22 130,20 148,22 160,28 170,35 178,40 185,48 192,55 200,58 210,62 218,68 225,72 232,78 238,85 242,92 245,100 247,108 248,115 246,122 242,128 238,132 235,138 230,145 225,152 222,158 218,162 210,168 205,172 198,178 192,182 185,188 178,192 170,196 162,198 155,200 148,195 142,190 135,186 128,182 120,180 112,178 105,175 98,170 90,165 82,158 75,150 68,142 62,135 58,128 55,120 50,112 45,102 42,92 40,82 Z',
-  // Central America
-  'M 155,200 L 162,198 168,202 175,208 180,212 185,218 188,222 190,228 188,232 185,235 180,237 175,236 170,232 165,228 162,222 158,215 155,208 Z',
-  // South America
-  'M 185,235 L 192,232 200,230 208,232 215,238 222,245 228,255 232,265 235,278 236,290 235,305 232,318 228,332 222,345 215,358 208,368 200,378 192,385 185,390 178,388 172,382 168,375 165,365 162,352 160,338 158,322 157,308 158,292 160,278 162,265 165,255 170,245 175,240 Z',
-  // Greenland
-  'M 200,18 L 210,12 225,8 240,10 250,15 255,22 252,30 245,36 235,40 225,38 215,34 208,28 205,22 Z',
-  // Europe
-  'M 430,48 L 438,42 445,38 455,35 465,34 475,36 482,40 488,45 492,50 498,48 505,45 512,48 518,52 522,58 525,65 528,72 530,80 528,88 524,95 518,100 512,105 505,108 498,112 490,115 482,118 475,120 468,118 460,115 455,112 450,108 445,102 440,95 436,88 433,80 430,72 428,62 Z',
-  // British Isles
-  'M 435,52 L 440,48 445,46 448,50 446,55 442,58 438,56 Z',
-  // Scandinavia
-  'M 472,22 L 478,18 485,16 492,18 498,22 502,28 505,35 502,42 498,46 492,44 488,40 485,35 480,30 475,26 Z',
-  // Africa
-  'M 445,128 L 455,125 465,122 475,122 485,125 495,128 505,132 512,138 518,148 522,158 525,170 528,182 530,195 530,210 528,225 525,240 520,255 515,268 508,280 500,290 492,298 482,305 472,308 462,308 452,305 442,298 435,290 430,280 428,268 426,255 425,240 426,225 428,210 430,195 432,180 435,165 438,150 440,138 Z',
-  // Madagascar
-  'M 538,275 L 542,270 546,272 548,280 546,288 542,292 538,288 536,282 Z',
-  // Asia (Russia + Central/East Asia)
-  'M 530,18 L 545,15 565,12 585,10 605,10 625,12 645,15 665,14 685,15 705,18 725,22 745,25 760,22 775,18 790,16 805,18 818,22 828,28 835,35 838,42 835,50 828,55 818,58 808,62 798,68 788,72 780,78 772,82 765,88 758,92 750,95 742,100 735,105 728,108 718,112 708,115 698,118 688,120 678,118 668,115 658,112 648,108 638,105 628,102 618,98 608,95 598,92 588,88 578,85 568,82 558,78 548,72 540,65 535,58 532,50 530,42 528,32 Z',
-  // India
-  'M 638,110 L 648,108 658,112 668,118 672,128 675,138 678,148 680,158 678,168 675,178 670,188 662,195 652,200 645,198 638,192 632,185 628,175 625,165 622,155 620,145 622,135 625,125 630,118 Z',
-  // SE Asia peninsula
-  'M 698,118 L 708,120 715,128 720,138 722,148 720,158 718,168 715,178 710,185 705,188 700,185 698,175 696,165 695,155 695,145 696,135 698,128 Z',
-  // Middle East / Arabian Peninsula
-  'M 530,105 L 540,100 550,98 560,100 568,105 575,112 580,120 582,128 578,135 572,140 565,142 558,140 550,138 545,135 540,130 535,122 530,115 Z',
-  // Japan
-  'M 818,58 L 822,52 828,50 832,54 835,60 838,68 836,76 832,82 826,85 822,80 818,74 816,68 Z',
-  // Indonesia / Philippines
-  'M 722,178 L 730,175 738,178 745,182 752,180 758,178 762,182 768,188 775,192 780,198 776,205 770,208 762,210 755,208 748,205 740,202 732,200 726,195 722,188 Z',
-  // Australia
-  'M 762,272 L 778,265 795,260 812,258 828,262 840,268 848,278 852,290 850,302 845,312 838,322 828,330 815,335 800,338 785,336 772,330 762,320 755,310 752,298 754,285 Z',
-  // New Zealand
-  'M 865,328 L 870,322 875,320 878,325 880,332 878,340 874,345 870,342 866,336 Z',
-  // Taiwan / small islands
-  'M 802,115 L 806,112 810,115 808,122 804,125 800,122 Z',
-]
 
 export default function MapClient({ locations }: Props) {
   const [hoveredId, setHoveredId] = useState<string | null>(null)
@@ -298,21 +267,18 @@ export default function MapClient({ locations }: Props) {
             />
           ))}
 
-          {/* Continents */}
-          {CONTINENT_PATHS.map((d, i) => (
-            <path
-              key={i}
-              d={d}
-              fill="var(--bg-surface)"
-              stroke="var(--border-strong)"
-              strokeWidth={0.8}
-            />
-          ))}
+          {/* World land mass (Natural Earth 110m) */}
+          <path
+            d={WORLD_PATH}
+            fill="var(--bg-surface)"
+            stroke="var(--border-strong)"
+            strokeWidth={0.4}
+            strokeLinejoin="round"
+          />
 
           {/* Deployment dots */}
           {locations.map((loc) => {
-            const cx = lngToX(loc.lng)
-            const cy = latToY(loc.lat)
+            const [cx, cy] = projectNE(loc.lng, loc.lat)
             const r = circleRadius(loc.units)
             const color = getCompanyColor(loc.company)
             const isHovered = hoveredId === loc.id
