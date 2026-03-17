@@ -153,12 +153,12 @@ export default function JobsClient({ jobs }: Props) {
       minHeight: '100vh',
       backgroundColor: 'var(--background)',
       color: 'var(--text-primary)',
-      fontFamily: 'var(--font-mono)',
     } as React.CSSProperties,
 
     container: {
       maxWidth: 1280,
       margin: '0 auto',
+      fontFamily: 'var(--font-mono)',
       padding: '0 24px 80px',
     } as React.CSSProperties,
 
