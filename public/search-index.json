@@ -1,5 +1,43 @@
 [
   {
+    "slug": "panasonic-cto-energy-density-humanoid-robot-batteries",
+    "title": "Panasonic CTO: Energy Density Key for Humanoid Batteries",
+    "excerpt": "Panasonic's CTO identifies energy density as the critical bottleneck for practical humanoid robot deployment",
+    "category": "breaking",
+    "date": "2026-03-17T11:03:49.253Z",
+    "tags": [
+      "panasonic",
+      "batteries",
+      "energy-density",
+      "power-systems"
+    ],
+    "companies": [
+      "Panasonic"
+    ],
+    "type": "news",
+    "url": "/news/panasonic-cto-energy-density-humanoid-robot-batteries"
+  },
+  {
+    "slug": "nvidia-skild-ai-chip-factory-robots-partnership",
+    "title": "Nvidia Partners with Skild AI for Chip Factory Robots",
+    "excerpt": "Nvidia teams with Skild AI to deploy general-purpose robot intelligence in semiconductor manufacturing facilities",
+    "category": "breaking",
+    "date": "2026-03-17T11:01:05.195Z",
+    "tags": [
+      "nvidia",
+      "skild-ai",
+      "manufacturing",
+      "partnership",
+      "semiconductor"
+    ],
+    "companies": [
+      "Nvidia",
+      "Skild AI"
+    ],
+    "type": "news",
+    "url": "/news/nvidia-skild-ai-chip-factory-robots-partnership"
+  },
+  {
     "slug": "tesla-digital-optimus-ai4-hardware-deployment",
     "title": "Tesla's Digital Optimus Now Runs on AI4 Fleet",
     "excerpt": "Musk confirms Digital Optimus neural networks now operate across Tesla's AI4-equipped vehicle fleet",
