@@ -1,5 +1,75 @@
 [
   {
+    "slug": "ukraine-humanoid-robots-battlefield-test-2026",
+    "title": "Ukraine Tests Combat Humanoid Robots in Active Battlefield",
+    "excerpt": "First confirmed deployment of humanoid soldiers in active combat zone marks pivotal moment for military robotics",
+    "category": "breaking",
+    "date": "2026-03-17T00:04:13.100Z",
+    "tags": [
+      "military",
+      "ukraine",
+      "battlefield-testing",
+      "combat-robots"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/ukraine-humanoid-robots-battlefield-test-2026"
+  },
+  {
+    "slug": "nvidia-physical-ai-humanoid-robotics-training",
+    "title": "Nvidia's Physical AI Push Targets Humanoid Training",
+    "excerpt": "Nvidia advances Physical AI platform for humanoid robot training with enhanced simulation and real-world transfer capabilities",
+    "category": "breaking",
+    "date": "2026-03-17T00:02:48.409Z",
+    "tags": [
+      "nvidia",
+      "physical-ai",
+      "gr00t",
+      "simulation",
+      "training"
+    ],
+    "companies": [
+      "Nvidia"
+    ],
+    "type": "news",
+    "url": "/news/nvidia-physical-ai-humanoid-robotics-training"
+  },
+  {
+    "slug": "daifuku-humanoid-robots-logistics-2029",
+    "title": "Daifuku Plans Humanoid Robot Deployment in Logistics by 2029",
+    "excerpt": "Japanese logistics giant Daifuku targets humanoid robot integration within three years for warehouse operations",
+    "category": "market",
+    "date": "2026-03-17T00:01:26.467Z",
+    "tags": [
+      "daifuku",
+      "logistics",
+      "warehouse-automation",
+      "japan",
+      "deployment"
+    ],
+    "companies": [
+      "Daifuku"
+    ],
+    "type": "news",
+    "url": "/news/daifuku-humanoid-robots-logistics-2029"
+  },
+  {
+    "slug": "first-humanoid-robot-arrest-china-public-safety",
+    "title": "First Humanoid Robot Arrest Sparks Public Safety Debate",
+    "excerpt": "Chinese police detain humanoid robot after incident with elderly woman raises questions about deployment protocols",
+    "category": "breaking",
+    "date": "2026-03-17T00:00:49.056Z",
+    "tags": [
+      "china",
+      "public-safety",
+      "humanoid-robots",
+      "regulation"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/first-humanoid-robot-arrest-china-public-safety"
+  },
+  {
     "slug": "china-humanoid-robot-arrested-elderly-woman-incident",
     "title": "Chinese Humanoid Robot 'Arrested' After Scaring Elderly Woman",
     "excerpt": "First reported 'arrest' of humanoid robot highlights deployment challenges in public spaces",
