@@ -533,5 +533,41 @@
       { "date": "2025-06", "event": "Phantom MK-1 prototype demonstrated" },
       { "date": "2026-03", "event": "Deployed to Ukrainian front lines; TIME 'Rise of the AI Soldiers' feature" }
     ]
+  },
+  {
+    "slug": "kaist-humanoid-v07",
+    "name": "KAIST Humanoid v0.7",
+    "manufacturer": "KAIST DRCD Lab",
+    "country": "South Korea",
+    "status": "r&d",
+    "height": "1.50m",
+    "weight": "45kg",
+    "dof": 24,
+    "payload": "10kg",
+    "battery": "2 hrs",
+    "actuatorType": "Electric (in-house)",
+    "description": "KAIST Humanoid v0.7 is a research platform developed by the Dynamic Robot Control & Design (DRCD) Lab at the Korea Advanced Institute of Science and Technology (KAIST). Notable for using fully in-house designed actuators rather than off-the-shelf components, giving the lab end-to-end control over the robot's dynamic performance. Demonstrated performing athletic bipedal locomotion on outdoor terrain including grass fields.",
+    "deploymentNotes": "Research platform — no commercial deployment. Active in sports robotics and dynamic locomotion research.",
+    "milestones": [
+      { "date": "2026-03", "event": "Outdoor athletic locomotion demo shared publicly" }
+    ]
+  },
+  {
+    "slug": "noble-humanoid",
+    "name": "Noble Humanoid",
+    "manufacturer": "Noble Machines",
+    "country": "USA",
+    "status": "prototype",
+    "height": "1.75m",
+    "weight": "70kg",
+    "dof": 32,
+    "payload": "15kg",
+    "battery": "3 hrs",
+    "actuatorType": "Electric",
+    "description": "Noble Machines is building a warehouse-focused humanoid robot designed for logistics and fulfillment tasks. The robot features a rugged industrial design optimized for picking, placing, and navigating racking environments. Positively received by robotics researchers at in-person demos in early 2026.",
+    "deploymentNotes": "Prototype stage — demonstrated at industry events. Targeting warehouse logistics applications.",
+    "milestones": [
+      { "date": "2026-03", "event": "In-person demos at GTC 2026; positive reception from robotics community" }
+    ]
   }
 ]

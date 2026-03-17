@@ -149,6 +149,7 @@ export const config = {
     'persona-ai': 'Persona AI',
     mobileye: 'Mobileye',
     'foundation-robotics': 'Foundation Robotics',
+    'noble-machines': 'Noble Machines',
     // China
     unitree: 'Unitree Robotics',
     agibot: 'Agibot',

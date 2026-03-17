@@ -334,5 +334,33 @@
     "description": "Foundation Robotics is a San Francisco-based defense robotics company developing the Phantom MK-1, a humanoid robot designed for military and tactical operations. The Phantom MK-1 is capable of operating firearms including pistols, shotguns, and M16 rifles. As of March 2026, two units are reportedly deployed on the Ukrainian front lines, marking one of the first known active-duty deployments of humanoid robots in a combat zone. Featured in TIME's 'Rise of the AI Soldiers' coverage.",
     "website": "",
     "status": "active"
+  },
+  {
+    "slug": "kaist-drcd",
+    "name": "KAIST DRCD Lab",
+    "founded": 2020,
+    "hq": "Daejeon, South Korea",
+    "ceo": "",
+    "headcount": "10-20",
+    "totalFunding": "University/government funded",
+    "latestValuation": "N/A (academic)",
+    "products": ["kaist-humanoid-v07"],
+    "description": "The Dynamic Robot Control & Design (DRCD) Lab at KAIST (Korea Advanced Institute of Science and Technology) develops humanoid robots with in-house designed actuators. Their Humanoid v0.7 platform demonstrates athletic bipedal locomotion on outdoor terrain. As an academic lab, DRCD represents South Korea's growing investment in humanoid robotics research alongside commercial players like Samsung and Hyundai.",
+    "website": "https://www.kaist.ac.kr",
+    "status": "active"
+  },
+  {
+    "slug": "noble-machines",
+    "name": "Noble Machines",
+    "founded": 2024,
+    "hq": "USA",
+    "ceo": "",
+    "headcount": "10-30",
+    "totalFunding": "Undisclosed",
+    "latestValuation": "Undisclosed",
+    "products": ["noble-humanoid"],
+    "description": "Noble Machines is building a warehouse-focused humanoid robot designed for logistics and fulfillment environments. Their humanoid features a rugged industrial design optimized for picking, placing, and navigating racking systems. Positively received at GTC 2026 demos by robotics researchers including Chris Paxton.",
+    "website": "",
+    "status": "active"
   }
 ]
