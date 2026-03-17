@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation'
 import { useState, useEffect } from 'react'
 import SearchModal from './SearchModal'
 
-const navLinks = [
+const primaryLinks = [
   { label: 'Terminal', href: '/' },
   { label: 'Newsfeed', href: '/news' },
   { label: 'Robot DB', href: '/robots' },
@@ -13,15 +13,24 @@ const navLinks = [
   { label: 'Funding', href: '/funding' },
   { label: 'Jobs', href: '/jobs' },
   { label: 'Research', href: '/research' },
-  { label: 'Events', href: '/events' },
-  { label: 'Glossary', href: '/glossary' },
-  { label: 'Compare', href: '/compare' },
+  { label: '\u2605 Watchlist', href: '/watchlist' },
 ]
+
+const moreLinks = [
+  { label: 'Supply Chain', href: '/supply-chain' },
+  { label: 'Events', href: '/events' },
+  { label: 'Compare', href: '/compare' },
+  { label: 'Glossary', href: '/glossary' },
+  { label: 'Map', href: '/map' },
+]
+
+const navLinks = [...primaryLinks, ...moreLinks]
 
 export default function Header() {
   const pathname = usePathname()
   const [mobileOpen, setMobileOpen] = useState(false)
   const [searchOpen, setSearchOpen] = useState(false)
+  const [moreOpen, setMoreOpen] = useState(false)
 
   // ⌘K / Ctrl+K to open search
   useEffect(() => {
@@ -81,7 +90,7 @@ export default function Header() {
 
         {/* Center: Nav — desktop */}
         <nav className="hidden md:flex items-center gap-6">
-          {navLinks.map((link) => (
+          {primaryLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
@@ -108,6 +117,87 @@ export default function Header() {
               {link.label}
             </Link>
           ))}
+
+          {/* More dropdown */}
+          <div
+            style={{ position: 'relative' }}
+            onMouseEnter={() => setMoreOpen(true)}
+            onMouseLeave={() => setMoreOpen(false)}
+          >
+            <button
+              type="button"
+              style={{
+                fontSize: 12,
+                fontWeight: 500,
+                color: moreLinks.some((l) => isActive(l.href))
+                  ? 'var(--text-primary)'
+                  : 'var(--text-secondary)',
+                background: 'none',
+                border: 'none',
+                cursor: 'pointer',
+                padding: 0,
+                transition: 'color 0.15s',
+              }}
+              onMouseEnter={(e) => {
+                ;(e.currentTarget as HTMLButtonElement).style.color =
+                  'var(--text-primary)'
+              }}
+              onMouseLeave={(e) => {
+                ;(e.currentTarget as HTMLButtonElement).style.color =
+                  moreLinks.some((l) => isActive(l.href))
+                    ? 'var(--text-primary)'
+                    : 'var(--text-secondary)'
+              }}
+            >
+              More ▾
+            </button>
+            {moreOpen && (
+              <div
+                style={{
+                  position: 'absolute',
+                  top: '100%',
+                  left: 0,
+                  marginTop: 8,
+                  backgroundColor: 'var(--bg-panel)',
+                  border: '1px solid var(--border-strong)',
+                  minWidth: 150,
+                  zIndex: 100,
+                  display: 'flex',
+                  flexDirection: 'column',
+                }}
+              >
+                {moreLinks.map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    style={{
+                      fontSize: 12,
+                      fontWeight: 500,
+                      padding: '8px 14px',
+                      color: isActive(link.href)
+                        ? 'var(--text-primary)'
+                        : 'var(--text-secondary)',
+                      transition: 'background-color 0.1s, color 0.1s',
+                    }}
+                    onMouseEnter={(e) => {
+                      const el = e.currentTarget as HTMLAnchorElement
+                      el.style.color = 'var(--text-primary)'
+                      el.style.backgroundColor = 'var(--bg-hover)'
+                    }}
+                    onMouseLeave={(e) => {
+                      const el = e.currentTarget as HTMLAnchorElement
+                      el.style.color = isActive(link.href)
+                        ? 'var(--text-primary)'
+                        : 'var(--text-secondary)'
+                      el.style.backgroundColor = 'transparent'
+                    }}
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
         </nav>
 
         {/* Right: X link + Search + Hamburger */}

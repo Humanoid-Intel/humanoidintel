@@ -14,6 +14,44 @@ const CONTENT_ROOT = path.resolve(__dirname, '../../content')
 const NEWS_DIR = path.join(CONTENT_ROOT, 'news')
 const DRAFTS_DIR = path.join(CONTENT_ROOT, 'drafts')
 
+const SLUG_STOP_WORDS = new Set([
+  'the', 'a', 'an', 'in', 'on', 'at', 'for', 'to', 'of', 'and', 'with', 'from', 'by',
+])
+
+/** Normalize a slug into a word set for Jaccard comparison */
+function slugToWordSet(slug: string): Set<string> {
+  return new Set(
+    slug
+      .toLowerCase()
+      .split(/[^a-z0-9]+/)
+      .filter((w) => w.length > 0 && !SLUG_STOP_WORDS.has(w)),
+  )
+}
+
+/** Jaccard similarity between two slug word sets */
+function slugSimilarity(a: string, b: string): number {
+  const setA = slugToWordSet(a)
+  const setB = slugToWordSet(b)
+  const intersection = new Set([...setA].filter((w) => setB.has(w)))
+  const union = new Set([...setA, ...setB])
+  return union.size === 0 ? 0 : intersection.size / union.size
+}
+
+/** Check if a similar slug already exists in the target directory (Jaccard > 0.5) */
+function hasSimilarSlug(slug: string, dir: string): string | null {
+  try {
+    if (!fs.existsSync(dir)) return null
+    const existingFiles = fs.readdirSync(dir).filter((f) => f.endsWith('.md'))
+    for (const file of existingFiles) {
+      const existingSlug = file.replace(/\.md$/, '')
+      if (slugSimilarity(slug, existingSlug) > 0.5) {
+        return existingSlug
+      }
+    }
+  } catch {}
+  return null
+}
+
 function ensureDirs() {
   ;[NEWS_DIR, DRAFTS_DIR].forEach((dir) => {
     if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true })
@@ -77,9 +115,19 @@ export async function publishArticles(articles: GeneratedArticle[]): Promise<Map
     const filename = `${sanitizeFilename(article.slug)}.md`
     const filePath = path.join(targetDir, filename)
 
-    // Avoid overwriting existing articles
+    // Avoid overwriting existing articles (exact match)
     if (fs.existsSync(filePath)) {
       console.log(`[Publisher] Skipping existing: ${filename}`)
+      continue
+    }
+
+    // Pre-publish slug similarity check — catch near-duplicate slugs (Jaccard > 0.5)
+    const similarSlug = hasSimilarSlug(sanitizeFilename(article.slug), targetDir)
+    if (similarSlug) {
+      console.warn(
+        `[Publisher] Skipping near-duplicate slug: "${sanitizeFilename(article.slug)}" ` +
+        `is too similar to existing "${similarSlug}"`,
+      )
       continue
     }
 

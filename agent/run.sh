@@ -49,6 +49,11 @@ if [ "$NEW_ARTICLES" -gt "0" ] || [ "$STATIC_CHANGED" -gt "0" ] || [ "$FUNDING_C
   git -C "$REPO" commit -m "$COMMIT_MSG"
   git -C "$REPO" push origin main
   echo "[$(date)] Pushed: $NEW_ARTICLES new articles, funding changed: $FUNDING_CHANGED, jobs changed: $JOBS_CHANGED, static assets updated" >> "$LOG"
+
+  # ── Phase 4: Build health check (wait 3 min for Cloudflare to deploy) ──────
+  echo "[$(date)] Waiting 180s for Cloudflare deploy..." >> "$LOG"
+  sleep 180
+  $NPX tsx agent/scripts/build-health-check.ts >> "$LOG" 2>&1
 else
   echo "[$(date)] No new articles or data changes; skipping push." >> "$LOG"
 fi

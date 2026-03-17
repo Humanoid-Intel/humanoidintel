@@ -443,7 +443,7 @@ export default function HomePage() {
                     color: 'var(--text-secondary)',
                     fontSize: 14,
                     lineHeight: 1.6,
-                    maxWidth: '80%',
+                    maxWidth: '100%',
                   }}
                 >
                   {featured.excerpt}

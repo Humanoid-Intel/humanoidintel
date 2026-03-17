@@ -40,19 +40,55 @@ function saveSeenHashes(hashes: Map<string, number>): void {
   fs.writeFileSync(SEEN_HASHES_FILE, JSON.stringify(entries), 'utf-8')
 }
 
+const STOP_WORDS = new Set([
+  'the', 'a', 'an', 'in', 'on', 'at', 'for', 'to', 'of', 'and', 'with', 'from', 'by',
+])
+
+function normalizeTitle(title: string): Set<string> {
+  return new Set(
+    title
+      .toLowerCase()
+      .replace(/[^\w\s]/g, '') // remove punctuation
+      .split(/\s+/)
+      .filter((w) => w.length > 0 && !STOP_WORDS.has(w)),
+  )
+}
+
 function titleSimilarity(a: string, b: string): number {
-  const wordsA = new Set(a.toLowerCase().split(/\W+/).filter((w) => w.length > 3))
-  const wordsB = new Set(b.toLowerCase().split(/\W+/).filter((w) => w.length > 3))
+  const wordsA = normalizeTitle(a)
+  const wordsB = normalizeTitle(b)
   const intersection = new Set([...wordsA].filter((w) => wordsB.has(w)))
   const union = new Set([...wordsA, ...wordsB])
   return union.size === 0 ? 0 : intersection.size / union.size
 }
 
-/** Load titles of all already-published articles so we can skip near-duplicates across runs */
+/**
+ * Check if a story title is a near-duplicate of any existing title.
+ * Uses Jaccard similarity on normalized word sets (stop words removed, lowercased, no punctuation).
+ * Returns true if similarity > 0.55 against any existing title.
+ */
+export function isTitleDuplicate(
+  story: { title: string },
+  existingTitles: string[],
+  threshold = 0.55,
+): boolean {
+  return existingTitles.some(
+    (existing) => titleSimilarity(existing, story.title) > threshold,
+  )
+}
+
+/** Load titles of all already-published articles so we can skip near-duplicates across runs.
+ *  Cached so it's only loaded once per process. */
+let _publishedTitlesCache: string[] | null = null
+
 function loadPublishedTitles(): string[] {
+  if (_publishedTitlesCache !== null) return _publishedTitlesCache
   try {
-    if (!fs.existsSync(CONTENT_DIR)) return []
-    return fs
+    if (!fs.existsSync(CONTENT_DIR)) {
+      _publishedTitlesCache = []
+      return _publishedTitlesCache
+    }
+    _publishedTitlesCache = fs
       .readdirSync(CONTENT_DIR)
       .filter((f) => f.endsWith('.md'))
       .map((f) => {
@@ -61,8 +97,10 @@ function loadPublishedTitles(): string[] {
         return match ? match[1].trim() : ''
       })
       .filter(Boolean)
+    return _publishedTitlesCache
   } catch {
-    return []
+    _publishedTitlesCache = []
+    return _publishedTitlesCache
   }
 }
 
@@ -175,13 +213,13 @@ export function deduplicateAndScore(stories: RawStory[]): ScoredStory[] {
     // Hash-based dedup (with TTL — only block if seen within last 7 days)
     if (seenHashes.has(story.hash)) continue
 
-    // Title similarity dedup — 70% threshold catches "same story, different headline"
+    // Title similarity dedup — 55% threshold catches "same story, different headline"
     // Cross-run: compares against all published article titles loaded above
     // Within-run: compares against stories already selected this run
-    const isDuplicate = processedTitles.some(
-      (existing) => titleSimilarity(existing, story.title) > 0.70,
-    )
-    if (isDuplicate) continue
+    if (isTitleDuplicate(story, processedTitles)) {
+      console.log(`[Dedup] Skipped near-duplicate title: "${story.title}"`)
+      continue
+    }
 
     const score = scoreStory(story)
     if (score < config.scoring.minThreshold) continue

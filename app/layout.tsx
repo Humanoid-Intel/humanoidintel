@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next'
 import { Inter, Space_Grotesk, JetBrains_Mono } from 'next/font/google'
 import { SchemaMarkup } from '@/components/SchemaMarkup'
+import { KeyboardNav } from '@/components/KeyboardNav'
 import { generateOrgSchema } from '@/lib/seo'
 import './globals.css'
 
@@ -115,6 +116,7 @@ export default function RootLayout({
       </head>
       <body className="antialiased">
         <SchemaMarkup schema={generateOrgSchema()} />
+        <KeyboardNav />
         <div className="max-w-[1600px] mx-auto">{children}</div>
       </body>
     </html>

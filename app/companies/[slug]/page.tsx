@@ -5,6 +5,7 @@ import Header from '@/components/Header'
 import TickerTape from '@/components/TickerTape'
 import Footer from '@/components/Footer'
 import { getCompanies, getCompany, getRobots } from '@/lib/content'
+import WatchlistButton from '@/components/WatchlistButton'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -106,12 +107,15 @@ export default async function CompanyProfilePage({ params }: Props) {
             </span>
           </div>
 
-          <h1
-            className="font-head"
-            style={{ fontSize: 36, fontWeight: 500, color: 'var(--text-primary)', marginBottom: 8 }}
-          >
-            {company.name}
-          </h1>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 8 }}>
+            <h1
+              className="font-head"
+              style={{ fontSize: 36, fontWeight: 500, color: 'var(--text-primary)' }}
+            >
+              {company.name}
+            </h1>
+            <WatchlistButton companySlug={company.slug} companyName={company.name} />
+          </div>
 
           <div
             className="font-data"

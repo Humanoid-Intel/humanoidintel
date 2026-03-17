@@ -1,0 +1,18 @@
+[
+  { "id": "tesla-giga-tx", "company": "Tesla", "robot": "Optimus Gen 2", "location": "Austin, TX", "country": "USA", "lat": 30.27, "lng": -97.74, "units": 5000, "type": "Internal Manufacturing", "note": "Giga Texas" },
+  { "id": "tesla-shanghai", "company": "Tesla", "robot": "Optimus Gen 2", "location": "Shanghai", "country": "China", "lat": 31.23, "lng": 121.47, "units": 3000, "type": "Internal Manufacturing", "note": "Giga Shanghai" },
+  { "id": "agility-amazon-sea", "company": "Agility Robotics", "robot": "Digit v4", "location": "Seattle, WA", "country": "USA", "lat": 47.61, "lng": -122.33, "units": 200, "type": "Warehouse", "note": "Amazon BFI fulfillment" },
+  { "id": "agility-amazon-hou", "company": "Agility Robotics", "robot": "Digit v4", "location": "Houston, TX", "country": "USA", "lat": 29.76, "lng": -95.37, "units": 200, "type": "Warehouse", "note": "Amazon IAH fulfillment" },
+  { "id": "figure-bmw", "company": "Figure AI", "robot": "Figure 02/03", "location": "Spartanburg, SC", "country": "USA", "lat": 34.95, "lng": -81.93, "units": 150, "type": "Factory", "note": "BMW Manufacturing" },
+  { "id": "ubtech-shenzhen", "company": "UBTECH", "robot": "Walker X", "location": "Shenzhen", "country": "China", "lat": 22.54, "lng": 114.06, "units": 300, "type": "Service", "note": "Hotels, banks, retail" },
+  { "id": "ubtech-dubai", "company": "UBTECH", "robot": "Walker X", "location": "Dubai", "country": "UAE", "lat": 25.20, "lng": 55.27, "units": 150, "type": "Service", "note": "GITEX showcase, hotels" },
+  { "id": "ubtech-riyadh", "company": "UBTECH", "robot": "Walker X", "location": "Riyadh", "country": "Saudi Arabia", "lat": 24.71, "lng": 46.68, "units": 150, "type": "Service", "note": "Smart city deployment" },
+  { "id": "unitree-labs", "company": "Unitree", "robot": "H1/G1", "location": "Hangzhou", "country": "China", "lat": 30.27, "lng": 120.15, "units": 1500, "type": "Research / Commercial", "note": "Labs + education" },
+  { "id": "unitree-global", "company": "Unitree", "robot": "H1/G1", "location": "Various", "country": "Global", "lat": 51.51, "lng": -0.13, "units": 1700, "type": "Research", "note": "120+ institutions worldwide" },
+  { "id": "kepler-dongguan", "company": "Kepler", "robot": "Forerunner", "location": "Dongguan", "country": "China", "lat": 23.02, "lng": 113.75, "units": 280, "type": "Factory", "note": "Auto + electronics assembly" },
+  { "id": "tiangong-beijing", "company": "Tiangong / BHRIC", "robot": "Tiangong", "location": "Beijing", "country": "China", "lat": 39.90, "lng": 116.40, "units": 250, "type": "State Manufacturing", "note": "Beijing SOEs" },
+  { "id": "fourier-shanghai", "company": "Fourier", "robot": "GR-1/GR2", "location": "Shanghai", "country": "China", "lat": 31.23, "lng": 121.47, "units": 120, "type": "Research / Care", "note": "Labs + eldercare" },
+  { "id": "1x-sunnyvale", "company": "1X Technologies", "robot": "NEO Beta", "location": "Sunnyvale, CA", "country": "USA", "lat": 37.37, "lng": -122.04, "units": 30, "type": "Home Trial", "note": "Early-access households" },
+  { "id": "1x-oslo", "company": "1X Technologies", "robot": "NEO Beta", "location": "Oslo", "country": "Norway", "lat": 59.91, "lng": 10.75, "units": 30, "type": "Home Trial", "note": "Early-access households" },
+  { "id": "sanctuary-toronto", "company": "Sanctuary AI", "robot": "Phoenix", "location": "Toronto", "country": "Canada", "lat": 43.65, "lng": -79.38, "units": 25, "type": "Retail RaaS", "note": "Canadian Tire stores" }
+]

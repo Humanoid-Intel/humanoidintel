@@ -70,6 +70,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/jobs`, lastModified: now, changeFrequency: 'daily', priority: 0.7 },
     { url: `${baseUrl}/compare`, lastModified: now, changeFrequency: 'weekly', priority: 0.7 },
     { url: `${baseUrl}/events`, lastModified: now, changeFrequency: 'weekly', priority: 0.7 },
+    { url: `${baseUrl}/watchlist`, lastModified: now, changeFrequency: 'daily', priority: 0.5 },
+    { url: `${baseUrl}/map`, lastModified: now, changeFrequency: 'weekly', priority: 0.7 },
+    { url: `${baseUrl}/supply-chain`, lastModified: now, changeFrequency: 'weekly', priority: 0.7 },
   ]
 
   const articleRoutes: MetadataRoute.Sitemap = articleSlugs.map((slug) => ({

@@ -1,0 +1,61 @@
+[
+  {
+    "category": "Compute & AI Chips",
+    "suppliers": [
+      { "company": "Nvidia", "products": ["Jetson Thor", "Jetson Orin", "Blackwell GPUs"], "customers": ["Figure AI", "Agility Robotics", "Apptronik", "NEURA Robotics", "Unitree", "Galbot"], "hq": "USA", "criticality": "critical" },
+      { "company": "Qualcomm", "products": ["Snapdragon Ride", "Robotics RB5/RB6"], "customers": ["NEURA Robotics", "1X Technologies"], "hq": "USA", "criticality": "high" },
+      { "company": "Intel", "products": ["RealSense D400/L500", "Movidius VPU"], "customers": ["Unitree", "Fourier", "Kepler"], "hq": "USA", "criticality": "medium" },
+      { "company": "Texas Instruments", "products": ["TDA4VM", "AM62A", "motor drivers"], "customers": ["Multiple OEMs"], "hq": "USA", "criticality": "medium" },
+      { "company": "AMD", "products": ["Ryzen Embedded", "Kria KR260"], "customers": ["Boston Dynamics", "Sanctuary AI"], "hq": "USA", "criticality": "medium" }
+    ]
+  },
+  {
+    "category": "Actuators & Motors",
+    "suppliers": [
+      { "company": "Maxon Motor", "products": ["EC-i series", "IDX drives"], "customers": ["Boston Dynamics", "Agility Robotics"], "hq": "Switzerland", "criticality": "critical" },
+      { "company": "TQ RoboDrive", "products": ["ILM series frameless motors"], "customers": ["NEURA Robotics", "Apptronik"], "hq": "Germany", "criticality": "high" },
+      { "company": "Gyems", "products": ["RMD series actuators"], "customers": ["Unitree", "Kepler", "Galbot"], "hq": "China", "criticality": "high" },
+      { "company": "T-Motor", "products": ["AK series quasi-direct drive"], "customers": ["Unitree", "Fourier", "Agibot"], "hq": "China", "criticality": "high" },
+      { "company": "Genesis Robotics", "products": ["LiveDrive actuators"], "customers": ["1X Technologies"], "hq": "Canada", "criticality": "medium" },
+      { "company": "Tesla (in-house)", "products": ["Custom rotary + linear actuators"], "customers": ["Tesla Optimus"], "hq": "USA", "criticality": "critical" }
+    ]
+  },
+  {
+    "category": "Sensors & Vision",
+    "suppliers": [
+      { "company": "Intel RealSense", "products": ["D455, D456, L515"], "customers": ["Multiple OEMs"], "hq": "USA", "criticality": "high" },
+      { "company": "Stereolabs", "products": ["ZED 2i, ZED X"], "customers": ["Agility Robotics", "Figure AI"], "hq": "France", "criticality": "medium" },
+      { "company": "Luxonis", "products": ["OAK-D series"], "customers": ["Research labs", "Unitree"], "hq": "USA", "criticality": "medium" },
+      { "company": "Ouster/Velodyne", "products": ["OS0/OS1 LiDAR"], "customers": ["Boston Dynamics", "Agility"], "hq": "USA", "criticality": "medium" },
+      { "company": "OnRobot / Contactile", "products": ["Tactile sensors"], "customers": ["Sanctuary AI", "NEURA"], "hq": "Denmark / Australia", "criticality": "medium" }
+    ]
+  },
+  {
+    "category": "Batteries & Power",
+    "suppliers": [
+      { "company": "Samsung SDI", "products": ["21700 cells, custom packs"], "customers": ["Tesla Optimus", "Agility"], "hq": "South Korea", "criticality": "critical" },
+      { "company": "CATL", "products": ["Custom pouch cells"], "customers": ["Unitree", "Fourier", "Kepler"], "hq": "China", "criticality": "high" },
+      { "company": "LG Energy Solution", "products": ["Cylindrical cells"], "customers": ["Figure AI", "Apptronik"], "hq": "South Korea", "criticality": "high" },
+      { "company": "Molicel", "products": ["P45B high-drain cells"], "customers": ["Boston Dynamics"], "hq": "Canada", "criticality": "medium" }
+    ]
+  },
+  {
+    "category": "Dexterous Hands",
+    "suppliers": [
+      { "company": "Wonik Robotics", "products": ["Allegro Hand v4"], "customers": ["Research labs"], "hq": "South Korea", "criticality": "high" },
+      { "company": "Shadow Robot", "products": ["Dexterous Hand E"], "customers": ["Research labs", "Sanctuary AI"], "hq": "UK", "criticality": "medium" },
+      { "company": "Tesollo", "products": ["Custom anthropomorphic hands"], "customers": ["Samsung"], "hq": "South Korea", "criticality": "medium" },
+      { "company": "PSYONIC", "products": ["Ability Hand"], "customers": ["Apptronik"], "hq": "USA", "criticality": "medium" }
+    ]
+  },
+  {
+    "category": "AI Software Stack",
+    "suppliers": [
+      { "company": "Nvidia", "products": ["Isaac Sim", "GR00T", "Cosmos"], "customers": ["Nearly all humanoid OEMs"], "hq": "USA", "criticality": "critical" },
+      { "company": "Physical Intelligence", "products": ["π0 foundation model"], "customers": ["Undisclosed OEMs"], "hq": "USA", "criticality": "high" },
+      { "company": "Skild AI", "products": ["Generalist robot brain"], "customers": ["ABB", "Universal Robots", "Foxconn"], "hq": "USA", "criticality": "high" },
+      { "company": "Google DeepMind", "products": ["Gemini Robotics, RT-2"], "customers": ["Research ecosystem"], "hq": "USA", "criticality": "high" },
+      { "company": "Hugging Face", "products": ["LeRobot framework"], "customers": ["Open-source community"], "hq": "USA", "criticality": "medium" }
+    ]
+  }
+]

@@ -197,3 +197,39 @@ label[for] {
   border-color: var(--accent-positive) !important;
   background-color: var(--bg-hover) !important;
 }
+
+/* ── Mobile responsive ────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  /* Reduce padding on panels */
+  .panel { padding: 12px 14px; }
+  .panel-header { flex-wrap: wrap; gap: 8px; }
+
+  /* Hero headline smaller on mobile */
+  .hero-headline { font-size: 20px !important; line-height: 1.3 !important; }
+
+  /* Data tables: make them scroll horizontally */
+  table { display: block; overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; }
+
+  /* Ticker tape: reduce font size */
+  .ticker-symbol { font-size: 10px !important; padding: 0 8px !important; }
+
+  /* Metric blocks */
+  .metric-value { font-size: 28px !important; }
+
+  /* News rows: single column on mobile */
+  .news-row { grid-template-columns: 1fr !important; gap: 4px !important; }
+
+  /* Tags */
+  .tag { font-size: 9px !important; padding: 2px 5px !important; }
+
+  /* Body padding reduction */
+  body { font-size: 14px; }
+
+  /* Header nav: hamburger already handled by Header component */
+}
+
+@media (max-width: 480px) {
+  .hero-headline { font-size: 18px !important; }
+  .metric-value { font-size: 24px !important; }
+  .panel { padding: 10px 12px; }
+}
