@@ -911,6 +911,17 @@ export default function HomePage() {
               ))}
             </div>
           </div>
+
+          {/* FAQ panel — inside left column, after Research Hub */}
+          <div className="panel">
+            <div className="panel-header">
+              <span className="panel-title">FAQ</span>
+              <span className="font-data" style={{ fontSize: 11, color: 'var(--text-tertiary)' }}>
+                // humanoid robotics intelligence
+              </span>
+            </div>
+            <FAQAccordion faqs={HOME_FAQS} />
+          </div>
         </div>
 
         {/* ── RIGHT SIDEBAR ─────────────────────────────────────────────────── */}
@@ -1087,24 +1098,6 @@ export default function HomePage() {
             </p>
           </div>
         </div>
-      </div>
-
-      {/* ── FAQ accordion — SEO/GEO signal, minimal footprint ───────────── */}
-      <div
-        style={{
-          borderTop: '1px solid var(--border-subtle)',
-          padding: '20px 24px 28px',
-          maxWidth: 860,
-          margin: '0 auto',
-        }}
-      >
-        <div style={{ display: 'flex', alignItems: 'baseline', gap: 10, marginBottom: 14 }}>
-          <span className="panel-title" style={{ fontSize: 11 }}>FAQ</span>
-          <span className="font-data" style={{ fontSize: 10, color: 'var(--text-tertiary)' }}>
-            // humanoid robotics intelligence
-          </span>
-        </div>
-        <FAQAccordion faqs={HOME_FAQS} />
       </div>
 
       <Footer />
