@@ -17,7 +17,7 @@ export const config = {
     publishMode: (process.env.PUBLISH_MODE as 'draft' | 'auto' | 'full') || 'draft',
     confidenceThreshold: parseFloat(process.env.CONFIDENCE_THRESHOLD || '0.8'),
     runIntervalMinutes: 60,
-    maxArticlesPerRun: 20,
+    maxArticlesPerRun: 5,  // cap at 5 to stay within GitHub Actions 15min timeout
   },
 
   rssFeeds: [
