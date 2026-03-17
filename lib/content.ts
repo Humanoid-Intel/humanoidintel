@@ -90,7 +90,7 @@ export function getArticles(): Article[] {
 
 export async function getArticle(
   slug: string,
-): Promise<{ article: Article; content: string } | null> {
+): Promise<{ article: Article; content: string; faqs: { q: string; a: string }[] } | null> {
   const filePath = path.join(contentRoot, 'news', `${slug}.md`)
 
   if (!fs.existsSync(filePath)) return null
