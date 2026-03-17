@@ -67,5 +67,54 @@
       { "company": "Google DeepMind", "products": ["Gemini Robotics, RT-2"], "customers": ["Research ecosystem"], "hq": "USA", "criticality": "high" },
       { "company": "Hugging Face", "products": ["LeRobot framework"], "customers": ["Open-source community"], "hq": "USA", "criticality": "medium" }
     ]
+  },
+  {
+    "category": "Power Electronics & Motor Controllers",
+    "suppliers": [
+      { "company": "Elmo Motion Control", "products": ["Gold Whistle", "Platinum Maestro"], "customers": ["Boston Dynamics", "Figure AI", "Agility Robotics"], "hq": "Israel", "criticality": "critical" },
+      { "company": "Infineon", "products": ["MOTIX gate drivers", "XMC microcontrollers"], "customers": ["Multiple OEMs"], "hq": "Germany", "criticality": "high" },
+      { "company": "STMicroelectronics", "products": ["STSPIN motor drivers", "STM32 MCUs"], "customers": ["Unitree", "Fourier", "Kepler"], "hq": "Switzerland", "criticality": "high" },
+      { "company": "Texas Instruments", "products": ["DRV8xxx motor drivers", "C2000 MCUs"], "customers": ["Multiple OEMs"], "hq": "USA", "criticality": "high" },
+      { "company": "ODrive Robotics", "products": ["ODrive S1", "Pro motor controllers"], "customers": ["Research labs", "Startups"], "hq": "USA", "criticality": "medium" }
+    ]
+  },
+  {
+    "category": "Structural Materials & Frames",
+    "suppliers": [
+      { "company": "Toray Industries", "products": ["Carbon fiber composites", "CFRP sheets"], "customers": ["Boston Dynamics", "Figure AI", "1X Technologies"], "hq": "Japan", "criticality": "high" },
+      { "company": "Stratasys", "products": ["PolyJet 3D printing", "FDM prototyping"], "customers": ["Boston Dynamics", "Agility Robotics"], "hq": "Israel/USA", "criticality": "medium" },
+      { "company": "Xometry / Protolabs", "products": ["CNC machined aluminum", "Sheet metal fabrication"], "customers": ["Multiple startups"], "hq": "USA", "criticality": "medium" },
+      { "company": "Velo3D", "products": ["Sapphire metal 3D printing", "Titanium parts"], "customers": ["Apptronik", "Figure AI"], "hq": "USA", "criticality": "medium" },
+      { "company": "Hexcel", "products": ["Aerospace-grade composites", "Honeycomb structures"], "customers": ["Boston Dynamics"], "hq": "USA", "criticality": "medium" }
+    ]
+  },
+  {
+    "category": "IMUs & Inertial Sensors",
+    "suppliers": [
+      { "company": "Bosch Sensortec", "products": ["BMI088", "BMI270 IMU"], "customers": ["Unitree", "Fourier", "Multiple OEMs"], "hq": "Germany", "criticality": "critical" },
+      { "company": "Analog Devices", "products": ["ADIS16470", "ADIS16507 tactical IMU"], "customers": ["Boston Dynamics", "Figure AI"], "hq": "USA", "criticality": "critical" },
+      { "company": "LORD MicroStrain", "products": ["3DM-GQ7 GNSS/INS", "3DM-CV7 IMU"], "customers": ["Boston Dynamics", "Agility Robotics"], "hq": "USA", "criticality": "high" },
+      { "company": "ATI Industrial Automation", "products": ["Mini45/Nano43 F/T sensors"], "customers": ["Research labs", "NEURA Robotics", "Sanctuary AI"], "hq": "USA", "criticality": "high" },
+      { "company": "Bota Systems", "products": ["SensONE 6-axis F/T sensors"], "customers": ["NEURA Robotics", "Research labs"], "hq": "Switzerland", "criticality": "medium" }
+    ]
+  },
+  {
+    "category": "Communication & Connectivity",
+    "suppliers": [
+      { "company": "Qualcomm", "products": ["5G/Wi-Fi 7 modules", "QCS robotics platforms"], "customers": ["Multiple OEMs"], "hq": "USA", "criticality": "high" },
+      { "company": "Sierra Wireless (Semtech)", "products": ["5G/LTE modules", "IoT gateways"], "customers": ["Agility Robotics", "Fleet operators"], "hq": "Canada", "criticality": "medium" },
+      { "company": "Rajant", "products": ["Kinetic Mesh networking", "Industrial wireless"], "customers": ["Warehouse deployments"], "hq": "USA", "criticality": "medium" },
+      { "company": "Freedom Robotics / InOrbit", "products": ["Fleet management platforms", "Remote monitoring"], "customers": ["Agility Robotics", "Multiple OEMs"], "hq": "USA", "criticality": "medium" }
+    ]
+  },
+  {
+    "category": "Contract Manufacturing & Assembly",
+    "suppliers": [
+      { "company": "Foxconn", "products": ["Volume humanoid assembly", "Component manufacturing"], "customers": ["Figure AI", "Skild AI"], "hq": "Taiwan", "criticality": "critical" },
+      { "company": "Flex Ltd", "products": ["EMS assembly", "Supply chain management"], "customers": ["Multiple OEMs"], "hq": "Singapore", "criticality": "high" },
+      { "company": "Jabil", "products": ["Complex electromechanical assembly", "Testing"], "customers": ["Multiple OEMs"], "hq": "USA", "criticality": "high" },
+      { "company": "BYD Electronics", "products": ["Precision manufacturing", "Volume production"], "customers": ["Chinese humanoid OEMs"], "hq": "China", "criticality": "high" },
+      { "company": "Pegatron", "products": ["Electromechanical assembly"], "customers": ["Undisclosed OEMs"], "hq": "Taiwan", "criticality": "medium" }
+    ]
   }
 ]
