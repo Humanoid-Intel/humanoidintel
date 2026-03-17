@@ -95,6 +95,46 @@
     "url": "/news/infineon-nvidia-humanoid-digital-twins-collaboration"
   },
   {
+    "slug": "infineon-nvidia-humanoid-robot-collaboration-2026",
+    "title": "Infineon-Nvidia Partnership Targets Humanoid Robot Control",
+    "excerpt": "Chip giants expand August 2025 partnership to combine power systems and AI platforms for humanoid applications",
+    "category": "breaking",
+    "date": "2026-03-17T14:35:48.000Z",
+    "tags": [
+      "infineon",
+      "nvidia",
+      "partnership",
+      "digital-twins",
+      "motor-control"
+    ],
+    "companies": [
+      "Infineon Technologies",
+      "Nvidia"
+    ],
+    "type": "news",
+    "url": "/news/infineon-nvidia-humanoid-robot-collaboration-2026"
+  },
+  {
+    "slug": "nxp-nvidia-edge-platform-humanoid-robots",
+    "title": "NXP-Nvidia Edge Platform Targets Humanoid Real-Time Control",
+    "excerpt": "NXP-Nvidia collaboration delivers edge computing platform for real-time humanoid control with sub-millisecond latency",
+    "category": "breaking",
+    "date": "2026-03-17T14:20:33.000Z",
+    "tags": [
+      "nxp",
+      "nvidia",
+      "edge-computing",
+      "sensor-fusion",
+      "motor-control"
+    ],
+    "companies": [
+      "NXP Semiconductors",
+      "Nvidia"
+    ],
+    "type": "news",
+    "url": "/news/nxp-nvidia-edge-platform-humanoid-robots"
+  },
+  {
     "slug": "zhongding-first-production-humanoid-robot-2026",
     "title": "Zhongding Rolls Out First Production Humanoid Robot",
     "excerpt": "Chinese automotive supplier Zhongding Group begins commercial humanoid robot production, marking entry into bipedal robotics market",
@@ -5171,6 +5211,22 @@
     "url": "/jobs"
   },
   {
+    "slug": "foundation-robotics",
+    "title": "Foundation Robotics",
+    "excerpt": "Foundation Robotics is a San Francisco-based defense robotics company developing the Phantom MK-1, a humanoid robot designed for military and tactical operations. The Phantom MK-1 …",
+    "category": "company",
+    "date": "",
+    "tags": [
+      "San Francisco, CA, USA",
+      "active"
+    ],
+    "companies": [
+      "Foundation Robotics"
+    ],
+    "type": "company",
+    "url": "/companies/foundation-robotics"
+  },
+  {
     "slug": "fourier-intelligence",
     "title": "Fourier Intelligence",
     "excerpt": "Fourier Intelligence is distinguished among humanoid companies by its decade-long commercial track record in medical exoskeletons, having shipped thousands of rehabilitation device…",
@@ -5592,6 +5648,39 @@
     ],
     "type": "job",
     "url": "/jobs"
+  },
+  {
+    "slug": "kaist-drcd",
+    "title": "KAIST DRCD Lab",
+    "excerpt": "The Dynamic Robot Control & Design (DRCD) Lab at KAIST (Korea Advanced Institute of Science and Technology) develops humanoid robots with in-house designed actuators. Their Humanoi…",
+    "category": "company",
+    "date": "",
+    "tags": [
+      "Daejeon, South Korea",
+      "active"
+    ],
+    "companies": [
+      "KAIST DRCD Lab"
+    ],
+    "type": "company",
+    "url": "/companies/kaist-drcd"
+  },
+  {
+    "slug": "kaist-humanoid-v07",
+    "title": "KAIST Humanoid v0.7 — KAIST DRCD Lab",
+    "excerpt": "KAIST Humanoid v0.7 is a research platform developed by the Dynamic Robot Control & Design (DRCD) Lab at the Korea Advanced Institute of Science and Technology (KAIST). Notable for…",
+    "category": "robot",
+    "date": "",
+    "tags": [
+      "r&d",
+      "Electric (in-house)",
+      "South Korea"
+    ],
+    "companies": [
+      "KAIST DRCD Lab"
+    ],
+    "type": "robot",
+    "url": "/robots/kaist-humanoid-v07"
   },
   {
     "slug": "kepler",
@@ -6265,6 +6354,39 @@
     "url": "/funding"
   },
   {
+    "slug": "noble-humanoid",
+    "title": "Noble Humanoid — Noble Machines",
+    "excerpt": "Noble Machines is building a warehouse-focused humanoid robot designed for logistics and fulfillment tasks. The robot features a rugged industrial design optimized for picking, pla…",
+    "category": "robot",
+    "date": "",
+    "tags": [
+      "prototype",
+      "Electric",
+      "USA"
+    ],
+    "companies": [
+      "Noble Machines"
+    ],
+    "type": "robot",
+    "url": "/robots/noble-humanoid"
+  },
+  {
+    "slug": "noble-machines",
+    "title": "Noble Machines",
+    "excerpt": "Noble Machines is building a warehouse-focused humanoid robot designed for logistics and fulfillment environments. Their humanoid features a rugged industrial design optimized for …",
+    "category": "company",
+    "date": "",
+    "tags": [
+      "USA",
+      "active"
+    ],
+    "companies": [
+      "Noble Machines"
+    ],
+    "type": "company",
+    "url": "/companies/noble-machines"
+  },
+  {
     "slug": "greenhouse-nimblerobotics-4162764009",
     "title": "NPI Technical Program Manager — Nimble Robotics",
     "excerpt": "General · Haslet, TX",
@@ -6433,6 +6555,23 @@
     ],
     "type": "funding",
     "url": "/funding"
+  },
+  {
+    "slug": "phantom-mk1",
+    "title": "Phantom MK-1 — Foundation Robotics",
+    "excerpt": "The Phantom MK-1 is a defense-focused humanoid robot built by San Francisco-based Foundation Robotics. Designed for military and tactical operations, it is capable of operating fir…",
+    "category": "robot",
+    "date": "",
+    "tags": [
+      "commercial",
+      "Electric",
+      "USA"
+    ],
+    "companies": [
+      "Foundation Robotics"
+    ],
+    "type": "robot",
+    "url": "/robots/phantom-mk1"
   },
   {
     "slug": "phoenix",
@@ -6913,22 +7052,6 @@
     ],
     "companies": [
       "Figure AI"
-    ],
-    "type": "job",
-    "url": "/jobs"
-  },
-  {
-    "slug": "ashby-physicalintelligence-c382800e-79d3-417a-a83b-ee3f3c2579f2",
-    "title": "Research Ops — Physical Intelligence",
-    "excerpt": "Operations · San Francisco",
-    "category": "job",
-    "date": "2026-03-16T16:22:01.944Z",
-    "tags": [
-      "research",
-      "operations"
-    ],
-    "companies": [
-      "Physical Intelligence"
     ],
     "type": "job",
     "url": "/jobs"
@@ -8812,6 +8935,23 @@
     "companies": [],
     "type": "glossary",
     "url": "/glossary/vision-language-action-model"
+  },
+  {
+    "slug": "walker-s2",
+    "title": "Walker S2 — UBTECH Robotics",
+    "excerpt": "UBTECH's Walker S2 is the latest evolution of the Walker platform, featuring autonomous battery swapping capability that enables 24/7 continuous operation in factory environments w…",
+    "category": "robot",
+    "date": "",
+    "tags": [
+      "commercial",
+      "Electric",
+      "China"
+    ],
+    "companies": [
+      "UBTECH Robotics"
+    ],
+    "type": "robot",
+    "url": "/robots/walker-s2"
   },
   {
     "slug": "walker-x",
