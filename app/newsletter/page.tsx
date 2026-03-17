@@ -67,7 +67,7 @@ export default function NewsletterPage() {
               The humanoidintel.ai Newsletter
             </h1>
             <p style={{ fontSize: 14, color: 'var(--text-secondary)', lineHeight: 1.6 }}>
-              Join thousands of robotics engineers, VCs, and founders receiving weekly intelligence on
+              The go-to weekly briefing for robotics engineers, VCs, and founders — covering
               humanoid robotics funding, product launches, research breakthroughs, and market analysis.
             </p>
             <p

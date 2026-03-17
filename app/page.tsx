@@ -1085,7 +1085,7 @@ export default function HomePage() {
                 lineHeight: 1.4,
               }}
             >
-              Join thousands of robotics engineers, VCs, and founders
+              The go-to feed for robotics engineers, VCs, and founders
             </div>
 
             <NewsletterForm label="Subscribe" />
