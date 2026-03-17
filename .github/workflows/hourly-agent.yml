@@ -76,6 +76,7 @@ jobs:
             [ "$JOBS_CHANGED" -gt "0" ] && [ "$NEW_ARTICLES" -eq "0" ] && [ "$FUNDING_CHANGED" -eq "0" ] && COMMIT_MSG="feat(jobs): sync job board listings $(date -u '+%Y-%m-%d %H:%M UTC') [bot]"
 
             git commit -m "$COMMIT_MSG"
+            git pull --rebase origin main
             git push origin main
             echo "✅ Pushed: $NEW_ARTICLES new articles"
           else
