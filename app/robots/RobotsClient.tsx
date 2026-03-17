@@ -120,6 +120,20 @@ const PLACEHOLDER_ROBOTS: Robot[] = [
     actuatorType: 'Electric',
     description: '1X\'s NEO Beta is an ultra-lightweight humanoid focused on home assistance applications.',
   },
+  {
+    slug: 'walker-s2',
+    name: 'Walker S2',
+    manufacturer: 'UBTECH Robotics',
+    country: 'China',
+    status: 'commercial',
+    height: '1.70m',
+    weight: '60kg',
+    dof: 41,
+    payload: '15kg',
+    battery: '3hrs',
+    actuatorType: 'Electric',
+    description: 'UBTECH\'s Walker S2 features autonomous battery swapping for 24/7 continuous operation in factory environments.',
+  },
 ]
 
 type SortKey = 'name' | 'manufacturer' | 'country' | 'status' | 'payload' | 'dof'

@@ -190,7 +190,7 @@
     "headcount": "1000-2000",
     "totalFunding": "$940M+",
     "latestValuation": "~$3B",
-    "products": ["walker-x", "tiangong"],
+    "products": ["walker-s2", "walker-x", "tiangong"],
     "description": "UBTECH is China's largest humanoid robotics company by headcount and one of the longest-standing, having commercialized educational and entertainment humanoids since 2012. The Walker program, now on its X generation, represents over five years of commercial service deployments in hotel, banking, and retail environments. UBTECH's role in co-founding the Beijing Humanoid Robot Innovation Center and developing the Tiangong platform underscores its position as a key instrument of Chinese national humanoid strategy.",
     "website": "https://ubtrobot.com",
     "status": "active"
