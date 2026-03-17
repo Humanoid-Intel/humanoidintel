@@ -10,6 +10,7 @@ import type { RawStory } from '../sources/rss'
 
 const SEEN_HASHES_FILE = path.join(__dirname, '../.seen-hashes.json')
 const HASH_TTL_MS = 7 * 24 * 60 * 60 * 1000 // 7 days
+const CONTENT_DIR = path.join(__dirname, '../../content/news')
 
 function loadSeenHashes(): Map<string, number> {
   try {
@@ -45,6 +46,24 @@ function titleSimilarity(a: string, b: string): number {
   const intersection = new Set([...wordsA].filter((w) => wordsB.has(w)))
   const union = new Set([...wordsA, ...wordsB])
   return union.size === 0 ? 0 : intersection.size / union.size
+}
+
+/** Load titles of all already-published articles so we can skip near-duplicates across runs */
+function loadPublishedTitles(): string[] {
+  try {
+    if (!fs.existsSync(CONTENT_DIR)) return []
+    return fs
+      .readdirSync(CONTENT_DIR)
+      .filter((f) => f.endsWith('.md'))
+      .map((f) => {
+        const content = fs.readFileSync(path.join(CONTENT_DIR, f), 'utf-8')
+        const match = content.match(/^title:\s*["']?(.+?)["']?\s*$/m)
+        return match ? match[1].trim() : ''
+      })
+      .filter(Boolean)
+  } catch {
+    return []
+  }
 }
 
 export interface ScoredStory extends RawStory {
@@ -147,7 +166,8 @@ function detectCompanies(story: RawStory): string[] {
 
 export function deduplicateAndScore(stories: RawStory[]): ScoredStory[] {
   const seenHashes = loadSeenHashes()
-  const processedTitles: string[] = []
+  // Seed with titles of already-published articles to catch cross-run duplicates
+  const processedTitles: string[] = loadPublishedTitles()
   const results: ScoredStory[] = []
   const now = Date.now()
 
@@ -155,9 +175,11 @@ export function deduplicateAndScore(stories: RawStory[]): ScoredStory[] {
     // Hash-based dedup (with TTL — only block if seen within last 7 days)
     if (seenHashes.has(story.hash)) continue
 
-    // Title similarity dedup (85% threshold)
+    // Title similarity dedup — 70% threshold catches "same story, different headline"
+    // Cross-run: compares against all published article titles loaded above
+    // Within-run: compares against stories already selected this run
     const isDuplicate = processedTitles.some(
-      (existing) => titleSimilarity(existing, story.title) > 0.85,
+      (existing) => titleSimilarity(existing, story.title) > 0.70,
     )
     if (isDuplicate) continue
 

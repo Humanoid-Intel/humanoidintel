@@ -23,7 +23,7 @@ const POSTED_HASHES_FILE = path.join(__dirname, '../.linkedin-posted-hashes.json
 const DAILY_COUNT_FILE   = path.join(__dirname, '../.linkedin-daily-count.json')
 
 const LI_API = 'https://api.linkedin.com/rest/posts'
-const LI_VERSION = '202401'
+const LI_VERSION = '202602'
 
 // ── Dedup helpers ──────────────────────────────────────────────────────────────
 
