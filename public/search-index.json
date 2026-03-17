@@ -1,5 +1,78 @@
 [
   {
+    "slug": "nvidia-eu-chipmaker-partnerships-humanoids",
+    "title": "Nvidia Partners with EU Chipmakers for Humanoid Push",
+    "excerpt": "Nvidia expands humanoid robotics ecosystem through strategic partnerships with European semiconductor manufacturers",
+    "category": "breaking",
+    "date": "2026-03-17T03:02:09.081Z",
+    "tags": [
+      "nvidia",
+      "partnerships",
+      "europe",
+      "semiconductors"
+    ],
+    "companies": [
+      "Nvidia"
+    ],
+    "type": "news",
+    "url": "/news/nvidia-eu-chipmaker-partnerships-humanoids"
+  },
+  {
+    "slug": "vla-models-dynamic-dataset-domino-research",
+    "title": "VLA Models Get Dynamic Dataset to Bridge Sim-to-Real Gap",
+    "excerpt": "New DOMINO dataset addresses critical VLA limitation in dynamic environments with moving targets",
+    "category": "research",
+    "date": "2026-03-17T03:02:08.697Z",
+    "tags": [
+      "vla-models",
+      "dynamic-manipulation",
+      "sim-to-real",
+      "dataset",
+      "spatiotemporal-reasoning"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/vla-models-dynamic-dataset-domino-research"
+  },
+  {
+    "slug": "hyundai-atlas-robot-revenue-projections-2026",
+    "title": "Hyundai's Atlas Robot Revenue Projections Signal Major Market Shift",
+    "excerpt": "Hyundai's Atlas humanoid robot shows promising commercial revenue potential as automaker eyes robotics expansion",
+    "category": "breaking",
+    "date": "2026-03-17T03:01:32.241Z",
+    "tags": [
+      "hyundai",
+      "atlas",
+      "revenue",
+      "market-outlook"
+    ],
+    "companies": [
+      "Hyundai Motor Company"
+    ],
+    "type": "news",
+    "url": "/news/hyundai-atlas-robot-revenue-projections-2026"
+  },
+  {
+    "slug": "skild-ai-nvidia-blackwell-robot-brain-deployment",
+    "title": "Skild AI Deploys Robot Brain on Nvidia Blackwell Lines",
+    "excerpt": "Skild AI's foundation model now controls robots assembling Nvidia's flagship Blackwell AI chips in production facilities.",
+    "category": "market",
+    "date": "2026-03-17T03:00:58.048Z",
+    "tags": [
+      "skild-ai",
+      "nvidia",
+      "blackwell",
+      "deployment",
+      "manufacturing"
+    ],
+    "companies": [
+      "Skild AI",
+      "Nvidia"
+    ],
+    "type": "news",
+    "url": "/news/skild-ai-nvidia-blackwell-robot-brain-deployment"
+  },
+  {
     "slug": "merz-unitree-china-humanoid-robotics-europe-concerns",
     "title": "Merz Joins Unitree as China's Humanoid Push Concerns EU",
     "excerpt": "Former European robotics executive joins Chinese humanoid leader as geopolitical tensions rise over AI talent migration",
