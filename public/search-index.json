@@ -1,5 +1,26 @@
 [
   {
+    "slug": "skild-ai-nvidia-foxconn-blackwell-partnership",
+    "title": "Skild AI Secures Nvidia, Foxconn Partnership for Blackwell",
+    "excerpt": "Skild AI lands manufacturing deal with Foxconn and Nvidia for Blackwell-powered humanoid AI systems",
+    "category": "breaking",
+    "date": "2026-03-17T19:01:09.419Z",
+    "tags": [
+      "skild-ai",
+      "nvidia",
+      "foxconn",
+      "blackwell",
+      "partnership"
+    ],
+    "companies": [
+      "Skild AI",
+      "Nvidia",
+      "Foxconn"
+    ],
+    "type": "news",
+    "url": "/news/skild-ai-nvidia-foxconn-blackwell-partnership"
+  },
+  {
     "slug": "skild-ai-nvidia-gpu-production-partnership",
     "title": "Skild AI Lands Nvidia GPU Production Partnership",
     "excerpt": "Foundation model startup secures major deployment deal with chip giant for automated manufacturing applications",
@@ -5481,22 +5502,6 @@
     "url": "/jobs"
   },
   {
-    "slug": "greenhouse-figureai-4648134006",
-    "title": "Global Supply Manager, Mechanical — Figure AI",
-    "excerpt": "General · San Jose, CA",
-    "category": "job",
-    "date": "2026-01-27T15:19:10-05:00",
-    "tags": [
-      "hardware",
-      "product"
-    ],
-    "companies": [
-      "Figure AI"
-    ],
-    "type": "job",
-    "url": "/jobs"
-  },
-  {
     "slug": "greenhouse-figureai-4648656006",
     "title": "Global Supply Manager, Softgoods — Figure AI",
     "excerpt": "General · San Jose",
@@ -7925,22 +7930,6 @@
     "url": "/jobs"
   },
   {
-    "slug": "greenhouse-agilityrobotics-5384557004",
-    "title": "Senior Robotics Software Engineer, Autonomy — Agility Robotics",
-    "excerpt": "General · Remote (Remote)",
-    "category": "job",
-    "date": "2026-03-02T11:51:57-05:00",
-    "tags": [
-      "software",
-      "senior"
-    ],
-    "companies": [
-      "Agility Robotics"
-    ],
-    "type": "job",
-    "url": "/jobs"
-  },
-  {
     "slug": "greenhouse-agilityrobotics-5813064004",
     "title": "Senior Service Engineer  — Agility Robotics",
     "excerpt": "General · Onsite- Salem, OR",
@@ -7998,22 +7987,6 @@
     ],
     "companies": [
       "Apptronik"
-    ],
-    "type": "job",
-    "url": "/jobs"
-  },
-  {
-    "slug": "greenhouse-agilityrobotics-5781366004",
-    "title": "Senior Social Media and Digital Strategy Manager — Agility Robotics",
-    "excerpt": "General · Remote (Remote)",
-    "category": "job",
-    "date": "2026-02-27T19:23:13-05:00",
-    "tags": [
-      "product",
-      "senior"
-    ],
-    "companies": [
-      "Agility Robotics"
     ],
     "type": "job",
     "url": "/jobs"
