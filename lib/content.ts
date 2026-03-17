@@ -24,6 +24,28 @@ async function markdownToHtml(markdown: string): Promise<string> {
 }
 
 // ---------------------------------------------------------------------------
+// FAQ extraction from markdown
+// ---------------------------------------------------------------------------
+
+export function extractFAQs(markdown: string): { q: string; a: string }[] {
+  const sectionMatch = markdown.match(
+    /##\s*Frequently Asked Questions\s*\n([\s\S]*?)(?=\n## |\s*$)/i,
+  )
+  if (!sectionMatch) return []
+
+  const section = sectionMatch[1]
+  const faqs: { q: string; a: string }[] = []
+  const pattern = /\*\*(.+?)\*\*\s*\n+([\s\S]*?)(?=\n\n?\*\*|\s*$)/g
+  let match
+  while ((match = pattern.exec(section)) !== null) {
+    const q = match[1].trim()
+    const a = match[2].trim().replace(/\n+/g, ' ')
+    if (q && a) faqs.push({ q, a })
+  }
+  return faqs
+}
+
+// ---------------------------------------------------------------------------
 // Articles
 // ---------------------------------------------------------------------------
 
@@ -77,6 +99,7 @@ export async function getArticle(
     const raw = fs.readFileSync(filePath, 'utf-8')
     const { data, content: markdown } = matter(raw)
     const content = await markdownToHtml(markdown)
+    const faqs = extractFAQs(markdown)
 
     const article: Article = {
       slug,
@@ -92,7 +115,7 @@ export async function getArticle(
       sources: data.sources,
     }
 
-    return { article, content }
+    return { article, content, faqs }
   } catch {
     return null
   }

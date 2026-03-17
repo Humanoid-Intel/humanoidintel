@@ -5,8 +5,8 @@ import Header from '@/components/Header'
 import TickerTape from '@/components/TickerTape'
 import Footer from '@/components/Footer'
 import { SchemaMarkup } from '@/components/SchemaMarkup'
-import { getArticles, getArticle } from '@/lib/content'
-import { generateArticleSchema } from '@/lib/seo'
+import { getArticles, getArticle, getCompanies, getRobots } from '@/lib/content'
+import { generateArticleSchema, generateFAQSchema, generateBreadcrumbSchema } from '@/lib/seo'
 import { NewsletterForm } from '@/components/NewsletterForm'
 
 interface Props {
@@ -38,12 +38,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       publishedTime: article.date,
       modifiedTime: article.updated ?? article.date,
       tags: article.tags,
-      images: [{ url: '/og-image.png', width: 1200, height: 630 }],
     },
     twitter: {
       card: 'summary_large_image',
       title: article.title,
       description: article.excerpt,
+      creator: '@humanoidintel',
     },
   }
 }
@@ -88,19 +88,38 @@ export default async function ArticlePage({ params }: Props) {
     notFound()
   }
 
-  const { article, content } = result
+  const { article, content, faqs } = result
   const allArticles = getArticles()
+  const allCompanies = getCompanies()
+  const allRobots = getRobots()
 
   // Related articles: same category, excluding current
   const related = allArticles
     .filter((a) => a.slug !== slug && a.category === article.category)
     .slice(0, 4)
 
-  const schema = generateArticleSchema(article)
+  // Resolve company and robot profile links from frontmatter
+  const mentionedCompanies = (article.companies ?? [])
+    .map((name) => allCompanies.find((c) => c.name.toLowerCase() === name.toLowerCase()))
+    .filter(Boolean)
+
+  const mentionedRobots = (article.robots ?? [])
+    .map((name) => allRobots.find((r) => r.name.toLowerCase() === name.toLowerCase()))
+    .filter(Boolean)
+
+  const articleSchema = generateArticleSchema(article)
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: 'Terminal', url: 'https://humanoidintel.ai' },
+    { name: 'Newsfeed', url: 'https://humanoidintel.ai/news' },
+    { name: article.title, url: `https://humanoidintel.ai/news/${article.slug}` },
+  ])
+  const faqSchema = faqs.length > 0 ? generateFAQSchema(faqs) : null
 
   return (
     <>
-      <SchemaMarkup schema={schema} />
+      <SchemaMarkup schema={articleSchema} />
+      <SchemaMarkup schema={breadcrumbSchema} />
+      {faqSchema && <SchemaMarkup schema={faqSchema} />}
       <Header />
       <TickerTape />
 
@@ -285,6 +304,67 @@ export default async function ArticlePage({ params }: Props) {
         {/* Right sidebar */}
         <aside style={{ padding: '32px 16px' }}>
 
+          {/* Companies mentioned */}
+          {mentionedCompanies.length > 0 && (
+            <div style={{ marginBottom: 24 }}>
+              <div className="panel-title" style={{ marginBottom: 12 }}>Companies</div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+                {mentionedCompanies.map((c) => c && (
+                  <Link
+                    key={c.slug}
+                    href={`/companies/${c.slug}`}
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: 8,
+                      padding: '6px 10px',
+                      border: '1px solid var(--border-subtle)',
+                      textDecoration: 'none',
+                      fontSize: 12,
+                      color: 'var(--text-secondary)',
+                      transition: 'border-color 0.1s',
+                    }}
+                    className="company-link"
+                  >
+                    <span style={{ color: 'var(--accent-positive)', fontSize: 10 }}>▶</span>
+                    {c.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Robots mentioned */}
+          {mentionedRobots.length > 0 && (
+            <div style={{ marginBottom: 24 }}>
+              <div className="panel-title" style={{ marginBottom: 12 }}>Robots</div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+                {mentionedRobots.map((r) => r && (
+                  <Link
+                    key={r.slug}
+                    href={`/robots/${r.slug}`}
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: 8,
+                      padding: '6px 10px',
+                      border: '1px solid var(--border-subtle)',
+                      textDecoration: 'none',
+                      fontSize: 12,
+                      color: 'var(--text-secondary)',
+                      transition: 'border-color 0.1s',
+                    }}
+                    className="company-link"
+                  >
+                    <span style={{ color: 'var(--accent-positive)', fontSize: 10 }}>▶</span>
+                    {r.name}
+                    <span style={{ marginLeft: 'auto', color: 'var(--text-tertiary)', fontSize: 11 }}>{r.manufacturer}</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
+
           {/* Related articles */}
           {related.length > 0 && (
             <div style={{ marginBottom: 32 }}>
@@ -355,6 +435,7 @@ export default async function ArticlePage({ params }: Props) {
 
       <style>{`
         .related-item:hover { background-color: var(--bg-hover); }
+        .company-link:hover { border-color: var(--accent-positive) !important; color: var(--text-primary) !important; }
         .article-body h1,
         .article-body h2,
         .article-body h3,

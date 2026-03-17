@@ -35,11 +35,12 @@ export function generateMetaTags(
 export function generateArticleSchema(article: Article) {
   return {
     '@context': 'https://schema.org',
-    '@type': 'Article',
+    '@type': 'NewsArticle',
     headline: article.title,
     description: article.excerpt,
     datePublished: article.date,
     dateModified: article.updated ?? article.date,
+    image: `${BASE_URL}/news/${article.slug}/opengraph-image`,
     author: {
       '@type': 'Organization',
       name: SITE_NAME,
@@ -60,6 +61,21 @@ export function generateArticleSchema(article: Article) {
       '@id': `${BASE_URL}/news/${article.slug}`,
     },
     keywords: article.tags.join(', '),
+    articleSection: article.category,
+    isAccessibleForFree: true,
+  }
+}
+
+export function generateBreadcrumbSchema(crumbs: { name: string; url: string }[]) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: crumbs.map((crumb, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: crumb.name,
+      item: crumb.url,
+    })),
   }
 }
 

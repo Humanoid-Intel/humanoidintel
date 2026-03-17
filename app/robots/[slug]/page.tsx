@@ -31,7 +31,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: `${robot.name} — ${robot.manufacturer}`,
       description: robot.description,
       url,
-      images: [{ url: '/og-image.png', width: 1200, height: 630 }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${robot.name} by ${robot.manufacturer} — humanoidintel.ai`,
+      description: robot.description,
+      creator: '@humanoidintel',
     },
   }
 }

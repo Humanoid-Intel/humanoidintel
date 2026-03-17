@@ -54,6 +54,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     getGlossarySlugs(),
   ])
 
+  // Jobs (list page only — individual jobs don't have dedicated pages)
+
+
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: baseUrl, lastModified: now, changeFrequency: 'hourly', priority: 1.0 },
     { url: `${baseUrl}/news`, lastModified: now, changeFrequency: 'hourly', priority: 0.9 },
@@ -64,6 +67,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/glossary`, lastModified: now, changeFrequency: 'weekly', priority: 0.7 },
     { url: `${baseUrl}/newsletter`, lastModified: now, changeFrequency: 'weekly', priority: 0.6 },
     { url: `${baseUrl}/about`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
+    { url: `${baseUrl}/jobs`, lastModified: now, changeFrequency: 'daily', priority: 0.7 },
   ]
 
   const articleRoutes: MetadataRoute.Sitemap = articleSlugs.map((slug) => ({
