@@ -6,6 +6,7 @@ import TickerTape from '@/components/TickerTape'
 import Footer from '@/components/Footer'
 import { NewsletterForm } from '@/components/NewsletterForm'
 import { SchemaMarkup } from '@/components/SchemaMarkup'
+import { FAQAccordion } from '@/components/FAQAccordion'
 import { getArticles, getFeaturedArticle, getRobots, getFundingRounds } from '@/lib/content'
 import { generateFAQSchema } from '@/lib/seo'
 import type { Article, Robot } from '@/lib/types'
@@ -438,7 +439,6 @@ export default function HomePage() {
         .hero-panel:hover { background-color: var(--bg-hover) !important; }
         .news-row:hover { background-color: var(--bg-hover); }
         .robot-row:hover { background-color: var(--bg-hover); }
-        .faq-item:hover { background-color: var(--bg-hover); }
       `}</style>
 
       <Header />
@@ -1089,66 +1089,22 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* ── FAQ section — full width, SEO/GEO signal ──────────────────────── */}
+      {/* ── FAQ accordion — SEO/GEO signal, minimal footprint ───────────── */}
       <div
         style={{
           borderTop: '1px solid var(--border-subtle)',
-          padding: '40px 24px 48px',
-          maxWidth: 1200,
+          padding: '20px 24px 28px',
+          maxWidth: 860,
           margin: '0 auto',
         }}
       >
-        <div style={{ display: 'flex', alignItems: 'baseline', gap: 12, marginBottom: 28 }}>
-          <span className="panel-title">Frequently Asked Questions</span>
-          <span className="font-data" style={{ fontSize: 11, color: 'var(--text-tertiary)' }}>
+        <div style={{ display: 'flex', alignItems: 'baseline', gap: 10, marginBottom: 14 }}>
+          <span className="panel-title" style={{ fontSize: 11 }}>FAQ</span>
+          <span className="font-data" style={{ fontSize: 10, color: 'var(--text-tertiary)' }}>
             // humanoid robotics intelligence
           </span>
         </div>
-
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fill, minmax(520px, 1fr))',
-            gap: 0,
-          }}
-        >
-          {HOME_FAQS.map((faq, i) => (
-            <div
-              key={i}
-              className="faq-item"
-              style={{
-                padding: '18px 20px',
-                borderBottom: '1px solid var(--border-subtle)',
-                borderRight: i % 2 === 0 ? '1px solid var(--border-subtle)' : 'none',
-                transition: 'background-color 0.1s',
-              }}
-            >
-              <div
-                className="font-head"
-                style={{
-                  fontSize: 13,
-                  fontWeight: 600,
-                  color: 'var(--text-primary)',
-                  marginBottom: 8,
-                  lineHeight: 1.4,
-                }}
-              >
-                <span style={{ color: 'var(--accent-positive)', marginRight: 8, fontSize: 10 }}>▶</span>
-                {faq.q}
-              </div>
-              <div
-                style={{
-                  fontSize: 13,
-                  color: 'var(--text-secondary)',
-                  lineHeight: 1.65,
-                  paddingLeft: 18,
-                }}
-              >
-                {faq.a}
-              </div>
-            </div>
-          ))}
-        </div>
+        <FAQAccordion faqs={HOME_FAQS} />
       </div>
 
       <Footer />
