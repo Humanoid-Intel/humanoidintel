@@ -126,16 +126,17 @@ export default function Header() {
           >
             <button
               type="button"
+              onClick={() => setMoreOpen((prev) => !prev)}
               style={{
                 fontSize: 12,
                 fontWeight: 500,
-                color: moreLinks.some((l) => isActive(l.href))
+                color: moreOpen || moreLinks.some((l) => isActive(l.href))
                   ? 'var(--text-primary)'
                   : 'var(--text-secondary)',
                 background: 'none',
                 border: 'none',
                 cursor: 'pointer',
-                padding: 0,
+                padding: '4px 0',
                 transition: 'color 0.15s',
               }}
               onMouseEnter={(e) => {
@@ -143,10 +144,12 @@ export default function Header() {
                   'var(--text-primary)'
               }}
               onMouseLeave={(e) => {
-                ;(e.currentTarget as HTMLButtonElement).style.color =
-                  moreLinks.some((l) => isActive(l.href))
-                    ? 'var(--text-primary)'
-                    : 'var(--text-secondary)'
+                if (!moreOpen) {
+                  ;(e.currentTarget as HTMLButtonElement).style.color =
+                    moreLinks.some((l) => isActive(l.href))
+                      ? 'var(--text-primary)'
+                      : 'var(--text-secondary)'
+                }
               }}
             >
               More ▾
@@ -156,45 +159,53 @@ export default function Header() {
                 style={{
                   position: 'absolute',
                   top: '100%',
-                  left: 0,
-                  marginTop: 8,
-                  backgroundColor: 'var(--bg-panel)',
-                  border: '1px solid var(--border-strong)',
-                  minWidth: 150,
+                  left: -8,
+                  paddingTop: 4,
                   zIndex: 100,
-                  display: 'flex',
-                  flexDirection: 'column',
                 }}
               >
-                {moreLinks.map((link) => (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    style={{
-                      fontSize: 12,
-                      fontWeight: 500,
-                      padding: '8px 14px',
-                      color: isActive(link.href)
-                        ? 'var(--text-primary)'
-                        : 'var(--text-secondary)',
-                      transition: 'background-color 0.1s, color 0.1s',
-                    }}
-                    onMouseEnter={(e) => {
-                      const el = e.currentTarget as HTMLAnchorElement
-                      el.style.color = 'var(--text-primary)'
-                      el.style.backgroundColor = 'var(--bg-hover)'
-                    }}
-                    onMouseLeave={(e) => {
-                      const el = e.currentTarget as HTMLAnchorElement
-                      el.style.color = isActive(link.href)
-                        ? 'var(--text-primary)'
-                        : 'var(--text-secondary)'
-                      el.style.backgroundColor = 'transparent'
-                    }}
-                  >
-                    {link.label}
-                  </Link>
-                ))}
+                <div
+                  style={{
+                    backgroundColor: 'var(--bg-panel)',
+                    border: '1px solid var(--border-strong)',
+                    minWidth: 160,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    boxShadow: '0 4px 12px rgba(0,0,0,0.4)',
+                  }}
+                >
+                  {moreLinks.map((link) => (
+                    <Link
+                      key={link.href}
+                      href={link.href}
+                      onClick={() => setMoreOpen(false)}
+                      style={{
+                        fontSize: 12,
+                        fontWeight: 500,
+                        padding: '10px 14px',
+                        color: isActive(link.href)
+                          ? 'var(--text-primary)'
+                          : 'var(--text-secondary)',
+                        transition: 'background-color 0.1s, color 0.1s',
+                        display: 'block',
+                      }}
+                      onMouseEnter={(e) => {
+                        const el = e.currentTarget as HTMLAnchorElement
+                        el.style.color = 'var(--text-primary)'
+                        el.style.backgroundColor = 'var(--bg-hover)'
+                      }}
+                      onMouseLeave={(e) => {
+                        const el = e.currentTarget as HTMLAnchorElement
+                        el.style.color = isActive(link.href)
+                          ? 'var(--text-primary)'
+                          : 'var(--text-secondary)'
+                        el.style.backgroundColor = 'transparent'
+                      }}
+                    >
+                      {link.label}
+                    </Link>
+                  ))}
+                </div>
               </div>
             )}
           </div>
