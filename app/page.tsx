@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import fs from 'fs'
 import path from 'path'
@@ -12,6 +13,19 @@ import { generateFAQSchema } from '@/lib/seo'
 import type { Article, Robot } from '@/lib/types'
 import CapitalFlowChart from '@/components/CapitalFlowChart'
 import type { FlowBar } from '@/components/CapitalFlowChart'
+
+export const metadata: Metadata = {
+  title: 'humanoidintel.ai — Bloomberg Terminal for Humanoid Robotics',
+  description:
+    'The leading intelligence platform tracking the humanoid robotics industry — funding rounds, robot specs, market data, research papers, and breaking news across every major humanoid robot company globally.',
+  alternates: { canonical: 'https://humanoidintel.ai' },
+  openGraph: {
+    title: 'humanoidintel.ai — Bloomberg Terminal for Humanoid Robotics',
+    description:
+      'The leading intelligence platform tracking the humanoid robotics industry — funding rounds, robot specs, market data, research papers, and breaking news across every major humanoid robot company globally.',
+    url: 'https://humanoidintel.ai',
+  },
+}
 
 // ── Homepage FAQ — SEO/GEO signals for AI answer engines ────────────────────
 const HOME_FAQS = [

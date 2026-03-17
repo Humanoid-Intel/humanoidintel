@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Header from '@/components/Header'
 import TickerTape from '@/components/TickerTape'
 import Footer from '@/components/Footer'
+import { SchemaMarkup } from '@/components/SchemaMarkup'
 import { getGlossaryTerms } from '@/lib/content'
 import type { GlossaryTerm } from '@/lib/types'
 
@@ -50,8 +51,24 @@ export default function GlossaryPage() {
   const grouped = groupByCategory(terms)
   const categories = Object.keys(grouped).sort()
 
+  const glossarySchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: 'Humanoid Robotics Glossary',
+    description: 'The definitive reference for humanoid robotics terminology. Definitions for every term in hardware, software, AI, and mechanical design.',
+    url: 'https://humanoidintel.ai/glossary',
+    breadcrumb: {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://humanoidintel.ai' },
+        { '@type': 'ListItem', position: 2, name: 'Glossary', item: 'https://humanoidintel.ai/glossary' },
+      ],
+    },
+  }
+
   return (
     <>
+      <SchemaMarkup schema={glossarySchema} />
       <Header />
       <TickerTape />
 

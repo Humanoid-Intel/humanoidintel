@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Header from '@/components/Header'
 import TickerTape from '@/components/TickerTape'
 import Footer from '@/components/Footer'
+import { SchemaMarkup } from '@/components/SchemaMarkup'
 import { getCompanies } from '@/lib/content'
 import type { Company } from '@/lib/types'
 
@@ -142,8 +143,24 @@ export default function CompaniesPage() {
   const totalFundingDisplay = `$${(companies.length * 0.2).toFixed(2)}B+ tracked`
   const activeCount = companies.filter((c) => c.status === 'active').length
 
+  const collectionPageSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: 'Company Tracker',
+    description: 'Track every humanoid robotics company: funding raised, valuations, products, and operational status.',
+    url: 'https://humanoidintel.ai/companies',
+    breadcrumb: {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://humanoidintel.ai' },
+        { '@type': 'ListItem', position: 2, name: 'Companies', item: 'https://humanoidintel.ai/companies' },
+      ],
+    },
+  }
+
   return (
     <>
+      <SchemaMarkup schema={collectionPageSchema} />
       <Header />
       <TickerTape />
 

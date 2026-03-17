@@ -5,6 +5,7 @@ import Link from 'next/link'
 import Header from '@/components/Header'
 import TickerTape from '@/components/TickerTape'
 import Footer from '@/components/Footer'
+import { SchemaMarkup } from '@/components/SchemaMarkup'
 
 export const metadata: Metadata = {
   title: 'Events & Conferences — humanoidintel.ai',
@@ -98,6 +99,25 @@ export default function EventsPage() {
     <Header />
     <TickerTape />
     <main style={{ maxWidth: 900, margin: '0 auto', padding: '0 16px' }}>
+      <SchemaMarkup
+        schema={{
+          '@context': 'https://schema.org',
+          '@graph': events.map((event) => ({
+            '@type': 'Event',
+            name: event.name,
+            startDate: event.startDate,
+            endDate: event.endDate,
+            location: {
+              '@type': 'Place',
+              name: event.location,
+              address: event.location,
+            },
+            description: event.relevance,
+            organizer: event.name,
+            url: event.url,
+          })),
+        }}
+      />
       {/* Page header */}
       <div
         style={{

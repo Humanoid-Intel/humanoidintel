@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { getArticles } from '@/lib/content'
+import { SchemaMarkup } from '@/components/SchemaMarkup'
 import NewsClient from './NewsClient'
 
 export const metadata: Metadata = {
@@ -15,7 +16,27 @@ export const metadata: Metadata = {
   },
 }
 
+const newsSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'Newsfeed',
+  description: 'Real-time humanoid robotics news: funding rounds, product launches, research breakthroughs, and policy updates.',
+  url: 'https://humanoidintel.ai/news',
+  breadcrumb: {
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://humanoidintel.ai' },
+      { '@type': 'ListItem', position: 2, name: 'Newsfeed', item: 'https://humanoidintel.ai/news' },
+    ],
+  },
+}
+
 export default function NewsPage() {
   const articles = getArticles()
-  return <NewsClient articles={articles} />
+  return (
+    <>
+      <SchemaMarkup schema={newsSchema} />
+      <NewsClient articles={articles} />
+    </>
+  )
 }

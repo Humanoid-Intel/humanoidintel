@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Header from '@/components/Header'
 import TickerTape from '@/components/TickerTape'
 import Footer from '@/components/Footer'
+import { SchemaMarkup } from '@/components/SchemaMarkup'
 import { NewsletterForm } from '@/components/NewsletterForm'
 import { getNewsletterEditions } from '@/lib/content'
 
@@ -30,11 +31,27 @@ function formatDate(dateStr: string) {
   }
 }
 
+const newsletterSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Newsletter Archive',
+  description: 'Every edition of the humanoidintel.ai intelligence briefing — weekly analysis of humanoid robotics funding, launches, and research.',
+  url: 'https://humanoidintel.ai/newsletter',
+  breadcrumb: {
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://humanoidintel.ai' },
+      { '@type': 'ListItem', position: 2, name: 'Newsletter', item: 'https://humanoidintel.ai/newsletter' },
+    ],
+  },
+}
+
 export default function NewsletterPage() {
   const editions = getNewsletterEditions()
 
   return (
     <>
+      <SchemaMarkup schema={newsletterSchema} />
       <Header />
       <TickerTape />
 

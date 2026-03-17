@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { getFundingRounds } from '@/lib/content'
+import { SchemaMarkup } from '@/components/SchemaMarkup'
 import FundingClient from './FundingClient'
 
 export const metadata: Metadata = {
@@ -15,7 +16,27 @@ export const metadata: Metadata = {
   },
 }
 
+const fundingSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Funding Dashboard',
+  description: 'Complete funding data for every humanoid robotics company. Round sizes, valuations, lead investors, and geographic analysis.',
+  url: 'https://humanoidintel.ai/funding',
+  breadcrumb: {
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://humanoidintel.ai' },
+      { '@type': 'ListItem', position: 2, name: 'Funding', item: 'https://humanoidintel.ai/funding' },
+    ],
+  },
+}
+
 export default function FundingPage() {
   const rounds = getFundingRounds()
-  return <FundingClient rounds={rounds} />
+  return (
+    <>
+      <SchemaMarkup schema={fundingSchema} />
+      <FundingClient rounds={rounds} />
+    </>
+  )
 }

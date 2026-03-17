@@ -1,17 +1,32 @@
 import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import { SchemaMarkup } from '@/components/SchemaMarkup'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy — humanoidintel.ai',
   description: 'How humanoidintel.ai collects and uses data.',
   alternates: { canonical: 'https://humanoidintel.ai/privacy' },
+  openGraph: {
+    title: 'Privacy Policy — humanoidintel.ai',
+    description: 'How humanoidintel.ai collects and uses data.',
+    url: 'https://humanoidintel.ai/privacy',
+  },
+}
+
+const privacySchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Privacy Policy',
+  description: 'How humanoidintel.ai collects and uses data.',
+  url: 'https://humanoidintel.ai/privacy',
 }
 
 export default function PrivacyPage() {
   return (
     <>
+      <SchemaMarkup schema={privacySchema} />
       <Header />
 
       <div style={{ padding: '0 16px', maxWidth: 720 }}>

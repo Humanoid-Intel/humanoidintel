@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { SchemaMarkup } from '@/components/SchemaMarkup'
 
 export const metadata: Metadata = {
   title: 'Research Hub — humanoidintel.ai',
@@ -25,10 +26,30 @@ export const metadata: Metadata = {
   },
 }
 
+const researchSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Research Hub',
+  description: 'Key academic papers shaping humanoid robotics — locomotion, manipulation, sim-to-real transfer, VLA foundation models, and tactile sensing research.',
+  url: 'https://humanoidintel.ai/research',
+  breadcrumb: {
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://humanoidintel.ai' },
+      { '@type': 'ListItem', position: 2, name: 'Research', item: 'https://humanoidintel.ai/research' },
+    ],
+  },
+}
+
 export default function ResearchLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
-  return <>{children}</>
+  return (
+    <>
+      <SchemaMarkup schema={researchSchema} />
+      {children}
+    </>
+  )
 }

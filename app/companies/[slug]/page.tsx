@@ -6,6 +6,7 @@ import TickerTape from '@/components/TickerTape'
 import Footer from '@/components/Footer'
 import { getCompanies, getCompany, getRobots } from '@/lib/content'
 import WatchlistButton from '@/components/WatchlistButton'
+import { SchemaMarkup } from '@/components/SchemaMarkup'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -59,6 +60,55 @@ export default async function CompanyProfilePage({ params }: Props) {
     <>
       <Header />
       <TickerTape />
+
+      <SchemaMarkup
+        schema={{
+          '@context': 'https://schema.org',
+          '@type': 'Organization',
+          name: company.name,
+          ...(company.website ? { url: company.website } : {}),
+          description: company.description,
+          foundingDate: String(company.founded),
+          location: {
+            '@type': 'Place',
+            address: company.hq,
+          },
+          ...(company.headcount
+            ? {
+                numberOfEmployees: {
+                  '@type': 'QuantitativeValue',
+                  value: company.headcount,
+                },
+              }
+            : {}),
+        }}
+      />
+      <SchemaMarkup
+        schema={{
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            {
+              '@type': 'ListItem',
+              position: 1,
+              name: 'Home',
+              item: 'https://humanoidintel.ai',
+            },
+            {
+              '@type': 'ListItem',
+              position: 2,
+              name: 'Companies',
+              item: 'https://humanoidintel.ai/companies',
+            },
+            {
+              '@type': 'ListItem',
+              position: 3,
+              name: company.name,
+              item: `https://humanoidintel.ai/companies/${company.slug}`,
+            },
+          ],
+        }}
+      />
 
       <div style={{ padding: '0 16px', maxWidth: 1000 }}>
         {/* Breadcrumb */}

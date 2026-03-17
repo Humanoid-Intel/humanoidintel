@@ -5,6 +5,7 @@ import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import TickerTape from '@/components/TickerTape'
+import { SchemaMarkup } from '@/components/SchemaMarkup'
 
 export const metadata: Metadata = {
   title: 'Supply Chain Intelligence — humanoidintel.ai',
@@ -89,6 +90,36 @@ export default function SupplyChainPage() {
 
   return (
     <>
+      <SchemaMarkup
+        schema={{
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            {
+              '@type': 'ListItem',
+              position: 1,
+              name: 'Home',
+              item: 'https://humanoidintel.ai',
+            },
+            {
+              '@type': 'ListItem',
+              position: 2,
+              name: 'Supply Chain',
+              item: 'https://humanoidintel.ai/supply-chain',
+            },
+          ],
+        }}
+      />
+      <SchemaMarkup
+        schema={{
+          '@context': 'https://schema.org',
+          '@type': 'WebPage',
+          name: 'Supply Chain Intelligence — humanoidintel.ai',
+          description:
+            'Tracking key suppliers powering the humanoid robotics industry — chips, actuators, sensors, batteries, hands, and AI software.',
+          url: 'https://humanoidintel.ai/supply-chain',
+        }}
+      />
       <Header />
       <TickerTape />
 
