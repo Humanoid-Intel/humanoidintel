@@ -495,5 +495,43 @@
       { "date": "2023-01", "event": "Commercial deployments in bank branches begin" },
       { "date": "2024-06", "event": "Hyundai showroom deployment announced" }
     ]
+  },
+  {
+    "slug": "walker-s2",
+    "name": "Walker S2",
+    "manufacturer": "UBTECH Robotics",
+    "country": "China",
+    "status": "commercial",
+    "height": "1.70m",
+    "weight": "60kg",
+    "dof": 41,
+    "payload": "15kg",
+    "battery": "3 hrs",
+    "actuatorType": "Electric",
+    "description": "UBTECH's Walker S2 is the latest evolution of the Walker platform, featuring autonomous battery swapping capability that enables 24/7 continuous operation in factory environments without human intervention. The S2 retains the 41 degrees of freedom of its predecessor while adding improved manipulation dexterity and a modular battery system. Demonstrated changing its own battery pack autonomously in CNET coverage.",
+    "deploymentNotes": "Targeting automotive and electronics manufacturing lines. Autonomous battery swap demonstrated publicly in March 2026.",
+    "milestones": [
+      { "date": "2025-10", "event": "Walker S2 prototype unveiled" },
+      { "date": "2026-03", "event": "Autonomous battery swapping demo covered by CNET" }
+    ]
+  },
+  {
+    "slug": "phantom-mk1",
+    "name": "Phantom MK-1",
+    "manufacturer": "Foundation Robotics",
+    "country": "USA",
+    "status": "commercial",
+    "height": "1.78m",
+    "weight": "80kg",
+    "dof": 30,
+    "payload": "20kg",
+    "battery": "4 hrs",
+    "actuatorType": "Electric",
+    "description": "The Phantom MK-1 is a defense-focused humanoid robot built by San Francisco-based Foundation Robotics. Designed for military and tactical operations, it is capable of operating firearms including pistols, shotguns, and M16 rifles. As of March 2026, two units are reportedly deployed on the Ukrainian front lines, marking one of the first known active-duty deployments of humanoid robots in a combat zone. Featured in TIME magazine's 'Rise of the AI Soldiers' article.",
+    "deploymentNotes": "Two units reportedly deployed on the Ukrainian front lines as of March 2026. First known combat deployment of a humanoid robot.",
+    "milestones": [
+      { "date": "2025-06", "event": "Phantom MK-1 prototype demonstrated" },
+      { "date": "2026-03", "event": "Deployed to Ukrainian front lines; TIME 'Rise of the AI Soldiers' feature" }
+    ]
   }
 ]
