@@ -1,5 +1,63 @@
 [
   {
+    "slug": "unitree-g1-snow-cold-weather-testing",
+    "title": "Unitree G1 Conquers Snow in -20°C Field Test",
+    "excerpt": "Unitree's G1 humanoid demonstrates outdoor mobility in deep snow and -20°C temperatures",
+    "category": "breaking",
+    "date": "2026-03-17T06:02:17.757Z",
+    "tags": [
+      "unitree",
+      "g1",
+      "field-testing",
+      "cold-weather"
+    ],
+    "companies": [
+      "Unitree Robotics"
+    ],
+    "type": "news",
+    "url": "/news/unitree-g1-snow-cold-weather-testing"
+  },
+  {
+    "slug": "skild-ai-partners-abb-universal-robots-nvidia-generalized-intelligence",
+    "title": "Skild AI Partners with ABB, Universal Robots for Robot Intelligence",
+    "excerpt": "Skild AI announces strategic partnerships with ABB Robotics, Universal Robots, and NVIDIA to deploy generalized robot intelligence",
+    "category": "breaking",
+    "date": "2026-03-17T06:01:30.059Z",
+    "tags": [
+      "skild-ai",
+      "abb-robotics",
+      "universal-robots",
+      "nvidia",
+      "partnerships"
+    ],
+    "companies": [
+      "Skild AI",
+      "ABB Robotics",
+      "Universal Robots",
+      "NVIDIA"
+    ],
+    "type": "news",
+    "url": "/news/skild-ai-partners-abb-universal-robots-nvidia-generalized-intelligence"
+  },
+  {
+    "slug": "nvidia-european-chipmaker-partnerships-humanoid-robots",
+    "title": "Nvidia Partners European Chipmakers for Humanoid Push",
+    "excerpt": "Nvidia expands humanoid robotics reach through strategic European semiconductor partnerships targeting compute infrastructure",
+    "category": "breaking",
+    "date": "2026-03-17T06:00:53.439Z",
+    "tags": [
+      "nvidia",
+      "partnerships",
+      "european-chipmakers",
+      "gr00t"
+    ],
+    "companies": [
+      "Nvidia"
+    ],
+    "type": "news",
+    "url": "/news/nvidia-european-chipmaker-partnerships-humanoid-robots"
+  },
+  {
     "slug": "skild-ai-nvidia-oem-partnerships-humanoid-robotics",
     "title": "Skild AI Partners with NVIDIA, OEMs for Humanoid Deployment",
     "excerpt": "Skild AI announces strategic alliances with NVIDIA and major OEMs to accelerate humanoid robot deployment across industries",
