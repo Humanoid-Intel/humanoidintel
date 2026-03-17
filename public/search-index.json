@@ -1,5 +1,25 @@
 [
   {
+    "slug": "infineon-nvidia-humanoid-motor-control-partnership",
+    "title": "Infineon-Nvidia Partnership Targets Humanoid Motor Control",
+    "excerpt": "Infineon and Nvidia expand Aug 2025 collaboration to integrate motor control MCUs with GR00T simulation platform",
+    "category": "breaking",
+    "date": "2026-03-17T19:58:11.694Z",
+    "tags": [
+      "infineon",
+      "nvidia",
+      "motor-control",
+      "digital-twins",
+      "partnerships"
+    ],
+    "companies": [
+      "Infineon Technologies",
+      "Nvidia"
+    ],
+    "type": "news",
+    "url": "/news/infineon-nvidia-humanoid-motor-control-partnership"
+  },
+  {
     "slug": "skild-ai-nvidia-foxconn-blackwell-partnership",
     "title": "Skild AI Secures Nvidia, Foxconn Partnership for Blackwell",
     "excerpt": "Skild AI lands manufacturing deal with Foxconn and Nvidia for Blackwell-powered humanoid AI systems",
