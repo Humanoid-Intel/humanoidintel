@@ -1,5 +1,65 @@
 [
   {
+    "slug": "china-humanoid-robots-factory-deployment-2026",
+    "title": "China Deploys Humanoid Robots in Factories at Scale",
+    "excerpt": "Chinese manufacturers accelerate humanoid robot adoption with over 2,000 units deployed across factories and warehouses in Q1 2026",
+    "category": "breaking",
+    "date": "2026-03-17T13:02:56.646Z",
+    "tags": [
+      "china",
+      "manufacturing",
+      "logistics",
+      "deployment",
+      "industrial"
+    ],
+    "companies": [
+      "Ubtech Robotics",
+      "Fourier Intelligence",
+      "Agility Robotics"
+    ],
+    "type": "news",
+    "url": "/news/china-humanoid-robots-factory-deployment-2026"
+  },
+  {
+    "slug": "schaeffler-leju-robotics-partnership-industrial-humanoids",
+    "title": "Schaeffler Partners with Leju for Industrial Humanoids",
+    "excerpt": "German bearing giant Schaeffler partners with Chinese humanoid maker Leju Robotics for industrial applications",
+    "category": "breaking",
+    "date": "2026-03-17T13:02:23.665Z",
+    "tags": [
+      "schaeffler",
+      "leju-robotics",
+      "industrial-partnerships",
+      "actuators"
+    ],
+    "companies": [
+      "Schaeffler",
+      "Leju Robotics"
+    ],
+    "type": "news",
+    "url": "/news/schaeffler-leju-robotics-partnership-industrial-humanoids"
+  },
+  {
+    "slug": "nebius-nvidia-physical-ai-blueprint-integration",
+    "title": "Nebius Integrates NVIDIA Physical AI Blueprint",
+    "excerpt": "Nebius integrates NVIDIA's Physical AI Data Factory Blueprint into global AI infrastructure for humanoid training",
+    "category": "breaking",
+    "date": "2026-03-17T13:01:15.807Z",
+    "tags": [
+      "nvidia",
+      "nebius",
+      "physical-ai",
+      "cloud-infrastructure",
+      "gr00t"
+    ],
+    "companies": [
+      "Nebius",
+      "NVIDIA"
+    ],
+    "type": "news",
+    "url": "/news/nebius-nvidia-physical-ai-blueprint-integration"
+  },
+  {
     "slug": "daifuku-warehouse-humanoid-robots-three-years",
     "title": "Daifuku Sets 3-Year Timeline for Warehouse Humanoids",
     "excerpt": "Japanese logistics giant targets humanoid robot deployment in warehouses by 2027",
