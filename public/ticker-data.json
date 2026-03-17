@@ -2,13 +2,13 @@
   {
     "symbol": "FIG.AI",
     "label": "Figure 03",
-    "status": "+Unicorn",
+    "status": "+News",
     "positive": true
   },
   {
     "symbol": "TSLA.BOT",
     "label": "Optimus",
-    "status": "+Public.Demo",
+    "status": "+News",
     "positive": true
   },
   {
@@ -20,7 +20,7 @@
   {
     "symbol": "AGIL.ROB",
     "label": "Digit",
-    "status": "+Unicorn",
+    "status": "+News",
     "positive": true
   },
   {

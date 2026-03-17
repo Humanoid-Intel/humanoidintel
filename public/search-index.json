@@ -1,5 +1,61 @@
 [
   {
+    "slug": "lei-jun-ubtech-humanoid-worker-partnership",
+    "title": "Lei Jun Partners with UBTech on Humanoid Worker Vision",
+    "excerpt": "Xiaomi CEO Lei Jun aligns with UBTech's vision to deploy humanoids as skilled manufacturing workers",
+    "category": "breaking",
+    "date": "2026-03-17T09:06:07.554Z",
+    "tags": [
+      "ubtech",
+      "lei-jun",
+      "xiaomi",
+      "partnership",
+      "skilled-workers"
+    ],
+    "companies": [
+      "UBTech Robotics",
+      "Xiaomi"
+    ],
+    "type": "news",
+    "url": "/news/lei-jun-ubtech-humanoid-worker-partnership"
+  },
+  {
+    "slug": "humanoid-robots-first-complete-industrial-revolution",
+    "title": "Humanoid Robots Mark First Complete Industrial Revolution",
+    "excerpt": "Analysis reveals humanoids represent the first industrial revolution humanity will experience from inception to completion.",
+    "category": "market",
+    "date": "2026-03-17T09:05:31.173Z",
+    "tags": [
+      "industrial-revolution",
+      "market-analysis",
+      "humanoid-adoption"
+    ],
+    "companies": [
+      "Tesla",
+      "Figure AI",
+      "Boston Dynamics",
+      "Agility Robotics"
+    ],
+    "type": "news",
+    "url": "/news/humanoid-robots-first-complete-industrial-revolution"
+  },
+  {
+    "slug": "3d-vision-stack-humanoid-robot-safety",
+    "title": "New 3D Vision Stack Boosts Humanoid Safety",
+    "excerpt": "Advanced 3D vision processing enables safer humanoid navigation with real-time depth sensing and obstacle avoidance capabilities.",
+    "category": "breaking",
+    "date": "2026-03-17T09:03:05.471Z",
+    "tags": [
+      "3d-vision",
+      "perception",
+      "safety",
+      "whole-body-control"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/3d-vision-stack-humanoid-robot-safety"
+  },
+  {
     "slug": "roboforce-52m-funding-physical-ai-industrial-robots",
     "title": "RoboForce Raises $52M for Physical AI Industrial Robots",
     "excerpt": "RoboForce secures $52M Series B led by YZi Labs to develop physical AI-powered humanoid robots for industrial applications",
@@ -18,6 +74,57 @@
     ],
     "type": "news",
     "url": "/news/roboforce-52m-funding-physical-ai-industrial-robots"
+  },
+  {
+    "slug": "st-leopard-imaging-multi-sensor-module-humanoid-vision",
+    "title": "ST-Leopard Module Targets Humanoid Vision Systems",
+    "excerpt": "STMicroelectronics and Leopard Imaging debut integrated vision module combining RGB, depth, and IMU sensors for humanoid robots.",
+    "category": "breaking",
+    "date": "2026-03-17T09:02:24.531Z",
+    "tags": [
+      "stmicroelectronics",
+      "leopard-imaging",
+      "computer-vision",
+      "sensors"
+    ],
+    "companies": [
+      "STMicroelectronics",
+      "Leopard Imaging"
+    ],
+    "type": "news",
+    "url": "/news/st-leopard-imaging-multi-sensor-module-humanoid-vision"
+  },
+  {
+    "slug": "north-korea-humanoid-robot-voting-traditional-dress",
+    "title": "North Korea Shows Humanoid Robot in Traditional Dress",
+    "excerpt": "DPRK deploys humanoid robot wearing traditional Korean hanbok for symbolic voting demonstration",
+    "category": "breaking",
+    "date": "2026-03-17T09:01:48.546Z",
+    "tags": [
+      "north-korea",
+      "humanoid-robot",
+      "voting",
+      "geopolitics"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/north-korea-humanoid-robot-voting-traditional-dress"
+  },
+  {
+    "slug": "china-10-billion-yuan-humanoid-robot-investment",
+    "title": "China Commits $1.4B to Humanoid Robot Development Push",
+    "excerpt": "Chinese government and industry commit 10 billion yuan ($1.4B) to accelerate humanoid robot development and manufacturing",
+    "category": "breaking",
+    "date": "2026-03-17T09:01:10.795Z",
+    "tags": [
+      "china",
+      "funding",
+      "government-investment",
+      "industrial-policy"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/china-10-billion-yuan-humanoid-robot-investment"
   },
   {
     "slug": "china-humanoid-robots-beyond-spectacle-wider-applications",
