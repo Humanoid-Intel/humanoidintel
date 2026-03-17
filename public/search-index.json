@@ -1,5 +1,94 @@
 [
   {
+    "slug": "skild-ai-nvidia-oem-partnerships-humanoid-robotics",
+    "title": "Skild AI Partners with NVIDIA, OEMs for Humanoid Deployment",
+    "excerpt": "Skild AI announces strategic alliances with NVIDIA and major OEMs to accelerate humanoid robot deployment across industries",
+    "category": "breaking",
+    "date": "2026-03-17T05:04:01.566Z",
+    "tags": [
+      "skild-ai",
+      "nvidia",
+      "partnerships",
+      "foundation-models"
+    ],
+    "companies": [
+      "Skild AI",
+      "NVIDIA"
+    ],
+    "type": "news",
+    "url": "/news/skild-ai-nvidia-oem-partnerships-humanoid-robotics"
+  },
+  {
+    "slug": "multimodal-ai-humanoid-robot-intelligence-breakthrough",
+    "title": "Multimodal AI Transforms Humanoid Robot Intelligence",
+    "excerpt": "New multimodal AI systems enable humanoids to process vision, audio, and text simultaneously for human-like reasoning",
+    "category": "breaking",
+    "date": "2026-03-17T05:03:23.575Z",
+    "tags": [
+      "multimodal-ai",
+      "humanoid-intelligence",
+      "vla",
+      "sim-to-real"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/multimodal-ai-humanoid-robot-intelligence-breakthrough"
+  },
+  {
+    "slug": "samsung-tesollo-humanoid-robotics-development-2026",
+    "title": "Samsung Enters Humanoid Race as Tesollo Unveils New Hand",
+    "excerpt": "Samsung expands humanoid robotics while Tesollo launches new robotic hand targeting manipulation tasks",
+    "category": "breaking",
+    "date": "2026-03-17T05:02:36.526Z",
+    "tags": [
+      "samsung",
+      "tesollo",
+      "robotic-hand",
+      "dexterous-manipulation"
+    ],
+    "companies": [
+      "Samsung",
+      "Tesollo"
+    ],
+    "type": "news",
+    "url": "/news/samsung-tesollo-humanoid-robotics-development-2026"
+  },
+  {
+    "slug": "china-robot-training-schools-humanoids-factory-logistics",
+    "title": "China Opens Robot Training Schools for Humanoids",
+    "excerpt": "China launches specialized training facilities to prepare humanoid robots for industrial deployment",
+    "category": "market",
+    "date": "2026-03-17T05:01:24.464Z",
+    "tags": [
+      "china",
+      "training",
+      "manufacturing",
+      "logistics",
+      "workforce"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/china-robot-training-schools-humanoids-factory-logistics"
+  },
+  {
+    "slug": "ubtech-strategic-alliance-humanoid-production",
+    "title": "Ubtech Forms Strategic Alliance to Scale Humanoid Production",
+    "excerpt": "Chinese humanoid leader Ubtech announces manufacturing partnership to accelerate production capabilities",
+    "category": "market",
+    "date": "2026-03-17T05:00:52.946Z",
+    "tags": [
+      "ubtech",
+      "strategic-alliance",
+      "manufacturing",
+      "scaling"
+    ],
+    "companies": [
+      "Ubtech Robotics"
+    ],
+    "type": "news",
+    "url": "/news/ubtech-strategic-alliance-humanoid-production"
+  },
+  {
     "slug": "halo-framework-heavy-payload-humanoid-sim-to-real",
     "title": "HALO Framework Tackles Heavy Payload Challenge",
     "excerpt": "New differentiable simulation framework addresses 40kg payload challenges in humanoid robot training",
