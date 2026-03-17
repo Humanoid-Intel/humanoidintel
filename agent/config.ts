@@ -186,15 +186,15 @@ export const config = {
 
   xPosting: {
     enabled: process.env.X_POSTING_ENABLED === 'true',
-    maxPostsPerDay: 1,          // hard cap — free API tier safety (~30/month)
-    scoreThreshold: 95,         // only absolute top stories
+    maxPostsPerDay: 3,          // 3 posts/day — good engagement cadence
+    scoreThreshold: 85,         // quality stories (was 95 — too restrictive)
     maxAgeHours: 20,            // don't post stale news
   },
 
   linkedInPosting: {
     enabled: process.env.LINKEDIN_ENABLED === 'true',
-    maxPostsPerDay: 1,
-    scoreThreshold: 90,         // slightly lower than X — LinkedIn rewards more volume
+    maxPostsPerDay: 3,
+    scoreThreshold: 85,         // quality stories
     maxAgeHours: 24,
     categories: ['breaking', 'market'] as string[], // broader than X
   },

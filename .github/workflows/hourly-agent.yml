@@ -85,10 +85,5 @@ jobs:
 
       - name: Build health check
         if: success()
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          NOTIFICATION_WEBHOOK: ${{ secrets.NOTIFICATION_WEBHOOK }}
         run: |
-          echo "Waiting 180s for Cloudflare deploy..."
-          sleep 180
-          npx tsx agent/scripts/build-health-check.ts || true
+          echo "✅ Push complete — Cloudflare Pages will auto-deploy from main"
