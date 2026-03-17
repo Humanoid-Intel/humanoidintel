@@ -2,7 +2,7 @@
   {
     "symbol": "FIG.AI",
     "label": "Figure 03",
-    "status": "+News",
+    "status": "+Factory.Deploy",
     "positive": true
   },
   {
@@ -14,7 +14,7 @@
   {
     "symbol": "BOS.DYN",
     "label": "Atlas",
-    "status": "+News",
+    "status": "+Factory.Deploy",
     "positive": true
   },
   {
@@ -38,7 +38,7 @@
   {
     "symbol": "UNIT.REE",
     "label": "G1",
-    "status": "+News",
+    "status": "+Fund.$1.4B",
     "positive": true
   },
   {

@@ -1,5 +1,108 @@
 [
   {
+    "slug": "tesla-digital-optimus-ai4-hardware-deployment",
+    "title": "Tesla's Digital Optimus Now Runs on AI4 Fleet",
+    "excerpt": "Musk confirms Digital Optimus neural networks now operate across Tesla's AI4-equipped vehicle fleet",
+    "category": "breaking",
+    "date": "2026-03-17T10:05:55.452Z",
+    "tags": [
+      "tesla",
+      "optimus",
+      "ai4",
+      "digital-twin",
+      "fsd"
+    ],
+    "companies": [
+      "Tesla"
+    ],
+    "type": "news",
+    "url": "/news/tesla-digital-optimus-ai4-hardware-deployment"
+  },
+  {
+    "slug": "north-korea-humanoid-robots-development-report",
+    "title": "North Korea Develops Humanoid Robots: Report",
+    "excerpt": "North Korea reportedly developing humanoid robots, raising questions about military applications and technological capabilities",
+    "category": "breaking",
+    "date": "2026-03-17T10:04:40.470Z",
+    "tags": [
+      "north-korea",
+      "geopolitics",
+      "defense",
+      "humanoid-development"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/north-korea-humanoid-robots-development-report"
+  },
+  {
+    "slug": "china-humanoid-robot-market-analysis-2024",
+    "title": "China's Humanoid Market Hits $1.4B by 2024",
+    "excerpt": "China's humanoid robotics market reaches $1.4 billion valuation with government backing and 200+ active companies",
+    "category": "market",
+    "date": "2026-03-17T10:03:28.780Z",
+    "tags": [
+      "china",
+      "market-analysis",
+      "ubtech",
+      "xiaomi",
+      "ex-robots"
+    ],
+    "companies": [
+      "UBTECH Robotics",
+      "Xiaomi",
+      "EX Robots",
+      "Unitree Robotics",
+      "Fourier Intelligence"
+    ],
+    "type": "news",
+    "url": "/news/china-humanoid-robot-market-analysis-2024"
+  },
+  {
+    "slug": "nvidia-physical-ai-humanoid-robot-deployment-2026",
+    "title": "NVIDIA Accelerates Physical AI for Humanoid Robot Deployment",
+    "excerpt": "NVIDIA's Physical AI platform reaches production readiness as humanoid manufacturers prepare for commercial deployments",
+    "category": "breaking",
+    "date": "2026-03-17T10:01:55.145Z",
+    "tags": [
+      "nvidia",
+      "physical-ai",
+      "gr00t",
+      "deployment",
+      "sim-to-real"
+    ],
+    "companies": [
+      "NVIDIA",
+      "Boston Dynamics",
+      "Agility Robotics",
+      "Figure AI"
+    ],
+    "type": "news",
+    "url": "/news/nvidia-physical-ai-humanoid-robot-deployment-2026"
+  },
+  {
+    "slug": "skild-ai-nvidia-abb-teradyne-partnerships-2026",
+    "title": "Skild AI Partners with NVIDIA, ABB for Humanoid Deployment",
+    "excerpt": "Skild AI announces major partnerships with NVIDIA, ABB, and Teradyne to accelerate robotics foundation model deployment",
+    "category": "breaking",
+    "date": "2026-03-17T10:01:19.892Z",
+    "tags": [
+      "skild-ai",
+      "nvidia",
+      "abb",
+      "teradyne",
+      "partnerships",
+      "foundation-models"
+    ],
+    "companies": [
+      "Skild AI",
+      "NVIDIA",
+      "ABB",
+      "Teradyne"
+    ],
+    "type": "news",
+    "url": "/news/skild-ai-nvidia-abb-teradyne-partnerships-2026"
+  },
+  {
     "slug": "lei-jun-ubtech-humanoid-worker-partnership",
     "title": "Lei Jun Partners with UBTech on Humanoid Worker Vision",
     "excerpt": "Xiaomi CEO Lei Jun aligns with UBTech's vision to deploy humanoids as skilled manufacturing workers",
