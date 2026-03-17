@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useMemo } from 'react'
+import React, { useState, useMemo } from 'react'
 import Link from 'next/link'
 import Header from '@/components/Header'
 import TickerTape from '@/components/TickerTape'
@@ -134,6 +134,24 @@ const FILTER_TABS = [
   { label: 'USA', value: 'usa' },
   { label: 'Europe', value: 'europe' },
 ]
+
+// Map manufacturer name → company page slug (falls back to robot page)
+const MANUFACTURER_SLUG: Record<string, string> = {
+  'Figure AI': 'figure-ai',
+  'Tesla': 'tesla',
+  'Boston Dynamics': 'boston-dynamics',
+  'Agility Robotics': 'agility-robotics',
+  'Sanctuary AI': 'sanctuary-ai',
+  'Apptronik': 'apptronik',
+  'Unitree': 'unitree',
+  'Unitree Robotics': 'unitree',
+  '1X Technologies': '1x-technologies',
+}
+
+function robotHref(robot: Robot): string {
+  const companySlug = MANUFACTURER_SLUG[robot.manufacturer]
+  return companySlug ? `/companies/${companySlug}` : `/robots/${robot.slug}`
+}
 
 const EUROPE_COUNTRIES = [
   'norway', 'germany', 'france', 'uk', 'sweden', 'netherlands', 'spain', 'italy',
@@ -352,47 +370,30 @@ export default function RobotsClient({ robots }: Props) {
                         'transparent'
                     }}
                   >
-                    <td
-                      style={{
-                        borderBottom: '1px solid var(--border-subtle)',
-                        padding: '12px 16px 12px 0',
-                        color: 'var(--text-primary)',
-                        fontWeight: 500,
-                      }}
-                    >
-                      <Link href={`/robots/${robot.slug}`} style={{ color: 'inherit' }}>
-                        {robot.name}
+                    {([
+                      { value: robot.name, color: 'var(--text-primary)', fontWeight: 500 },
+                      { value: robot.manufacturer, color: 'var(--text-secondary)' },
+                      { value: robot.country, color: 'var(--text-secondary)' },
+                      { value: robot.height ?? '—', color: 'var(--text-secondary)' },
+                      { value: robot.weight ?? '—', color: 'var(--text-secondary)' },
+                      { value: robot.dof ?? '—', color: 'var(--text-secondary)' },
+                      { value: robot.payload ?? '—', color: 'var(--text-secondary)' },
+                      { value: robot.battery ?? '—', color: 'var(--text-secondary)' },
+                      { value: robot.actuatorType, color: 'var(--text-secondary)' },
+                    ] as { value: React.ReactNode; color: string; fontWeight?: number }[]).map((cell, i) => (
+                      <td key={i} style={{ borderBottom: '1px solid var(--border-subtle)', padding: 0 }}>
+                        <Link
+                          href={robotHref(robot)}
+                          style={{ display: 'block', padding: '12px 16px 12px 0', color: cell.color, fontWeight: cell.fontWeight, textDecoration: 'none' }}
+                        >
+                          {cell.value}
+                        </Link>
+                      </td>
+                    ))}
+                    <td style={{ borderBottom: '1px solid var(--border-subtle)', padding: 0 }} className={statusClass(robot.status)}>
+                      <Link href={robotHref(robot)} style={{ display: 'block', padding: '12px 0', color: 'inherit', textDecoration: 'none' }}>
+                        {robot.status.toUpperCase()}
                       </Link>
-                    </td>
-                    <td style={{ borderBottom: '1px solid var(--border-subtle)', padding: '12px 16px 12px 0', color: 'var(--text-secondary)' }}>
-                      {robot.manufacturer}
-                    </td>
-                    <td style={{ borderBottom: '1px solid var(--border-subtle)', padding: '12px 16px 12px 0', color: 'var(--text-secondary)' }}>
-                      {robot.country}
-                    </td>
-                    <td style={{ borderBottom: '1px solid var(--border-subtle)', padding: '12px 16px 12px 0', color: 'var(--text-secondary)' }}>
-                      {robot.height ?? '—'}
-                    </td>
-                    <td style={{ borderBottom: '1px solid var(--border-subtle)', padding: '12px 16px 12px 0', color: 'var(--text-secondary)' }}>
-                      {robot.weight ?? '—'}
-                    </td>
-                    <td style={{ borderBottom: '1px solid var(--border-subtle)', padding: '12px 16px 12px 0', color: 'var(--text-secondary)' }}>
-                      {robot.dof ?? '—'}
-                    </td>
-                    <td style={{ borderBottom: '1px solid var(--border-subtle)', padding: '12px 16px 12px 0', color: 'var(--text-secondary)' }}>
-                      {robot.payload ?? '—'}
-                    </td>
-                    <td style={{ borderBottom: '1px solid var(--border-subtle)', padding: '12px 16px 12px 0', color: 'var(--text-secondary)' }}>
-                      {robot.battery ?? '—'}
-                    </td>
-                    <td style={{ borderBottom: '1px solid var(--border-subtle)', padding: '12px 16px 12px 0', color: 'var(--text-secondary)' }}>
-                      {robot.actuatorType}
-                    </td>
-                    <td
-                      style={{ borderBottom: '1px solid var(--border-subtle)', padding: '12px 0' }}
-                      className={statusClass(robot.status)}
-                    >
-                      {robot.status.toUpperCase()}
                     </td>
                   </tr>
                 ))

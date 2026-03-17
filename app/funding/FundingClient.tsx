@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useMemo } from 'react'
+import React, { useState, useMemo } from 'react'
 import Link from 'next/link'
 import Header from '@/components/Header'
 import TickerTape from '@/components/TickerTape'
@@ -306,10 +306,16 @@ export default function FundingClient({ rounds }: Props) {
               </tr>
             </thead>
             <tbody>
-              {sorted.map((round) => (
+              {sorted.map((round) => {
+                const href = `/companies/${round.companySlug}`
+                const recent = isRecent(round.date)
+                const linkStyle = (color: string, extra?: React.CSSProperties): React.CSSProperties => ({
+                  display: 'block', padding: '12px 16px 12px 0', color, textDecoration: 'none', ...extra,
+                })
+                return (
                 <tr
                   key={round.id}
-                  style={{ transition: 'background-color 0.1s' }}
+                  style={{ cursor: 'pointer', transition: 'background-color 0.1s' }}
                   onMouseEnter={(e) => {
                     ;(e.currentTarget as HTMLTableRowElement).style.backgroundColor =
                       'var(--bg-hover)'
@@ -318,75 +324,44 @@ export default function FundingClient({ rounds }: Props) {
                     ;(e.currentTarget as HTMLTableRowElement).style.backgroundColor = 'transparent'
                   }}
                 >
-                  <td
-                    style={{
-                      borderBottom: '1px solid var(--border-subtle)',
-                      padding: '12px 16px 12px 0',
-                      color: isRecent(round.date) ? 'var(--text-primary)' : 'var(--text-tertiary)',
-                      fontWeight: 500,
-                    }}
-                  >
-                    <Link href={`/companies/${round.companySlug}`} style={{ color: 'inherit' }}>
+                  <td style={{ borderBottom: '1px solid var(--border-subtle)', padding: 0 }}>
+                    <Link href={href} style={linkStyle(recent ? 'var(--text-primary)' : 'var(--text-tertiary)', { fontWeight: 500 })}>
                       {round.company}
                     </Link>
                   </td>
-                  <td
-                    style={{
-                      borderBottom: '1px solid var(--border-subtle)',
-                      padding: '12px 16px 12px 0',
-                      color: isRecent(round.date) ? 'var(--text-secondary)' : 'var(--text-tertiary)',
-                    }}
-                  >
-                    {round.round}
+                  <td style={{ borderBottom: '1px solid var(--border-subtle)', padding: 0 }}>
+                    <Link href={href} style={linkStyle(recent ? 'var(--text-secondary)' : 'var(--text-tertiary)')}>
+                      {round.round}
+                    </Link>
                   </td>
-                  <td
-                    style={{
-                      borderBottom: '1px solid var(--border-subtle)',
-                      padding: '12px 16px 12px 0',
-                      color: isRecent(round.date) ? 'var(--accent-positive)' : 'var(--text-tertiary)',
-                    }}
-                  >
-                    {round.amount}
+                  <td style={{ borderBottom: '1px solid var(--border-subtle)', padding: 0 }}>
+                    <Link href={href} style={linkStyle(recent ? 'var(--accent-positive)' : 'var(--text-tertiary)')}>
+                      {round.amount}
+                    </Link>
                   </td>
-                  <td
-                    style={{
-                      borderBottom: '1px solid var(--border-subtle)',
-                      padding: '12px 16px 12px 0',
-                      color: isRecent(round.date) ? 'var(--text-secondary)' : 'var(--text-tertiary)',
-                    }}
-                  >
-                    {round.valuation ?? '—'}
+                  <td style={{ borderBottom: '1px solid var(--border-subtle)', padding: 0 }}>
+                    <Link href={href} style={linkStyle(recent ? 'var(--text-secondary)' : 'var(--text-tertiary)')}>
+                      {round.valuation ?? '—'}
+                    </Link>
                   </td>
-                  <td
-                    style={{
-                      borderBottom: '1px solid var(--border-subtle)',
-                      padding: '12px 16px 12px 0',
-                      color: isRecent(round.date) ? 'var(--text-secondary)' : 'var(--text-tertiary)',
-                      maxWidth: 200,
-                    }}
-                  >
-                    {round.leadInvestors.join(', ')}
+                  <td style={{ borderBottom: '1px solid var(--border-subtle)', padding: 0, maxWidth: 200 }}>
+                    <Link href={href} style={linkStyle(recent ? 'var(--text-secondary)' : 'var(--text-tertiary)')}>
+                      {round.leadInvestors.join(', ')}
+                    </Link>
                   </td>
-                  <td
-                    style={{
-                      borderBottom: '1px solid var(--border-subtle)',
-                      padding: '12px 16px 12px 0',
-                      color: isRecent(round.date) ? 'var(--text-secondary)' : 'var(--text-tertiary)',
-                    }}
-                  >
-                    {formatDate(round.date)}
+                  <td style={{ borderBottom: '1px solid var(--border-subtle)', padding: 0 }}>
+                    <Link href={href} style={linkStyle(recent ? 'var(--text-secondary)' : 'var(--text-tertiary)')}>
+                      {formatDate(round.date)}
+                    </Link>
                   </td>
-                  <td
-                    style={{
-                      borderBottom: '1px solid var(--border-subtle)',
-                      padding: '12px 0',
-                      color: isRecent(round.date) ? 'var(--text-secondary)' : 'var(--text-tertiary)',
-                    }}
-                  >
-                    {round.geography}
+                  <td style={{ borderBottom: '1px solid var(--border-subtle)', padding: 0 }}>
+                    <Link href={href} style={{ ...linkStyle(recent ? 'var(--text-secondary)' : 'var(--text-tertiary)'), padding: '12px 0' }}>
+                      {round.geography}
+                    </Link>
                   </td>
                 </tr>
-              ))}
+                )
+              })}
             </tbody>
           </table>
         </div>

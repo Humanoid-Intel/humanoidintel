@@ -12,6 +12,9 @@ interface Props {
 
 export async function generateStaticParams() {
   const editions = getNewsletterEditions()
+  // Must return at least one entry for output: 'export' — use a placeholder
+  // when no editions exist yet; the page returns notFound() for it
+  if (editions.length === 0) return [{ slug: '_placeholder' }]
   return editions.map((e) => ({ slug: e.slug }))
 }
 
