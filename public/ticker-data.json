@@ -8,7 +8,7 @@
   {
     "symbol": "TSLA.BOT",
     "label": "Optimus",
-    "status": "+Public.Demo",
+    "status": "+News",
     "positive": true
   },
   {
@@ -50,7 +50,7 @@
   {
     "symbol": "GALBOT",
     "label": "G1",
-    "status": "+Fund.RMB2.5B",
+    "status": "+Fund.$362M",
     "positive": true
   },
   {

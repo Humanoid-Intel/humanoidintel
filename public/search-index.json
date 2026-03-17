@@ -1,5 +1,205 @@
 [
   {
+    "slug": "merz-unitree-china-humanoid-robotics-europe-concerns",
+    "title": "Merz Joins Unitree as China's Humanoid Push Concerns EU",
+    "excerpt": "Former European robotics executive joins Chinese humanoid leader as geopolitical tensions rise over AI talent migration",
+    "category": "breaking",
+    "date": "2026-03-17T02:08:01.866Z",
+    "tags": [
+      "unitree",
+      "china",
+      "europe",
+      "geopolitics",
+      "talent-acquisition"
+    ],
+    "companies": [
+      "Unitree Robotics"
+    ],
+    "type": "news",
+    "url": "/news/merz-unitree-china-humanoid-robotics-europe-concerns"
+  },
+  {
+    "slug": "wonik-robotics-dexterous-hands-aw-2026",
+    "title": "Wonik Robotics Unveils Next-Gen Dexterous Hands at AW 2026",
+    "excerpt": "Korean actuator specialist demonstrates breakthrough in humanoid hand precision at Automate 2026",
+    "category": "breaking",
+    "date": "2026-03-17T02:07:19.979Z",
+    "tags": [
+      "wonik-robotics",
+      "dexterous-manipulation",
+      "aw-2026",
+      "humanoid-hands"
+    ],
+    "companies": [
+      "Wonik Robotics"
+    ],
+    "type": "news",
+    "url": "/news/wonik-robotics-dexterous-hands-aw-2026"
+  },
+  {
+    "slug": "chinese-humanoids-dominate-aw-2026-unitree-leju-agibot",
+    "title": "Chinese Humanoids Dominate AW 2026 Trade Show",
+    "excerpt": "Three Chinese humanoid manufacturers showcase latest bipedal platforms at major industry event",
+    "category": "breaking",
+    "date": "2026-03-17T02:06:45.064Z",
+    "tags": [
+      "unitree",
+      "leju-robotics",
+      "agibot",
+      "trade-show",
+      "china"
+    ],
+    "companies": [
+      "Unitree Robotics",
+      "Leju Robotics",
+      "AgiBot"
+    ],
+    "type": "news",
+    "url": "/news/chinese-humanoids-dominate-aw-2026-unitree-leju-agibot"
+  },
+  {
+    "slug": "china-rare-earth-dominance-us-humanoid-robot-bottleneck",
+    "title": "China's 90% Rare Earth Grip Threatens US Humanoid Production",
+    "excerpt": "China controls 90% of rare earth refining capacity, creating critical supply bottleneck for US humanoid robot actuators",
+    "category": "breaking",
+    "date": "2026-03-17T02:06:05.433Z",
+    "tags": [
+      "supply-chain",
+      "rare-earths",
+      "china",
+      "manufacturing",
+      "geopolitics"
+    ],
+    "companies": [
+      "Tesla",
+      "Figure AI",
+      "1X",
+      "Boston Dynamics",
+      "Agility Robotics"
+    ],
+    "type": "news",
+    "url": "/news/china-rare-earth-dominance-us-humanoid-robot-bottleneck"
+  },
+  {
+    "slug": "agility-robotics-rebrands-factory-labor-shortage",
+    "title": "Agility Robotics Rebrands Amid Factory Labor Crisis",
+    "excerpt": "Humanoid robotics leader pivots brand strategy as manufacturing sector faces unprecedented workforce gaps",
+    "category": "breaking",
+    "date": "2026-03-17T02:05:20.275Z",
+    "tags": [
+      "agility-robotics",
+      "rebranding",
+      "manufacturing",
+      "labor-shortage"
+    ],
+    "companies": [
+      "Agility Robotics"
+    ],
+    "type": "news",
+    "url": "/news/agility-robotics-rebrands-factory-labor-shortage"
+  },
+  {
+    "slug": "skild-ai-abb-universal-robots-partnership-industrial-expansion",
+    "title": "Skild AI Partners with ABB, Universal Robots for Industrial Rollout",
+    "excerpt": "Skild AI expands its generalized robot intelligence platform to industrial automation through partnerships with ABB and UR",
+    "category": "market",
+    "date": "2026-03-17T02:04:41.695Z",
+    "tags": [
+      "skild-ai",
+      "abb-robotics",
+      "universal-robots",
+      "nvidia",
+      "industrial-automation"
+    ],
+    "companies": [
+      "Skild AI",
+      "ABB Robotics",
+      "Universal Robots",
+      "NVIDIA"
+    ],
+    "type": "news",
+    "url": "/news/skild-ai-abb-universal-robots-partnership-industrial-expansion"
+  },
+  {
+    "slug": "humanoid-robots-touch-sensing-safety-standards-deployment-limits",
+    "title": "Touch Sensing Gaps Block Humanoid Robot Deployment",
+    "excerpt": "Inadequate tactile feedback and evolving safety protocols create deployment bottlenecks for commercial humanoid systems",
+    "category": "policy",
+    "date": "2026-03-17T02:03:58.531Z",
+    "tags": [
+      "safety-standards",
+      "tactile-sensing",
+      "deployment",
+      "regulation"
+    ],
+    "companies": [
+      "Figure AI",
+      "Boston Dynamics",
+      "Agility Robotics",
+      "Tesla"
+    ],
+    "type": "news",
+    "url": "/news/humanoid-robots-touch-sensing-safety-standards-deployment-limits"
+  },
+  {
+    "slug": "nh-amundi-hyundai-motor-top-humanoid-robot-etf-holding",
+    "title": "NH-Amundi Elevates Hyundai Motor to Top ETF Holding",
+    "excerpt": "Korean fund manager makes major bet on automaker's humanoid robotics division",
+    "category": "breaking",
+    "date": "2026-03-17T02:02:41.681Z",
+    "tags": [
+      "hyundai-motor",
+      "nh-amundi",
+      "etf",
+      "investment",
+      "korea"
+    ],
+    "companies": [
+      "Hyundai Motor",
+      "NH-Amundi"
+    ],
+    "type": "news",
+    "url": "/news/nh-amundi-hyundai-motor-top-humanoid-robot-etf-holding"
+  },
+  {
+    "slug": "ubtech-siemens-partnership-humanoid-mass-production",
+    "title": "UBTECH Partners Siemens for Humanoid Mass Production",
+    "excerpt": "UBTECH partners with Siemens Digital Industries for humanoid robot manufacturing scale-up",
+    "category": "breaking",
+    "date": "2026-03-17T02:01:28.948Z",
+    "tags": [
+      "ubtech",
+      "siemens",
+      "mass-production",
+      "manufacturing"
+    ],
+    "companies": [
+      "UBTECH Robotics",
+      "Siemens"
+    ],
+    "type": "news",
+    "url": "/news/ubtech-siemens-partnership-humanoid-mass-production"
+  },
+  {
+    "slug": "china-big-fund-galbot-362m-investment",
+    "title": "China's Big Fund Invests $362M in Galbot Humanoids",
+    "excerpt": "State-backed fund commits massive $362M to Chinese humanoid robotics startup Galbot in landmark investment",
+    "category": "market",
+    "date": "2026-03-17T02:00:52.087Z",
+    "tags": [
+      "galbot",
+      "china-big-fund",
+      "series-funding",
+      "chinese-humanoids"
+    ],
+    "companies": [
+      "Galbot",
+      "China National IC Industry Investment Fund"
+    ],
+    "type": "news",
+    "url": "/news/china-big-fund-galbot-362m-investment"
+  },
+  {
     "slug": "korean-retailers-chinese-humanoid-robots-lotte-emart",
     "title": "Korean Retailers Launch $23K Chinese Humanoid Sales",
     "excerpt": "Major Korean retailers Lotte and E-Mart begin selling Chinese-made humanoid robots priced up to $23,000",
