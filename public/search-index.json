@@ -1,5 +1,66 @@
 [
   {
+    "slug": "korean-retailers-chinese-humanoid-robots-lotte-emart",
+    "title": "Korean Retailers Launch $23K Chinese Humanoid Sales",
+    "excerpt": "Major Korean retailers Lotte and E-Mart begin selling Chinese-made humanoid robots priced up to $23,000",
+    "category": "breaking",
+    "date": "2026-03-17T01:03:32.535Z",
+    "tags": [
+      "retail",
+      "korean-market",
+      "chinese-robotics",
+      "consumer-sales"
+    ],
+    "companies": [
+      "Lotte",
+      "E-Mart"
+    ],
+    "type": "news",
+    "url": "/news/korean-retailers-chinese-humanoid-robots-lotte-emart"
+  },
+  {
+    "slug": "nebius-nvidia-robotics-cloud-partnership",
+    "title": "Nebius Partners NVIDIA for Robotics Cloud Infrastructure",
+    "excerpt": "Nebius and NVIDIA announce cloud infrastructure partnership targeting robotics and physical AI workloads",
+    "category": "breaking",
+    "date": "2026-03-17T01:02:52.290Z",
+    "tags": [
+      "nebius",
+      "nvidia",
+      "cloud-infrastructure",
+      "physical-ai"
+    ],
+    "companies": [
+      "Nebius",
+      "NVIDIA"
+    ],
+    "type": "news",
+    "url": "/news/nebius-nvidia-robotics-cloud-partnership"
+  },
+  {
+    "slug": "skild-ai-abb-universal-robots-partnership-2026",
+    "title": "Skild AI Partners ABB, Universal Robots for Robot Intelligence",
+    "excerpt": "Skild AI expands its generalized robot intelligence platform through strategic partnerships with ABB and Universal Robots",
+    "category": "breaking",
+    "date": "2026-03-17T01:02:21.775Z",
+    "tags": [
+      "skild-ai",
+      "abb-robotics",
+      "universal-robots",
+      "nvidia",
+      "partnerships",
+      "vla"
+    ],
+    "companies": [
+      "Skild AI",
+      "ABB Robotics",
+      "Universal Robots",
+      "NVIDIA"
+    ],
+    "type": "news",
+    "url": "/news/skild-ai-abb-universal-robots-partnership-2026"
+  },
+  {
     "slug": "nvidia-physical-ai-data-factory-blueprint-humanoid-robotics",
     "title": "NVIDIA Launches Open Physical AI Data Factory for Humanoids",
     "excerpt": "NVIDIA releases open blueprint for Physical AI data factories to accelerate humanoid robot training and deployment",
@@ -17,6 +78,41 @@
     ],
     "type": "news",
     "url": "/news/nvidia-physical-ai-data-factory-blueprint-humanoid-robotics"
+  },
+  {
+    "slug": "142000-human-motion-dataset-humanoid-robots",
+    "title": "142,000 Human Motion Dataset Released for Humanoid Training",
+    "excerpt": "Massive public motion dataset could accelerate sim-to-real transfer for humanoid locomotion and manipulation",
+    "category": "breaking",
+    "date": "2026-03-17T01:01:35.686Z",
+    "tags": [
+      "motion-capture",
+      "dataset",
+      "training-data",
+      "embodied-ai"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/142000-human-motion-dataset-humanoid-robots"
+  },
+  {
+    "slug": "nvidia-open-physical-ai-data-factory-blueprint",
+    "title": "NVIDIA Unveils Open Physical AI Data Factory Blueprint",
+    "excerpt": "NVIDIA's open blueprint aims to democratize synthetic data generation for robotics training across the industry",
+    "category": "breaking",
+    "date": "2026-03-17T01:00:59.144Z",
+    "tags": [
+      "nvidia",
+      "physical-ai",
+      "data-factory",
+      "omniverse",
+      "isaac-sim"
+    ],
+    "companies": [
+      "NVIDIA"
+    ],
+    "type": "news",
+    "url": "/news/nvidia-open-physical-ai-data-factory-blueprint"
   },
   {
     "slug": "ukraine-humanoid-robots-battlefield-test-2026",
