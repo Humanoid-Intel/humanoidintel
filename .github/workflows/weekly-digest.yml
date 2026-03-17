@@ -1,0 +1,51 @@
+name: Weekly Digest
+
+on:
+  schedule:
+    # Every Sunday at 9:00 AM UTC
+    - cron: '0 9 * * 0'
+  workflow_dispatch: # Manual trigger from GitHub UI
+
+permissions:
+  contents: write
+
+jobs:
+  weekly-digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate weekly digest
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
+          NOTIFICATION_WEBHOOK: ${{ secrets.NOTIFICATION_WEBHOOK }}
+        run: npx tsx agent/scripts/weekly-digest.ts
+
+      - name: Commit digest if generated
+        run: |
+          git config user.name "humanoidintel-bot"
+          git config user.email "bot@humanoidintel.ai"
+
+          if [ -n "$(git status --short content/)" ]; then
+            git add content/
+            git commit -m "feat(digest): weekly digest $(date -u '+%Y-%m-%d') [bot]"
+            git push origin main
+            echo "✅ Weekly digest published"
+          else
+            echo "ℹ️ No digest content generated"
+          fi
