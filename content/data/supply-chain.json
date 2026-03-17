@@ -21,6 +21,16 @@
     ]
   },
   {
+    "category": "Precision Reducers & Gearboxes",
+    "suppliers": [
+      { "company": "Harmonic Drive Systems", "products": ["CSF/CSG series strain wave gears", "CSD component sets"], "customers": ["Boston Dynamics", "Figure AI", "Agility Robotics", "NEURA Robotics", "Apptronik"], "hq": "Japan", "criticality": "critical" },
+      { "company": "Nabtesco", "products": ["RV-N/RV-E series cycloidal reducers", "precision gearheads"], "customers": ["Fanuc", "ABB", "Unitree", "Kepler", "Fourier"], "hq": "Japan", "criticality": "critical" },
+      { "company": "Leaderdrive", "products": ["Harmonic reducers", "RV reducers"], "customers": ["Unitree", "Galbot", "Agibot", "Kepler"], "hq": "China", "criticality": "high" },
+      { "company": "LaifuaL", "products": ["LSG harmonic drive series"], "customers": ["Chinese OEMs"], "hq": "China", "criticality": "medium" },
+      { "company": "Nidec-Shimpo", "products": ["FLEXWAVE series"], "customers": ["Toyota", "Honda"], "hq": "Japan", "criticality": "medium" }
+    ]
+  },
+  {
     "category": "Sensors & Vision",
     "suppliers": [
       { "company": "Intel RealSense", "products": ["D455, D456, L515"], "customers": ["Multiple OEMs"], "hq": "USA", "criticality": "high" },
