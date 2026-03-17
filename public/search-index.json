@@ -16,6 +16,26 @@
     "url": "/news/humanoid-robot-market-30-billion-2036-forecast"
   },
   {
+    "slug": "infineon-nvidia-humanoid-motor-control-partnership",
+    "title": "Infineon-Nvidia Partnership Targets Humanoid Motor Control",
+    "excerpt": "Infineon and Nvidia expand Aug 2025 collaboration to integrate motor control MCUs with GR00T simulation platform",
+    "category": "breaking",
+    "date": "2026-03-17T19:58:11.694Z",
+    "tags": [
+      "infineon",
+      "nvidia",
+      "motor-control",
+      "digital-twins",
+      "partnerships"
+    ],
+    "companies": [
+      "Infineon Technologies",
+      "Nvidia"
+    ],
+    "type": "news",
+    "url": "/news/infineon-nvidia-humanoid-motor-control-partnership"
+  },
+  {
     "slug": "skild-ai-nvidia-foxconn-blackwell-partnership",
     "title": "Skild AI Secures Nvidia, Foxconn Partnership for Blackwell",
     "excerpt": "Skild AI lands manufacturing deal with Foxconn and Nvidia for Blackwell-powered humanoid AI systems",
@@ -35,25 +55,6 @@
     ],
     "type": "news",
     "url": "/news/skild-ai-nvidia-foxconn-blackwell-partnership"
-  },
-  {
-    "slug": "skild-ai-nvidia-gpu-production-partnership",
-    "title": "Skild AI Lands Nvidia GPU Production Partnership",
-    "excerpt": "Foundation model startup secures major deployment deal with chip giant for automated manufacturing applications",
-    "category": "breaking",
-    "date": "2026-03-17T18:02:32.292Z",
-    "tags": [
-      "skild-ai",
-      "nvidia",
-      "partnership",
-      "gpu-manufacturing"
-    ],
-    "companies": [
-      "Skild AI",
-      "Nvidia"
-    ],
-    "type": "news",
-    "url": "/news/skild-ai-nvidia-gpu-production-partnership"
   },
   {
     "slug": "atlas-evolution-research-robot-industrial-humanoid",
@@ -331,26 +332,6 @@
     "url": "/news/panasonic-cto-energy-density-humanoid-robot-batteries"
   },
   {
-    "slug": "nvidia-skild-ai-chip-factory-robots-partnership",
-    "title": "Nvidia Partners with Skild AI for Chip Factory Robots",
-    "excerpt": "Nvidia teams with Skild AI to deploy general-purpose robot intelligence in semiconductor manufacturing facilities",
-    "category": "breaking",
-    "date": "2026-03-17T11:01:05.195Z",
-    "tags": [
-      "nvidia",
-      "skild-ai",
-      "manufacturing",
-      "partnership",
-      "semiconductor"
-    ],
-    "companies": [
-      "Nvidia",
-      "Skild AI"
-    ],
-    "type": "news",
-    "url": "/news/nvidia-skild-ai-chip-factory-robots-partnership"
-  },
-  {
     "slug": "tesla-digital-optimus-ai4-hardware-deployment",
     "title": "Tesla's Digital Optimus Now Runs on AI4 Fleet",
     "excerpt": "Musk confirms Digital Optimus neural networks now operate across Tesla's AI4-equipped vehicle fleet",
@@ -406,29 +387,6 @@
     ],
     "type": "news",
     "url": "/news/nvidia-physical-ai-humanoid-robot-deployment-2026"
-  },
-  {
-    "slug": "skild-ai-nvidia-abb-teradyne-partnerships-2026",
-    "title": "Skild AI Partners with NVIDIA, ABB for Humanoid Deployment",
-    "excerpt": "Skild AI announces major partnerships with NVIDIA, ABB, and Teradyne to accelerate robotics foundation model deployment",
-    "category": "breaking",
-    "date": "2026-03-17T10:01:19.892Z",
-    "tags": [
-      "skild-ai",
-      "nvidia",
-      "abb",
-      "teradyne",
-      "partnerships",
-      "foundation-models"
-    ],
-    "companies": [
-      "Skild AI",
-      "NVIDIA",
-      "ABB",
-      "Teradyne"
-    ],
-    "type": "news",
-    "url": "/news/skild-ai-nvidia-abb-teradyne-partnerships-2026"
   },
   {
     "slug": "lei-jun-ubtech-humanoid-worker-partnership",
@@ -615,26 +573,6 @@
     "url": "/news/china-humanoid-tennis-robot-elon-musk-endorsement"
   },
   {
-    "slug": "skild-ai-nvidia-blackwell-deployment-2026",
-    "title": "Skild AI Deploys Robot Brain on Nvidia Blackwell Lines",
-    "excerpt": "Skild AI's foundation model now controls robots on Nvidia's Blackwell GPU assembly lines in first commercial deployment",
-    "category": "market",
-    "date": "2026-03-17T08:01:09.103Z",
-    "tags": [
-      "skild-ai",
-      "nvidia",
-      "blackwell",
-      "deployment",
-      "manufacturing"
-    ],
-    "companies": [
-      "Skild AI",
-      "Nvidia"
-    ],
-    "type": "news",
-    "url": "/news/skild-ai-nvidia-blackwell-deployment-2026"
-  },
-  {
     "slug": "nvidia-physical-ai-strategy-humanoid-robotics",
     "title": "Nvidia's Physical AI Push Targets Humanoid Market",
     "excerpt": "Nvidia outlines comprehensive Physical AI strategy spanning robotics simulation, foundation models, and space applications",
@@ -702,24 +640,6 @@
     "url": "/news/ukraine-first-humanoid-robot-soldiers-combat"
   },
   {
-    "slug": "skild-ai-expands-generalized-robot-intelligence-platform",
-    "title": "Skild AI Expands Robot Intelligence Platform",
-    "excerpt": "Skild AI broadens its generalized robot intelligence platform across multiple industries beyond humanoids",
-    "category": "breaking",
-    "date": "2026-03-17T07:22:25.465Z",
-    "tags": [
-      "skild-ai",
-      "foundation-models",
-      "robotics-ai",
-      "expansion"
-    ],
-    "companies": [
-      "Skild AI"
-    ],
-    "type": "news",
-    "url": "/news/skild-ai-expands-generalized-robot-intelligence-platform"
-  },
-  {
     "slug": "tesla-optimus-learning-by-watching-human-demonstrations",
     "title": "Tesla Optimus Learns Tasks by Watching Human Demos",
     "excerpt": "Tesla's humanoid robot now learns complex tasks through human demonstration videos, marking a shift toward behavioral cloning.",
@@ -773,26 +693,6 @@
     "url": "/news/china-tennis-humanoid-robot-elon-musk"
   },
   {
-    "slug": "skild-ai-nvidia-blackwell-assembly-deployment",
-    "title": "Skild AI Deploys Robot Brain on Nvidia Blackwell Lines",
-    "excerpt": "Skild AI's foundation model now controls assembly robots on Nvidia's Blackwell GPU production lines",
-    "category": "breaking",
-    "date": "2026-03-17T07:03:22.507Z",
-    "tags": [
-      "skild-ai",
-      "nvidia",
-      "blackwell",
-      "deployment",
-      "manufacturing"
-    ],
-    "companies": [
-      "Skild AI",
-      "Nvidia"
-    ],
-    "type": "news",
-    "url": "/news/skild-ai-nvidia-blackwell-assembly-deployment"
-  },
-  {
     "slug": "unitree-g1-snow-cold-weather-testing",
     "title": "Unitree G1 Conquers Snow in -20°C Field Test",
     "excerpt": "Unitree's G1 humanoid demonstrates outdoor mobility in deep snow and -20°C temperatures",
@@ -809,47 +709,6 @@
     ],
     "type": "news",
     "url": "/news/unitree-g1-snow-cold-weather-testing"
-  },
-  {
-    "slug": "skild-ai-partners-abb-universal-robots-nvidia-generalized-intelligence",
-    "title": "Skild AI Partners with ABB, Universal Robots for Robot Intelligence",
-    "excerpt": "Skild AI announces strategic partnerships with ABB Robotics, Universal Robots, and NVIDIA to deploy generalized robot intelligence",
-    "category": "breaking",
-    "date": "2026-03-17T06:01:30.059Z",
-    "tags": [
-      "skild-ai",
-      "abb-robotics",
-      "universal-robots",
-      "nvidia",
-      "partnerships"
-    ],
-    "companies": [
-      "Skild AI",
-      "ABB Robotics",
-      "Universal Robots",
-      "NVIDIA"
-    ],
-    "type": "news",
-    "url": "/news/skild-ai-partners-abb-universal-robots-nvidia-generalized-intelligence"
-  },
-  {
-    "slug": "skild-ai-nvidia-oem-partnerships-humanoid-robotics",
-    "title": "Skild AI Partners with NVIDIA, OEMs for Humanoid Deployment",
-    "excerpt": "Skild AI announces strategic alliances with NVIDIA and major OEMs to accelerate humanoid robot deployment across industries",
-    "category": "breaking",
-    "date": "2026-03-17T05:04:01.566Z",
-    "tags": [
-      "skild-ai",
-      "nvidia",
-      "partnerships",
-      "foundation-models"
-    ],
-    "companies": [
-      "Skild AI",
-      "NVIDIA"
-    ],
-    "type": "news",
-    "url": "/news/skild-ai-nvidia-oem-partnerships-humanoid-robotics"
   },
   {
     "slug": "multimodal-ai-humanoid-robot-intelligence-breakthrough",
@@ -1183,26 +1042,6 @@
     "url": "/news/hyundai-atlas-robot-revenue-projections-2026"
   },
   {
-    "slug": "skild-ai-nvidia-blackwell-robot-brain-deployment",
-    "title": "Skild AI Deploys Robot Brain on Nvidia Blackwell Lines",
-    "excerpt": "Skild AI's foundation model now controls robots assembling Nvidia's flagship Blackwell AI chips in production facilities.",
-    "category": "market",
-    "date": "2026-03-17T03:00:58.048Z",
-    "tags": [
-      "skild-ai",
-      "nvidia",
-      "blackwell",
-      "deployment",
-      "manufacturing"
-    ],
-    "companies": [
-      "Skild AI",
-      "Nvidia"
-    ],
-    "type": "news",
-    "url": "/news/skild-ai-nvidia-blackwell-robot-brain-deployment"
-  },
-  {
     "slug": "merz-unitree-china-humanoid-robotics-europe-concerns",
     "title": "Merz Joins Unitree as China's Humanoid Push Concerns EU",
     "excerpt": "Former European robotics executive joins Chinese humanoid leader as geopolitical tensions rise over AI talent migration",
@@ -1417,29 +1256,6 @@
     ],
     "type": "news",
     "url": "/news/nebius-nvidia-robotics-cloud-partnership"
-  },
-  {
-    "slug": "skild-ai-abb-universal-robots-partnership-2026",
-    "title": "Skild AI Partners ABB, Universal Robots for Robot Intelligence",
-    "excerpt": "Skild AI expands its generalized robot intelligence platform through strategic partnerships with ABB and Universal Robots",
-    "category": "breaking",
-    "date": "2026-03-17T01:02:21.775Z",
-    "tags": [
-      "skild-ai",
-      "abb-robotics",
-      "universal-robots",
-      "nvidia",
-      "partnerships",
-      "vla"
-    ],
-    "companies": [
-      "Skild AI",
-      "ABB Robotics",
-      "Universal Robots",
-      "NVIDIA"
-    ],
-    "type": "news",
-    "url": "/news/skild-ai-abb-universal-robots-partnership-2026"
   },
   {
     "slug": "nvidia-physical-ai-data-factory-blueprint-humanoid-robotics",
@@ -1676,28 +1492,6 @@
     ],
     "type": "news",
     "url": "/news/neura-robotics-qualcomm-partnership-physical-ai"
-  },
-  {
-    "slug": "skild-ai-foxconn-abb-universal-robots-partnership-2026",
-    "title": "Skild AI Partners with Foxconn, ABB for Industrial Robot AI",
-    "excerpt": "Skild AI expands beyond humanoids with major industrial partnerships targeting 2026 deployment",
-    "category": "market",
-    "date": "2026-03-16T22:00:59.143Z",
-    "tags": [
-      "skild-ai",
-      "partnerships",
-      "industrial-robotics",
-      "foxconn",
-      "abb"
-    ],
-    "companies": [
-      "Skild AI",
-      "Foxconn",
-      "ABB",
-      "Universal Robots"
-    ],
-    "type": "news",
-    "url": "/news/skild-ai-foxconn-abb-universal-robots-partnership-2026"
   },
   {
     "slug": "nvidia-physical-ai-robotics-partnerships-2026",

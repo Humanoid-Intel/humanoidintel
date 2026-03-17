@@ -7002,3 +7002,161 @@ There are a finite number of Planck cubes, which means a limited number of digit
 
 [Build Check] ✅ All checks passed — site is healthy
 [Tue Mar 17 20:04:29 CET 2026] Run complete.
+[Tue Mar 17 21:00:00 CET 2026] Agent run starting...
+[dotenv@17.3.1] injecting env (13) from .env.local -- tip: ⚙️  write to custom object with { processEnv: myObject }
+[dotenv@17.3.1] injecting env (13) from .env.local -- tip: ⚙️  enable debug logging with { debug: true }
+
+[humanoidintel.ai Agent] Starting run at 2026-03-17T20:00:03.749Z
+[Agent] Mode: auto | Threshold: 0.75
+
+--- Phase 1: Aggregation ---
+[RSS] Fetching 32 feeds...
+[GoogleNews] Fetching 102 queries...
+[YouTube] Fetching 13 channels...
+[X/Twitter] Using official API (29 accounts)...
+[RSS] Failed to fetch https://www.theroboticspost.com/feed: TypeError: fetch failed
+    at node:internal/deps/undici/undici:14902:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async fetchFeed (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/sources/rss.ts:48:22)
+    at async Promise.allSettled (index 31)
+    at async aggregateRSSFeeds (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/sources/rss.ts:104:19)
+    at async Promise.all (index 0)
+    at async run (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/index.ts:40:87) {
+  [cause]: Error: getaddrinfo ENOTFOUND www.theroboticspost.com
+      at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:122:26) {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'www.theroboticspost.com'
+  }
+}
+[RSS] Failed to fetch https://newatlas.com/robotics/feed/: Error: HTTP 404
+    at fetchFeed (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/sources/rss.ts:52:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Promise.allSettled (index 14)
+    at async aggregateRSSFeeds (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/sources/rss.ts:104:19)
+    at async Promise.all (index 0)
+    at async run (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/index.ts:40:87)
+[arXiv] Found 6 relevant papers
+[RSS] Failed to fetch https://koreajoongangdaily.joins.com/rss/feeds/news.xml: Error: HTTP 404
+    at fetchFeed (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/sources/rss.ts:52:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Promise.allSettled (index 29)
+    at async aggregateRSSFeeds (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/sources/rss.ts:104:19)
+    at async Promise.all (index 0)
+    at async run (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/index.ts:40:87)
+[RSS] Failed to fetch https://techcrunch.com/tag/1x-technologies/feed/: Error: HTTP 404
+    at fetchFeed (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/sources/rss.ts:52:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Promise.allSettled (index 10)
+    at async aggregateRSSFeeds (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/sources/rss.ts:104:19)
+    at async Promise.all (index 0)
+    at async run (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/index.ts:40:87)
+[X/Twitter] API error 400: {"errors":[{"parameters":{"query":["(from:adaborobotics OR from:RobertPlayter OR from:damion_shelton OR from:ericrosenblum OR from:geordie_rose OR from:jeff_cardenas_ OR from:aidapaolucci OR from:real
+[X/Twitter] Official API: 3 relevant posts
+[YouTube] Collected 30 videos
+[GoogleNews] Collected 5821 stories from 102 queries
+[RSS] Failed to fetch https://asia.nikkei.com/rss/feed/section/Business: Error: HTTP 404
+    at fetchFeed (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/sources/rss.ts:52:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Promise.allSettled (index 27)
+    at async aggregateRSSFeeds (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/sources/rss.ts:104:19)
+    at async Promise.all (index 0)
+    at async run (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/index.ts:40:87)
+[RSS] Collected 2714 raw stories
+[Agent] Total raw stories: 8574 (RSS: 2714 | arXiv: 6 | GoogleNews: 5821 | YouTube: 30 | X: 3)
+
+--- Phase 2: Deduplication & Scoring ---
+[Dedup] Skipped near-duplicate title: "Boston Dynamics CEO Robert Playter steps down after 30 years at the company"
+[Dedup] Skipped near-duplicate title: "Boston Dynamics CEO Robert Playter steps down - The Robot Report"
+[Dedup] Skipped near-duplicate title: "Toyota Deploys 7 Agility Humanoid Robots in Canadian Plant - The Tech Buzz"
+[Dedup] Skipped near-duplicate title: "Mobileye acquires humanoid robot startup Mentee Robotics for $900M - TechCrunch"
+[Dedup] Skipped near-duplicate title: "China's Unitree launches world's first humanoid robot app store - Interesting Engineering"
+[Dedup] Skipped near-duplicate title: "China deploys an army of humanoid robots to car factories - IntelliNews"
+[Dedup] Skipped near-duplicate title: "Phantom MK-1 military robot in Ukraine - ScoopWhoop"
+[Dedup] Skipped near-duplicate title: "Boston Dynamics CEO Robert Playter steps down after 30 years at the company - TechCrunch"
+[Dedup] Skipped near-duplicate title: "Boston Dynamics CEO Robert Playter is stepping down after six years - The Verge"
+[Dedup] Skipped near-duplicate title: "Boston Dynamics CEO Robert Playter Steps Down - findarticles.com"
+[Dedup] Skipped near-duplicate title: "NVIDIA Announces Open Physical AI Data Factory Blueprint to - GlobeNewswire"
+[Dedup] 6 unique, scoreable stories from 8574 raw
+[Agent] Processing top 5 stories:
+  1. [100] Humanoid robots to reach nearly US$30bn by 2036 as automotive and logi
+  2. [100] STMicroelectronics and Leopard Imaging launch Nvidia Jetson-ready visi
+  3. [85] A humanoid robot was arrested for frightening a 70-year-old woman - ge
+  4. [85] PC Partner Technology Pte. Limited at NVIDIA GTC 2026: Powering the Fu
+  5. [70] Nvidia Declares the Rise of ‘Physical AI’ — and a World Run by Robots 
+
+--- Phase 2.5: Funding Extraction ---
+[FundingExtractor] No funding stories detected.
+
+--- Phase 2.6: Job Board Sync ---
+[Jobs] Fetched: Greenhouse=215 Lever=9 Ashby=25 Personio=0 Indeed=0 Total=249
+[Jobs] +33 new | 5 closed | pruned 33 | 216 total open
+
+--- Phase 3: Content Generation ---
+[Writer] Generating article for: "Humanoid robots to reach nearly US$30bn by 2036 as automotive and logistics deployments scale - dqindia.com"
+[Writer] Generating article for: "STMicroelectronics and Leopard Imaging launch Nvidia Jetson-ready vision module for humanoid robots - Robotics &amp; Automation News"
+[Writer] Generating article for: "A humanoid robot was arrested for frightening a 70-year-old woman - geekspin"
+[Writer] Skipped (non-humanoid): "A humanoid robot was arrested for frightening a 70-year-old woman - geekspin"
+[Writer] Generating article for: "PC Partner Technology Pte. Limited at NVIDIA GTC 2026: Powering the Future of Industrial Digitalization and Physical AI - Aspen Daily News"
+[Writer] Skipped (non-humanoid): "PC Partner Technology Pte. Limited at NVIDIA GTC 2026: Powering the Future of Industrial Digitalization and Physical AI - Aspen Daily News"
+[Writer] Generating article for: "Nvidia Declares the Rise of ‘Physical AI’ — and a World Run by Robots - eWeek"
+[Writer] Could not parse frontmatter from response
+[Agent] Generated 2/5 articles
+
+--- Phase 4: Publishing ---
+[Publisher] Saved to news: humanoid-robot-market-30-billion-2036-forecast.md
+[Publisher] Skipping near-duplicate slug: "stmicroelectronics-leopard-jetson-vision-module-humanoids" is too similar to existing "stmicro-leopard-jetson-vision-module-humanoids"
+[Publisher] No GitHub token — skipping git push
+
+--- Phase 4.5: X Posting ---
+[XPoster] ↷ Skip "Humanoid robots to reach nearly US$30bn by 2036 as automotiv" — 159.4h old (max 20h)
+[XPoster] ↷ Skip "STMicroelectronics and Leopard Imaging launch Nvidia Jetson-" — category 'market' is not 'breaking'
+[XPoster] Checking quality: "A humanoid robot was arrested for frightening a 70-year-old woman - ge"
+[XPoster] ↷ Claude judged not post-worthy — skipping
+[XPoster] ↷ Skip "PC Partner Technology Pte. Limited at NVIDIA GTC 2026: Power" — category 'market' is not 'breaking'
+[XPoster] ↷ Skip "Nvidia Declares the Rise of ‘Physical AI’ — and a World Run " — score 70 < 85
+[XPoster] No eligible stories posted this run.
+
+--- Phase 4.6: LinkedIn Posting ---
+[LIposter] ↷ Skip "Humanoid robots to reach nearly US$30bn by 2036 as automotiv" — 159.4h old (max 24h)
+[LIposter] Checking quality: "STMicroelectronics and Leopard Imaging launch Nvidia Jetson-ready visi"
+[LIposter] ↷ Claude judged not post-worthy — skipping
+[LIposter] Checking quality: "A humanoid robot was arrested for frightening a 70-year-old woman - ge"
+[LIposter] ↷ Claude judged not post-worthy — skipping
+[LIposter] Checking quality: "PC Partner Technology Pte. Limited at NVIDIA GTC 2026: Powering the Fu"
+[LIposter] ↷ Claude judged not post-worthy — skipping
+[LIposter] ↷ Skip "Nvidia Declares the Rise of ‘Physical AI’ — and a World Run " — score 70 < 85
+[LIposter] No eligible stories posted this run.
+
+[Agent] Run complete in 135.6s
+[Tue Mar 17 21:02:19 CET 2026] Regenerating search index...
+[search-index] 542 entries → news:220 companies:23 robots:24 funding:42 glossary:17 jobs:216
+[Tue Mar 17 21:02:22 CET 2026] Regenerating ticker...
+[ticker] Wrote 14 ticker items to public/ticker-data.json
+  FIG.AI     Figure 03    +Factory.Deploy
+  TSLA.BOT   Optimus      +Factory.Deploy
+  BOS.DYN    Atlas        +News
+  AGIL.ROB   Digit        +Partnership
+  NEURA      4NE-1        +Public.Demo
+  APP.TRON   Apollo       +Unicorn
+  UNIT.REE   G1           +News
+  SUNDAY     HomeBot      +Fund.$1.15B
+  GALBOT     G1           +Fund.$362M
+  SANC.AI    Phoenix      +$90M.SeriesD
+  1X.TECH    NEO          +Unicorn
+  MIND.ROB   Stealth      +News
+  CLN.ROB    Alpha        +Public.Demo
+  FUND.YTD   2026         $5.9B.2026
+[Tue Mar 17 21:02:25 CET 2026] Pushed: 1 new articles, funding changed: 0, jobs changed: 1, static assets updated
+[Tue Mar 17 21:02:25 CET 2026] Waiting 180s for Cloudflare deploy...
+[Build Check] Checking https://humanoidintel.ai at 2026-03-17T20:05:36.828Z
+
+✅ Homepage (/): HTTP 200, marker found
+✅ News page (/news/): HTTP 200, marker found
+✅ Companies page (/companies/): HTTP 200, marker found
+✅ Robots page (/robots/): HTTP 200, marker found
+✅ Funding page (/funding/): HTTP 200, marker found
+
+[Build Check] ✅ All checks passed — site is healthy
+[Tue Mar 17 21:05:40 CET 2026] Run complete.

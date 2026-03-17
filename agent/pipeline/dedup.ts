@@ -42,39 +42,60 @@ function saveSeenHashes(hashes: Map<string, number>): void {
 
 const STOP_WORDS = new Set([
   'the', 'a', 'an', 'in', 'on', 'at', 'for', 'to', 'of', 'and', 'with', 'from', 'by',
+  'its', 'is', 'are', 'was', 'were', 'has', 'have', 'that', 'this', 'will', 'be',
+  'new', 'via', 'using', 'into', 'over', 'how', 'why', 'what', 'which',
 ])
 
-function normalizeTitle(title: string): Set<string> {
-  return new Set(
-    title
-      .toLowerCase()
-      .replace(/[^\w\s]/g, '') // remove punctuation
-      .split(/\s+/)
-      .filter((w) => w.length > 0 && !STOP_WORDS.has(w)),
-  )
+function normalizeTitle(title: string): string[] {
+  return title
+    .toLowerCase()
+    .replace(/[^\w\s]/g, '')
+    .split(/\s+/)
+    .filter((w) => w.length > 2 && !STOP_WORDS.has(w))
 }
 
 function titleSimilarity(a: string, b: string): number {
-  const wordsA = normalizeTitle(a)
-  const wordsB = normalizeTitle(b)
+  const wordsA = new Set(normalizeTitle(a))
+  const wordsB = new Set(normalizeTitle(b))
   const intersection = new Set([...wordsA].filter((w) => wordsB.has(w)))
   const union = new Set([...wordsA, ...wordsB])
   return union.size === 0 ? 0 : intersection.size / union.size
 }
 
+// Extract significant named entities (capitalized words / known company names)
+const KNOWN_ENTITIES = /nvidia|skild|figure|tesla|boston dynamics|agility|apptronik|unitree|sanctuary|1x|neura|fourier|agibot|galbot|astribot|microsoft|google|amazon|apple|meta|openai|anthropic|softbank|foxconn|abb|universal robots|kawasaki|honda|hyundai|samsung|lg|baidu|bytedance|huawei|xiaomi|uber|alphabet/gi
+
+function extractEntityPair(title: string): string {
+  const entities = [...title.matchAll(KNOWN_ENTITIES)].map(m => m[0].toLowerCase())
+  const unique = [...new Set(entities)].sort()
+  return unique.slice(0, 3).join('+') // top 3 entities as fingerprint
+}
+
 /**
  * Check if a story title is a near-duplicate of any existing title.
- * Uses Jaccard similarity on normalized word sets (stop words removed, lowercased, no punctuation).
- * Returns true if similarity > 0.55 against any existing title.
+ * Uses Jaccard similarity (threshold 0.4) OR shared entity-pair fingerprint.
  */
 export function isTitleDuplicate(
   story: { title: string },
   existingTitles: string[],
-  threshold = 0.55,
+  threshold = 0.40,  // lowered from 0.55 — catches "same story, different headline"
 ): boolean {
-  return existingTitles.some(
-    (existing) => titleSimilarity(existing, story.title) > threshold,
-  )
+  const storyEntityPair = extractEntityPair(story.title)
+
+  return existingTitles.some((existing) => {
+    // Jaccard similarity check
+    if (titleSimilarity(existing, story.title) > threshold) return true
+
+    // Entity-pair check: same 2+ key entities = same story
+    if (storyEntityPair.length > 0) {
+      const existingEntityPair = extractEntityPair(existing)
+      if (existingEntityPair === storyEntityPair && storyEntityPair.includes('+')) {
+        return true
+      }
+    }
+
+    return false
+  })
 }
 
 /** Load titles of all already-published articles so we can skip near-duplicates across runs.
