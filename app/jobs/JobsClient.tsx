@@ -342,8 +342,8 @@ export default function JobsClient({ jobs }: Props) {
 
   return (
     <div style={S.page}>
-      <TickerTape />
       <Header />
+      <TickerTape />
 
       <main style={S.container}>
         {/* ── Page header ── */}
