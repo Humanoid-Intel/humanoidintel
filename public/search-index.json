@@ -1,5 +1,60 @@
 [
   {
+    "slug": "daifuku-warehouse-humanoid-robots-three-years",
+    "title": "Daifuku Sets 3-Year Timeline for Warehouse Humanoids",
+    "excerpt": "Japanese logistics giant targets humanoid robot deployment in warehouses by 2027",
+    "category": "breaking",
+    "date": "2026-03-17T12:03:48.290Z",
+    "tags": [
+      "daifuku",
+      "warehouse-automation",
+      "deployment-timeline"
+    ],
+    "companies": [
+      "Daifuku"
+    ],
+    "type": "news",
+    "url": "/news/daifuku-warehouse-humanoid-robots-three-years"
+  },
+  {
+    "slug": "china-launches-40-humanoid-robot-schools",
+    "title": "China Launches 40+ Humanoid Robot Schools",
+    "excerpt": "China establishes over 40 specialized schools for humanoid robotics training as part of national AI strategy",
+    "category": "breaking",
+    "date": "2026-03-17T12:03:10.240Z",
+    "tags": [
+      "china",
+      "education",
+      "workforce-development",
+      "manufacturing"
+    ],
+    "companies": [
+      "Chinese Ministry of Education"
+    ],
+    "type": "news",
+    "url": "/news/china-launches-40-humanoid-robot-schools"
+  },
+  {
+    "slug": "renault-humanoid-robots-production-tesla-optimus",
+    "title": "Renault Deploys Working Humanoids Before Tesla Optimus",
+    "excerpt": "French automaker beats Tesla to factory floor with working humanoid robots handling heavy lifting tasks",
+    "category": "breaking",
+    "date": "2026-03-17T12:01:23.953Z",
+    "tags": [
+      "renault",
+      "tesla",
+      "optimus",
+      "manufacturing",
+      "deployment"
+    ],
+    "companies": [
+      "Renault",
+      "Tesla"
+    ],
+    "type": "news",
+    "url": "/news/renault-humanoid-robots-production-tesla-optimus"
+  },
+  {
     "slug": "panasonic-cto-energy-density-humanoid-robot-batteries",
     "title": "Panasonic CTO: Energy Density Key for Humanoid Batteries",
     "excerpt": "Panasonic's CTO identifies energy density as the critical bottleneck for practical humanoid robot deployment",
