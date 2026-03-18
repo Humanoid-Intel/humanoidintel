@@ -1,0 +1,58 @@
+name: Sync Atlas Data
+
+on:
+  schedule:
+    - cron: '0 6 * * *'  # Daily at 6am UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Setup Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Sync atlas data
+        run: npx tsx scripts/sync-atlas-data.ts
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet content/data/ || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "humanoidintel-bot"
+          git config user.email "bot@humanoidintel.ai"
+          git add content/data/
+          git commit -m "chore(data): sync supply chain data from humanoid-atlas [bot]"
+
+          for i in 1 2 3; do
+            git fetch origin main
+            git rebase origin/main && git push origin main && break
+            echo "Push attempt $i failed, retrying..."
+            sleep 2
+          done
+
+          echo "✅ Atlas sync pushed"

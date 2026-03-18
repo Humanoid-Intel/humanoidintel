@@ -5,7 +5,7 @@ import Header from '@/components/Header'
 import TickerTape from '@/components/TickerTape'
 import Footer from '@/components/Footer'
 import { SchemaMarkup } from '@/components/SchemaMarkup'
-import { getRobots, getRobot, getCompanies } from '@/lib/content'
+import { getRobots, getRobot, getCompanies, getRobotSupplyChain } from '@/lib/content'
 import { generateRobotSchema } from '@/lib/seo'
 
 interface Props {
@@ -67,6 +67,7 @@ export default async function RobotProfilePage({ params }: Props) {
   )
 
   const schema = generateRobotSchema(robot)
+  const supplyChain = getRobotSupplyChain(slug)
 
   const specs: { label: string; value: string | number | undefined }[] = [
     { label: 'Height', value: robot.height },
@@ -75,6 +76,12 @@ export default async function RobotProfilePage({ params }: Props) {
     { label: 'Payload Capacity', value: robot.payload },
     { label: 'Battery Life', value: robot.battery },
     { label: 'Actuation Type', value: robot.actuatorType },
+    { label: 'Motor Type', value: robot.motorType },
+    { label: 'Transmission', value: robot.transmission },
+    { label: 'Compute', value: robot.compute },
+    { label: 'Materials', value: robot.materials },
+    { label: 'BOM Estimate', value: robot.bomEstimate },
+    { label: 'Price', value: robot.price },
     { label: 'Country', value: robot.country },
     { label: 'Status', value: robot.status?.toUpperCase() },
   ]
@@ -204,6 +211,84 @@ export default async function RobotProfilePage({ params }: Props) {
                   }}
                 >
                   {robot.deploymentNotes}
+                </div>
+              </div>
+            )}
+
+            {/* Supply Chain */}
+            {supplyChain.length > 0 && (
+              <div style={{ marginBottom: 32 }}>
+                <div className="panel-title" style={{ marginBottom: 12 }}>
+                  Supply Chain
+                </div>
+                <div style={{ overflowX: 'auto' }}>
+                  <table
+                    style={{
+                      width: '100%',
+                      borderCollapse: 'collapse',
+                      fontFamily: 'var(--font-data)',
+                      fontSize: 12,
+                    }}
+                  >
+                    <thead>
+                      <tr style={{ borderBottom: '1px solid var(--border-subtle)' }}>
+                        {['Component', 'Supplier', 'Confidence'].map((col) => (
+                          <th
+                            key={col}
+                            style={{
+                              padding: '8px 12px',
+                              textAlign: 'left',
+                              fontWeight: 600,
+                              fontSize: 10,
+                              textTransform: 'uppercase',
+                              letterSpacing: '0.06em',
+                              color: 'var(--text-tertiary)',
+                              whiteSpace: 'nowrap',
+                            }}
+                          >
+                            {col}
+                          </th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {supplyChain.map((rel, i) => (
+                        <tr
+                          key={i}
+                          style={{ borderBottom: '1px solid var(--border-subtle)' }}
+                        >
+                          <td style={{ padding: '8px 12px', color: 'var(--text-primary)' }}>
+                            {rel.component}
+                          </td>
+                          <td style={{ padding: '8px 12px', color: 'var(--text-secondary)' }}>
+                            {rel.supplier}
+                          </td>
+                          <td style={{ padding: '8px 12px' }}>
+                            <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>
+                              <span
+                                style={{
+                                  width: 8,
+                                  height: 8,
+                                  borderRadius: '50%',
+                                  backgroundColor: rel.confidence === 'confirmed' ? '#22c55e' : '#eab308',
+                                  display: 'inline-block',
+                                }}
+                              />
+                              <span
+                                style={{
+                                  fontSize: 10,
+                                  textTransform: 'uppercase',
+                                  color: rel.confidence === 'confirmed' ? '#22c55e' : '#eab308',
+                                }}
+                              >
+                                {rel.confidence}
+                              </span>
+                            </span>
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
                 </div>
               </div>
             )}

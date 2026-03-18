@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "eslint",
     "agent": "npx tsx agent/index.ts",
-    "agent:watch": "node -e \"const r=()=>require('child_process').execSync('npx tsx agent/index.ts',{stdio:'inherit'});r();setInterval(r,3600000)\""
+    "agent:watch": "node -e \"const r=()=>require('child_process').execSync('npx tsx agent/index.ts',{stdio:'inherit'});r();setInterval(r,3600000)\"",
+    "sync:atlas": "npx tsx scripts/sync-atlas-data.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.78.0",

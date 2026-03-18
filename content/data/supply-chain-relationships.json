@@ -1,0 +1,1226 @@
+[
+  {
+    "supplier": "Maxon Motor",
+    "robot": "Atlas Electric",
+    "robotSlug": "atlas-electric",
+    "companySlug": "boston-dynamics",
+    "component": "BLDC Motors",
+    "category": "Actuators & Motors",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Maxon Motor",
+    "robot": "Apollo",
+    "robotSlug": "apollo",
+    "companySlug": "apptronik",
+    "component": "BLDC Motors",
+    "category": "Actuators & Motors",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Kollmorgen",
+    "robot": "Figure 03",
+    "robotSlug": "figure-03",
+    "companySlug": "figure-ai",
+    "component": "BLDC Motors",
+    "category": "Actuators & Motors",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Kollmorgen",
+    "robot": "Digit v4",
+    "robotSlug": "digit-v4",
+    "companySlug": "agility-robotics",
+    "component": "BLDC Motors",
+    "category": "Actuators & Motors",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "CubeMars",
+    "robot": "Unitree G1",
+    "robotSlug": "unitree-g1",
+    "companySlug": "unitree-robotics",
+    "component": "BLDC Motors",
+    "category": "Actuators & Motors",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Nidec",
+    "robot": "Optimus Gen 2",
+    "robotSlug": "optimus-gen-2",
+    "companySlug": "tesla-optimus",
+    "component": "Motors",
+    "category": "Actuators & Motors",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Estun Automation",
+    "robot": "AgiBot A2",
+    "robotSlug": "agibot-a2",
+    "companySlug": "agibot",
+    "component": "Servo Motors",
+    "category": "Actuators & Motors",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Harmonic Drive Systems",
+    "robot": "Optimus Gen 2",
+    "robotSlug": "optimus-gen-2",
+    "companySlug": "tesla-optimus",
+    "component": "Harmonic Reducer",
+    "category": "Precision Reducers & Gearboxes",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Harmonic Drive Systems",
+    "robot": "Apollo",
+    "robotSlug": "apollo",
+    "companySlug": "apptronik",
+    "component": "Harmonic Reducer",
+    "category": "Precision Reducers & Gearboxes",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Harmonic Drive Systems",
+    "robot": "Figure 03",
+    "robotSlug": "figure-03",
+    "companySlug": "figure-ai",
+    "component": "Harmonic Reducer",
+    "category": "Precision Reducers & Gearboxes",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Harmonic Drive Systems",
+    "robot": "Unitree G1",
+    "robotSlug": "unitree-g1",
+    "companySlug": "unitree-robotics",
+    "component": "Harmonic Reducer",
+    "category": "Precision Reducers & Gearboxes",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Harmonic Drive Systems",
+    "robot": "Walker S2",
+    "robotSlug": "walker-s2",
+    "companySlug": "ubtech",
+    "component": "Harmonic Reducer",
+    "category": "Precision Reducers & Gearboxes",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Harmonic Drive Systems",
+    "robot": "Dexmate",
+    "robotSlug": null,
+    "companySlug": null,
+    "component": "Harmonic Reducer",
+    "category": "Precision Reducers & Gearboxes",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Harmonic Drive Systems",
+    "robot": "EngineAI",
+    "robotSlug": null,
+    "companySlug": null,
+    "component": "Strain Wave Reducer",
+    "category": "Precision Reducers & Gearboxes",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Nvidia",
+    "robot": "Digit v4",
+    "robotSlug": "digit-v4",
+    "companySlug": "agility-robotics",
+    "component": "Jetson Platform",
+    "category": "Compute & AI Chips",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Nvidia",
+    "robot": "NEO Beta",
+    "robotSlug": "neo-beta",
+    "companySlug": "1x-technologies",
+    "component": "Jetson Thor",
+    "category": "Compute & AI Chips",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Nvidia",
+    "robot": "Atlas Electric",
+    "robotSlug": "atlas-electric",
+    "companySlug": "boston-dynamics",
+    "component": "Jetson AGX Thor",
+    "category": "Compute & AI Chips",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Nvidia",
+    "robot": "Dexmate",
+    "robotSlug": null,
+    "companySlug": null,
+    "component": "Jetson AGX Thor",
+    "category": "Compute & AI Chips",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Nvidia",
+    "robot": "Unitree G1",
+    "robotSlug": "unitree-g1",
+    "companySlug": "unitree-robotics",
+    "component": "Jetson Orin",
+    "category": "Compute & AI Chips",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Nvidia",
+    "robot": "AgiBot A2",
+    "robotSlug": "agibot-a2",
+    "companySlug": "agibot",
+    "component": "Jetson Orin 64G",
+    "category": "Compute & AI Chips",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Nvidia",
+    "robot": "Figure 03",
+    "robotSlug": "figure-03",
+    "companySlug": "figure-ai",
+    "component": "Dual NVIDIA GPUs",
+    "category": "Compute & AI Chips",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Nvidia",
+    "robot": "EngineAI",
+    "robotSlug": null,
+    "companySlug": null,
+    "component": "Jetson Thor",
+    "category": "Compute & AI Chips",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Intel",
+    "robot": "Digit v4",
+    "robotSlug": "digit-v4",
+    "companySlug": "agility-robotics",
+    "component": "i7 CPUs + RealSense",
+    "category": "Compute & AI Chips",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Intel",
+    "robot": "Dexmate",
+    "robotSlug": null,
+    "companySlug": null,
+    "component": "x86 SoC",
+    "category": "Compute & AI Chips",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Intel",
+    "robot": "EngineAI",
+    "robotSlug": null,
+    "companySlug": null,
+    "component": "Intel N97",
+    "category": "Compute & AI Chips",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Horizon Robotics",
+    "robot": "Iron",
+    "robotSlug": "iron",
+    "companySlug": "xpeng-robotics",
+    "component": "AI Chips",
+    "category": "Compute & AI Chips",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Google DeepMind",
+    "robot": "Apollo",
+    "robotSlug": "apollo",
+    "companySlug": "apptronik",
+    "component": "AI/ML Models",
+    "category": "AI Software Stack",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Google DeepMind",
+    "robot": "Atlas Electric",
+    "robotSlug": "atlas-electric",
+    "companySlug": "boston-dynamics",
+    "component": "AI/ML Models",
+    "category": "AI Software Stack",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Hesai Technology",
+    "robot": "Unitree G1",
+    "robotSlug": "unitree-g1",
+    "companySlug": "unitree-robotics",
+    "component": "LiDAR",
+    "category": "Sensors & Vision",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Hesai Technology",
+    "robot": "AgiBot A2",
+    "robotSlug": "agibot-a2",
+    "companySlug": "agibot",
+    "component": "LiDAR",
+    "category": "Sensors & Vision",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Hesai Technology",
+    "robot": "Iron",
+    "robotSlug": "iron",
+    "companySlug": "xpeng-robotics",
+    "component": "LiDAR",
+    "category": "Sensors & Vision",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Sony Semiconductor",
+    "robot": "Optimus Gen 2",
+    "robotSlug": "optimus-gen-2",
+    "companySlug": "tesla-optimus",
+    "component": "Image Sensors",
+    "category": "Sensors & Vision",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Sony Semiconductor",
+    "robot": "Figure 03",
+    "robotSlug": "figure-03",
+    "companySlug": "figure-ai",
+    "component": "Image Sensors",
+    "category": "Sensors & Vision",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Texas Instruments",
+    "robot": "Optimus Gen 2",
+    "robotSlug": "optimus-gen-2",
+    "companySlug": "tesla-optimus",
+    "component": "Motor Drivers / Power ICs",
+    "category": "Actuators & Motors",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Texas Instruments",
+    "robot": "Apollo",
+    "robotSlug": "apollo",
+    "companySlug": "apptronik",
+    "component": "Analog ICs",
+    "category": "Power Electronics & Motor Controllers",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Infineon",
+    "robot": "Optimus Gen 2",
+    "robotSlug": "optimus-gen-2",
+    "companySlug": "tesla-optimus",
+    "component": "Power Semiconductors",
+    "category": "Power Electronics & Motor Controllers",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Infineon",
+    "robot": "Atlas Electric",
+    "robotSlug": "atlas-electric",
+    "companySlug": "boston-dynamics",
+    "component": "Power Semiconductors",
+    "category": "Power Electronics & Motor Controllers",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Samsung Electro-Mechanics",
+    "robot": "Optimus Gen 2",
+    "robotSlug": "optimus-gen-2",
+    "companySlug": "tesla-optimus",
+    "component": "MLCCs / Substrates",
+    "category": "Power Electronics & Motor Controllers",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Samsung Electro-Mechanics",
+    "robot": "Unitree G1",
+    "robotSlug": "unitree-g1",
+    "companySlug": "unitree-robotics",
+    "component": "Passive Components",
+    "category": "Power Electronics & Motor Controllers",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "CubeMars",
+    "robot": "Unitree G1",
+    "robotSlug": "unitree-g1",
+    "companySlug": "unitree-robotics",
+    "component": "Actuator Modules",
+    "category": "Actuators & Motors",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "CubeMars",
+    "robot": "AgiBot A2",
+    "robotSlug": "agibot-a2",
+    "companySlug": "agibot",
+    "component": "Actuator Modules",
+    "category": "Actuators & Motors",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "CubeMars",
+    "robot": "EngineAI",
+    "robotSlug": null,
+    "companySlug": null,
+    "component": "Actuator Modules",
+    "category": "Actuators & Motors",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Estun Automation",
+    "robot": "AgiBot A2",
+    "robotSlug": "agibot-a2",
+    "companySlug": "agibot",
+    "component": "Servo Actuators",
+    "category": "Actuators & Motors",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Estun Automation",
+    "robot": "Iron",
+    "robotSlug": "iron",
+    "companySlug": "xpeng-robotics",
+    "component": "Servo Actuators",
+    "category": "Actuators & Motors",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Estun Automation",
+    "robot": "Walker S2",
+    "robotSlug": "walker-s2",
+    "companySlug": "ubtech",
+    "component": "Servo Actuators",
+    "category": "Actuators & Motors",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "THK",
+    "robot": "Optimus Gen 2",
+    "robotSlug": "optimus-gen-2",
+    "companySlug": "tesla-optimus",
+    "component": "Cross-Roller Bearings",
+    "category": "Bearings & Linear Motion",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "THK",
+    "robot": "Apollo",
+    "robotSlug": "apollo",
+    "companySlug": "apptronik",
+    "component": "Cross-Roller Bearings",
+    "category": "Bearings & Linear Motion",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "THK",
+    "robot": "Figure 03",
+    "robotSlug": "figure-03",
+    "companySlug": "figure-ai",
+    "component": "Cross-Roller Bearings",
+    "category": "Bearings & Linear Motion",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "THK",
+    "robot": "Walker S2",
+    "robotSlug": "walker-s2",
+    "companySlug": "ubtech",
+    "component": "Cross-Roller Bearings",
+    "category": "Bearings & Linear Motion",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "THK",
+    "robot": "EngineAI",
+    "robotSlug": null,
+    "companySlug": null,
+    "component": "Cross-Roller Bearings",
+    "category": "Bearings & Linear Motion",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "SKF",
+    "robot": "Atlas Electric",
+    "robotSlug": "atlas-electric",
+    "companySlug": "boston-dynamics",
+    "component": "Bearings",
+    "category": "Bearings & Linear Motion",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "SKF",
+    "robot": "Digit v4",
+    "robotSlug": "digit-v4",
+    "companySlug": "agility-robotics",
+    "component": "Bearings",
+    "category": "Bearings & Linear Motion",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "SKF",
+    "robot": "Unitree G1",
+    "robotSlug": "unitree-g1",
+    "companySlug": "unitree-robotics",
+    "component": "Ball Bearings",
+    "category": "Bearings & Linear Motion",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Rollvis",
+    "robot": "Optimus Gen 2",
+    "robotSlug": "optimus-gen-2",
+    "companySlug": "tesla-optimus",
+    "component": "Planetary Roller Screws",
+    "category": "Bearings & Linear Motion",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Rollvis",
+    "robot": "Apollo",
+    "robotSlug": "apollo",
+    "companySlug": "apptronik",
+    "component": "Planetary Roller Screws",
+    "category": "Bearings & Linear Motion",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Rollvis",
+    "robot": "Figure 03",
+    "robotSlug": "figure-03",
+    "companySlug": "figure-ai",
+    "component": "Planetary Roller Screws",
+    "category": "Bearings & Linear Motion",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Ewellix",
+    "robot": "Atlas Electric",
+    "robotSlug": "atlas-electric",
+    "companySlug": "boston-dynamics",
+    "component": "Roller Screws",
+    "category": "Bearings & Linear Motion",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Ewellix",
+    "robot": "Digit v4",
+    "robotSlug": "digit-v4",
+    "companySlug": "agility-robotics",
+    "component": "Roller Screws",
+    "category": "Bearings & Linear Motion",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Panasonic Energy",
+    "robot": "Optimus Gen 2",
+    "robotSlug": "optimus-gen-2",
+    "companySlug": "tesla-optimus",
+    "component": "Battery Cells",
+    "category": "Batteries & Power",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "CATL",
+    "robot": "Unitree G1",
+    "robotSlug": "unitree-g1",
+    "companySlug": "unitree-robotics",
+    "component": "Battery Pack",
+    "category": "Batteries & Power",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "CATL",
+    "robot": "AgiBot A2",
+    "robotSlug": "agibot-a2",
+    "companySlug": "agibot",
+    "component": "Battery Pack",
+    "category": "Batteries & Power",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "CATL",
+    "robot": "Iron",
+    "robotSlug": "iron",
+    "companySlug": "xpeng-robotics",
+    "component": "Battery Cells",
+    "category": "Batteries & Power",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "CATL",
+    "robot": "Walker S2",
+    "robotSlug": "walker-s2",
+    "companySlug": "ubtech",
+    "component": "Battery Pack",
+    "category": "Batteries & Power",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "CATL",
+    "robot": "EngineAI",
+    "robotSlug": null,
+    "companySlug": null,
+    "component": "Battery Cells",
+    "category": "Batteries & Power",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "BYD",
+    "robot": "AgiBot A2",
+    "robotSlug": "agibot-a2",
+    "companySlug": "agibot",
+    "component": "Battery Pack",
+    "category": "Batteries & Power",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "BYD",
+    "robot": "Walker S2",
+    "robotSlug": "walker-s2",
+    "companySlug": "ubtech",
+    "component": "Battery Pack",
+    "category": "Batteries & Power",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "PSYONIC",
+    "robot": "Apollo",
+    "robotSlug": "apollo",
+    "companySlug": "apptronik",
+    "component": "Dexterous Hands",
+    "category": "Dexterous Hands",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Sharpa Robotics",
+    "robot": "Unitree G1",
+    "robotSlug": "unitree-g1",
+    "companySlug": "unitree-robotics",
+    "component": "Dexterous Hands",
+    "category": "Dexterous Hands",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Sharpa Robotics",
+    "robot": "AgiBot A2",
+    "robotSlug": "agibot-a2",
+    "companySlug": "agibot",
+    "component": "Dexterous Hands",
+    "category": "Dexterous Hands",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Sony Semiconductor",
+    "robot": "Atlas Electric",
+    "robotSlug": "atlas-electric",
+    "companySlug": "boston-dynamics",
+    "component": "Image Sensors",
+    "category": "Sensors & Vision",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Sony Semiconductor",
+    "robot": "Digit v4",
+    "robotSlug": "digit-v4",
+    "companySlug": "agility-robotics",
+    "component": "Image Sensors",
+    "category": "Sensors & Vision",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Sony Semiconductor",
+    "robot": "NEO Beta",
+    "robotSlug": "neo-beta",
+    "companySlug": "1x-technologies",
+    "component": "Image Sensors",
+    "category": "Sensors & Vision",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Sony Semiconductor",
+    "robot": "Apollo",
+    "robotSlug": "apollo",
+    "companySlug": "apptronik",
+    "component": "Image Sensors",
+    "category": "Sensors & Vision",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Sony Semiconductor",
+    "robot": "Walker S2",
+    "robotSlug": "walker-s2",
+    "companySlug": "ubtech",
+    "component": "Image Sensors",
+    "category": "Sensors & Vision",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Sony Semiconductor",
+    "robot": "Dexmate",
+    "robotSlug": null,
+    "companySlug": null,
+    "component": "Image Sensors",
+    "category": "Sensors & Vision",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Sony Semiconductor",
+    "robot": "Sunday Home",
+    "robotSlug": "sunday-home",
+    "companySlug": "sunday-robot",
+    "component": "Image Sensors",
+    "category": "Sensors & Vision",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Ouster",
+    "robot": "Digit v4",
+    "robotSlug": "digit-v4",
+    "companySlug": "agility-robotics",
+    "component": "LiDAR",
+    "category": "Sensors & Vision",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Ouster",
+    "robot": "Dexmate",
+    "robotSlug": null,
+    "companySlug": null,
+    "component": "LiDAR",
+    "category": "Sensors & Vision",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Hesai Technology",
+    "robot": "EngineAI",
+    "robotSlug": null,
+    "companySlug": null,
+    "component": "LiDAR",
+    "category": "Sensors & Vision",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Orbbec",
+    "robot": "Unitree G1",
+    "robotSlug": "unitree-g1",
+    "companySlug": "unitree-robotics",
+    "component": "Depth Cameras",
+    "category": "Sensors & Vision",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Orbbec",
+    "robot": "AgiBot A2",
+    "robotSlug": "agibot-a2",
+    "companySlug": "agibot",
+    "component": "Depth Cameras",
+    "category": "Sensors & Vision",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Bosch Sensortec",
+    "robot": "Atlas Electric",
+    "robotSlug": "atlas-electric",
+    "companySlug": "boston-dynamics",
+    "component": "IMU",
+    "category": "IMUs & Inertial Sensors",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Bosch Sensortec",
+    "robot": "Digit v4",
+    "robotSlug": "digit-v4",
+    "companySlug": "agility-robotics",
+    "component": "IMU",
+    "category": "IMUs & Inertial Sensors",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Bosch Sensortec",
+    "robot": "NEO Beta",
+    "robotSlug": "neo-beta",
+    "companySlug": "1x-technologies",
+    "component": "IMU",
+    "category": "IMUs & Inertial Sensors",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Bosch Sensortec",
+    "robot": "Unitree G1",
+    "robotSlug": "unitree-g1",
+    "companySlug": "unitree-robotics",
+    "component": "IMU",
+    "category": "IMUs & Inertial Sensors",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Bosch Sensortec",
+    "robot": "Apollo",
+    "robotSlug": "apollo",
+    "companySlug": "apptronik",
+    "component": "IMU",
+    "category": "IMUs & Inertial Sensors",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Bosch Sensortec",
+    "robot": "Dexmate",
+    "robotSlug": null,
+    "companySlug": null,
+    "component": "IMU",
+    "category": "IMUs & Inertial Sensors",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Nabtesco",
+    "robot": "Digit v4",
+    "robotSlug": "digit-v4",
+    "companySlug": "agility-robotics",
+    "component": "Cycloidal Reducer",
+    "category": "Precision Reducers & Gearboxes",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Leaderdrive",
+    "robot": "Unitree G1",
+    "robotSlug": "unitree-g1",
+    "companySlug": "unitree-robotics",
+    "component": "Harmonic Reducer",
+    "category": "Precision Reducers & Gearboxes",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Leaderdrive",
+    "robot": "AgiBot A2",
+    "robotSlug": "agibot-a2",
+    "companySlug": "agibot",
+    "component": "Harmonic Reducer",
+    "category": "Precision Reducers & Gearboxes",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Harmonic Drive Systems",
+    "robot": "Iron",
+    "robotSlug": "iron",
+    "companySlug": "xpeng-robotics",
+    "component": "Harmonic Reducer",
+    "category": "Precision Reducers & Gearboxes",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Harmonic Drive Systems",
+    "robot": "AgiBot A2",
+    "robotSlug": "agibot-a2",
+    "companySlug": "agibot",
+    "component": "Harmonic Reducer",
+    "category": "Precision Reducers & Gearboxes",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Moons' Electric",
+    "robot": "Iron",
+    "robotSlug": "iron",
+    "companySlug": "xpeng-robotics",
+    "component": "Servo Motors",
+    "category": "Actuators & Motors",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Moons' Electric",
+    "robot": "Walker S2",
+    "robotSlug": "walker-s2",
+    "companySlug": "ubtech",
+    "component": "Servo Motors",
+    "category": "Actuators & Motors",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Maxon Motor",
+    "robot": "NEO Beta",
+    "robotSlug": "neo-beta",
+    "companySlug": "1x-technologies",
+    "component": "BLDC Motors",
+    "category": "Actuators & Motors",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "THK",
+    "robot": "AgiBot A2",
+    "robotSlug": "agibot-a2",
+    "companySlug": "agibot",
+    "component": "Cross-Roller Bearings",
+    "category": "Bearings & Linear Motion",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "THK",
+    "robot": "Iron",
+    "robotSlug": "iron",
+    "companySlug": "xpeng-robotics",
+    "component": "Cross-Roller Bearings",
+    "category": "Bearings & Linear Motion",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "SKF",
+    "robot": "Dexmate",
+    "robotSlug": null,
+    "companySlug": null,
+    "component": "Bearings",
+    "category": "Bearings & Linear Motion",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "NSK",
+    "robot": "AgiBot A2",
+    "robotSlug": "agibot-a2",
+    "companySlug": "agibot",
+    "component": "Ball Bearings",
+    "category": "Bearings & Linear Motion",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "LG Energy Solution",
+    "robot": "Atlas Electric",
+    "robotSlug": "atlas-electric",
+    "companySlug": "boston-dynamics",
+    "component": "Battery Cells",
+    "category": "Batteries & Power",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Panasonic Energy",
+    "robot": "Digit v4",
+    "robotSlug": "digit-v4",
+    "companySlug": "agility-robotics",
+    "component": "Battery Cells",
+    "category": "Batteries & Power",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Panasonic Energy",
+    "robot": "NEO Beta",
+    "robotSlug": "neo-beta",
+    "companySlug": "1x-technologies",
+    "component": "Battery Cells",
+    "category": "Batteries & Power",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Nanjing KGM",
+    "robot": "Unitree G1",
+    "robotSlug": "unitree-g1",
+    "companySlug": "unitree-robotics",
+    "component": "Planetary Roller Screws",
+    "category": "Bearings & Linear Motion",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Nanjing KGM",
+    "robot": "AgiBot A2",
+    "robotSlug": "agibot-a2",
+    "companySlug": "agibot",
+    "component": "Planetary Roller Screws",
+    "category": "Bearings & Linear Motion",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Nanjing KGM",
+    "robot": "Iron",
+    "robotSlug": "iron",
+    "companySlug": "xpeng-robotics",
+    "component": "Planetary Roller Screws",
+    "category": "Bearings & Linear Motion",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Nanjing KGM",
+    "robot": "EngineAI",
+    "robotSlug": null,
+    "companySlug": null,
+    "component": "Planetary Roller Screws",
+    "category": "Bearings & Linear Motion",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "STMicroelectronics",
+    "robot": "Optimus Gen 2",
+    "robotSlug": "optimus-gen-2",
+    "companySlug": "tesla-optimus",
+    "component": "Motor Drivers / MEMS",
+    "category": "Actuators & Motors",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "STMicroelectronics",
+    "robot": "Atlas Electric",
+    "robotSlug": "atlas-electric",
+    "companySlug": "boston-dynamics",
+    "component": "Motor Drivers",
+    "category": "Actuators & Motors",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Nvidia",
+    "robot": "Sunday Home",
+    "robotSlug": "sunday-home",
+    "companySlug": "sunday-robot",
+    "component": "Jetson Platform",
+    "category": "Compute & AI Chips",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Kollmorgen",
+    "robot": "Sunday Home",
+    "robotSlug": "sunday-home",
+    "companySlug": "sunday-robot",
+    "component": "BLDC Motors",
+    "category": "Actuators & Motors",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Panasonic Energy",
+    "robot": "Sunday Home",
+    "robotSlug": "sunday-home",
+    "companySlug": "sunday-robot",
+    "component": "Battery Pack",
+    "category": "Batteries & Power",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "THK",
+    "robot": "Sunday Home",
+    "robotSlug": "sunday-home",
+    "companySlug": "sunday-robot",
+    "component": "Cross-Roller Bearings",
+    "category": "Bearings & Linear Motion",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Bosch Sensortec",
+    "robot": "Sunday Home",
+    "robotSlug": "sunday-home",
+    "companySlug": "sunday-robot",
+    "component": "IMU",
+    "category": "IMUs & Inertial Sensors",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Nvidia",
+    "robot": "GR2",
+    "robotSlug": "gr2",
+    "companySlug": "fourier-intelligence",
+    "component": "Jetson Orin",
+    "category": "Compute & AI Chips",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Leaderdrive",
+    "robot": "GR2",
+    "robotSlug": "gr2",
+    "companySlug": "fourier-intelligence",
+    "component": "Harmonic Reducer",
+    "category": "Precision Reducers & Gearboxes",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "CATL",
+    "robot": "GR2",
+    "robotSlug": "gr2",
+    "companySlug": "fourier-intelligence",
+    "component": "Battery Pack",
+    "category": "Batteries & Power",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Bosch Sensortec",
+    "robot": "GR2",
+    "robotSlug": "gr2",
+    "companySlug": "fourier-intelligence",
+    "component": "IMU",
+    "category": "IMUs & Inertial Sensors",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Sony Semiconductor",
+    "robot": "GR2",
+    "robotSlug": "gr2",
+    "companySlug": "fourier-intelligence",
+    "component": "Image Sensors",
+    "category": "Sensors & Vision",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Leaderdrive",
+    "robot": "Kepler Forerunner",
+    "robotSlug": "kepler-forerunner",
+    "companySlug": "kepler",
+    "component": "Harmonic Reducer",
+    "category": "Precision Reducers & Gearboxes",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "CATL",
+    "robot": "Kepler Forerunner",
+    "robotSlug": "kepler-forerunner",
+    "companySlug": "kepler",
+    "component": "Battery Pack",
+    "category": "Batteries & Power",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Bosch Sensortec",
+    "robot": "Kepler Forerunner",
+    "robotSlug": "kepler-forerunner",
+    "companySlug": "kepler",
+    "component": "IMU",
+    "category": "IMUs & Inertial Sensors",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Sony Semiconductor",
+    "robot": "Kepler Forerunner",
+    "robotSlug": "kepler-forerunner",
+    "companySlug": "kepler",
+    "component": "Image Sensors",
+    "category": "Sensors & Vision",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Nvidia",
+    "robot": "Phoenix",
+    "robotSlug": "phoenix",
+    "companySlug": "sanctuary-ai",
+    "component": "Jetson Platform",
+    "category": "Compute & AI Chips",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Sony Semiconductor",
+    "robot": "Phoenix",
+    "robotSlug": "phoenix",
+    "companySlug": "sanctuary-ai",
+    "component": "Image Sensors",
+    "category": "Sensors & Vision",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Bosch Sensortec",
+    "robot": "Phoenix",
+    "robotSlug": "phoenix",
+    "companySlug": "sanctuary-ai",
+    "component": "IMU",
+    "category": "IMUs & Inertial Sensors",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Samsung SDI",
+    "robot": "Atlas Electric",
+    "robotSlug": "atlas-electric",
+    "companySlug": "boston-dynamics",
+    "component": "Battery Cells",
+    "category": "Batteries & Power",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Samsung SDI",
+    "robot": "Figure 03",
+    "robotSlug": "figure-03",
+    "companySlug": "figure-ai",
+    "component": "Battery Cells",
+    "category": "Batteries & Power",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Horizon Robotics",
+    "robot": "Walker S2",
+    "robotSlug": "walker-s2",
+    "companySlug": "ubtech",
+    "component": "AI Chips",
+    "category": "Compute & AI Chips",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Horizon Robotics",
+    "robot": "AgiBot A2",
+    "robotSlug": "agibot-a2",
+    "companySlug": "agibot",
+    "component": "AI Chips",
+    "category": "Compute & AI Chips",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "NSK",
+    "robot": "Unitree G1",
+    "robotSlug": "unitree-g1",
+    "companySlug": "unitree-robotics",
+    "component": "Ball Bearings",
+    "category": "Bearings & Linear Motion",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "NSK",
+    "robot": "Optimus Gen 2",
+    "robotSlug": "optimus-gen-2",
+    "companySlug": "tesla-optimus",
+    "component": "Precision Bearings",
+    "category": "Bearings & Linear Motion",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "NSK",
+    "robot": "Atlas Electric",
+    "robotSlug": "atlas-electric",
+    "companySlug": "boston-dynamics",
+    "component": "Angular Contact Bearings",
+    "category": "Bearings & Linear Motion",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Nabtesco",
+    "robot": "Atlas Electric",
+    "robotSlug": "atlas-electric",
+    "companySlug": "boston-dynamics",
+    "component": "RV Reducer",
+    "category": "Precision Reducers & Gearboxes",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Kollmorgen",
+    "robot": "Atlas Electric",
+    "robotSlug": "atlas-electric",
+    "companySlug": "boston-dynamics",
+    "component": "BLDC Motors",
+    "category": "Actuators & Motors",
+    "confidence": "confirmed"
+  },
+  {
+    "supplier": "Sony Semiconductor",
+    "robot": "Unitree G1",
+    "robotSlug": "unitree-g1",
+    "companySlug": "unitree-robotics",
+    "component": "Image Sensors",
+    "category": "Sensors & Vision",
+    "confidence": "inferred"
+  },
+  {
+    "supplier": "Sony Semiconductor",
+    "robot": "Iron",
+    "robotSlug": "iron",
+    "companySlug": "xpeng-robotics",
+    "component": "Image Sensors",
+    "category": "Sensors & Vision",
+    "confidence": "confirmed"
+  }
+]

@@ -13,15 +13,15 @@ const primaryLinks = [
   { label: 'Funding', href: '/funding' },
   { label: 'Jobs', href: '/jobs' },
   { label: 'Research', href: '/research' },
-  { label: '\u2605 Watchlist', href: '/watchlist' },
+  { label: 'Supply Chain', href: '/supply-chain' },
 ]
 
 const moreLinks = [
-  { label: 'Supply Chain', href: '/supply-chain' },
   { label: 'Events', href: '/events' },
   { label: 'Compare', href: '/compare' },
   { label: 'Glossary', href: '/glossary' },
   { label: 'Map', href: '/map' },
+  { label: '\u2605 Watchlist', href: '/watchlist' },
 ]
 
 const navLinks = [...primaryLinks, ...moreLinks]

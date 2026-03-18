@@ -30,6 +30,12 @@ export interface Robot {
   fundingTotal?: string
   milestones?: { date: string; event: string }[]
   imageUrl?: string
+  motorType?: string
+  transmission?: string
+  compute?: string
+  materials?: string
+  bomEstimate?: string
+  price?: string
 }
 
 export interface Company {

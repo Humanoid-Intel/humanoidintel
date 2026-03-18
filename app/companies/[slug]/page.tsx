@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Header from '@/components/Header'
 import TickerTape from '@/components/TickerTape'
 import Footer from '@/components/Footer'
-import { getCompanies, getCompany, getRobots } from '@/lib/content'
+import { getCompanies, getCompany, getRobots, getCompanySupplyChain } from '@/lib/content'
 import WatchlistButton from '@/components/WatchlistButton'
 import { SchemaMarkup } from '@/components/SchemaMarkup'
 
@@ -50,6 +50,15 @@ export default async function CompanyProfilePage({ params }: Props) {
   }
 
   const allRobots = getRobots()
+
+  const companySupplyChain = getCompanySupplyChain(slug)
+
+  // Group supply chain by category
+  const supplyChainByCategory = companySupplyChain.reduce<Record<string, typeof companySupplyChain>>((acc, rel) => {
+    if (!acc[rel.category]) acc[rel.category] = []
+    acc[rel.category].push(rel)
+    return acc
+  }, {})
 
   // Match robots to company
   const companyRobots = allRobots.filter(
@@ -288,6 +297,50 @@ export default async function CompanyProfilePage({ params }: Props) {
                 <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
                   {company.products.map((p) => (
                     <span key={p} className="tag">{p}</span>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Supply Chain Dependencies */}
+            {companySupplyChain.length > 0 && (
+              <div style={{ marginBottom: 32 }}>
+                <div className="panel-title" style={{ marginBottom: 16 }}>Supply Chain Dependencies</div>
+                <div
+                  style={{
+                    backgroundColor: 'var(--bg-surface)',
+                    border: '1px solid var(--border-subtle)',
+                    padding: 16,
+                  }}
+                >
+                  {Object.entries(supplyChainByCategory).map(([category, rels]) => (
+                    <div key={category} style={{ marginBottom: 16 }}>
+                      <div
+                        className="font-data"
+                        style={{
+                          fontSize: 10,
+                          fontWeight: 700,
+                          textTransform: 'uppercase',
+                          letterSpacing: '0.06em',
+                          color: 'var(--text-tertiary)',
+                          marginBottom: 8,
+                        }}
+                      >
+                        {category}
+                      </div>
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: 4, paddingLeft: 12 }}>
+                        {rels.map((rel, i) => (
+                          <div key={i} style={{ fontSize: 13, color: 'var(--text-secondary)' }}>
+                            <span style={{ color: 'var(--text-primary)', fontWeight: 500 }}>{rel.supplier}</span>
+                            <span style={{ color: 'var(--text-tertiary)', margin: '0 6px' }}>&rarr;</span>
+                            {rel.component}
+                            <span style={{ color: 'var(--text-tertiary)', marginLeft: 6 }}>
+                              ({rel.robot})
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
                   ))}
                 </div>
               </div>

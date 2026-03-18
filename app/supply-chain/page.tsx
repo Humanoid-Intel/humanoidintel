@@ -5,6 +5,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import TickerTape from '@/components/TickerTape'
 import { SchemaMarkup } from '@/components/SchemaMarkup'
+import { getSupplyChainRelationships } from '@/lib/content'
 import SupplyChainClient from './SupplyChainClient'
 
 export const metadata: Metadata = {
@@ -46,6 +47,7 @@ function getSupplyChainData(): SupplyCategory[] {
 
 export default function SupplyChainPage() {
   const data = getSupplyChainData()
+  const relationships = getSupplyChainRelationships()
 
   return (
     <>
@@ -82,7 +84,7 @@ export default function SupplyChainPage() {
       <Header />
       <TickerTape />
 
-      <SupplyChainClient data={data} />
+      <SupplyChainClient data={data} relationships={relationships} />
 
       <Footer />
     </>

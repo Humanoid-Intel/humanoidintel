@@ -382,6 +382,36 @@ export function getJobs(): Job[] {
   }
 }
 
+// ---------------------------------------------------------------------------
+// Supply Chain
+// ---------------------------------------------------------------------------
+
+export interface SupplyChainRelationship {
+  supplier: string
+  robot: string
+  robotSlug: string | null
+  companySlug: string | null
+  component: string
+  category: string
+  confidence: 'confirmed' | 'inferred'
+}
+
+export function getSupplyChainRelationships(): SupplyChainRelationship[] {
+  const filePath = path.join(contentRoot, 'data', 'supply-chain-relationships.json')
+  if (!fs.existsSync(filePath)) return []
+  try {
+    return JSON.parse(fs.readFileSync(filePath, 'utf-8'))
+  } catch { return [] }
+}
+
+export function getRobotSupplyChain(robotSlug: string): SupplyChainRelationship[] {
+  return getSupplyChainRelationships().filter(r => r.robotSlug === robotSlug)
+}
+
+export function getCompanySupplyChain(companySlug: string): SupplyChainRelationship[] {
+  return getSupplyChainRelationships().filter(r => r.companySlug === companySlug)
+}
+
 export async function getNewsletterEdition(
   slug: string,
 ): Promise<{ edition: NewsletterEdition; content: string } | null> {

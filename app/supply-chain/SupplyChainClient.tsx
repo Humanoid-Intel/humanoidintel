@@ -14,7 +14,26 @@ interface Supplier {
 interface SupplyCategory {
   category: string
   suppliers: Supplier[]
+  bottleneck?: boolean
+  bottleneckReason?: string | null
+  avgCostPercent?: number | null
 }
+
+interface SupplyChainRelationship {
+  supplier: string
+  robot: string
+  robotSlug: string | null
+  companySlug: string | null
+  component: string
+  category: string
+  confidence: 'confirmed' | 'inferred'
+}
+
+const CATEGORY_COLORS = [
+  '#22c55e', '#3b82f6', '#f59e0b', '#ef4444', '#8b5cf6', '#06b6d4',
+  '#ec4899', '#84cc16', '#f97316', '#6366f1', '#14b8a6', '#e11d48',
+  '#a855f7', '#10b981',
+]
 
 const customerSlugMap: Record<string, string> = {
   'Figure AI': 'figure-ai',
@@ -58,7 +77,7 @@ function criticalityDot(level: string): string {
   }
 }
 
-export default function SupplyChainClient({ data }: { data: SupplyCategory[] }) {
+export default function SupplyChainClient({ data, relationships }: { data: SupplyCategory[]; relationships: SupplyChainRelationship[] }) {
   const [selectedCategory, setSelectedCategory] = useState<string>('all')
 
   const totalSuppliers = data.reduce((n, cat) => n + cat.suppliers.length, 0)
@@ -187,6 +206,61 @@ export default function SupplyChainClient({ data }: { data: SupplyCategory[] }) 
         </div>
       </div>
 
+      {/* BOM Cost Summary */}
+      {(() => {
+        const bomCategories = data.filter(c => c.avgCostPercent && c.avgCostPercent > 0)
+        if (bomCategories.length === 0) return null
+        return (
+          <div
+            style={{
+              backgroundColor: 'rgba(255,255,255,0.03)',
+              border: '1px solid var(--border-subtle)',
+              padding: 16,
+              marginBottom: 20,
+            }}
+          >
+            <div
+              style={{
+                fontFamily: 'var(--font-head)',
+                fontSize: 11,
+                fontWeight: 700,
+                textTransform: 'uppercase',
+                letterSpacing: '0.05em',
+                color: 'var(--text-tertiary)',
+                marginBottom: 10,
+              }}
+            >
+              BOM Cost Breakdown (avg %)
+            </div>
+            {/* Bar */}
+            <div style={{ display: 'flex', height: 24, borderRadius: 2, overflow: 'hidden', marginBottom: 12 }}>
+              {bomCategories.map((c, i) => (
+                <div
+                  key={c.category}
+                  title={`${c.category}: ~${c.avgCostPercent}%`}
+                  style={{
+                    width: `${c.avgCostPercent}%`,
+                    backgroundColor: CATEGORY_COLORS[i % CATEGORY_COLORS.length],
+                    minWidth: 2,
+                  }}
+                />
+              ))}
+            </div>
+            {/* Legend */}
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '4px 16px' }}>
+              {bomCategories.map((c, i) => (
+                <div key={c.category} style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                  <span style={{ width: 10, height: 10, backgroundColor: CATEGORY_COLORS[i % CATEGORY_COLORS.length], flexShrink: 0 }} />
+                  <span style={{ fontFamily: 'var(--font-data)', fontSize: 11, color: 'var(--text-secondary)' }}>
+                    {c.category} — {c.avgCostPercent}%
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )
+      })()}
+
       {/* Category panels */}
       {filteredData.map((cat) => (
         <section
@@ -216,9 +290,25 @@ export default function SupplyChainClient({ data }: { data: SupplyCategory[] }) 
                 letterSpacing: '0.05em',
                 color: 'var(--text-secondary)',
                 margin: 0,
+                display: 'flex',
+                alignItems: 'center',
               }}
             >
               {cat.category}
+              {cat.bottleneck && (
+                <span style={{
+                  fontSize: 10, padding: '2px 8px', borderRadius: 12,
+                  border: '1px solid rgba(239,68,68,0.4)', color: '#ef4444',
+                  marginLeft: 8, fontFamily: 'monospace',
+                }} title={cat.bottleneckReason ?? undefined}>
+                  ⚠ BOTTLENECK
+                </span>
+              )}
+              {cat.avgCostPercent != null && cat.avgCostPercent > 0 && (
+                <span style={{ fontSize: 11, color: 'var(--text-tertiary)', marginLeft: 8 }}>
+                  ~{cat.avgCostPercent}% of BOM
+                </span>
+              )}
             </h2>
             <span
               style={{
@@ -243,7 +333,7 @@ export default function SupplyChainClient({ data }: { data: SupplyCategory[] }) 
             >
               <thead>
                 <tr style={{ borderBottom: '1px solid var(--border-subtle)' }}>
-                  {['Supplier', 'Products', 'Key Customers', 'HQ', 'Criticality'].map(
+                  {['Supplier', 'Products', 'Key Customers', 'Robots', 'HQ', 'Criticality'].map(
                     (col) => (
                       <th
                         key={col}
@@ -337,6 +427,31 @@ export default function SupplyChainClient({ data }: { data: SupplyCategory[] }) 
                           )
                         })}
                       </div>
+                    </td>
+
+                    <td style={{ padding: '10px 12px' }}>
+                      {(() => {
+                        const matched = relationships.filter(
+                          r => r.supplier.toLowerCase() === supplier.company.toLowerCase()
+                        )
+                        if (matched.length === 0) return <span style={{ color: 'var(--text-tertiary)', fontSize: 11 }}>—</span>
+                        const unique = Array.from(new Map(matched.map(m => [m.robotSlug ?? m.robot, m])).values())
+                        return (
+                          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '2px 8px' }}>
+                            {unique.map((m, i) => (
+                              <span key={i}>
+                                {m.robotSlug ? (
+                                  <Link href={`/robots/${m.robotSlug}`} style={{ color: 'var(--accent-positive)', fontSize: 11 }}>
+                                    {m.robot}
+                                  </Link>
+                                ) : (
+                                  <span style={{ color: 'var(--text-secondary)', fontSize: 11 }}>{m.robot}</span>
+                                )}
+                              </span>
+                            ))}
+                          </div>
+                        )
+                      })()}
                     </td>
 
                     <td
