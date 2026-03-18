@@ -1,5 +1,25 @@
 [
   {
+    "slug": "nexcom-nvidia-igx-thor-humanoid-development-kit",
+    "title": "Nexcom Unveils Thor-Powered Humanoid Dev Kit",
+    "excerpt": "Industrial PC maker targets robotics engineers with Thor-based compute platform for humanoid development",
+    "category": "breaking",
+    "date": "2026-03-18T08:22:20.000Z",
+    "tags": [
+      "nexcom",
+      "nvidia",
+      "igx-thor",
+      "development-kit",
+      "hardware"
+    ],
+    "companies": [
+      "Nexcom",
+      "Nvidia"
+    ],
+    "type": "news",
+    "url": "/news/nexcom-nvidia-igx-thor-humanoid-development-kit"
+  },
+  {
     "slug": "unitree-humanoid-robots-sprint-records-prediction",
     "title": "Unitree Claims Humanoids Will Beat Human Sprint Records",
     "excerpt": "Chinese robotics company predicts humanoid robots will outrun humans in sprinting within the next decade",
@@ -179,6 +199,25 @@
     ],
     "type": "news",
     "url": "/news/infineon-nvidia-humanoid-motor-control-partnership"
+  },
+  {
+    "slug": "tesla-optimus-gen-2-custom-sensors-actuators",
+    "title": "Tesla Optimus Gen 2: Custom Sensors, Actuators Unveiled",
+    "excerpt": "Tesla reveals Optimus Gen 2 with custom fingertip sensors, proprietary actuators, and 12 major upgrades",
+    "category": "breaking",
+    "date": "2026-03-17T19:27:19.000Z",
+    "tags": [
+      "tesla",
+      "optimus",
+      "gen-2",
+      "actuators",
+      "sensors"
+    ],
+    "companies": [
+      "Tesla"
+    ],
+    "type": "news",
+    "url": "/news/tesla-optimus-gen-2-custom-sensors-actuators"
   },
   {
     "slug": "skild-ai-nvidia-foxconn-blackwell-partnership",
