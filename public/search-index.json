@@ -1,5 +1,23 @@
 [
   {
+    "slug": "agibot-humanoid-robot-live-show-demonstration",
+    "title": "Agibot Demos 60-Minute Robot-Only Live Show",
+    "excerpt": "Chinese humanoid company streams world's first robot-only live entertainment show to millions of viewers worldwide",
+    "category": "breaking",
+    "date": "2026-03-18T11:25:06.000Z",
+    "tags": [
+      "agibot",
+      "demonstration",
+      "embodied-intelligence",
+      "live-performance"
+    ],
+    "companies": [
+      "Agibot"
+    ],
+    "type": "news",
+    "url": "/news/agibot-humanoid-robot-live-show-demonstration"
+  },
+  {
     "slug": "nexcom-nvidia-igx-thor-humanoid-development-kit",
     "title": "Nexcom Unveils Thor-Powered Humanoid Dev Kit",
     "excerpt": "Industrial PC maker targets robotics engineers with Thor-based compute platform for humanoid development",
@@ -115,6 +133,22 @@
     "companies": [],
     "type": "news",
     "url": "/news/rl-compliance-bounds-humanoid-control-lipschitz"
+  },
+  {
+    "slug": "rl-compliance-bounds-humanoids-anisotropic-lipschitz",
+    "title": "New RL Method Enforces Compliance Bounds for Humanoids",
+    "excerpt": "Researchers develop anisotropic Lipschitz-constrained RL policies to enforce quantifiable compliance bounds in humanoid control",
+    "category": "research",
+    "date": "2026-03-18T04:00:00.000Z",
+    "tags": [
+      "reinforcement-learning",
+      "compliance-control",
+      "locomotion",
+      "research"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/rl-compliance-bounds-humanoids-anisotropic-lipschitz"
   },
   {
     "slug": "vla-models-velocity-feedforward-industrial-control",
