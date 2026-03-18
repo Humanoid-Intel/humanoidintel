@@ -1,5 +1,21 @@
 [
   {
+    "slug": "rl-compliance-bounds-humanoid-control-lipschitz",
+    "title": "New RL Method Enforces Compliance Bounds for Humanoid Control",
+    "excerpt": "Researchers develop Lipschitz-constrained RL policies to enforce quantifiable compliance bounds in humanoid locomotion.",
+    "category": "research",
+    "date": "2026-03-18T04:00:00.000Z",
+    "tags": [
+      "reinforcement-learning",
+      "compliance-control",
+      "locomotion",
+      "policy-constraints"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/rl-compliance-bounds-humanoid-control-lipschitz"
+  },
+  {
     "slug": "humanoid-robot-market-30-billion-2036-forecast",
     "title": "Humanoid Robot Market to Hit $30B by 2036",
     "excerpt": "New market analysis projects humanoid robotics to reach $29.8 billion by 2036, driven by automotive and logistics adoption",
