@@ -34,6 +34,24 @@
     "url": "/news/china-space-ground-humanoid-control-openclaw-trial"
   },
   {
+    "slug": "physical-intelligence-humanoid-backflips-demo",
+    "title": "Physical Intelligence Demos Humanoid Backflips",
+    "excerpt": "Physical Intelligence showcases humanoid robots performing backflips, marking a leap in dynamic locomotion capabilities",
+    "category": "breaking",
+    "date": "2026-03-18T14:20:00.000Z",
+    "tags": [
+      "physical-intelligence",
+      "humanoid-robotics",
+      "locomotion",
+      "demos"
+    ],
+    "companies": [
+      "Physical Intelligence"
+    ],
+    "type": "news",
+    "url": "/news/physical-intelligence-humanoid-backflips-demo"
+  },
+  {
     "slug": "agibot-qingtianzu-14-5m-funding-robot-rental",
     "title": "AgiBot-Backed Rental Firm Raises $14.5M for Humanoid Fleet",
     "excerpt": "Qingtianzu secures $14.5M to expand AgiBot humanoid rental network across China's manufacturing sector",
@@ -3008,6 +3026,27 @@
     ],
     "type": "news",
     "url": "/news/ti-nvidia-physical-ai-humanoid-robots-partnership"
+  },
+  {
+    "slug": "5-billion-humanoid-market-economic-disruption-debate",
+    "title": "$5B Humanoid Market Sparks Economic Disruption Debate",
+    "excerpt": "Industry leaders reflect on economic risks and opportunities as humanoid robotics market reaches $5 billion valuation",
+    "category": "market",
+    "date": "2026-03-05T08:00:00.000Z",
+    "tags": [
+      "market-analysis",
+      "economic-impact",
+      "workforce",
+      "investment"
+    ],
+    "companies": [
+      "Figure AI",
+      "Tesla",
+      "Boston Dynamics",
+      "Agility Robotics"
+    ],
+    "type": "news",
+    "url": "/news/5-billion-humanoid-market-economic-disruption-debate"
   },
   {
     "slug": "agibot-full-humanoid-portfolio-mwc-2026",
