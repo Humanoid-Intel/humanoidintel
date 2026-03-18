@@ -207,6 +207,22 @@
     "url": "/news/expertgen-sim-to-real-humanoid-training"
   },
   {
+    "slug": "hear-framework-real-time-audio-humanoid-manipulation",
+    "title": "New HEAR Framework Adds Real-Time Audio to Humanoid AI",
+    "excerpt": "Researchers introduce sound-centric manipulation framework addressing critical gap in current VLA models",
+    "category": "research",
+    "date": "2026-03-18T04:00:00.000Z",
+    "tags": [
+      "vla-models",
+      "multimodal-ai",
+      "manipulation",
+      "audio-perception"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/hear-framework-real-time-audio-humanoid-manipulation"
+  },
+  {
     "slug": "hear-framework-sound-centric-manipulation-humanoids",
     "title": "New HEAR Framework Adds Real-Time Sound to Humanoid AI",
     "excerpt": "Researchers propose HEAR framework to integrate real-time environmental acoustics into humanoid robot manipulation systems",
@@ -253,6 +269,23 @@
     "companies": [],
     "type": "news",
     "url": "/news/rl-compliance-bounds-humanoids-anisotropic-lipschitz"
+  },
+  {
+    "slug": "vla-velocity-feedforward-industrial-robots-arxiv",
+    "title": "New VLA Model Adds Velocity Feedforward for Industrial Robots",
+    "excerpt": "Researchers solve VLA deployment challenge on rigid industrial robots with velocity feedforward control innovation",
+    "category": "research",
+    "date": "2026-03-18T04:00:00.000Z",
+    "tags": [
+      "vision-language-action",
+      "vla",
+      "behavior-cloning",
+      "industrial-robotics",
+      "velocity-feedforward"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/vla-velocity-feedforward-industrial-robots-arxiv"
   },
   {
     "slug": "japan-government-humanoid-robot-policy-2026",
