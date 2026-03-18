@@ -1,13 +1,18 @@
 /**
  * X (Twitter) Poster
  *
- * Posts the single best breaking news story to @HumanoidIntelAI once per day.
- * Two quality gates before any post is made:
+ * Posts top stories to @HumanoidIntelAI.
+ * Quality gates before any post is made:
  *
- *   Gate 1 — Hard filters (score, category, age, dedup, daily cap)
+ *   Gate 1 — Hard filters (score, age, dedup, daily cap)
  *   Gate 2 — Claude quality judgment ("is there a single striking fact?")
  *
- * Stays within X free-tier limits: 1 post/day = ~30/month (limit: 50/month).
+ * Minimum 2 posts/day guarantee:
+ *   If the normal gates reject everything, the best story from this run
+ *   is auto-posted to ensure consistent daily presence.
+ *
+ * Eligible categories: breaking, market, funding, deep-dive, partnership
+ * (only generic 'research' papers are excluded)
  */
 
 import fs from 'fs'
@@ -19,6 +24,12 @@ import type { ScoredStory } from './dedup'
 
 const POSTED_HASHES_FILE   = path.join(__dirname, '../.x-posted-hashes.json')
 const DAILY_COUNT_FILE     = path.join(__dirname, '../.x-daily-count.json')
+
+// Categories worth posting about — exclude pure research papers
+const POSTABLE_CATEGORIES = new Set([
+  'breaking', 'market', 'funding', 'deep-dive', 'partnership', 'deployment',
+  'product', 'policy', 'opinion',
+])
 
 // ── Dedup helpers ─────────────────────────────────────────────────────────────
 
@@ -67,18 +78,21 @@ function incrementDailyCount(): void {
 
 // ── Gate 1: Hard filters ──────────────────────────────────────────────────────
 
-function passesHardFilters(story: ScoredStory): { pass: boolean; reason?: string } {
+function passesHardFilters(story: ScoredStory, forcePost = false): { pass: boolean; reason?: string } {
   const { scoreThreshold, maxAgeHours, maxPostsPerDay } = config.xPosting
 
-  if (story.score < scoreThreshold)
-    return { pass: false, reason: `score ${story.score} < ${scoreThreshold}` }
+  // When forcing a post to meet minimum, only check dedup and daily cap
+  if (!forcePost) {
+    if (story.score < scoreThreshold)
+      return { pass: false, reason: `score ${story.score} < ${scoreThreshold}` }
 
-  if (story.category !== 'breaking')
-    return { pass: false, reason: `category '${story.category}' is not 'breaking'` }
+    if (!POSTABLE_CATEGORIES.has(story.category))
+      return { pass: false, reason: `category '${story.category}' not postable` }
 
-  const ageHours = (Date.now() - new Date(story.publishedAt).getTime()) / 3_600_000
-  if (ageHours > maxAgeHours)
-    return { pass: false, reason: `${ageHours.toFixed(1)}h old (max ${maxAgeHours}h)` }
+    const ageHours = (Date.now() - new Date(story.publishedAt).getTime()) / 3_600_000
+    if (ageHours > maxAgeHours)
+      return { pass: false, reason: `${ageHours.toFixed(1)}h old (max ${maxAgeHours}h)` }
+  }
 
   const postedHashes = loadPostedHashes()
   if (postedHashes.has(story.hash))
@@ -107,6 +121,8 @@ Rules:
 - Vague product teasers with no specs → NO
 - Named deployment with unit counts or customer names → YES
 - Research paper titles without a clear breakthrough stat → NO
+- Major partnerships between named companies → YES
+- Market size projections with specific numbers → YES
 
 Answer with exactly one word: YES or NO`
 
@@ -133,21 +149,6 @@ function storyToSlug(title: string): string {
     .replace(/\s+/g, '-')
     .replace(/-+/g, '-')
     .slice(0, 80)
-}
-
-// ── URL verification — never post a dead link ─────────────────────────────────
-
-async function articleIsLive(slug: string): Promise<boolean> {
-  const url = `${config.site.domain}/news/${slug}`
-  try {
-    const res = await fetch(url, { method: 'HEAD' })
-    if (res.ok) return true
-    console.log(`[XPoster] ↷ Article not live yet (${res.status}): ${url}`)
-    return false
-  } catch {
-    console.log(`[XPoster] ↷ Could not reach article URL: ${url}`)
-    return false
-  }
 }
 
 // ── Tweet generation ──────────────────────────────────────────────────────────
@@ -187,7 +188,54 @@ Return ONLY the tweet text. No explanation, no quotes around it.`
   }
 }
 
+// ── Post a single story ──────────────────────────────────────────────────────
+
+async function postStory(
+  story: ScoredStory,
+  slugMap: Map<string, string>,
+  anthropic: Anthropic,
+  xClient: TwitterApi,
+  skipQualityGate = false,
+): Promise<boolean> {
+  // Resolve slug
+  const articleSlug = slugMap.get(story.url) || storyToSlug(story.title)
+  const articleUrl = `${config.site.domain}/news/${articleSlug}`
+
+  // Gate 2 — Claude quality check (skip if forcing)
+  if (!skipQualityGate) {
+    console.log(`[XPoster] Checking quality: "${story.title.slice(0, 70)}"`)
+    const worthy = await isPostWorthy(story, anthropic)
+    if (!worthy) {
+      console.log('[XPoster] ↷ Claude judged not post-worthy — skipping')
+      return false
+    }
+  }
+
+  // Generate tweet — always include URL even if article takes a few min to deploy
+  // (Cloudflare Pages deploys within ~2 min, tweet engagement peaks after 10+ min)
+  const tweet = await generateTweet(story, anthropic, articleSlug)
+  if (!tweet) {
+    console.log('[XPoster] ↷ Tweet generation failed — skipping')
+    return false
+  }
+
+  // Post
+  try {
+    const { data } = await xClient.v2.tweet(tweet)
+    console.log(`[XPoster] ✓ Posted: https://x.com/HumanoidIntelAI/status/${data.id}`)
+    console.log(`[XPoster] Tweet:\n${tweet}`)
+    savePostedHash(story.hash)
+    incrementDailyCount()
+    return true
+  } catch (err: any) {
+    console.error('[XPoster] Post failed:', err?.message ?? err)
+    return false
+  }
+}
+
 // ── Main export ───────────────────────────────────────────────────────────────
+
+const MIN_POSTS_PER_DAY = 2
 
 export async function postTopStoriesToX(stories: ScoredStory[], slugMap: Map<string, string> = new Map()): Promise<void> {
   if (!config.xPosting.enabled) {
@@ -210,56 +258,56 @@ export async function postTopStoriesToX(stories: ScoredStory[], slugMap: Map<str
     accessSecret: config.api.twitterAccessSecret,
   })
 
-  // Sort by score descending — try best candidate first
+  // Sort by score descending — try best candidates first
   const candidates = [...stories].sort((a, b) => b.score - a.score)
+  let postsThisRun = 0
+  const maxPerRun = config.xPosting.maxPostsPerDay - loadDailyCount().count
 
+  if (maxPerRun <= 0) {
+    console.log('[XPoster] Daily cap already reached — skipping')
+    return
+  }
+
+  // Pass 1: Post stories that pass both quality gates
   for (const story of candidates) {
-    // Gate 1
+    if (postsThisRun >= maxPerRun) break
+
     const { pass, reason } = passesHardFilters(story)
     if (!pass) {
       console.log(`[XPoster] ↷ Skip "${story.title.slice(0, 60)}" — ${reason}`)
       continue
     }
 
-    // Gate 2
-    console.log(`[XPoster] Checking quality: "${story.title.slice(0, 70)}"`)
-    const worthy = await isPostWorthy(story, anthropic)
-    if (!worthy) {
-      console.log('[XPoster] ↷ Claude judged not post-worthy — skipping')
-      continue
-    }
+    const posted = await postStory(story, slugMap, anthropic, xClient)
+    if (posted) postsThisRun++
+  }
 
-    // Resolve slug — use real published slug if available, fall back to title-derived slug
-    const articleSlug = slugMap.get(story.url) || storyToSlug(story.title)
+  // Pass 2: Minimum daily guarantee
+  // If we haven't posted enough today, force-post the best unposted story
+  const dailyTotal = loadDailyCount().count
+  if (dailyTotal < MIN_POSTS_PER_DAY && candidates.length > 0) {
+    console.log(`[XPoster] Only ${dailyTotal} posts today (min ${MIN_POSTS_PER_DAY}) — forcing best available`)
+    const postedHashes = loadPostedHashes()
 
-    // Hard gate: verify the article URL is actually live before posting
-    const live = await articleIsLive(articleSlug)
-    if (!live) {
-      console.log('[XPoster] ↷ Article not live — skipping to prevent dead link tweet')
-      continue
-    }
+    for (const story of candidates) {
+      if (dailyTotal + postsThisRun >= MIN_POSTS_PER_DAY) break
 
-    // Generate tweet
-    const tweet = await generateTweet(story, anthropic, articleSlug)
-    if (!tweet) {
-      console.log('[XPoster] ↷ Tweet generation failed — skipping')
-      continue
-    }
+      // Only check dedup + daily cap, skip score/category/age filters
+      const { pass, reason } = passesHardFilters(story, true)
+      if (!pass) {
+        console.log(`[XPoster] ↷ Force skip "${story.title.slice(0, 60)}" — ${reason}`)
+        continue
+      }
 
-    // Post
-    try {
-      const { data } = await xClient.v2.tweet(tweet)
-      console.log(`[XPoster] ✓ Posted: https://x.com/HumanoidIntelAI/status/${data.id}`)
-      console.log(`[XPoster] Tweet:\n${tweet}`)
-      savePostedHash(story.hash)
-      incrementDailyCount()
-      // Stop after first successful post (1/day cap)
-      return
-    } catch (err: any) {
-      console.error('[XPoster] Post failed:', err?.message ?? err)
-      // Don't break — try next candidate if posting fails
+      console.log(`[XPoster] Force-posting: "${story.title.slice(0, 70)}" (score: ${story.score})`)
+      const posted = await postStory(story, slugMap, anthropic, xClient, true)
+      if (posted) postsThisRun++
     }
   }
 
-  console.log('[XPoster] No eligible stories posted this run.')
+  if (postsThisRun === 0) {
+    console.log('[XPoster] No eligible stories posted this run.')
+  } else {
+    console.log(`[XPoster] Posted ${postsThisRun} tweet(s) this run. Daily total: ${loadDailyCount().count}`)
+  }
 }
