@@ -1,5 +1,39 @@
 [
   {
+    "slug": "agibot-qingtianzu-14-5m-funding-robot-rental",
+    "title": "AgiBot-Backed Rental Firm Raises $14.5M for Humanoid Fleet",
+    "excerpt": "Qingtianzu secures $14.5M to expand AgiBot humanoid rental network across China's manufacturing sector",
+    "category": "breaking",
+    "date": "2026-03-18T13:23:52.000Z",
+    "tags": [
+      "agibot",
+      "funding",
+      "robotics-as-a-service",
+      "qingtianzu"
+    ],
+    "companies": [
+      "AgiBot",
+      "Qingtianzu"
+    ],
+    "type": "news",
+    "url": "/news/agibot-qingtianzu-14-5m-funding-robot-rental"
+  },
+  {
+    "slug": "humanoid-robot-hospitalization-incident-safety",
+    "title": "Humanoid Robot Startles Woman Into Hospitalization",
+    "excerpt": "First documented hospitalization from humanoid robot encounter raises deployment safety questions",
+    "category": "breaking",
+    "date": "2026-03-18T13:13:00.000Z",
+    "tags": [
+      "safety",
+      "public-deployment",
+      "incident"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/humanoid-robot-hospitalization-incident-safety"
+  },
+  {
     "slug": "intbot-nilo-social-intelligence-humanoid",
     "title": "IntBot's Nilo Humanoid Prioritizes Social AI Over Athletics",
     "excerpt": "IntBot's IntEngine platform focuses on social intelligence rather than physical capabilities for humanoid robots",
@@ -1674,6 +1708,24 @@
     ],
     "type": "news",
     "url": "/news/nvidia-open-physical-ai-data-factory-blueprint"
+  },
+  {
+    "slug": "hyundai-30000-humanoid-robots-2030-deployment",
+    "title": "Hyundai Plans 30,000 Humanoid Robot Deployment by 2030",
+    "excerpt": "Hyundai announces massive 30,000 humanoid robot deployment across factories by 2030, sparking union concerns over job losses.",
+    "category": "breaking",
+    "date": "2026-03-17T00:31:20.000Z",
+    "tags": [
+      "hyundai",
+      "deployment",
+      "manufacturing",
+      "labor"
+    ],
+    "companies": [
+      "Hyundai"
+    ],
+    "type": "news",
+    "url": "/news/hyundai-30000-humanoid-robots-2030-deployment"
   },
   {
     "slug": "ukraine-humanoid-robots-battlefield-test-2026",
