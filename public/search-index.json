@@ -49,6 +49,22 @@
     "url": "/news/expertgen-sim-to-real-expert-policy-learning"
   },
   {
+    "slug": "expertgen-sim-to-real-humanoid-training",
+    "title": "ExpertGen Framework Tackles Humanoid Training Data Shortage",
+    "excerpt": "New framework automates expert policy generation in simulation to address humanoid robotics' training data bottleneck",
+    "category": "research",
+    "date": "2026-03-18T04:00:00.000Z",
+    "tags": [
+      "sim-to-real",
+      "behavior-cloning",
+      "training-data",
+      "arxiv"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/expertgen-sim-to-real-humanoid-training"
+  },
+  {
     "slug": "hear-framework-sound-centric-manipulation-humanoids",
     "title": "New HEAR Framework Adds Real-Time Sound to Humanoid AI",
     "excerpt": "Researchers propose HEAR framework to integrate real-time environmental acoustics into humanoid robot manipulation systems",
@@ -4080,7 +4096,7 @@
   {
     "slug": "1x-technologies",
     "title": "1X Technologies",
-    "excerpt": "1X Technologies (formerly Halodi Robotics) is Norway's leading humanoid robotics company, distinguished by its safety-first design philosophy and long-term focus on home assistant …",
+    "excerpt": "1X Technologies (formerly Halodi Robotics) is Norway's leading humanoid robotics company, reaching a $10B valuation in its 2026 Series C — making it the most valuable European huma…",
     "category": "company",
     "date": "",
     "tags": [
