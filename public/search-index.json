@@ -1,21 +1,55 @@
 [
   {
-    "slug": "agibot-humanoid-robot-live-show-demonstration",
-    "title": "Agibot Demos 60-Minute Robot-Only Live Show",
-    "excerpt": "Chinese humanoid company streams world's first robot-only live entertainment show to millions of viewers worldwide",
+    "slug": "agibot-robot-led-live-show-humanoids-scale",
+    "title": "Agibot Debuts World's First Robot-Led Live Show",
+    "excerpt": "Chinese humanoid company streams 60-minute robot performance to millions, showcasing coordinated multi-robot operations",
     "category": "breaking",
     "date": "2026-03-18T11:25:06.000Z",
     "tags": [
       "agibot",
-      "demonstration",
+      "live-demonstration",
       "embodied-intelligence",
-      "live-performance"
+      "performance"
     ],
     "companies": [
       "Agibot"
     ],
     "type": "news",
-    "url": "/news/agibot-humanoid-robot-live-show-demonstration"
+    "url": "/news/agibot-robot-led-live-show-humanoids-scale"
+  },
+  {
+    "slug": "ukraine-humanoid-robot-battlefield-deployment",
+    "title": "Ukraine Deploys First Combat Humanoid Robot",
+    "excerpt": "Ukrainian forces deploy first humanoid robot in active combat zone, marking watershed moment for military robotics",
+    "category": "breaking",
+    "date": "2026-03-18T10:48:52.000Z",
+    "tags": [
+      "defense",
+      "ukraine",
+      "military-robotics",
+      "battlefield"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/ukraine-humanoid-robot-battlefield-deployment"
+  },
+  {
+    "slug": "noble-machines-moby3-humanoid-robot-debut",
+    "title": "Noble Machines Unveils Moby3 Humanoid Robot Platform",
+    "excerpt": "Australian startup Noble Machines debuts Moby3 humanoid platform, marking latest entry in competitive bipedal market",
+    "category": "breaking",
+    "date": "2026-03-18T10:41:22.000Z",
+    "tags": [
+      "noble-machines",
+      "moby3",
+      "humanoid-debut",
+      "australian-robotics"
+    ],
+    "companies": [
+      "Noble Machines"
+    ],
+    "type": "news",
+    "url": "/news/noble-machines-moby3-humanoid-robot-debut"
   },
   {
     "slug": "nexcom-nvidia-igx-thor-humanoid-development-kit",
@@ -135,22 +169,6 @@
     "url": "/news/rl-compliance-bounds-humanoid-control-lipschitz"
   },
   {
-    "slug": "rl-compliance-bounds-humanoids-anisotropic-lipschitz",
-    "title": "New RL Method Enforces Compliance Bounds for Humanoids",
-    "excerpt": "Researchers develop anisotropic Lipschitz-constrained RL policies to enforce quantifiable compliance bounds in humanoid control",
-    "category": "research",
-    "date": "2026-03-18T04:00:00.000Z",
-    "tags": [
-      "reinforcement-learning",
-      "compliance-control",
-      "locomotion",
-      "research"
-    ],
-    "companies": [],
-    "type": "news",
-    "url": "/news/rl-compliance-bounds-humanoids-anisotropic-lipschitz"
-  },
-  {
     "slug": "vla-models-velocity-feedforward-industrial-control",
     "title": "VLA Models Get Velocity Feedforward for Industrial Control",
     "excerpt": "New research addresses VLA deployment challenges on rigid industrial robots through velocity feedforward control methods.",
@@ -181,6 +199,22 @@
     "companies": [],
     "type": "news",
     "url": "/news/vla-models-velocity-feedforward-industrial-robots"
+  },
+  {
+    "slug": "japan-government-humanoid-robot-policy-2026",
+    "title": "Japan Calls for Government Action on Humanoid Robots",
+    "excerpt": "Japan Times editorial argues governments must act now as humanoid robots transition from R&D to deployment",
+    "category": "policy",
+    "date": "2026-03-18T01:10:00.000Z",
+    "tags": [
+      "japan",
+      "government-policy",
+      "regulation",
+      "national-strategy"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/japan-government-humanoid-robot-policy-2026"
   },
   {
     "slug": "humanoid-robot-market-30-billion-2036-forecast 2",
