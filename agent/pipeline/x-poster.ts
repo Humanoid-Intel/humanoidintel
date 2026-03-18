@@ -180,20 +180,23 @@ function storyToSlug(title: string): string {
 async function generateTweet(story: ScoredStory, client: Anthropic, articleSlug: string): Promise<string | null> {
   const articleUrl = `${config.site.domain}/news/${articleSlug}`
 
+  // X/Twitter counts URLs as 23 chars (t.co wrapping), so text budget = 280 - 23 - 2 (newlines) = 255 chars
+  const TEXT_BUDGET = 255
+
   const prompt = `Write a tweet for @HumanoidIntelAI about this humanoid robotics story.
 
 Story title: ${story.title}
 Story summary: ${story.summary}
-Article URL: ${articleUrl}
 
 Tweet rules (ALL must be followed):
 1. Open with the single most striking specific fact or number — NO "Breaking:" prefix, NO em dashes at start
 2. One tight sentence of context (who, what it means)
-3. The article URL on its own line
+3. DO NOT include any URL — the link will be appended automatically
 4. NO hashtags — this is a professional intelligence feed, not a consumer social account
-5. Total length MUST be 280 characters or fewer — count carefully
+5. Your text MUST be ${TEXT_BUDGET} characters or fewer — this is a HARD LIMIT, count carefully
 6. No hype words: "revolutionary", "game-changing", "groundbreaking", "exciting"
 7. Write for a senior robotics engineer and VC audience
+8. The tweet must be a COMPLETE sentence — never end mid-word or with "..."
 
 Return ONLY the tweet text. No explanation, no quotes around it.`
 
@@ -203,10 +206,21 @@ Return ONLY the tweet text. No explanation, no quotes around it.`
       max_tokens: 200,
       messages: [{ role: 'user', content: prompt }],
     })
-    const tweet = response.content[0].type === 'text' ? response.content[0].text.trim() : null
+    let tweet = response.content[0].type === 'text' ? response.content[0].text.trim() : null
     if (!tweet) return null
-    // Hard truncation safety — should never be needed if Claude follows rules
-    return tweet.length <= 280 ? tweet : tweet.slice(0, 277) + '...'
+
+    // Remove any URL the LLM may have included (we add our own)
+    tweet = tweet.replace(/https?:\/\/\S+/g, '').trim()
+
+    // Hard truncate to TEXT_BUDGET at word boundary if needed
+    if (tweet.length > TEXT_BUDGET) {
+      tweet = tweet.slice(0, TEXT_BUDGET).replace(/\s+\S*$/, '').trim()
+      // Ensure it ends with punctuation
+      if (!/[.!?]$/.test(tweet)) tweet += '.'
+    }
+
+    // Always append the article URL on its own line
+    return `${tweet}\n\n${articleUrl}`
   } catch {
     return null
   }
