@@ -40,10 +40,16 @@ const PLACEHOLDER_TERMS: GlossaryTerm[] = [
   { slug: 'tactile-sensing', term: 'Tactile Sensing', definition: 'The ability to detect contact, pressure, texture, and slip via sensors embedded in robot fingers or skin. Critical for dexterous manipulation.', category: 'Hardware' },
 ]
 
+function normalizeCategory(cat: string): string {
+  const trimmed = cat.trim()
+  if (trimmed.toUpperCase() === 'AI') return 'AI'
+  return trimmed.charAt(0).toUpperCase() + trimmed.slice(1).toLowerCase()
+}
+
 function groupByCategory(terms: GlossaryTerm[]) {
   const groups: Record<string, GlossaryTerm[]> = {}
   for (const term of terms) {
-    const cat = term.category || 'Other'
+    const cat = normalizeCategory(term.category || 'Other')
     if (!groups[cat]) groups[cat] = []
     groups[cat].push(term)
   }

@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Header from '@/components/Header'
+import TickerTape from '@/components/TickerTape'
 import Footer from '@/components/Footer'
 import { SchemaMarkup } from '@/components/SchemaMarkup'
 import type { Metadata } from 'next'
@@ -33,6 +34,7 @@ export default function PrivacyPage() {
     <>
       <SchemaMarkup schema={privacySchema} />
       <Header />
+      <TickerTape />
 
       <div style={{ padding: '0 16px', maxWidth: 720 }}>
         <div style={{ padding: '32px 0 24px', borderBottom: '1px solid var(--border-strong)' }}>
