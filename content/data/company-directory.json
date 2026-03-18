@@ -62,10 +62,10 @@
     "hq": "Moss, Norway",
     "ceo": "Bernt Øyvind Børnich",
     "headcount": "150-200",
-    "totalFunding": "$225M+",
-    "latestValuation": "~$800M",
+    "totalFunding": "$750M+",
+    "latestValuation": "$10B",
     "products": ["neo-beta"],
-    "description": "1X Technologies (formerly Halodi Robotics) is Norway's leading humanoid robotics company, distinguished by its safety-first design philosophy and long-term focus on home assistant applications. The company's EVE wheeled robot has been commercially deployed in security and logistics roles, providing operational revenue that few humanoid-focused startups can claim. Backed by OpenAI's startup fund in its 2023 Series A, 1X is developing NEO as its bipedal home-assistant platform through an unusually methodical, data-driven rollout process.",
+    "description": "1X Technologies (formerly Halodi Robotics) is Norway's leading humanoid robotics company, reaching a $10B valuation in its 2026 Series C — making it the most valuable European humanoid company. Distinguished by its safety-first design philosophy and focus on home assistant applications, 1X's NEO Beta is one of the few humanoids being tested in real households. The company's EVE wheeled robot has been commercially deployed in security and logistics roles, providing operational revenue. Backed by OpenAI's startup fund since 2023, 1X is pursuing an unusually methodical, data-driven rollout of its bipedal home-assistant platform.",
     "website": "https://1x.tech",
     "status": "active"
   },
