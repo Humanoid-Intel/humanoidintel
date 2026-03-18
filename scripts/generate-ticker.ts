@@ -38,6 +38,7 @@ const COMPANY_TICKERS: Array<{
   { symbol: 'MIND.ROB',  label: 'Stealth',     companyNames: ['mind robotics', 'rivian'],        defaultStatus: '+Founded.2026', defaultPositive: true },
   { symbol: 'CLN.ROB',   label: 'Alpha',       companyNames: ['clone robotics'],                 defaultStatus: '+279.Alpha.26', defaultPositive: true },
   { symbol: 'XPENG.R',  label: 'Iron',        companyNames: ['xpeng', 'xpeng robotics'],        defaultStatus: '+Factory.2026', defaultPositive: true },
+  { symbol: 'HEX.ROB',  label: 'AEON',        companyNames: ['hexagon', 'aeon'],                 defaultStatus: '+BMW.Pilot',   defaultPositive: true },
 ]
 
 function compressTitle(title: string, company: string): { status: string; positive: boolean } {

@@ -84,6 +84,12 @@
     "positive": true
   },
   {
+    "symbol": "HEX.ROB",
+    "label": "AEON",
+    "status": "+BMW.Pilot",
+    "positive": true
+  },
+  {
     "symbol": "FUND.YTD",
     "label": "2026",
     "status": "$5.9B.2026",

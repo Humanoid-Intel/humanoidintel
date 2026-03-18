@@ -33,6 +33,22 @@
     "url": "/news/adapt-dual-map-architecture-humanoid-navigation"
   },
   {
+    "slug": "expertgen-sim-to-real-expert-policy-learning",
+    "title": "ExpertGen Automates Expert Policy Learning for Humanoids",
+    "excerpt": "New framework addresses humanoid robotics' data bottleneck by automating expert policy generation in simulation",
+    "category": "research",
+    "date": "2026-03-18T04:00:00.000Z",
+    "tags": [
+      "sim-to-real",
+      "behavior-cloning",
+      "policy-learning",
+      "arxiv"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/expertgen-sim-to-real-expert-policy-learning"
+  },
+  {
     "slug": "hear-framework-sound-centric-manipulation-humanoids",
     "title": "New HEAR Framework Adds Real-Time Sound to Humanoid AI",
     "excerpt": "Researchers propose HEAR framework to integrate real-time environmental acoustics into humanoid robot manipulation systems",
@@ -63,6 +79,22 @@
     "companies": [],
     "type": "news",
     "url": "/news/rl-compliance-bounds-humanoid-control-lipschitz"
+  },
+  {
+    "slug": "vla-models-velocity-feedforward-industrial-control",
+    "title": "VLA Models Get Velocity Feedforward for Industrial Control",
+    "excerpt": "New research addresses VLA deployment challenges on rigid industrial robots through velocity feedforward control methods.",
+    "category": "research",
+    "date": "2026-03-18T04:00:00.000Z",
+    "tags": [
+      "vla",
+      "behavior-cloning",
+      "industrial-robots",
+      "control-systems"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/vla-models-velocity-feedforward-industrial-control"
   },
   {
     "slug": "vla-models-velocity-feedforward-industrial-robots",
@@ -4123,6 +4155,23 @@
     "url": "/jobs"
   },
   {
+    "slug": "aeon",
+    "title": "AEON — Hexagon Robotics",
+    "excerpt": "Hexagon's AEON uses a hybrid wheeled-upper-body design optimized for factory floors rather than bipedal walking. Features 22+ sensors for sub-millimeter precision measurement, dual…",
+    "category": "robot",
+    "date": "",
+    "tags": [
+      "pilot",
+      "Electric (maxon)",
+      "Switzerland"
+    ],
+    "companies": [
+      "Hexagon Robotics"
+    ],
+    "type": "robot",
+    "url": "/robots/aeon"
+  },
+  {
     "slug": "agibot",
     "title": "Agibot",
     "excerpt": "Agibot is one of China's fastest-growing humanoid startups, founded in 2023 with backing from prominent Chinese venture funds and state capital. The company's core differentiation …",
@@ -5653,6 +5702,22 @@
     ],
     "type": "job",
     "url": "/jobs"
+  },
+  {
+    "slug": "hexagon-robotics",
+    "title": "Hexagon Robotics",
+    "excerpt": "Hexagon Robotics is the physical AI division of Hexagon AB, a $25B Swedish-Swiss industrial metrology giant. AEON differentiates from bipedal competitors with a hybrid wheeled-uppe…",
+    "category": "company",
+    "date": "",
+    "tags": [
+      "Zurich, Switzerland",
+      "active"
+    ],
+    "companies": [
+      "Hexagon Robotics"
+    ],
+    "type": "company",
+    "url": "/companies/hexagon-robotics"
   },
   {
     "slug": "greenhouse-figureai-4644956006",

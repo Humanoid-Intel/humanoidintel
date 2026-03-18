@@ -376,5 +376,19 @@
     "description": "Noble Machines is building a warehouse-focused humanoid robot designed for logistics and fulfillment environments. Their humanoid features a rugged industrial design optimized for picking, placing, and navigating racking systems. Positively received at GTC 2026 demos by robotics researchers including Chris Paxton.",
     "website": "",
     "status": "active"
+  },
+  {
+    "slug": "hexagon-robotics",
+    "name": "Hexagon Robotics",
+    "founded": 2024,
+    "hq": "Zurich, Switzerland",
+    "ceo": "Norbert Hanke (Hexagon AB CEO)",
+    "headcount": "100-200",
+    "totalFunding": "Internal (Hexagon AB balance sheet)",
+    "latestValuation": "N/A (Hexagon AB public, $25B+ market cap)",
+    "products": ["aeon"],
+    "description": "Hexagon Robotics is the physical AI division of Hexagon AB, a $25B Swedish-Swiss industrial metrology giant. AEON differentiates from bipedal competitors with a hybrid wheeled-upper-body design optimized for factory floors, sub-millimeter precision measurement via Hexagon's proprietary sensor suite (22+ sensors), and hot-swappable batteries for 24/7 operation. Built on NVIDIA's Isaac Sim / Jetson stack with maxon actuators. BMW chose AEON over Figure for its first European humanoid pilot at Plant Leipzig, targeting battery and component manufacturing. Also piloting at Schaeffler and Pilatus with reported 40% faster QC scans and 99.9% accuracy. Priced at ~$150K per unit.",
+    "website": "https://hexagon.com/aeon",
+    "status": "active"
   }
 ]

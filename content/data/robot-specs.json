@@ -590,5 +590,27 @@
       { "date": "2026-01", "event": "110,000 sqm humanoid factory groundbreaking in Guangzhou" },
       { "date": "2026-03", "event": "VLA 2.0 and next-gen Iron with customizable physiques announced" }
     ]
+  },
+  {
+    "slug": "aeon",
+    "name": "AEON",
+    "manufacturer": "Hexagon Robotics",
+    "country": "Switzerland",
+    "status": "pilot",
+    "height": "1.65m",
+    "weight": "60kg",
+    "dof": 34,
+    "payload": "15kg",
+    "battery": "4 hrs",
+    "actuatorType": "Electric (maxon)",
+    "description": "Hexagon's AEON uses a hybrid wheeled-upper-body design optimized for factory floors rather than bipedal walking. Features 22+ sensors for sub-millimeter precision measurement, dual NVIDIA Jetson Orin for onboard AI, and hot-swappable lithium batteries for 24/7 operation. Moves at 2.5 m/s. Built for pick-and-place, machine tending, inspection, and digital twin capture. Priced at ~$150K per unit.",
+    "deploymentNotes": "BMW Plant Leipzig pilot — 2 units for battery and component manufacturing, targeting full production by end of 2026. Also piloting at Schaeffler (QC scanning) and Pilatus (aerospace). Reported 40% faster QC scans with 99.9% accuracy.",
+    "fundingTotal": "Internal (Hexagon AB, ~$25B market cap)",
+    "milestones": [
+      { "date": "2025-06", "event": "AEON unveiled by Hexagon Robotics" },
+      { "date": "2026-02", "event": "BMW selects AEON for first European humanoid pilot at Plant Leipzig" },
+      { "date": "2026-04", "event": "Broader BMW test planned" },
+      { "date": "2026-H2", "event": "Full-scale permanent pilot at BMW Leipzig" }
+    ]
   }
 ]
