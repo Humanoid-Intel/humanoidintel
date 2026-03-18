@@ -1,5 +1,41 @@
 [
   {
+    "slug": "intbot-nilo-social-intelligence-humanoid",
+    "title": "IntBot's Nilo Humanoid Prioritizes Social AI Over Athletics",
+    "excerpt": "IntBot's IntEngine platform focuses on social intelligence rather than physical capabilities for humanoid robots",
+    "category": "breaking",
+    "date": "2026-03-18T12:05:32.000Z",
+    "tags": [
+      "intbot",
+      "social-ai",
+      "nilo",
+      "intengine"
+    ],
+    "companies": [
+      "IntBot"
+    ],
+    "type": "news",
+    "url": "/news/intbot-nilo-social-intelligence-humanoid"
+  },
+  {
+    "slug": "agibot-50-humanoids-live-performance-demo",
+    "title": "Agibot Demos 50+ Humanoids in Coordinated Live Performance",
+    "excerpt": "Chinese robotics firm showcases largest coordinated humanoid demonstration to date with synchronized dance routines",
+    "category": "breaking",
+    "date": "2026-03-18T11:25:06.000Z",
+    "tags": [
+      "agibot",
+      "demonstration",
+      "scale",
+      "performance"
+    ],
+    "companies": [
+      "Agibot"
+    ],
+    "type": "news",
+    "url": "/news/agibot-50-humanoids-live-performance-demo"
+  },
+  {
     "slug": "agibot-robot-led-live-show-humanoids-scale",
     "title": "Agibot Debuts World's First Robot-Led Live Show",
     "excerpt": "Chinese humanoid company streams 60-minute robot performance to millions, showcasing coordinated multi-robot operations",
