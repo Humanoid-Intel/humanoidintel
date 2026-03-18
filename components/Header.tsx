@@ -9,19 +9,19 @@ const primaryLinks = [
   { label: 'Terminal', href: '/' },
   { label: 'Newsfeed', href: '/news' },
   { label: 'Robot DB', href: '/robots' },
+  { label: 'Brain DB', href: '/brains' },
   { label: 'Companies', href: '/companies' },
   { label: 'Funding', href: '/funding' },
   { label: 'Jobs', href: '/jobs' },
-  { label: 'Research', href: '/research' },
-  { label: 'Supply Chain', href: '/supply-chain' },
 ]
 
 const moreLinks = [
-  { label: 'Brain DB', href: '/brains' },
+  { label: 'Supply Chain', href: '/supply-chain' },
+  { label: 'Research', href: '/research' },
   { label: 'Events', href: '/events' },
+  { label: 'Map', href: '/map' },
   { label: 'Compare', href: '/compare' },
   { label: 'Glossary', href: '/glossary' },
-  { label: 'Map', href: '/map' },
   { label: '\u2605 Watchlist', href: '/watchlist' },
 ]
 
