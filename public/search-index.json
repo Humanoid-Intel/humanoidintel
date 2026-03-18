@@ -4572,6 +4572,21 @@
     "url": "/jobs"
   },
   {
+    "slug": "greenhouse-figureai-4614078006",
+    "title": "Data Strategy Associate — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-03-18T15:38:01-04:00",
+    "tags": [
+      "junior"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
     "slug": "degrees-of-freedom",
     "title": "Degrees of Freedom",
     "excerpt": "The number of independent axes of movement a robot joint system can execute, determining the range and complexity of motions the robot can perform.",
@@ -4587,6 +4602,21 @@
     "companies": [],
     "type": "glossary",
     "url": "/glossary/degrees-of-freedom"
+  },
+  {
+    "slug": "lever-sanctuary-4c534a72-bcbb-4138-aed6-bd3b86d7b3ba",
+    "title": "DevOps Engineer — Sanctuary AI",
+    "excerpt": "Software Engineering · Vancouver, BC",
+    "category": "job",
+    "date": "2026-02-02T23:51:52.391Z",
+    "tags": [
+      "software"
+    ],
+    "companies": [
+      "Sanctuary AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
   },
   {
     "slug": "dexterous-manipulation",
@@ -5905,6 +5935,23 @@
     "companies": [],
     "type": "glossary",
     "url": "/glossary/loco-manipulation"
+  },
+  {
+    "slug": "lever-sanctuary-0e60fef6-a3e1-4a81-8345-75cd120e5b40",
+    "title": "Machine Learning Research Intern (Reinforcement/Imitation Learning) — Sanctuary AI",
+    "excerpt": "Co-ops/Internships · Vancouver, BC",
+    "category": "job",
+    "date": "2026-02-11T19:12:37.561Z",
+    "tags": [
+      "ml/ai",
+      "research",
+      "internship"
+    ],
+    "companies": [
+      "Sanctuary AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
   },
   {
     "slug": "greenhouse-nimblerobotics-4101345009",
@@ -7258,6 +7305,19 @@
     "url": "/jobs"
   },
   {
+    "slug": "lever-sanctuary-ada99797-491f-4058-a257-4d28d62fca27",
+    "title": "Robot Test Pilot (6 Month Contract - Multiple Shifts) — Sanctuary AI",
+    "excerpt": "Corporate · Vancouver, BC",
+    "category": "job",
+    "date": "2026-03-03T21:10:05.475Z",
+    "tags": [],
+    "companies": [
+      "Sanctuary AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
     "slug": "ashby-physicalintelligence-11208bdc-a679-4cf7-b7a9-67848f7660ab",
     "title": "Robotics Service Technician — Physical Intelligence",
     "excerpt": "Hardware · San Francisco",
@@ -7268,6 +7328,21 @@
     ],
     "companies": [
       "Physical Intelligence"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "lever-sanctuary-904fd4a4-c4b6-4efc-aa86-3e719a5de73e",
+    "title": "Robotics Technician — Sanctuary AI",
+    "excerpt": "Hardware Engineering · Vancouver, BC",
+    "category": "job",
+    "date": "2026-02-25T02:20:37.367Z",
+    "tags": [
+      "hardware"
+    ],
+    "companies": [
+      "Sanctuary AI"
     ],
     "type": "job",
     "url": "/jobs"
@@ -7717,6 +7792,22 @@
     "url": "/jobs"
   },
   {
+    "slug": "lever-sanctuary-9b3d5bc3-0d14-42b6-93ee-cfa83fb471ec",
+    "title": "Senior Mechanical Engineer — Sanctuary AI",
+    "excerpt": "Hardware Engineering · Vancouver, BC",
+    "category": "job",
+    "date": "2026-03-11T16:34:33.448Z",
+    "tags": [
+      "hardware",
+      "senior"
+    ],
+    "companies": [
+      "Sanctuary AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
     "slug": "greenhouse-apptronik-5739881004",
     "title": "Senior Mechanical Engineer, Actuation — Apptronik",
     "excerpt": "General · Austin, TX",
@@ -7966,6 +8057,22 @@
     ],
     "companies": [
       "Nimble Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "lever-sanctuary-d591aba1-f790-4c4c-a519-1420f637e3e2",
+    "title": "Senior Software Engineer - Embodied Intelligence Platform — Sanctuary AI",
+    "excerpt": "Software Engineering · Vancouver, BC",
+    "category": "job",
+    "date": "2026-03-09T22:39:43.440Z",
+    "tags": [
+      "software",
+      "senior"
+    ],
+    "companies": [
+      "Sanctuary AI"
     ],
     "type": "job",
     "url": "/jobs"
