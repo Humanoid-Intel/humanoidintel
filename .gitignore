@@ -5,7 +5,3 @@ out/
 .DS_Store
 **/.DS_Store
 agent/.seen-hashes.json
-agent/.x-posted-hashes.json
-agent/.x-daily-count.json
-agent/.linkedin-posted-hashes.json
-agent/.linkedin-daily-count.json

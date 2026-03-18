@@ -7,12 +7,17 @@ const siteLinks = [
   { label: 'Robot DB', href: '/robots' },
   { label: 'Companies', href: '/companies' },
   { label: 'Funding', href: '/funding' },
+  { label: 'Jobs', href: '/jobs' },
+  { label: 'Supply Chain', href: '/supply-chain' },
+  { label: 'Map', href: '/map' },
+  { label: 'Events', href: '/events' },
 ]
 
 const dataLinks = [
   { label: 'Research Hub', href: '/research' },
   { label: 'Glossary', href: '/glossary' },
   { label: 'Newsletter', href: '/newsletter' },
+  { label: 'Watchlist', href: '/watchlist' },
   { label: 'About', href: '/about' },
 ]
 

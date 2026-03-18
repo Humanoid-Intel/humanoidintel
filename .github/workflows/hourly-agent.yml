@@ -68,7 +68,12 @@ jobs:
           FUNDING_CHANGED=$(git diff --name-only content/data/funding-rounds.json 2>/dev/null | wc -l | tr -d ' ')
           JOBS_CHANGED=$(git diff --name-only content/data/jobs.json 2>/dev/null | wc -l | tr -d ' ')
 
-          if [ "$NEW_ARTICLES" -gt "0" ] || [ "$STATIC_CHANGED" -gt "0" ] || [ "$FUNDING_CHANGED" -gt "0" ] || [ "$JOBS_CHANGED" -gt "0" ]; then
+          # Always persist X posting state files so daily count/dedup survives across runs
+          X_STATE_CHANGED=$(git diff --name-only agent/.x-posted-hashes.json agent/.x-daily-count.json 2>/dev/null | wc -l | tr -d ' ')
+          [ -f agent/.x-posted-hashes.json ] && git add agent/.x-posted-hashes.json 2>/dev/null || true
+          [ -f agent/.x-daily-count.json ] && git add agent/.x-daily-count.json 2>/dev/null || true
+
+          if [ "$NEW_ARTICLES" -gt "0" ] || [ "$STATIC_CHANGED" -gt "0" ] || [ "$FUNDING_CHANGED" -gt "0" ] || [ "$JOBS_CHANGED" -gt "0" ] || [ "$X_STATE_CHANGED" -gt "0" ]; then
             [ "$NEW_ARTICLES" -gt "0" ] && git add content/news/*.md
             git add public/search-index.json public/ticker-data.json 2>/dev/null || true
             [ "$FUNDING_CHANGED" -gt "0" ] && git add content/data/funding-rounds.json
