@@ -139,7 +139,31 @@ Answer with exactly one word: YES or NO`
   }
 }
 
-// ── Slug helper (mirrors publisher sanitization) ──────────────────────────────
+// ── Slug resolution — find the actual published article ──────────────────────
+
+function findPublishedSlug(storyTitle: string, storyUrl: string): string | null {
+  const newsDir = path.join(__dirname, '../../content/news')
+  try {
+    const files = fs.readdirSync(newsDir).filter(f => f.endsWith('.md'))
+    for (const file of files) {
+      const content = fs.readFileSync(path.join(newsDir, file), 'utf-8')
+      const frontmatter = content.split('---')[1] || ''
+      // Match by source URL in frontmatter
+      if (storyUrl && frontmatter.includes(storyUrl)) {
+        return file.replace(/\.md$/, '')
+      }
+    }
+    // Fallback: match by title (case-insensitive, partial)
+    const titleLower = storyTitle.toLowerCase().slice(0, 40)
+    for (const file of files) {
+      const content = fs.readFileSync(path.join(newsDir, file), 'utf-8').slice(0, 500)
+      if (content.toLowerCase().includes(titleLower)) {
+        return file.replace(/\.md$/, '')
+      }
+    }
+  } catch {}
+  return null
+}
 
 function storyToSlug(title: string): string {
   return title
@@ -197,9 +221,15 @@ async function postStory(
   xClient: TwitterApi,
   skipQualityGate = false,
 ): Promise<boolean> {
-  // Resolve slug
-  const articleSlug = slugMap.get(story.url) || storyToSlug(story.title)
+  // Resolve slug — priority: slugMap (from this run) → scan published files → fallback
+  const articleSlug = slugMap.get(story.url) || findPublishedSlug(story.title, story.url) || storyToSlug(story.title)
   const articleUrl = `${config.site.domain}/news/${articleSlug}`
+
+  // Safety: if we couldn't find a published article, skip to avoid dead link
+  if (!slugMap.get(story.url) && !findPublishedSlug(story.title, story.url)) {
+    console.log(`[XPoster] ↷ Could not find published article for "${story.title.slice(0, 60)}" — skipping to avoid dead link`)
+    return false
+  }
 
   // Gate 2 — Claude quality check (skip if forcing)
   if (!skipQualityGate) {
