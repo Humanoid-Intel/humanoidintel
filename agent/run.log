@@ -7160,3 +7160,346 @@ There are a finite number of Planck cubes, which means a limited number of digit
 
 [Build Check] ✅ All checks passed — site is healthy
 [Tue Mar 17 21:05:40 CET 2026] Run complete.
+[Tue Mar 17 22:00:00 CET 2026] Agent run starting...
+[dotenv@17.3.1] injecting env (13) from .env.local -- tip: ⚙️  write to custom object with { processEnv: myObject }
+[dotenv@17.3.1] injecting env (13) from .env.local -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+
+[humanoidintel.ai Agent] Starting run at 2026-03-17T21:00:03.428Z
+[Agent] Mode: auto | Threshold: 0.75
+
+--- Phase 1: Aggregation ---
+[RSS] Fetching 32 feeds...
+[GoogleNews] Fetching 102 queries...
+[YouTube] Fetching 13 channels...
+[X/Twitter] Using official API (29 accounts)...
+[RSS] Failed to fetch https://www.theroboticspost.com/feed: TypeError: fetch failed
+    at node:internal/deps/undici/undici:14902:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async fetchFeed (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/sources/rss.ts:48:22)
+    at async Promise.allSettled (index 31)
+    at async aggregateRSSFeeds (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/sources/rss.ts:104:19)
+    at async Promise.all (index 0)
+    at async run (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/index.ts:40:87) {
+  [cause]: Error: getaddrinfo ENOTFOUND www.theroboticspost.com
+      at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:122:26) {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'www.theroboticspost.com'
+  }
+}
+[arXiv] Found 6 relevant papers
+[RSS] Failed to fetch https://koreajoongangdaily.joins.com/rss/feeds/news.xml: Error: HTTP 404
+    at fetchFeed (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/sources/rss.ts:52:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Promise.allSettled (index 29)
+    at async aggregateRSSFeeds (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/sources/rss.ts:104:19)
+    at async Promise.all (index 0)
+    at async run (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/index.ts:40:87)
+[RSS] Failed to fetch https://newatlas.com/robotics/feed/: Error: HTTP 404
+    at fetchFeed (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/sources/rss.ts:52:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Promise.allSettled (index 14)
+    at async aggregateRSSFeeds (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/sources/rss.ts:104:19)
+    at async Promise.all (index 0)
+    at async run (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/index.ts:40:87)
+[RSS] Failed to fetch https://techcrunch.com/tag/1x-technologies/feed/: Error: HTTP 404
+    at fetchFeed (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/sources/rss.ts:52:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Promise.allSettled (index 10)
+    at async aggregateRSSFeeds (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/sources/rss.ts:104:19)
+    at async Promise.all (index 0)
+    at async run (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/index.ts:40:87)
+[X/Twitter] API error 400: {"errors":[{"parameters":{"query":["(from:adaborobotics OR from:RobertPlayter OR from:damion_shelton OR from:ericrosenblum OR from:geordie_rose OR from:jeff_cardenas_ OR from:aidapaolucci OR from:real
+[YouTube] Collected 30 videos
+[X/Twitter] Official API: 3 relevant posts
+[GoogleNews] Collected 5816 stories from 102 queries
+[RSS] Failed to fetch https://asia.nikkei.com/rss/feed/section/Business: Error: HTTP 404
+    at fetchFeed (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/sources/rss.ts:52:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Promise.allSettled (index 27)
+    at async aggregateRSSFeeds (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/sources/rss.ts:104:19)
+    at async Promise.all (index 0)
+    at async run (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/index.ts:40:87)
+[RSS] Failed to fetch https://www.globenewswire.com/RssFeed/subjectCode/16-Robotics: DOMException [TimeoutError]: The operation was aborted due to timeout
+    at node:internal/deps/undici/undici:14902:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async fetchFeed (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/sources/rss.ts:48:22)
+    at async Promise.allSettled (index 26)
+    at async aggregateRSSFeeds (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/sources/rss.ts:104:19)
+    at async Promise.all (index 0)
+    at async run (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/index.ts:40:87)
+[RSS] Collected 2694 raw stories
+[Agent] Total raw stories: 8549 (RSS: 2694 | arXiv: 6 | GoogleNews: 5816 | YouTube: 30 | X: 3)
+
+--- Phase 2: Deduplication & Scoring ---
+[Dedup] Skipped near-duplicate title: "Amid Record Robotics Funding, Apptronik Raises $520M Series A Extension To Boost Production Of Humanoid Robot Apollo"
+[Dedup] Skipped near-duplicate title: "Boston Dynamics CEO Robert Playter steps down after 30 years at the company"
+[Dedup] Skipped near-duplicate title: "AgiBot unveils Lingxi X2, an advanced humanoid robot with multimodal intelligence"
+[Dedup] Skipped near-duplicate title: "The Robot Revolution Is Real. Tesla, Hyundai, and More Stocks to Play It. - Barron's"
+[Dedup] Skipped near-duplicate title: "Hyundai Hires Tesla Optimus Robotics Chief - Yahoo Finance"
+[Dedup] Skipped near-duplicate title: "Boston Dynamics CEO Robert Playter steps down - The Robot Report"
+[Dedup] Skipped near-duplicate title: "Agility Robotics, Boston Dynamics see leadership changes - The Robot Report"
+[Dedup] Skipped near-duplicate title: "Exclusive / Toyota deploys Agility humanoids at Canadian plant - Semafor"
+[Dedup] Skipped near-duplicate title: "Toyota Deploys 7 Agility Humanoid Robots in Canadian Plant - The Tech Buzz"
+[Dedup] Skipped near-duplicate title: "Amid Record Robotics Funding, Apptronik Raises $520M Series A Extension To Boost Production Of Humanoid Robot Apollo - Crunchbase News"
+[Dedup] Skipped near-duplicate title: "Apptronik raises $520M to produce humanoid Apollo robot commercial deployments - SiliconANGLE"
+[Dedup] Skipped near-duplicate title: "Humanoid Robotics Company Apptronik Raises $520M Series A-X Extension - Built In Austin"
+[Dedup] Skipped near-duplicate title: "China's Unitree Robotics Launches Public Beta Testing of World's First Humanoid Robot App Store - Yicai Global"
+[Dedup] Skipped near-duplicate title: "Mobileye acquires humanoid robot startup Mentee Robotics for $900M - TechCrunch"
+[Dedup] Skipped near-duplicate title: "Mobileye to Acquire Mentee Robotics in $900M Deal - AI Business"
+[Dedup] Skipped near-duplicate title: "Mobileye agrees $900m acquisition of Mentee Robotics - Just Auto"
+[Dedup] Skipped near-duplicate title: "Mobileye Acquires Startup Mentee Robotics for $900 Million - WSJ"
+[Dedup] Skipped near-duplicate title: "Mobileye To Acquire Humanoid Startup Mentee Robotics for $900M - AI Insider"
+[Dedup] Skipped near-duplicate title: "Mobileye to Buy Israeli Startup Mentee Robotics for $900M - eWeek"
+[Dedup] Skipped near-duplicate title: "Mobileye to Acquire Mentee Robotics in $900M Deal - TipRanks"
+[Dedup] Skipped near-duplicate title: "Mobileye acquires Mentee Robotics in a $900 million deal - findarticles.com"
+[Dedup] Skipped near-duplicate title: "Boston Dynamics, Agility and others pen letter condemning weaponized ‘general purpose’ robots - TechCrunch"
+[Dedup] Skipped near-duplicate title: "AGIBOT Debuts Full Humanoid Robot Lineup at CES 2026 - digitimes"
+[Dedup] Skipped near-duplicate title: "China's Unitree launches world's first humanoid robot app store - Interesting Engineering"
+[Dedup] Skipped near-duplicate title: "China deploys an army of humanoid robots to car factories - IntelliNews"
+[Dedup] Skipped near-duplicate title: "Atlas 2 vs. Optimus: Hyundai, Tesla battle for humanoid edge - The Korea Herald"
+[Dedup] Skipped near-duplicate title: "Hyundai is taking on Tesla and others in race to mass-produce humanoid robots - Yahoo Finance"
+[Dedup] Skipped near-duplicate title: "Hyundai Motor Group to appoint former head of Tesla's humanoid robot program as adviser - Reuters"
+[Dedup] Skipped near-duplicate title: "Hyundai, Tesla take rivalry into humanoid robots - Tech in Asia"
+[Dedup] Skipped near-duplicate title: "[News] TSMC Reportedly Eyes 10-Year Boom from Humanoids, Backed by NVIDIA Jetson and Tesla’s Chips - TrendForce"
+[Dedup] Skipped near-duplicate title: "ST Partners with Nvidia on Physical AI - embedded.com"
+[Dedup] Skipped near-duplicate title: "Phantom MK-1 military robot in Ukraine - ScoopWhoop"
+[Dedup] Skipped near-duplicate title: "RoboForce raises $52M to scale physical AI robo-labor - GamesBeat"
+[Dedup] Skipped near-duplicate title: "Nvidia CEO Jensen Huang Thinks Tesla Has a Multitrillion-Dollar Artificial Intelligence (AI) Opportunity Up Its Sleeve (Hint: It's Not Robotaxi) - Yahoo Finance"
+[Dedup] Skipped near-duplicate title: "Boston Dynamics CEO Robert Playter steps down after 30 years at the company - TechCrunch"
+[Dedup] Skipped near-duplicate title: "Boston Dynamics CEO Robert Playter is stepping down after six years - The Verge"
+[Dedup] Skipped near-duplicate title: "Boston Dynamics CEO Robert Playter Steps Down Immediately - The Tech Buzz"
+[Dedup] Skipped near-duplicate title: "Boston Dynamics CEO steps down after 7 years - The Business Journals"
+[Dedup] Skipped near-duplicate title: "Robert Playter Steps Down as CEO of Boston Dynamics Amidst Era of Innovation and Market Expansion - Hoodline"
+[Dedup] Skipped near-duplicate title: "Boston Dynamics CEO Robert Playter Steps Down - findarticles.com"
+[Dedup] Skipped near-duplicate title: "NVIDIA GTC 2026: Vera Rubin, CPUs, Physical AI - 조선일보"
+[Dedup] Skipped near-duplicate title: "NVIDIA Announces Open Physical AI Data Factory Blueprint to - GlobeNewswire"
+[Dedup] Skipped near-duplicate title: "VESSL AI Showcases GPU Cloud Platform for Physical AI at NVIDIA GTC 2026 - lincolnjournal.com"
+[Dedup] Skipped near-duplicate title: "Multi-Trillion Dollar Opportunity? NVIDIA CEO Makes Bold Prediction on Tesla Optimus Robot - Analytics Insight"
+[Dedup] Skipped near-duplicate title: "Most Read: Nvidia GTC Quantum Day: What to Expect; Tesla Humanoid Robot Heading to Mars in 2026 - IoT World Today"
+[Dedup] Skipped near-duplicate title: "NVIDIA's new Project GROOT: fully humanoid robot to compete against Tesla Optimus AI robot - TweakTown"
+[Dedup] Skipped near-duplicate title: "Foxconn partners with Nvidia to develop humanoid robots - Tech in Asia"
+[Dedup] 5 unique, scoreable stories from 8549 raw
+[Agent] Processing top 5 stories:
+  1. [95] Ranked: The Companies Shipping the Most Humanoid Robots - Visual Capit
+  2. [95] Argument with a passer-by: Humanoid robot taken away by police in Maca
+  3. [85] Police detain humanoid robot for scaring woman late at night | WWL - A
+  4. [75] Ukraine begins testing US-made humanoid robots on the battlefield: Cou
+  5. [55] DW News. . Videos of humanoid robot soldiers with heavy guns are going
+
+--- Phase 2.5: Funding Extraction ---
+[FundingExtractor] No funding stories detected.
+
+--- Phase 2.6: Job Board Sync ---
+[Jobs] Fetched: Greenhouse=215 Lever=9 Ashby=25 Personio=0 Indeed=0 Total=249
+[Jobs] +33 new | 5 closed | pruned 33 | 216 total open
+
+--- Phase 3: Content Generation ---
+[Writer] Generating article for: "Ranked: The Companies Shipping the Most Humanoid Robots - Visual Capitalist"
+[Writer] Could not parse frontmatter from response
+[Writer] Generating article for: "Argument with a passer-by: Humanoid robot taken away by police in Macau | blue News - blue News"
+[Writer] Could not parse frontmatter from response
+[Writer] Generating article for: "Police detain humanoid robot for scaring woman late at night | WWL - Audacy"
+[Writer] Generating article for: "Ukraine begins testing US-made humanoid robots on the battlefield: Could robot soldiers be the future of warfare? - Bhaskar English"
+[Writer] Skipped (non-humanoid): "Ukraine begins testing US-made humanoid robots on the battlefield: Could robot soldiers be the future of warfare? - Bhaskar English"
+[Writer] Generating article for: "DW News. . Videos of humanoid robot soldiers with heavy guns are going viral on social media, allegedly showing practice drills. - facebook.com"
+[Writer] Could not parse frontmatter from response
+[Agent] Generated 1/5 articles
+
+--- Phase 4: Publishing ---
+[Publisher] Skipping near-duplicate slug: "police-detain-humanoid-robot-scaring-woman-incident" is too similar to existing "macau-police-detain-humanoid-robot-elderly-incident"
+
+--- Phase 4.5: X Posting ---
+[XPoster] ↷ Skip "Ranked: The Companies Shipping the Most Humanoid Robots - Vi" — category 'market' is not 'breaking'
+[XPoster] Checking quality: "Argument with a passer-by: Humanoid robot taken away by police in Maca"
+[XPoster] ↷ Claude judged not post-worthy — skipping
+[XPoster] Checking quality: "Police detain humanoid robot for scaring woman late at night | WWL - A"
+[XPoster] ↷ Claude judged not post-worthy — skipping
+[XPoster] ↷ Skip "Ukraine begins testing US-made humanoid robots on the battle" — score 75 < 85
+[XPoster] ↷ Skip "DW News. . Videos of humanoid robot soldiers with heavy guns" — score 55 < 85
+[XPoster] No eligible stories posted this run.
+
+--- Phase 4.6: LinkedIn Posting ---
+[LIposter] Checking quality: "Ranked: The Companies Shipping the Most Humanoid Robots - Visual Capit"
+[LIposter] ↷ Claude judged not post-worthy — skipping
+[LIposter] Checking quality: "Argument with a passer-by: Humanoid robot taken away by police in Maca"
+[LIposter] ↷ Claude judged not post-worthy — skipping
+[LIposter] Checking quality: "Police detain humanoid robot for scaring woman late at night | WWL - A"
+[LIposter] ↷ Claude judged not post-worthy — skipping
+[LIposter] ↷ Skip "Ukraine begins testing US-made humanoid robots on the battle" — score 75 < 85
+[LIposter] ↷ Skip "DW News. . Videos of humanoid robot soldiers with heavy guns" — score 55 < 85
+[LIposter] No eligible stories posted this run.
+
+[Agent] Run complete in 90.1s
+[Tue Mar 17 22:01:33 CET 2026] Regenerating search index...
+[search-index] 532 entries → news:210 companies:23 robots:24 funding:42 glossary:17 jobs:216
+[Tue Mar 17 22:01:35 CET 2026] Regenerating ticker...
+[ticker] Wrote 14 ticker items to public/ticker-data.json
+  FIG.AI     Figure 03    +Factory.Deploy
+  TSLA.BOT   Optimus      +Factory.Deploy
+  BOS.DYN    Atlas        +News
+  AGIL.ROB   Digit        +Partnership
+  NEURA      4NE-1        +Public.Demo
+  APP.TRON   Apollo       +Unicorn
+  UNIT.REE   G1           +News
+  SUNDAY     HomeBot      +Fund.$1.15B
+  GALBOT     G1           +Fund.$362M
+  SANC.AI    Phoenix      +$90M.SeriesD
+  1X.TECH    NEO          +Unicorn
+  MIND.ROB   Stealth      +News
+  CLN.ROB    Alpha        +Public.Demo
+  FUND.YTD   2026         $5.9B.2026
+[Tue Mar 17 22:01:37 CET 2026] Pushed: 0 new articles, funding changed: 0, jobs changed: 1, static assets updated
+[Tue Mar 17 22:01:37 CET 2026] Waiting 180s for Cloudflare deploy...
+[Build Check] Checking https://humanoidintel.ai at 2026-03-17T21:04:40.188Z
+
+✅ Homepage (/): HTTP 200, marker found
+✅ News page (/news/): HTTP 200, marker found
+✅ Companies page (/companies/): HTTP 200, marker found
+✅ Robots page (/robots/): HTTP 200, marker found
+✅ Funding page (/funding/): HTTP 200, marker found
+
+[Build Check] ✅ All checks passed — site is healthy
+[Tue Mar 17 22:04:40 CET 2026] Run complete.
+[Wed Mar 18 08:00:00 CET 2026] Agent run starting...
+[dotenv@17.3.1] injecting env (13) from .env.local -- tip: ⚙️  suppress all logs with { quiet: true }
+[dotenv@17.3.1] injecting env (13) from .env.local -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+
+[humanoidintel.ai Agent] Starting run at 2026-03-18T07:00:03.134Z
+[Agent] Mode: auto | Threshold: 0.75
+
+--- Phase 1: Aggregation ---
+[RSS] Fetching 32 feeds...
+[GoogleNews] Fetching 102 queries...
+[YouTube] Fetching 13 channels...
+[X/Twitter] Using official API (29 accounts)...
+[RSS] Failed to fetch https://www.theroboticspost.com/feed: TypeError: fetch failed
+    at node:internal/deps/undici/undici:14902:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async fetchFeed (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/sources/rss.ts:48:22)
+    at async Promise.allSettled (index 31)
+    at async aggregateRSSFeeds (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/sources/rss.ts:104:19)
+    at async Promise.all (index 0)
+    at async run (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/index.ts:40:87) {
+  [cause]: Error: getaddrinfo ENOTFOUND www.theroboticspost.com
+      at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:122:26) {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'www.theroboticspost.com'
+  }
+}
+[RSS] Failed to fetch https://newatlas.com/robotics/feed/: Error: HTTP 404
+    at fetchFeed (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/sources/rss.ts:52:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Promise.allSettled (index 14)
+    at async aggregateRSSFeeds (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/sources/rss.ts:104:19)
+    at async Promise.all (index 0)
+    at async run (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/index.ts:40:87)
+[RSS] Failed to fetch https://techcrunch.com/tag/1x-technologies/feed/: Error: HTTP 404
+    at fetchFeed (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/sources/rss.ts:52:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Promise.allSettled (index 10)
+    at async aggregateRSSFeeds (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/sources/rss.ts:104:19)
+    at async Promise.all (index 0)
+    at async run (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/index.ts:40:87)
+[YouTube] Collected 0 videos
+[RSS] Failed to fetch https://koreajoongangdaily.joins.com/rss/feeds/news.xml: Error: HTTP 404
+    at fetchFeed (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/sources/rss.ts:52:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Promise.allSettled (index 29)
+    at async aggregateRSSFeeds (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/sources/rss.ts:104:19)
+    at async Promise.all (index 0)
+    at async run (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/index.ts:40:87)
+[X/Twitter] API error 400: {"errors":[{"parameters":{"query":["(from:adaborobotics OR from:RobertPlayter OR from:damion_shelton OR from:ericrosenblum OR from:geordie_rose OR from:jeff_cardenas_ OR from:aidapaolucci OR from:real
+[X/Twitter] Official API: 3 relevant posts
+[GoogleNews] Collected 5747 stories from 102 queries
+[arXiv] Found 1 relevant papers
+[RSS] Failed to fetch https://asia.nikkei.com/rss/feed/section/Business: Error: HTTP 404
+    at fetchFeed (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/sources/rss.ts:52:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Promise.allSettled (index 27)
+    at async aggregateRSSFeeds (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/sources/rss.ts:104:19)
+    at async Promise.all (index 0)
+    at async run (/Users/dannysanders/Documents/Cowork/humanoidintel/agent/index.ts:40:87)
+[RSS] Collected 2597 raw stories
+[Agent] Total raw stories: 8348 (RSS: 2597 | arXiv: 1 | GoogleNews: 5747 | YouTube: 0 | X: 3)
+
+--- Phase 2: Deduplication & Scoring ---
+[Dedup] Skipped near-duplicate title: "Amid Record Robotics Funding, Apptronik Raises $520M Series A Extension To Boost Production Of Humanoid Robot Apollo"
+[Dedup] Skipped near-duplicate title: "Boston Dynamics CEO Robert Playter steps down after 30 years at the company"
+[Dedup] Skipped near-duplicate title: "AgiBot unveils Lingxi X2, an advanced humanoid robot with multimodal intelligence"
+[Dedup] Skipped near-duplicate title: "Hyundai Hires Tesla Optimus Robotics Chief - Yahoo Finance"
+[Dedup] Skipped near-duplicate title: "Agility Robotics, Boston Dynamics see leadership changes - The Robot Report"
+[Dedup] Skipped near-duplicate title: "Exclusive / Toyota deploys Agility humanoids at Canadian plant - Semafor"
+[Dedup] Skipped near-duplicate title: "Toyota Deploys 7 Agility Humanoid Robots in Canadian Plant - The Tech Buzz"
+[Dedup] Skipped near-duplicate title: "Amid Record Robotics Funding, Apptronik Raises $520M Series A Extension To Boost Production Of Humanoid Robot Apollo - Crunchbase News"
+[Dedup] Skipped near-duplicate title: "Humanoid Robotics Company Apptronik Raises $520M Series A-X Extension - Built In Austin"
+[Dedup] Skipped near-duplicate title: "China's Unitree Robotics Launches Public Beta Testing of World's First Humanoid Robot App Store - Yicai Global"
+[Dedup] Skipped near-duplicate title: "Skild AI: Pioneering Omni-Bodied Intelligence Through Simulation - NVIDIA"
+[Dedup] Skipped near-duplicate title: "Robot software startup Skild AI raises $1.4B round backed by Nvidia, Jeff Bezos - SiliconANGLE"
+[Dedup] Skipped near-duplicate title: "Nvidia invests in Skild AI at a valuation of $14 billion - Techzine Global"
+[Dedup] Skipped near-duplicate title: "Key facts: Nvidia's stock falls; invests in Skild AI; partners with Eli Lilly - TradingView"
+[Dedup] Skipped near-duplicate title: "Mobileye acquires humanoid robot startup Mentee Robotics for $900M - TechCrunch"
+[Dedup] Skipped near-duplicate title: "Mobileye to Acquire Mentee Robotics in $900M Deal - AI Business"
+[Dedup] Skipped near-duplicate title: "Mobileye agrees $900m acquisition of Mentee Robotics - Just Auto"
+[Dedup] Skipped near-duplicate title: "Mobileye Acquires Startup Mentee Robotics for $900 Million - WSJ"
+[Dedup] Skipped near-duplicate title: "Mobileye To Acquire Humanoid Startup Mentee Robotics for $900M - AI Insider"
+[Dedup] Skipped near-duplicate title: "Mobileye to Buy Israeli Startup Mentee Robotics for $900M - eWeek"
+[Dedup] Skipped near-duplicate title: "Mobileye to Acquire Mentee Robotics in $900M Deal - TipRanks"
+[Dedup] Skipped near-duplicate title: "Mobileye acquires Mentee Robotics in a $900 million deal - findarticles.com"
+[Dedup] Skipped near-duplicate title: "AGIBOT Debuts Full Humanoid Robot Lineup at CES 2026 - DIGITIMES Asia"
+[Dedup] Skipped near-duplicate title: "China's Unitree launches world's first humanoid robot app store - Interesting Engineering"
+[Dedup] Skipped near-duplicate title: "China’s UBTech, Midea push humanoid robots into factories amid push for adoption - South China Morning Post"
+[Dedup] Skipped near-duplicate title: "Agibot Launches Humanoid Robot Rental Program (And The Price Might Surprise You) - Yahoo Tech"
+[Dedup] Skipped near-duplicate title: "China's humanoid robots take centre stage for Lunar New Year showtime - Geo News"
+[Dedup] Skipped near-duplicate title: "China deploys an army of humanoid robots to car factories - IntelliNews"
+[Dedup] Skipped near-duplicate title: "Video: Humanoid robots take centre stage at China’s Lunar New Year show - Al Jazeera"
+[Dedup] Skipped near-duplicate title: "Atlas 2 vs. Optimus: Hyundai, Tesla battle for humanoid edge - The Korea Herald"
+[Dedup] Skipped near-duplicate title: "Hyundai is taking on Tesla and others in race to mass-produce humanoid robots - Yahoo Finance"
+[Dedup] Skipped near-duplicate title: "Hyundai Motor Group to appoint former head of Tesla's humanoid robot program as adviser - Reuters"
+[Dedup] Skipped near-duplicate title: "Hyundai Just Put Humanoid Robots To Work In Its Factory — Now It’s Tesla’s Move To Ramp Up - Stocktwits"
+[Dedup] Skipped near-duplicate title: "[News] TSMC Reportedly Eyes 10-Year Boom from Humanoids, Backed by NVIDIA Jetson and Tesla’s Chips - TrendForce"
+[Dedup] Skipped near-duplicate title: "Video: BMW deploys humanoid robot workers at Leipzig battery plant in Germany - Interesting Engineering"
+[Dedup] Skipped near-duplicate title: "Apptronik raises $520M to produce humanoid Apollo robot commercial deployments - SiliconANGLE"
+[Dedup] Skipped near-duplicate title: "ST Partners with Nvidia on Physical AI - embedded.com"
+[Dedup] Skipped near-duplicate title: "Humanoid Robots Enter the Battlefield: Ukraine Sees First Real-World Combat Test - kmjournal.net"
+[Dedup] Skipped near-duplicate title: "Phantom MK-1 military robot in Ukraine - ScoopWhoop"
+[Dedup] Skipped near-duplicate title: "RoboForce raises $52M to scale physical AI robo-labor - GamesBeat"
+[Dedup] Skipped near-duplicate title: "Nvidia CEO Jensen Huang Thinks Tesla Has a Multitrillion-Dollar Artificial Intelligence (AI) Opportunity Up Its Sleeve (Hint: It's Not Robotaxi) - Yahoo Finance"
+[Dedup] Skipped near-duplicate title: "Tesla's Optimus May Be The First Humanoid Robot To Achieve High Volume And Tech Scale, Says Nvidia CEO Jensen Huang: '... Likely To Be The Next Multi-Trillion Dollar Industry' - Yahoo Finance"
+[Dedup] Skipped near-duplicate title: "Boston Dynamics CEO Robert Playter steps down - The Robot Report"
+[Dedup] Skipped near-duplicate title: "Boston Dynamics CEO Robert Playter steps down after 30 years at the company - TechCrunch"
+[Dedup] Skipped near-duplicate title: "Boston Dynamics CEO Robert Playter is stepping down after six years - The Verge"
+[Dedup] Skipped near-duplicate title: "Boston Dynamics CEO Robert Playter Steps Down Immediately - The Tech Buzz"
+[Dedup] Skipped near-duplicate title: "Boston Dynamics CEO steps down after 7 years - The Business Journals"
+[Dedup] Skipped near-duplicate title: "Robert Playter Steps Down as CEO of Boston Dynamics Amidst Era of Innovation and Market Expansion - Hoodline"
+[Dedup] Skipped near-duplicate title: "Boston Dynamics CEO Robert Playter Steps Down - findarticles.com"
+[Dedup] Skipped near-duplicate title: "NVIDIA GTC 2026: Vera Rubin, CPUs, Physical AI - 조선일보"
+[Dedup] Skipped near-duplicate title: "NVIDIA Announces Open Physical AI Data Factory Blueprint to - GlobeNewswire"
+[Dedup] Skipped near-duplicate title: "NVIDIA Drops Open Blueprint for Physical AI Training Data at GTC - blockchain.news"
+[Dedup] Skipped near-duplicate title: "Multi-Trillion Dollar Opportunity? NVIDIA CEO Makes Bold Prediction on Tesla Optimus Robot - Analytics Insight"
+[Dedup] Skipped near-duplicate title: "Most Read: Nvidia GTC Quantum Day: What to Expect; Tesla Humanoid Robot Heading to Mars in 2026 - IoT World Today"
+[Dedup] Skipped near-duplicate title: "NVIDIA's new Project GROOT: fully humanoid robot to compete against Tesla Optimus AI robot - TweakTown"
+[Dedup] Skipped near-duplicate title: "Foxconn partners with Nvidia to develop humanoid robots - Tech in Asia"
+[Dedup] 37 unique, scoreable stories from 8348 raw
+[Agent] Processing top 5 stories:
+  1. [100] ExpertGen: Scalable Sim-to-Real Expert Policy Learning from Imperfect 
+  2. [100] Towards the Vision-Sound-Language-Action Paradigm: The HEAR Framework 
+  3. [100] Enforcing Task-Specified Compliance Bounds for Humanoids via Anisotrop
+  4. [100] Enabling Dynamic Tracking in Vision-Language-Action Models via Time-Di
+  5. [100] ADAPT: Adaptive Dual-projection Architecture for Perceptive Traversal
+
+--- Phase 2.5: Funding Extraction ---
+[FundingExtractor] No funding stories detected.
+
+--- Phase 2.6: Job Board Sync ---
+[Jobs] Fetched: Greenhouse=215 Lever=9 Ashby=24 Personio=0 Indeed=0 Total=248
+[Jobs] +33 new | 6 closed | pruned 33 | 215 total open
+
+--- Phase 3: Content Generation ---
+[Writer] Generating article for: "ExpertGen: Scalable Sim-to-Real Expert Policy Learning from Imperfect Behavior Priors"
+[Writer] Could not parse frontmatter from response
+[Writer] Generating article for: "Towards the Vision-Sound-Language-Action Paradigm: The HEAR Framework for Sound-Centric Manipulation"
+[Writer] Generating article for: "Enforcing Task-Specified Compliance Bounds for Humanoids via Anisotropic Lipschitz-Constrained Policies"

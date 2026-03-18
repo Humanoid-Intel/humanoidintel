@@ -1,19 +1,35 @@
 [
   {
-    "slug": "expertgen-sim-to-real-expert-policy-learning",
-    "title": "ExpertGen Automates Expert Policy Learning for Humanoids",
-    "excerpt": "New framework addresses humanoid robotics' data bottleneck by automating expert policy generation in simulation",
+    "slug": "adapt-dual-map-architecture-humanoid-navigation",
+    "title": "ADAPT: New Dual-Map Architecture for Humanoid Navigation",
+    "excerpt": "Researchers introduce adaptive dual-projection system combining elevation maps with vertical distance constraints",
     "category": "research",
     "date": "2026-03-18T04:00:00.000Z",
     "tags": [
-      "sim-to-real",
-      "behavior-cloning",
-      "policy-learning",
-      "arxiv"
+      "navigation",
+      "perception",
+      "locomotion",
+      "research"
     ],
     "companies": [],
     "type": "news",
-    "url": "/news/expertgen-sim-to-real-expert-policy-learning"
+    "url": "/news/adapt-dual-map-architecture-humanoid-navigation"
+  },
+  {
+    "slug": "hear-framework-sound-centric-manipulation-humanoids",
+    "title": "New HEAR Framework Adds Real-Time Sound to Humanoid AI",
+    "excerpt": "Researchers propose HEAR framework to integrate real-time environmental acoustics into humanoid robot manipulation systems",
+    "category": "research",
+    "date": "2026-03-18T04:00:00.000Z",
+    "tags": [
+      "vla",
+      "multimodal-ai",
+      "manipulation",
+      "research"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/hear-framework-sound-centric-manipulation-humanoids"
   },
   {
     "slug": "rl-compliance-bounds-humanoid-control-lipschitz",
@@ -32,20 +48,20 @@
     "url": "/news/rl-compliance-bounds-humanoid-control-lipschitz"
   },
   {
-    "slug": "vla-models-velocity-feedforward-industrial-control",
-    "title": "VLA Models Get Velocity Feedforward for Industrial Control",
-    "excerpt": "New research addresses VLA deployment challenges on rigid industrial robots through velocity feedforward control methods.",
+    "slug": "vla-models-velocity-feedforward-industrial-robots",
+    "title": "VLA Models Get Velocity Feedforward for Industrial Robots",
+    "excerpt": "New research addresses VLA model deployment on rigid industrial robots through velocity feedforward mechanisms",
     "category": "research",
     "date": "2026-03-18T04:00:00.000Z",
     "tags": [
-      "vla",
+      "vla-models",
       "behavior-cloning",
-      "industrial-robots",
-      "control-systems"
+      "industrial-robotics",
+      "velocity-feedforward"
     ],
     "companies": [],
     "type": "news",
-    "url": "/news/vla-models-velocity-feedforward-industrial-control"
+    "url": "/news/vla-models-velocity-feedforward-industrial-robots"
   },
   {
     "slug": "humanoid-robot-market-30-billion-2036-forecast",
