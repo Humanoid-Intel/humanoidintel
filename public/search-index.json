@@ -1,5 +1,39 @@
 [
   {
+    "slug": "chinese-humanoid-robots-sprint-speed-usain-bolt",
+    "title": "Chinese Humanoids Target Sub-9.58s Sprint Times",
+    "excerpt": "Chinese researchers claim humanoid robots could break Usain Bolt's 9.58-second 100m record through advanced control systems",
+    "category": "breaking",
+    "date": "2026-03-18T16:58:00.000Z",
+    "tags": [
+      "china",
+      "bipedal-locomotion",
+      "sprint-speed",
+      "usain-bolt"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/chinese-humanoid-robots-sprint-speed-usain-bolt"
+  },
+  {
+    "slug": "china-space-ground-humanoid-control-openclaw-trial",
+    "title": "China Tests Space-Ground Humanoid Control via OpenClaw",
+    "excerpt": "Chinese researchers demonstrate orbital computing control of ground-based humanoid robots through OpenClaw platform",
+    "category": "breaking",
+    "date": "2026-03-18T15:05:19.000Z",
+    "tags": [
+      "china",
+      "space-computing",
+      "openclaw",
+      "remote-control"
+    ],
+    "companies": [
+      "OpenClaw"
+    ],
+    "type": "news",
+    "url": "/news/china-space-ground-humanoid-control-openclaw-trial"
+  },
+  {
     "slug": "agibot-qingtianzu-14-5m-funding-robot-rental",
     "title": "AgiBot-Backed Rental Firm Raises $14.5M for Humanoid Fleet",
     "excerpt": "Qingtianzu secures $14.5M to expand AgiBot humanoid rental network across China's manufacturing sector",
@@ -2479,6 +2513,24 @@
     ],
     "type": "news",
     "url": "/news/musk-integer-universe-tesla-optimus-ai-implications"
+  },
+  {
+    "slug": "agility-robotics-2026-funding-rounds-investors",
+    "title": "Agility Robotics 2026 Funding: Investors & Rounds",
+    "excerpt": "Analysis of Agility Robotics' 2026 funding activity and complete investor breakdown from market intelligence firm Tracxn.",
+    "category": "market",
+    "date": "2026-03-14T12:31:09.000Z",
+    "tags": [
+      "agility-robotics",
+      "funding",
+      "investors",
+      "digit"
+    ],
+    "companies": [
+      "Agility Robotics"
+    ],
+    "type": "news",
+    "url": "/news/agility-robotics-2026-funding-rounds-investors"
   },
   {
     "slug": "bofa-humanoid-robots-outnumber-cars-2060-prediction",
@@ -6528,23 +6580,6 @@
     "url": "/jobs"
   },
   {
-    "slug": "greenhouse-apptronik-5789359004",
-    "title": "Perception Software Intern — Humanoid Robotics — Apptronik",
-    "excerpt": "General · Austin, TX",
-    "category": "job",
-    "date": "2026-02-23T11:33:16-05:00",
-    "tags": [
-      "perception",
-      "software",
-      "internship"
-    ],
-    "companies": [
-      "Apptronik"
-    ],
-    "type": "job",
-    "url": "/jobs"
-  },
-  {
     "slug": "fr-040",
     "title": "Persona AI — Pre-Seed $27M",
     "excerpt": "Founded by Nic Radford (ex-NASA Johnson Space Center, Toyota Research Institute) and Jerry Pratt (ex-Florida Human & Machine Cognition Institute), Persona AI targets the most demanding physical environments — shipbuilding, energy infrastructure, and construction — where current humanoids are underpowered. A strategic investment from POSCO Group (South Korea's largest steelmaker) provides both capital and a direct deployment pathway into heavy industrial facilities. The $27M oversubscribed pre-seed, anchored by Mirae Asset Group's Korean institutional backing, signals crossover investor interest in purpose-built industrial humanoids.",
@@ -8078,6 +8113,21 @@
     "url": "/jobs"
   },
   {
+    "slug": "greenhouse-agilityrobotics-5830827004",
+    "title": "Senior Systems Integration Engineer — Agility Robotics",
+    "excerpt": "General · Onsite- Salem",
+    "category": "job",
+    "date": "2026-03-18T12:28:17-04:00",
+    "tags": [
+      "senior"
+    ],
+    "companies": [
+      "Agility Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
     "slug": "greenhouse-apptronik-5807129004",
     "title": "Senior Technical Program Manager — Apptronik",
     "excerpt": "General · Austin, TX",
@@ -8089,22 +8139,6 @@
     ],
     "companies": [
       "Apptronik"
-    ],
-    "type": "job",
-    "url": "/jobs"
-  },
-  {
-    "slug": "greenhouse-agilityrobotics-5725081004",
-    "title": "Senior Technical Recruiter, Software — Agility Robotics",
-    "excerpt": "General · Remote  (Remote)",
-    "category": "job",
-    "date": "2026-02-25T16:53:49-05:00",
-    "tags": [
-      "software",
-      "senior"
-    ],
-    "companies": [
-      "Agility Robotics"
     ],
     "type": "job",
     "url": "/jobs"
