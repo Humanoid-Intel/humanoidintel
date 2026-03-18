@@ -24,7 +24,7 @@ const COMPANY_TICKERS: Array<{
   defaultStatus: string
   defaultPositive: boolean
 }> = [
-  { symbol: 'FIG.AI',    label: 'Figure 03',   companyNames: ['figure ai', 'figure'],            defaultStatus: '+1.5B.SeriesC', defaultPositive: true },
+  { symbol: 'FIG.AI',    label: 'Figure 03',   companyNames: ['figure ai', 'figure'],            defaultStatus: '+BMW.Deploy',   defaultPositive: true },
   { symbol: 'TSLA.BOT',  label: 'Optimus',     companyNames: ['tesla', 'optimus'],               defaultStatus: '+8k.Units.Q1',  defaultPositive: true },
   { symbol: 'BOS.DYN',   label: 'Atlas',       companyNames: ['boston dynamics', 'atlas'],       defaultStatus: '+New.CEO.2026',  defaultPositive: true },
   { symbol: 'AGIL.ROB',  label: 'Digit',       companyNames: ['agility robotics', 'digit'],      defaultStatus: '+AMZN.Scale',   defaultPositive: true },
@@ -37,6 +37,7 @@ const COMPANY_TICKERS: Array<{
   { symbol: '1X.TECH',   label: 'NEO',         companyNames: ['1x technologies', '1x'],          defaultStatus: '+$125M.SerC',   defaultPositive: true },
   { symbol: 'MIND.ROB',  label: 'Stealth',     companyNames: ['mind robotics', 'rivian'],        defaultStatus: '+Founded.2026', defaultPositive: true },
   { symbol: 'CLN.ROB',   label: 'Alpha',       companyNames: ['clone robotics'],                 defaultStatus: '+279.Alpha.26', defaultPositive: true },
+  { symbol: 'XPENG.R',  label: 'Iron',        companyNames: ['xpeng', 'xpeng robotics'],        defaultStatus: '+Factory.2026', defaultPositive: true },
 ]
 
 function compressTitle(title: string, company: string): { status: string; positive: boolean } {

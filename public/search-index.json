@@ -5653,6 +5653,23 @@
     "url": "/glossary/inverse-kinematics"
   },
   {
+    "slug": "iron",
+    "title": "Iron — Xpeng Robotics",
+    "excerpt": "Xpeng's Iron humanoid features 82 degrees of freedom (22 per hand), a biomimetic spine for natural bending, full-body soft skin with embedded touch sensors, and 720-degree Eagle-Ey…",
+    "category": "robot",
+    "date": "",
+    "tags": [
+      "prototype",
+      "Electric",
+      "China"
+    ],
+    "companies": [
+      "Xpeng Robotics"
+    ],
+    "type": "robot",
+    "url": "/robots/iron"
+  },
+  {
     "slug": "greenhouse-apptronik-5825123004",
     "title": "IT Support Specialist — Apptronik",
     "excerpt": "General · Austin, TX",
@@ -9033,6 +9050,22 @@
     ],
     "type": "company",
     "url": "/companies/xiaomi-robotics"
+  },
+  {
+    "slug": "xpeng-robotics",
+    "title": "Xpeng Robotics",
+    "excerpt": "Xpeng Robotics is the humanoid division of Chinese EV maker Xpeng Inc., leveraging the company's autonomous driving AI stack (VLA/VLT/VLM models), Turing AI chips (2,250 TOPS), and…",
+    "category": "company",
+    "date": "",
+    "tags": [
+      "Guangzhou, Guangdong, China",
+      "active"
+    ],
+    "companies": [
+      "Xpeng Robotics"
+    ],
+    "type": "company",
+    "url": "/companies/xpeng-robotics"
   },
   {
     "slug": "zero-shot-generalization",

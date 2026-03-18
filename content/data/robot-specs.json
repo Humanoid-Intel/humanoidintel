@@ -569,5 +569,26 @@
     "milestones": [
       { "date": "2026-03", "event": "In-person demos at GTC 2026; positive reception from robotics community" }
     ]
+  },
+  {
+    "slug": "iron",
+    "name": "Iron",
+    "manufacturer": "Xpeng Robotics",
+    "country": "China",
+    "status": "prototype",
+    "height": "1.73m",
+    "weight": "70kg",
+    "dof": 82,
+    "payload": "20kg",
+    "battery": "4 hrs",
+    "actuatorType": "Electric",
+    "description": "Xpeng's Iron humanoid features 82 degrees of freedom (22 per hand), a biomimetic spine for natural bending, full-body soft skin with embedded touch sensors, and 720-degree Eagle-Eye vision powered by three proprietary Turing AI chips delivering 2,250 TOPS. Runs Xpeng's VLT (Vision-Language-Task) brain architecture adapted from the company's autonomous driving stack. Uses industry-first solid-state batteries. Xpeng broke ground on a 110,000 sqm dedicated factory in Q1 2026 with mass production targeted for late 2026.",
+    "deploymentNotes": "Pre-production; factory under construction. Targeting service, hospitality, and security. CEO He Xiaopeng dismissed factory deployment after internal trials showed poor economics — hands wore out within a month.",
+    "fundingTotal": "Internal (Xpeng Inc.)",
+    "milestones": [
+      { "date": "2025-11", "event": "Next-gen Iron unveiled at Xpeng AI Day 2025 with 82 DOF and biomimetic spine" },
+      { "date": "2026-01", "event": "110,000 sqm humanoid factory groundbreaking in Guangzhou" },
+      { "date": "2026-03", "event": "VLA 2.0 and next-gen Iron with customizable physiques announced" }
+    ]
   }
 ]

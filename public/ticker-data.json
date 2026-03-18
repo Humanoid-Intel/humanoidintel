@@ -78,6 +78,12 @@
     "positive": true
   },
   {
+    "symbol": "XPENG.R",
+    "label": "Iron",
+    "status": "+News",
+    "positive": true
+  },
+  {
     "symbol": "FUND.YTD",
     "label": "2026",
     "status": "$5.9B.2026",

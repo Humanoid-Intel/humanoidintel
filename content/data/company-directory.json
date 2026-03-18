@@ -322,6 +322,20 @@
     "status": "active"
   },
   {
+    "slug": "xpeng-robotics",
+    "name": "Xpeng Robotics",
+    "founded": 2024,
+    "hq": "Guangzhou, Guangdong, China",
+    "ceo": "He Xiaopeng",
+    "headcount": "200-500",
+    "totalFunding": "Internal (Xpeng Inc. balance sheet)",
+    "latestValuation": "N/A (public subsidiary)",
+    "products": ["iron"],
+    "description": "Xpeng Robotics is the humanoid division of Chinese EV maker Xpeng Inc., leveraging the company's autonomous driving AI stack (VLA/VLT/VLM models), Turing AI chips (2,250 TOPS), and manufacturing infrastructure. The Iron humanoid features 82 degrees of freedom, a biomimetic spine, full-body soft skin with embedded touch sensors, 720-degree Eagle-Eye vision, and industry-first solid-state batteries. Xpeng broke ground on a 110,000 sqm dedicated humanoid factory in Q1 2026 with mass production targeted for late 2026. CEO He Xiaopeng has taken a contrarian stance against factory deployment after internal trials showed poor economics, instead targeting service, hospitality, and security applications.",
+    "website": "https://xpeng.com",
+    "status": "active"
+  },
+  {
     "slug": "foundation-robotics",
     "name": "Foundation Robotics",
     "founded": 2024,
