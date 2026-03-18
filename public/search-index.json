@@ -704,6 +704,23 @@
     "url": "/news/china-10-billion-yuan-humanoid-robot-investment"
   },
   {
+    "slug": "humanoid-robot-96-percent-tennis-accuracy-simulation",
+    "title": "Humanoid Robot Achieves 96% Tennis Shot Accuracy in Sim Tests",
+    "excerpt": "Research breakthrough shows humanoid achieving 96% tennis return accuracy in simulation, raising questions about sim-to-real transfer",
+    "category": "research",
+    "date": "2026-03-17T08:53:00.000Z",
+    "tags": [
+      "simulation",
+      "dexterous-manipulation",
+      "whole-body-control",
+      "tennis",
+      "accuracy"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/humanoid-robot-96-percent-tennis-accuracy-simulation"
+  },
+  {
     "slug": "china-humanoid-robots-beyond-spectacle-wider-applications",
     "title": "China's Humanoid Push Beyond Manufacturing Spectacle",
     "excerpt": "Chinese humanoid companies shift from demonstration robots to commercial deployment across multiple sectors",
