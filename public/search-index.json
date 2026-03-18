@@ -70,58 +70,6 @@
     "url": "/news/agibot-50-humanoids-live-performance-demo"
   },
   {
-    "slug": "agibot-humanoid-robot-live-show-demonstration",
-    "title": "Agibot Demos 60-Minute Robot-Only Live Show",
-    "excerpt": "Chinese humanoid company streams world's first robot-only live entertainment show to millions of viewers worldwide",
-    "category": "breaking",
-    "date": "2026-03-18T11:25:06.000Z",
-    "tags": [
-      "agibot",
-      "demonstration",
-      "embodied-intelligence",
-      "live-performance"
-    ],
-    "companies": [
-      "Agibot"
-    ],
-    "type": "news",
-    "url": "/news/agibot-humanoid-robot-live-show-demonstration"
-  },
-  {
-    "slug": "agibot-robot-led-live-show-humanoids-scale",
-    "title": "Agibot Debuts World's First Robot-Led Live Show",
-    "excerpt": "Chinese humanoid company streams 60-minute robot performance to millions, showcasing coordinated multi-robot operations",
-    "category": "breaking",
-    "date": "2026-03-18T11:25:06.000Z",
-    "tags": [
-      "agibot",
-      "live-demonstration",
-      "embodied-intelligence",
-      "performance"
-    ],
-    "companies": [
-      "Agibot"
-    ],
-    "type": "news",
-    "url": "/news/agibot-robot-led-live-show-humanoids-scale"
-  },
-  {
-    "slug": "ukraine-humanoid-robot-battlefield-deployment",
-    "title": "Ukraine Deploys First Combat Humanoid Robot",
-    "excerpt": "Ukrainian forces deploy first humanoid robot in active combat zone, marking watershed moment for military robotics",
-    "category": "breaking",
-    "date": "2026-03-18T10:48:52.000Z",
-    "tags": [
-      "defense",
-      "ukraine",
-      "military-robotics",
-      "battlefield"
-    ],
-    "companies": [],
-    "type": "news",
-    "url": "/news/ukraine-humanoid-robot-battlefield-deployment"
-  },
-  {
     "slug": "noble-machines-moby3-humanoid-robot-debut",
     "title": "Noble Machines Unveils Moby3 Humanoid Robot Platform",
     "excerpt": "Australian startup Noble Machines debuts Moby3 humanoid platform, marking latest entry in competitive bipedal market",
@@ -273,38 +221,6 @@
     "url": "/news/rl-compliance-bounds-humanoids-anisotropic-lipschitz"
   },
   {
-    "slug": "vla-models-velocity-feedforward-industrial-control",
-    "title": "VLA Models Get Velocity Feedforward for Industrial Control",
-    "excerpt": "New research addresses VLA deployment challenges on rigid industrial robots through velocity feedforward control methods.",
-    "category": "research",
-    "date": "2026-03-18T04:00:00.000Z",
-    "tags": [
-      "vla",
-      "behavior-cloning",
-      "industrial-robots",
-      "control-systems"
-    ],
-    "companies": [],
-    "type": "news",
-    "url": "/news/vla-models-velocity-feedforward-industrial-control"
-  },
-  {
-    "slug": "vla-models-velocity-feedforward-industrial-robots",
-    "title": "VLA Models Get Velocity Feedforward for Industrial Robots",
-    "excerpt": "New research addresses VLA model deployment on rigid industrial robots through velocity feedforward mechanisms",
-    "category": "research",
-    "date": "2026-03-18T04:00:00.000Z",
-    "tags": [
-      "vla-models",
-      "behavior-cloning",
-      "industrial-robotics",
-      "velocity-feedforward"
-    ],
-    "companies": [],
-    "type": "news",
-    "url": "/news/vla-models-velocity-feedforward-industrial-robots"
-  },
-  {
     "slug": "japan-government-humanoid-robot-policy-2026",
     "title": "Japan Calls for Government Action on Humanoid Robots",
     "excerpt": "Japan Times editorial argues governments must act now as humanoid robots transition from R&D to deployment",
@@ -319,38 +235,6 @@
     "companies": [],
     "type": "news",
     "url": "/news/japan-government-humanoid-robot-policy-2026"
-  },
-  {
-    "slug": "humanoid-robot-market-30-billion-2036-forecast 2",
-    "title": "Humanoid Robot Market to Hit $30B by 2036",
-    "excerpt": "New market analysis projects humanoid robotics to reach $29.8 billion by 2036, driven by automotive and logistics adoption",
-    "category": "market",
-    "date": "2026-03-17T20:01:21.190Z",
-    "tags": [
-      "market-forecast",
-      "automotive",
-      "logistics",
-      "deployment"
-    ],
-    "companies": [],
-    "type": "news",
-    "url": "/news/humanoid-robot-market-30-billion-2036-forecast 2"
-  },
-  {
-    "slug": "humanoid-robot-market-30-billion-2036-forecast",
-    "title": "Humanoid Robot Market to Hit $30B by 2036",
-    "excerpt": "New market analysis projects humanoid robotics to reach $29.8 billion by 2036, driven by automotive and logistics adoption",
-    "category": "market",
-    "date": "2026-03-17T20:01:21.190Z",
-    "tags": [
-      "market-forecast",
-      "automotive",
-      "logistics",
-      "deployment"
-    ],
-    "companies": [],
-    "type": "news",
-    "url": "/news/humanoid-robot-market-30-billion-2036-forecast"
   },
   {
     "slug": "infineon-nvidia-humanoid-motor-control-partnership",
@@ -448,46 +332,6 @@
     ],
     "type": "news",
     "url": "/news/atlas-evolution-research-robot-industrial-humanoid"
-  },
-  {
-    "slug": "infineon-nvidia-humanoid-digital-twins-collaboration",
-    "title": "Infineon-Nvidia Partnership Targets Humanoid Digital Twins",
-    "excerpt": "Infineon and Nvidia expand August 2025 partnership to integrate motor control with GR00T simulation platform for humanoid development",
-    "category": "breaking",
-    "date": "2026-03-17T15:01:11.244Z",
-    "tags": [
-      "infineon",
-      "nvidia",
-      "digital-twins",
-      "simulation",
-      "partnership"
-    ],
-    "companies": [
-      "Infineon Technologies",
-      "Nvidia"
-    ],
-    "type": "news",
-    "url": "/news/infineon-nvidia-humanoid-digital-twins-collaboration"
-  },
-  {
-    "slug": "infineon-nvidia-humanoid-robot-collaboration-2026",
-    "title": "Infineon-Nvidia Partnership Targets Humanoid Robot Control",
-    "excerpt": "Chip giants expand August 2025 partnership to combine power systems and AI platforms for humanoid applications",
-    "category": "breaking",
-    "date": "2026-03-17T14:35:48.000Z",
-    "tags": [
-      "infineon",
-      "nvidia",
-      "partnership",
-      "digital-twins",
-      "motor-control"
-    ],
-    "companies": [
-      "Infineon Technologies",
-      "Nvidia"
-    ],
-    "type": "news",
-    "url": "/news/infineon-nvidia-humanoid-robot-collaboration-2026"
   },
   {
     "slug": "nxp-nvidia-edge-platform-humanoid-robots",
@@ -766,22 +610,6 @@
     "url": "/news/tesla-digital-optimus-ai4-hardware-deployment"
   },
   {
-    "slug": "north-korea-humanoid-robots-development-report",
-    "title": "North Korea Develops Humanoid Robots: Report",
-    "excerpt": "North Korea reportedly developing humanoid robots, raising questions about military applications and technological capabilities",
-    "category": "breaking",
-    "date": "2026-03-17T10:04:40.470Z",
-    "tags": [
-      "north-korea",
-      "geopolitics",
-      "defense",
-      "humanoid-development"
-    ],
-    "companies": [],
-    "type": "news",
-    "url": "/news/north-korea-humanoid-robots-development-report"
-  },
-  {
     "slug": "nvidia-physical-ai-humanoid-robot-deployment-2026",
     "title": "NVIDIA Accelerates Physical AI for Humanoid Robot Deployment",
     "excerpt": "NVIDIA's Physical AI platform reaches production readiness as humanoid manufacturers prepare for commercial deployments",
@@ -899,22 +727,6 @@
     "url": "/news/st-leopard-imaging-multi-sensor-module-humanoid-vision"
   },
   {
-    "slug": "north-korea-humanoid-robot-voting-traditional-dress",
-    "title": "North Korea Shows Humanoid Robot in Traditional Dress",
-    "excerpt": "DPRK deploys humanoid robot wearing traditional Korean hanbok for symbolic voting demonstration",
-    "category": "breaking",
-    "date": "2026-03-17T09:01:48.546Z",
-    "tags": [
-      "north-korea",
-      "humanoid-robot",
-      "voting",
-      "geopolitics"
-    ],
-    "companies": [],
-    "type": "news",
-    "url": "/news/north-korea-humanoid-robot-voting-traditional-dress"
-  },
-  {
     "slug": "china-10-billion-yuan-humanoid-robot-investment",
     "title": "China Commits $1.4B to Humanoid Robot Development Push",
     "excerpt": "Chinese government and industry commit 10 billion yuan ($1.4B) to accelerate humanoid robot development and manufacturing",
@@ -948,25 +760,6 @@
     "url": "/news/humanoid-robot-96-percent-tennis-accuracy-simulation"
   },
   {
-    "slug": "china-humanoid-robots-beyond-spectacle-wider-applications",
-    "title": "China's Humanoid Push Beyond Manufacturing Spectacle",
-    "excerpt": "Chinese humanoid companies shift from demonstration robots to commercial deployment across multiple sectors",
-    "category": "market",
-    "date": "2026-03-17T08:03:46.718Z",
-    "tags": [
-      "china-market",
-      "applications",
-      "commercialization"
-    ],
-    "companies": [
-      "Unitree Robotics",
-      "UBTECH Robotics",
-      "Fourier Intelligence"
-    ],
-    "type": "news",
-    "url": "/news/china-humanoid-robots-beyond-spectacle-wider-applications"
-  },
-  {
     "slug": "apptronik-ipo-timeline-humanoid-startups-private",
     "title": "Apptronik IPO Timeline: Why Humanoid Startups Stay Private",
     "excerpt": "Apptronik and other humanoid robotics startups remain years away from IPO readiness despite growing investor interest",
@@ -988,23 +781,6 @@
     "url": "/news/apptronik-ipo-timeline-humanoid-startups-private"
   },
   {
-    "slug": "china-humanoid-tennis-robot-elon-musk-endorsement",
-    "title": "China's First Humanoid Tennis Robot Gets Musk Endorsement",
-    "excerpt": "Chinese humanoid tennis robot catches Elon Musk's attention on social media, highlighting advances in bipedal sports robotics",
-    "category": "breaking",
-    "date": "2026-03-17T08:01:51.632Z",
-    "tags": [
-      "china",
-      "tennis-robot",
-      "elon-musk",
-      "social-media",
-      "dexterous-manipulation"
-    ],
-    "companies": [],
-    "type": "news",
-    "url": "/news/china-humanoid-tennis-robot-elon-musk-endorsement"
-  },
-  {
     "slug": "nvidia-physical-ai-strategy-humanoid-robotics",
     "title": "Nvidia's Physical AI Push Targets Humanoid Market",
     "excerpt": "Nvidia outlines comprehensive Physical AI strategy spanning robotics simulation, foundation models, and space applications",
@@ -1021,24 +797,6 @@
     ],
     "type": "news",
     "url": "/news/nvidia-physical-ai-strategy-humanoid-robotics"
-  },
-  {
-    "slug": "humanoid-military-robots-ukraine-combat-testing",
-    "title": "Humanoid Military Robots Tested in Ukraine Combat Zones",
-    "excerpt": "First confirmed battlefield testing of humanoid robots marks major shift in military AI deployment strategies.",
-    "category": "breaking",
-    "date": "2026-03-17T07:24:51.763Z",
-    "tags": [
-      "military-robotics",
-      "ukraine",
-      "combat-testing",
-      "defense"
-    ],
-    "companies": [
-      "Unknown Defense Contractor"
-    ],
-    "type": "news",
-    "url": "/news/humanoid-military-robots-ukraine-combat-testing"
   },
   {
     "slug": "north-korea-humanoid-robot-russian-embassy-photo",
@@ -1176,23 +934,6 @@
     ],
     "type": "news",
     "url": "/news/samsung-tesollo-humanoid-robotics-development-2026"
-  },
-  {
-    "slug": "china-robot-training-schools-humanoids-factory-logistics",
-    "title": "China Opens Robot Training Schools for Humanoids",
-    "excerpt": "China launches specialized training facilities to prepare humanoid robots for industrial deployment",
-    "category": "market",
-    "date": "2026-03-17T05:01:24.464Z",
-    "tags": [
-      "china",
-      "training",
-      "manufacturing",
-      "logistics",
-      "workforce"
-    ],
-    "companies": [],
-    "type": "news",
-    "url": "/news/china-robot-training-schools-humanoids-factory-logistics"
   },
   {
     "slug": "halo-framework-heavy-payload-humanoid-sim-to-real",
@@ -1762,22 +1503,6 @@
     "url": "/news/hyundai-30000-humanoid-robots-2030-deployment"
   },
   {
-    "slug": "ukraine-humanoid-robots-battlefield-test-2026",
-    "title": "Ukraine Tests Combat Humanoid Robots in Active Battlefield",
-    "excerpt": "First confirmed deployment of humanoid soldiers in active combat zone marks pivotal moment for military robotics",
-    "category": "breaking",
-    "date": "2026-03-17T00:04:13.100Z",
-    "tags": [
-      "military",
-      "ukraine",
-      "battlefield-testing",
-      "combat-robots"
-    ],
-    "companies": [],
-    "type": "news",
-    "url": "/news/ukraine-humanoid-robots-battlefield-test-2026"
-  },
-  {
     "slug": "nvidia-physical-ai-humanoid-robotics-training",
     "title": "Nvidia's Physical AI Push Targets Humanoid Training",
     "excerpt": "Nvidia advances Physical AI platform for humanoid robot training with enhanced simulation and real-world transfer capabilities",
@@ -1814,22 +1539,6 @@
     ],
     "type": "news",
     "url": "/news/daifuku-humanoid-robots-logistics-2029"
-  },
-  {
-    "slug": "china-humanoid-robot-arrested-elderly-woman-incident",
-    "title": "Chinese Humanoid Robot 'Arrested' After Scaring Elderly Woman",
-    "excerpt": "First reported 'arrest' of humanoid robot highlights deployment challenges in public spaces",
-    "category": "breaking",
-    "date": "2026-03-16T23:08:42.396Z",
-    "tags": [
-      "china",
-      "public-safety",
-      "humanoid-deployment",
-      "social-acceptance"
-    ],
-    "companies": [],
-    "type": "news",
-    "url": "/news/china-humanoid-robot-arrested-elderly-woman-incident"
   },
   {
     "slug": "physical-intelligence-market-growth-2035",
@@ -1886,24 +1595,6 @@
     ],
     "type": "news",
     "url": "/news/pc-partner-nvidia-gtc-2026-physical-ai"
-  },
-  {
-    "slug": "phantom-mk1-ukraine-battlefield-testing",
-    "title": "Phantom MK-1 Humanoids Enter Ukraine Combat Tests",
-    "excerpt": "First humanoid robots deployed for active battlefield evaluation in Ukraine conflict zone",
-    "category": "breaking",
-    "date": "2026-03-16T22:03:46.346Z",
-    "tags": [
-      "phantom-mk1",
-      "battlefield-testing",
-      "ukraine",
-      "military-robotics"
-    ],
-    "companies": [
-      "Great Robotics"
-    ],
-    "type": "news",
-    "url": "/news/phantom-mk1-ukraine-battlefield-testing"
   },
   {
     "slug": "nxp-nvidia-humanoid-robotics-partnership-edge-computing",
@@ -2291,21 +1982,6 @@
     "url": "/news/neuralink-noland-arbaugh-keynote-robotics-summit-2026"
   },
   {
-    "slug": "macau-robot-incident-highlights-public-safety-concerns",
-    "title": "Macau Robot Incident Highlights Public Safety Concerns",
-    "excerpt": "Woman hospitalized after humanoid robot encounter in Macau sparks debate over deployment protocols and public interaction safety.",
-    "category": "market",
-    "date": "2026-03-16T17:39:23.000Z",
-    "tags": [
-      "public-safety",
-      "deployment",
-      "regulation"
-    ],
-    "companies": [],
-    "type": "news",
-    "url": "/news/macau-robot-incident-highlights-public-safety-concerns"
-  },
-  {
     "slug": "interpretable-responsibility-sharing-tamp-framework",
     "title": "New TAMP Framework Tackles Human-Robot Collaboration",
     "excerpt": "Turkish researchers develop interpretable framework for dividing tasks between humans and robots in collaborative environments.",
@@ -2336,21 +2012,6 @@
     "companies": [],
     "type": "news",
     "url": "/news/time-delay-estimation-variable-admittance-control-robot-needle-punching"
-  },
-  {
-    "slug": "humanoid-robot-arrested-elderly-woman-hospitalized",
-    "title": "Humanoid Robot 'Arrested' After Elderly Woman Hospitalized",
-    "excerpt": "Police detained humanoid robot after encounter sent elderly woman to hospital, highlighting deployment safety concerns",
-    "category": "breaking",
-    "date": "2026-03-16T17:00:00.000Z",
-    "tags": [
-      "public-safety",
-      "human-robot-interaction",
-      "deployment-risks"
-    ],
-    "companies": [],
-    "type": "news",
-    "url": "/news/humanoid-robot-arrested-elderly-woman-hospitalized"
   },
   {
     "slug": "tennis-playing-humanoid-robot-video-industry-analysis",
@@ -2414,22 +2075,6 @@
     "url": "/news/anybotics-explosion-proof-inspection-robot-anymal-x"
   },
   {
-    "slug": "china-robot-arrest-public-safety-concerns",
-    "title": "China Robot 'Arrest' Highlights Public Safety Concerns",
-    "excerpt": "Chinese authorities detained a service robot after it allegedly frightened a woman, marking first known robot 'arrest'",
-    "category": "breaking",
-    "date": "2026-03-16T15:30:00Z",
-    "tags": [
-      "china",
-      "public-safety",
-      "robot-incidents",
-      "social-robotics"
-    ],
-    "companies": [],
-    "type": "news",
-    "url": "/news/china-robot-arrest-public-safety-concerns"
-  },
-  {
     "slug": "docomo-5g-robot-teleoperation-breakthrough",
     "title": "DoCoMo Achieves 5G Robot Teleoperation Breakthrough",
     "excerpt": "NTT DoCoMo and Keio University achieve world's first stable haptic robot teleoperation over commercial 5G networks",
@@ -2468,22 +2113,6 @@
     ],
     "type": "news",
     "url": "/news/kistler-ats-medical-device-assembly-symphoni"
-  },
-  {
-    "slug": "macau-police-detain-humanoid-robot-elderly-incident",
-    "title": "Macau Police Detain Robot After Elderly Incident",
-    "excerpt": "First police detention of humanoid robot highlights deployment safety concerns in public spaces",
-    "category": "breaking",
-    "date": "2026-03-16T15:30:00Z",
-    "tags": [
-      "public-safety",
-      "deployment",
-      "regulation",
-      "macau"
-    ],
-    "companies": [],
-    "type": "news",
-    "url": "/news/macau-police-detain-humanoid-robot-elderly-incident"
   },
   {
     "slug": "robot-arrest-first-humanoid-police-detention-legal-implications",
@@ -2559,74 +2188,6 @@
     ],
     "type": "news",
     "url": "/news/qualcomm-neura-robotics-standardization-partnership"
-  },
-  {
-    "slug": "china-wheeled-humanoid-robot-lunar-base",
-    "title": "China's Wheeled Humanoid Robot for Lunar Base Construction",
-    "excerpt": "China reveals wheeled humanoid designed for lunar base assembly, marking major shift in space robotics strategy",
-    "category": "breaking",
-    "date": "2026-03-16T14:30:00Z",
-    "tags": [
-      "china",
-      "lunar-robotics",
-      "space-construction",
-      "cnsa"
-    ],
-    "companies": [
-      "China National Space Administration"
-    ],
-    "type": "news",
-    "url": "/news/china-wheeled-humanoid-robot-lunar-base"
-  },
-  {
-    "slug": "macau-police-detain-humanoid-robot-harassment-incident",
-    "title": "Police Detain Robot After Elderly Woman Hospitalized",
-    "excerpt": "First reported case of police detaining a humanoid robot after street encounter sends 70-year-old woman to hospital",
-    "category": "breaking",
-    "date": "2026-03-16T14:30:00Z",
-    "tags": [
-      "public-safety",
-      "humanoid-robots",
-      "regulation",
-      "incident"
-    ],
-    "companies": [],
-    "type": "news",
-    "url": "/news/macau-police-detain-humanoid-robot-harassment-incident"
-  },
-  {
-    "slug": "ukraine-military-humanoid-robots-deployment-2026",
-    "title": "Ukraine Deploys First Military Humanoid Robots",
-    "excerpt": "Ukraine becomes first nation to deploy humanoid robots in active combat, marking historic shift in military robotics",
-    "category": "breaking",
-    "date": "2026-03-16T14:30:00Z",
-    "tags": [
-      "military-robotics",
-      "ukraine",
-      "combat-robots",
-      "humanoid-military"
-    ],
-    "companies": [],
-    "type": "news",
-    "url": "/news/ukraine-military-humanoid-robots-deployment-2026"
-  },
-  {
-    "slug": "ukraine-phantom-mk1-humanoid-robots-battlefield-trial",
-    "title": "Ukraine Deploys Phantom MK-1 Combat Humanoids in First Battlefield Trial",
-    "excerpt": "Ukraine begins first combat deployment of humanoid robots with Phantom MK-1 units entering active battlefield operations",
-    "category": "breaking",
-    "date": "2026-03-16T14:30:00Z",
-    "tags": [
-      "phantom-mk1",
-      "ukraine",
-      "military-robotics",
-      "battlefield-deployment"
-    ],
-    "companies": [
-      "Phantom Robotics"
-    ],
-    "type": "news",
-    "url": "/news/ukraine-phantom-mk1-humanoid-robots-battlefield-trial"
   },
   {
     "slug": "stmicro-humanoid-robots-european-fabs-deployment",
@@ -2721,28 +2282,6 @@
     ],
     "type": "news",
     "url": "/news/quantum-threats-humanoid-robot-security-accelerate"
-  },
-  {
-    "slug": "china-robot-schools-humanoid-training-centers",
-    "title": "China Opens Robot Training Centers for Humanoid Workforce",
-    "excerpt": "China launches specialized training facilities to prepare humanoid robots for industrial deployment across factories and warehouses.",
-    "category": "breaking",
-    "date": "2026-03-16T10:44:00.000Z",
-    "tags": [
-      "china",
-      "training",
-      "manufacturing",
-      "logistics",
-      "workforce"
-    ],
-    "companies": [
-      "UBTECH Robotics",
-      "Fourier Intelligence",
-      "UBR",
-      "Agility Robotics"
-    ],
-    "type": "news",
-    "url": "/news/china-robot-schools-humanoid-training-centers"
   },
   {
     "slug": "sparse-world-models-robotic-planning-drift-reduction",
@@ -3293,26 +2832,6 @@
     "url": "/news/chinese-automakers-humanoid-robots-smart-car-tech"
   },
   {
-    "slug": "figure-ai-demo-musk-autonomy-debate",
-    "title": "Figure AI Demo Sparks Musk Autonomy Debate",
-    "excerpt": "Figure AI's latest humanoid demo draws skepticism from Elon Musk over true autonomous capabilities",
-    "category": "breaking",
-    "date": "2026-03-09T16:33:44.000Z",
-    "tags": [
-      "figure-ai",
-      "autonomy",
-      "elon-musk",
-      "nvidia"
-    ],
-    "companies": [
-      "Figure AI",
-      "Nvidia",
-      "Tesla"
-    ],
-    "type": "news",
-    "url": "/news/figure-ai-demo-musk-autonomy-debate"
-  },
-  {
     "slug": "qualcomm-iq10-neura-robotics-partnership-humanoid-processors",
     "title": "Qualcomm IQ10 Powers Neura Robotics' Next-Gen Humanoids",
     "excerpt": "Qualcomm's IQ10 chip will power Neura Robotics' next humanoid platform, marking chipmaker's serious robotics push",
@@ -3422,46 +2941,6 @@
     ],
     "type": "news",
     "url": "/news/agibot-full-humanoid-portfolio-mwc-2026"
-  },
-  {
-    "slug": "agibot-humanoid-robot-portfolio-mwc-2026",
-    "title": "AGIBOT Debuts Full Humanoid Portfolio at MWC 2026",
-    "excerpt": "Chinese robotics firm AGIBOT unveils complete humanoid robot lineup at Mobile World Congress 2026",
-    "category": "breaking",
-    "date": "2026-03-03T21:15:00Z",
-    "tags": [
-      "agibot",
-      "mwc",
-      "humanoid-robots",
-      "trade-show"
-    ],
-    "companies": [
-      "AGIBOT"
-    ],
-    "type": "news",
-    "url": "/news/agibot-humanoid-robot-portfolio-mwc-2026"
-  },
-  {
-    "slug": "china-robot-market-dominance-analysis-2026",
-    "title": "China's Robot Surge: 50% Global Market Share by Numbers",
-    "excerpt": "China now controls 50% of global robot production, driven by manufacturing automation and $2.8B humanoid investments",
-    "category": "deep-dive",
-    "date": "2026-03-03T15:30:00Z",
-    "tags": [
-      "china-robotics",
-      "market-analysis",
-      "manufacturing",
-      "humanoids"
-    ],
-    "companies": [
-      "UBtech Robotics",
-      "Fourier Intelligence",
-      "CloudMinds",
-      "UBTECH",
-      "Ex-Robots"
-    ],
-    "type": "news",
-    "url": "/news/china-robot-market-dominance-analysis-2026"
   },
   {
     "slug": "honor-mwc-2026-humanoid-robot-consumer-announcement",
@@ -3808,22 +3287,6 @@
     "url": "/news/robot-human-collaboration-2026-manufacturing-trends"
   },
   {
-    "slug": "china-police-arrest-humanoid-robot-public-incident",
-    "title": "China Police 'Arrest' Humanoid Robot After Public Incident",
-    "excerpt": "Chinese authorities detain humanoid robot following public disturbance incident highlighting deployment challenges",
-    "category": "breaking",
-    "date": "2024-12-28T10:30:00Z",
-    "tags": [
-      "china",
-      "public-safety",
-      "humanoid-deployment",
-      "regulation"
-    ],
-    "companies": [],
-    "type": "news",
-    "url": "/news/china-police-arrest-humanoid-robot-public-incident"
-  },
-  {
     "slug": "nvidia-ceo-tesla-robotics-multitrillion-opportunity",
     "title": "Nvidia CEO: Tesla Robotics Worth Trillions, Not Just Cars",
     "excerpt": "Jensen Huang sees Tesla's humanoid robotics unit as a multitrillion-dollar opportunity beyond autonomous vehicles",
@@ -3940,24 +3403,6 @@
     "url": "/news/china-lunar-construction-robot-space-humanoids"
   },
   {
-    "slug": "humanoid-robot-arrested-china-public-safety-incident",
-    "title": "Humanoid Robot 'Arrested' in China Public Safety Incident",
-    "excerpt": "First documented case of humanoid robot 'arrest' highlights public safety challenges as robots enter everyday spaces",
-    "category": "breaking",
-    "date": "2024-12-19T15:30:00Z",
-    "tags": [
-      "china",
-      "public-safety",
-      "humanoid-robots",
-      "regulation"
-    ],
-    "companies": [
-      "Unknown Chinese manufacturer"
-    ],
-    "type": "news",
-    "url": "/news/humanoid-robot-arrested-china-public-safety-incident"
-  },
-  {
     "slug": "humanoid-robot-arrested-macau-incident",
     "title": "Humanoid Robot 'Arrested' After Startling Woman in Macau",
     "excerpt": "Police detained humanoid robot in Macau after incident with elderly woman highlights deployment challenges",
@@ -4012,22 +3457,6 @@
     "url": "/news/rivian-mind-robotics-pivots-humanoids-custom-factory-robots"
   },
   {
-    "slug": "robot-arrest-macau-elderly-woman-public-safety",
-    "title": "Robot 'Arrest' in Macau Highlights Public Safety Gap",
-    "excerpt": "Macau incident exposes critical gaps in humanoid robot public deployment protocols and elderly user acceptance",
-    "category": "market",
-    "date": "2024-12-19T15:30:00Z",
-    "tags": [
-      "public-safety",
-      "humanoid-robots",
-      "deployment",
-      "elderly-interaction"
-    ],
-    "companies": [],
-    "type": "news",
-    "url": "/news/robot-arrest-macau-elderly-woman-public-safety"
-  },
-  {
     "slug": "sunday-robotics-165m-series-b-humanoid-funding",
     "title": "Sunday Robotics Raises $165M Series B for Humanoid Push",
     "excerpt": "Sunday Robotics secures $165M Series B to accelerate humanoid development and manufacturing scale",
@@ -4044,24 +3473,6 @@
     ],
     "type": "news",
     "url": "/news/sunday-robotics-165m-series-b-humanoid-funding"
-  },
-  {
-    "slug": "ukraine-phantom-mk1-humanoid-combat-robot-deployment",
-    "title": "Ukraine Deploys Phantom MK-1 Combat Robot: Military Humanoids",
-    "excerpt": "Ukraine reportedly deploys US-made Phantom MK-1 humanoid robots in combat operations, marking potential watershed moment",
-    "category": "breaking",
-    "date": "2024-12-19T15:30:00Z",
-    "tags": [
-      "phantom-mk1",
-      "military-robotics",
-      "ukraine",
-      "combat-applications"
-    ],
-    "companies": [
-      "Phantom Robotics"
-    ],
-    "type": "news",
-    "url": "/news/ukraine-phantom-mk1-humanoid-combat-robot-deployment"
   },
   {
     "slug": "samsung-hand-lab-humanoid-robot-dexterity",
@@ -4301,26 +3712,6 @@
     ],
     "type": "news",
     "url": "/news/musk-questions-figure-robot-autonomy-demo"
-  },
-  {
-    "slug": "china-humanoid-robot-market-160-companies-mass-production",
-    "title": "China Humanoid Robot Market Reaches 160 Companies",
-    "excerpt": "China's humanoid robotics ecosystem expands to 160 companies as industry pivots toward commercial viability and mass market deployment.",
-    "category": "market",
-    "date": "2024-03-04T15:30:00Z",
-    "tags": [
-      "china",
-      "market-analysis",
-      "mass-production",
-      "manufacturing"
-    ],
-    "companies": [
-      "Ubtech Robotics",
-      "Fourier Intelligence",
-      "WAIC"
-    ],
-    "type": "news",
-    "url": "/news/china-humanoid-robot-market-160-companies-mass-production"
   },
   {
     "slug": "1x-technologies",

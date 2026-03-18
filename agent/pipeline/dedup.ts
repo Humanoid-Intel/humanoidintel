@@ -63,34 +63,95 @@ function titleSimilarity(a: string, b: string): number {
 }
 
 // Extract significant named entities (capitalized words / known company names)
-const KNOWN_ENTITIES = /nvidia|skild|figure|tesla|boston dynamics|agility|apptronik|unitree|sanctuary|1x|neura|fourier|agibot|galbot|astribot|microsoft|google|amazon|apple|meta|openai|anthropic|softbank|foxconn|abb|universal robots|kawasaki|honda|hyundai|samsung|lg|baidu|bytedance|huawei|xiaomi|uber|alphabet/gi
+// NOTE: Do NOT use `g` flag here — .test() with `g` flag has stateful lastIndex bugs
+const KNOWN_ENTITIES = /nvidia|skild|figure|tesla|boston dynamics|agility|apptronik|unitree|sanctuary|1x|neura|fourier|agibot|galbot|astribot|microsoft|google|amazon|apple|meta|openai|anthropic|softbank|foxconn|abb|universal robots|kawasaki|honda|hyundai|samsung|lg|baidu|bytedance|huawei|xiaomi|uber|alphabet|xpeng|ubtech|kepler|sunday|clone robotics|foundation robotics|mind robotics/i
+// Separate regex with `g` flag ONLY for matchAll (which handles `g` correctly)
+const KNOWN_ENTITIES_G = new RegExp(KNOWN_ENTITIES.source, 'gi')
 
 function extractEntityPair(title: string): string {
-  const entities = [...title.matchAll(KNOWN_ENTITIES)].map(m => m[0].toLowerCase())
+  const entities = [...title.matchAll(KNOWN_ENTITIES_G)].map(m => m[0].toLowerCase())
   const unique = [...new Set(entities)].sort()
   return unique.slice(0, 3).join('+') // top 3 entities as fingerprint
 }
 
 /**
+ * Extract topic keywords — the "what happened" regardless of how it's worded.
+ * Returns 2-3 key topic words (verbs/nouns minus company names).
+ */
+const TOPIC_WORDS = /deploy|demo|debut|launch|partner|fund|rais|hire|acquir|unveil|reveal|show|perform|produc|manufactur|ship|deliver|announc|expand|open|build|test|pilot|trial|patent|licens|invest|valuat|ipo|merge|certif|collabor|secur|land|sign|award|present|exhibit|display|showcase/gi
+
+function extractTopicFingerprint(title: string): string {
+  const topics = [...title.matchAll(TOPIC_WORDS)].map(m => m[0].toLowerCase().slice(0, 5))
+  return [...new Set(topics)].sort().join('+')
+}
+
+/**
+ * Categorize a title into a broad event type so we can distinguish
+ * genuinely different stories about the same company on the same day.
+ * e.g. "Agibot raises $100M" (funding) vs "Agibot deploys at BMW" (deployment) = different
+ *      "Agibot demos live show" vs "Agibot debuts robot performance" = SAME
+ */
+function broadEventType(title: string): string {
+  const t = title.toLowerCase()
+  if (/fund|rais|series [a-e]|invest|valuat|\$\d|million|billion|ipo|spac/.test(t)) return 'funding'
+  if (/hire|appoint|ceo|cto|resign|step.*down|join.*as/.test(t)) return 'people'
+  if (/polic|regulat|ban|law|osha|compliance|govern/.test(t)) return 'policy'
+  if (/patent|licens/.test(t)) return 'ip'
+  return 'general' // demos, launches, partnerships, deployments all collapse to "general"
+}
+
+/**
  * Check if a story title is a near-duplicate of any existing title.
- * Uses Jaccard similarity (threshold 0.4) OR shared entity-pair fingerprint.
+ * Four-layer detection:
+ *   1. Jaccard word similarity > 0.28
+ *   2. Same entity pair (2+ shared companies/entities)
+ *   3. Same company + same topic verb (e.g. "Agibot" + "demo/show/perform")
+ *   4. Same company + same broad event type = likely same story (nuclear dedup)
  */
 export function isTitleDuplicate(
   story: { title: string },
   existingTitles: string[],
-  threshold = 0.40,  // lowered from 0.55 — catches "same story, different headline"
+  threshold = 0.28,
 ): boolean {
   const storyEntityPair = extractEntityPair(story.title)
+  const storyTopicFp = extractTopicFingerprint(story.title)
+  const storyWords = normalizeTitle(story.title)
+  const storyEventType = broadEventType(story.title)
 
   return existingTitles.some((existing) => {
-    // Jaccard similarity check
+    // Layer 1: Jaccard word similarity (lowered from 0.35 to 0.28)
     if (titleSimilarity(existing, story.title) > threshold) return true
 
-    // Entity-pair check: same 2+ key entities = same story
-    if (storyEntityPair.length > 0) {
+    // Layer 2: Same 2+ entity pair = same story
+    if (storyEntityPair.length > 0 && storyEntityPair.includes('+')) {
       const existingEntityPair = extractEntityPair(existing)
-      if (existingEntityPair === storyEntityPair && storyEntityPair.includes('+')) {
-        return true
+      if (existingEntityPair === storyEntityPair) return true
+    }
+
+    // Layer 3: Same single company + overlapping topic verb = same story
+    if (storyEntityPair.length > 0 && !storyEntityPair.includes('+')) {
+      const existingEntityPair = extractEntityPair(existing)
+      if (existingEntityPair === storyEntityPair) {
+        const existingTopicFp = extractTopicFingerprint(existing)
+        // Same company + any shared topic verb = duplicate
+        if (storyTopicFp && existingTopicFp) {
+          const storyTopics = new Set(storyTopicFp.split('+'))
+          const existingTopics = new Set(existingTopicFp.split('+'))
+          const overlap = [...storyTopics].some(t => existingTopics.has(t))
+          if (overlap) return true
+        }
+        // Same company + 2+ shared content words (beyond company name) = duplicate
+        const existingWords = normalizeTitle(existing)
+        const shared = storyWords.filter(w => existingWords.includes(w) && !KNOWN_ENTITIES.test(w))
+        if (shared.length >= 2) return true
+
+        // Layer 4: Same company + same broad event type = very likely duplicate
+        // Only genuinely different event types (funding vs deployment vs people) survive
+        const existingEventType = broadEventType(existing)
+        if (storyEventType === existingEventType) {
+          console.log(`[Dedup] Layer 4 catch: same company "${storyEntityPair}" + same event type "${storyEventType}" → "${story.title.slice(0, 60)}" ≈ "${existing.slice(0, 60)}"`)
+          return true
+        }
       }
     }
 
