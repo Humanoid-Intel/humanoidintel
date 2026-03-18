@@ -1,5 +1,22 @@
 [
   {
+    "slug": "unitree-humanoid-robots-sprint-records-prediction",
+    "title": "Unitree Claims Humanoids Will Beat Human Sprint Records",
+    "excerpt": "Chinese robotics company predicts humanoid robots will outrun humans in sprinting within the next decade",
+    "category": "breaking",
+    "date": "2026-03-18T07:34:36.000Z",
+    "tags": [
+      "unitree",
+      "bipedal-locomotion",
+      "performance-claims"
+    ],
+    "companies": [
+      "Unitree Robotics"
+    ],
+    "type": "news",
+    "url": "/news/unitree-humanoid-robots-sprint-records-prediction"
+  },
+  {
     "slug": "adapt-dual-map-architecture-humanoid-navigation",
     "title": "ADAPT: New Dual-Map Architecture for Humanoid Navigation",
     "excerpt": "Researchers introduce adaptive dual-projection system combining elevation maps with vertical distance constraints",
@@ -64,6 +81,22 @@
     "url": "/news/vla-models-velocity-feedforward-industrial-robots"
   },
   {
+    "slug": "humanoid-robot-market-30-billion-2036-forecast 2",
+    "title": "Humanoid Robot Market to Hit $30B by 2036",
+    "excerpt": "New market analysis projects humanoid robotics to reach $29.8 billion by 2036, driven by automotive and logistics adoption",
+    "category": "market",
+    "date": "2026-03-17T20:01:21.190Z",
+    "tags": [
+      "market-forecast",
+      "automotive",
+      "logistics",
+      "deployment"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/humanoid-robot-market-30-billion-2036-forecast 2"
+  },
+  {
     "slug": "humanoid-robot-market-30-billion-2036-forecast",
     "title": "Humanoid Robot Market to Hit $30B by 2036",
     "excerpt": "New market analysis projects humanoid robotics to reach $29.8 billion by 2036, driven by automotive and logistics adoption",
@@ -119,6 +152,25 @@
     ],
     "type": "news",
     "url": "/news/skild-ai-nvidia-foxconn-blackwell-partnership"
+  },
+  {
+    "slug": "skild-ai-nvidia-gpu-production-partnership",
+    "title": "Skild AI Lands Nvidia GPU Production Partnership",
+    "excerpt": "Foundation model startup secures major deployment deal with chip giant for automated manufacturing applications",
+    "category": "breaking",
+    "date": "2026-03-17T18:02:32.292Z",
+    "tags": [
+      "skild-ai",
+      "nvidia",
+      "partnership",
+      "gpu-manufacturing"
+    ],
+    "companies": [
+      "Skild AI",
+      "Nvidia"
+    ],
+    "type": "news",
+    "url": "/news/skild-ai-nvidia-gpu-production-partnership"
   },
   {
     "slug": "atlas-evolution-research-robot-industrial-humanoid",
