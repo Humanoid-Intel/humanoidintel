@@ -17,6 +17,7 @@ const primaryLinks = [
 ]
 
 const moreLinks = [
+  { label: 'Brain DB', href: '/brains' },
   { label: 'Events', href: '/events' },
   { label: 'Compare', href: '/compare' },
   { label: 'Glossary', href: '/glossary' },

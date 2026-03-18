@@ -10,7 +10,7 @@ import matter from 'gray-matter'
 const root = path.join(__dirname, '..')
 const outputPath = path.join(root, 'public/search-index.json')
 
-type ContentType = 'news' | 'company' | 'robot' | 'funding' | 'glossary' | 'job'
+type ContentType = 'news' | 'company' | 'robot' | 'brain' | 'funding' | 'glossary' | 'job'
 
 interface SearchEntry {
   slug: string
@@ -83,7 +83,25 @@ function indexRobots(): SearchEntry[] {
   }))
 }
 
-// ── 4. Funding rounds ─────────────────────────────────────────────────────────
+// ── 4. Brains ────────────────────────────────────────────────────────────────
+function indexBrains(): SearchEntry[] {
+  const file = path.join(root, 'content/data/brain-specs.json')
+  if (!fs.existsSync(file)) return []
+  const brains: any[] = JSON.parse(fs.readFileSync(file, 'utf-8'))
+  return brains.map((b) => ({
+    slug: b.slug,
+    title: `${b.name} — ${b.developer}`,
+    excerpt: b.description ? b.description.slice(0, 180) + '...' : '',
+    category: 'brain',
+    date: '',
+    tags: [b.architecture, b.status, b.openSource ? 'open-source' : 'proprietary'].filter(Boolean),
+    companies: [b.developer],
+    type: 'brain' as ContentType,
+    url: `/brains/${b.slug}`,
+  }))
+}
+
+// ── 5. Funding rounds ─────────────────────────────────────────────────────────
 function indexFunding(): SearchEntry[] {
   const file = path.join(root, 'content/data/funding-rounds.json')
   if (!fs.existsSync(file)) return []
@@ -150,6 +168,7 @@ const index: SearchEntry[] = [
   ...indexNews(),
   ...indexCompanies(),
   ...indexRobots(),
+  ...indexBrains(),
   ...indexFunding(),
   ...indexGlossary(),
   ...indexJobs(),
@@ -173,8 +192,9 @@ const counts = {
   news: index.filter((e) => e.type === 'news').length,
   companies: index.filter((e) => e.type === 'company').length,
   robots: index.filter((e) => e.type === 'robot').length,
+  brains: index.filter((e) => e.type === 'brain').length,
   funding: index.filter((e) => e.type === 'funding').length,
   glossary: index.filter((e) => e.type === 'glossary').length,
   jobs: index.filter((e) => e.type === 'job').length,
 }
-console.log(`[search-index] ${index.length} entries → news:${counts.news} companies:${counts.companies} robots:${counts.robots} funding:${counts.funding} glossary:${counts.glossary} jobs:${counts.jobs}`)
+console.log(`[search-index] ${index.length} entries → news:${counts.news} companies:${counts.companies} robots:${counts.robots} brains:${counts.brains} funding:${counts.funding} glossary:${counts.glossary} jobs:${counts.jobs}`)

@@ -8,6 +8,7 @@ const siteLinks = [
   { label: 'Companies', href: '/companies' },
   { label: 'Funding', href: '/funding' },
   { label: 'Jobs', href: '/jobs' },
+  { label: 'Brain DB', href: '/brains' },
   { label: 'Supply Chain', href: '/supply-chain' },
   { label: 'Map', href: '/map' },
   { label: 'Events', href: '/events' },

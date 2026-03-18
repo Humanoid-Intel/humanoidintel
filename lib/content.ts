@@ -6,6 +6,7 @@ import remarkHtml from 'remark-html'
 import type {
   Article,
   Robot,
+  Brain,
   Company,
   FundingRound,
   GlossaryTerm,
@@ -228,6 +229,26 @@ export function getRobots(): Robot[] {
 export function getRobot(slug: string): Robot | null {
   const robots = getRobots()
   return robots.find((r) => r.slug === slug) ?? null
+}
+
+// ---------------------------------------------------------------------------
+// Brains
+// ---------------------------------------------------------------------------
+
+export function getBrains(): Brain[] {
+  const filePath = path.join(contentRoot, 'data', 'brain-specs.json')
+  if (!fs.existsSync(filePath)) return []
+  try {
+    const raw = fs.readFileSync(filePath, 'utf-8')
+    return JSON.parse(raw) as Brain[]
+  } catch {
+    return []
+  }
+}
+
+export function getBrain(slug: string): Brain | null {
+  const brains = getBrains()
+  return brains.find((b) => b.slug === slug) ?? null
 }
 
 // ---------------------------------------------------------------------------

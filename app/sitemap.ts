@@ -33,6 +33,16 @@ async function getCompanySlugs(): Promise<string[]> {
   }
 }
 
+async function getBrainSlugs(): Promise<string[]> {
+  try {
+    const { getBrains } = await import('@/lib/content')
+    const brains = await getBrains()
+    return brains.map((b) => b.slug)
+  } catch {
+    return []
+  }
+}
+
 async function getGlossarySlugs(): Promise<string[]> {
   try {
     const { getGlossaryTerms } = await import('@/lib/content')
@@ -47,11 +57,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://humanoidintel.ai'
   const now = new Date()
 
-  const [articleSlugs, robotSlugs, companySlugs, glossarySlugs] = await Promise.all([
+  const [articleSlugs, robotSlugs, companySlugs, glossarySlugs, brainSlugs] = await Promise.all([
     getArticleSlugs(),
     getRobotSlugs(),
     getCompanySlugs(),
     getGlossarySlugs(),
+    getBrainSlugs(),
   ])
 
   // Jobs (list page only — individual jobs don't have dedicated pages)
@@ -61,6 +72,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: baseUrl, lastModified: now, changeFrequency: 'hourly', priority: 1.0 },
     { url: `${baseUrl}/news`, lastModified: now, changeFrequency: 'hourly', priority: 0.9 },
     { url: `${baseUrl}/robots`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
+    { url: `${baseUrl}/brains`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
     { url: `${baseUrl}/companies`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
     { url: `${baseUrl}/funding`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
     { url: `${baseUrl}/research`, lastModified: now, changeFrequency: 'weekly', priority: 0.7 },
@@ -104,5 +116,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.6,
   }))
 
-  return [...staticRoutes, ...articleRoutes, ...robotRoutes, ...companyRoutes, ...glossaryRoutes]
+  const brainRoutes: MetadataRoute.Sitemap = brainSlugs.map((slug) => ({
+    url: `${baseUrl}/brains/${slug}`,
+    lastModified: now,
+    changeFrequency: 'weekly' as const,
+    priority: 0.7,
+  }))
+
+  return [...staticRoutes, ...articleRoutes, ...robotRoutes, ...brainRoutes, ...companyRoutes, ...glossaryRoutes]
 }

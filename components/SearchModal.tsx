@@ -4,7 +4,7 @@ import { useEffect, useState, useRef, useCallback } from 'react'
 import { useRouter } from 'next/navigation'
 import Fuse from 'fuse.js'
 
-type ContentType = 'news' | 'company' | 'robot' | 'funding' | 'glossary'
+type ContentType = 'news' | 'company' | 'robot' | 'brain' | 'funding' | 'glossary'
 
 interface SearchEntry {
   slug: string
@@ -40,6 +40,7 @@ const TYPE_COLORS: Record<ContentType, string> = {
   news:     '#f59e0b',
   company:  'var(--accent-positive)',
   robot:    '#60a5fa',
+  brain:    '#34d399',
   funding:  '#a78bfa',
   glossary: '#f472b6',
 }
@@ -48,6 +49,7 @@ const TYPE_LABELS: Record<ContentType, string> = {
   news:     'news',
   company:  'company',
   robot:    'robotdb',
+  brain:    'braindb',
   funding:  'funding',
   glossary: 'glossary',
 }

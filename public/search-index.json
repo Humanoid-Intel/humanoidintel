@@ -70,6 +70,24 @@
     "url": "/news/agibot-50-humanoids-live-performance-demo"
   },
   {
+    "slug": "agibot-humanoid-robot-live-show-demonstration",
+    "title": "Agibot Demos 60-Minute Robot-Only Live Show",
+    "excerpt": "Chinese humanoid company streams world's first robot-only live entertainment show to millions of viewers worldwide",
+    "category": "breaking",
+    "date": "2026-03-18T11:25:06.000Z",
+    "tags": [
+      "agibot",
+      "demonstration",
+      "embodied-intelligence",
+      "live-performance"
+    ],
+    "companies": [
+      "Agibot"
+    ],
+    "type": "news",
+    "url": "/news/agibot-humanoid-robot-live-show-demonstration"
+  },
+  {
     "slug": "agibot-robot-led-live-show-humanoids-scale",
     "title": "Agibot Debuts World's First Robot-Led Live Show",
     "excerpt": "Chinese humanoid company streams 60-minute robot performance to millions, showcasing coordinated multi-robot operations",
@@ -237,6 +255,22 @@
     "companies": [],
     "type": "news",
     "url": "/news/rl-compliance-bounds-humanoid-control-lipschitz"
+  },
+  {
+    "slug": "rl-compliance-bounds-humanoids-anisotropic-lipschitz",
+    "title": "New RL Method Enforces Compliance Bounds for Humanoids",
+    "excerpt": "Researchers develop anisotropic Lipschitz-constrained RL policies to enforce quantifiable compliance bounds in humanoid control",
+    "category": "research",
+    "date": "2026-03-18T04:00:00.000Z",
+    "tags": [
+      "reinforcement-learning",
+      "compliance-control",
+      "locomotion",
+      "research"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/rl-compliance-bounds-humanoids-anisotropic-lipschitz"
   },
   {
     "slug": "vla-models-velocity-feedforward-industrial-control",
@@ -4738,6 +4772,23 @@
     "url": "/robots/atlas-electric"
   },
   {
+    "slug": "atlas-gemini",
+    "title": "Atlas-Gemini — Boston Dynamics + Google DeepMind",
+    "excerpt": "The integration of Google DeepMind's Gemini models with Boston Dynamics' Atlas electric humanoid robot. This hybrid system combines Atlas's world-class hardware control with Gemini...",
+    "category": "brain",
+    "date": "",
+    "tags": [
+      "Hybrid",
+      "production",
+      "proprietary"
+    ],
+    "companies": [
+      "Boston Dynamics + Google DeepMind"
+    ],
+    "type": "brain",
+    "url": "/brains/atlas-gemini"
+  },
+  {
     "slug": "greenhouse-apptronik-5813869004",
     "title": "Autonomy Software Intern — Humanoid Robotics — Apptronik",
     "excerpt": "General · Austin, TX",
@@ -4829,6 +4880,23 @@
     ],
     "type": "job",
     "url": "/jobs"
+  },
+  {
+    "slug": "carbon",
+    "title": "Carbon — Sanctuary AI",
+    "excerpt": "Sanctuary AI's cognitive architecture combining symbolic reasoning, large language models, deep learning, and physics simulation. Carbon emphasizes explainable AI, allowing operato...",
+    "category": "brain",
+    "date": "",
+    "tags": [
+      "Cognitive Hybrid",
+      "commercial",
+      "proprietary"
+    ],
+    "companies": [
+      "Sanctuary AI"
+    ],
+    "type": "brain",
+    "url": "/brains/carbon"
   },
   {
     "slug": "greenhouse-nimblerobotics-4185288009",
@@ -5156,6 +5224,23 @@
     ],
     "type": "funding",
     "url": "/funding"
+  },
+  {
+    "slug": "dyna-1",
+    "title": "DYNA-1 — Dyna Robotics",
+    "excerpt": "Dyna Robotics' foundation model achieving 99%+ task success rate in 24/7 continuous commercial operation. DYNA-1 powers a Robot-as-a-Service (RaaS) business model, with the model c...",
+    "category": "brain",
+    "date": "",
+    "tags": [
+      "Foundation Model",
+      "production",
+      "proprietary"
+    ],
+    "companies": [
+      "Dyna Robotics"
+    ],
+    "type": "brain",
+    "url": "/brains/dyna-1"
   },
   {
     "slug": "greenhouse-apptronik-5780398004",
@@ -5731,6 +5816,23 @@
     "url": "/robots/galbot-g1"
   },
   {
+    "slug": "gemini-robotics",
+    "title": "Gemini Robotics — Google DeepMind",
+    "excerpt": "Google DeepMind's multi-model robotics system combining RT-2 for vision-language-action reasoning, AutoRT for autonomous data collection, and SARA-RT for efficient transformer infe...",
+    "category": "brain",
+    "date": "",
+    "tags": [
+      "Multi-model",
+      "research",
+      "proprietary"
+    ],
+    "companies": [
+      "Google DeepMind"
+    ],
+    "type": "brain",
+    "url": "/brains/gemini-robotics"
+  },
+  {
     "slug": "greenhouse-nimblerobotics-4120577009",
     "title": "Global Supply Manager — Nimble Robotics",
     "excerpt": "General · San Francisco, CA",
@@ -5791,6 +5893,23 @@
     ],
     "type": "robot",
     "url": "/robots/gr-1"
+  },
+  {
+    "slug": "groot-n1",
+    "title": "GR00T N1 — NVIDIA",
+    "excerpt": "NVIDIA's dual-system humanoid foundation model combining System 2 slow-thinking VLM for task planning with System 1 fast diffusion policy for real-time motor control. GR00T N1 runs...",
+    "category": "brain",
+    "date": "",
+    "tags": [
+      "VLA",
+      "production",
+      "open-source"
+    ],
+    "companies": [
+      "NVIDIA"
+    ],
+    "type": "brain",
+    "url": "/brains/groot-n1"
   },
   {
     "slug": "gr2",
@@ -5887,6 +6006,23 @@
     ],
     "type": "job",
     "url": "/jobs"
+  },
+  {
+    "slug": "helix",
+    "title": "Helix — Figure AI",
+    "excerpt": "Figure AI's proprietary vision-language-action model powering autonomous humanoid behavior in factory settings. Helix integrates multimodal perception with real-time motor control,...",
+    "category": "brain",
+    "date": "",
+    "tags": [
+      "VLA",
+      "production",
+      "proprietary"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "brain",
+    "url": "/brains/helix"
   },
   {
     "slug": "greenhouse-figureai-4659175006",
@@ -6276,6 +6412,23 @@
     "url": "/companies/leju-robotics"
   },
   {
+    "slug": "lerobot",
+    "title": "LeRobot — Hugging Face",
+    "excerpt": "Hugging Face's open-source framework for real-world robotics, providing a hardware-agnostic platform that aggregates multiple policy architectures including pi0, OpenVLA, ACT, Diff...",
+    "category": "brain",
+    "date": "",
+    "tags": [
+      "Framework",
+      "production",
+      "open-source"
+    ],
+    "companies": [
+      "Hugging Face"
+    ],
+    "type": "brain",
+    "url": "/brains/lerobot"
+  },
+  {
     "slug": "loco-manipulation",
     "title": "Loco-Manipulation",
     "excerpt": "The simultaneous or tightly coordinated execution of locomotion (moving through space) and manipulation (interacting with objects), considered one of the defining challenges of …",
@@ -6576,6 +6729,23 @@
     "url": "/jobs"
   },
   {
+    "slug": "mind-cognitive",
+    "title": "Mind Cognitive — Mind Robotics",
+    "excerpt": "Mind Robotics' software-first cognitive AI system designed for manufacturing environments. The platform prioritizes software intelligence over hardware, using data from Rivian fact...",
+    "category": "brain",
+    "date": "",
+    "tags": [
+      "Cognitive",
+      "early-stage",
+      "proprietary"
+    ],
+    "companies": [
+      "Mind Robotics"
+    ],
+    "type": "brain",
+    "url": "/brains/mind-cognitive"
+  },
+  {
     "slug": "mind-robotics",
     "title": "Mind Robotics",
     "excerpt": "Mind Robotics was founded in early 2026 by RJ Scaringe, CEO of electric vehicle maker Rivian, who is running both companies concurrently. Mind Robotics is pursuing a contrarian phi…",
@@ -6826,6 +6996,23 @@
     ],
     "type": "job",
     "url": "/jobs"
+  },
+  {
+    "slug": "openvla",
+    "title": "OpenVLA — Stanford / UC Berkeley / TRI / DeepMind",
+    "excerpt": "Open-source 7B parameter vision-language-action model trained on 970K real robot episodes from the Open X-Embodiment dataset. OpenVLA outperforms Google's RT-2-X by 16.5% on genera...",
+    "category": "brain",
+    "date": "",
+    "tags": [
+      "VLA",
+      "research",
+      "open-source"
+    ],
+    "companies": [
+      "Stanford / UC Berkeley / TRI / DeepMind"
+    ],
+    "type": "brain",
+    "url": "/brains/openvla"
   },
   {
     "slug": "ashby-physicalintelligence-6d2adda0-fcc2-4580-a05a-bba427093640",
@@ -7096,6 +7283,23 @@
     ],
     "type": "funding",
     "url": "/funding"
+  },
+  {
+    "slug": "pi0",
+    "title": "pi0 — Physical Intelligence",
+    "excerpt": "Physical Intelligence's foundation model for general-purpose robot control. pi0 achieves zero-shot generalization across diverse robot embodiments and tasks. pi0.5 (April 2025) ext...",
+    "category": "brain",
+    "date": "",
+    "tags": [
+      "VLA",
+      "production",
+      "open-source"
+    ],
+    "companies": [
+      "Physical Intelligence"
+    ],
+    "type": "brain",
+    "url": "/brains/pi0"
   },
   {
     "slug": "greenhouse-figureai-4593982006",
@@ -7481,6 +7685,23 @@
     ],
     "type": "job",
     "url": "/jobs"
+  },
+  {
+    "slug": "roboforce-fm",
+    "title": "RoboForce FM — RoboForce",
+    "excerpt": "RoboForce's foundation model built around a data flywheel architecture where each deployment generates training data to improve the next model iteration. NVIDIA partnership provide...",
+    "category": "brain",
+    "date": "",
+    "tags": [
+      "Foundation Model",
+      "pre-production",
+      "proprietary"
+    ],
+    "companies": [
+      "RoboForce"
+    ],
+    "type": "brain",
+    "url": "/brains/roboforce-fm"
   },
   {
     "slug": "ashby-physicalintelligence-52fb2d63-f18e-446e-8a15-cbcdc8740147",
@@ -8640,6 +8861,23 @@
     "url": "/funding"
   },
   {
+    "slug": "skild-brain",
+    "title": "Skild Brain — Skild AI",
+    "excerpt": "Skild AI's general-purpose robotics foundation model designed to control any robot form factor. The model is omni-bodied, meaning a single neural network can operate humanoids, qua...",
+    "category": "brain",
+    "date": "",
+    "tags": [
+      "Foundation Model",
+      "production",
+      "proprietary"
+    ],
+    "companies": [
+      "Skild AI"
+    ],
+    "type": "brain",
+    "url": "/brains/skild-brain"
+  },
+  {
     "slug": "greenhouse-apptronik-5806320004",
     "title": "Software Engineer - Dexterity — Apptronik",
     "excerpt": "General · Austin, TX",
@@ -9216,6 +9454,23 @@
     "url": "/companies/tesla-optimus"
   },
   {
+    "slug": "tesla-fsd-bot",
+    "title": "Tesla FSD-Bot — Tesla",
+    "excerpt": "Tesla's neural network for Optimus humanoid robots, derived from the Full Self-Driving architecture. Trained on Dojo supercomputer clusters, the system repurposes Tesla's massive a...",
+    "category": "brain",
+    "date": "",
+    "tags": [
+      "Neural Net",
+      "production",
+      "proprietary"
+    ],
+    "companies": [
+      "Tesla"
+    ],
+    "type": "brain",
+    "url": "/brains/tesla-fsd-bot"
+  },
+  {
     "slug": "greenhouse-figureai-4365284006",
     "title": "Test Automation Intern [Summer 2026] — Figure AI",
     "excerpt": "General · San Jose, CA",
@@ -9361,6 +9616,23 @@
     "companies": [],
     "type": "glossary",
     "url": "/glossary/vision-language-action-model"
+  },
+  {
+    "slug": "xpeng-vlt",
+    "title": "VLT — Xpeng Robotics",
+    "excerpt": "Xpeng Robotics' vision-language-action model adapted from their autonomous driving technology. VLT runs on custom Turing AI chips delivering 2250 TOPS, powering the 82-DOF Iron hum...",
+    "category": "brain",
+    "date": "",
+    "tags": [
+      "VLA",
+      "pre-production",
+      "proprietary"
+    ],
+    "companies": [
+      "Xpeng Robotics"
+    ],
+    "type": "brain",
+    "url": "/brains/xpeng-vlt"
   },
   {
     "slug": "walker-s2",

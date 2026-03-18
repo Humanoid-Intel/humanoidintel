@@ -38,6 +38,25 @@ export interface Robot {
   price?: string
 }
 
+export interface Brain {
+  slug: string
+  name: string
+  developer: string
+  architecture: string
+  parameters?: string
+  computeTops?: string
+  trainingDataScale?: string
+  robotsSupported: string[]
+  status: 'production' | 'research' | 'pre-production' | 'commercial' | 'early-stage'
+  openSource: boolean
+  license?: string
+  description: string
+  keyDifferentiator: string
+  fundingContext?: string
+  milestones?: { date: string; event: string }[]
+  website?: string
+}
+
 export interface Company {
   slug: string
   name: string
