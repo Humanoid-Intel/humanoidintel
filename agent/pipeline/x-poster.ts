@@ -202,7 +202,7 @@ Return ONLY the tweet text. No explanation, no quotes around it.`
 
   try {
     const response = await client.messages.create({
-      model: 'claude-sonnet-4-5',
+      model: 'claude-haiku-4-5',
       max_tokens: 200,
       messages: [{ role: 'user', content: prompt }],
     })

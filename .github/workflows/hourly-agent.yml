@@ -2,8 +2,8 @@ name: Hourly News Agent
 
 on:
   schedule:
-    # Run every hour at :05 (GitHub cron can delay a few min, offset avoids the rush)
-    - cron: '5 * * * *'
+    # Run every 2 hours at :05 (cost optimization — cuts API spend ~50%)
+    - cron: '5 */2 * * *'
   workflow_dispatch: # Manual trigger from GitHub UI
 
 permissions:
