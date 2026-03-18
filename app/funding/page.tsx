@@ -13,6 +13,11 @@ export const metadata: Metadata = {
     description:
       'Complete funding data for every humanoid robotics company.',
     url: 'https://humanoidintel.ai/funding',
+    images: [{ url: 'https://humanoidintel.ai/og-image.png', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@HumanoidIntelAI',
   },
 }
 

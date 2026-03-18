@@ -13,6 +13,11 @@ export const metadata: Metadata = {
     description:
       'Open roles across the humanoid robotics industry, updated hourly.',
     url: 'https://humanoidintel.ai/jobs',
+    images: [{ url: 'https://humanoidintel.ai/og-image.png', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@HumanoidIntelAI',
   },
 }
 

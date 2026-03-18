@@ -12,6 +12,11 @@ export const metadata: Metadata = {
     description:
       'Track your favorite humanoid robotics companies, their latest news, and funding activity.',
     url: 'https://humanoidintel.ai/watchlist',
+    images: [{ url: 'https://humanoidintel.ai/og-image.png', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@HumanoidIntelAI',
   },
 }
 

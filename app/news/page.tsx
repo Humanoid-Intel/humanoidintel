@@ -13,6 +13,11 @@ export const metadata: Metadata = {
     description:
       'Real-time humanoid robotics news: funding rounds, product launches, research breakthroughs, and policy updates.',
     url: 'https://humanoidintel.ai/news',
+    images: [{ url: 'https://humanoidintel.ai/og-image.png', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@HumanoidIntelAI',
   },
 }
 

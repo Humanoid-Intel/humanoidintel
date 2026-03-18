@@ -13,6 +13,11 @@ export const metadata: Metadata = {
     description:
       'The definitive database of every humanoid robot in development or production.',
     url: 'https://humanoidintel.ai/robots',
+    images: [{ url: 'https://humanoidintel.ai/og-image.png', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@HumanoidIntelAI',
   },
 }
 

@@ -18,6 +18,11 @@ export const metadata: Metadata = {
     description:
       'Tracking key suppliers powering the humanoid robotics industry.',
     url: 'https://humanoidintel.ai/supply-chain',
+    images: [{ url: 'https://humanoidintel.ai/og-image.png', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@HumanoidIntelAI',
   },
 }
 

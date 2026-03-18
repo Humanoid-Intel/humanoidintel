@@ -12,6 +12,11 @@ export const metadata: Metadata = {
     title: 'Privacy Policy — humanoidintel.ai',
     description: 'How humanoidintel.ai collects and uses data.',
     url: 'https://humanoidintel.ai/privacy',
+    images: [{ url: 'https://humanoidintel.ai/og-image.png', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@HumanoidIntelAI',
   },
 }
 

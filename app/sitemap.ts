@@ -73,6 +73,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/watchlist`, lastModified: now, changeFrequency: 'daily', priority: 0.5 },
     { url: `${baseUrl}/map`, lastModified: now, changeFrequency: 'weekly', priority: 0.7 },
     { url: `${baseUrl}/supply-chain`, lastModified: now, changeFrequency: 'weekly', priority: 0.7 },
+    { url: `${baseUrl}/privacy`, lastModified: now, changeFrequency: 'monthly', priority: 0.3 },
   ]
 
   const articleRoutes: MetadataRoute.Sitemap = articleSlugs.map((slug) => ({

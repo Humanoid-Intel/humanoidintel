@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next'
 import { Inter, Space_Grotesk, JetBrains_Mono } from 'next/font/google'
+import Script from 'next/script'
 import { SchemaMarkup } from '@/components/SchemaMarkup'
 import { KeyboardNav } from '@/components/KeyboardNav'
 import { generateOrgSchema } from '@/lib/seo'
@@ -102,17 +103,18 @@ export default function RootLayout({
           src="https://plausible.io/js/script.js"
         />
         {/* Google Analytics */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2V55QFKZNY" />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-2V55QFKZNY');
-            `,
-          }}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-2V55QFKZNY"
+          strategy="afterInteractive"
         />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-2V55QFKZNY');
+          `}
+        </Script>
       </head>
       <body className="antialiased">
         <SchemaMarkup schema={generateOrgSchema()} />
