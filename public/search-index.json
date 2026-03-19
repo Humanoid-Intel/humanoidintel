@@ -16,6 +16,39 @@
     "url": "/news/dexexo-exoskeleton-humanoid-hand-data-collection"
   },
   {
+    "slug": "heisd-hybrid-speculative-decoding-vla-models",
+    "title": "New Hybrid Decoding Method Cuts VLA Inference Time 40%",
+    "excerpt": "HeiSD combines drafter and retrieval methods to accelerate Vision-Language-Action model inference for humanoid control",
+    "category": "research",
+    "date": "2026-03-19T04:00:00.000Z",
+    "tags": [
+      "vla-models",
+      "speculative-decoding",
+      "inference-acceleration",
+      "kinematic-awareness"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/heisd-hybrid-speculative-decoding-vla-models"
+  },
+  {
+    "slug": "kinevla-kinematics-aware-vision-language-action-models",
+    "title": "KineVLA Advances Vision-Language Actions with Kinematics",
+    "excerpt": "New research introduces kinematics-rich VLA models that encode trajectory, orientation data for precise humanoid control",
+    "category": "research",
+    "date": "2026-03-19T04:00:00.000Z",
+    "tags": [
+      "vision-language-action",
+      "kinematics",
+      "manipulation",
+      "vla",
+      "arxiv"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/kinevla-kinematics-aware-vision-language-action-models"
+  },
+  {
     "slug": "real-to-sim-to-real-teleoperation-shared-autonomy",
     "title": "Real-to-Sim-to-Real Framework Cuts Teleoperation Errors by 40%",
     "excerpt": "New framework combines human teleoperation with AI assistance, reducing manipulation errors through bidirectional simulation",
@@ -30,6 +63,22 @@
     "companies": [],
     "type": "news",
     "url": "/news/real-to-sim-to-real-teleoperation-shared-autonomy"
+  },
+  {
+    "slug": "teledex-accessible-dexterous-teleoperation-research",
+    "title": "TeleDex: New System Cuts Humanoid Demo Collection Time",
+    "excerpt": "Researchers unveil TeleDex system for faster, cheaper humanoid robot demonstration collection in real-world deployments",
+    "category": "research",
+    "date": "2026-03-19T04:00:00.000Z",
+    "tags": [
+      "teleoperation",
+      "dexterous-manipulation",
+      "sim-to-real",
+      "dataset-collection"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/teledex-accessible-dexterous-teleoperation-research"
   },
   {
     "slug": "chinese-humanoid-robots-sprint-speed-usain-bolt",
