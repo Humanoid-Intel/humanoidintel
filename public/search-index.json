@@ -16,6 +16,22 @@
     "url": "/news/dexexo-exoskeleton-humanoid-hand-data-collection"
   },
   {
+    "slug": "dexexo-hand-exoskeleton-sim-to-real-gap",
+    "title": "DexEXO Hand Exoskeleton Tackles Sim-to-Real Gap",
+    "excerpt": "New wearable interface prioritizes operator comfort while maintaining kinematic fidelity for robot learning",
+    "category": "research",
+    "date": "2026-03-19T04:00:00.000Z",
+    "tags": [
+      "dexterous-manipulation",
+      "exoskeleton",
+      "teleoperation",
+      "sim-to-real"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/dexexo-hand-exoskeleton-sim-to-real-gap"
+  },
+  {
     "slug": "heisd-hybrid-speculative-decoding-vla-models",
     "title": "New Hybrid Decoding Method Cuts VLA Inference Time 40%",
     "excerpt": "HeiSD combines drafter and retrieval methods to accelerate Vision-Language-Action model inference for humanoid control",
@@ -6008,6 +6024,22 @@
     "url": "/jobs"
   },
   {
+    "slug": "greenhouse-apptronik-5825048004",
+    "title": "Lead Software Engineer - Dexterous Manipulation — Apptronik",
+    "excerpt": "General · Austin, TX",
+    "category": "job",
+    "date": "2026-03-19T12:14:16-04:00",
+    "tags": [
+      "software",
+      "senior"
+    ],
+    "companies": [
+      "Apptronik"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
     "slug": "greenhouse-figureai-4661638006",
     "title": "Legal Operations Analyst — Figure AI",
     "excerpt": "General · San Jose, CA",
@@ -8313,21 +8345,6 @@
     "url": "/jobs"
   },
   {
-    "slug": "greenhouse-agilityrobotics-5830827004",
-    "title": "Senior Systems Integration Engineer — Agility Robotics",
-    "excerpt": "General · Onsite- Salem",
-    "category": "job",
-    "date": "2026-03-18T12:28:17-04:00",
-    "tags": [
-      "senior"
-    ],
-    "companies": [
-      "Agility Robotics"
-    ],
-    "type": "job",
-    "url": "/jobs"
-  },
-  {
     "slug": "greenhouse-apptronik-5807129004",
     "title": "Senior Technical Program Manager — Apptronik",
     "excerpt": "General · Austin, TX",
@@ -8714,23 +8731,6 @@
     ],
     "companies": [
       "Figure AI"
-    ],
-    "type": "job",
-    "url": "/jobs"
-  },
-  {
-    "slug": "greenhouse-agilityrobotics-5701424004",
-    "title": "Staff Software Development Engineer, Test  — Agility Robotics",
-    "excerpt": "General · Hybrid- Fremont, CA",
-    "category": "job",
-    "date": "2026-03-02T11:39:00-05:00",
-    "tags": [
-      "software",
-      "product",
-      "senior"
-    ],
-    "companies": [
-      "Agility Robotics"
     ],
     "type": "job",
     "url": "/jobs"
