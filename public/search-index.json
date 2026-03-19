@@ -48,6 +48,22 @@
     "url": "/news/dexexo-hand-exoskeleton-sim-to-real-gap"
   },
   {
+    "slug": "dexexo-wearable-exoskeleton-humanoid-hand-training",
+    "title": "DexEXO Tackles Humanoid Hand Training Data Problem",
+    "excerpt": "New wearable exoskeleton promises operator-agnostic demonstrations for training humanoid robot hands",
+    "category": "research",
+    "date": "2026-03-19T04:00:00.000Z",
+    "tags": [
+      "dexterous-manipulation",
+      "exoskeleton",
+      "demonstration-learning",
+      "sim-to-real"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/dexexo-wearable-exoskeleton-humanoid-hand-training"
+  },
+  {
     "slug": "heisd-hybrid-speculative-decoding-vla-models",
     "title": "New Hybrid Decoding Method Cuts VLA Inference Time 40%",
     "excerpt": "HeiSD combines drafter and retrieval methods to accelerate Vision-Language-Action model inference for humanoid control",
