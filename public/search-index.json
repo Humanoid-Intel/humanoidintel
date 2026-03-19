@@ -81,6 +81,22 @@
     "url": "/news/teledex-accessible-dexterous-teleoperation-research"
   },
   {
+    "slug": "teledex-humanoid-teleoperation-research-2026",
+    "title": "TeleDex Cuts Humanoid Demo Collection Cost by 90%",
+    "excerpt": "New teleoperation system reduces demonstration collection costs from $10K+ to under $1K while maintaining manipulation quality",
+    "category": "research",
+    "date": "2026-03-19T04:00:00.000Z",
+    "tags": [
+      "teleoperation",
+      "dexterous-manipulation",
+      "sim-to-real",
+      "research"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/teledex-humanoid-teleoperation-research-2026"
+  },
+  {
     "slug": "chinese-humanoid-robots-sprint-speed-usain-bolt",
     "title": "Chinese Humanoids Target Sub-9.58s Sprint Times",
     "excerpt": "Chinese researchers claim humanoid robots could break Usain Bolt's 9.58-second 100m record through advanced control systems",
