@@ -1,5 +1,37 @@
 [
   {
+    "slug": "dexexo-exoskeleton-humanoid-hand-data-collection",
+    "title": "DexEXO Exoskeleton Tackles Data Collection for Humanoid Hands",
+    "excerpt": "New hand exoskeleton promises cross-user demonstration data for humanoid robot training without visual post-processing",
+    "category": "research",
+    "date": "2026-03-19T04:00:00.000Z",
+    "tags": [
+      "dexterous-manipulation",
+      "teleoperation",
+      "data-collection",
+      "exoskeleton"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/dexexo-exoskeleton-humanoid-hand-data-collection"
+  },
+  {
+    "slug": "real-to-sim-to-real-teleoperation-shared-autonomy",
+    "title": "Real-to-Sim-to-Real Framework Cuts Teleoperation Errors by 40%",
+    "excerpt": "New framework combines human teleoperation with AI assistance, reducing manipulation errors through bidirectional simulation",
+    "category": "research",
+    "date": "2026-03-19T04:00:00.000Z",
+    "tags": [
+      "teleoperation",
+      "shared-autonomy",
+      "sim-to-real",
+      "manipulation"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/real-to-sim-to-real-teleoperation-shared-autonomy"
+  },
+  {
     "slug": "chinese-humanoid-robots-sprint-speed-usain-bolt",
     "title": "Chinese Humanoids Target Sub-9.58s Sprint Times",
     "excerpt": "Chinese researchers claim humanoid robots could break Usain Bolt's 9.58-second 100m record through advanced control systems",
@@ -4611,11 +4643,11 @@
     "url": "/jobs"
   },
   {
-    "slug": "greenhouse-figureai-4614078006",
+    "slug": "greenhouse-figureai-4664781006",
     "title": "Data Strategy Associate — Figure AI",
     "excerpt": "General · San Jose, CA",
     "category": "job",
-    "date": "2026-03-18T15:38:01-04:00",
+    "date": "2026-03-18T19:45:52-04:00",
     "tags": [
       "junior"
     ],
@@ -7863,6 +7895,22 @@
     "url": "/jobs"
   },
   {
+    "slug": "greenhouse-figureai-4432449006",
+    "title": "Senior Mechanical Engineer, Charging Systems — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-03-18T19:51:36-04:00",
+    "tags": [
+      "hardware",
+      "senior"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
     "slug": "greenhouse-figureai-4603840006",
     "title": "Senior Network Engineer — Figure AI",
     "excerpt": "General · San Jose, CA",
@@ -8928,6 +8976,19 @@
     "tags": [],
     "companies": [
       "Diligent Robotics"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4574061006",
+    "title": "Technical Writer (Temp to Hire) — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-03-18T19:14:20-04:00",
+    "tags": [],
+    "companies": [
+      "Figure AI"
     ],
     "type": "job",
     "url": "/jobs"
