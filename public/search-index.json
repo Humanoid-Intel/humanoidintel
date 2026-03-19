@@ -1,5 +1,21 @@
 [
   {
+    "slug": "core-engineering-barriers-humanoid-robotics",
+    "title": "Core Engineering Barriers Block Humanoid Robot Production",
+    "excerpt": "Motion control complexity, power density limits, and thermal bottlenecks prevent humanoid robots from real deployment",
+    "category": "research",
+    "date": "2026-03-19T10:00:05.000Z",
+    "tags": [
+      "motion-control",
+      "sensing",
+      "power-systems",
+      "thermal-management"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/core-engineering-barriers-humanoid-robotics"
+  },
+  {
     "slug": "dexexo-exoskeleton-humanoid-hand-data-collection",
     "title": "DexEXO Exoskeleton Tackles Data Collection for Humanoid Hands",
     "excerpt": "New hand exoskeleton promises cross-user demonstration data for humanoid robot training without visual post-processing",
@@ -4222,6 +4238,22 @@
     "url": "/jobs"
   },
   {
+    "slug": "greenhouse-figureai-4431092006",
+    "title": "AI Training Infrastructure Engineer — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-03-19T16:56:17-04:00",
+    "tags": [
+      "ml/ai",
+      "software"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
     "slug": "apollo",
     "title": "Apollo — Apptronik",
     "excerpt": "Apollo is Apptronik's flagship commercial humanoid, built on actuator technology developed through a decade of NASA collaboration on Space Exploration Suits and the Valkyrie robot.…",
@@ -4707,6 +4739,21 @@
     ],
     "type": "robot",
     "url": "/robots/cyberone"
+  },
+  {
+    "slug": "greenhouse-figureai-4665206006",
+    "title": "Data Growth Associate — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-03-19T16:43:44-04:00",
+    "tags": [
+      "junior"
+    ],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
   },
   {
     "slug": "greenhouse-figureai-4590702006",
@@ -5698,6 +5745,32 @@
     "url": "/jobs"
   },
   {
+    "slug": "greenhouse-figureai-4627111006",
+    "title": "Helix Data Creator — Figure AI",
+    "excerpt": "General · Los Angeles, CA",
+    "category": "job",
+    "date": "2026-03-19T16:28:41-04:00",
+    "tags": [],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-figureai-4585080006",
+    "title": "Helix Data Creator — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-03-19T16:28:32-04:00",
+    "tags": [],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
     "slug": "greenhouse-figureai-4627110006",
     "title": "Helix Data Creator — Figure AI",
     "excerpt": "General · Spartanburg, SC",
@@ -5725,6 +5798,19 @@
     ],
     "type": "company",
     "url": "/companies/hexagon-robotics"
+  },
+  {
+    "slug": "greenhouse-figureai-4665205006",
+    "title": "Humanoid Robot Operator - Commercial Launch Team — Figure AI",
+    "excerpt": "General · San Jose, CA",
+    "category": "job",
+    "date": "2026-03-19T16:39:53-04:00",
+    "tags": [],
+    "companies": [
+      "Figure AI"
+    ],
+    "type": "job",
+    "url": "/jobs"
   },
   {
     "slug": "greenhouse-figureai-4644956006",
@@ -5767,7 +5853,7 @@
   },
   {
     "slug": "greenhouse-figureai-4369739006",
-    "title": "Humanoid Robot Pilot - Helix Team — Figure AI",
+    "title": "Humanoid Robot Pilot — Figure AI",
     "excerpt": "General · San Jose, CA",
     "category": "job",
     "date": "2026-02-02T12:08:15-05:00",
@@ -6373,21 +6459,6 @@
     "url": "/jobs"
   },
   {
-    "slug": "greenhouse-figureai-4605724006",
-    "title": "Middleware Engineering Intern [Summer 2026] — Figure AI",
-    "excerpt": "General · San Jose, CA",
-    "category": "job",
-    "date": "2026-02-24T21:23:46-05:00",
-    "tags": [
-      "internship"
-    ],
-    "companies": [
-      "Figure AI"
-    ],
-    "type": "job",
-    "url": "/jobs"
-  },
-  {
     "slug": "mind-cognitive",
     "title": "Mind Cognitive — Mind Robotics",
     "excerpt": "Mind Robotics' software-first cognitive AI system designed for manufacturing environments. The platform prioritizes software intelligence over hardware, using data from Rivian fact...",
@@ -6492,6 +6563,22 @@
     ],
     "companies": [
       "Physical Intelligence"
+    ],
+    "type": "job",
+    "url": "/jobs"
+  },
+  {
+    "slug": "greenhouse-apptronik-5832647004",
+    "title": "Motion Control and Planning Intern — Apptronik",
+    "excerpt": "General · Austin, TX",
+    "category": "job",
+    "date": "2026-03-19T17:00:13-04:00",
+    "tags": [
+      "controls",
+      "internship"
+    ],
+    "companies": [
+      "Apptronik"
     ],
     "type": "job",
     "url": "/jobs"
@@ -6945,7 +7032,7 @@
   },
   {
     "slug": "greenhouse-figureai-4593982006",
-    "title": "Pilot Manager - Helix Team — Figure AI",
+    "title": "Pilot Manager — Figure AI",
     "excerpt": "General · San Jose, CA",
     "category": "job",
     "date": "2026-02-03T14:29:39-05:00",
@@ -8904,21 +8991,6 @@
     ],
     "companies": [
       "Apptronik"
-    ],
-    "type": "job",
-    "url": "/jobs"
-  },
-  {
-    "slug": "greenhouse-figureai-4662478006",
-    "title": "Strategic Finance & Capital Markets Intern [Summer 2026] — Figure AI",
-    "excerpt": "General · San Jose, CA",
-    "category": "job",
-    "date": "2026-03-11T15:08:06-04:00",
-    "tags": [
-      "internship"
-    ],
-    "companies": [
-      "Figure AI"
     ],
     "type": "job",
     "url": "/jobs"
