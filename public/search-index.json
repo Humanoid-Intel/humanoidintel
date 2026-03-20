@@ -1,5 +1,85 @@
 [
   {
+    "slug": "mobile-manipulation-gpu-compute-study-2026",
+    "title": "Onboard GPUs Can't Handle Full Mobile Manipulation Stack",
+    "excerpt": "New study reveals computational bottlenecks forcing humanoid robots to rely on edge and cloud computing",
+    "category": "research",
+    "date": "2026-03-20T04:00:00.000Z",
+    "tags": [
+      "compute",
+      "mobile-manipulation",
+      "gpu",
+      "foundation-models"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/mobile-manipulation-gpu-compute-study-2026"
+  },
+  {
+    "slug": "rg-vlmd-empathetic-humanoid-teaching-robots",
+    "title": "New AI Framework Enables Emotionally Adaptive Teaching Robots",
+    "excerpt": "Researchers unveil RG-VLMD framework combining emotion detection with gesture synthesis for context-aware robot tutors",
+    "category": "research",
+    "date": "2026-03-20T04:00:00.000Z",
+    "tags": [
+      "vision-language-motion",
+      "diffusion-models",
+      "educational-robotics",
+      "affective-computing"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/rg-vlmd-empathetic-humanoid-teaching-robots"
+  },
+  {
+    "slug": "v-dreamer-video-generation-robot-training-simulation",
+    "title": "V-Dreamer Uses Video Generation to Automate Robot Training",
+    "excerpt": "New framework generates unlimited manipulation environments and expert trajectories from text prompts",
+    "category": "research",
+    "date": "2026-03-20T04:00:00.000Z",
+    "tags": [
+      "simulation",
+      "training-data",
+      "video-generation",
+      "sim-to-real"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/v-dreamer-video-generation-robot-training-simulation"
+  },
+  {
+    "slug": "vla-training-generative-3d-worlds-sim-to-real",
+    "title": "New Method Scales VLA Training 10x Using Generative 3D Worlds",
+    "excerpt": "Breakthrough sim-to-real approach enables 10x scaling of VLA training data using procedurally generated environments",
+    "category": "research",
+    "date": "2026-03-20T04:00:00.000Z",
+    "tags": [
+      "vla",
+      "sim-to-real",
+      "reinforcement-learning",
+      "generative-ai"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/vla-training-generative-3d-worlds-sim-to-real"
+  },
+  {
+    "slug": "vla-uncertainty-quantification-safety-critical-moments",
+    "title": "VLA Uncertainty: New Method Targets Safety-Critical Moments",
+    "excerpt": "Researchers propose uncertainty shifting method to improve VLA model safety in critical manipulation moments",
+    "category": "research",
+    "date": "2026-03-20T04:00:00.000Z",
+    "tags": [
+      "vla",
+      "uncertainty-quantification",
+      "safety",
+      "research"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/vla-uncertainty-quantification-safety-critical-moments"
+  },
+  {
     "slug": "core-engineering-barriers-humanoid-robotics",
     "title": "Core Engineering Barriers Block Humanoid Robot Production",
     "excerpt": "Motion control complexity, power density limits, and thermal bottlenecks prevent humanoid robots from real deployment",
