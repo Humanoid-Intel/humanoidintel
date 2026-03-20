@@ -32,6 +32,22 @@
     "url": "/news/rg-vlmd-empathetic-humanoid-teaching-robots"
   },
   {
+    "slug": "scaling-vla-training-generated-3d-worlds-arxiv",
+    "title": "New ArXiv Paper: Scaling VLA Training with Generated 3D Worlds",
+    "excerpt": "Researchers propose using generative 3D worlds to scale VLA training, addressing real-world RL limitations",
+    "category": "research",
+    "date": "2026-03-20T04:00:00.000Z",
+    "tags": [
+      "vla",
+      "sim-to-real",
+      "reinforcement-learning",
+      "generative-3d"
+    ],
+    "companies": [],
+    "type": "news",
+    "url": "/news/scaling-vla-training-generated-3d-worlds-arxiv"
+  },
+  {
     "slug": "v-dreamer-video-generation-robot-training-simulation",
     "title": "V-Dreamer Uses Video Generation to Automate Robot Training",
     "excerpt": "New framework generates unlimited manipulation environments and expert trajectories from text prompts",
