@@ -9,7 +9,8 @@
 
 import { readFileSync, writeFileSync, mkdirSync, rmSync, existsSync } from 'fs'
 import { execSync } from 'child_process'
-import { join } from 'path'
+import { join, dirname } from 'path'
+import { fileURLToPath } from 'url'
 
 // ── Mapping tables ──────────────────────────────────────────────────
 
@@ -87,7 +88,9 @@ const SPEC_FIELD_MAP: Record<string, string> = {
 
 // ── Paths ───────────────────────────────────────────────────────────
 
-const PROJECT_ROOT = join(import.meta.dirname!, '..')
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
+const PROJECT_ROOT = join(__dirname, '..')
 const DATA_DIR = join(PROJECT_ROOT, 'content', 'data')
 const SUPPLY_CHAIN_PATH = join(DATA_DIR, 'supply-chain.json')
 const RELATIONSHIPS_PATH = join(DATA_DIR, 'supply-chain-relationships.json')
